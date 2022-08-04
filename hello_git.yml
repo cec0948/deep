@@ -1,0 +1,6 @@
+- name: SCM Git Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello SCM Type is Git!"
