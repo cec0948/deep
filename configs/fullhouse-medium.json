@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "iterations": 600,
+  "traversals": 256,
+  "train_steps": 512,
+  "strategy_train_steps": 128,
+  "batch_size": 128,
+  "buffer_capacity": 100000,
+  "strategy_buffer_capacity": 200000,
+  "checkpoint_every": 12,
+  "seed": 42,
+  "average_sampler": "importance",
+  "stages": [12, 60, 120, 180, 240, 300, 360, 420, 480, 540, 600],
+  "evaluation_iterations": [120, 300, 600],
+  "evaluation_deals": 1000,
+  "evaluation_deal_seed": 99110600,
+  "max_training_seconds": 28800,
+  "max_evaluation_seconds_each": 900,
+  "max_rss_bytes": 21474836480,
+  "baseline_model": "artifacts/r1-learning-curve/20261106T015348055280Z/seed-42/iter_00100.npz"
+}

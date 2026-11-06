@@ -1,0 +1,4 @@
+# Local upstream checkouts, build products, and experiment artifacts.
+.cache/
+artifacts/
+__pycache__/

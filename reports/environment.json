@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14",
+  "machine": "x86_64",
+  "libc": [
+    "glibc",
+    "2.41"
+  ],
+  "os": {
+    "PRETTY_NAME": "Debian GNU/Linux 13 (trixie)",
+    "VERSION_ID": "13",
+    "ID": "debian"
+  },
+  "numpy": "2.2.6",
+  "torch": "2.5.1+cpu",
+  "cuda_available": false,
+  "cpu_quota_equivalent": 4,
+  "memory_limit_gib": 32
+}

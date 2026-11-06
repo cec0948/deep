@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/advitrocks9/fullhouse-bot.git",
+  "commit": "e504793d480b1b975f25258d25939b45c6dbd5a4",
+  "model_type": "advantage",
+  "feature_dim": 51,
+  "actions": ["fold", "check_call", "half_pot", "pot", "all_in"],
+  "players": 6,
+  "starting_stack": 10000,
+  "blinds": [50, 100],
+  "strength_verified": false,
+  "files": {
+    "deep_cfr_model.npz": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+    "preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3"
+  }
+}

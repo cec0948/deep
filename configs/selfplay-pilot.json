@@ -1,0 +1,18 @@
+{
+  "upstream_commit": "757f7692738069522195d2b486eec60a8b010c0c",
+  "players": 6,
+  "stack_chips": 10000,
+  "small_blind": 50,
+  "big_blind": 100,
+  "threads": 4,
+  "seed": 20261106,
+  "buckets": 12,
+  "rollouts": 64,
+  "runouts": 8,
+  "kmeans_samples": 2000,
+  "abstraction": "emd-kmeans",
+  "menu": "pluribus",
+  "milestones": [25000, 250000, 1000000],
+  "max_rss_gib": 20,
+  "stage_timeout_seconds": 600
+}

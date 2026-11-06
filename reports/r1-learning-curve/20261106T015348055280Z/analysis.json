@@ -1,0 +1,599 @@
+{
+  "complete": true,
+  "diagnostics": {
+    "42": {
+      "iterations": 100,
+      "last_reservoir": {
+        "count": 20000,
+        "positive_count": 20000,
+        "mean": 408420.3419223662,
+        "p50": 176.64,
+        "p95": 214084.2615625,
+        "p99": 3541997.9641498677,
+        "maximum": 777401446.4,
+        "ess": 37.74207537303465,
+        "ess_fraction": 0.0018871037686517325,
+        "max_mass_fraction": 0.09517173443674494,
+        "top_one_percent_mass_fraction": 0.8926362753463164
+      },
+      "median_collection_ess_fraction": 0.01913717201558182,
+      "minimum_collection_ess_fraction": 0.004032017166331102,
+      "maximum_collection_weight": 1022896627.6117895,
+      "iterations_with_one_sample_over_half_mass": 11,
+      "checkpoints": {
+        "25": {
+          "iteration": 25,
+          "collection": {
+            "count": 528,
+            "positive_count": 410,
+            "mean": 4007621.190223756,
+            "p50": 52.4288,
+            "p95": 2365490.1559277573,
+            "p99": 67135792.70738684,
+            "maximum": 721717396.2276578,
+            "ess": 5.039340662286552,
+            "ess_fraction": 0.009544205799785136,
+            "max_mass_fraction": 0.3410724075771769,
+            "top_one_percent_mass_fraction": 0.8438842321306861
+          },
+          "reservoir": {
+            "count": 9332,
+            "positive_count": 9332,
+            "mean": 84837.21433076957,
+            "p50": 54.53553192138672,
+            "p95": 32453.327312499605,
+            "p99": 533494.7173500013,
+            "maximum": 180429344.0,
+            "ess": 10.86196611984641,
+            "ess_fraction": 0.0011639483626067735,
+            "max_mass_fraction": 0.22790089996829196,
+            "top_one_percent_mass_fraction": 0.9184042754918194
+          },
+          "reservoir_total_seen": 9332,
+          "advantage_loss": 696.1392946243286,
+          "strategy_loss": 53772.04878234863
+        },
+        "50": {
+          "iteration": 50,
+          "collection": {
+            "count": 410,
+            "positive_count": 364,
+            "mean": 52718.68633158303,
+            "p50": 92.16,
+            "p95": 134217.728,
+            "p99": 442516.54826666496,
+            "maximum": 10737418.24,
+            "ess": 3.8620559927873925,
+            "ess_fraction": 0.009419648762896079,
+            "max_mass_fraction": 0.49676550760181604,
+            "top_one_percent_mass_fraction": 0.6779814250623951
+          },
+          "reservoir": {
+            "count": 18737,
+            "positive_count": 18737,
+            "mean": 229165.17189018315,
+            "p50": 93.38248168945313,
+            "p95": 96364.13468750009,
+            "p99": 2526638.625999984,
+            "maximum": 416179814.4,
+            "ess": 36.36312773758426,
+            "ess_fraction": 0.001940712373249947,
+            "max_mass_fraction": 0.09692422573150271,
+            "top_one_percent_mass_fraction": 0.8958140813328909
+          },
+          "reservoir_total_seen": 18737,
+          "advantage_loss": 1334.0204582214355,
+          "strategy_loss": 51655.963134765625
+        },
+        "75": {
+          "iteration": 75,
+          "collection": {
+            "count": 387,
+            "positive_count": 332,
+            "mean": 33882.31567235159,
+            "p50": 94.81481481481482,
+            "p95": 76525.07647999993,
+            "p99": 324088.6271999972,
+            "maximum": 7372799.999999998,
+            "ess": 3.029342055829721,
+            "ess_fraction": 0.007827757250205998,
+            "max_mass_fraction": 0.562274520281495,
+            "top_one_percent_mass_fraction": 0.7414026874538397
+          },
+          "reservoir": {
+            "count": 20000,
+            "positive_count": 20000,
+            "mean": 276146.53736366384,
+            "p50": 140.00816146850588,
+            "p95": 148434.07025000002,
+            "p99": 3116626.1825499856,
+            "maximum": 516550561.28,
+            "ess": 37.61007821225011,
+            "ess_fraction": 0.0018805039106125055,
+            "max_mass_fraction": 0.0935283429970629,
+            "top_one_percent_mass_fraction": 0.8784650894971535
+          },
+          "reservoir_total_seen": 28060,
+          "advantage_loss": 1601.93701171875,
+          "strategy_loss": 138218.91772460938
+        },
+        "100": {
+          "iteration": 100,
+          "collection": {
+            "count": 424,
+            "positive_count": 342,
+            "mean": 599657.8687335444,
+            "p50": 32.768,
+            "p95": 265381.65154721984,
+            "p99": 1307179.2451247233,
+            "maximum": 157746004.49503535,
+            "ess": 2.1642866057601453,
+            "ess_fraction": 0.0051044495418871355,
+            "max_mass_fraction": 0.6204245501145966,
+            "top_one_percent_mass_fraction": 0.9498137636273586
+          },
+          "reservoir": {
+            "count": 20000,
+            "positive_count": 20000,
+            "mean": 408420.3419223662,
+            "p50": 176.64,
+            "p95": 214084.2615625,
+            "p99": 3541997.9641498677,
+            "maximum": 777401446.4,
+            "ess": 37.74207537303465,
+            "ess_fraction": 0.0018871037686517325,
+            "max_mass_fraction": 0.09517173443674494,
+            "top_one_percent_mass_fraction": 0.8926362753463164
+          },
+          "reservoir_total_seen": 37485,
+          "advantage_loss": 2385.7920989990234,
+          "strategy_loss": 203562.87915039062
+        }
+      }
+    },
+    "43": {
+      "iterations": 100,
+      "last_reservoir": {
+        "count": 20000,
+        "positive_count": 20000,
+        "mean": 406141.5324367321,
+        "p50": 138.24,
+        "p95": 174182.4,
+        "p99": 3106065.724299987,
+        "maximum": 1405123100.16,
+        "ess": 18.000830169746486,
+        "ess_fraction": 0.0009000415084873243,
+        "max_mass_fraction": 0.17298441404523032,
+        "top_one_percent_mass_fraction": 0.9089816191471612
+      },
+      "median_collection_ess_fraction": 0.017552610472895667,
+      "minimum_collection_ess_fraction": 0.0033698907054487428,
+      "maximum_collection_weight": 2065493923.8529978,
+      "iterations_with_one_sample_over_half_mass": 15,
+      "checkpoints": {
+        "25": {
+          "iteration": 25,
+          "collection": {
+            "count": 359,
+            "positive_count": 359,
+            "mean": 48635.58774373259,
+            "p50": 1024.0,
+            "p95": 185087.99999999977,
+            "p99": 840499.2000000038,
+            "maximum": 4915200.0,
+            "ess": 9.685346586459325,
+            "ess_fraction": 0.026978681299329597,
+            "max_mass_fraction": 0.28150918982718165,
+            "top_one_percent_mass_fraction": 0.48560335245188835
+          },
+          "reservoir": {
+            "count": 8096,
+            "positive_count": 8096,
+            "mean": 20301.871741886982,
+            "p50": 25.082630615234375,
+            "p95": 11059.199999999999,
+            "p99": 135109.8316875012,
+            "maximum": 31584906.24,
+            "ess": 10.390791249566307,
+            "ess_fraction": 0.0012834475357665894,
+            "max_mass_fraction": 0.1921644347432603,
+            "top_one_percent_mass_fraction": 0.905436535404186
+          },
+          "reservoir_total_seen": 8096,
+          "advantage_loss": 554.2829742431641,
+          "strategy_loss": 5366.707260131836
+        },
+        "50": {
+          "iteration": 50,
+          "collection": {
+            "count": 344,
+            "positive_count": 334,
+            "mean": 16839.49767441861,
+            "p50": 256.0,
+            "p95": 60249.59999999956,
+            "p99": 434073.59999999823,
+            "maximum": 1105920.0000000002,
+            "ess": 10.172423028551895,
+            "ess_fraction": 0.02957099717602295,
+            "max_mass_fraction": 0.19091327918967924,
+            "top_one_percent_mass_fraction": 0.5727398375690377
+          },
+          "reservoir": {
+            "count": 16810,
+            "positive_count": 16810,
+            "mean": 53120.779094140875,
+            "p50": 64.0,
+            "p95": 30727.36931249999,
+            "p99": 485003.7833999996,
+            "maximum": 53070823.12,
+            "ess": 51.10980880366821,
+            "ess_fraction": 0.003040440737874373,
+            "max_mass_fraction": 0.05943245553436616,
+            "top_one_percent_mass_fraction": 0.8881733142074815
+          },
+          "reservoir_total_seen": 16810,
+          "advantage_loss": 956.6253299713135,
+          "strategy_loss": 30961.336906433105
+        },
+        "75": {
+          "iteration": 75,
+          "collection": {
+            "count": 387,
+            "positive_count": 387,
+            "mean": 150651.12144702842,
+            "p50": 1024.0,
+            "p95": 207360.00000000006,
+            "p99": 2485125.1199999973,
+            "maximum": 21233664.0,
+            "ess": 5.84935713036895,
+            "ess_fraction": 0.015114617907930103,
+            "max_mass_fraction": 0.36420139664543827,
+            "top_one_percent_mass_fraction": 0.645783032014828
+          },
+          "reservoir": {
+            "count": 20000,
+            "positive_count": 20000,
+            "mean": 262038.31754852453,
+            "p50": 98.13333099365235,
+            "p95": 104377.63579687479,
+            "p99": 2043349.9054499713,
+            "maximum": 1024819107.8399999,
+            "ess": 18.0590990905804,
+            "ess_fraction": 0.00090295495452902,
+            "max_mass_fraction": 0.19554756675046633,
+            "top_one_percent_mass_fraction": 0.912903371731891
+          },
+          "reservoir_total_seen": 26235,
+          "advantage_loss": 2458.23038482666,
+          "strategy_loss": 72905.93878173828
+        },
+        "100": {
+          "iteration": 100,
+          "collection": {
+            "count": 535,
+            "positive_count": 406,
+            "mean": 5332320.076176641,
+            "p50": 64.0,
+            "p95": 1489674.537688329,
+            "p99": 39803144.387368046,
+            "maximum": 2065493923.8529978,
+            "ess": 1.8704372621209235,
+            "ess_fraction": 0.0034961444151792964,
+            "max_mass_fraction": 0.724025611950042,
+            "top_one_percent_mass_fraction": 0.9161486202570189
+          },
+          "reservoir": {
+            "count": 20000,
+            "positive_count": 20000,
+            "mean": 406141.5324367321,
+            "p50": 138.24,
+            "p95": 174182.4,
+            "p99": 3106065.724299987,
+            "maximum": 1405123100.16,
+            "ess": 18.000830169746486,
+            "ess_fraction": 0.0009000415084873243,
+            "max_mass_fraction": 0.17298441404523032,
+            "top_one_percent_mass_fraction": 0.9089816191471612
+          },
+          "reservoir_total_seen": 35733,
+          "advantage_loss": 2906.6216926574707,
+          "strategy_loss": 412910.6432495117
+        }
+      }
+    },
+    "44": {
+      "iterations": 100,
+      "last_reservoir": {
+        "count": 20000,
+        "positive_count": 20000,
+        "mean": 391467.16490350454,
+        "p50": 183.5008087158203,
+        "p95": 245813.76609374987,
+        "p99": 3906104.9494498703,
+        "maximum": 2141051443.1999998,
+        "ess": 11.94724849571105,
+        "ess_fraction": 0.0005973624247855525,
+        "max_mass_fraction": 0.2734650099872057,
+        "top_one_percent_mass_fraction": 0.8818503634017287
+      },
+      "median_collection_ess_fraction": 0.02002881817554018,
+      "minimum_collection_ess_fraction": 0.0029230414114141557,
+      "maximum_collection_weight": 7136837906.036926,
+      "iterations_with_one_sample_over_half_mass": 13,
+      "checkpoints": {
+        "25": {
+          "iteration": 25,
+          "collection": {
+            "count": 370,
+            "positive_count": 355,
+            "mean": 407155.72468468465,
+            "p50": 768.0,
+            "p95": 164966.40000000002,
+            "p99": 746342.4000000006,
+            "maximum": 138240000.0,
+            "ess": 1.1870495707966073,
+            "ess_fraction": 0.0032082420832340738,
+            "max_mass_fraction": 0.9176381393408305,
+            "top_one_percent_mass_fraction": 0.943433967035634
+          },
+          "reservoir": {
+            "count": 8556,
+            "positive_count": 8556,
+            "mean": 36946.729796398984,
+            "p50": 30.72,
+            "p95": 26047.9156640625,
+            "p99": 455774.62425000314,
+            "maximum": 38616326.4,
+            "ess": 25.425803207682403,
+            "ess_fraction": 0.002971692754521085,
+            "max_mass_fraction": 0.12215863641271986,
+            "top_one_percent_mass_fraction": 0.8552050993128113
+          },
+          "reservoir_total_seen": 8556,
+          "advantage_loss": 706.533408164978,
+          "strategy_loss": 13321.603073120117
+        },
+        "50": {
+          "iteration": 50,
+          "collection": {
+            "count": 458,
+            "positive_count": 438,
+            "mean": 495815.6541864252,
+            "p50": 1024.0,
+            "p95": 1326448.6399999976,
+            "p99": 10318407.270400003,
+            "maximum": 62914560.0,
+            "ess": 8.825928752759763,
+            "ess_fraction": 0.019270586796418698,
+            "max_mass_fraction": 0.2770546548392114,
+            "top_one_percent_mass_fraction": 0.5923486240182098
+          },
+          "reservoir": {
+            "count": 17963,
+            "positive_count": 17963,
+            "mean": 348781.1095145087,
+            "p50": 72.75399780273438,
+            "p95": 109847.37093749954,
+            "p99": 1973146.4250000287,
+            "maximum": 2141051443.1999998,
+            "ess": 7.556389488744168,
+            "ess_fraction": 0.0004206641144989238,
+            "max_mass_fraction": 0.3417395769469016,
+            "top_one_percent_mass_fraction": 0.9326150211681787
+          },
+          "reservoir_total_seen": 17963,
+          "advantage_loss": 1565.010799407959,
+          "strategy_loss": 297178.1682128906
+        },
+        "75": {
+          "iteration": 75,
+          "collection": {
+            "count": 471,
+            "positive_count": 400,
+            "mean": 129174.74849292496,
+            "p50": 81.92,
+            "p95": 707439.2746666668,
+            "p99": 2273312.768000007,
+            "maximum": 7549747.200000001,
+            "ess": 21.481693007840562,
+            "ess_fraction": 0.04560869003787805,
+            "max_mass_fraction": 0.12408916950223002,
+            "top_one_percent_mass_fraction": 0.39454323789302786
+          },
+          "reservoir": {
+            "count": 20000,
+            "positive_count": 20000,
+            "mean": 386953.92532193725,
+            "p50": 117.76,
+            "p95": 214797.60306249929,
+            "p99": 3108528.1528498502,
+            "maximum": 2141051443.1999998,
+            "ess": 11.645541863361995,
+            "ess_fraction": 0.0005822770931680997,
+            "max_mass_fraction": 0.27665457087929674,
+            "top_one_percent_mass_fraction": 0.8905011517781205
+          },
+          "reservoir_total_seen": 27843,
+          "advantage_loss": 2745.706344604492,
+          "strategy_loss": 122097.09603881836
+        },
+        "100": {
+          "iteration": 100,
+          "collection": {
+            "count": 534,
+            "positive_count": 414,
+            "mean": 1867803.039424,
+            "p50": 52.4288,
+            "p95": 1851302.7032678206,
+            "p99": 50476603.14623988,
+            "maximum": 260919263.232,
+            "ess": 7.975615092792049,
+            "ess_fraction": 0.014935608788000092,
+            "max_mass_fraction": 0.26159763218131515,
+            "top_one_percent_mass_fraction": 0.7294504641358096
+          },
+          "reservoir": {
+            "count": 20000,
+            "positive_count": 20000,
+            "mean": 391467.16490350454,
+            "p50": 183.5008087158203,
+            "p95": 245813.76609374987,
+            "p99": 3906104.9494498703,
+            "maximum": 2141051443.1999998,
+            "ess": 11.94724849571105,
+            "ess_fraction": 0.0005973624247855525,
+            "max_mass_fraction": 0.2734650099872057,
+            "top_one_percent_mass_fraction": 0.8818503634017287
+          },
+          "reservoir_total_seen": 37245,
+          "advantage_loss": 3742.7086791992188,
+          "strategy_loss": 88971.19934082031
+        }
+      }
+    }
+  },
+  "evaluation_results": [
+    {
+      "name": "public",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -41.821666666666665,
+        "deal_ci95_half_width": 115.57327808157387
+      },
+      "paired_delta_vs_public_bb100": 0.0,
+      "paired_delta_ci95_half_width": 0.0
+    },
+    {
+      "name": "r1-12",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -1002.4483333333334,
+        "deal_ci95_half_width": 767.0887516750787
+      },
+      "paired_delta_vs_public_bb100": -960.6266666666667,
+      "paired_delta_ci95_half_width": 783.8411184920913
+    },
+    {
+      "name": "seed-42-iter-25",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -887.9866666666667,
+        "deal_ci95_half_width": 782.6483900598007
+      },
+      "paired_delta_vs_public_bb100": -846.165,
+      "paired_delta_ci95_half_width": 795.2065724391209
+    },
+    {
+      "name": "seed-42-iter-50",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -764.1966666666667,
+        "deal_ci95_half_width": 803.5576622647553
+      },
+      "paired_delta_vs_public_bb100": -722.375,
+      "paired_delta_ci95_half_width": 805.6314157901792
+    },
+    {
+      "name": "seed-42-iter-100",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -708.04,
+        "deal_ci95_half_width": 799.5661276305011
+      },
+      "paired_delta_vs_public_bb100": -666.2183333333334,
+      "paired_delta_ci95_half_width": 798.592647864984
+    },
+    {
+      "name": "seed-43-iter-25",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -634.4033333333333,
+        "deal_ci95_half_width": 761.722854422823
+      },
+      "paired_delta_vs_public_bb100": -592.5816666666667,
+      "paired_delta_ci95_half_width": 773.3871880969443
+    },
+    {
+      "name": "seed-43-iter-50",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -630.7716666666666,
+        "deal_ci95_half_width": 765.0642056277019
+      },
+      "paired_delta_vs_public_bb100": -588.9499999999999,
+      "paired_delta_ci95_half_width": 777.9152020605156
+    },
+    {
+      "name": "seed-43-iter-100",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -1024.6483333333333,
+        "deal_ci95_half_width": 864.7150131007814
+      },
+      "paired_delta_vs_public_bb100": -982.8266666666666,
+      "paired_delta_ci95_half_width": 885.4835930106358
+    },
+    {
+      "name": "seed-44-iter-25",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -504.745,
+        "deal_ci95_half_width": 732.3306744715312
+      },
+      "paired_delta_vs_public_bb100": -462.92333333333335,
+      "paired_delta_ci95_half_width": 752.3681585928758
+    },
+    {
+      "name": "seed-44-iter-50",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -731.87,
+        "deal_ci95_half_width": 780.0965657723701
+      },
+      "paired_delta_vs_public_bb100": -690.0483333333333,
+      "paired_delta_ci95_half_width": 789.0162171442244
+    },
+    {
+      "name": "seed-44-iter-100",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -704.5333333333333,
+        "deal_ci95_half_width": 797.0008601713755
+      },
+      "paired_delta_vs_public_bb100": -662.7116666666667,
+      "paired_delta_ci95_half_width": 798.3230536821449
+    }
+  ],
+  "limitations": [
+    "ESS is descriptive weight concentration, not an independent sample count",
+    "Common deals and action seeds pair outcomes but policy-dependent trajectories diverge",
+    "100 deals and three training seeds do not establish professional-level strength",
+    "Candidate selection needs a fresh held-out deal set before promotion",
+    "Weighted loss magnitudes are affected by changing replay distribution and are not strength scores"
+  ],
+  "within_seed_learning_trends": {
+    "42": {
+      "delta_100_vs_25_bb100": 179.9466666666667,
+      "paired_ci95_half_width": 457.8139997321814
+    },
+    "43": {
+      "delta_100_vs_25_bb100": -390.245,
+      "paired_ci95_half_width": 572.8781028076901
+    },
+    "44": {
+      "delta_100_vs_25_bb100": -199.78833333333333,
+      "paired_ci95_half_width": 492.98034240421987
+    }
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "complete": true,
+  "baseline_run": "/workspace/deep/artifacts/r1-learning-curve/20261106T015348055280Z",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "training": [
+    {
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "-m",
+        "training.train",
+        "--iterations",
+        "100",
+        "--traversals",
+        "32",
+        "--buffer-capacity",
+        "20000",
+        "--strategy-buffer-capacity",
+        "20000",
+        "--train-steps",
+        "16",
+        "--strategy-train-steps",
+        "16",
+        "--batch-size",
+        "128",
+        "--workers",
+        "1",
+        "--device",
+        "cpu",
+        "--seed",
+        "42",
+        "--checkpoint-dir",
+        "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/seed-42",
+        "--checkpoint-every",
+        "25",
+        "--save-resume-buffers",
+        "--no-stack-randomization",
+        "--opponent-exploration-start",
+        "0",
+        "--opponent-exploration-end",
+        "0",
+        "--average-sampler",
+        "fixed-opponent"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 223.44518304199937,
+      "peak_parent_rss_bytes": 427638784,
+      "log": "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/seed-42/train.log",
+      "seed": 42
+    },
+    {
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "-m",
+        "training.train",
+        "--iterations",
+        "100",
+        "--traversals",
+        "32",
+        "--buffer-capacity",
+        "20000",
+        "--strategy-buffer-capacity",
+        "20000",
+        "--train-steps",
+        "16",
+        "--strategy-train-steps",
+        "16",
+        "--batch-size",
+        "128",
+        "--workers",
+        "1",
+        "--device",
+        "cpu",
+        "--seed",
+        "43",
+        "--checkpoint-dir",
+        "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/seed-43",
+        "--checkpoint-every",
+        "25",
+        "--save-resume-buffers",
+        "--no-stack-randomization",
+        "--opponent-exploration-start",
+        "0",
+        "--opponent-exploration-end",
+        "0",
+        "--average-sampler",
+        "fixed-opponent"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 179.242259441,
+      "peak_parent_rss_bytes": 432590848,
+      "log": "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/seed-43/train.log",
+      "seed": 43
+    },
+    {
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "-m",
+        "training.train",
+        "--iterations",
+        "100",
+        "--traversals",
+        "32",
+        "--buffer-capacity",
+        "20000",
+        "--strategy-buffer-capacity",
+        "20000",
+        "--train-steps",
+        "16",
+        "--strategy-train-steps",
+        "16",
+        "--batch-size",
+        "128",
+        "--workers",
+        "1",
+        "--device",
+        "cpu",
+        "--seed",
+        "44",
+        "--checkpoint-dir",
+        "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/seed-44",
+        "--checkpoint-every",
+        "25",
+        "--save-resume-buffers",
+        "--no-stack-randomization",
+        "--opponent-exploration-start",
+        "0",
+        "--opponent-exploration-end",
+        "0",
+        "--average-sampler",
+        "fixed-opponent"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 171.1253554549994,
+      "peak_parent_rss_bytes": 434495488,
+      "log": "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/seed-44/train.log",
+      "seed": 44
+    }
+  ],
+  "evaluations": [
+    {
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/evaluate_fullhouse.py",
+        "--deals",
+        "100",
+        "--deal-seed",
+        "88110600",
+        "--arms",
+        "fullhouse",
+        "--timeout",
+        "180"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 19.458155354000155,
+      "peak_parent_rss_bytes": 377475072,
+      "log": "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/eval-public.log",
+      "name": "public",
+      "directory": "/workspace/deep/artifacts/fullhouse-evaluation/20261106T021804128244Z",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -37.31666666666667,
+        "deal_ci95_half_width": 126.52811941472244
+      }
+    },
+    {
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/evaluate_fullhouse.py",
+        "--deals",
+        "100",
+        "--deal-seed",
+        "88110600",
+        "--arms",
+        "fullhouse",
+        "--timeout",
+        "180",
+        "--model",
+        "/workspace/deep/artifacts/r1-learning-curve/20261106T015348055280Z/seed-42/iter_00100.npz"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 20.136406099999476,
+      "peak_parent_rss_bytes": 377487360,
+      "log": "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/eval-importance-42.log",
+      "name": "importance-42",
+      "directory": "/workspace/deep/artifacts/fullhouse-evaluation/20261106T021822996964Z",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": 190.13166666666666,
+        "deal_ci95_half_width": 819.9382882202239
+      }
+    },
+    {
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/evaluate_fullhouse.py",
+        "--deals",
+        "100",
+        "--deal-seed",
+        "88110600",
+        "--arms",
+        "fullhouse",
+        "--timeout",
+        "180",
+        "--model",
+        "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/seed-42/iter_00100.npz"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 16.67004349400031,
+      "peak_parent_rss_bytes": 377483264,
+      "log": "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/eval-fixed-42.log",
+      "name": "fixed-42",
+      "directory": "/workspace/deep/artifacts/fullhouse-evaluation/20261106T021842664079Z",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -18.273333333333323,
+        "deal_ci95_half_width": 817.8680993594893
+      }
+    },
+    {
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/evaluate_fullhouse.py",
+        "--deals",
+        "100",
+        "--deal-seed",
+        "88110600",
+        "--arms",
+        "fullhouse",
+        "--timeout",
+        "180",
+        "--model",
+        "/workspace/deep/artifacts/r1-learning-curve/20261106T015348055280Z/seed-43/iter_00100.npz"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 23.805429873999856,
+      "peak_parent_rss_bytes": 377487360,
+      "log": "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/eval-importance-43.log",
+      "name": "importance-43",
+      "directory": "/workspace/deep/artifacts/fullhouse-evaluation/20261106T021859383329Z",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -109.82833333333335,
+        "deal_ci95_half_width": 778.6116713286126
+      }
+    },
+    {
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/evaluate_fullhouse.py",
+        "--deals",
+        "100",
+        "--deal-seed",
+        "88110600",
+        "--arms",
+        "fullhouse",
+        "--timeout",
+        "180",
+        "--model",
+        "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/seed-43/iter_00100.npz"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 20.50619548299983,
+      "peak_parent_rss_bytes": 377483264,
+      "log": "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/eval-fixed-43.log",
+      "name": "fixed-43",
+      "directory": "/workspace/deep/artifacts/fullhouse-evaluation/20261106T021923578498Z",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -195.94833333333335,
+        "deal_ci95_half_width": 793.844131249758
+      }
+    },
+    {
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/evaluate_fullhouse.py",
+        "--deals",
+        "100",
+        "--deal-seed",
+        "88110600",
+        "--arms",
+        "fullhouse",
+        "--timeout",
+        "180",
+        "--model",
+        "/workspace/deep/artifacts/r1-learning-curve/20261106T015348055280Z/seed-44/iter_00100.npz"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 18.11790089799979,
+      "peak_parent_rss_bytes": 377479168,
+      "log": "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/eval-importance-44.log",
+      "name": "importance-44",
+      "directory": "/workspace/deep/artifacts/fullhouse-evaluation/20261106T021943944165Z",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": 208.3133333333333,
+        "deal_ci95_half_width": 849.7308158064319
+      }
+    },
+    {
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/evaluate_fullhouse.py",
+        "--deals",
+        "100",
+        "--deal-seed",
+        "88110600",
+        "--arms",
+        "fullhouse",
+        "--timeout",
+        "180",
+        "--model",
+        "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/seed-44/iter_00100.npz"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 18.59975211100027,
+      "peak_parent_rss_bytes": 377483264,
+      "log": "/workspace/deep/artifacts/r1-sampler/20261106T020828461505Z/eval-fixed-44.log",
+      "name": "fixed-44",
+      "directory": "/workspace/deep/artifacts/fullhouse-evaluation/20261106T022002054689Z",
+      "summary": {
+        "hands": 600,
+        "complete_deals": 100,
+        "bb_per_100": -182.725,
+        "deal_ci95_half_width": 794.7220711723052
+      }
+    }
+  ],
+  "deal_seed": 88110600,
+  "baseline_manifest_sha256": "906cc2f414693dcf22cf5953fef270fc77f6da75cc4760e21ea7caff36547849",
+  "source_hashes": {
+    "patches/fullhouse-r1.patch": "115aba59b61af41143c5721e01e060d2af479177401659feb63b2fb47a60cbce",
+    "native/fullhouse-r1/support.py": "a16f6797455ea870b2547c7ddd35fa2a3589f02422ccc6a23f42cf11ffb0cb22",
+    "scripts/run_r1_sampler_comparison.py": "958790decccaceb0e57ffd94693d3549dbcd0c830f406fd72f40459b2dc0b969",
+    "scripts/evaluate_fullhouse.py": "46dd0e86e5498b90212262fa681896cfc6a7eec2d1ae65f106be5f65e3f5cf89"
+  },
+  "strength_verified": false,
+  "paired_fixed_minus_importance": {
+    "42": {
+      "bb100": -208.40499999999997,
+      "ci95_half_width": 670.349091709764
+    },
+    "43": {
+      "bb100": -86.12,
+      "ci95_half_width": 518.8024620545987
+    },
+    "44": {
+      "bb100": -391.0383333333333,
+      "ci95_half_width": 521.5884100288686
+    }
+  }
+}

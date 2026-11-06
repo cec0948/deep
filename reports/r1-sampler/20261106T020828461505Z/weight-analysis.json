@@ -1,0 +1,86 @@
+{
+  "42": {
+    "importance": {
+      "count": 20000,
+      "positive_count": 20000,
+      "mean": 408420.3419223662,
+      "p50": 176.64,
+      "p95": 214084.2615625,
+      "p99": 3541997.9641498677,
+      "maximum": 777401446.4,
+      "ess": 37.74207537303465,
+      "ess_fraction": 0.0018871037686517325,
+      "max_mass_fraction": 0.09517173443674494,
+      "top_one_percent_mass_fraction": 0.8926362753463164
+    },
+    "fixed_opponent": {
+      "count": 7409,
+      "positive_count": 7409,
+      "mean": 0.5021001484680794,
+      "p50": 0.51,
+      "p95": 0.95,
+      "p99": 0.99,
+      "maximum": 1.0,
+      "ess": 5640.152102639762,
+      "ess_fraction": 0.7612568636306873,
+      "max_mass_fraction": 0.00026881286860964607,
+      "top_one_percent_mass_fraction": 0.020126019472804204
+    }
+  },
+  "43": {
+    "importance": {
+      "count": 20000,
+      "positive_count": 20000,
+      "mean": 406141.5324367321,
+      "p50": 138.24,
+      "p95": 174182.4,
+      "p99": 3106065.724299987,
+      "maximum": 1405123100.16,
+      "ess": 18.000830169746486,
+      "ess_fraction": 0.0009000415084873243,
+      "max_mass_fraction": 0.17298441404523032,
+      "top_one_percent_mass_fraction": 0.9089816191471612
+    },
+    "fixed_opponent": {
+      "count": 7176,
+      "positive_count": 7176,
+      "mean": 0.5220889074693423,
+      "p50": 0.53,
+      "p95": 0.96,
+      "p99": 1.0,
+      "maximum": 1.0,
+      "ess": 5482.083994905957,
+      "ess_fraction": 0.7639470449980431,
+      "max_mass_fraction": 0.00026691507563038667,
+      "top_one_percent_mass_fraction": 0.019217885445387838
+    }
+  },
+  "44": {
+    "importance": {
+      "count": 20000,
+      "positive_count": 20000,
+      "mean": 391467.16490350454,
+      "p50": 183.5008087158203,
+      "p95": 245813.76609374987,
+      "p99": 3906104.9494498703,
+      "maximum": 2141051443.1999998,
+      "ess": 11.94724849571105,
+      "ess_fraction": 0.0005973624247855525,
+      "max_mass_fraction": 0.2734650099872057,
+      "top_one_percent_mass_fraction": 0.8818503634017287
+    },
+    "fixed_opponent": {
+      "count": 7207,
+      "positive_count": 7207,
+      "mean": 0.5085777716109339,
+      "p50": 0.5,
+      "p95": 0.95,
+      "p99": 0.99,
+      "maximum": 1.0,
+      "ess": 5493.511684440971,
+      "ess_fraction": 0.762246660807683,
+      "max_mass_fraction": 0.00027282747481802405,
+      "top_one_percent_mass_fraction": 0.019900036013226673
+    }
+  }
+}

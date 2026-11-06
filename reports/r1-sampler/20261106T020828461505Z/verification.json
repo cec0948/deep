@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "hands_verified": 4200,
+  "paired_statistics_recomputed": true,
+  "same_engine": true,
+  "same_noregrets_model": true,
+  "tests_passed": 21,
+  "test_log_sha256": "9fca2e5a582e9b3b45ada5b0ad5addd524d0b9ab2f7cb8438fffac5d1f5087e3",
+  "strength_improvement_verified": false
+}

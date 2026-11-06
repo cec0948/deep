@@ -1,0 +1,184 @@
+--- a/training/train.py
++++ b/training/train.py
+@@ -3,6 +3,10 @@
+ from __future__ import annotations
+ 
+ import argparse
++import random
++from . import r1_support as r1
++STOP_AFTER = None
++AVERAGE_SAMPLER = "importance"
+ import time
+ from pathlib import Path
+ 
+@@ -324,16 +328,8 @@
+ 
+         legal_mask = feat_t[:, LEGAL_MASK_OFFSET : LEGAL_MASK_OFFSET + N_ACTIONS]
+ 
+-        # Per-sample advantage normalization across legal actions only
+-        with torch.no_grad():
+-            n_legal = legal_mask.sum(dim=1, keepdim=True).clamp(min=1)
+-            legal_adv = adv_t * legal_mask
+-            mean = legal_adv.sum(dim=1, keepdim=True) / n_legal
+-            var = ((legal_adv - mean * legal_mask) ** 2 * legal_mask).sum(
+-                dim=1, keepdim=True
+-            ) / n_legal
+-            std = (var + 1e-6).sqrt()
+-            adv_t = ((adv_t - mean) / std) * legal_mask
++        # Regrets are already in fixed BB units; do not center targets.
++        adv_t = adv_t * legal_mask
+ 
+         with torch.amp.autocast(
+             "cuda", dtype=torch.bfloat16, enabled=(device.type == "cuda")
+@@ -488,7 +484,20 @@
+         f"[Deep CFR] Stack randomization: {'ENABLED' if randomize_stacks else 'disabled'}"
+     )
+ 
+-    _init_numba()
++    if n_workers != 1 or device.type != 'cpu':
++        raise ValueError('R1 reference supports CPU workers=1 only')
++    if opponent_exploration_start != 0 or opponent_exploration_end != 0 or randomize_stacks:
++        raise ValueError('R1 reference requires epsilon=0 and fixed 100BB')
++    random.seed(seed);np.random.seed(seed);torch.manual_seed(seed)
++    torch.set_num_threads(1);torch.use_deterministic_algorithms(True)
++    r1.WEIGHT_HORIZON=n_iterations
++    r1.AVERAGE_SAMPLER=AVERAGE_SAMPLER
++    run_config=dict(revision=r1.REVISION,average_sampler=AVERAGE_SAMPLER,horizon=n_iterations,traversals=n_traversals,
++        buffer_capacity=buffer_capacity,strategy_buffer_capacity=strategy_buffer_capacity,
++        train_steps=train_steps,strategy_train_steps=strategy_train_steps,batch_size=batch_size,
++        lr=lr,seed=seed,checkpoint_every=checkpoint_every)
++    if not save_resume_buffers:raise ValueError('R1 checkpoints must include reservoirs')
++
+ 
+     global _EQUITY_TABLES
+     if _EQUITY_TABLES is None:
+@@ -530,6 +539,7 @@
+     if resume and resume_file.exists():
+         print(f"[Deep CFR] Resuming from {resume_file}")
+         checkpoint = torch.load(resume_file, map_location="cpu", weights_only=False)
++        if checkpoint.get('r1_config') != run_config:raise ValueError('Checkpoint config/revision mismatch')
+         net.load_state_dict(checkpoint["net"])
+         if "strategy_net" in checkpoint:
+             strategy_net.load_state_dict(checkpoint["strategy_net"])
+@@ -550,20 +560,21 @@
+                 "the training distribution."
+             )
+     elif resume and not resume_file.exists():
+-        print(
+-            f"[Deep CFR] --resume requested but {resume_file} does not exist; starting from scratch"
+-        )
++        raise FileNotFoundError(resume_file)
+     elif resume_file.exists():
+         print(
+             f"[Deep CFR] Found {resume_file}; starting fresh because --resume was not passed."
+         )
+ 
+     start_time = time.time()
++    if resume:
++        r1.restore_rng(checkpoint['r1_rng'],rng)
+     avg_loss = 0.0
+     avg_strategy_loss = 0.0
+     current_lr = lr
+ 
+-    for iteration in range(resume_iter + 1, n_iterations + 1):
++    end_iteration=min(n_iterations,STOP_AFTER or n_iterations)
++    for iteration in range(resume_iter + 1, end_iteration + 1):
+         iter_start = time.time()
+         traverser = (iteration - 1) % N_PLAYERS
+         opponent_exploration = _exploration_epsilon(
+@@ -602,12 +613,14 @@
+                 rng,
+                 _EQUITY_TABLES,
+                 opponent_exploration=opponent_exploration,
+-                strategy_buffer=strategy_buffer,
++                strategy_buffer=None,
+                 randomize_stacks=randomize_stacks,
+             )
+             n_samples = len(buffers[traverser]) - size_before
+             n_strategy_samples = len(strategy_buffer) - strategy_size_before
+ 
++        collection_stats=r1.collect_average(None,rng,n_traversals,net,strategy_buffer,iteration)
++        n_strategy_samples=len(strategy_buffer)-strategy_size_before
+         total_buf_size = sum(len(b) for b in buffers)
+         if total_buf_size >= batch_size * 2:
+             net = DuelingAdvantageNet(FEATURE_DIM, TRUNK_DIM, HEAD_DIM)
+@@ -658,6 +671,7 @@
+                     avg_strategy_loss = vloss
+             strategy_net = strategy_nets[control_name]
+ 
++        r1.log_diagnostics(ckpt_path/'diagnostics.jsonl',iteration,collection_stats,strategy_buffer,avg_loss,avg_strategy_loss)
+         iter_time = time.time() - iter_start
+         elapsed = time.time() - start_time
+         samples_per_sec = n_traversals / iter_time if iter_time > 0 else 0
+@@ -679,9 +693,10 @@
+             f"ETA={eta_min:.0f}min"
+         )
+ 
+-        if iteration % checkpoint_every == 0 or iteration == n_iterations:
++        if iteration % checkpoint_every == 0 or iteration == end_iteration:
+             save_path = ckpt_path / f"iter_{iteration:05d}.pt"
+             ckpt_data = {
++                'r1_config':run_config,'r1_rng':r1.pack_rng(rng),
+                 "net": net.state_dict(),
+                 "strategy_net": strategy_net.state_dict(),
+                 "iteration": iteration,
+@@ -709,14 +724,14 @@
+                     "export_advantage_npz": export_advantage_npz,
+                 },
+             }
+-            torch.save(ckpt_data, save_path)
++            r1.atomic_save(ckpt_data, save_path)
+ 
+             latest_data = ckpt_data
+             if save_resume_buffers:
+                 latest_data = dict(ckpt_data)
+                 latest_data["buffers"] = [b.state_dict() for b in buffers]
+                 latest_data["strategy_buffer"] = strategy_buffer.state_dict()
+-            torch.save(latest_data, resume_file)
++            r1.atomic_save(latest_data, resume_file)
+ 
+             exported: list[str] = []
+             for vname, _vsteps, _vtrunk in variants:
+@@ -829,7 +844,12 @@
+         help="Every N iterations, log strategy CE at step milestones for the longest variant "
+         "(0 = off). Answers whether the strategy net is still improving past 5K steps.",
+     )
++    parser.add_argument('--stop-after',type=int)
++    parser.add_argument('--average-sampler',choices=['importance','fixed-opponent'],default='importance')
+     args = parser.parse_args()
++    global STOP_AFTER,AVERAGE_SAMPLER
++    STOP_AFTER=args.stop_after
++    AVERAGE_SAMPLER=args.average_sampler
+ 
+     strategy_variants = (
+         _parse_strategy_variants(args.strategy_variants)
+--- a/training/buffer.py
++++ b/training/buffer.py
+@@ -4,6 +4,7 @@
+ 
+ import numpy as np
+ import torch
++from . import r1_support as r1
+ 
+ 
+ class ReservoirBuffer:
+@@ -105,8 +106,7 @@
+         indices = np.random.randint(0, self.size, size=min(batch_size, self.size))
+         features_batch = self.features[indices]
+         weights = self.iterations[indices]
+-        max_w = weights.max().clip(min=1.0)
+-        weights = (weights / max_w) ** 1.5
++        weights = r1.time_weights(weights)
+         if self.store_sample_weights:
+             weights = weights * self.sample_weights[indices]
+         return features_batch, self.advantages[indices], weights
+@@ -217,8 +217,7 @@
+         features = self._gpu_features[indices]
+ 
+         weights = self._gpu_iterations[indices]
+-        max_w = weights.max().clamp(min=1.0)
+-        weights = (weights / max_w) ** 1.5
++        weights = r1.time_weights(weights)
+ 
+         return features, self._gpu_advantages[indices], weights
+ 
