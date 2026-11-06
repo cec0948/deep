@@ -1,0 +1,34 @@
+{
+  "measured_utc": "2026-11-06T03:23:08.857868+00:00",
+  "checkpoint_iteration": 192,
+  "threads": 1,
+  "n_regret_roots_per_seat": 32,
+  "n_average_trajectories": 192,
+  "regret_sample_seconds_by_seat": [
+    1.254092192999451,
+    0.9528751689995261,
+    1.139410311001484,
+    1.266511926000021,
+    1.354001824000079,
+    1.1019702239991602
+  ],
+  "average_sample_seconds": 0.6474771499997587,
+  "estimated_seconds_per_256_root_iteration": {
+    "regret_traversals": 9.425148862666296,
+    "average_collection": 0.8633028666663449,
+    "regret_regression": 2.679880804000277,
+    "strategy_regression": 0.4461901049999142
+  },
+  "estimated_total_seconds": 13.414522638332832,
+  "neural_regression_fraction": 0.23303631394733715,
+  "ideal_total_speedup_if_regression_instant": 1.3038426957952947,
+  "ideal_total_speedup_if_regression_5x": 1.2291491005464177,
+  "limits": [
+    "GPU not measured",
+    "sampled traversal cost extrapolated to 256 roots",
+    "single checkpoint and one repeat",
+    "background training running concurrently",
+    "excludes checkpoint I/O and diagnostics",
+    "isolated copies of buffers; live checkpoint and training untouched"
+  ]
+}

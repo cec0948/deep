@@ -19,6 +19,7 @@
 - [R1 CPU 3-seed 학습 곡선과 가중치 집중도](docs/r1-learning-curve.md)
 - [평균 전략 수집 방식 비교와 고정 데이터 fitting 진단](docs/r1-sampler-comparison.md)
 - [중간 규모 CPU 학습 실행·상태·자동 평가](docs/fullhouse-medium-training.md)
+- [10일 목표·클라우드 서버 후보와 참고 예산](docs/pluribus-cloud-budget.md)
 
 현재는 기존 공개 엔진을 재사용해 6인·100BB 자기대국을 직접 학습하는 단계입니다. 상용 문의 경로는 중단했습니다. 프로급 실력은 아직 검증되지 않았습니다.
 

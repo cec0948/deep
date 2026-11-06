@@ -1,0 +1,75 @@
+{
+  "retrieved_at": "2026-11-06T04:01:27.449839+00:00",
+  "source_data_updated": "2025-04-24",
+  "source": "https://github.com/LeanerCloud/ec2-instances-info/blob/f9eafba8b0c94eb59a852a52c2f3c2da8370dcc5/data/instances.json",
+  "source_sha256": "ae2c81af7cac0c866ca85babdfbb7bff64b549bd342f607eda69c1e489376cf5",
+  "region": "us-east-1",
+  "os": "Linux",
+  "currency": "USD",
+  "live_official_quote_verified": false,
+  "official_quote_limit": "Official AWS pricing page CONNECT denied (403) by current environment network policy; no bypass attempted",
+  "excludes": [
+    "storage",
+    "network transfer",
+    "tax",
+    "unused capacity",
+    "interruption/restart overhead"
+  ],
+  "pluribus_reference_core_hours": 12288,
+  "cores_for_240h_ideal": 51.2,
+  "note": "vCPU count is not proof of physical-core or Pluribus throughput equivalence; benchmarks required",
+  "instances": [
+    {
+      "instance_type": "m7a.16xlarge",
+      "vcpus": 64,
+      "memory_gib": 256.0,
+      "processor": "AMD EPYC 9R14 Processor",
+      "linux_ondemand_usd_per_hour": 3.70944,
+      "cost_240h_usd": 890.27,
+      "cost_96h_usd": 356.11,
+      "cost_144h_usd": 534.16,
+      "historical_spot_min_usd_per_hour": "0.710500",
+      "historical_spot_max_usd_per_hour": "1.341500",
+      "historical_interruption_bucket": ">20%"
+    },
+    {
+      "instance_type": "c7a.32xlarge",
+      "vcpus": 128,
+      "memory_gib": 256.0,
+      "processor": "AMD EPYC 9R14 Processor",
+      "linux_ondemand_usd_per_hour": 6.56896,
+      "cost_240h_usd": 1576.55,
+      "cost_96h_usd": 630.62,
+      "cost_144h_usd": 945.93,
+      "historical_spot_min_usd_per_hour": "1.685700",
+      "historical_spot_max_usd_per_hour": "2.139300",
+      "historical_interruption_bucket": ">20%"
+    },
+    {
+      "instance_type": "m7a.32xlarge",
+      "vcpus": 128,
+      "memory_gib": 512.0,
+      "processor": "AMD EPYC 9R14 Processor",
+      "linux_ondemand_usd_per_hour": 7.41888,
+      "cost_240h_usd": 1780.53,
+      "cost_96h_usd": 712.21,
+      "cost_144h_usd": 1068.32,
+      "historical_spot_min_usd_per_hour": "1.796000",
+      "historical_spot_max_usd_per_hour": "2.389600",
+      "historical_interruption_bucket": ">20%"
+    },
+    {
+      "instance_type": "r7a.16xlarge",
+      "vcpus": 64,
+      "memory_gib": 512.0,
+      "processor": "AMD EPYC 9R14 Processor",
+      "linux_ondemand_usd_per_hour": 4.8688,
+      "cost_240h_usd": 1168.51,
+      "cost_96h_usd": 467.4,
+      "cost_144h_usd": 701.11,
+      "historical_spot_min_usd_per_hour": "0.846700",
+      "historical_spot_max_usd_per_hour": "1.679200",
+      "historical_interruption_bucket": ">20%"
+    }
+  ]
+}
