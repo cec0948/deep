@@ -29,6 +29,8 @@ def main():
         shutil.copytree(folder/'source',target/'source',symlinks=True,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
         for name in ('config.json','verification-0.json','verification-1.json'):
             shutil.copyfile(folder/name,target/name)
+        if (folder/'stage-snapshots.json').exists():
+            shutil.copyfile(folder/'stage-snapshots.json',target/'stage-snapshots.json')
         snapshots={}
         for seed in cfg['seeds']:
             origin=folder/f'seed-{seed}';dest=target/f'seed-{seed}';dest.mkdir()
@@ -40,6 +42,9 @@ def main():
             iteration=ck['iteration'];snapshots[str(seed)]=iteration
             for old in origin.glob('iter_*.*'):
                 if int(old.stem.split('_')[1])<iteration:shutil.copyfile(old,dest/old.name)
+            for old in origin.glob('stage_*.full.pt'):
+                if int(old.name.split('_')[1].split('.')[0])<=iteration:
+                    shutil.copyfile(old,dest/old.name)
             advdest=target/f'seed-{seed}_adv';advdest.mkdir()
             for old in (folder/f'seed-{seed}_adv').glob('iter_*.npz'):
                 if int(old.stem.split('_')[1])<iteration:shutil.copyfile(old,advdest/old.name)

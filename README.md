@@ -22,13 +22,14 @@
 - [600회 학습 완료·30,000핸드 평가 결과](docs/fullhouse-medium-results.md)
 - [성능 후퇴 원인 조사·564,000핸드 재평가·학습 엔진 오류](docs/fullhouse-regression-diagnosis.md)
 - [엔진 수정·평균 전략 안정화·새 버퍼 3-seed 재학습](docs/fullhouse-v3-training.md)
+- [V3 재학습 완료·288,000핸드 평가·실행 가능한 새 모델](docs/fullhouse-v3-results.md)
 - [10일 목표·클라우드 서버 후보와 참고 예산](docs/pluribus-cloud-budget.md)
 
 현재는 기존 공개 엔진을 재사용해 6인·100BB 자기대국을 직접 학습하는 단계입니다. 상용 문의 경로는 중단했습니다. 프로급 실력은 아직 검증되지 않았습니다.
 
 현재 환경에는 100만 회 트리 순회를 학습한 연구용 모델이 저장되어 있습니다. JSONL 호출은 `python scripts/run_poker.py`로 시작합니다. 학습은 CPU 기반 CFR이며 신경망 모델이 아닙니다.
 
-Fullhouse 신경망 backend도 연결했습니다: `python scripts/run_poker.py --backend fullhouse`. 공개 advantage 모델을 사용합니다. 후속 진단에서 찾은 짧은 올인 규칙 오류와 평균 전략 적합도 문제를 수정하고, **[V3의 새 버퍼 3-seed 재학습](docs/fullhouse-v3-training.md)**을 시작했습니다. `python scripts/train_fullhouse_v3.py status`로 실제 진행 상태를 확인하세요. 기존 실행과 기본 모델은 보존하며 프로급 실력은 미검증입니다.
+Fullhouse 신경망 backend도 연결했습니다: `python scripts/run_poker.py --backend fullhouse`. 공개 advantage 모델을 사용합니다. 짧은 올인 규칙 오류와 평균 전략 적합도 문제를 수정한 뒤, **[새 버퍼 3-seed×120회 재학습과 288,000핸드 평가](docs/fullhouse-v3-results.md)**를 완료했습니다. 기존 평균 전략 대비 개선됐으나, 60→120회 증가의 일관된 이득은 미확인입니다. 같은 학습의 advantage 정책이 더 유망한 결과를 보였습니다. 기존 실행과 기본 모델은 보존하며 프로급 실력은 미검증입니다.
 
 ```bash
 bash scripts/fetch_robopoker.sh

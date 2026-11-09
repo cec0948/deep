@@ -10,7 +10,7 @@
 
 ## 진행 순서
 
-최신 2026-11-09 구현·재학습: **`docs/fullhouse-v3-training.md`**. V3에 짧은 올인·runout·odd chip·추론 특징 수정을 적용했다. 86개 과거 반례와 새 2,000핸드/38,316상태를 참조 엔진과 비교하고, 평균 전략의 feature-stratified PPS + SWA fitting을 3개 초기화 seed로 검증했다. 빈 버퍼에서 학습 seed 42·43·44를 120회까지 진행하며, 같은 새 카드로 두 상대 풀에 60·120회 모델을 평가한다. `python scripts/train_fullhouse_v3.py status`가 실제 상태다. 실행 중인 고정 소스는 수정하지 않는다.
+최신 2026-11-09 구현·재학습 완료: **`docs/fullhouse-v3-results.md`**. V3 규칙·특징 수정과 평균 전략 fitting 안정화 후 빈 버퍼에서 seed 42·43·44 각각 120회 학습, 288,000핸드 평가·원시 로그 검산을 완료했다. 기존 평균 전략 대비 개선됐지만 60→120회 추가 이득은 일관되지 않다. 같은 학습의 advantage가 더 강했으며 seed 42가 다음 독립 평가 후보다. 기본 모델 자동 승격과 600회 단순 연장은 하지 않았다. 최종 검사에서는 regret fitting의 AA 폴드 수치 반례도 확인했다. 다음은 새 고정 버퍼의 regret fitting 보강, 독립 상대 평가, 평균 전략 collector/fitting의 남은 문제 분리다. 구현·원래 비교 조건은 `docs/fullhouse-v3-training.md`를 따른다.
 
 선행 원인 조사: **`docs/fullhouse-regression-diagnosis.md`**. 추가 564,000핸드 진단에서 600회 평균 전략의 후퇴, 짧은 올인 뒤 추가 콜 누락, 평균 전략 근사 손실과 마지막 fitting seed 변동성을 발견했다. 이 조사 당시에는 별도 프로세스에서만 수정 후보를 검증했으며, 위 V3에서 구현했다. 기존 V2 실행·버퍼를 단순 연장하거나 유료 규모로 확대하지 않는다.
 

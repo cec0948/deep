@@ -1,0 +1,48 @@
+{
+  "revision": "r1-cpu-v3",
+  "horizon": 600,
+  "through": 120,
+  "stages": [
+    12,
+    60,
+    120
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "traversals": 256,
+  "train_steps": 512,
+  "strategy_train_steps": 512,
+  "batch_size": 128,
+  "strategy_batch_size": 512,
+  "buffer_capacity": 100000,
+  "strategy_buffer_capacity": 200000,
+  "checkpoint_every": 12,
+  "average_sampler": "importance",
+  "strategy_optimizer": "feature-stratified-pps-swa-v1",
+  "parallel_jobs": 3,
+  "max_training_seconds_each_stage": 3600,
+  "max_evaluation_seconds_each": 1800,
+  "max_total_children_rss_bytes": 21474836480,
+  "evaluation_iterations": [
+    60,
+    120
+  ],
+  "evaluation_deals": 2000,
+  "evaluation_deal_seed": 160261109,
+  "fields": [
+    "noregrets",
+    "public"
+  ],
+  "baseline_models": {
+    "old-120": "artifacts/fullhouse-medium/20261106T023201457778Z/training/iter_00120.npz",
+    "old-600": "artifacts/fullhouse-medium/20261106T023201457778Z/training/iter_00600.npz"
+  },
+  "primary_comparisons": [
+    "all three final average strategies versus old-120, within each field",
+    "120 minus 60 for each self-play seed"
+  ],
+  "promotion": "none"
+}

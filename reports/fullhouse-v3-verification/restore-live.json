@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "5ffd93f6d33ef05130939fc41307a426abdd060e07e7f96e91c3aa45980cc3d0",
+  "seeds": {
+    "42": 60,
+    "43": 48,
+    "44": 60
+  },
+  "restored_checkpoint_config_buffers_valid": true,
+  "restored_models_rng_match_original_saved_iterations": true,
+  "restored_native_engine_executes": true,
+  "pids_cleared": true,
+  "note": "Selected members restored into a temporary directory. Training was not resumed there; exact continuous/resume behavior is separately tested."
+}

@@ -1,0 +1,34 @@
+{
+  "revision": "r1-cpu-v3",
+  "script_sha256": "9c51966438f03ca32912b6c8915f5d657f99d3f4305880ac6be72aa23e890177",
+  "sampling": {
+    "conditional_average_oracle": true,
+    "strata_mass": [
+      0.5,
+      0.5
+    ],
+    "zero_weight_support": true,
+    "exact_rng_replay": true
+  },
+  "rules": {
+    "hands": 10,
+    "compared_states": 1306,
+    "historical_counterexamples": 86,
+    "terminal_payoffs_checked": true,
+    "markers_and_inferred_streets_checked": true,
+    "three_way_odd_chips_pass": true,
+    "contract": "six equal 100BB starting stacks"
+  },
+  "resume": {
+    "continuous_equals_resumed": true,
+    "continuous_equals_repeat": true,
+    "includes": [
+      "models",
+      "reservoirs",
+      "RNG",
+      "config"
+    ],
+    "legacy_resume_rejected": true
+  },
+  "passed": true
+}

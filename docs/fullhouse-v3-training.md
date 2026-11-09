@@ -1,6 +1,6 @@
 # 엔진 수정 후 새 버퍼로 진행하는 3-seed 학습
 
-2026-11-09. 사용자가 요청한 엔진 수정 → 평균 전략 학습 안정화 → 새 버퍼 재학습을 `r1-cpu-v3`로 구현했다. 실행은 `artifacts/fullhouse-v3/20261109T034714104421Z/`이며, seed 42·43·44를 각각 빈 reservoir와 새 신경망에서 시작했다. **진행 상태는 `status.json`과 상태 명령으로 확인한다. 이 문서의 구현 검증은 강도 개선 판정과 구분한다.**
+2026-11-09. 사용자가 요청한 엔진 수정 → 평균 전략 학습 안정화 → 새 버퍼 재학습을 `r1-cpu-v3`로 구현했다. 실행은 `artifacts/fullhouse-v3/20261109T034714104421Z/`이며, seed 42·43·44를 각각 빈 reservoir와 새 신경망에서 시작했다. **세 seed 120회 학습과 288,000핸드 평가를 완료했다. [최종 결과](fullhouse-v3-results.md)를 먼저 읽는다.** 이 문서는 구현과 실행 전 고정한 비교 조건을 기록한다. 구현 검증은 강도 개선 판정과 구분한다.
 
 기존 600회 실행과 원본 upstream은 보존했다. [이전 원인 조사](fullhouse-regression-diagnosis.md)의 잘못된 게임에서 수집한 replay를 새 학습에 섞지 않는다. 기존 버퍼는 평균 전략 fitting 방식을 비교하는 별도 진단에만 사용했다.
 
@@ -39,6 +39,8 @@ NoRegrets의 고정된 Rust 규칙 모듈을 별도 `poker-rules` 실행 파일�
 
 AA 표적은 폴드 1.75%, 레이즈 68.14%이며 기존 600회 모델은 12.66%, 16.76%였다. 사전 설정한 fitting 기준(TV ≤0.08, AA 폴드 오차 ≤5%p, 레이즈 오차 ≤10%p)을 세 seed 모두 통과했다. plain stratified PPS의 첫 실험에서는 한 seed가 기준을 넘었고, 이를 보고 SWA를 추가했다. 최종 비교는 각 예산마다 초기화부터 독립적으로 다시 실행했다. 이 검사는 동일 버퍼의 재현 능력이며 holdout 일반화나 포커 최적 전략의 증명이 아니다.
 
+실제 새 버퍼는 `scripts/audit_fullhouse_v3_fit.py --iterations 60 120`으로 모든 저장 행과 상태 그룹별 적합도도 측정한다. 이 측정은 추가 학습을 하지 않는다. 행별 KL에는 같은 입력의 서로 다른 시점 표적 사이의 불일치도 포함되므로, root의 조건부 평균 TV와 같은 지표가 아니다. 60회와 120회의 버퍼 자체가 달라서 손실 수치만으로 학습 개선을 판정하지 않는다.
+
 ## 재학습·평가 예산
 
 [설정](../configs/fullhouse-v3.json)을 실행 전에 고정했다.
@@ -76,6 +78,8 @@ python scripts/train_fullhouse_v3.py resume
 ```
 
 학습 소스는 run의 `source/`에 고정하고, 관리 스크립트·추론기·평가기·규칙 엔진·비교 모델도 SHA-256으로 보호한다. 실행 도중 이 파일들을 수정하면 다음 구간을 거절한다. 12회 연속 실행, 6회+재개 6회, 같은 seed 반복 실행의 모델·버퍼·RNG·설정이 모두 정확히 일치했다. V2 checkpoint 재개는 거절한다. 추론용 npz와 버퍼가 없는 iteration pt는 정확 재개용 파일이 아니다.
+
+이번 실행은 세 seed의 60회 전체 checkpoint를 `stage_00060.full.pt`로 별도 복사해 보존했다. 원래 `latest.pt`는 계속 갱신되며, 이 중간 snapshot은 fitting 진단과 후속 대조 실험에 사용할 수 있다. 경로·해시는 run의 `stage-snapshots.json`에 기록한다. 백업을 임시 디렉터리에 풀어 모델·RNG·설정의 원본 일치와 native engine 실행도 검사했다([증거](../reports/fullhouse-v3-verification/restore-live.json)).
 
 새 모델을 명시적으로 지정해 JSONL로 호출할 수 있다.
 

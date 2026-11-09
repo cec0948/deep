@@ -8,5 +8,7 @@
 - `plain-pps-diagnostic.log`: SWA를 추가하기 전의 실패도 보존한다. 첫 PPS 실험에서 한 seed가 기준을 초과했으며, 이를 계기로 SWA를 추가했다.
 - `pytest.log`: 기존 검사와 당시 V3 검사를 합한 25개 통과. 이후 추가한 독립 사이드팟/runout 검사는 `pytest-layered.log`의 1개 통과다. 추가 후 전체 suite를 다시 실행한 것으로 세지 않는다.
 - `provenance.json`: 실제 학습에 고정한 소스 SHA-256과 검증 스크립트 해시. 원시 평가 로그에 같은 deal/좌석을 중복 삽입했을 때 검산기가 거절하는 부정 검사도 기록했다.
+- `restore-live.json`: 진행 중 백업을 임시 디렉터리에 풀어 세 seed의 모델·RNG·설정이 해당 원본 iteration과 일치하고, 버퍼가 있으며, native engine의 실행 권한과 JSON reset이 정상임을 확인했다. 임시 위치에서 실제 재학습은 하지 않았다.
+- `restore-final.json`: 최종 백업의 세 120회 전체 checkpoint, 세 60회 snapshot, 완료 상태·24개 평가 기록, 복원한 native engine을 검사했다. exporter는 압축 안의 일반 파일 215개를 모두 SHA-256으로 확인했다.
 
 AA의 자기 버퍼 평균을 잘 재현한다는 사실은 해당 표적이 최적 포커 전략이라는 뜻이 아니다. 상태 그룹 재가중은 유한한 공유 신경망의 투영 목적함수를 바꾼다. collector의 가중치 쏠림이나 6인 CFR 수렴 보장은 이 검사로 해결하지 않았다.

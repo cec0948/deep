@@ -1,0 +1,52 @@
+{
+  "request": {
+    "hero": 3,
+    "button": 0,
+    "hole": [
+      "Ac",
+      "Ad"
+    ],
+    "board": [],
+    "actions": [],
+    "seed": 42
+  },
+  "response": {
+    "ok": true,
+    "action": {
+      "kind": "raise",
+      "to": 225
+    },
+    "distribution": [
+      {
+        "action": {
+          "kind": "fold"
+        },
+        "probability": 0.29251597203361906
+      },
+      {
+        "action": {
+          "kind": "raise",
+          "to": 225
+        },
+        "probability": 0.707484027966381
+      }
+    ],
+    "policy_source": "neural_policy",
+    "backend": "fullhouse",
+    "model_type": "advantage",
+    "model_sha256": "e55db6483f68b29f91ef45b12f51bd91683ef9ecc9080650a85a8ce5e1da3d5a",
+    "model_iterations": null,
+    "strength_verified": false,
+    "players": 6,
+    "starting_stack_bb": 100,
+    "pot": 150,
+    "to_call": 100,
+    "raise_bounds": [
+      200,
+      10000
+    ],
+    "street": "Preflop",
+    "training_revision": "r1-cpu-v3"
+  },
+  "purpose": "Final saved advantage model through the public JSONL CLI, not a strength test."
+}

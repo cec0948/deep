@@ -148,14 +148,20 @@ def main():
             for other in ('public', 'old-120', 'old-600', f'seed-{seed}-average-60',
                           f'seed-{seed}-advantage-{cfg["through"]}'):
                 differences[f'{field}/seed-{seed}-final minus {other}'] = paired(blocks[final_key], blocks[f'{field}-{other}'])
+            advantage_key = f'{field}-seed-{seed}-advantage-{cfg["through"]}'
+            differences[f'{field}/seed-{seed}-advantage minus public (secondary)'] = paired(
+                blocks[advantage_key], blocks[f'{field}-public'])
         seed_values = [blocks[f'{field}-seed-{seed}-average-{cfg["through"]}'] for seed in cfg['seeds']]
         across_seeds_by_deal = [statistics.mean(v) for v in zip(*seed_values)]
         means = [statistics.mean(v) for v in seed_values]
+        at_sixty = [statistics.mean(v) for v in zip(*[
+            blocks[f'{field}-seed-{seed}-average-60'] for seed in cfg['seeds']])]
         groups[field] = dict(
             conditional_fixed_three_seeds=interval(across_seeds_by_deal),
             training_seed_mean_range=[min(means), max(means)],
             training_seed_mean_sample_sd=statistics.stdev(means),
             minus_old_120=paired(across_seeds_by_deal, blocks[f'{field}-old-120']),
+            minus_average_60=paired(across_seeds_by_deal, at_sixty),
             note='Deal-block interval conditional on these three fitted models; not uncertainty over new training seeds.')
     for key, expected in state['paired'].items():
         for name in ('bb_per_100', 'ci95_half_width', 'deals'):

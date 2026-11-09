@@ -1,0 +1,23 @@
+{
+  "42": {
+    "iteration": 60,
+    "path": "/workspace/deep/artifacts/fullhouse-v3/20261109T034714104421Z/seed-42/stage_00060.full.pt",
+    "sha256": "993e74a9c89c89aadcfc47caefaf06b10d76ea7d7e82c4f0435a3427367a0d01",
+    "strategy_rows": 148357,
+    "fresh_seed": 42
+  },
+  "43": {
+    "iteration": 60,
+    "path": "/workspace/deep/artifacts/fullhouse-v3/20261109T034714104421Z/seed-43/stage_00060.full.pt",
+    "sha256": "d40eb4b87bddd39b96e4ab9923f0014f145f2c4aa843e0d5afbb39107183e3dc",
+    "strategy_rows": 144741,
+    "fresh_seed": 43
+  },
+  "44": {
+    "iteration": 60,
+    "path": "/workspace/deep/artifacts/fullhouse-v3/20261109T034714104421Z/seed-44/stage_00060.full.pt",
+    "sha256": "d8a604527e2dcda27ab46869eb89942be790b1281bae86afad7a64f6bc31a135",
+    "strategy_rows": 139150,
+    "fresh_seed": 44
+  }
+}
