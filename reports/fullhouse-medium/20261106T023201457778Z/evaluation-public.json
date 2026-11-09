@@ -1,0 +1,189 @@
+{
+  "complete": true,
+  "deals_requested": 1000,
+  "deal_seed": 99110600,
+  "candidate_path": "/workspace/deep/.cache/fullhouse-bot/data/deep_cfr_model.npz",
+  "candidate_model_type": "advantage",
+  "engine_binary_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+  "runner_sha256": "46dd0e86e5498b90212262fa681896cfc6a7eec2d1ae65f106be5f65e3f5cf89",
+  "runtime_sha256": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+  "summary": {
+    "fullhouse": {
+      "hands": 6000,
+      "complete_deals": 1000,
+      "bb_per_100": 71.96300000000001,
+      "deal_ci95_half_width": 55.46486134855169
+    }
+  },
+  "latency": {
+    "fullhouse": {
+      "count": 7105,
+      "p50_ms": 0.3716369974426925,
+      "p95_ms": 0.8293319988297299
+    },
+    "noregrets": {
+      "count": 47691,
+      "p50_ms": 0.056488999689463526,
+      "p95_ms": 0.27465099992696196
+    }
+  },
+  "decisions": {
+    "noregrets/preflop/6": {
+      "decisions": 9349,
+      "fallback": 38
+    },
+    "fullhouse/preflop/5": {
+      "decisions": 2081,
+      "fallback": 0
+    },
+    "noregrets/preflop/4": {
+      "decisions": 10070,
+      "fallback": 1195
+    },
+    "noregrets/flop/4": {
+      "decisions": 1114,
+      "fallback": 777
+    },
+    "noregrets/turn/4": {
+      "decisions": 646,
+      "fallback": 638
+    },
+    "noregrets/river/4": {
+      "decisions": 633,
+      "fallback": 633
+    },
+    "noregrets/preflop/5": {
+      "decisions": 10167,
+      "fallback": 443
+    },
+    "fullhouse/preflop/3": {
+      "decisions": 781,
+      "fallback": 0
+    },
+    "fullhouse/preflop/6": {
+      "decisions": 2189,
+      "fallback": 0
+    },
+    "noregrets/preflop/3": {
+      "decisions": 7240,
+      "fallback": 1104
+    },
+    "noregrets/preflop/2": {
+      "decisions": 2416,
+      "fallback": 356
+    },
+    "noregrets/flop/2": {
+      "decisions": 1286,
+      "fallback": 305
+    },
+    "noregrets/turn/2": {
+      "decisions": 511,
+      "fallback": 366
+    },
+    "noregrets/flop/3": {
+      "decisions": 1750,
+      "fallback": 839
+    },
+    "noregrets/turn/3": {
+      "decisions": 739,
+      "fallback": 689
+    },
+    "noregrets/river/3": {
+      "decisions": 700,
+      "fallback": 692
+    },
+    "noregrets/river/2": {
+      "decisions": 388,
+      "fallback": 363
+    },
+    "fullhouse/preflop/4": {
+      "decisions": 1526,
+      "fallback": 0
+    },
+    "fullhouse/flop/2": {
+      "decisions": 98,
+      "fallback": 0
+    },
+    "fullhouse/turn/2": {
+      "decisions": 33,
+      "fallback": 0
+    },
+    "fullhouse/river/2": {
+      "decisions": 20,
+      "fallback": 0
+    },
+    "noregrets/flop/5": {
+      "decisions": 270,
+      "fallback": 220
+    },
+    "fullhouse/flop/5": {
+      "decisions": 13,
+      "fallback": 0
+    },
+    "noregrets/turn/5": {
+      "decisions": 204,
+      "fallback": 200
+    },
+    "fullhouse/turn/5": {
+      "decisions": 6,
+      "fallback": 0
+    },
+    "noregrets/river/5": {
+      "decisions": 204,
+      "fallback": 203
+    },
+    "fullhouse/river/5": {
+      "decisions": 6,
+      "fallback": 0
+    },
+    "fullhouse/preflop/2": {
+      "decisions": 193,
+      "fallback": 0
+    },
+    "fullhouse/flop/3": {
+      "decisions": 76,
+      "fallback": 0
+    },
+    "fullhouse/turn/3": {
+      "decisions": 14,
+      "fallback": 0
+    },
+    "fullhouse/flop/4": {
+      "decisions": 29,
+      "fallback": 0
+    },
+    "fullhouse/turn/4": {
+      "decisions": 13,
+      "fallback": 0
+    },
+    "fullhouse/river/4": {
+      "decisions": 13,
+      "fallback": 0
+    },
+    "fullhouse/river/3": {
+      "decisions": 13,
+      "fallback": 0
+    },
+    "noregrets/flop/6": {
+      "decisions": 4,
+      "fallback": 3
+    },
+    "fullhouse/flop/6": {
+      "decisions": 1,
+      "fallback": 0
+    }
+  },
+  "elapsed_seconds": 33.23369040000034,
+  "peak_sampled_rss_bytes": 1490690048,
+  "model_hashes": {
+    "fullhouse": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+    "noregrets": "01d87a3ceeb51ed42a4b784df6777355c49aa8deba5aceab7cc1f763bd1fb708"
+  },
+  "strength_verified": false,
+  "limitations": [
+    "pilot only",
+    "same-noregrets sanity is statistical, not exactly zero",
+    "nominal deal-block CI",
+    "RSS sampled before decisions"
+  ]
+}

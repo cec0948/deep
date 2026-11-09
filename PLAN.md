@@ -10,9 +10,11 @@
 
 ## 진행 순서
 
+최신 2026-11-09: 600회 학습·30,000핸드 평가 완료 (`docs/fullhouse-medium-results.md`). 환경 연결을 복구하니 원본 파일이 남아 있었고, 학습은 이미 11월 6일 완료된 상태였다. 후속 평가의 엔진 timeout을 같은 코드로 재실행해 남은 평가를 완료했다. 확대 600회는 작은 100회 모델 대비 +397.96±220.40 BB/100 개선했으나 공개 모델 대비 -348.42±250.41이며, 120→600회 추가 개선은 미확인이다. 새 모델을 기본값으로 승격하지 않았다. 최종 600회 checkpoint 백업을 만들고 원시 평가와 요약을 reports/에 보존했다.
+
 10일 내 확대 학습을 위한 임대 서버/가격 검토: `docs/pluribus-cloud-budget.md`. 공식 실시간 요금은 네트워크 제한으로 미확인이고, 2025-04-24 공개 가격 스냅샷으로만 참고 예산을 계산했다. 현재 Fullhouse의 workers=1 제한을 해소하거나 병렬 Rust 경로를 실측한 뒤 대여 후보를 정한다. 현재 실제 학습은 유지한다. 서버 대여·결제·장기 약정은 승인되지 않았으며 실행하지 않았다.
 
-중간 규모 실제 학습 실행 중: `docs/fullhouse-medium-training.md`. seed 42, 600회×256 root traversals, regret 512/strategy 128 optimizer steps, 버퍼 확대, checkpoint 12회 간격으로 시작했다. 실행 `artifacts/fullhouse-medium/20261106T023201457778Z/`의 `status.json`이 현재 진행률이다. 독립 supervisor가 학습 완료 후 120/300/600회 모델·공개 모델·이전 작은 모델을 후보당 1,000 deals(6,000핸드)로 자동 평가한다. 학습 완료/강도 개선은 아직 선언하지 않는다.
+중간 규모 실제 학습 시작 당시 기록(현재 완료): `docs/fullhouse-medium-training.md`. seed 42, 600회×256 root traversals, regret 512/strategy 128 optimizer steps, 버퍼 확대, checkpoint 12회 간격으로 시작했다. 실행 `artifacts/fullhouse-medium/20261106T023201457778Z/`의 `status.json`이 현재 진행률이다. 독립 supervisor가 학습 완료 후 120/300/600회 모델·공개 모델·이전 작은 모델을 후보당 1,000 deals(6,000핸드)로 자동 평가한다. 학습 완료/강도 개선은 아직 선언하지 않는다.
 
 최신 collector/fitting 실험 완료: `docs/r1-sampler-comparison.md`. fixed-opponent 실험 옵션과 oracle·sampler 재개 guard를 추가했고 전체 21개 검사를 통과했다. 100회 × 3-seed 학습에서 가중치 쏠림은 크게 줄었으나, 새로운 공통 deal의 4,200핸드 비교에서 강도 개선은 미확인(세 점추정 불리, 모두 CI에 0 포함)이다. 기존 기본 모델/importance 기본값은 유지한다. 고정 replay에서 16-step regret fitting 부족의 근거를 확인했으므로, 다음은 regret 128/512-step ablation이며 요약 특징의 투영 목표 차이와 상태 coverage도 별도로 검토한다.
 

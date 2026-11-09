@@ -1,6 +1,6 @@
 # 여기서 작업 이어가기
 
-목표는 자체 프로그램에서 실행하는 6인·100BB 포커 AI다. 현재는 검증한 Fullhouse CPU 기준선을 확대 학습 중이며, 프로급 강도는 아직 검증하지 않았다. 구현·연구 판정·작은 실험 요약은 Git에 저장한다. **현재 학습 가중치와 프로세스는 Git으로 전송되지 않으므로, 다른 환경에서 같은 학습을 재개하려면 별도 checkpoint 백업이 필요하다.**
+목표는 자체 프로그램에서 실행하는 6인·100BB 포커 AI다. 600회 확대 학습과 후속 30,000핸드 평가를 완료했으며, 프로급 강도는 아직 검증하지 않았다. 최신 분석은 [학습·평가 결과](fullhouse-medium-results.md)를 먼저 읽는다. 구현·연구 판정·작은 실험 요약은 Git에 저장한다. **현재 학습 가중치와 프로세스는 Git으로 전송되지 않으므로, 다른 환경에서 같은 학습을 재개하려면 별도 checkpoint 백업이 필요하다.**
 
 ## 현재 환경에서 이어가기
 
@@ -9,7 +9,7 @@ cd /workspace/deep
 python scripts/train_fullhouse_medium.py status
 ```
 
-`supervisor_alive`와 `child_alive`가 true이면 기존 학습이 실행 중이다. 그대로 둔다. 실행 환경이 유지되는 동안 supervisor가 600회 학습과 후속 평가를 계속한다. 환경이 꺼진 뒤 다시 실행되어 프로세스가 없는 경우에는:
+먼저 `status`가 `complete`이면 학습·평가가 끝난 상태이므로 결과 분석부터 한다. 실패/중단 상태에서만 재개한다. 진행 중 상태에서 `supervisor_alive`와 `child_alive`가 true이면 기존 학습이 실행 중이다. 그대로 둔다. 실행 환경이 유지되는 동안 supervisor가 600회 학습과 후속 평가를 계속한다. 환경이 꺼진 뒤 다시 실행되어 프로세스가 없는 경우에는:
 
 ```bash
 python scripts/train_fullhouse_medium.py resume
@@ -33,7 +33,7 @@ python scripts/train_fullhouse_medium.py resume
 
 ## 재개 백업
 
-이번 푸시에 맞춘 백업의 이름·용량·SHA-256·저장 반복 수는 [reports/checkpoint-export.json](../reports/checkpoint-export.json)에 기록했다. **백업 파일 자체는 현재 환경의 `artifacts/exports/`에 있으며 GitHub에는 올라가지 않는다. 환경을 없애기 전에 파일을 따로 내려받아 보관해야 한다.**
+최신 600회 최종 백업의 이름·용량·SHA-256·저장 반복 수는 [reports/checkpoint-export.json](../reports/checkpoint-export.json)에 기록했다. **백업 파일 자체는 현재 환경의 `artifacts/exports/`에 있으며 GitHub에는 올라가지 않는다. 환경을 없애기 전에 파일을 따로 내려받아 보관해야 한다.**
 
 원하는 시점의 더 최신 백업을 만들려면:
 
@@ -81,7 +81,7 @@ python scripts/train_fullhouse_medium.py resume
 ## 다음 담당자가 먼저 할 일
 
 1. 상태 명령으로 실제 실행이 계속되는지 확인한다. 이미 실행 중인 학습을 다시 시작하지 않는다.
-2. 600회 완료 후 원시 평가와 결과 파일을 확인한다. 작은 실험에서 개선이 안 보였다는 이유로 확대 학습의 결과를 미리 판정하지 않는다.
+2. 600회 완료 보고서와 Git에 보존된 원시 평가·결과 파일을 확인한다. 작은 실험에서 개선이 안 보였다는 이유로 확대 학습의 결과를 미리 판정하지 않는다.
 3. 중간→최종 모델의 동일 deal 손익 차이와 오차 범위를 확인하고, 개선 가능성이 있으면 독립 학습 seed로 재현한다.
 4. 실행 정확성과 강도 판정을 구분한다. 51개 요약 특징의 imperfect recall·공유 신경망 근사·6인 균형 수렴은 별도 이론 쟁점이다.
 

@@ -19,13 +19,14 @@
 - [R1 CPU 3-seed 학습 곡선과 가중치 집중도](docs/r1-learning-curve.md)
 - [평균 전략 수집 방식 비교와 고정 데이터 fitting 진단](docs/r1-sampler-comparison.md)
 - [중간 규모 CPU 학습 실행·상태·자동 평가](docs/fullhouse-medium-training.md)
+- [600회 학습 완료·30,000핸드 평가 결과](docs/fullhouse-medium-results.md)
 - [10일 목표·클라우드 서버 후보와 참고 예산](docs/pluribus-cloud-budget.md)
 
 현재는 기존 공개 엔진을 재사용해 6인·100BB 자기대국을 직접 학습하는 단계입니다. 상용 문의 경로는 중단했습니다. 프로급 실력은 아직 검증되지 않았습니다.
 
 현재 환경에는 100만 회 트리 순회를 학습한 연구용 모델이 저장되어 있습니다. JSONL 호출은 `python scripts/run_poker.py`로 시작합니다. 학습은 CPU 기반 CFR이며 신경망 모델이 아닙니다.
 
-Fullhouse 신경망 backend도 연결했습니다: `python scripts/run_poker.py --backend fullhouse`. 공개 advantage 모델을 사용하며, 기능용 평균 전략 신경망은 별도로 작은 직접 학습/재개까지 검증했습니다. 현재 회귀·통합 검사 21개를 통과했으며, 작은 CPU 실험을 거쳐 600회 중간 규모 학습을 실행 중입니다. 이전 upstream 검사와 대전 결과는 각 실행 문서를 참고하세요. 프로급 실력은 미검증입니다.
+Fullhouse 신경망 backend도 연결했습니다: `python scripts/run_poker.py --backend fullhouse`. 공개 advantage 모델을 사용하며, 기능용 평균 전략 신경망은 별도로 작은 직접 학습/재개까지 검증했습니다. 현재 회귀·통합 검사 21개를 통과했으며, 600회 중간 규모 학습과 30,000핸드 평가를 완료했습니다. 작은 기능 모델보다 개선됐지만 공개 모델에는 아직 못 미쳤습니다. 이전 upstream 검사와 대전 결과는 각 실행 문서를 참고하세요. 프로급 실력은 미검증입니다.
 
 ```bash
 bash scripts/fetch_robopoker.sh

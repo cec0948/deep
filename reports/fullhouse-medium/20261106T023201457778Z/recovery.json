@@ -1,0 +1,10 @@
+{
+  "verified_at": "2026-11-09T10:59:41.905381+09:00",
+  "environment_id": "ccarenv_b64_Y2NhcmVudl80OTFmMjA2YjRlYjA4MTkxYTkzNmI0ZmNlOWU0NmM4Ng",
+  "original_files_present_after_reconnection": true,
+  "training_completed_before_reconnection": true,
+  "prior_failure": "2026-11-06T05:02:02Z: evaluation small-100 first reset hit the engine response timeout; training was already complete",
+  "recovery": "Resumed supervisor from existing checkpoint=600. No retraining or source changes. Reused completed public evaluation; four remaining evaluations completed.",
+  "failure_cause": "Underlying cause of the prior timeout is unconfirmed; same code and files succeeded on retry.",
+  "retention_policy": "Automatic idle shutdown/deletion timing is not exposed by current environment status. No file deletion was observed in this incident."
+}

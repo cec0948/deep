@@ -1,0 +1,45 @@
+{
+  "verified_at": "2026-11-09T10:59:41.905381+09:00",
+  "training_complete": true,
+  "iteration": 600,
+  "regret_root_traversals": 153600,
+  "training_process_seconds": 8841.639076802,
+  "hands": 30000,
+  "evaluations": [
+    {
+      "name": "public",
+      "hands": 6000,
+      "deals": 1000,
+      "raw_sha256": "748f57de1920f299e3b32e71007d2d7ebf8852f29f3b39820c5dd15d3210f4ed"
+    },
+    {
+      "name": "small-100",
+      "hands": 6000,
+      "deals": 1000,
+      "raw_sha256": "8032aaeedb6c09a438822e723cc71457964b054a12d35c439437177e26ef6e6a"
+    },
+    {
+      "name": "medium-120",
+      "hands": 6000,
+      "deals": 1000,
+      "raw_sha256": "d9a4af012a0af535e18312e58b96765bf12685425047aba7887872ea7123bd96"
+    },
+    {
+      "name": "medium-300",
+      "hands": 6000,
+      "deals": 1000,
+      "raw_sha256": "7b41a6746d80ca0d7e72bd0abba088d2930334376d24bb6f5bb9973803408cf3"
+    },
+    {
+      "name": "medium-600",
+      "hands": 6000,
+      "deals": 1000,
+      "raw_sha256": "671c9c815c32955556a77a3a6dd98981e44c7e4bea318260977dd1780e0b5904"
+    }
+  ],
+  "chip_conservation": true,
+  "same_engine_runtime_runner_and_noregrets_model": true,
+  "paired_statistics_recomputed": true,
+  "model_npz_values_finite": true,
+  "note": "One learning seed, one NoRegrets field; nominal deal-block CIs. No professional-strength claim."
+}

@@ -1,13 +1,12 @@
 {
-  "archive": "artifacts/exports/fullhouse-medium-20261106T030535747284Z.tar.gz",
-  "bytes": 157641260,
-  "sha256": "7587c2cc988ff667f452a33cdd37651f23a941507999f8acad2827bd296f5a66",
-  "checkpoint_iteration": 132,
+  "archive": "artifacts/exports/fullhouse-medium-20261109T015247404110Z.tar.gz",
+  "bytes": 214834564,
+  "sha256": "bcd778f30016296785742ba9160c90c933f602f9aec48068fabc13ce6fbbf142",
+  "checkpoint_iteration": 600,
   "horizon": 600,
-  "exported_utc": "2026-11-06T03:05:42.032051+00:00",
+  "exported_utc": "2026-11-09T01:52:51.769539+00:00",
   "includes_frozen_training_source": true,
   "includes_evaluation_dependencies": true,
   "all_bundle_file_hashes_verified": true,
-  "verified_regular_files": 52,
-  "restore_checkpoint_verified": true
+  "verified_regular_files": 130
 }

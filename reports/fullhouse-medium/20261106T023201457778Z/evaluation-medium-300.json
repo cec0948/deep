@@ -1,0 +1,205 @@
+{
+  "complete": true,
+  "deals_requested": 1000,
+  "deal_seed": 99110600,
+  "candidate_path": "/workspace/deep/artifacts/fullhouse-medium/20261106T023201457778Z/training/iter_00300.npz",
+  "candidate_model_type": "average_strategy",
+  "engine_binary_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+  "runner_sha256": "46dd0e86e5498b90212262fa681896cfc6a7eec2d1ae65f106be5f65e3f5cf89",
+  "runtime_sha256": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+  "summary": {
+    "fullhouse": {
+      "hands": 6000,
+      "complete_deals": 1000,
+      "bb_per_100": -210.16933333333336,
+      "deal_ci95_half_width": 186.68820530476194
+    }
+  },
+  "latency": {
+    "fullhouse": {
+      "count": 8241,
+      "p50_ms": 0.40174599996589677,
+      "p95_ms": 1.0301730000037423
+    },
+    "noregrets": {
+      "count": 46734,
+      "p50_ms": 0.06419549998781804,
+      "p95_ms": 0.5801840000003722
+    }
+  },
+  "decisions": {
+    "noregrets/preflop/6": {
+      "decisions": 10640,
+      "fallback": 186
+    },
+    "fullhouse/preflop/5": {
+      "decisions": 2244,
+      "fallback": 0
+    },
+    "noregrets/preflop/4": {
+      "decisions": 9568,
+      "fallback": 1167
+    },
+    "noregrets/flop/4": {
+      "decisions": 1075,
+      "fallback": 761
+    },
+    "noregrets/turn/4": {
+      "decisions": 521,
+      "fallback": 516
+    },
+    "noregrets/river/4": {
+      "decisions": 465,
+      "fallback": 465
+    },
+    "noregrets/preflop/5": {
+      "decisions": 11024,
+      "fallback": 768
+    },
+    "fullhouse/preflop/3": {
+      "decisions": 1058,
+      "fallback": 0
+    },
+    "fullhouse/preflop/6": {
+      "decisions": 2228,
+      "fallback": 0
+    },
+    "noregrets/preflop/3": {
+      "decisions": 6189,
+      "fallback": 1011
+    },
+    "noregrets/preflop/2": {
+      "decisions": 1886,
+      "fallback": 283
+    },
+    "noregrets/flop/2": {
+      "decisions": 1027,
+      "fallback": 279
+    },
+    "noregrets/turn/2": {
+      "decisions": 388,
+      "fallback": 285
+    },
+    "noregrets/flop/3": {
+      "decisions": 1507,
+      "fallback": 744
+    },
+    "noregrets/turn/3": {
+      "decisions": 620,
+      "fallback": 579
+    },
+    "noregrets/river/3": {
+      "decisions": 529,
+      "fallback": 524
+    },
+    "noregrets/river/2": {
+      "decisions": 299,
+      "fallback": 276
+    },
+    "fullhouse/preflop/4": {
+      "decisions": 1837,
+      "fallback": 0
+    },
+    "fullhouse/flop/4": {
+      "decisions": 98,
+      "fallback": 0
+    },
+    "fullhouse/flop/3": {
+      "decisions": 169,
+      "fallback": 0
+    },
+    "fullhouse/turn/3": {
+      "decisions": 40,
+      "fallback": 0
+    },
+    "fullhouse/flop/2": {
+      "decisions": 98,
+      "fallback": 0
+    },
+    "noregrets/flop/5": {
+      "decisions": 496,
+      "fallback": 422
+    },
+    "fullhouse/flop/5": {
+      "decisions": 79,
+      "fallback": 0
+    },
+    "noregrets/turn/5": {
+      "decisions": 239,
+      "fallback": 236
+    },
+    "fullhouse/turn/5": {
+      "decisions": 26,
+      "fallback": 0
+    },
+    "fullhouse/preflop/2": {
+      "decisions": 261,
+      "fallback": 0
+    },
+    "fullhouse/river/3": {
+      "decisions": 16,
+      "fallback": 0
+    },
+    "noregrets/flop/6": {
+      "decisions": 84,
+      "fallback": 74
+    },
+    "fullhouse/flop/6": {
+      "decisions": 14,
+      "fallback": 0
+    },
+    "fullhouse/turn/6": {
+      "decisions": 4,
+      "fallback": 0
+    },
+    "noregrets/turn/6": {
+      "decisions": 26,
+      "fallback": 26
+    },
+    "fullhouse/turn/2": {
+      "decisions": 21,
+      "fallback": 0
+    },
+    "noregrets/river/6": {
+      "decisions": 7,
+      "fallback": 7
+    },
+    "fullhouse/river/6": {
+      "decisions": 1,
+      "fallback": 0
+    },
+    "fullhouse/river/2": {
+      "decisions": 10,
+      "fallback": 0
+    },
+    "noregrets/river/5": {
+      "decisions": 144,
+      "fallback": 144
+    },
+    "fullhouse/turn/4": {
+      "decisions": 20,
+      "fallback": 0
+    },
+    "fullhouse/river/5": {
+      "decisions": 9,
+      "fallback": 0
+    },
+    "fullhouse/river/4": {
+      "decisions": 8,
+      "fallback": 0
+    }
+  },
+  "elapsed_seconds": 44.02473612000006,
+  "peak_sampled_rss_bytes": 1485578240,
+  "model_hashes": {
+    "fullhouse": "d0e10464ecd47414819f11731d938b5ca1608cd9cb202027b906a90ea923279c",
+    "noregrets": "01d87a3ceeb51ed42a4b784df6777355c49aa8deba5aceab7cc1f763bd1fb708"
+  },
+  "strength_verified": false,
+  "limitations": [
+    "pilot only",
+    "same-noregrets sanity is statistical, not exactly zero",
+    "nominal deal-block CI",
+    "RSS sampled before decisions"
+  ]
+}
