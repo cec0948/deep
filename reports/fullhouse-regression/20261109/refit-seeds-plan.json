@@ -1,0 +1,15 @@
+{
+  "seeds": [
+    8,
+    9
+  ],
+  "reference_seed": 7,
+  "modes": [
+    "uniform-raw",
+    "pps"
+  ],
+  "evaluation_steps": 128,
+  "evaluation_deals": 5000,
+  "deal_seed": 120261109,
+  "purpose": "Repeat the fixed-buffer fitting comparison across 3 initialization/sampling seeds. Exploratory, no candidate promotion."
+}

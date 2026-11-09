@@ -1,0 +1,14 @@
+{
+  "deals": 5000,
+  "deal_seed": 120261109,
+  "models": {
+    "uniform-raw-seed7-128": "artifacts/regression-diagnosis/20261109/replay/uniform-raw-seed7-128.npz",
+    "pps-seed7-128": "artifacts/regression-diagnosis/20261109/replay/pps-seed7-128.npz",
+    "pps-seed7-2048": "artifacts/regression-diagnosis/20261109/replay/pps-seed7-2048.npz",
+    "advantage-120": "artifacts/regression-diagnosis/20261109/replay/advantage-120.npz",
+    "advantage-300": "artifacts/regression-diagnosis/20261109/replay/advantage-300.npz",
+    "advantage-600": "artifacts/regression-diagnosis/20261109/replay/advantage-600.npz"
+  },
+  "primary_refit_comparison": "pps-seed7-128 minus uniform-raw-seed7-128",
+  "limitations": "Exploratory fixed-replay ablations, same all-buffer data, architecture and initialization seed 7 for refits. Identical deck subset of extended evaluation. No training seed replication or promotion."
+}

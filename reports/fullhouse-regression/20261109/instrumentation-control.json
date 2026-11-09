@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "identical_hands": 180,
+  "raw_control": "/workspace/deep/artifacts/fullhouse-evaluation/20261109T024832186150Z",
+  "control_command": [
+    "/workspace/.venvs/fullhouse/bin/python",
+    "scripts/evaluate_fullhouse.py",
+    "--model",
+    "artifacts/fullhouse-medium/20261106T023201457778Z/training/iter_00600.npz",
+    "--arms",
+    "fullhouse",
+    "--deals",
+    "30",
+    "--deal-seed",
+    "120261109",
+    "--timeout",
+    "120"
+  ],
+  "comparison": "Unmodified evaluator versus instrumented evaluator, exact per-hand record equality for 30 fresh deals x 6 seats."
+}

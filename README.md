@@ -20,13 +20,14 @@
 - [평균 전략 수집 방식 비교와 고정 데이터 fitting 진단](docs/r1-sampler-comparison.md)
 - [중간 규모 CPU 학습 실행·상태·자동 평가](docs/fullhouse-medium-training.md)
 - [600회 학습 완료·30,000핸드 평가 결과](docs/fullhouse-medium-results.md)
+- [성능 후퇴 원인 조사·564,000핸드 재평가·학습 엔진 오류](docs/fullhouse-regression-diagnosis.md)
 - [10일 목표·클라우드 서버 후보와 참고 예산](docs/pluribus-cloud-budget.md)
 
 현재는 기존 공개 엔진을 재사용해 6인·100BB 자기대국을 직접 학습하는 단계입니다. 상용 문의 경로는 중단했습니다. 프로급 실력은 아직 검증되지 않았습니다.
 
 현재 환경에는 100만 회 트리 순회를 학습한 연구용 모델이 저장되어 있습니다. JSONL 호출은 `python scripts/run_poker.py`로 시작합니다. 학습은 CPU 기반 CFR이며 신경망 모델이 아닙니다.
 
-Fullhouse 신경망 backend도 연결했습니다: `python scripts/run_poker.py --backend fullhouse`. 공개 advantage 모델을 사용하며, 기능용 평균 전략 신경망은 별도로 작은 직접 학습/재개까지 검증했습니다. 현재 회귀·통합 검사 21개를 통과했으며, 600회 중간 규모 학습과 30,000핸드 평가를 완료했습니다. 작은 기능 모델보다 개선됐지만 공개 모델에는 아직 못 미쳤습니다. 이전 upstream 검사와 대전 결과는 각 실행 문서를 참고하세요. 프로급 실력은 미검증입니다.
+Fullhouse 신경망 backend도 연결했습니다: `python scripts/run_poker.py --backend fullhouse`. 공개 advantage 모델을 사용합니다. 600회 학습 후 추가 564,000핸드 진단에서 후반 성능 후퇴와 학습 엔진의 짧은 올인 처리 오류, 평균 전략의 큰 근사 오차를 확인했습니다. **다음 학습은 [진단 보고서](docs/fullhouse-regression-diagnosis.md)의 규칙 수정·새 버퍼 생성 순서를 먼저 따르세요.** 기존 회귀·통합 검사 21개만으로는 이 오류를 잡지 못했습니다. 프로급 실력은 미검증입니다.
 
 ```bash
 bash scripts/fetch_robopoker.sh

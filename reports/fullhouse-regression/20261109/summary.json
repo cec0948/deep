@@ -1,0 +1,1439 @@
+{
+  "evaluated_hands": 564000,
+  "candidates": {
+    "advantage-120": {
+      "deals": 5000,
+      "bb_per_100": 366.8781,
+      "ci95_half_width": 89.45577950581134,
+      "ci95": [
+        277.4223204941887,
+        456.33387950581135
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "df7d1b5431be67e53d594dd127f23dd2d5a53e03a7e8ba19b83f93172b210d06",
+      "behavior": {
+        "preflop": {
+          "decisions": 39824,
+          "fold": 17786,
+          "facing_bet": 39779,
+          "fold_facing_bet": 17786,
+          "probability_fold": 17917.97508463576,
+          "probability_call": 15733.227983335928,
+          "raise": 6267,
+          "all_in": 647,
+          "probability_raise": 6171.083085472095,
+          "call": 15769,
+          "probability_check": 1.7138465565475023,
+          "check": 2
+        },
+        "flop": {
+          "decisions": 4112,
+          "raise": 1900,
+          "all_in": 1149,
+          "facing_bet": 1668,
+          "probability_raise": 1889.996806706759,
+          "fold": 899,
+          "fold_facing_bet": 899,
+          "probability_fold": 919.7187384446659,
+          "probability_call": 628.2566353432528,
+          "probability_check": 674.0278195053144,
+          "call": 635,
+          "check": 678
+        },
+        "turn": {
+          "decisions": 1120,
+          "check": 524,
+          "facing_bet": 80,
+          "probability_check": 533.6222847112429,
+          "probability_raise": 517.8261778739189,
+          "raise": 531,
+          "all_in": 418,
+          "fold": 37,
+          "fold_facing_bet": 37,
+          "probability_fold": 37.68333333333333,
+          "call": 28,
+          "probability_call": 30.868204081502295
+        },
+        "river": {
+          "decisions": 617,
+          "check": 354,
+          "facing_bet": 7,
+          "probability_check": 347.0040421287217,
+          "probability_raise": 262.99595787127856,
+          "raise": 256,
+          "all_in": 192,
+          "fold": 5,
+          "fold_facing_bet": 5,
+          "probability_fold": 5.0,
+          "call": 2,
+          "probability_call": 2.0
+        }
+      }
+    },
+    "advantage-300": {
+      "deals": 5000,
+      "bb_per_100": 369.0396333333333,
+      "ci95_half_width": 94.75124368608392,
+      "ci95": [
+        274.2883896472494,
+        463.7908770194172
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "1259c1782ddafc7cef07abe085662414a0b6c739e9730cdee58a4c0012a957f3",
+      "behavior": {
+        "preflop": {
+          "decisions": 43705,
+          "fold": 13303,
+          "facing_bet": 43660,
+          "fold_facing_bet": 13303,
+          "probability_fold": 13410.574393923693,
+          "probability_call": 25364.519661262908,
+          "raise": 4926,
+          "all_in": 719,
+          "probability_raise": 4925.160564244788,
+          "call": 25470,
+          "probability_check": 4.745380568810999,
+          "check": 6
+        },
+        "flop": {
+          "decisions": 5623,
+          "raise": 1969,
+          "all_in": 1441,
+          "facing_bet": 2348,
+          "probability_check": 1477.517560827677,
+          "probability_raise": 1977.209457548392,
+          "check": 1479,
+          "call": 1368,
+          "fold_facing_bet": 807,
+          "probability_fold": 792.8931496731644,
+          "probability_call": 1375.3798319507625,
+          "fold": 807
+        },
+        "turn": {
+          "decisions": 1878,
+          "check": 1212,
+          "facing_bet": 138,
+          "probability_check": 1203.073422324724,
+          "raise": 541,
+          "all_in": 450,
+          "probability_raise": 549.3848515823795,
+          "call": 95,
+          "fold_facing_bet": 30,
+          "probability_call": 94.79470311695893,
+          "probability_fold": 30.74702297593687,
+          "fold": 30
+        },
+        "river": {
+          "decisions": 1305,
+          "check": 1033,
+          "facing_bet": 6,
+          "probability_check": 1021.7995258489327,
+          "raise": 267,
+          "all_in": 220,
+          "probability_raise": 277.8671408177338,
+          "fold": 2,
+          "fold_facing_bet": 2,
+          "probability_fold": 3.166666666666667,
+          "probability_call": 2.1666666666666665,
+          "call": 3
+        }
+      }
+    },
+    "advantage-600": {
+      "deals": 5000,
+      "bb_per_100": 21.5507,
+      "ci95_half_width": 47.83134896267783,
+      "ci95": [
+        -26.28064896267783,
+        69.38204896267783
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "44cc637733b0002614ca26ef0e90345fe2f92d3075a2688e420523b70b0ab425",
+      "behavior": {
+        "preflop": {
+          "decisions": 45214,
+          "fold": 26163,
+          "facing_bet": 45169,
+          "fold_facing_bet": 26163,
+          "probability_fold": 26141.288300270095,
+          "raise": 17179,
+          "all_in": 59,
+          "probability_raise": 17221.36312118108,
+          "probability_call": 1851.3485785488288,
+          "call": 1872
+        },
+        "flop": {
+          "decisions": 2965,
+          "raise": 911,
+          "all_in": 263,
+          "facing_bet": 1372,
+          "probability_raise": 921.4757309115647,
+          "check": 776,
+          "probability_check": 773.8163897515424,
+          "fold": 860,
+          "fold_facing_bet": 860,
+          "probability_fold": 867.168802730598,
+          "call": 418,
+          "probability_call": 402.5390766062984
+        },
+        "turn": {
+          "decisions": 1256,
+          "raise": 350,
+          "all_in": 175,
+          "facing_bet": 74,
+          "probability_check": 836.4350791557124,
+          "probability_raise": 348.2434401974635,
+          "check": 835,
+          "call": 27,
+          "fold_facing_bet": 44,
+          "probability_fold": 43.08333333333333,
+          "probability_call": 28.23814731349126,
+          "fold": 44
+        },
+        "river": {
+          "decisions": 1000,
+          "check": 758,
+          "facing_bet": 8,
+          "probability_check": 758.3679511101953,
+          "probability_raise": 233.63204888980516,
+          "fold": 6,
+          "fold_facing_bet": 6,
+          "probability_fold": 6.0,
+          "raise": 234,
+          "all_in": 109,
+          "call": 2,
+          "probability_call": 2.0
+        }
+      }
+    },
+    "medium-120": {
+      "deals": 10000,
+      "bb_per_100": -158.9724,
+      "ci95_half_width": 62.49820997373749,
+      "ci95": [
+        -221.47060997373748,
+        -96.4741900262625
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "cd3e4628a2cd3f38badfd45022b2a23cb605b18dcb387036e0608a38b2149821",
+      "behavior": {
+        "preflop": {
+          "decisions": 75950,
+          "fold": 38565,
+          "facing_bet": 75867,
+          "fold_facing_bet": 38565,
+          "probability_fold": 38611.68265798654,
+          "probability_call": 25842.265635098265,
+          "call": 25719,
+          "probability_raise": 11448.678415404687,
+          "raise": 11618,
+          "all_in": 2266,
+          "probability_check": 47.37329150961755,
+          "check": 48
+        },
+        "flop": {
+          "decisions": 4854,
+          "check": 783,
+          "facing_bet": 1918,
+          "probability_check": 805.0752620738976,
+          "probability_raise": 2423.4213166551817,
+          "raise": 2442,
+          "all_in": 1737,
+          "fold": 956,
+          "fold_facing_bet": 956,
+          "probability_fold": 952.0244945316591,
+          "probability_call": 673.4789267392613,
+          "call": 673
+        },
+        "turn": {
+          "decisions": 1195,
+          "check": 413,
+          "facing_bet": 75,
+          "probability_check": 432.6132172086462,
+          "probability_raise": 698.4949252490718,
+          "raise": 719,
+          "all_in": 529,
+          "call": 35,
+          "fold_facing_bet": 28,
+          "probability_fold": 32.26697084178031,
+          "probability_call": 31.62488670050331,
+          "fold": 28
+        },
+        "river": {
+          "decisions": 588,
+          "raise": 368,
+          "all_in": 287,
+          "facing_bet": 12,
+          "probability_check": 210.2012060850658,
+          "probability_raise": 368.4257899440497,
+          "check": 210,
+          "call": 4,
+          "fold_facing_bet": 6,
+          "probability_fold": 4.715396902670653,
+          "probability_call": 4.657607068214069,
+          "fold": 6
+        }
+      }
+    },
+    "medium-300": {
+      "deals": 10000,
+      "bb_per_100": -140.92095,
+      "ci95_half_width": 55.24122171110175,
+      "ci95": [
+        -196.16217171110176,
+        -85.67972828889825
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "d0e10464ecd47414819f11731d938b5ca1608cd9cb202027b906a90ea923279c",
+      "behavior": {
+        "preflop": {
+          "decisions": 75341,
+          "fold": 43857,
+          "facing_bet": 75258,
+          "fold_facing_bet": 43857,
+          "probability_fold": 43967.56369372244,
+          "probability_call": 19220.306502696705,
+          "call": 19174,
+          "probability_raise": 12113.109146955965,
+          "raise": 12268,
+          "all_in": 1265,
+          "probability_check": 40.02065662625919,
+          "check": 42
+        },
+        "flop": {
+          "decisions": 4515,
+          "check": 717,
+          "facing_bet": 1736,
+          "probability_check": 768.5108473337248,
+          "probability_raise": 2196.190441398942,
+          "raise": 2235,
+          "all_in": 1322,
+          "fold": 1057,
+          "fold_facing_bet": 1057,
+          "probability_fold": 1034.6331399641113,
+          "probability_call": 515.6655713032275,
+          "call": 506
+        },
+        "turn": {
+          "decisions": 1303,
+          "raise": 896,
+          "all_in": 622,
+          "facing_bet": 61,
+          "probability_check": 353.62184150191456,
+          "probability_raise": 893.861718726905,
+          "check": 351,
+          "fold": 39,
+          "fold_facing_bet": 39,
+          "probability_fold": 41.61643594517138,
+          "probability_call": 13.90000382601003,
+          "call": 17
+        },
+        "river": {
+          "decisions": 607,
+          "raise": 411,
+          "all_in": 324,
+          "facing_bet": 6,
+          "probability_check": 176.99760011650142,
+          "probability_raise": 424.88302532847354,
+          "check": 190,
+          "fold": 4,
+          "fold_facing_bet": 4,
+          "probability_fold": 3.3448464823301043,
+          "probability_call": 1.7745280726948836,
+          "call": 2
+        }
+      }
+    },
+    "medium-600": {
+      "deals": 10000,
+      "bb_per_100": -249.52856666666668,
+      "ci95_half_width": 73.82158447022177,
+      "ci95": [
+        -323.3501511368884,
+        -175.70698219644493
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "b3faf1209aba7c03ec5cb4c60bd2e62887082a75a2758dff4a0444ee10589fd2",
+      "behavior": {
+        "preflop": {
+          "decisions": 83124,
+          "fold": 22690,
+          "facing_bet": 83041,
+          "fold_facing_bet": 22690,
+          "probability_fold": 22553.238206753565,
+          "probability_call": 52833.97956573751,
+          "call": 52568,
+          "probability_raise": 7667.260011430994,
+          "raise": 7798,
+          "all_in": 1248,
+          "probability_check": 69.52221607790807,
+          "check": 68
+        },
+        "flop": {
+          "decisions": 10169,
+          "check": 3928,
+          "facing_bet": 4052,
+          "probability_check": 3900.0398546960364,
+          "probability_raise": 2511.4707209208464,
+          "fold": 989,
+          "fold_facing_bet": 989,
+          "probability_fold": 943.3115894676238,
+          "probability_call": 2814.1778349154874,
+          "raise": 2497,
+          "all_in": 1811,
+          "call": 2755
+        },
+        "turn": {
+          "decisions": 4340,
+          "check": 2345,
+          "facing_bet": 304,
+          "probability_check": 2351.738488259633,
+          "probability_raise": 1714.109022149581,
+          "raise": 1714,
+          "all_in": 1362,
+          "call": 233,
+          "fold_facing_bet": 48,
+          "probability_fold": 48.059278077060696,
+          "probability_call": 226.09321151371878,
+          "fold": 48
+        },
+        "river": {
+          "decisions": 2686,
+          "check": 1646,
+          "facing_bet": 26,
+          "probability_check": 1602.2476027128162,
+          "probability_raise": 1060.8425584592196,
+          "raise": 1017,
+          "all_in": 801,
+          "call": 18,
+          "fold_facing_bet": 5,
+          "probability_fold": 4.275834907972836,
+          "probability_call": 18.634003919988807,
+          "fold": 5
+        }
+      }
+    },
+    "pps-seed7-128": {
+      "deals": 5000,
+      "bb_per_100": -13.752266666666669,
+      "ci95_half_width": 91.011795121171,
+      "ci95": [
+        -104.76406178783768,
+        77.25952845450433
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "9335b3a6023d13cb560b07e956037456ab3654aff18be21b984c36c034b28207",
+      "behavior": {
+        "preflop": {
+          "decisions": 41001,
+          "fold": 16956,
+          "facing_bet": 40956,
+          "fold_facing_bet": 16956,
+          "probability_fold": 16935.486140833535,
+          "probability_call": 20416.580242081392,
+          "call": 20392,
+          "probability_raise": 3611.759209657241,
+          "raise": 3618,
+          "all_in": 698,
+          "probability_check": 37.17440742758749,
+          "check": 35
+        },
+        "flop": {
+          "decisions": 5034,
+          "check": 1714,
+          "facing_bet": 2127,
+          "probability_check": 1702.3330148232424,
+          "probability_raise": 1380.3750810093243,
+          "raise": 1369,
+          "all_in": 811,
+          "fold": 984,
+          "fold_facing_bet": 984,
+          "probability_fold": 973.839223049664,
+          "probability_call": 977.4526811177714,
+          "call": 967
+        },
+        "turn": {
+          "decisions": 2068,
+          "check": 1162,
+          "facing_bet": 159,
+          "probability_check": 1150.3099941952564,
+          "probability_raise": 774.5800422216788,
+          "raise": 757,
+          "all_in": 468,
+          "call": 93,
+          "fold_facing_bet": 56,
+          "probability_fold": 60.45224270036442,
+          "probability_call": 82.65772088269975,
+          "fold": 56
+        },
+        "river": {
+          "decisions": 1434,
+          "check": 877,
+          "facing_bet": 15,
+          "probability_check": 874.2446165063285,
+          "probability_raise": 546.4268651672365,
+          "raise": 542,
+          "all_in": 342,
+          "fold": 8,
+          "fold_facing_bet": 8,
+          "probability_fold": 5.691412938267148,
+          "probability_call": 7.637105388168313,
+          "call": 7
+        }
+      }
+    },
+    "pps-seed7-2048": {
+      "deals": 5000,
+      "bb_per_100": 60.00346666666667,
+      "ci95_half_width": 81.6189252833477,
+      "ci95": [
+        -21.61545861668104,
+        141.6223919500144
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "5d2654260bc5493632dff63c00fa46a83f1e87e7fb98b65df7937a1b87e0d0d6",
+      "behavior": {
+        "preflop": {
+          "decisions": 36718,
+          "fold": 21158,
+          "facing_bet": 36673,
+          "fold_facing_bet": 21158,
+          "probability_fold": 21165.78710811485,
+          "probability_call": 12524.940598529149,
+          "probability_raise": 3000.5387532388136,
+          "call": 12528,
+          "raise": 3008,
+          "all_in": 353,
+          "probability_check": 26.73354011725792,
+          "check": 24
+        },
+        "flop": {
+          "decisions": 2524,
+          "check": 679,
+          "facing_bet": 1016,
+          "probability_check": 686.8522962185561,
+          "probability_raise": 924.4268691869759,
+          "raise": 945,
+          "all_in": 550,
+          "fold_facing_bet": 452,
+          "probability_fold": 462.21949047624673,
+          "probability_call": 450.50134411822324,
+          "call": 448,
+          "fold": 452
+        },
+        "turn": {
+          "decisions": 888,
+          "check": 466,
+          "facing_bet": 55,
+          "probability_check": 468.9981156277745,
+          "probability_raise": 371.24964592799864,
+          "raise": 372,
+          "all_in": 224,
+          "fold": 26,
+          "fold_facing_bet": 26,
+          "probability_fold": 20.74503878604869,
+          "probability_call": 27.007199658178852,
+          "call": 24
+        },
+        "river": {
+          "decisions": 598,
+          "check": 394,
+          "facing_bet": 3,
+          "probability_check": 388.5460566642016,
+          "probability_raise": 206.6729232338224,
+          "raise": 201,
+          "all_in": 133,
+          "fold": 2,
+          "fold_facing_bet": 2,
+          "probability_fold": 1.3004887335682078,
+          "probability_call": 1.4805313684073669,
+          "call": 1
+        }
+      }
+    },
+    "pps-seed8-128": {
+      "deals": 5000,
+      "bb_per_100": 21.194899999999997,
+      "ci95_half_width": 68.1267199836579,
+      "ci95": [
+        -46.93181998365791,
+        89.32161998365791
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "ed0e090c8c2ec7c6e55a921f8eba27e43560d3390127d5258fe106de4c477a98",
+      "behavior": {
+        "preflop": {
+          "decisions": 35505,
+          "fold": 24315,
+          "facing_bet": 35460,
+          "fold_facing_bet": 24315,
+          "probability_fold": 24247.69941242634,
+          "probability_call": 8805.277668096294,
+          "probability_raise": 2420.164891253972,
+          "call": 8707,
+          "raise": 2452,
+          "all_in": 474,
+          "probability_check": 31.85802822320828,
+          "check": 31
+        },
+        "flop": {
+          "decisions": 2032,
+          "check": 455,
+          "facing_bet": 851,
+          "probability_check": 490.4937894099177,
+          "probability_raise": 763.4257667010294,
+          "call": 257,
+          "fold_facing_bet": 517,
+          "probability_fold": 513.6406002065052,
+          "probability_call": 264.43984368254775,
+          "fold": 517,
+          "raise": 803,
+          "all_in": 458
+        },
+        "turn": {
+          "decisions": 619,
+          "check": 251,
+          "facing_bet": 38,
+          "probability_check": 248.17304024185466,
+          "probability_raise": 336.44599627727825,
+          "raise": 335,
+          "all_in": 239,
+          "fold": 17,
+          "fold_facing_bet": 17,
+          "probability_fold": 16.01470677016931,
+          "probability_call": 18.36625671069768,
+          "call": 16
+        },
+        "river": {
+          "decisions": 340,
+          "check": 178,
+          "facing_bet": 4,
+          "probability_check": 167.66341019674408,
+          "probability_raise": 169.09123621594676,
+          "raise": 159,
+          "all_in": 108,
+          "fold": 2,
+          "fold_facing_bet": 2,
+          "probability_fold": 1.601631928432266,
+          "probability_call": 1.643721658876959,
+          "call": 1
+        }
+      }
+    },
+    "pps-seed9-128": {
+      "deals": 5000,
+      "bb_per_100": 92.73176666666666,
+      "ci95_half_width": 75.04262696047674,
+      "ci95": [
+        17.68913970618992,
+        167.7743936271434
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "f516b581e467edf1b9140b0d53fb18e6a9560dabcea08f4237b5c4dc8eef36f7",
+      "behavior": {
+        "preflop": {
+          "decisions": 37400,
+          "fold": 23264,
+          "facing_bet": 37355,
+          "fold_facing_bet": 23264,
+          "probability_fold": 23268.039370694984,
+          "probability_call": 12083.741687515034,
+          "call": 12063,
+          "probability_raise": 2012.5879968829845,
+          "raise": 2039,
+          "all_in": 417,
+          "probability_check": 35.63094490699452,
+          "check": 34
+        },
+        "flop": {
+          "decisions": 2588,
+          "check": 794,
+          "facing_bet": 1086,
+          "probability_check": 806.8958240880796,
+          "probability_raise": 785.4374085933747,
+          "raise": 805,
+          "all_in": 515,
+          "fold_facing_bet": 532,
+          "probability_fold": 529.3257418366707,
+          "probability_call": 466.3410254818733,
+          "call": 457,
+          "fold": 532
+        },
+        "turn": {
+          "decisions": 957,
+          "check": 477,
+          "facing_bet": 72,
+          "probability_check": 490.607235024748,
+          "probability_raise": 403.14255392445114,
+          "raise": 420,
+          "all_in": 294,
+          "fold": 24,
+          "fold_facing_bet": 24,
+          "probability_fold": 23.40389744558001,
+          "probability_call": 39.84631360522102,
+          "call": 36
+        },
+        "river": {
+          "decisions": 594,
+          "check": 376,
+          "facing_bet": 7,
+          "probability_check": 373.2858737256196,
+          "probability_raise": 214.65115005034752,
+          "raise": 211,
+          "all_in": 151,
+          "call": 4,
+          "fold_facing_bet": 3,
+          "probability_fold": 2.8210697581359385,
+          "probability_call": 3.241906465897282,
+          "fold": 3
+        }
+      }
+    },
+    "public": {
+      "deals": 10000,
+      "bb_per_100": 62.944183333333335,
+      "ci95_half_width": 17.825850906888533,
+      "ci95": [
+        45.1183324264448,
+        80.77003424022186
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+      "behavior": {
+        "preflop": {
+          "decisions": 67710,
+          "fold": 57332,
+          "facing_bet": 67627,
+          "fold_facing_bet": 57332,
+          "probability_fold": 57410.81725957161,
+          "probability_call": 6257.943329167502,
+          "call": 6320,
+          "probability_raise": 3968.6636440832153,
+          "raise": 3987,
+          "all_in": 196,
+          "check": 71,
+          "probability_check": 72.57576717897354
+        },
+        "flop": {
+          "decisions": 1821,
+          "check": 614,
+          "facing_bet": 924,
+          "probability_check": 624.2917577515573,
+          "probability_raise": 365.867500156152,
+          "raise": 370,
+          "all_in": 58,
+          "call": 219,
+          "fold_facing_bet": 618,
+          "probability_fold": 625.7351305140481,
+          "probability_call": 205.1056115782425,
+          "fold": 618
+        },
+        "turn": {
+          "decisions": 701,
+          "check": 423,
+          "facing_bet": 105,
+          "probability_check": 425.21803500123434,
+          "probability_raise": 181.5744657421555,
+          "raise": 183,
+          "all_in": 18,
+          "call": 22,
+          "fold_facing_bet": 73,
+          "probability_fold": 70.17919707463791,
+          "probability_call": 24.028302181972713,
+          "fold": 73
+        },
+        "river": {
+          "decisions": 564,
+          "check": 380,
+          "facing_bet": 12,
+          "probability_check": 375.5106496316077,
+          "probability_raise": 177.66469695387053,
+          "raise": 173,
+          "all_in": 53,
+          "fold": 9,
+          "fold_facing_bet": 9,
+          "probability_fold": 7.966101728032408,
+          "probability_call": 2.858551686489596,
+          "call": 2
+        }
+      }
+    },
+    "public-field-advantage-120": {
+      "deals": 1000,
+      "bb_per_100": -94.986,
+      "ci95_half_width": 62.63376215451258,
+      "ci95": [
+        -157.61976215451259,
+        -32.35223784548742
+      ],
+      "field": "five public Fullhouse advantage policies",
+      "deal_seed": 120291109,
+      "model_sha256": "df7d1b5431be67e53d594dd127f23dd2d5a53e03a7e8ba19b83f93172b210d06",
+      "behavior": {
+        "preflop": {
+          "decisions": 7306,
+          "call": 2628,
+          "facing_bet": 7187,
+          "fold_facing_bet": 2508,
+          "probability_call": 2645.999022650121,
+          "probability_raise": 2134.429497457072,
+          "fold": 2508,
+          "probability_fold": 2520.096907470691,
+          "raise": 2165,
+          "all_in": 17,
+          "check": 5,
+          "probability_check": 5.474572422111417
+        },
+        "flop": {
+          "decisions": 3770,
+          "raise": 2510,
+          "all_in": 173,
+          "facing_bet": 1183,
+          "probability_raise": 2498.0000861418716,
+          "fold_facing_bet": 685,
+          "probability_fold": 684.6165410449134,
+          "probability_call": 336.2416607406383,
+          "call": 319,
+          "fold": 685,
+          "probability_check": 251.14171207258028,
+          "check": 256
+        },
+        "turn": {
+          "decisions": 1849,
+          "check": 600,
+          "facing_bet": 565,
+          "probability_check": 595.6717904545096,
+          "probability_raise": 771.8063292006775,
+          "call": 184,
+          "fold_facing_bet": 302,
+          "probability_fold": 300.6575833518843,
+          "probability_call": 180.86429699293257,
+          "raise": 763,
+          "all_in": 164,
+          "fold": 302
+        },
+        "river": {
+          "decisions": 1022,
+          "raise": 296,
+          "all_in": 110,
+          "facing_bet": 337,
+          "probability_check": 424.5245591558033,
+          "probability_raise": 290.3226392243268,
+          "check": 420,
+          "call": 82,
+          "fold_facing_bet": 224,
+          "probability_fold": 223.65000000000003,
+          "probability_call": 83.50280161986932,
+          "fold": 224
+        }
+      }
+    },
+    "public-field-advantage-600": {
+      "deals": 1000,
+      "bb_per_100": -154.221,
+      "ci95_half_width": 91.67396641060876,
+      "ci95": [
+        -245.89496641060876,
+        -62.54703358939125
+      ],
+      "field": "five public Fullhouse advantage policies",
+      "deal_seed": 120291109,
+      "model_sha256": "44cc637733b0002614ca26ef0e90345fe2f92d3075a2688e420523b70b0ab425",
+      "behavior": {
+        "preflop": {
+          "decisions": 8370,
+          "raise": 6360,
+          "all_in": 37,
+          "facing_bet": 8251,
+          "fold_facing_bet": 1548,
+          "probability_fold": 1534.6013880654589,
+          "probability_raise": 6377.1962887508,
+          "call": 462,
+          "probability_call": 458.20232318375986,
+          "fold": 1548
+        },
+        "flop": {
+          "decisions": 4361,
+          "raise": 2690,
+          "all_in": 167,
+          "facing_bet": 1591,
+          "fold_facing_bet": 697,
+          "probability_call": 539.7285107937158,
+          "probability_raise": 2695.5257198534,
+          "call": 533,
+          "probability_check": 431.8412419604063,
+          "fold": 697,
+          "probability_fold": 693.9045273924717,
+          "check": 441
+        },
+        "turn": {
+          "decisions": 1965,
+          "raise": 789,
+          "all_in": 161,
+          "facing_bet": 668,
+          "probability_check": 585.5449439068971,
+          "probability_raise": 789.6031021026438,
+          "call": 210,
+          "fold_facing_bet": 377,
+          "probability_call": 214.0898061716,
+          "fold": 377,
+          "probability_fold": 375.7621478188599,
+          "check": 589
+        },
+        "river": {
+          "decisions": 967,
+          "raise": 327,
+          "all_in": 83,
+          "facing_bet": 294,
+          "probability_raise": 327.7219085691992,
+          "check": 366,
+          "probability_check": 367.6638778875527,
+          "fold": 190,
+          "fold_facing_bet": 190,
+          "probability_fold": 186.33333333333337,
+          "call": 84,
+          "probability_call": 85.2808802099144
+        }
+      }
+    },
+    "public-field-average-600": {
+      "deals": 1000,
+      "bb_per_100": -340.35200000000003,
+      "ci95_half_width": 79.79800094941982,
+      "ci95": [
+        -420.15000094941985,
+        -260.5539990505802
+      ],
+      "field": "five public Fullhouse advantage policies",
+      "deal_seed": 120291109,
+      "model_sha256": "b3faf1209aba7c03ec5cb4c60bd2e62887082a75a2758dff4a0444ee10589fd2",
+      "behavior": {
+        "preflop": {
+          "decisions": 7304,
+          "call": 3806,
+          "facing_bet": 7185,
+          "fold_facing_bet": 2386,
+          "probability_fold": 2431.4347763251776,
+          "probability_call": 3743.2126918630347,
+          "probability_raise": 1030.328467136839,
+          "fold": 2386,
+          "raise": 1011,
+          "all_in": 16,
+          "check": 101,
+          "probability_check": 99.02406467493705
+        },
+        "flop": {
+          "decisions": 4163,
+          "check": 2248,
+          "facing_bet": 1441,
+          "probability_check": 2270.559718776574,
+          "probability_raise": 636.2624179735266,
+          "call": 708,
+          "fold_facing_bet": 566,
+          "probability_fold": 568.9854222028346,
+          "probability_call": 687.1924410470721,
+          "raise": 641,
+          "all_in": 77,
+          "fold": 566
+        },
+        "turn": {
+          "decisions": 3041,
+          "check": 1609,
+          "facing_bet": 1037,
+          "probability_check": 1607.6768071469178,
+          "probability_raise": 570.3776712763826,
+          "call": 575,
+          "fold_facing_bet": 297,
+          "probability_fold": 285.1631475146739,
+          "probability_call": 577.7823740620248,
+          "raise": 560,
+          "all_in": 152,
+          "fold": 297
+        },
+        "river": {
+          "decisions": 2304,
+          "call": 479,
+          "facing_bet": 919,
+          "fold_facing_bet": 311,
+          "probability_fold": 306.6635878585151,
+          "probability_call": 472.55659516610467,
+          "probability_raise": 439.2247978715092,
+          "check": 1068,
+          "probability_check": 1085.55501910387,
+          "raise": 446,
+          "all_in": 140,
+          "fold": 311
+        }
+      }
+    },
+    "public-field-public": {
+      "deals": 1000,
+      "bb_per_100": 1.521333333333334,
+      "ci95_half_width": 36.32219075541112,
+      "ci95": [
+        -34.80085742207779,
+        37.84352408874445
+      ],
+      "field": "five public Fullhouse advantage policies",
+      "deal_seed": 120291109,
+      "model_sha256": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+      "behavior": {
+        "preflop": {
+          "decisions": 6616,
+          "raise": 1350,
+          "all_in": 12,
+          "facing_bet": 6497,
+          "fold_facing_bet": 4157,
+          "probability_call": 1008.5432314910853,
+          "probability_raise": 1359.2584749473488,
+          "fold": 4157,
+          "probability_fold": 4151.045025996559,
+          "call": 1013,
+          "check": 96,
+          "probability_check": 97.15326756501386
+        },
+        "flop": {
+          "decisions": 1932,
+          "raise": 614,
+          "all_in": 49,
+          "facing_bet": 681,
+          "probability_check": 820.8249624015591,
+          "probability_raise": 604.8685621274927,
+          "call": 225,
+          "fold_facing_bet": 278,
+          "probability_call": 228.17160105623722,
+          "fold": 278,
+          "probability_fold": 278.13487441471017,
+          "check": 815
+        },
+        "turn": {
+          "decisions": 1209,
+          "raise": 359,
+          "all_in": 30,
+          "facing_bet": 415,
+          "probability_check": 517.7486478643855,
+          "probability_raise": 357.8107179214253,
+          "call": 164,
+          "fold_facing_bet": 166,
+          "probability_call": 165.81436914517857,
+          "check": 520,
+          "probability_fold": 167.62626506901063,
+          "fold": 166
+        },
+        "river": {
+          "decisions": 809,
+          "raise": 284,
+          "all_in": 32,
+          "facing_bet": 291,
+          "probability_raise": 278.4893038079307,
+          "check": 272,
+          "probability_check": 276.7055763296144,
+          "fold": 146,
+          "fold_facing_bet": 146,
+          "probability_fold": 144.35440012670918,
+          "probability_call": 109.45071973574552,
+          "call": 107
+        }
+      }
+    },
+    "uniform-raw-seed7-128": {
+      "deals": 5000,
+      "bb_per_100": 32.42329999999999,
+      "ci95_half_width": 84.43224143229011,
+      "ci95": [
+        -52.00894143229012,
+        116.8555414322901
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "78470161aec4e68a7a42a6209095a01bc786560398e04f53dca9de1a0fbff9e7",
+      "behavior": {
+        "preflop": {
+          "decisions": 37695,
+          "fold": 21594,
+          "facing_bet": 37650,
+          "fold_facing_bet": 21594,
+          "probability_fold": 21605.653359031643,
+          "probability_call": 11299.824146129497,
+          "call": 11317,
+          "probability_raise": 4765.75985994528,
+          "raise": 4759,
+          "all_in": 1143,
+          "probability_check": 23.762634893502213,
+          "check": 25
+        },
+        "flop": {
+          "decisions": 2084,
+          "call": 371,
+          "facing_bet": 897,
+          "fold_facing_bet": 377,
+          "probability_fold": 395.75158823153083,
+          "probability_call": 363.0051297504994,
+          "raise": 922,
+          "all_in": 634,
+          "probability_check": 450.68708103961654,
+          "probability_raise": 874.5562009783529,
+          "fold": 377,
+          "check": 414
+        },
+        "turn": {
+          "decisions": 578,
+          "check": 173,
+          "facing_bet": 41,
+          "probability_check": 168.54872276077978,
+          "probability_raise": 375.88132643409153,
+          "raise": 370,
+          "all_in": 288,
+          "fold": 25,
+          "fold_facing_bet": 25,
+          "probability_fold": 19.052893751191885,
+          "probability_call": 14.517057053936872,
+          "call": 10
+        },
+        "river": {
+          "decisions": 246,
+          "raise": 139,
+          "all_in": 111,
+          "facing_bet": 2,
+          "probability_check": 102.67658372881125,
+          "probability_raise": 141.55415588876545,
+          "check": 105,
+          "call": 2,
+          "fold_facing_bet": 0,
+          "probability_fold": 0.9474418486292044,
+          "probability_call": 0.8218185337940502
+        }
+      }
+    },
+    "uniform-raw-seed8-128": {
+      "deals": 5000,
+      "bb_per_100": 5.711499999999997,
+      "ci95_half_width": 78.61378122362734,
+      "ci95": [
+        -72.90228122362734,
+        84.32528122362734
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "cdc8b03e6f09dfc9368cfb6354a885b6bdc49abeb20268bc1f680d1cbcda4193",
+      "behavior": {
+        "preflop": {
+          "decisions": 34792,
+          "fold": 22338,
+          "facing_bet": 34747,
+          "fold_facing_bet": 22338,
+          "probability_fold": 22395.92541237251,
+          "probability_call": 9562.399487907125,
+          "call": 9580,
+          "probability_raise": 2812.194234115095,
+          "raise": 2850,
+          "all_in": 495,
+          "probability_check": 21.480865605425766,
+          "check": 24
+        },
+        "flop": {
+          "decisions": 1604,
+          "check": 296,
+          "facing_bet": 621,
+          "probability_check": 324.6875421594076,
+          "probability_raise": 722.3506968148316,
+          "call": 253,
+          "fold_facing_bet": 298,
+          "probability_fold": 302.9240388742194,
+          "probability_call": 254.03772215154083,
+          "fold": 298,
+          "raise": 757,
+          "all_in": 511
+        },
+        "turn": {
+          "decisions": 416,
+          "check": 149,
+          "facing_bet": 22,
+          "probability_check": 145.38282056612863,
+          "probability_raise": 251.11832192121472,
+          "raise": 248,
+          "all_in": 182,
+          "fold_facing_bet": 10,
+          "probability_fold": 8.853539286023954,
+          "probability_call": 10.645318226632815,
+          "fold": 10,
+          "call": 9
+        },
+        "river": {
+          "decisions": 211,
+          "check": 97,
+          "facing_bet": 1,
+          "probability_check": 82.22128552231,
+          "probability_raise": 127.77871447769003,
+          "raise": 113,
+          "all_in": 92,
+          "fold": 1,
+          "fold_facing_bet": 1,
+          "probability_fold": 0.45491995051741746,
+          "probability_call": 0.5450800494825825
+        }
+      }
+    },
+    "uniform-raw-seed9-128": {
+      "deals": 5000,
+      "bb_per_100": -291.91276666666664,
+      "ci95_half_width": 103.3126603360672,
+      "ci95": [
+        -395.22542700273385,
+        -188.60010633059943
+      ],
+      "field": "five NoRegrets 1M policies",
+      "deal_seed": 120261109,
+      "model_sha256": "0a34cb1b0397407a6dd0748f11fb8c94d54955e314ea353954c9ef17ad22d473",
+      "behavior": {
+        "preflop": {
+          "decisions": 40789,
+          "fold": 11892,
+          "facing_bet": 40744,
+          "fold_facing_bet": 11892,
+          "probability_fold": 11873.628318429402,
+          "probability_call": 26354.270782248786,
+          "call": 26292,
+          "probability_raise": 2524.111175489748,
+          "raise": 2572,
+          "all_in": 275,
+          "probability_check": 36.98972383224999,
+          "check": 33
+        },
+        "flop": {
+          "decisions": 5117,
+          "check": 1949,
+          "facing_bet": 2117,
+          "probability_check": 1972.8920680309498,
+          "probability_raise": 1129.4902551784828,
+          "fold": 538,
+          "fold_facing_bet": 538,
+          "probability_fold": 526.8926236518435,
+          "probability_call": 1487.725053138724,
+          "raise": 1169,
+          "all_in": 663,
+          "call": 1461
+        },
+        "turn": {
+          "decisions": 2333,
+          "raise": 942,
+          "all_in": 651,
+          "facing_bet": 155,
+          "probability_check": 1246.3711029845574,
+          "probability_raise": 941.3101176670843,
+          "check": 1247,
+          "call": 122,
+          "fold_facing_bet": 22,
+          "probability_fold": 28.66915717940515,
+          "probability_call": 116.64962216895465,
+          "fold": 22
+        },
+        "river": {
+          "decisions": 1534,
+          "check": 1095,
+          "facing_bet": 16,
+          "probability_check": 1078.1117058901887,
+          "probability_raise": 440.5475122635173,
+          "raise": 423,
+          "all_in": 300,
+          "call": 15,
+          "fold_facing_bet": 1,
+          "probability_fold": 1.560376156500905,
+          "probability_call": 13.780405689792456,
+          "fold": 1
+        }
+      }
+    }
+  },
+  "paired": {
+    "medium-600 minus medium-120": {
+      "deals": 10000,
+      "bb_per_100": -90.55616666666667,
+      "ci95_half_width": 62.79128165560109,
+      "ci95": [
+        -153.34744832226775,
+        -27.76488501106558
+      ]
+    },
+    "medium-300 minus medium-120": {
+      "deals": 10000,
+      "bb_per_100": 18.05145,
+      "ci95_half_width": 38.70451426536572,
+      "ci95": [
+        -20.653064265365717,
+        56.75596426536572
+      ]
+    },
+    "medium-600 minus medium-300": {
+      "deals": 10000,
+      "bb_per_100": -108.60761666666667,
+      "ci95_half_width": 67.83870080980427,
+      "ci95": [
+        -176.44631747647094,
+        -40.76891585686241
+      ]
+    },
+    "medium-600 minus public": {
+      "deals": 10000,
+      "bb_per_100": -312.47275,
+      "ci95_half_width": 75.64500312027212,
+      "ci95": [
+        -388.11775312027214,
+        -236.8277468797279
+      ]
+    },
+    "advantage-120 minus medium-120": {
+      "deals": 5000,
+      "bb_per_100": 498.6567,
+      "ci95_half_width": 103.5832469938495,
+      "ci95": [
+        395.0734530061505,
+        602.2399469938495
+      ]
+    },
+    "advantage-300 minus medium-300": {
+      "deals": 5000,
+      "bb_per_100": 499.95076666666665,
+      "ci95_half_width": 103.6599734182347,
+      "ci95": [
+        396.29079324843195,
+        603.6107400849014
+      ]
+    },
+    "advantage-600 minus medium-600": {
+      "deals": 5000,
+      "bb_per_100": 240.71453333333335,
+      "ci95_half_width": 112.30223839304678,
+      "ci95": [
+        128.41229494028659,
+        353.0167717263801
+      ]
+    },
+    "advantage-600 minus advantage-120": {
+      "deals": 5000,
+      "bb_per_100": -345.3274,
+      "ci95_half_width": 91.54334508914093,
+      "ci95": [
+        -436.87074508914094,
+        -253.78405491085908
+      ]
+    },
+    "advantage-600 minus advantage-300": {
+      "deals": 5000,
+      "bb_per_100": -347.4889333333333,
+      "ci95_half_width": 98.91810954317805,
+      "ci95": [
+        -446.40704287651135,
+        -248.57082379015526
+      ]
+    },
+    "pps-seed7-2048 minus pps-seed7-128": {
+      "deals": 5000,
+      "bb_per_100": 73.75573333333334,
+      "ci95_half_width": 68.91916884533886,
+      "ci95": [
+        4.83656448799448,
+        142.6749021786722
+      ]
+    },
+    "uniform-raw-seed7-128 minus uniform-raw-seed9-128": {
+      "deals": 5000,
+      "bb_per_100": 324.3360666666667,
+      "ci95_half_width": 91.60635974216873,
+      "ci95": [
+        232.72970692449795,
+        415.94242640883544
+      ]
+    },
+    "public-field-advantage-600 minus public-field-average-600": {
+      "deals": 1000,
+      "bb_per_100": 186.131,
+      "ci95_half_width": 99.42647520186446,
+      "ci95": [
+        86.70452479813554,
+        285.55747520186446
+      ]
+    },
+    "public-field-advantage-120 minus public-field-average-600": {
+      "deals": 1000,
+      "bb_per_100": 245.366,
+      "ci95_half_width": 81.72193525096111,
+      "ci95": [
+        163.6440647490389,
+        327.0879352509611
+      ]
+    },
+    "pps-seed7-128 minus uniform-raw-seed7-128": {
+      "deals": 5000,
+      "bb_per_100": -46.17556666666666,
+      "ci95_half_width": 77.79841504399933,
+      "ci95": [
+        -123.97398171066598,
+        31.622848377332666
+      ]
+    },
+    "uniform-raw-seed7-128 minus medium-600": {
+      "deals": 5000,
+      "bb_per_100": 251.58713333333333,
+      "ci95_half_width": 91.7296614884359,
+      "ci95": [
+        159.85747184489742,
+        343.31679482176924
+      ]
+    },
+    "pps-seed8-128 minus uniform-raw-seed8-128": {
+      "deals": 5000,
+      "bb_per_100": 15.4834,
+      "ci95_half_width": 59.58715872219659,
+      "ci95": [
+        -44.10375872219659,
+        75.0705587221966
+      ]
+    },
+    "uniform-raw-seed8-128 minus medium-600": {
+      "deals": 5000,
+      "bb_per_100": 224.87533333333334,
+      "ci95_half_width": 93.09701994967934,
+      "ci95": [
+        131.778313383654,
+        317.9723532830127
+      ]
+    },
+    "pps-seed9-128 minus uniform-raw-seed9-128": {
+      "deals": 5000,
+      "bb_per_100": 384.64453333333336,
+      "ci95_half_width": 93.99944647981563,
+      "ci95": [
+        290.64508685351774,
+        478.643979813149
+      ]
+    },
+    "uniform-raw-seed9-128 minus medium-600": {
+      "deals": 5000,
+      "bb_per_100": -72.74893333333333,
+      "ci95_half_width": 50.466445404405675,
+      "ci95": [
+        -123.215378737739,
+        -22.28248792892765
+      ]
+    }
+  },
+  "primary": "medium-600 minus medium-120 on 10000 fresh deal blocks",
+  "limitations": [
+    "One self-play training seed; refit seeds vary only final fitting.",
+    "Nominal deal-block 95% normal intervals; primary comparison fixed before extended evaluation, remaining ablations exploratory.",
+    "Frozen replay refits do not repair historical game-engine errors.",
+    "No promotion, no professional-strength claim."
+  ]
+}

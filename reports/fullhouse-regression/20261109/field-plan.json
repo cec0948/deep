@@ -1,0 +1,11 @@
+{
+  "deals": 1000,
+  "deal_seed": 120291109,
+  "models": {
+    "public-field-average-600": "artifacts/fullhouse-medium/20261106T023201457778Z/training/iter_00600.npz",
+    "public-field-advantage-120": "artifacts/regression-diagnosis/20261109/replay/advantage-120.npz",
+    "public-field-advantage-600": "artifacts/regression-diagnosis/20261109/replay/advantage-600.npz",
+    "public-field-public": null
+  },
+  "purpose": "Independent opponent field sensitivity and public-versus-public sanity. Exploratory, fewer deals than primary evaluation."
+}

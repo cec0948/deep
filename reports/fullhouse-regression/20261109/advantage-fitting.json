@@ -1,0 +1,173 @@
+{
+  "script_sha256": "5cce4eb920f6ce5b69ef42fb57eaf7caa431c4abb93ea03910ec51e833b713c6",
+  "checkpoint_sha256": "5050ec7c5fc665cb2125abb686d876ab4bc2846325dab2fd0fa4c0829b39ed1e",
+  "existing_final_model": {
+    "mse": 1406.9677656075548,
+    "zero_mse": 1622.164888424133,
+    "prediction_square": 127.27881588787271,
+    "mae": 16.974190398826295
+  },
+  "refits": [
+    {
+      "seed": 7,
+      "steps": 512,
+      "seconds": 1.883250814999883,
+      "train": {
+        "mse": 1366.9408982442094,
+        "zero_mse": 1613.7171331661145,
+        "prediction_square": 217.46354145415415,
+        "mae": 16.95452956709091
+      },
+      "validation": {
+        "mse": 1379.8064431891087,
+        "zero_mse": 1622.164888424133,
+        "prediction_square": 213.82676602721614,
+        "mae": 17.01200742563189
+      },
+      "export_path": "artifacts/regression-diagnosis/20261109/advantage-fitting/advantage-refit-512.npz",
+      "export_sha256": "432de5094d76d5be6164671a4e54e623a9b3f95b266fce249fd67f3c83d7e68e"
+    },
+    {
+      "seed": 7,
+      "steps": 2048,
+      "seconds": 10.090122690000499,
+      "train": {
+        "mse": 1335.3321852013019,
+        "zero_mse": 1613.7171331661145,
+        "prediction_square": 226.44090376458297,
+        "mae": 16.490245121747513
+      },
+      "validation": {
+        "mse": 1348.5089079663828,
+        "zero_mse": 1622.164888424133,
+        "prediction_square": 224.11565189261006,
+        "mae": 16.555272661324953
+      },
+      "export_path": "artifacts/regression-diagnosis/20261109/advantage-fitting/advantage-refit-2048.npz",
+      "export_sha256": "745fb84eaf4d893a79855531da7741138a1c0405e2fbc030809c376d36357225"
+    },
+    {
+      "seed": 7,
+      "steps": 8192,
+      "seconds": 35.98697317300048,
+      "train": {
+        "mse": 1305.5020221243842,
+        "zero_mse": 1613.7171331661145,
+        "prediction_square": 323.7307092751771,
+        "mae": 16.40255000622073
+      },
+      "validation": {
+        "mse": 1322.0972552908574,
+        "zero_mse": 1622.164888424133,
+        "prediction_square": 318.78759446323323,
+        "mae": 16.48192729434224
+      },
+      "export_path": "artifacts/regression-diagnosis/20261109/advantage-fitting/advantage-refit-8192.npz",
+      "export_sha256": "3e1d06c98dd59cf981215d6d73867d2c1b89cf996269cc2c29d1731042ccfa54"
+    },
+    {
+      "seed": 8,
+      "steps": 512,
+      "seconds": 2.004779711000083,
+      "train": {
+        "mse": 1381.6896534048687,
+        "zero_mse": 1613.7171331661145,
+        "prediction_square": 203.78153163560856,
+        "mae": 17.134510608729943
+      },
+      "validation": {
+        "mse": 1394.2868963462215,
+        "zero_mse": 1622.164888424133,
+        "prediction_square": 200.88736717267642,
+        "mae": 17.202188027669465
+      }
+    },
+    {
+      "seed": 8,
+      "steps": 2048,
+      "seconds": 13.79837829600001,
+      "train": {
+        "mse": 1328.6300872636923,
+        "zero_mse": 1613.7171331661145,
+        "prediction_square": 301.43619616594856,
+        "mae": 16.2740170808386
+      },
+      "validation": {
+        "mse": 1341.8924380132416,
+        "zero_mse": 1622.164888424133,
+        "prediction_square": 297.2165613099051,
+        "mae": 16.34383366534723
+      }
+    },
+    {
+      "seed": 8,
+      "steps": 8192,
+      "seconds": 70.02005199399991,
+      "train": {
+        "mse": 1312.2025293489223,
+        "zero_mse": 1613.7171331661145,
+        "prediction_square": 285.7827948475229,
+        "mae": 16.135992992818878
+      },
+      "validation": {
+        "mse": 1328.4948659959707,
+        "zero_mse": 1622.164888424133,
+        "prediction_square": 282.06223273193564,
+        "mae": 16.208611371909917
+      }
+    },
+    {
+      "seed": 9,
+      "steps": 512,
+      "seconds": 2.702155964000667,
+      "train": {
+        "mse": 1372.3510529557554,
+        "zero_mse": 1613.7171331661145,
+        "prediction_square": 187.1567289460628,
+        "mae": 16.946526059582013
+      },
+      "validation": {
+        "mse": 1384.980048801755,
+        "zero_mse": 1622.164888424133,
+        "prediction_square": 183.98272200521868,
+        "mae": 17.009338743292442
+      }
+    },
+    {
+      "seed": 9,
+      "steps": 2048,
+      "seconds": 13.86296914400009,
+      "train": {
+        "mse": 1336.4047898720646,
+        "zero_mse": 1613.7171331661145,
+        "prediction_square": 205.70192206071158,
+        "mae": 16.761811137332398
+      },
+      "validation": {
+        "mse": 1347.7646227459145,
+        "zero_mse": 1622.164888424133,
+        "prediction_square": 203.32986328222498,
+        "mae": 16.818168510301277
+      }
+    },
+    {
+      "seed": 9,
+      "steps": 8192,
+      "seconds": 46.740143214000454,
+      "train": {
+        "mse": 1323.2235936072843,
+        "zero_mse": 1613.7171331661145,
+        "prediction_square": 372.6209358005137,
+        "mae": 16.600817033208035
+      },
+      "validation": {
+        "mse": 1337.1807621511552,
+        "zero_mse": 1622.164888424133,
+        "prediction_square": 368.85112109392406,
+        "mae": 16.668779786603373
+      }
+    }
+  ],
+  "limitation": "Seeded row holdout, histories correlated. Additional optimizer steps use frozen labels; fitting quality is not poker strength or exploitability.",
+  "complete": true
+}

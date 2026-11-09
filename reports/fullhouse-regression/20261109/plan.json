@@ -1,0 +1,16 @@
+{
+  "deals": 10000,
+  "deal_seed": 120261109,
+  "primary_comparison": "medium-600 minus medium-120",
+  "secondary_comparisons": [
+    "medium-300 minus medium-120",
+    "medium-600 minus public"
+  ],
+  "notes": "Fresh disjoint deck seeds; fixed sample size, no early stopping for significance; one fixed trained seed and NoRegrets field. Actions and original evaluator unchanged.",
+  "models": {
+    "medium-120": "/workspace/deep/artifacts/fullhouse-medium/20261106T023201457778Z/training/iter_00120.npz",
+    "medium-300": "/workspace/deep/artifacts/fullhouse-medium/20261106T023201457778Z/training/iter_00300.npz",
+    "medium-600": "/workspace/deep/artifacts/fullhouse-medium/20261106T023201457778Z/training/iter_00600.npz",
+    "public": null
+  }
+}

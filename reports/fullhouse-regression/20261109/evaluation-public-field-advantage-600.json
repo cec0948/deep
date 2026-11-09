@@ -1,0 +1,223 @@
+{
+  "complete": true,
+  "deals_requested": 1000,
+  "deal_seed": 120291109,
+  "candidate_path": "/workspace/deep/artifacts/regression-diagnosis/20261109/replay/advantage-600.npz",
+  "candidate_model_type": "advantage",
+  "engine_binary_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+  "runner_sha256": "46dd0e86e5498b90212262fa681896cfc6a7eec2d1ae65f106be5f65e3f5cf89",
+  "runtime_sha256": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+  "summary": {
+    "fullhouse": {
+      "hands": 6000,
+      "complete_deals": 1000,
+      "bb_per_100": -154.221,
+      "deal_ci95_half_width": 91.67396641060876
+    }
+  },
+  "latency": {
+    "fullhouse": {
+      "count": 15663,
+      "p50_ms": 0.5394010004238226,
+      "p95_ms": 1.2739769999825512
+    },
+    "opponent_public": {
+      "count": 48467,
+      "p50_ms": 0.4994609998902888,
+      "p95_ms": 1.217864999489393
+    }
+  },
+  "decisions": {
+    "opponent_public/preflop/6": {
+      "decisions": 7466,
+      "fallback": 0
+    },
+    "opponent_public/preflop/5": {
+      "decisions": 7594,
+      "fallback": 0
+    },
+    "opponent_public/preflop/4": {
+      "decisions": 7317,
+      "fallback": 0
+    },
+    "fullhouse/preflop/3": {
+      "decisions": 1789,
+      "fallback": 0
+    },
+    "opponent_public/preflop/3": {
+      "decisions": 7199,
+      "fallback": 0
+    },
+    "fullhouse/preflop/2": {
+      "decisions": 2545,
+      "fallback": 0
+    },
+    "opponent_public/preflop/2": {
+      "decisions": 6003,
+      "fallback": 0
+    },
+    "opponent_public/flop/2": {
+      "decisions": 6705,
+      "fallback": 0
+    },
+    "fullhouse/flop/2": {
+      "decisions": 4012,
+      "fallback": 0
+    },
+    "fullhouse/turn/2": {
+      "decisions": 1904,
+      "fallback": 0
+    },
+    "opponent_public/turn/2": {
+      "decisions": 3207,
+      "fallback": 0
+    },
+    "fullhouse/river/2": {
+      "decisions": 950,
+      "fallback": 0
+    },
+    "opponent_public/river/2": {
+      "decisions": 1812,
+      "fallback": 0
+    },
+    "fullhouse/preflop/6": {
+      "decisions": 1293,
+      "fallback": 0
+    },
+    "fullhouse/preflop/5": {
+      "decisions": 1275,
+      "fallback": 0
+    },
+    "fullhouse/preflop/4": {
+      "decisions": 1468,
+      "fallback": 0
+    },
+    "opponent_public/flop/4": {
+      "decisions": 137,
+      "fallback": 0
+    },
+    "fullhouse/flop/4": {
+      "decisions": 38,
+      "fallback": 0
+    },
+    "opponent_public/flop/3": {
+      "decisions": 764,
+      "fallback": 0
+    },
+    "fullhouse/flop/3": {
+      "decisions": 307,
+      "fallback": 0
+    },
+    "fullhouse/turn/3": {
+      "decisions": 56,
+      "fallback": 0
+    },
+    "opponent_public/turn/3": {
+      "decisions": 166,
+      "fallback": 0
+    },
+    "opponent_public/river/3": {
+      "decisions": 59,
+      "fallback": 0
+    },
+    "fullhouse/river/3": {
+      "decisions": 17,
+      "fallback": 0
+    },
+    "opponent_public/flop/5": {
+      "decisions": 13,
+      "fallback": 0
+    },
+    "fullhouse/flop/5": {
+      "decisions": 4,
+      "fallback": 0
+    },
+    "fullhouse/turn/4": {
+      "decisions": 5,
+      "fallback": 0
+    },
+    "opponent_public/turn/4": {
+      "decisions": 22,
+      "fallback": 0
+    },
+    "opponent_public/river/4": {
+      "decisions": 3,
+      "fallback": 0
+    }
+  },
+  "elapsed_seconds": 67.28109021399996,
+  "peak_sampled_rss_bytes": 51490816,
+  "model_hashes": {
+    "fullhouse": "44cc637733b0002614ca26ef0e90345fe2f92d3075a2688e420523b70b0ab425",
+    "opponent_public": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295"
+  },
+  "strength_verified": false,
+  "limitations": [
+    "pilot only",
+    "same-noregrets sanity is statistical, not exactly zero",
+    "nominal deal-block CI",
+    "RSS sampled before decisions",
+    "Evaluator calls named blueprint were intercepted by PublicField; effective opponents and source hash recorded here."
+  ],
+  "instrumentation_sha256": "d9e5c22b77e35ff818757d3142c22982c900f246c165e0d86adc12cf6df8c1ab",
+  "raw_run": "/workspace/deep/artifacts/fullhouse-evaluation/20261109T025020336672Z",
+  "behavior": {
+    "preflop": {
+      "decisions": 8370,
+      "raise": 6360,
+      "all_in": 37,
+      "facing_bet": 8251,
+      "fold_facing_bet": 1548,
+      "probability_fold": 1534.6013880654589,
+      "probability_raise": 6377.1962887508,
+      "call": 462,
+      "probability_call": 458.20232318375986,
+      "fold": 1548
+    },
+    "flop": {
+      "decisions": 4361,
+      "raise": 2690,
+      "all_in": 167,
+      "facing_bet": 1591,
+      "fold_facing_bet": 697,
+      "probability_call": 539.7285107937158,
+      "probability_raise": 2695.5257198534,
+      "call": 533,
+      "probability_check": 431.8412419604063,
+      "fold": 697,
+      "probability_fold": 693.9045273924717,
+      "check": 441
+    },
+    "turn": {
+      "decisions": 1965,
+      "raise": 789,
+      "all_in": 161,
+      "facing_bet": 668,
+      "probability_check": 585.5449439068971,
+      "probability_raise": 789.6031021026438,
+      "call": 210,
+      "fold_facing_bet": 377,
+      "probability_call": 214.0898061716,
+      "fold": 377,
+      "probability_fold": 375.7621478188599,
+      "check": 589
+    },
+    "river": {
+      "decisions": 967,
+      "raise": 327,
+      "all_in": 83,
+      "facing_bet": 294,
+      "probability_raise": 327.7219085691992,
+      "check": 366,
+      "probability_check": 367.6638778875527,
+      "fold": 190,
+      "fold_facing_bet": 190,
+      "probability_fold": 186.33333333333337,
+      "call": 84,
+      "probability_call": 85.2808802099144
+    }
+  },
+  "field_runner_sha256": "3f5a808bb7d71ac6a99270b9a7c0962c232cb947892ba7e2bced94b78d491402",
+  "opponent_field": "five public Fullhouse advantage policies",
+  "unused_registry_prerequisite_sha256": "01d87a3ceeb51ed42a4b784df6777355c49aa8deba5aceab7cc1f763bd1fb708"
+}

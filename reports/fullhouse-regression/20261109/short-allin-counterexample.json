@@ -1,0 +1,326 @@
+{
+  "description": "An incomplete all-in raise from 8725 to 10000 does not reopen raising, but players who committed 8725 must still call 1275 or fold. Training skipped these pending decisions and dealt the flop.",
+  "request": {
+    "op": "replay",
+    "hero": 5,
+    "button": 1,
+    "hole": [
+      "Kd",
+      "4h"
+    ],
+    "board": [],
+    "actions": [
+      {
+        "kind": "call",
+        "seat": 4
+      },
+      {
+        "kind": "call",
+        "seat": 5
+      },
+      {
+        "kind": "raise",
+        "to": 550,
+        "seat": 0
+      },
+      {
+        "kind": "call",
+        "seat": 1
+      },
+      {
+        "kind": "raise",
+        "to": 1525,
+        "seat": 2
+      },
+      {
+        "kind": "call",
+        "seat": 3
+      },
+      {
+        "kind": "call",
+        "seat": 4
+      },
+      {
+        "kind": "raise",
+        "to": 8725,
+        "seat": 5
+      },
+      {
+        "kind": "call",
+        "seat": 0
+      },
+      {
+        "kind": "call",
+        "seat": 1
+      },
+      {
+        "kind": "raise",
+        "to": 10000,
+        "seat": 2
+      },
+      {
+        "kind": "call",
+        "seat": 3
+      },
+      {
+        "kind": "call",
+        "seat": 4
+      }
+    ]
+  },
+  "deployment_state": {
+    "action_log": [
+      {
+        "action": "small_blind",
+        "amount": 50,
+        "seat": 2
+      },
+      {
+        "action": "big_blind",
+        "amount": 100,
+        "seat": 3
+      },
+      {
+        "action": "call",
+        "amount": 100,
+        "seat": 4
+      },
+      {
+        "action": "call",
+        "amount": 100,
+        "seat": 5
+      },
+      {
+        "action": "raise",
+        "amount": 550,
+        "seat": 0
+      },
+      {
+        "action": "call",
+        "amount": 550,
+        "seat": 1
+      },
+      {
+        "action": "raise",
+        "amount": 1525,
+        "seat": 2
+      },
+      {
+        "action": "call",
+        "amount": 1425,
+        "seat": 3
+      },
+      {
+        "action": "call",
+        "amount": 1425,
+        "seat": 4
+      },
+      {
+        "action": "raise",
+        "amount": 8725,
+        "seat": 5
+      },
+      {
+        "action": "call",
+        "amount": 8175,
+        "seat": 0
+      },
+      {
+        "action": "call",
+        "amount": 8175,
+        "seat": 1
+      },
+      {
+        "action": "raise",
+        "amount": 10000,
+        "seat": 2
+      },
+      {
+        "action": "call",
+        "amount": 8475,
+        "seat": 3
+      },
+      {
+        "action": "call",
+        "amount": 8475,
+        "seat": 4
+      }
+    ],
+    "amount_owed": 1275,
+    "can_check": false,
+    "community_cards": [],
+    "current_bet": 10000,
+    "dealer": 1,
+    "min_raise_to": null,
+    "players": [
+      {
+        "bet_this_street": 8725,
+        "is_all_in": false,
+        "is_folded": false,
+        "seat": 0,
+        "stack": 1275
+      },
+      {
+        "bet_this_street": 8725,
+        "is_all_in": false,
+        "is_folded": false,
+        "seat": 1,
+        "stack": 1275
+      },
+      {
+        "bet_this_street": 10000,
+        "is_all_in": true,
+        "is_folded": false,
+        "seat": 2,
+        "stack": 0
+      },
+      {
+        "bet_this_street": 10000,
+        "is_all_in": true,
+        "is_folded": false,
+        "seat": 3,
+        "stack": 0
+      },
+      {
+        "bet_this_street": 10000,
+        "is_all_in": true,
+        "is_folded": false,
+        "seat": 4,
+        "stack": 0
+      },
+      {
+        "bet_this_street": 8725,
+        "is_all_in": false,
+        "is_folded": false,
+        "seat": 5,
+        "stack": 1275
+      }
+    ],
+    "pot": 56175,
+    "raise_bounds": null,
+    "seat_to_act": 5,
+    "street": "preflop",
+    "terminal": false,
+    "your_bet_this_street": 8725,
+    "your_cards": [
+      "Kd",
+      "4h"
+    ],
+    "your_stack": 1275
+  },
+  "training_state": [
+    1275,
+    1275,
+    0,
+    0,
+    0,
+    1275,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    8725,
+    8725,
+    10000,
+    10000,
+    10000,
+    8725,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    56175,
+    0,
+    0,
+    -1,
+    5,
+    1,
+    15,
+    1,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    100,
+    10000,
+    10000,
+    10000,
+    10000,
+    10000,
+    10000
+  ],
+  "training_deck": [
+    30,
+    47,
+    50,
+    12,
+    16,
+    39,
+    20,
+    19,
+    45,
+    29,
+    24,
+    28,
+    34,
+    43,
+    5,
+    46,
+    8,
+    26,
+    18,
+    6,
+    0,
+    17,
+    25,
+    37,
+    31,
+    21,
+    41,
+    23,
+    9,
+    38,
+    36,
+    11,
+    14,
+    15,
+    4,
+    49,
+    42,
+    44,
+    10,
+    48,
+    13,
+    1,
+    7,
+    27,
+    40,
+    22,
+    2,
+    33,
+    3,
+    35,
+    51,
+    32
+  ]
+}

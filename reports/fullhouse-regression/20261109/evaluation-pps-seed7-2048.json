@@ -1,0 +1,265 @@
+{
+  "complete": true,
+  "deals_requested": 5000,
+  "deal_seed": 120261109,
+  "candidate_path": "/workspace/deep/artifacts/regression-diagnosis/20261109/replay/pps-seed7-2048.npz",
+  "candidate_model_type": "average_strategy",
+  "engine_binary_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+  "runner_sha256": "46dd0e86e5498b90212262fa681896cfc6a7eec2d1ae65f106be5f65e3f5cf89",
+  "runtime_sha256": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+  "summary": {
+    "fullhouse": {
+      "hands": 30000,
+      "complete_deals": 5000,
+      "bb_per_100": 60.00346666666667,
+      "deal_ci95_half_width": 81.6189252833477
+    }
+  },
+  "latency": {
+    "fullhouse": {
+      "count": 40728,
+      "p50_ms": 0.4675750001297274,
+      "p95_ms": 1.098557999739569
+    },
+    "noregrets": {
+      "count": 238433,
+      "p50_ms": 0.06209799994394416,
+      "p95_ms": 0.31995900008041644
+    }
+  },
+  "decisions": {
+    "noregrets/preflop/6": {
+      "decisions": 51661,
+      "fallback": 843
+    },
+    "fullhouse/preflop/5": {
+      "decisions": 11252,
+      "fallback": 0
+    },
+    "noregrets/preflop/4": {
+      "decisions": 49757,
+      "fallback": 6362
+    },
+    "noregrets/preflop/3": {
+      "decisions": 31720,
+      "fallback": 5070
+    },
+    "noregrets/preflop/5": {
+      "decisions": 54795,
+      "fallback": 3547
+    },
+    "fullhouse/preflop/3": {
+      "decisions": 4569,
+      "fallback": 0
+    },
+    "fullhouse/preflop/6": {
+      "decisions": 11102,
+      "fallback": 0
+    },
+    "noregrets/preflop/2": {
+      "decisions": 9065,
+      "fallback": 1408
+    },
+    "fullhouse/preflop/4": {
+      "decisions": 8616,
+      "fallback": 0
+    },
+    "noregrets/flop/2": {
+      "decisions": 5111,
+      "fallback": 1288
+    },
+    "noregrets/flop/3": {
+      "decisions": 7806,
+      "fallback": 3970
+    },
+    "noregrets/turn/3": {
+      "decisions": 3529,
+      "fallback": 3313
+    },
+    "noregrets/river/3": {
+      "decisions": 3038,
+      "fallback": 3007
+    },
+    "noregrets/flop/4": {
+      "decisions": 6144,
+      "fallback": 4319
+    },
+    "noregrets/turn/4": {
+      "decisions": 3293,
+      "fallback": 3230
+    },
+    "noregrets/river/4": {
+      "decisions": 2936,
+      "fallback": 2929
+    },
+    "noregrets/turn/2": {
+      "decisions": 2114,
+      "fallback": 1562
+    },
+    "noregrets/river/2": {
+      "decisions": 1545,
+      "fallback": 1466
+    },
+    "fullhouse/preflop/2": {
+      "decisions": 1179,
+      "fallback": 0
+    },
+    "noregrets/flop/6": {
+      "decisions": 491,
+      "fallback": 444
+    },
+    "fullhouse/flop/6": {
+      "decisions": 91,
+      "fallback": 0
+    },
+    "noregrets/turn/6": {
+      "decisions": 265,
+      "fallback": 265
+    },
+    "fullhouse/turn/6": {
+      "decisions": 47,
+      "fallback": 0
+    },
+    "noregrets/river/6": {
+      "decisions": 203,
+      "fallback": 203
+    },
+    "fullhouse/river/6": {
+      "decisions": 39,
+      "fallback": 0
+    },
+    "fullhouse/flop/2": {
+      "decisions": 571,
+      "fallback": 0
+    },
+    "fullhouse/turn/2": {
+      "decisions": 194,
+      "fallback": 0
+    },
+    "fullhouse/river/2": {
+      "decisions": 99,
+      "fallback": 0
+    },
+    "fullhouse/flop/3": {
+      "decisions": 791,
+      "fallback": 0
+    },
+    "fullhouse/flop/4": {
+      "decisions": 726,
+      "fallback": 0
+    },
+    "fullhouse/turn/3": {
+      "decisions": 243,
+      "fallback": 0
+    },
+    "fullhouse/turn/4": {
+      "decisions": 258,
+      "fallback": 0
+    },
+    "fullhouse/river/4": {
+      "decisions": 191,
+      "fallback": 0
+    },
+    "fullhouse/river/3": {
+      "decisions": 156,
+      "fallback": 0
+    },
+    "noregrets/flop/5": {
+      "decisions": 2408,
+      "fallback": 2047
+    },
+    "fullhouse/flop/5": {
+      "decisions": 345,
+      "fallback": 0
+    },
+    "noregrets/turn/5": {
+      "decisions": 1360,
+      "fallback": 1357
+    },
+    "fullhouse/turn/5": {
+      "decisions": 146,
+      "fallback": 0
+    },
+    "noregrets/river/5": {
+      "decisions": 1192,
+      "fallback": 1192
+    },
+    "fullhouse/river/5": {
+      "decisions": 113,
+      "fallback": 0
+    }
+  },
+  "elapsed_seconds": 145.7283829590001,
+  "peak_sampled_rss_bytes": 1519071232,
+  "model_hashes": {
+    "fullhouse": "5d2654260bc5493632dff63c00fa46a83f1e87e7fb98b65df7937a1b87e0d0d6",
+    "noregrets": "01d87a3ceeb51ed42a4b784df6777355c49aa8deba5aceab7cc1f763bd1fb708"
+  },
+  "strength_verified": false,
+  "limitations": [
+    "pilot only",
+    "same-noregrets sanity is statistical, not exactly zero",
+    "nominal deal-block CI",
+    "RSS sampled before decisions"
+  ],
+  "instrumentation_sha256": "d9e5c22b77e35ff818757d3142c22982c900f246c165e0d86adc12cf6df8c1ab",
+  "raw_run": "/workspace/deep/artifacts/fullhouse-evaluation/20261109T024322075189Z",
+  "behavior": {
+    "preflop": {
+      "decisions": 36718,
+      "fold": 21158,
+      "facing_bet": 36673,
+      "fold_facing_bet": 21158,
+      "probability_fold": 21165.78710811485,
+      "probability_call": 12524.940598529149,
+      "probability_raise": 3000.5387532388136,
+      "call": 12528,
+      "raise": 3008,
+      "all_in": 353,
+      "probability_check": 26.73354011725792,
+      "check": 24
+    },
+    "flop": {
+      "decisions": 2524,
+      "check": 679,
+      "facing_bet": 1016,
+      "probability_check": 686.8522962185561,
+      "probability_raise": 924.4268691869759,
+      "raise": 945,
+      "all_in": 550,
+      "fold_facing_bet": 452,
+      "probability_fold": 462.21949047624673,
+      "probability_call": 450.50134411822324,
+      "call": 448,
+      "fold": 452
+    },
+    "turn": {
+      "decisions": 888,
+      "check": 466,
+      "facing_bet": 55,
+      "probability_check": 468.9981156277745,
+      "probability_raise": 371.24964592799864,
+      "raise": 372,
+      "all_in": 224,
+      "fold": 26,
+      "fold_facing_bet": 26,
+      "probability_fold": 20.74503878604869,
+      "probability_call": 27.007199658178852,
+      "call": 24
+    },
+    "river": {
+      "decisions": 598,
+      "check": 394,
+      "facing_bet": 3,
+      "probability_check": 388.5460566642016,
+      "probability_raise": 206.6729232338224,
+      "raise": 201,
+      "all_in": 133,
+      "fold": 2,
+      "fold_facing_bet": 2,
+      "probability_fold": 1.3004887335682078,
+      "probability_call": 1.4805313684073669,
+      "call": 1
+    }
+  }
+}

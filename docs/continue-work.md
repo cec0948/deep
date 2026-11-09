@@ -1,6 +1,6 @@
 # 여기서 작업 이어가기
 
-목표는 자체 프로그램에서 실행하는 6인·100BB 포커 AI다. 600회 확대 학습과 후속 30,000핸드 평가를 완료했으며, 프로급 강도는 아직 검증하지 않았다. 최신 분석은 [학습·평가 결과](fullhouse-medium-results.md)를 먼저 읽는다. 구현·연구 판정·작은 실험 요약은 Git에 저장한다. **현재 학습 가중치와 프로세스는 Git으로 전송되지 않으므로, 다른 환경에서 같은 학습을 재개하려면 별도 checkpoint 백업이 필요하다.**
+목표는 자체 프로그램에서 실행하는 6인·100BB 포커 AI다. 600회 학습 후 추가 564,000핸드 진단에서 성능 후퇴, 학습 엔진의 짧은 올인 처리 오류, 평균 전략의 근사 오차를 확인했다. **최신 [원인 조사와 다음 구현 순서](fullhouse-regression-diagnosis.md)를 먼저 읽는다. 기존 설정의 연장 학습은 보류하고, 규칙 수정 후 새 버퍼와 새 run에서 검증해야 한다.** 진단용 수정은 본 학습 소스에 아직 적용하지 않았다. 프로급 강도는 미검증이다. 구현·연구 판정·실험 요약과 압축된 평가 로그는 Git에 저장하며, 큰 학습 가중치와 프로세스는 별도 checkpoint 백업이 필요하다.
 
 ## 현재 환경에서 이어가기
 
@@ -29,7 +29,7 @@ python scripts/train_fullhouse_medium.py resume
 - 연구 판정과 구현 결과 문서, `reports/`의 작은 실험 요약.
 - `scripts/export_medium_checkpoint.py`: 실행을 멈추지 않고 최신 저장 시점의 재개 백업을 만드는 도구.
 
-`.cache/`, `artifacts/`, venv, 빌드 결과, 모델 가중치, 원시 대전 로그는 Git에 포함하지 않는다. 각 upstream 고정 commit과 다운로드 경로는 설정/문서에 기록했다. 재사용 코드 라이선스 고지는 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)에 있다.
+`.cache/`, `artifacts/`, venv, 빌드 결과, 모델 가중치는 Git에 포함하지 않는다. 검증에 필요한 원시 대전 로그의 압축본은 `reports/`에 보존한다. 각 upstream 고정 commit과 다운로드 경로는 설정/문서에 기록했다. 재사용 코드 라이선스 고지는 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)에 있다.
 
 ## 재개 백업
 
@@ -73,18 +73,19 @@ tar -xzf "$resume_archive" -C /workspace/deep
 python scripts/build_fullhouse_r1.py
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /workspace/.venvs/fullhouse/bin/python -m pytest tests -q
 python scripts/train_fullhouse_medium.py status
-python scripts/train_fullhouse_medium.py resume
 ```
+
+현재 600회 백업은 분석·비교용으로 복원한다. 새 학습은 후속 진단의 규칙 오류를 수정하고 버전과 버퍼를 새로 만든 뒤 진행한다.
 
 정확한 재개에는 최신 `latest.pt`를 사용한다. 모델만 담은 `iter_XXXXX.pt`나 추론용 `.npz`로는 reservoir/RNG를 복구할 수 없다. hash 불일치가 발생하면 기록된 버전과 파일을 확인하고, 검사를 무조건 해제하지 않는다. Rust를 수정하거나 다른 플랫폼에서 binary를 다시 빌드할 때는 [JSON API 빌드 안내](json-api.md)와 고정 Rust 1.90.0/NoRegrets commit을 사용한다.
 
 ## 다음 담당자가 먼저 할 일
 
 1. 상태 명령으로 실제 실행이 계속되는지 확인한다. 이미 실행 중인 학습을 다시 시작하지 않는다.
-2. 600회 완료 보고서와 Git에 보존된 원시 평가·결과 파일을 확인한다. 작은 실험에서 개선이 안 보였다는 이유로 확대 학습의 결과를 미리 판정하지 않는다.
-3. 중간→최종 모델의 동일 deal 손익 차이와 오차 범위를 확인하고, 개선 가능성이 있으면 독립 학습 seed로 재현한다.
+2. 후속 원인 조사 보고서와 짧은 올인 반례를 읽고 학습 엔진 및 특징 불일치를 우선 수정한다. 기존 소스·체크포인트는 비교 기준으로 보존한다.
+3. 평균 전략의 조건부 표적 적합도와 optimizer 변동성을 개선한 뒤, 새 버퍼/새 버전에서 독립 학습 seed로 재현한다. 다음 구현 순서와 보류 범위는 원인 조사 보고서를 따른다.
 4. 실행 정확성과 강도 판정을 구분한다. 51개 요약 특징의 imperfect recall·공유 신경망 근사·6인 균형 수렴은 별도 이론 쟁점이다.
 
 새 대화에는 다음처럼 요청하면 된다.
 
-> `/workspace/deep/docs/continue-work.md`를 읽고 현재 학습 상태를 확인하세요. 실행 중이면 유지하고, 완료됐으면 학습 및 평가 결과를 분석하세요. 이론적 쟁점만 따로 보고하고 독립적으로 가능한 구현은 계속하세요.
+> `/workspace/deep/docs/continue-work.md`와 `docs/fullhouse-regression-diagnosis.md`를 읽고, 짧은 올인 규칙 오류와 특징 불일치를 먼저 수정하세요. 기존 실험은 보존하고 새 버전으로 검증하세요. 평균 전략 적합도 개선과 새 버퍼 재학습 순서를 따르며 이론적 판단이 필요한 쟁점만 보고하세요.

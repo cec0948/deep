@@ -1,6 +1,8 @@
 # 실험 요약 스냅샷
 
-Git에 포함할 수 있는 작은 결과 JSON을 `artifacts/`에서 복사했다. 이름과 하위 경로는 원래 실행 ID를 보존한다. 원시 핸드·가중치·체크포인트는 이 폴더에 포함하지 않는다. 따라서 과거 대전 통계의 원시 재계산에는 기존 artifacts 또는 같은 명령의 재실행이 필요하다.
+결과 JSON과 검증에 필요한 압축 대전 로그를 `artifacts/`에서 보존한다. `fullhouse-medium/`에는 최초 완료 평가, `fullhouse-regression/20261109/`에는 추가 564,000핸드 원인 조사 결과와 원시 `.jsonl.gz`, 규칙 반례, fitting 진단, 파일별 SHA-256 manifest가 있다. 큰 가중치·학습 replay·체크포인트는 포함하지 않는다. 이전 작은 실험은 요약만 보존한 경우도 있다.
+
+최신 해석과 다음 구현 순서는 [성능 후퇴 원인 조사](../docs/fullhouse-regression-diagnosis.md)를 따른다. `summary.json`의 paired 비교는 같은 deal seed와 상대 field에서 공통 deal 묶음을 사용한다. 개별 모델에 대한 ± 값의 단순 비교로 paired 오차를 대신하지 않는다.
 
 `checkpoint-export.json`은 별도 재개 백업 파일의 위치/반복/용량/체크섬을 설명한다. 파일 자체는 GitHub에 올라가지 않는다. [작업 이어가기](../docs/continue-work.md)를 따른다.
 
