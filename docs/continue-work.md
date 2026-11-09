@@ -1,60 +1,60 @@
 # 여기서 작업 이어가기
 
-목표는 자체 프로그램에서 실행하는 6인·100BB 포커 AI다. 600회 학습 후 추가 564,000핸드 진단에서 성능 후퇴, 학습 엔진의 짧은 올인 처리 오류, 평균 전략의 근사 오차를 확인했다. **최신 [원인 조사와 다음 구현 순서](fullhouse-regression-diagnosis.md)를 먼저 읽는다. 기존 설정의 연장 학습은 보류하고, 규칙 수정 후 새 버퍼와 새 run에서 검증해야 한다.** 진단용 수정은 본 학습 소스에 아직 적용하지 않았다. 프로급 강도는 미검증이다. 구현·연구 판정·실험 요약과 압축된 평가 로그는 Git에 저장하며, 큰 학습 가중치와 프로세스는 별도 checkpoint 백업이 필요하다.
+목표는 자체 프로그램에서 실행하는 6인·100BB 포커 AI다. **최신 작업은 [V3 엔진 수정·평균 전략 안정화·새 버퍼 3-seed 학습](fullhouse-v3-training.md)**이다. 짧은 올인 규칙·추론 특징을 수정하고 독립 엔진과 검증했으며, 과거 버퍼를 사용하지 않는 seed 42·43·44 학습을 시작했다. V2 600회 실행은 [원인 조사](fullhouse-regression-diagnosis.md)와 비교용으로 보존한다. 프로급 강도는 미검증이다.
 
-## 현재 환경에서 이어가기
+## 현재 상태와 재개
 
 ```bash
 cd /workspace/deep
-python scripts/train_fullhouse_medium.py status
+python scripts/train_fullhouse_v3.py status
 ```
 
-먼저 `status`가 `complete`이면 학습·평가가 끝난 상태이므로 결과 분석부터 한다. 실패/중단 상태에서만 재개한다. 진행 중 상태에서 `supervisor_alive`와 `child_alive`가 true이면 기존 학습이 실행 중이다. 그대로 둔다. 실행 환경이 유지되는 동안 supervisor가 600회 학습과 후속 평가를 계속한다. 환경이 꺼진 뒤 다시 실행되어 프로세스가 없는 경우에는:
+`artifacts/fullhouse-v3/current.json` → 실행 폴더의 `status.json`이 실제 상태다. 문서에 적힌 진행 숫자는 스냅샷이다. `running`이며 `alive: true`이면 그대로 둔다. `complete`이면 `results.json`을 분석한다. 환경이 종료되어 프로세스가 사라진 중단 실행만 재개한다.
 
 ```bash
-python scripts/train_fullhouse_medium.py resume
+python scripts/train_fullhouse_v3.py resume
 ```
 
-기존 실행이 살아 있으면 중복 재개를 거절한다. 현재 실행의 `artifacts/fullhouse-medium/current.json` → 실행 폴더의 `status.json`이 실제 상태다. 고정 문서의 진행 숫자는 스냅샷일 뿐이다. 정상 완료 시 해당 폴더에 `results.json`이 생성된다. 원본 trainer 마지막 줄의 `600 iterations`는 `--stop-after` 구간에서도 예정 horizon을 출력하므로 완료 판정에 사용하지 않는다.
+중복 실행을 거절하며, 실행 잠금과 PID 시작 시각을 함께 확인한다. 구간 완료 시점은 12 → 60 → 120회다. 상태의 `committed`는 supervisor가 확인한 **구간 완료** 반복 수, `latest`는 최근 진단 로그다. 이 둘 사이에도 매 12회 `latest.pt`가 저장되며 재개는 그 전체 checkpoint부터 진행한다.
 
-600회×256 regret root traversals, regret/strategy 512/128 optimizer steps, seed 42, CPU 단일 worker/thread다. 학습 후 공개 모델·기존 작은 모델·이번 120/300/600회 모델을 동일 NoRegrets 1M 상대 5명에게 후보당 독립 1,000 deals×6좌석으로 평가한다. 세부 사항은 [중간 규모 학습](fullhouse-medium-training.md)을 따른다.
+각 seed는 단일 CPU worker/thread이며 세 seed를 병렬 처리한다. 회당 regret root 256개, regret 512×128, strategy 512×512 fitting이다. 시간 가중치 horizon은 600, 이번 실행 종료점은 120이다. 학습 후 두 상대 풀에 12개 후보를 각 2,000 deals×6좌석으로 자동 평가한다. 총 예정 288,000핸드이며 후보별 결과를 모두 보존한다.
 
-실행 중인 학습 소스는 해당 run의 `source/`에 복사되어 있다. supervisor가 관리하는 평가기/runtime/자기 자신의 소스, 비교 모델, 엔진을 수정하면 다음 구간의 hash 검사가 실패한다. 새로운 구현은 별도로 준비하고 현재 실행과 버전을 섞지 않는다.
+학습 소스는 실행 폴더의 `source/`에 고정되어 있다. supervisor·평가기·runtime·비교 모델·엔진의 SHA-256도 저장한다. 실행 중 이 파일들을 바꾸면 다음 구간의 검사를 거절한다. 과거 V2 checkpoint로 V3 학습을 재개하지 않는다.
 
-## Git에 저장한 것
-
-- JSON 추론 연결, Rust adapter/bridge, 고정 원본 소스 준비·빌드 코드.
-- R1 반례 수정, 평균 전략 oracle, RNG·atomic checkpoint·정확 재개 검사.
-- 작은 학습·가중치/fitting 비교·중간 규모 학습/평가 실행기와 설정.
-- 연구 판정과 구현 결과 문서, `reports/`의 작은 실험 요약.
-- `scripts/export_medium_checkpoint.py`: 실행을 멈추지 않고 최신 저장 시점의 재개 백업을 만드는 도구.
-
-`.cache/`, `artifacts/`, venv, 빌드 결과, 모델 가중치는 Git에 포함하지 않는다. 검증에 필요한 원시 대전 로그의 압축본은 `reports/`에 보존한다. 각 upstream 고정 commit과 다운로드 경로는 설정/문서에 기록했다. 재사용 코드 라이선스 고지는 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)에 있다.
-
-## 재개 백업
-
-최신 600회 최종 백업의 이름·용량·SHA-256·저장 반복 수는 [reports/checkpoint-export.json](../reports/checkpoint-export.json)에 기록했다. **백업 파일 자체는 현재 환경의 `artifacts/exports/`에 있으며 GitHub에는 올라가지 않는다. 환경을 없애기 전에 파일을 따로 내려받아 보관해야 한다.**
-
-원하는 시점의 더 최신 백업을 만들려면:
+완료한 평가를 원시 로그부터 검산하고 Git용 결과를 만들려면:
 
 ```bash
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /workspace/.venvs/fullhouse/bin/python scripts/export_medium_checkpoint.py
+python scripts/summarize_fullhouse_v3.py
 ```
 
-진행 중인 `latest.pt`는 같은 디렉터리의 atomic replace로 갱신되므로 exporter가 한 번 연 파일은 일관된 저장 시점을 유지한다. 새 백업에는 다음을 포함한다.
+원시 평가·적합도·설정·해시와 요약은 `reports/fullhouse-v3/RUN_ID/`에 저장한다. 이전 중간 규모 실행은 `python scripts/train_fullhouse_medium.py status`로 확인할 수 있지만, **기존 규칙 오류가 있는 V2 학습을 연장하지 않는다.**
 
-- 해당 반복의 전체 모델·regret/strategy reservoir·모든 CPU RNG가 들어 있는 `latest.pt`.
-- 저장 시점 이하의 추론 npz와 고정 학습 소스/설정/진단.
-- 현재 실행 위치와 재개용 상태(원래 실행 중인 PID를 제거한 복사본).
-- 자동 평가에 필요한 NoRegrets 1M blueprint, 작은 비교 모델, 원래 엔진 binary와 라이선스.
-- 검사용 smoke 모델과 JSON adapter binary.
-- 파일별 SHA-256 manifest.
+## Git과 checkpoint 백업
 
-현재 실행이나 파일은 수정하지 않고 복사본만 준비한다. 별도 NoRegrets 학습기의 큰 `checkpoint-1000000.bin`은 포함하지 않으므로, 이 백업은 Fullhouse 학습 재개와 예정 평가를 위한 것이다. 다른 하드웨어에서 bit 단위로 동일한 결과를 보장하지 않는다.
+Git에는 고정 upstream 준비·패치·규칙 oracle·JSON runtime·학습 및 평가 실행기·검사·문서·압축 원시 대전 로그를 보존한다. `.cache/`, `artifacts/`, venv, 모델·reservoir는 Git에 포함하지 않는다. upstream 라이선스는 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)에 있다.
 
-## 새 환경으로 옮겨 재개하기
+최신 V3 백업 도구:
 
-이 백업 형식은 **Debian 13(glibc 2.41), Linux x86_64, Python 3.12, `/workspace/deep` 경로**를 기준으로 만들었다. 정확한 패키지 버전은 [환경 기록](../reports/environment.json)에 있다. 비어 있는 새 환경에서 저장소 브랜치를 받고 Python 환경을 준비한다.
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+  /workspace/.venvs/fullhouse/bin/python scripts/export_fullhouse_v3.py
+```
+
+생성 파일은 `artifacts/exports/fullhouse-v3-TIMESTAMP.tar.gz`, 이름·용량·SHA-256·seed별 저장 반복 수는 `reports/fullhouse-v3-export.json`과 해당 archive 옆 `.json`에 기록된다. **archive는 현재 환경의 로컬 파일이다. 환경이 사라져도 보존하려면 별도로 내려받아야 한다. GitHub 푸시는 큰 checkpoint 백업을 대신하지 않는다.**
+
+백업에는 다음이 들어간다.
+
+- 세 seed의 전체 모델·reservoir·CPU RNG·설정이 담긴 `latest.pt`.
+- 저장 시점 이하 모델, 고정 학습 소스·설정·진단·검증 gate.
+- 자동 평가에 필요한 기존 120·600회 모델, 공개 모델, equity 데이터, NoRegrets 1M blueprint, 원래 bridge binary와 라이선스 고지.
+- PID를 제거한 복원용 상태와 파일별 SHA-256 manifest.
+- 완료 실행이면 대전 로그·평가 결과도 포함한다. 진행 중 snapshot이면 평가는 재실행하도록 초기화한다.
+
+실행 중에도 한 번 연 atomic checkpoint inode를 복사하므로 seed별 저장 시점은 일관된다. 서로 다른 seed가 같은 반복까지 도달하지 않았어도 각각 정확히 재개할 수 있다. 별도 NoRegrets의 큰 학습 checkpoint는 포함하지 않는다. 기존 V2 600회 백업은 [이전 백업 정보](../reports/checkpoint-export.json)에 있다.
+
+## 새 환경에 복원
+
+현재 bundle은 **Debian 13, glibc 2.41, Linux x86_64, Python 3.12, `/workspace/deep` 경로**를 기준으로 한다. CPU·라이브러리가 바뀌면 bit 단위 재현을 보장하지 않는다. 먼저 저장소와 고정 Fullhouse 의존성을 준비한다.
 
 ```bash
 git clone --branch codex/poker-ai-handoff-20261106 https://github.com/cec0948/deep.git /workspace/deep
@@ -63,29 +63,27 @@ bash scripts/setup_fullhouse.sh --training
 /workspace/.venvs/fullhouse/bin/python -m pip install pytest==8.4.2
 ```
 
-Git과 별도로 보관한 `.tar.gz` 파일을 새 환경으로 옮긴다. 이번 푸시와 함께 만든 백업은 `reports/checkpoint-export.json`의 checksum으로 확인할 수 있다. 나중에 만든 백업이면 그 백업의 `.tar.gz.json`에 있는 checksum을 사용한다.
+별도로 보관한 archive를 옮기고 metadata의 SHA-256과 비교한 후 프로젝트 루트에 푼다.
 
 ```bash
-resume_archive=/path/to/fullhouse-medium-YYYYMMDD.tar.gz
+resume_archive=/path/to/fullhouse-v3-TIMESTAMP.tar.gz
 sha256sum "$resume_archive"
-# reports/checkpoint-export.json 또는 해당 백업 .tar.gz.json의 sha256과 비교한다.
+# archive 옆 .json 또는 reports/fullhouse-v3-export.json의 sha256과 비교
 tar -xzf "$resume_archive" -C /workspace/deep
-python scripts/build_fullhouse_r1.py
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /workspace/.venvs/fullhouse/bin/python -m pytest tests -q
-python scripts/train_fullhouse_medium.py status
+python scripts/train_fullhouse_v3.py status
 ```
 
-현재 600회 백업은 분석·비교용으로 복원한다. 새 학습은 후속 진단의 규칙 오류를 수정하고 버전과 버퍼를 새로 만든 뒤 진행한다.
+완료 bundle은 분석·비교용으로 사용할 수 있다. 미완료 bundle만 `python scripts/train_fullhouse_v3.py resume`으로 재개한다. 정확 재개에는 **`latest.pt`**가 필요하다. 버퍼 없는 `iter_XXXXX.pt`나 추론용 `.npz`로는 RNG와 reservoir를 복구할 수 없다. hash 검사 실패는 버전·복원 파일을 확인해 해결하며 검사를 무조건 해제하지 않는다.
 
-정확한 재개에는 최신 `latest.pt`를 사용한다. 모델만 담은 `iter_XXXXX.pt`나 추론용 `.npz`로는 reservoir/RNG를 복구할 수 없다. hash 불일치가 발생하면 기록된 버전과 파일을 확인하고, 검사를 무조건 해제하지 않는다. Rust를 수정하거나 다른 플랫폼에서 binary를 다시 빌드할 때는 [JSON API 빌드 안내](json-api.md)와 고정 Rust 1.90.0/NoRegrets commit을 사용한다.
+다른 플랫폼에서 Rust binary를 다시 빌드할 때는 [JSON API 안내](json-api.md)의 고정 NoRegrets commit과 Rust 1.90.0을 사용한다. oracle·전체 회귀 검사를 새 환경에서 실행하려면 NoRegrets 원본과 별도 smoke 모델 등 기존 검사 자산도 준비해야 한다. V3 훈련 재개용 bundle이 프로젝트의 모든 과거 실험 자산을 포함하는 것은 아니다.
 
-## 다음 담당자가 먼저 할 일
+## 다음 담당자
 
-1. 상태 명령으로 실제 실행이 계속되는지 확인한다. 이미 실행 중인 학습을 다시 시작하지 않는다.
-2. 후속 원인 조사 보고서와 짧은 올인 반례를 읽고 학습 엔진 및 특징 불일치를 우선 수정한다. 기존 소스·체크포인트는 비교 기준으로 보존한다.
-3. 평균 전략의 조건부 표적 적합도와 optimizer 변동성을 개선한 뒤, 새 버퍼/새 버전에서 독립 학습 seed로 재현한다. 다음 구현 순서와 보류 범위는 원인 조사 보고서를 따른다.
-4. 실행 정확성과 강도 판정을 구분한다. 51개 요약 특징의 imperfect recall·공유 신경망 근사·6인 균형 수렴은 별도 이론 쟁점이다.
+1. 상태를 먼저 확인하고 기존 실행이 살아 있으면 유지한다.
+2. V3 구현 문서와 완료 결과를 읽는다. 승률뿐 아니라 세 학습 seed의 편차, 평균 전략 적합도, 60→120회 paired 차이를 확인한다.
+3. 수익이 나쁜 원인을 규칙·fitting·collector·regret 학습으로 구분한다. 좋은 seed만 고르거나 같은 설정을 바로 유료 장기 학습으로 확대하지 않는다.
+4. 51개 요약 특징의 imperfect recall, 공유 신경망 근사와 6인 균형 수렴은 별도 이론 쟁점으로 남긴다.
 
-새 대화에는 다음처럼 요청하면 된다.
+새 대화에서 사용할 요청:
 
-> `/workspace/deep/docs/continue-work.md`와 `docs/fullhouse-regression-diagnosis.md`를 읽고, 짧은 올인 규칙 오류와 특징 불일치를 먼저 수정하세요. 기존 실험은 보존하고 새 버전으로 검증하세요. 평균 전략 적합도 개선과 새 버퍼 재학습 순서를 따르며 이론적 판단이 필요한 쟁점만 보고하세요.
+> `/workspace/deep/docs/continue-work.md`와 `docs/fullhouse-v3-training.md`를 읽고 현재 실행 상태를 확인하세요. 실행 중이면 유지하고, 완료했다면 세 seed의 학습·평가 원시 결과를 검산해 다음 개선 우선순위를 정하세요. 기존 실험과 체크포인트를 보존하고 독립적으로 가능한 구현은 계속하세요.

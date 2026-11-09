@@ -1,0 +1,16 @@
+{
+  "archive": "artifacts/exports/fullhouse-v3-20261109T040955042524Z.tar.gz",
+  "bytes": 191444321,
+  "sha256": "5ffd93f6d33ef05130939fc41307a426abdd060e07e7f96e91c3aa45980cc3d0",
+  "seeds": {
+    "42": 60,
+    "43": 48,
+    "44": 60
+  },
+  "regular_files_verified": 90,
+  "run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+  "source_revision": "r1-cpu-v3",
+  "completed": false,
+  "restore": "Fresh checkout of this project at /workspace/deep; prepare pinned Fullhouse upstream and Python dependencies first. Extract at project root, then status. Resume only an incomplete campaign. Binary compatibility: Debian 13 x86_64/glibc 2.41. A completed bundle retains evaluation results; an incomplete bundle resets evaluations.",
+  "limitation": "Archive is local until downloaded. No full NoRegrets training checkpoint; its evaluation blueprint is included."
+}

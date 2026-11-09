@@ -1,0 +1,583 @@
+--- a/training/game.py
++++ b/training/game.py
+@@ -45,6 +45,8 @@
+     rng: np.random.Generator,
+     starting_stacks: np.ndarray | None = None,
+ ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
++    if n_players != 6 or (starting_stacks is not None and not np.all(np.asarray(starting_stacks) == STARTING_STACK)):
++        raise ValueError('V3 rules contract: six players, equal 100BB starting stacks')
+     deck = rng.permutation(52).astype(np.int8)
+     hole_cards = np.empty((n_players, 2), dtype=np.int8)
+     for i in range(n_players):
+@@ -112,7 +114,7 @@
+         legal[FOLD] = True
+     legal[CHECK_CALL] = True
+ 
+-    can_raise = my_stack > to_call
++    can_raise = my_stack > to_call and bool(state[S_PENDING + seat])
+     if can_raise:
+         pot_after_call = pot + to_call
+         bet_room = my_stack - to_call
+@@ -167,6 +169,8 @@
+         new_bet = state[S_BETS + seat]
+         state[S_CURBET] = max(state[S_CURBET], new_bet)
+         raise_size = max(0, state[S_CURBET] - prev_bet)
++        if raise_size > 0:
++            state[S_LASTRAISER] = seat
+         if raise_size >= max(state[S_LAST_FULL_RAISE], BIG_BLIND):
+             state[S_LAST_FULL_RAISE] = raise_size
+             state[S_NRAISES] += 1
+@@ -199,7 +203,7 @@
+     for offset in range(1, n + 1):
+         cand = (last + offset) % n
+         if (
+-            state[S_PENDING + cand] == 1
++            (state[S_PENDING + cand] == 1 or state[S_BETS + cand] < state[S_CURBET])
+             and state[S_FOLDED + cand] == 0
+             and state[S_ALLIN + cand] == 0
+         ):
+@@ -224,63 +228,8 @@
+ 
+     n = state[S_NPLAYERS]
+     board_idx = 2 * n
+-    _CARDS = [
+-        eval7.Card(s)
+-        for s in [
+-            "2c",
+-            "3c",
+-            "4c",
+-            "5c",
+-            "6c",
+-            "7c",
+-            "8c",
+-            "9c",
+-            "Tc",
+-            "Jc",
+-            "Qc",
+-            "Kc",
+-            "Ac",
+-            "2d",
+-            "3d",
+-            "4d",
+-            "5d",
+-            "6d",
+-            "7d",
+-            "8d",
+-            "9d",
+-            "Td",
+-            "Jd",
+-            "Qd",
+-            "Kd",
+-            "Ad",
+-            "2h",
+-            "3h",
+-            "4h",
+-            "5h",
+-            "6h",
+-            "7h",
+-            "8h",
+-            "9h",
+-            "Th",
+-            "Jh",
+-            "Qh",
+-            "Kh",
+-            "Ah",
+-            "2s",
+-            "3s",
+-            "4s",
+-            "5s",
+-            "6s",
+-            "7s",
+-            "8s",
+-            "9s",
+-            "Ts",
+-            "Js",
+-            "Qs",
+-            "Ks",
+-            "As",
+-        ]
+-    ]
++    from bot.features import _eval7_cards
++    _CARDS = _eval7_cards()
+ 
+     board = [_CARDS[deck[board_idx + b]] for b in range(5)]
+     scores = np.zeros(n, dtype=np.int32)
+@@ -315,7 +264,7 @@
+         split = amount // len(winners)
+         rem = amount % len(winners)
+         for idx, w in enumerate(winners):
+-            awarded[w] += split + (rem if idx == 0 else 0)
++            awarded[w] += split + int(idx < rem)
+         prev = lvl
+ 
+     for i in range(n):
+@@ -358,7 +307,7 @@
+         and state[S_ALLIN + i] == 0
+         and state[S_STACKS + i] > 0
+     )
+-    if actors == 0:
++    if actors <= 1:
+         while state[S_STREET] < 3:
+             state[S_STREET] += 1
+         _resolve_showdown(state, deck, hole_cards)
+--- a/bot/features.py
++++ b/bot/features.py
+@@ -153,210 +153,66 @@
+     return {"preflop": 0, "flop": 1, "turn": 2, "river": 3}.get(street_name, 0)
+ 
+ 
+-def _replay_betting_rounds(
+-    log: list[dict],
+-    players: list[dict],
+-    current_street_name: str,
+-) -> tuple[list[dict], dict[int, int], int, int | None, int]:
+-    """Replay action_log enough to recover street-local betting state.
+-
+-    The real engine records street changes in ``events`` but exposes only player
+-    actions in ``action_log``. When those ``deal`` markers are missing at
+-    runtime, we infer street boundaries from betting-round closure so the bot
+-    stays aligned with the same legal-action rules used during training.
++def _replay_betting_rounds(log, players, current_street_name):
++    """Full-raise counts and last actual bettor; explicit street markers preferred.
++
++    Calls are incremental; raises are street totals. Inferring streets without
++    markers is supported only for the fixed six-player 100BB contract.
+     """
+-    target_street = _street_index(current_street_name)
+-    seats = {int(p.get("seat", idx)) for idx, p in enumerate(players)}
+-    if not seats:
+-        seats = {int(e["seat"]) for e in log if e.get("seat") is not None}
+-
+-    street = 0
+-    current_bet = 0
+-    last_full_raise = BIG_BLIND
+-    street_bets: dict[int, int] = {}
+-    invested: dict[int, int] = {}
+-    folded: set[int] = set()
+-    all_in: set[int] = set()
+-    pending: set[int] = set(seats)
+-    current_segment: list[dict] = []
+-    current_n_raises = 0
+-    current_last_raiser: int | None = None
+-
+-    def active_seats() -> set[int]:
+-        return {seat for seat in seats if seat not in folded and seat not in all_in}
+-
+-    def advance_street() -> None:
+-        nonlocal street, current_bet, last_full_raise, street_bets, pending
+-        street = min(street + 1, 3)
+-        current_bet = 0
+-        last_full_raise = BIG_BLIND
+-        street_bets = {}
+-        pending = active_seats()
++    target=_street_index(current_street_name)
++    seats={int(p.get('seat',i)) for i,p in enumerate(players)}
++    street=0;cur=0;minimum=BIG_BLIND;bets={};invested={};folded=set();allin=set()
++    pending=set(seats);segment=[];raises=0;raiser=None
++
++    def active():
++        return seats-folded-allin
++
++    def advance():
++        nonlocal street,cur,minimum,bets,pending,segment,raises,raiser
++        street+=1;cur=0;minimum=BIG_BLIND;bets={};pending=active()
++        segment=[];raises=0;raiser=None
+ 
+     for entry in log:
+-        action = entry.get("action")
+-        if action == "deal":
+-            advance_street()
+-            continue
+-        if entry.get("seat") is None:
+-            continue
+-        seat = int(entry["seat"])
+-        seats.add(seat)
+-        amount = max(_safe_int(entry.get("amount", 0)), 0)
+-
+-        if (
+-            action not in ("small_blind", "big_blind")
+-            and not pending
+-            and street < target_street
+-        ):
+-            advance_street()
+-
+-        if street == target_street:
+-            current_segment.append(entry)
+-
+-        if action in ("small_blind", "big_blind"):
+-            inc = amount
+-            street_bets[seat] = street_bets.get(seat, 0) + inc
+-            current_bet = max(current_bet, street_bets[seat])
+-        elif action == "fold":
+-            inc = 0
+-            folded.add(seat)
+-            pending.discard(seat)
+-        elif action == "check":
+-            inc = 0
+-            pending.discard(seat)
+-        elif action == "call":
+-            inc = amount
+-            street_bets[seat] = street_bets.get(seat, 0) + inc
+-            pending.discard(seat)
+-        elif action in ("raise", "all_in"):
+-            prev_bet = current_bet
+-            prev_seat_bet = street_bets.get(seat, 0)
+-            inc = max(0, amount - prev_seat_bet)
+-            street_bets[seat] = max(prev_seat_bet, amount)
+-            current_bet = max(current_bet, street_bets[seat])
+-            pending.discard(seat)
+-            if action == "all_in":
+-                all_in.add(seat)
+-
+-            raise_size = max(0, current_bet - prev_bet)
+-            full_raise = raise_size >= last_full_raise
+-            if raise_size > 0 and full_raise:
+-                last_full_raise = raise_size
+-                pending = {s for s in active_seats() if s != seat}
+-                if street == target_street:
+-                    current_n_raises += 1
+-                    current_last_raiser = seat
+-        else:
+-            inc = 0
+-            pending.discard(seat)
+-
++        kind=entry.get('action')
++        if kind=='deal':
++            advance();continue
++        if entry.get('seat') is None:continue
++        seat=int(entry['seat']);amount=max(0,_safe_int(entry.get('amount',0)))
++        if kind not in ('small_blind','big_blind') and not pending and street<target:
++            advance()
++        if street==target:segment.append(entry)
++        inc=0
++        if kind in ('small_blind','big_blind','call'):
++            inc=amount;bets[seat]=bets.get(seat,0)+inc
++            if kind!='call':cur=max(cur,bets[seat])
++            else:pending.discard(seat)
++        elif kind in ('raise','all_in'):
++            inc=max(0,amount-bets.get(seat,0));bets[seat]=amount
++            raise_size=max(0,amount-cur);cur=max(cur,amount);pending.discard(seat)
++            if raise_size>0:
++                raiser=seat
++                if raise_size>=minimum:
++                    minimum=raise_size;raises+=1;pending=active()-{seat}
++                # A short raise must still be answered by earlier callers.
++                pending |= {p for p in active() if p!=seat and bets.get(p,0)<cur}
++        elif kind=='fold':
++            folded.add(seat);pending.discard(seat)
++        elif kind=='check':pending.discard(seat)
+         if inc:
+-            invested[seat] = invested.get(seat, 0) + inc
+-
+-    if target_street == 0 and current_bet <= BIG_BLIND:
+-        current_n_raises = 0
+-        current_last_raiser = None
+-    return (
+-        current_segment,
+-        invested,
+-        min(current_n_raises, 4),
+-        current_last_raiser,
+-        last_full_raise,
+-    )
+-
+-
+-def _current_street_aggression(
+-    log: list[dict],
+-    players: list[dict],
+-    current_bet: int,
+-    street_name: str,
+-) -> tuple[int, int | None, int]:
+-    """Return (n_raises, last_raiser, last_full_raise) for the current street."""
+-    blind_only = street_name == "preflop" and current_bet <= 100
+-    no_bet = current_bet <= 0 or blind_only
+-    if no_bet:
+-        return 0, None, BIG_BLIND
+-
+-    if any(entry.get("action") == "deal" for entry in log):
+-        segment = _street_action_segment(log)
+-        n_raises = 0
+-        last_raiser = None
+-        street_current_bet = 0
+-        last_full_raise = BIG_BLIND
+-        for entry in segment:
+-            action = entry.get("action")
+-            if entry.get("seat") is None:
+-                continue
+-            seat = int(entry["seat"])
+-            amount = _safe_int(entry.get("amount", 0))
+-            if action in ("small_blind", "big_blind", "call"):
+-                street_current_bet = max(street_current_bet, amount)
+-                continue
+-            if action not in ("raise", "all_in"):
+-                continue
+-            raise_size = max(0, amount - street_current_bet)
+-            street_current_bet = max(street_current_bet, amount)
+-            if raise_size >= last_full_raise:
+-                last_full_raise = raise_size
+-                n_raises += 1
+-                last_raiser = seat
+-        if n_raises:
+-            return min(n_raises, 4), last_raiser, last_full_raise
+-        return 1, None, BIG_BLIND
+-
+-    _, _, n_raises, last_raiser, last_full_raise = _replay_betting_rounds(
+-        log, players, street_name
+-    )
+-    if n_raises:
+-        return n_raises, last_raiser, last_full_raise
+-
+-    # The engine can expose a current bet even when action_log lacks enough
+-    # street context to identify the exact bettor. Keep legal masking aligned
+-    # with the existence of an outstanding bet instead of pretending no
+-    # aggression happened.
+-    return 1, None, BIG_BLIND
+-
+-
+-def _hand_invested_from_log(
+-    log: list[dict],
+-    players: list[dict] | None = None,
+-    street_name: str = "preflop",
+-) -> dict[int, int]:
+-    """Approximate current-hand contributions from action_log.
+-
+-    Raise/all-in amounts are total bet-to values for that street, so street
+-    markers or inferred street boundaries let this reconstruct total invested
+-    without relying on match stacks being reset to 10,000 every hand.
+-    """
+-    if players is not None and not any(entry.get("action") == "deal" for entry in log):
+-        _, invested, _, _, _ = _replay_betting_rounds(log, players, street_name)
+-        return invested
+-
+-    invested: dict[int, int] = {}
+-    street_bets: dict[int, int] = {}
+-
+-    for entry in log:
+-        action = entry.get("action")
+-        if action == "deal":
+-            street_bets.clear()
+-            continue
+-        if entry.get("seat") is None:
+-            continue
+-        seat = int(entry["seat"])
+-        amount = max(_safe_int(entry.get("amount", 0)), 0)
+-        if action in ("small_blind", "big_blind", "call"):
+-            inc = amount
+-            street_bets[seat] = street_bets.get(seat, 0) + inc
+-        elif action in ("raise", "all_in"):
+-            inc = max(0, amount - street_bets.get(seat, 0))
+-            street_bets[seat] = max(street_bets.get(seat, 0), amount)
+-        else:
+-            inc = 0
+-        if inc:
+-            invested[seat] = invested.get(seat, 0) + inc
+-
+-    return invested
++            invested[seat]=invested.get(seat,0)+inc
++            if invested[seat]>=STARTING_STACK:allin.add(seat);pending.discard(seat)
++        if kind=='all_in':allin.add(seat);pending.discard(seat)
++    if street<target and not pending:advance()
++    return segment,invested,min(raises,4),raiser,minimum
++
++
++def _current_street_aggression(log, players, current_bet, street_name):
++    _,_,raises,raiser,minimum=_replay_betting_rounds(log,players,street_name)
++    return raises,raiser,minimum
++
++
++def _hand_invested_from_log(log,players=None,street_name='preflop'):
++    return _replay_betting_rounds(log,players or [],street_name)[1]
+ 
+ 
+ def _evaluate_hand_strength(c0: int, c1: int, board_idx: list[int]) -> float:
+@@ -782,7 +638,7 @@
+         legal[0] = True
+     legal[1] = True
+ 
+-    can_raise = stack > owed and min_raise > 0
++    can_raise = stack > owed and min_raise is not None and min_raise > 0
+     if can_raise:
+         pot_after_call = pot + owed
+         bet_room = stack - owed
+--- a/training/r1_support.py
++++ b/training/r1_support.py
+@@ -125,3 +125,73 @@
+     if AVERAGE_SAMPLER=='importance':return collect_importance(trainer,rng,n_traversals,net,buffer,iteration)
+     if AVERAGE_SAMPLER=='fixed-opponent':return collect_fixed_opponent(trainer,rng,n_traversals,net,buffer,iteration)
+     raise ValueError('Unknown average sampler: '+AVERAGE_SAMPLER)
++
++# Appended to the deterministic R1 support module by build_fullhouse_v3.py.
++REVISION = 'r1-cpu-v3'
++STRATEGY_OPTIMIZER = 'feature-stratified-pps-swa-v1'
++STRATEGY_BATCH_SIZE = 512
++
++
++def strategy_strata(features):
++    """Feature-defined strata: six unopened positions, then street x pot size.
++
++    Multiplying all weights in a stratum by the same constant preserves the
++    conditional average at every identical feature vector. It changes the
++    projection distribution for a finite shared network, which is intentional.
++    """
++    x=np.asarray(features)
++    street=np.argmax(x[:,17:21],axis=1)
++    pot=np.searchsorted(np.array([.1,.5,2.]),x[:,27],side='right')
++    groups=6+4*street+pot
++    unopened=(street==0)&(x[:,37]==0)&(x[:,41]*x[:,27]<=.01001)
++    groups[unopened]=np.argmax(x[unopened,21:27],axis=1)
++    return groups
++
++
++class StrategySampler:
++    """Uniform positive-mass stratum, PPS within stratum, unweighted CE."""
++    def __init__(self,buffer):
++        self.buffer=buffer;n=buffer.size
++        if n<1:raise ValueError('Empty strategy replay')
++        self.groups=strategy_strata(buffer.features[:n])
++        w=time_weights(buffer.iterations[:n].astype(np.float64))*buffer.sample_weights[:n]
++        if not np.isfinite(w).all() or (w<0).any() or w.max()<=0:
++            raise ValueError('Invalid strategy weights')
++        scaled=w/w.max()
++        totals=np.bincount(self.groups,weights=scaled,minlength=22)
++        count=np.count_nonzero(totals)
++        self.probabilities=np.divide(scaled,totals[self.groups],out=np.zeros_like(scaled),where=totals[self.groups]>0)/count
++        self.cdf=np.cumsum(self.probabilities);self.cdf[-1]=1.
++        self.diagnostics={str(k):dict(rows=int((self.groups==k).sum()),
++            original_mass=float(totals[k]/totals.sum()),
++            **weight_diagnostics(w[self.groups==k])) for k in np.flatnonzero(totals)}
++
++    def sample(self,batch_size):
++        ids=np.searchsorted(self.cdf,np.random.random(batch_size),side='right')
++        b=self.buffer
++        return b.features[ids],b.advantages[ids],np.ones(batch_size,dtype=np.float32)
++
++
++def write_strategy_audit(path,iteration,net,buffer):
++    """Root conditional averages are observable exact targets in finite replay."""
++    n=buffer.size;x=buffer.features[:n];y=buffer.advantages[:n]
++    w=time_weights(buffer.iterations[:n].astype(float))*buffer.sample_weights[:n]
++    root=(x[:,17]==1)&(x[:,24]==1)&np.isclose(x[:,27],.015)
++    ids=np.flatnonzero(root);rows=[]
++    if len(ids):
++        # All features must agree, not just a hand-strength bucket.
++        keys,inverse=np.unique(x[ids],axis=0,return_inverse=True)
++        mass=np.bincount(inverse,weights=w[ids],minlength=len(keys))
++        count=np.bincount(inverse,minlength=len(keys))
++        targets=np.stack([np.bincount(inverse,weights=w[ids]*y[ids,a],minlength=len(keys)) for a in range(5)],1)/mass[:,None]
++        with torch.no_grad():
++            t=torch.from_numpy(keys)
++            pred=net.get_strategy(t,t[:,46:51]).numpy()
++        tv=np.abs(pred-targets).sum(1)/2
++        for i in range(len(keys)):
++            if keys[i,10]==1 and keys[i,7]>=11/12-1e-6:
++                rows.append(dict(hand='AA' if keys[i,7]>.99 else 'KK',rows=int(count[i]),target=targets[i].tolist(),prediction=pred[i].tolist(),tv=float(tv[i])))
++        root_score=dict(rows=len(ids),classes=len(keys),weighted_tv=float(np.average(tv,weights=mass)),premium_pairs=rows)
++    else:root_score={'rows':0}
++    row=dict(iteration=iteration,objective=STRATEGY_OPTIMIZER,root=root_score,strata=StrategySampler(buffer).diagnostics)
++    with open(path,'a') as f:f.write(json.dumps(row,allow_nan=False)+'\n')
+--- a/training/train.py
++++ b/training/train.py
+@@ -60,6 +60,8 @@
+ def _export_strategy_npz(net: AverageStrategyNet, path: Path) -> None:
+     modules = [m for m in net.trunk if isinstance(m, (nn.Linear, nn.LayerNorm))]
+     arrays = {
++        "training_revision": np.asarray(r1.REVISION),
++        "strategy_optimizer": np.asarray(r1.STRATEGY_OPTIMIZER),
+         "strategy_w0": modules[0].weight.detach().cpu().numpy().copy(),
+         "strategy_b0": modules[0].bias.detach().cpu().numpy().copy(),
+         "strategy_ln0_g": modules[1].weight.detach().cpu().numpy().copy(),
+@@ -77,6 +79,8 @@
+ def _export_advantage_npz(net: DuelingAdvantageNet, path: Path) -> None:
+     weights, biases = _extract_dueling_weights(net)
+     arrays = {
++        "training_revision": np.asarray(r1.REVISION),
++        "strategy_optimizer": np.asarray(r1.STRATEGY_OPTIMIZER),
+         "trunk_w0": weights[0],
+         "trunk_b0": biases[0],
+         "trunk_ln0_g": weights[1],
+@@ -365,7 +369,10 @@
+     """
+     net.train()
+     total_loss = 0.0
+-
++    averaged = {}
++    averaged_count = 0
++
++    sampler = r1.StrategySampler(strategy_buffer)
+     ms = sorted(m for m in (milestones or []) if 0 < m <= n_steps)
+     ms_idx = 0
+     interval_loss = 0.0
+@@ -373,7 +380,7 @@
+     interval_marks: list[tuple[int, float]] = []
+ 
+     for step_i in range(n_steps):
+-        features, targets, weights = strategy_buffer.sample(batch_size)
++        features, targets, weights = sampler.sample(r1.STRATEGY_BATCH_SIZE)
+         feat_t = torch.from_numpy(features).to(device)
+         target_t = torch.from_numpy(targets).to(device)
+         w_t = torch.from_numpy(weights).to(device)
+@@ -395,6 +402,14 @@
+         loss.backward()
+         torch.nn.utils.clip_grad_norm_(net.parameters(), 1.0)
+         optimizer.step()
++        if step_i >= n_steps // 2:
++            averaged_count += 1
++            with torch.no_grad():
++                for name,parameter in net.named_parameters():
++                    if averaged_count == 1:
++                        averaged[name] = parameter.detach().clone()
++                    else:
++                        averaged[name].add_((parameter.detach()-averaged[name])/averaged_count)
+         loss_value = loss.item()
+         total_loss += loss_value
+ 
+@@ -413,6 +428,9 @@
+         marks = " | ".join(f"<={m}:{v:.4f}" for m, v in interval_marks)
+         print(f"  [strat-probe {tag}] interval-mean CE  {marks}")
+ 
++    with torch.no_grad():
++        for name,parameter in net.named_parameters():
++            parameter.copy_(averaged[name])
+     net.eval()
+     return total_loss / n_steps
+ 
+@@ -492,7 +510,7 @@
+     torch.set_num_threads(1);torch.use_deterministic_algorithms(True)
+     r1.WEIGHT_HORIZON=n_iterations
+     r1.AVERAGE_SAMPLER=AVERAGE_SAMPLER
+-    run_config=dict(revision=r1.REVISION,average_sampler=AVERAGE_SAMPLER,horizon=n_iterations,traversals=n_traversals,
++    run_config=dict(revision=r1.REVISION,strategy_optimizer=r1.STRATEGY_OPTIMIZER,strategy_batch_size=r1.STRATEGY_BATCH_SIZE,average_sampler=AVERAGE_SAMPLER,horizon=n_iterations,traversals=n_traversals,
+         buffer_capacity=buffer_capacity,strategy_buffer_capacity=strategy_buffer_capacity,
+         train_steps=train_steps,strategy_train_steps=strategy_train_steps,batch_size=batch_size,
+         lr=lr,seed=seed,checkpoint_every=checkpoint_every)
+@@ -672,6 +690,8 @@
+             strategy_net = strategy_nets[control_name]
+ 
+         r1.log_diagnostics(ckpt_path/'diagnostics.jsonl',iteration,collection_stats,strategy_buffer,avg_loss,avg_strategy_loss)
++        if iteration % checkpoint_every == 0 or iteration == end_iteration:
++            r1.write_strategy_audit(ckpt_path/'strategy-audit.jsonl',iteration,strategy_net,strategy_buffer)
+         iter_time = time.time() - iter_start
+         elapsed = time.time() - start_time
+         samples_per_sec = n_traversals / iter_time if iter_time > 0 else 0
+@@ -753,7 +773,7 @@
+             print(f"  -> Saved checkpoint: {save_path} + {len(exported)} npz")
+ 
+     print(
+-        f"\n[Deep CFR] Training complete. {n_iterations} iterations in {time.time() - start_time:.0f}s"
++        f"\n[Deep CFR] Training segment complete. {end_iteration} iterations in {time.time() - start_time:.0f}s"
+     )
+     print(f"[Deep CFR] Final model: {ckpt_path / 'latest.pt'}")
+ 
+@@ -846,10 +866,13 @@
+     )
+     parser.add_argument('--stop-after',type=int)
+     parser.add_argument('--average-sampler',choices=['importance','fixed-opponent'],default='importance')
++    parser.add_argument('--strategy-batch-size',type=int,default=512)
+     args = parser.parse_args()
+     global STOP_AFTER,AVERAGE_SAMPLER
+     STOP_AFTER=args.stop_after
+     AVERAGE_SAMPLER=args.average_sampler
++    if args.strategy_batch_size < 1: parser.error('positive strategy batch size required')
++    r1.STRATEGY_BATCH_SIZE=args.strategy_batch_size
+ 
+     strategy_variants = (
+         _parse_strategy_variants(args.strategy_variants)
