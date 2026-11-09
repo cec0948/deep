@@ -1,0 +1,8 @@
+{
+  "archive": "artifacts/exports/learning-validation-20261109T055825812142Z.tar.gz",
+  "bytes": 18123647,
+  "sha256": "7c301ee22b5d00b42495a90f8ec375971aad1fd2d5ee274d4b25f65d09e2e96f",
+  "verified_files": 66,
+  "requires": "Original V3 replay/source backup fullhouse-v3-20261109T045233369268Z.tar.gz and repository scripts/dependencies",
+  "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z"
+}

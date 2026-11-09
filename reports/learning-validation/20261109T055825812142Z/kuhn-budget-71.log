@@ -1,0 +1,29 @@
+{"iteration": 12, "seconds": 28.04889326800003, "exact_average": {"value_player0": -0.0676006096938957, "best_response_values": [-0.0015307538147666018, 0.12387289307438414], "nash_conv": 0.12234213925961754, "exploitability": 0.06117106962980877, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "replay_average": {"value_player0": -0.07173893294217874, "best_response_values": [-0.0006629008304662731, 0.12486961527950524], "nash_conv": 0.12420671444903897, "exploitability": 0.062103357224519484, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "neural_average": {"value_player0": -0.07221225827829499, "best_response_values": [-0.0009647284944852194, 0.12528794545430758], "nash_conv": 0.12432321695982236, "exploitability": 0.06216160847991118, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "current_regret_policy": {"value_player0": -0.16466455052917203, "best_response_values": [0.16666666666666666, 0.16466455052917203], "nash_conv": 0.3313312171958387, "exploitability": 0.16566560859791934, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "collector_max_tv": 0.024849729391226975, "network_max_tv": 0.004889935410740759, "all_infosets_observed": true, "regret_rows": [2432, 1536], "strategy_rows": 7015}
+{"iteration": 60, "seconds": 118.38081655099995, "exact_average": {"value_player0": -0.06253609818670613, "best_response_values": [0.00361539596290524, 0.15050882462453488], "nash_conv": 0.15412422058744013, "exploitability": 0.07706211029372007, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "replay_average": {"value_player0": -0.06233474393649755, "best_response_values": [0.0063199734601182556, 0.1466001650494262], "nash_conv": 0.15292013850954445, "exploitability": 0.07646006925477222, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "neural_average": {"value_player0": -0.06384040982380028, "best_response_values": [0.004737041890621185, 0.14800358553740978], "nash_conv": 0.15274062742803096, "exploitability": 0.07637031371401548, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "current_regret_policy": {"value_player0": -0.05502551352963492, "best_response_values": [0.09027400116125743, 0.12398957709471385], "nash_conv": 0.21426357825597128, "exploitability": 0.10713178912798564, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "collector_max_tv": 0.01612085968475971, "network_max_tv": 0.005842813521907603, "all_infosets_observed": true, "regret_rows": [11278, 7680], "strategy_rows": 34158}
+{"iteration": 120, "seconds": 220.6468688519999, "exact_average": {"value_player0": -0.05339416836180725, "best_response_values": [0.019020326493260502, 0.11415033311292562], "nash_conv": 0.13317065960618613, "exploitability": 0.06658532980309306, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "replay_average": {"value_player0": -0.05395168393266392, "best_response_values": [0.021516478483825024, 0.11403989285978727], "nash_conv": 0.1355563713436123, "exploitability": 0.06777818567180614, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "neural_average": {"value_player0": -0.05437361807462837, "best_response_values": [0.021230412026246388, 0.11302516714922099], "nash_conv": 0.13425557917546738, "exploitability": 0.06712778958773369, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "current_regret_policy": {"value_player0": -0.14315964778264365, "best_response_values": [0.21368070443471274, 0.3333333333333333], "nash_conv": 0.547014037768046, "exploitability": 0.273507018884023, "definition": "half the sum of unilateral best-response improvements, in antes/hand"}, "collector_max_tv": 0.009030473609475453, "network_max_tv": 0.008939375725511345, "all_infosets_observed": true, "regret_rows": [22710, 15360], "strategy_rows": 68983}
+Traceback (most recent call last):
+  File "/workspace/deep/scripts/validate_kuhn_learning.py", line 119, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/workspace/deep/scripts/validate_kuhn_learning.py", line 115, in main
+    atomic_json(args.output/'results.json', report)
+  File "/workspace/deep/scripts/fullhouse_v3_common.py", line 23, in atomic_json
+    json.dump(value,f,indent=2,allow_nan=False);f.write('\n');f.flush();os.fsync(f.fileno())
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable

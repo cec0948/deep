@@ -1,0 +1,32 @@
+...............................                                          [100%]
+=============================== warnings summary ===============================
+tests/test_fullhouse.py::FullhouseTests::test_all_streets_and_native_parity
+  /workspace/.venvs/fullhouse/lib/python3.12/site-packages/eval7/rangestring.py:149: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    suitedness = pyparsing.Word("os", exact=1).setName("suitedness")
+
+tests/test_fullhouse.py::FullhouseTests::test_all_streets_and_native_parity
+  /workspace/.venvs/fullhouse/lib/python3.12/site-packages/eval7/rangestring.py:150: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+    card = pyparsing.Word(ranks_str, suits_str, exact=2).setName("card")
+
+tests/test_fullhouse.py::FullhouseTests::test_all_streets_and_native_parity
+  /workspace/.venvs/fullhouse/lib/python3.12/site-packages/eval7/rangestring.py:152: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    hand.setParseAction(lambda s, loc, toks: ''.join(toks))
+
+tests/test_fullhouse.py::FullhouseTests::test_all_streets_and_native_parity
+  /workspace/.venvs/fullhouse/lib/python3.12/site-packages/eval7/rangestring.py:160: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    decimal.setParseAction(lambda s, loc, toks: ''.join(toks))
+
+tests/test_fullhouse.py::FullhouseTests::test_all_streets_and_native_parity
+  /workspace/.venvs/fullhouse/lib/python3.12/site-packages/eval7/rangestring.py:167: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    handtype.setParseAction(lambda s, loc, toks: ''.join(toks))
+
+tests/test_fullhouse.py::FullhouseTests::test_all_streets_and_native_parity
+  /workspace/.venvs/fullhouse/lib/python3.12/site-packages/eval7/rangestring.py:175: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    hand_group_list = pyparsing.Group(pyparsing.delimitedList(handtype_group))
+
+tests/test_fullhouse.py::FullhouseTests::test_all_streets_and_native_parity
+  /workspace/.venvs/fullhouse/lib/python3.12/site-packages/eval7/rangestring.py:180: PyparsingDeprecationWarning: 'delimitedList' deprecated - use 'DelimitedList'
+    handrange = pyparsing.Optional(pyparsing.delimitedList(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+31 passed, 7 warnings in 64.37s (0:01:04)

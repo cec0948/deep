@@ -1,5 +1,7 @@
 # 여기서 작업 이어가기
 
+최신 작업은 [학습기 검증 결과](learning-validation-results.md)다. **고정 6인 replay 적합도와 Kuhn 학습 전체 검사를 완료했다.** 조건부 평균을 쓰는 개선 후보는 Kuhn 세 seed를 통과했지만, 6인 replay는 두 후보 모두 실패했다. `python scripts/check_learning_gates.py --require-six-player`의 현재 예상 종료 코드는 2다. 다음 단계는 regret 표적 수집의 분산·입력별 표본 수와 공유 fitting 개선이며, 같은 설정의 장기 6인 학습으로 바로 넘어가지 않는다.
+
 목표는 자체 프로그램에서 실행하는 6인·100BB 포커 AI다. **[V3의 새 버퍼 3-seed×120회 학습과 288,000핸드 평가를 완료했다](fullhouse-v3-results.md).** 규칙·특징·평균 전략 fitting을 수정해 기존 평균 전략보다 개선됐지만 60→120회의 일관된 이득은 미확인이다. 같은 학습의 advantage 정책이 더 강했으며 seed 42가 다음 독립 평가 후보다. 기본 모델은 유지한다. V2 600회 실행은 [원인 조사](fullhouse-regression-diagnosis.md)와 비교용으로 보존한다. 프로급 강도는 미검증이다.
 
 ## 현재 상태와 재개
@@ -82,9 +84,9 @@ python scripts/train_fullhouse_v3.py status
 
 1. 상태를 먼저 확인하고 기존 실행이 살아 있으면 유지한다.
 2. V3 구현 문서와 완료 결과를 읽는다. 승률뿐 아니라 세 학습 seed의 편차, 평균 전략 적합도, 60→120회 paired 차이를 확인한다.
-3. 최종 결과의 AA regret 반례를 먼저 읽는다. seed 42는 경험적 폴드 표적 -73.85를 +0.49로 예측했고, Torch/npz 출력은 일치했다. 새 고정 버퍼에서 regret fitting 예산·상태 균형을 비교하고, 평균 전략 collector의 분산과 구분한다. 좋은 seed만 고르거나 같은 설정을 바로 유료 장기 학습으로 확대하지 않는다.
+3. [학습기 검증 결과](learning-validation-results.md)를 읽는다. 고정 버퍼의 예산·상태 균형 비교는 이미 완료했다. AA만 보고 개선됐다고 판단하지 않는다. 현재 작은 게임에서 통과한 후보를 회귀 기준으로 삼고, 6인 표적 수집의 변동성과 여러 상태를 함께 fitting하는 문제를 다음에 개선한다. 같은 후보가 두 검증을 모두 통과해야 제한된 새 6인 실험으로 진행한다.
 4. 51개 요약 특징의 imperfect recall, 공유 신경망 근사와 6인 균형 수렴은 별도 이론 쟁점으로 남긴다.
 
 새 대화에서 사용할 요청:
 
-> `/workspace/deep/docs/continue-work.md`와 `docs/fullhouse-v3-training.md`를 읽고 현재 실행 상태를 확인하세요. 실행 중이면 유지하고, 완료했다면 세 seed의 학습·평가 원시 결과를 검산해 다음 개선 우선순위를 정하세요. 기존 실험과 체크포인트를 보존하고 독립적으로 가능한 구현은 계속하세요.
+> `/workspace/deep/docs/continue-work.md`와 `docs/learning-validation-results.md`를 읽으세요. 고정 6인 replay 검증은 실패했고, 조건부 평균 방식의 Kuhn 검증은 통과했습니다. 기존 증거와 체크포인트를 보존하며 regret 표적 수집의 변동성과 공유 fitting을 개선하세요. 사전 기준을 유지하고 같은 방식이 두 검사를 모두 통과했을 때 제한된 6인 실험으로 진행하세요.

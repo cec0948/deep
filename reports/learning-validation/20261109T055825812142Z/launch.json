@@ -1,0 +1,12 @@
+{
+  "folder": "/workspace/deep/artifacts/learning-validation/20261109T055825812142Z",
+  "started_at": "2026-11-09T05:58:25.814856+00:00",
+  "config_sha256": "d45e1ecd554d915848a0c9c4905a73e57ce7ffe0ea2c0e754be3eee485823f26",
+  "pids": {
+    "42": 22356,
+    "43": 22357,
+    "44": 22358
+  },
+  "status": "complete",
+  "elapsed_seconds": 244.23962197500077
+}

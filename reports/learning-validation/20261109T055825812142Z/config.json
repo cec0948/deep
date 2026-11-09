@@ -1,0 +1,41 @@
+{
+  "revision": "learning-validation-v1",
+  "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+  "frozen_pairs": [[42, 7], [43, 8], [44, 9]],
+  "baseline_steps": 512,
+  "baseline_batch": 128,
+  "candidate_steps": [2048, 8192],
+  "candidate_batch": 512,
+  "candidate_modes": ["budget", "stratified-conditional"],
+  "fixed_buffer_gates": {
+    "eligible_steps": 8192,
+    "max_root_weighted_tv": 0.10,
+    "max_aa_fold": 0.01,
+    "max_global_mse_ratio_to_control": 1.05,
+    "max_street_mse_ratio_to_control": 1.10,
+    "all_three_pairs_required": true
+  },
+  "kuhn": {
+    "seeds": [71, 72, 73],
+    "iterations": 120,
+    "milestones": [12, 60, 120],
+    "traversals": 256,
+    "regret_steps": 256,
+    "regret_batch": 128,
+    "strategy_steps": 512,
+    "capacity": 100000,
+    "max_final_exploitability_ante": 0.05,
+    "max_average_collector_tv": 0.05,
+    "max_average_network_tv": 0.03,
+    "tabular_reference_iterations": 5000,
+    "max_tabular_exploitability_ante": 0.005
+  },
+  "six_player_gate": "Require both fixed-buffer and Kuhn gates for the same candidate method. No automatic promotion or paid compute.",
+  "limits": {"seconds_per_process": 1800, "parallel_processes": 3},
+  "limitations": [
+    "Frozen replay scores measure in-sample fitting, not poker generalization or optimal regret.",
+    "The three replay/initialization pairs do not isolate replay-seed and optimizer-seed effects.",
+    "Stratification changes the finite network projection objective; conditional averaging preserves each identical-input weighted target.",
+    "Kuhn uses complete information-set features and two players. Its success cannot establish six-player convergence or validate the 51-feature poker abstraction."
+  ]
+}

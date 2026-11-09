@@ -1,0 +1,196 @@
+{
+  "eligible_methods": [],
+  "six_player_ready": false,
+  "methods": {
+    "budget": {
+      "frozen": [
+        {
+          "replay_seed": 42,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.5458330515816885,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.9306648294463342
+        },
+        {
+          "replay_seed": 43,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.45171616076230825,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.9281726037187125
+        },
+        {
+          "replay_seed": 44,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.5707025962840379,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.9212709541107839
+        }
+      ],
+      "kuhn": [
+        {
+          "seed": 71,
+          "passed": false,
+          "checks": {
+            "tabular": true,
+            "exploitability": false,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.06712778958773369
+        },
+        {
+          "seed": 72,
+          "passed": false,
+          "checks": {
+            "tabular": true,
+            "exploitability": false,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.05925913037353252
+        },
+        {
+          "seed": 73,
+          "passed": true,
+          "checks": {
+            "tabular": true,
+            "exploitability": true,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.028661780237689914
+        }
+      ],
+      "passed": false
+    },
+    "stratified-conditional": {
+      "frozen": [
+        {
+          "replay_seed": 42,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.4958844389832748,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.9383711849786333
+        },
+        {
+          "replay_seed": 43,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.48015657536085554,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.9251558232350223
+        },
+        {
+          "replay_seed": 44,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": false,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.5825051172736543,
+          "aa_fold": 0.25,
+          "global_mse_ratio": 0.9114497455115348
+        }
+      ],
+      "kuhn": [
+        {
+          "seed": 71,
+          "passed": true,
+          "checks": {
+            "tabular": true,
+            "exploitability": true,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.014998906513321069
+        },
+        {
+          "seed": 72,
+          "passed": true,
+          "checks": {
+            "tabular": true,
+            "exploitability": true,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.02409116900183983
+        },
+        {
+          "seed": 73,
+          "passed": true,
+          "checks": {
+            "tabular": true,
+            "exploitability": true,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.021925042230495073
+        }
+      ],
+      "passed": false
+    }
+  },
+  "decision": "blocked: no method passed both gates",
+  "config_sha256": "d45e1ecd554d915848a0c9c4905a73e57ce7ffe0ea2c0e754be3eee485823f26",
+  "verifier_sha256": "78e8a8b0a21ec2d9710b6c8e8b6e9483e56873405816a650428411d2f75d18f0",
+  "input_hashes": {
+    "frozen-42/results.json": "97a95dd7c6c6166856d6c353e7eadb66a41bcd635e53703159046c6ceecaec90",
+    "frozen-43/results.json": "ac712c7f33e0be378226a9149f2b85cd75a9dd8d92436133f86d09776f6ea135",
+    "frozen-44/results.json": "99c9ff0473772403f03c3f1c3fa88616bf52122e07812227b5e5f6e9ef65f932",
+    "kuhn-budget-71/verified-results.json": "a782bab178b20c6401f162188ad1522883e57365a6d9d6f7edf640578208ec4d",
+    "kuhn-budget-72/verified-results.json": "95dd64d81b2986a71407d16602fb5c619b3f9ade98cd41b9c65c9bf2935b3279",
+    "kuhn-budget-73/verified-results.json": "10459237958f9ee3d1507234cee670111baef54396be41e91273facd7201a800",
+    "kuhn-stratified-conditional-71/verified-results.json": "e74aef01e5e5760ccb60b9e228026304b06fc13eab4b4792046e794d8deec28d",
+    "kuhn-stratified-conditional-72/verified-results.json": "7789d1b2d535ad6a1a519a9cf149be4f85d0b1199c81c294af3a518a164c35c9",
+    "kuhn-stratified-conditional-73/verified-results.json": "b0ec000b94054ebd2cf99cbd49a939b4403e728d8bf97c5b18741a54f00aa06b"
+  }
+}

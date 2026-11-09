@@ -1,0 +1,92 @@
+{
+  "complete": true,
+  "diagnostic_only": true,
+  "script_sha256": "bd376564b993e8ea530c277b77b5633c919ab0fc44e8c5b4e03aee27c9af444c",
+  "sensitivity_seed": 190177,
+  "split_repetitions": 100,
+  "limitation": "Correlated finite replay labels; half splits are not confidence intervals. Root-only models cannot be deployed as poker policies.",
+  "label_sensitivity": [
+    {
+      "replay_seed": 42,
+      "checkpoint_sha256": "bf1a2fe21e19b0aaf53fe8ccc23ce5194ca7072fc24e9ed572b91eec2b5506ba",
+      "root_rows": 3828,
+      "classes": 169,
+      "rows_min": 6,
+      "rows_median": 20.0,
+      "rows_max": 57,
+      "root_mass_fraction": 0.006413918139590408,
+      "minimum_attainable_row_mse": 1558.8164102631195,
+      "zero_predictor_row_mse": 1677.9716174060018,
+      "conditional_signal_mse": 119.15520714288232,
+      "random_half_target_policy_tv_mean": 0.5907446274286086,
+      "random_half_target_policy_tv_min": 0.5253072496138123,
+      "random_half_target_policy_tv_max": 0.6436818497053168
+    },
+    {
+      "replay_seed": 43,
+      "checkpoint_sha256": "47cd6d233e4d5e2b5fd81759b1dc7a9182a44b74bfc5eacfb163aa94fa54d869",
+      "root_rows": 3898,
+      "classes": 169,
+      "rows_min": 4,
+      "rows_median": 18.0,
+      "rows_max": 50,
+      "root_mass_fraction": 0.006576810197121908,
+      "minimum_attainable_row_mse": 1518.5440885178225,
+      "zero_predictor_row_mse": 1640.299285331131,
+      "conditional_signal_mse": 121.75519681330843,
+      "random_half_target_policy_tv_mean": 0.5934367517126252,
+      "random_half_target_policy_tv_min": 0.552456851480699,
+      "random_half_target_policy_tv_max": 0.6394911798843883
+    },
+    {
+      "replay_seed": 44,
+      "checkpoint_sha256": "513e552a7f10b949e989b797456abb2816561311f17ccbc368dad63e3bd5fcd3",
+      "root_rows": 3694,
+      "classes": 169,
+      "rows_min": 5,
+      "rows_median": 17.0,
+      "rows_max": 49,
+      "root_mass_fraction": 0.006492580225700776,
+      "minimum_attainable_row_mse": 1756.1807405053517,
+      "zero_predictor_row_mse": 1915.3025222593706,
+      "conditional_signal_mse": 159.1217817540189,
+      "random_half_target_policy_tv_mean": 0.5979458271468642,
+      "random_half_target_policy_tv_min": 0.5385567131573592,
+      "random_half_target_policy_tv_max": 0.6429851258441621
+    }
+  ],
+  "root_capacity": [
+    {
+      "mode": "raw",
+      "global_scale": 1.0,
+      "steps": 2048,
+      "seconds": 13.142746952999005,
+      "weighted_tv": 0.1244884312334078,
+      "conditional_mse": 5.443036009038161
+    },
+    {
+      "mode": "raw",
+      "global_scale": 1.0,
+      "steps": 8192,
+      "seconds": 53.301313596999535,
+      "weighted_tv": 0.04035025206273666,
+      "conditional_mse": 0.32891936920185233
+    },
+    {
+      "mode": "one-global-scale",
+      "global_scale": 10.91582364033903,
+      "steps": 2048,
+      "seconds": 11.094380455999271,
+      "weighted_tv": 0.05042997606957248,
+      "conditional_mse": 0.6724847221068586
+    },
+    {
+      "mode": "one-global-scale",
+      "global_scale": 10.91582364033903,
+      "steps": 8192,
+      "seconds": 46.79803005100075,
+      "weighted_tv": 2.497787606419888e-07,
+      "conditional_mse": 3.3047123120246675e-11
+    }
+  ]
+}
