@@ -1,0 +1,294 @@
+{
+  "complete": false,
+  "seed": 72,
+  "method": "compact-opening-expert",
+  "config": {
+    "revision": "compact-learning-validation-v1",
+    "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+    "control_run": "artifacts/learning-validation/20261109T055825812142Z",
+    "frozen_pairs": [
+      [
+        42,
+        7
+      ],
+      [
+        43,
+        8
+      ],
+      [
+        44,
+        9
+      ]
+    ],
+    "baseline_steps": 512,
+    "baseline_batch": 128,
+    "candidate_steps": [
+      2048,
+      8192
+    ],
+    "candidate_batch": 512,
+    "candidate_modes": [
+      "compact-opening-expert"
+    ],
+    "fixed_buffer_gates": {
+      "eligible_steps": 8192,
+      "max_root_weighted_tv": 0.1,
+      "max_aa_fold": 0.01,
+      "max_global_mse_ratio_to_control": 1.05,
+      "max_street_mse_ratio_to_control": 1.1,
+      "all_three_pairs_required": true
+    },
+    "kuhn": {
+      "seeds": [
+        71,
+        72,
+        73
+      ],
+      "iterations": 120,
+      "milestones": [
+        12,
+        60,
+        120
+      ],
+      "traversals": 256,
+      "regret_steps": 256,
+      "regret_batch": 128,
+      "strategy_steps": 512,
+      "capacity": 100000,
+      "max_final_exploitability_ante": 0.05,
+      "max_average_collector_tv": 0.05,
+      "max_average_network_tv": 0.03,
+      "tabular_reference_iterations": 5000,
+      "max_tabular_exploitability_ante": 0.005
+    },
+    "six_player_gate": "Both unchanged numerical gates must pass for the same method before new six-player learning.",
+    "limits": {
+      "seconds_per_process": 1800,
+      "parallel_processes": 3
+    },
+    "limitations": [
+      "Existing 512-step controls are reused with exact checkpoint/model hashes.",
+      "Stratum scaling is constant across a fit's replay iterations; no row centering or per-row scaling.",
+      "Uniform feature mass changes the finite-network projection objective.",
+      "Fitting noisy finite targets is not evidence of poker strength.",
+      "Only the initial six-player UTG decision uses the opening expert; no hand/action overrides.",
+      "The frozen main expert is the predeclared 32768-step stratum-normalized refit; it is identical before and after the opening expert is added.",
+      "Deployment selects one 256-wide neural expert per decision; no live search."
+    ],
+    "base_fit_run": "artifacts/learning-validation/20261110T013047373416Z"
+  },
+  "config_sha256": "11245870fbe349a7f0896769a051b8e5f48f8402043a144552f1a7e87f5bda8a",
+  "script_sha256": "c08a9d1b9faf69cc212bb9c87aa7a886c962a3e9bd45c208c64832a2243e7ad6",
+  "oracle_sha256": "b298652790f17ce64435a25eec3fab009f38352d8f9372063fd88d07a5e4b71c",
+  "fitter_sha256": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+  "scaled_fitter_sha256": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+  "compact_fitter_sha256": "397645e1c80dd8e0eb38b2ae5489c377219bf3e9a0c8256ed9be0337a7fe512a",
+  "partition_sha256": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+  "root_collector_sha256": "0078f0cde6631e3b8ba12dd134523521a5a6f7ffd0bc5e88b7c0bce8ee9c349d",
+  "feature_encoding": "kuhn-opening-partition-v1",
+  "source_hashes": {
+    "bot/bot.py": "f721b16e0cab72d0c40fae2e94d1ec655a94025fc20addfc689c718fb8f10845",
+    "bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "bot/features.py": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "training/__init__.py": "dd47ca434e58a3ba04952d871c3899db7b675eed0dd5e2e4dc23645f72f08d1f",
+    "training/_hand_eval.py": "e97c081806e67f964ace1c6dd7bb62c8f49ea8cd0c2060d8643d6c58daeb3a96",
+    "training/_hand_eval_lut.py": "d57d29959b6441fbad16f1e65c35dab0e6d38e7fda29a1b8edbaf6271cea5e46",
+    "training/buffer.py": "a513bf28f44992218053745e77faedd5a6a71c663cc642273ccaa01e0cd4f611",
+    "training/features.py": "b6f8b26df06b4147c87e1543242d5cf29af9366be7681af272bbc677bdc97946",
+    "training/game.py": "df405d6d9efbeca3ecb778cfa70dd770fee5c34d04eb3f65ed1ab11261696381",
+    "training/game_numba.py": "3d581b954fa028ea8c6e5b31457c95cbcfa8f9e09bc14dd939c59ae7457437dc",
+    "training/network.py": "e8c75e85722fa32e311316f06b93596f6610b934af5a8ab0ef6c99d72d2f2c49",
+    "training/r1_support.py": "08b19999b38066c1848ca3e0a5a67b65a0b577250dce59c0dff084ae7683dfd0",
+    "training/train.py": "844c8e6d3aea891e95d39f60b9e50906bcc854df20bc489d440558be945bb316",
+    "training/traverse_fast.py": "b0d199732ddd46be242c90b382fe4e7c93add829ca8e493d6c59dce67af319a6",
+    "training/traverse_numba.py": "03c17cd7b717005737cabafe7c4e7963dc6eb1fbd9f8e4295d3c8417127ec803",
+    "training/worker.py": "282435f5e10770dce373b4579e14552af9f0e3beb6178046a8229a33acad9bea"
+  },
+  "known_equilibrium": {
+    "value_player0": -0.055555555555555504,
+    "best_response_values": [
+      -0.055555555555555504,
+      0.05555555555555558
+    ],
+    "nash_conv": 7.632783294297951e-17,
+    "exploitability": 3.8163916471489756e-17,
+    "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+  },
+  "tabular_reference": {
+    "iterations": 5000,
+    "profile": [
+      [
+        0.7975876640889642,
+        0.20241233591103586
+      ],
+      [
+        0.9999997100579884,
+        2.8994201159768043e-07
+      ],
+      [
+        0.3794609786103197,
+        0.6205390213896803
+      ],
+      [
+        0.6557778490686018,
+        0.34422215093139824
+      ],
+      [
+        0.9999995174298474,
+        4.825701526361394e-07
+      ],
+      [
+        3.999200159968006e-08,
+        0.9999999600079984
+      ],
+      [
+        0.9999999600079984,
+        3.999200159968006e-08
+      ],
+      [
+        0.6704794411526531,
+        0.3295205588473469
+      ],
+      [
+        3.999200159968006e-08,
+        0.9999999600079984
+      ],
+      [
+        0.9999999749294005,
+        2.5070599383805942e-08
+      ],
+      [
+        0.4527012161879917,
+        0.5472987838120082
+      ],
+      [
+        5.269580253830153e-08,
+        0.9999999473041975
+      ]
+    ],
+    "value_player0": -0.05552522948282975,
+    "best_response_values": [
+      -0.05001945535684745,
+      0.05748109985901243
+    ],
+    "nash_conv": 0.00746164450216498,
+    "exploitability": 0.00373082225108249,
+    "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+  },
+  "traversal_oracle": {
+    "infosets": 12,
+    "maximum_error": 0.0,
+    "uniform_expected_regrets": [
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        -1.5,
+        1.5
+      ],
+      [
+        0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        -1.5,
+        1.5
+      ]
+    ],
+    "observed": [
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        -1.5,
+        1.5
+      ],
+      [
+        0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        -1.5,
+        1.5
+      ]
+    ]
+  },
+  "initial": {
+    "value_player0": 0.125,
+    "best_response_values": [
+      0.5,
+      0.4166666666666667
+    ],
+    "nash_conv": 0.9166666666666667,
+    "exploitability": 0.45833333333333337,
+    "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+  },
+  "curve": [],
+  "max_torch_numpy_policy_error": 0.0
+}

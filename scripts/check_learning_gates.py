@@ -78,8 +78,11 @@ def main():
         if r['replay_seed'] != replay_seed: raise ValueError('Replay seed mismatch')
         checkpoint = ROOT/cfg['source_run']/f'seed-{replay_seed}/latest.pt'
         if digest(checkpoint) != r['checkpoint_sha256']: raise ValueError('Replay changed')
-        check_tool('validate_frozen_regret.py', r['script_sha256'])
+        check_tool(r.get('validation_script','validate_frozen_regret.py'), r['script_sha256'])
         check_tool('regret_fitting.py', r['fitter_sha256'])
+        if r.get('scaled_fitter_sha256'): check_tool('scaled_regret_fitting.py', r['scaled_fitter_sha256'])
+        if r.get('compact_fitter_sha256'): check_tool('compact_regret.py', r['compact_fitter_sha256'])
+        if r.get('partition_sha256'): check_tool('regret_partition.py', r['partition_sha256'])
         for row in r['refits']:
             if digest(ROOT/row['model']) != row['model_sha256']: raise ValueError('Model changed')
         frozen[replay_seed] = r
@@ -97,6 +100,10 @@ def main():
             for name, field in [('validate_kuhn_learning.py','script_sha256'), ('kuhn_validation.py','oracle_sha256'), ('regret_fitting.py','fitter_sha256')]:
                 check_tool(name, r[field])
             check_tool('verify_kuhn_result.py', verification['verifier_sha256'])
+            if r.get('scaled_fitter_sha256'): check_tool('scaled_regret_fitting.py', r['scaled_fitter_sha256'])
+            if r.get('compact_fitter_sha256'): check_tool('compact_regret.py', r['compact_fitter_sha256'])
+            if r.get('partition_sha256'): check_tool('regret_partition.py', r['partition_sha256'])
+            if r.get('root_collector_sha256'): check_tool('root_regret_replay.py',r['root_collector_sha256'])
             kuhn[(method, seed)] = r
     result = assess(cfg, frozen, kuhn)
     result.update(config_sha256=config_hash, verifier_sha256=digest(Path(__file__)), input_hashes=files)

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/deep/scripts/validate_kuhn_learning.py", line 140, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/workspace/deep/scripts/validate_kuhn_learning.py", line 85, in main
+    if parity > 1e-4: raise AssertionError('Kuhn Torch/NumPy policy mismatch')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Kuhn Torch/NumPy policy mismatch

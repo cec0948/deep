@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "seed": 42,
+      "model_sha256": "da63c342d0c078806bcce4a316c3fca2870b09e480040c94accf46d6b0f75c94",
+      "model_bytes": 1183010,
+      "root_weighted_tv": 3.898507352449029e-07,
+      "aa_fold": 0.0,
+      "max_deployment_policy_error": 0.0,
+      "max_torch_numpy_score_error": 2.384185791015625e-06,
+      "passed": true
+    },
+    {
+      "seed": 43,
+      "model_sha256": "4d7fe5d038ab3cd8acf8495fa371398a0c17e7a3afe96d248a12f74df945c6a9",
+      "model_bytes": 1183010,
+      "root_weighted_tv": 0.00679894801510825,
+      "aa_fold": 0.0,
+      "max_deployment_policy_error": 0.0,
+      "max_torch_numpy_score_error": 2.86102294921875e-06,
+      "passed": true
+    },
+    {
+      "seed": 44,
+      "model_sha256": "4d3cd9e2a9a01b31f7bc7ff22f4641f169f8a0f4577f1b6505caf208524e85cc",
+      "model_bytes": 1183010,
+      "root_weighted_tv": 3.7304301508460026e-07,
+      "aa_fold": 0.0,
+      "max_deployment_policy_error": 0.0,
+      "max_torch_numpy_score_error": 1.7881393432617188e-06,
+      "passed": true
+    }
+  ],
+  "runtime_sha256": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+  "compact_fitter_sha256": "4cff184154657d6e1040536fd02a1cd25bb518e8a813a67b72851dd6f1882d60",
+  "partition_sha256": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+  "verifier_sha256": "11e03cad72070fe9503842459ef78b8feac94fa05796ae80be325dc1692a3a3c"
+}

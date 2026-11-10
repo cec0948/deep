@@ -43,7 +43,7 @@ def main():
     final = report['curve'][-1]
     if final['iteration'] != settings['iterations']: raise ValueError('Final measurement missing')
     net = AverageStrategyNet(); net.load_state_dict(ck['strategy_net']); net.eval()
-    x = torch.from_numpy(features())
+    x = torch.from_numpy(features(opening_partition=report.get('feature_encoding') == 'kuhn-opening-partition-v1'))
     predicted = net.get_strategy(x, x[:, 46:51]).numpy()[:, :2]
     exact = ck['exact_numerator']/ck['exact_mass'][:, None]
     state = ck['strategy_buffer']; b = ReservoirBuffer(state['count'], 51, store_sample_weights=True); b.load_state_dict(state)

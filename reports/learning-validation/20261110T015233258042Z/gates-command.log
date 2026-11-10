@@ -1,0 +1,107 @@
+{
+  "eligible_methods": [
+    "compact-opening-expert"
+  ],
+  "six_player_ready": true,
+  "methods": {
+    "compact-opening-expert": {
+      "frozen": [
+        {
+          "replay_seed": 42,
+          "passed": true,
+          "checks": {
+            "root_tv": true,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 2.819403585869608e-07,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.8421754814823419
+        },
+        {
+          "replay_seed": 43,
+          "passed": true,
+          "checks": {
+            "root_tv": true,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.0067988380857571815,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.826541240500567
+        },
+        {
+          "replay_seed": 44,
+          "passed": true,
+          "checks": {
+            "root_tv": true,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 2.3059420403431265e-07,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.7877747909308624
+        }
+      ],
+      "kuhn": [
+        {
+          "seed": 71,
+          "passed": true,
+          "checks": {
+            "tabular": true,
+            "exploitability": true,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.0284082201649789
+        },
+        {
+          "seed": 72,
+          "passed": true,
+          "checks": {
+            "tabular": true,
+            "exploitability": true,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.02882609336851453
+        },
+        {
+          "seed": 73,
+          "passed": true,
+          "checks": {
+            "tabular": true,
+            "exploitability": true,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.02510828867542029
+        }
+      ],
+      "passed": true
+    }
+  },
+  "decision": "eligible for a bounded six-player experiment",
+  "config_sha256": "11245870fbe349a7f0896769a051b8e5f48f8402043a144552f1a7e87f5bda8a",
+  "verifier_sha256": "6464c8b7e5bc865513ea99a85311c96c40a11c85fc2cfc5527469d9bebf5aa2f",
+  "input_hashes": {
+    "frozen-42/results.json": "7381668e7ebe4f4dd5b4ab39e0cef0f823cee0e01dc9408024b01ef43a28339b",
+    "frozen-43/results.json": "f9e72f5612305588f4e8fba6479b1b1834aebd813269f41309f2ef5394c2f963",
+    "frozen-44/results.json": "9903886747d1518ec428aa8ecc3cefa4c2afd783e3f38ca93c9ee8b7f73a39cd",
+    "kuhn-compact-opening-expert-71/verified-results.json": "983be91d8a69d12be7f9f30c82111182be2a414cee94f3585371d63eaad5aba3",
+    "kuhn-compact-opening-expert-72/verified-results.json": "f4e5bd7c9d4dedcad1d1e972486500b987e395b6396e7a86d3a454d9689a0305",
+    "kuhn-compact-opening-expert-73/verified-results.json": "7a62d4ba0114593283f4700a4f4c6740ec6ffa8fe32bf89b27da63d011df4565"
+  }
+}

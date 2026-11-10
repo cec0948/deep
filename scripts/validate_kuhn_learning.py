@@ -1,6 +1,7 @@
 """End-to-end learning gate using real V3 components and exact Kuhn BRs."""
 import argparse
 import json
+import random
 from pathlib import Path
 import sys
 import time
@@ -12,7 +13,9 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--config', type=Path, default=ROOT/'configs/fullhouse-learning-validation.json')
     p.add_argument('--seed', type=int, required=True)
-    p.add_argument('--method', choices=['budget', 'stratified-conditional'], default='budget')
+    p.add_argument('--method', choices=['budget', 'stratified-conditional', 'global-scaled-conditional',
+                                      'stratum-scaled-feature-conditional','opening-stratum-scaled-feature-conditional',
+                                      'compact-opening-expert'], default='budget')
     p.add_argument('--output', type=Path, required=True)
     args = p.parse_args()
     cfg = json.loads(args.config.read_text()); settings = cfg['kuhn']
@@ -27,22 +30,31 @@ def main():
     from training.train import train_network, train_strategy_network
     from training.traverse_fast import NumpyPolicy
     from regret_fitting import ConditionalRegretSampler, train_conditional
+    from scaled_regret_fitting import ScaledRegretSampler, METHODS
+    NetFactory=DuelingAdvantageNet
+    if args.method=='compact-opening-expert':
+        from compact_regret import CompactRegretNet,CompactNumpyPolicy,fit_compact,install_policy
+        from root_regret_replay import RootReplay
+        install_policy();NetFactory=CompactRegretNet;NumpyPolicy=CompactNumpyPolicy
     from kuhn_validation import (features, own_reach, game_adapter, collect_regrets,
-                                 exact_metrics, equilibrium, buffer_average, tabular_reference, traversal_oracle)
-    np.random.seed(args.seed); torch.manual_seed(args.seed)
+                                 exact_metrics, equilibrium, buffer_average, tabular_reference, traversal_oracle,collect_balanced_roots)
+    random.seed(args.seed); np.random.seed(args.seed); torch.manual_seed(args.seed)
     torch.set_num_threads(1); torch.use_deterministic_algorithms(True)
     rng = np.random.default_rng(args.seed)
     args.output.mkdir(parents=True, exist_ok=False)
     r1.WEIGHT_HORIZON = settings['iterations']; r1.AVERAGE_SAMPLER = 'importance'
     r1.STRATEGY_BATCH_SIZE = 512
     # Use the real 256-wide network and actual 51-input/5-action interfaces.
-    net = DuelingAdvantageNet()
+    net = NetFactory()
     with torch.no_grad():
         for parameter in net.parameters(): parameter.zero_()
     net.eval()
-    x = torch.from_numpy(features()); legal = x[:, 46:51]
+    opening_partition = args.method in ('opening-stratum-scaled-feature-conditional','compact-opening-expert')
+    feature_factory = lambda: features(opening_partition=opening_partition)
+    x = torch.from_numpy(feature_factory()); legal = x[:, 46:51]
     buffers = [ReservoirBuffer(settings['capacity'], 51) for _ in (0, 1)]
     strategy_buffer = ReservoirBuffer(settings['capacity'], 51, store_sample_weights=True)
+    root_replay=RootReplay() if args.method=='compact-opening-expert' else None
     numer = np.zeros((12, 2)); mass = np.zeros(12)
     reference = tabular_reference(settings['tabular_reference_iterations'])
     traversal_check = traversal_oracle()
@@ -53,12 +65,17 @@ def main():
                   config_sha256=digest(args.config), script_sha256=digest(Path(__file__)),
                   oracle_sha256=digest(ROOT/'scripts/kuhn_validation.py'),
                   fitter_sha256=digest(ROOT/'scripts/regret_fitting.py'),
+                  scaled_fitter_sha256=digest(ROOT/'scripts/scaled_regret_fitting.py') if args.method in METHODS or args.method=='compact-opening-expert' else None,
+                  compact_fitter_sha256=digest(ROOT/'scripts/compact_regret.py') if args.method=='compact-opening-expert' else None,
+                  partition_sha256=digest(ROOT/'scripts/regret_partition.py') if args.method=='compact-opening-expert' else None,
+                  root_collector_sha256=digest(ROOT/'scripts/root_regret_replay.py') if args.method=='compact-opening-expert' else None,
+                  feature_encoding='kuhn-opening-partition-v1' if opening_partition else 'kuhn-original-v1',
                   source_hashes={str(f.relative_to(source)):digest(f) for f in sorted(source.rglob('*.py'))},
                   known_equilibrium=known, tabular_reference=reference, traversal_oracle=traversal_check,
                   initial=exact_metrics(np.full((12, 2), .5)), curve=[], max_torch_numpy_policy_error=0.)
     start = time.monotonic()
     atomic_json(args.output/'results.json', report)
-    with game_adapter() as new_hand:
+    with game_adapter(feature_factory) as new_hand:
         for iteration in range(1, settings['iterations']+1):
             if time.monotonic()-start > cfg['limits']['seconds_per_process']:
                 raise TimeoutError('Kuhn experiment time budget')
@@ -72,13 +89,17 @@ def main():
             traverser = (iteration-1) % 2
             collect_regrets(net, traverser, buffers[traverser], iteration,
                             settings['traversals'], rng, new_hand)
+            if root_replay is not None:collect_balanced_roots(net,rng,root_replay,iteration)
             r1.collect_average(None, rng, settings['traversals'], net, strategy_buffer, iteration)
-            net = DuelingAdvantageNet()
+            net = NetFactory()
             optimizer = torch.optim.Adam(net.parameters(), lr=.001)
-            if args.method == 'budget':
+            if args.method=='compact-opening-expert':
+                fit_compact(net,buffers,settings['regret_steps'],settings['regret_batch'],root_replay=root_replay)
+            elif args.method == 'budget':
                 train_network(net, buffers, optimizer, settings['regret_steps'], settings['regret_batch'], torch.device('cpu'))
             else:
-                sampler = ConditionalRegretSampler(buffers, r1.strategy_strata)
+                sampler = (ScaledRegretSampler(buffers,r1.strategy_strata,args.method) if args.method in METHODS
+                           else ConditionalRegretSampler(buffers, r1.strategy_strata))
                 train_conditional(net, sampler, optimizer, settings['regret_steps'], settings['regret_batch'])
             if iteration not in settings['milestones']: continue
             exact = numer/mass[:, None]
@@ -100,6 +121,7 @@ def main():
             atomic_json(args.output/'results.json', report)
             r1.atomic_save(dict(iteration=iteration, net=net.state_dict(), strategy_net=avg_net.state_dict(),
                                 buffers=[b.state_dict() for b in buffers], strategy_buffer=strategy_buffer.state_dict(),
+                                root_replay=root_replay.state_dict() if root_replay is not None else None,
                                 rng=r1.pack_rng(rng), exact_numerator=numer, exact_mass=mass, config=cfg, method=args.method),
                            args.output/'latest.pt')
             print(json.dumps({k:v for k,v in row.items() if 'profile' not in k}), flush=True)

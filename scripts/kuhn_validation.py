@@ -95,13 +95,17 @@ def tabular_reference(iterations=5000):
     return dict(iterations=iterations, profile=average.tolist(), **exact_metrics(average))
 
 
-def features():
+def features(opening_partition=False):
     x = np.zeros((12, 51), np.float32)
     x[np.arange(12), np.arange(12)] = 1.
     x[:, 17] = 1.
     x[np.arange(12), 21+OWNER] = 1.
     x[:, 27] = .015
     x[:, 46:48] = 1.
+    if opening_partition:
+        x[:3,21:27] = 0.
+        x[:3,24] = 1.
+        x[:3,45] = 1.
     return x
 
 
@@ -122,9 +126,9 @@ def buffer_average(buffer):
 
 
 @contextmanager
-def game_adapter():
+def game_adapter(feature_factory=None):
     from training import game as g
-    all_features = features()
+    all_features = (feature_factory or features)()
     legal = np.array([1, 1, 0, 0, 0], bool)
     def new_hand(n_players, dealer, rng, starting_stacks=None):
         state = np.zeros(g.STATE_SIZE, np.int32)
@@ -161,6 +165,23 @@ def collect_regrets(net, traverser, buffer, iteration, traversals, rng, new_hand
         traverse_external(state, deck, cards, traverser, policy, xs, ys, [], [], [], rng)
     buffer.add_batch(np.asarray(xs, np.float32), np.asarray(ys, np.float32), iteration)
     return len(xs)
+
+
+def collect_balanced_roots(net,rng,replay,iteration,repetitions=4):
+    """Kuhn adapter of the same conditional-rollout collector used for NLHE."""
+    from training import game as g
+    from training.traverse_fast import NumpyPolicy,_encode_fast
+    from root_regret_replay import rollout_action_values
+    policy=NumpyPolicy(net)
+    for own in range(3):
+        others=[c for c in range(3) if c!=own]
+        for _ in range(repetitions):
+            cards=np.array([own,others[int(rng.integers(0,2))]])
+            state=np.zeros(g.STATE_SIZE,np.int32);state[g.S_NPLAYERS]=2
+            legal=g.legal_actions(state,0);x=_encode_fast(state,cards,None,0,legal)
+            sigma=policy.strategy(x,legal.astype(np.float32)).astype(float);sigma/=sigma.sum()
+            values=rollout_action_values(state,None,cards,0,policy,rng,g,_encode_fast)
+            replay.add(x,(values-sigma@values)*legal,iteration,sample_weight=1./repetitions)
 
 
 def traversal_oracle():

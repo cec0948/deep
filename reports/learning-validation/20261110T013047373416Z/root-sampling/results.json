@@ -1,0 +1,112 @@
+{
+  "complete": true,
+  "checkpoint_sha256": "bf1a2fe21e19b0aaf53fe8ccc23ce5194ca7072fc24e9ed572b91eec2b5506ba",
+  "script_sha256": "cead548d2166309cf19d7ace4b72db50b922bc00e08e4feea3a23f20cf42a2d7",
+  "collector_sha256": "15d27f11989c372bbde52c30414352bb25599402ab276b281b30ebbc4e84ccda",
+  "repetitions": 32,
+  "seeds": [
+    1701,
+    1702
+  ],
+  "limitations": [
+    "Frozen last-iteration policy, not cumulative-regret training",
+    "Natural card-class weighted TV and uniform-class TV are sensitivity diagnostics, not confidence intervals or poker strength"
+  ],
+  "streams": [
+    {
+      "seed": 1701,
+      "classes": 169,
+      "observations": 5408,
+      "minimum_observations": 32,
+      "median_observations": 32.0,
+      "minimum_weight_ess": 32.0
+    },
+    {
+      "seed": 1702,
+      "classes": 169,
+      "observations": 5408,
+      "minimum_observations": 32,
+      "median_observations": 32.0,
+      "minimum_weight_ess": 32.0
+    }
+  ],
+  "sensitivity": [
+    {
+      "observations_per_class": 4,
+      "natural_weighted_tv": 0.40068965925346745,
+      "uniform_tv": 0.41593788158931794,
+      "aa_regrets": [
+        [
+          -1.7244923181680536,
+          1.4005076818319464,
+          0.7130076818319464,
+          -0.2244923181680536,
+          0.0
+        ],
+        [
+          -18.748326741109096,
+          33.376673258890904,
+          7.751673258890904,
+          9.314173258890904,
+          0.0
+        ]
+      ],
+      "aa_fold": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "observations_per_class": 16,
+      "natural_weighted_tv": 0.4002771757735702,
+      "uniform_tv": 0.4138337002111411,
+      "aa_regrets": [
+        [
+          -10.192191777890674,
+          11.135933222109326,
+          4.2140582221093235,
+          -1.3328167778906765,
+          0.0
+        ],
+        [
+          -10.070592960583951,
+          11.710657039416049,
+          4.163782039416047,
+          4.320032039416048,
+          0.0
+        ]
+      ],
+      "aa_fold": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "observations_per_class": 32,
+      "natural_weighted_tv": 0.36361771043849345,
+      "uniform_tv": 0.38112999529266006,
+      "aa_regrets": [
+        [
+          -12.414133803222589,
+          2.8593036967774115,
+          5.13274119677741,
+          -0.4297588032225903,
+          0.0
+        ],
+        [
+          -7.782324307630188,
+          7.772363192369814,
+          3.217675692369812,
+          0.475488192369812,
+          0.0
+        ]
+      ],
+      "aa_fold": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "samples_sha256": "15edf771b1ff49b1aa93d0596462f033db770f456646b2e8203317fb78521810",
+  "seconds": 65.62074566499996
+}

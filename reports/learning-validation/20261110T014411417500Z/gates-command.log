@@ -1,0 +1,78 @@
+{
+  "eligible_methods": [],
+  "six_player_ready": false,
+  "methods": {
+    "opening-stratum-scaled-feature-conditional": {
+      "frozen": [
+        {
+          "replay_seed": 42,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.22816745971730418,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.845432232206635
+        },
+        {
+          "replay_seed": 43,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.23274019990472783,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.8248129671851597
+        },
+        {
+          "replay_seed": 44,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.34920656238996645,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.7977512206151438
+        }
+      ],
+      "kuhn": [
+        {
+          "seed": 71,
+          "passed": false,
+          "reason": "Missing verified final Kuhn checkpoint"
+        },
+        {
+          "seed": 72,
+          "passed": false,
+          "reason": "Missing verified final Kuhn checkpoint"
+        },
+        {
+          "seed": 73,
+          "passed": false,
+          "reason": "Missing verified final Kuhn checkpoint"
+        }
+      ],
+      "passed": false
+    }
+  },
+  "decision": "blocked: no method passed both gates",
+  "config_sha256": "5bfae492d160a080a2d867f8350c22a8b3b1c95c6cf11a6fdb6ceec1826fd6b5",
+  "verifier_sha256": "6464c8b7e5bc865513ea99a85311c96c40a11c85fc2cfc5527469d9bebf5aa2f",
+  "input_hashes": {
+    "frozen-42/results.json": "4738119c873487c7b42eeabaee9fb3181d6b1f0de3f7c9b154b3e89dbd2549e4",
+    "frozen-43/results.json": "00f2408d97604f4ea70cd7e6cf05cb7b7e84c2de0ed23541f8570a3b9c783155",
+    "frozen-44/results.json": "1ea332fb1e9968f53a9b87cd0b0eb214f5b33b2a54042c9ea13fee5f056c6ada"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "71": {
+    "iteration": true,
+    "net": true,
+    "strategy_net": true,
+    "buffers": true,
+    "strategy_buffer": true,
+    "root_replay": true,
+    "rng": false,
+    "exact_numerator": true,
+    "exact_mass": true,
+    "config": true,
+    "method": true,
+    "rng_components": {
+      "python": false,
+      "numpy": true,
+      "generator": true,
+      "torch": true
+    }
+  },
+  "73": {
+    "iteration": true,
+    "net": true,
+    "strategy_net": true,
+    "buffers": true,
+    "strategy_buffer": true,
+    "root_replay": true,
+    "rng": false,
+    "exact_numerator": true,
+    "exact_mass": true,
+    "config": true,
+    "method": true,
+    "rng_components": {
+      "python": false,
+      "numpy": true,
+      "generator": true,
+      "torch": true
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "eligible_methods": [],
+  "six_player_ready": false,
+  "methods": {
+    "global-scaled-conditional": {
+      "frozen": [
+        {
+          "replay_seed": 42,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": false,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.4585398302755183,
+          "aa_fold": 0.25,
+          "global_mse_ratio": 0.8230170874634556
+        },
+        {
+          "replay_seed": 43,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.41264183555840267,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.8080788608488504
+        },
+        {
+          "replay_seed": 44,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.4208459084589379,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.7711845343325668
+        }
+      ],
+      "kuhn": [
+        {
+          "seed": 71,
+          "passed": false,
+          "reason": "Missing verified final Kuhn checkpoint"
+        },
+        {
+          "seed": 72,
+          "passed": false,
+          "reason": "Missing verified final Kuhn checkpoint"
+        },
+        {
+          "seed": 73,
+          "passed": false,
+          "reason": "Missing verified final Kuhn checkpoint"
+        }
+      ],
+      "passed": false
+    },
+    "stratum-scaled-feature-conditional": {
+      "frozen": [
+        {
+          "replay_seed": 42,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.2235767216327069,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.8422263407479397
+        },
+        {
+          "replay_seed": 43,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.22436300501661663,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.8265918520235351
+        },
+        {
+          "replay_seed": 44,
+          "passed": false,
+          "checks": {
+            "root_tv": false,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.29111700853674544,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.787851079589941
+        }
+      ],
+      "kuhn": [
+        {
+          "seed": 71,
+          "passed": false,
+          "reason": "Missing verified final Kuhn checkpoint"
+        },
+        {
+          "seed": 72,
+          "passed": false,
+          "reason": "Missing verified final Kuhn checkpoint"
+        },
+        {
+          "seed": 73,
+          "passed": false,
+          "reason": "Missing verified final Kuhn checkpoint"
+        }
+      ],
+      "passed": false
+    }
+  },
+  "decision": "blocked: no method passed both gates",
+  "config_sha256": "b3fd62bac61e731cc7105d44c25688a96224cd88d3e1187f547aaa222e307f49",
+  "verifier_sha256": "6464c8b7e5bc865513ea99a85311c96c40a11c85fc2cfc5527469d9bebf5aa2f",
+  "input_hashes": {
+    "frozen-42/results.json": "ccbfc3a3e892717b196901c0bd17058478a4c03c8a239e8507e72466be97549e",
+    "frozen-43/results.json": "49d4c2656cef1470712b8808716d4b3d15fdcde3d05c68861861dd3255b2656d",
+    "frozen-44/results.json": "3f1ccf8232a2cb89c2a008043ebef2f5f9887bbce5243b02cc8dafb0c8f1c317"
+  }
+}

@@ -1,5 +1,7 @@
 # 여기서 작업 이어가기
 
+2026-11-10 최신 방향: 사용자 요청으로 **작은 신경망 기반 Deep CFR를 계속 사용한다.** [새 학습 계획](compact-training-plan.md)의 첫 행동 전문가가 고정 버퍼·Kuhn 세 seed·NumPy 배포 검사를 통과했다. 전체 회귀 검사 39개와 연속/분할 재개 검사를 통과한 뒤 seed 342·343·344의 새 CPU 학습을 시작했다. 실제 상태는 `python scripts/compact_status.py`와 `artifacts/compact-v4/current.json`을 확인한다. 60회 학습의 대전 결과가 나오기 전에는 강도 향상을 주장하지 않는다. 아래 11-09 기록은 이전 실험이다.
+
 최신 작업은 [학습기 검증 결과](learning-validation-results.md)다. **고정 6인 replay 적합도와 Kuhn 학습 전체 검사를 완료했다.** 조건부 평균을 쓰는 개선 후보는 Kuhn 세 seed를 통과했지만, 6인 replay는 두 후보 모두 실패했다. `python scripts/check_learning_gates.py --require-six-player`의 현재 예상 종료 코드는 2다. 다음 단계는 regret 표적 수집의 분산·입력별 표본 수와 공유 fitting 개선이며, 같은 설정의 장기 6인 학습으로 바로 넘어가지 않는다.
 
 목표는 자체 프로그램에서 실행하는 6인·100BB 포커 AI다. **[V3의 새 버퍼 3-seed×120회 학습과 288,000핸드 평가를 완료했다](fullhouse-v3-results.md).** 규칙·특징·평균 전략 fitting을 수정해 기존 평균 전략보다 개선됐지만 60→120회의 일관된 이득은 미확인이다. 같은 학습의 advantage 정책이 더 강했으며 seed 42가 다음 독립 평가 후보다. 기본 모델은 유지한다. V2 600회 실행은 [원인 조사](fullhouse-regression-diagnosis.md)와 비교용으로 보존한다. 프로급 강도는 미검증이다.
