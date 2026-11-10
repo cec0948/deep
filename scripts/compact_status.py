@@ -26,7 +26,13 @@ def main():
             except (FileNotFoundError,PermissionError):pass
         rows.append(dict(seed=seed,alive=alive,latest_iteration=latest.get('iteration',0),checkpoint_iteration=status.get('iteration',0),
                          root=latest.get('root'),quality=latest.get('quality'),last_iteration_seconds=latest.get('seconds')))
-    print(json.dumps(dict(folder=str(folder),launch=launch.get('status'),planned_iterations=cfg['iterations'],seeds=rows),indent=2))
+    result=dict(folder=str(folder),launch=launch.get('status'),planned_iterations=cfg['iterations'],seeds=rows)
+    if (folder/'campaign-status.json').exists():result['campaign']=json.loads((folder/'campaign-status.json').read_text())
+    if (folder/'evaluation-status.json').exists():
+        evaluation=json.loads((folder/'evaluation-status.json').read_text())
+        result['evaluation']=dict(status=evaluation['status'],finished=len(evaluation['finished']),failed=evaluation['failed'],
+                                  pending=len(evaluation['pending']),running=evaluation['running'])
+    print(json.dumps(result,indent=2))
 
 
 if __name__=='__main__':main()

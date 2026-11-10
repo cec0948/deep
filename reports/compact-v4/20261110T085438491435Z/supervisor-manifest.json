@@ -1,0 +1,9 @@
+{
+  "run_compact_extension.py": "20aeb7808a2618db905e31d26a913cd1a3b2426b39d76c3f4bbe16b46bc0d88e",
+  "run_compact_evaluation.py": "4ca6e3a50c7b9c084d143012588d60665ea3f26544c214b3282d88695465bea2",
+  "evaluate_compact.py": "262a6e3e2be9f556c3e5863fe00eb636b7203c9148ad834ea1933918e32bcfe2",
+  "summarize_compact.py": "9bb3e3f5955d883fdd5494e3df04cbfa8ef4ba43e3efff429b51bb5bc4c81adf",
+  "compact_progress.py": "fb5f930c59377ad292fe438e827049f48718c1f681c15e753020d4f4b857a84a",
+  "verify_compact_campaign.py": "8c52ba4479f94681bec4f1733cccd27a4d5b5034940b954a73dc4c3d0dbbba60",
+  "export_compact.py": "ad50737238b6f5d5cafc465da45088d0f7cd38517bc8078d76a697368cff2635"
+}

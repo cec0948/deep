@@ -7,6 +7,7 @@ import shutil
 import statistics
 
 from fullhouse_v3_common import ROOT,atomic_json,digest
+from run_compact_evaluation import evaluation_jobs
 
 
 def interval(values):
@@ -36,19 +37,23 @@ def main():
         dest=output/'evaluation'/key;dest.mkdir(parents=True,exist_ok=True)
         shutil.copyfile(path,dest/'results.json');shutil.copyfile(raw,dest/raw.name)
     comparisons={}
+    iterations=sorted(cfg['evaluation_iterations']);final=iterations[-1]
     for seed in cfg['seeds']:
         for kind in ('current','mixture'):
-            for field in ('noregrets','public'):
-                lo=f'{field}-seed-{seed}-{kind}-30';hi=f'{field}-seed-{seed}-{kind}-60'
-                if lo in rows and hi in rows:comparisons[f'{field}-seed-{seed}-{kind}-60-minus-30']=interval([x-y for x,y in zip(rows[hi]['deal_blocks'],rows[lo]['deal_blocks'])])
+            for field in cfg['evaluation_fields']:
+                for before,after in zip(iterations,iterations[1:]):
+                    lo=f'{field}-seed-{seed}-{kind}-{before}';hi=f'{field}-seed-{seed}-{kind}-{after}'
+                    if lo in rows and hi in rows:comparisons[f'{field}-seed-{seed}-{kind}-{after}-minus-{before}']=interval([x-y for x,y in zip(rows[hi]['deal_blocks'],rows[lo]['deal_blocks'])])
         for field in cfg['evaluation_fields']:
             baseline=f'{field}-old-v3-adv42'
             for kind in ('current','mixture'):
-                candidate=f'{field}-seed-{seed}-{kind}-60'
+                candidate=f'{field}-seed-{seed}-{kind}-{final}'
                 if baseline in rows and candidate in rows:comparisons[candidate+'-minus-old-v3']=interval([x-y for x,y in zip(rows[candidate]['deal_blocks'],rows[baseline]['deal_blocks'])])
     scores={name:{k:r[k] for k in ('bb_per_100','ci95_half_width','hands','candidate_type','candidate_sha256','elapsed_seconds','peak_sampled_rss_bytes')} for name,r in rows.items()}
-    expected=36
-    summary=dict(complete=len(rows)==expected,completed_evaluations=len(rows),planned_evaluations=expected,total_hands=hands,
+    expected_ids={j['id'] for j in evaluation_jobs(folder,cfg)}
+    if set(rows)-expected_ids:raise ValueError('Unexpected evaluation result')
+    expected=len(expected_ids)
+    summary=dict(complete=set(rows)==expected_ids,completed_evaluations=len(rows),planned_evaluations=expected,total_hands=hands,
                  scores=scores,paired_comparisons=comparisons,config=cfg,summarizer_sha256=digest(Path(__file__)),
                  limitations=['Nominal deal-block intervals; no adjustment for multiple comparisons','Fixed trained models and two-model opponent pool',
                               'Three learning seeds are not independent card evaluation sets','No professional strength or automatic promotion'])

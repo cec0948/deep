@@ -1,14 +1,16 @@
 # 여기서 작업 이어가기
 
+최신 진행: 사용자 요청으로 [60→120회 제한 연장](compact-continuation.md)을 시작했다. 실행은 `artifacts/compact-v4/20261110T085438491435Z`다. **세 seed 모두 기존 전체 checkpoint에서 재개하고, 새 카드로 60회와 120회를 함께 평가한다. 총 예정 504,000핸드다.** `python scripts/compact_status.py`와 실행 폴더의 `campaign-status.json`을 먼저 확인한다. 살아 있는 supervisor·worker를 중복 실행하지 않는다. 완료되면 `progress-decision.json`의 사전 조건과 상대별 성적을 확인해 다음 제한 구간을 판단한다. 아래 60회 결과는 비교 기준으로 보존한다.
+
 2026-11-10 최신 방향: 사용자 요청으로 **작은 신경망 기반 Deep CFR를 계속 사용한다.** [새 학습·평가 결과](compact-training-results.md)의 세 seed×60회, 본 평가 432,000핸드와 추가 탐색 12,000핸드를 완료했다. UTG AA 폴드와 root fitting을 보강했고 공개 상대에서 30→60회 개선을 확인했다. 두 seed는 여전히 공개 상대에 지며 최고 seed도 기존 모델 대비 우월성이 미확인이다. 프로그램 실행은 가볍지만 프로급 강도를 검증한 것은 아니다. 실제 상태는 `python scripts/compact_status.py`와 `artifacts/compact-v4/current.json`을 확인한다. 다음은 후속 상황의 regret fitting·상대 일반화 검토이며 같은 설정의 장기 연장은 결과를 근거로 판단한다. 아래 11-09 기록은 이전 실험이다.
 
-## 현재 V4 실행과 백업
+## V4 60회 완료 실행과 백업
 
 완료 실행은 `artifacts/compact-v4/20261110T022413561323Z`다. 상태와 결과를 확인한다.
 
 ```bash
 cd /workspace/deep
-python scripts/compact_status.py
+python scripts/compact_status.py artifacts/compact-v4/20261110T022413561323Z
 python scripts/summarize_compact.py artifacts/compact-v4/20261110T022413561323Z
 ```
 
@@ -16,11 +18,11 @@ python scripts/summarize_compact.py artifacts/compact-v4/20261110T022413561323Z
 
 백업 `artifacts/exports/compact-v4-20261110T022413561323Z.tar.gz`는 약 289MB이며 세 seed의 전체 모델·버퍼·RNG와 결과를 포함한다. [크기·SHA-256](../reports/compact-v4/20261110T022413561323Z/backup.json)을 확인한다. **환경이 사라져도 보존하려면 별도로 내려받아야 한다. GitHub에는 큰 모델과 checkpoint가 없다.** 새 환경의 저장소·고정 의존성을 준비한 뒤 이 archive를 프로젝트 루트에 푼다. 과거 연구와 기준 모델 평가 재실행에는 V3 백업도 필요하다.
 
-다음 담당자는 [V4 계획](compact-training-plan.md), [결과](compact-training-results.md), `reports/compact-v4/20261110T022413561323Z/summary.json`을 먼저 읽는다. 공개 상대에서의 30→60회 개선, 두 seed의 최종 손실, 약한 전체 시간 혼합, 초기 UTG AA limp를 함께 고려한다. 다음 쟁점은 후속 상태의 regret fitting·정보 손실과 상대 일반화다. 훈련 예산만 늘리기 전에 이 가설을 구분할 실험을 정한다.
+다음 담당자는 [연장 계획](compact-continuation.md), [V4 결과](compact-training-results.md), `reports/compact-v4/20261110T022413561323Z/summary.json`을 먼저 읽는다. 공개 상대에서의 30→60회 개선, 두 seed의 최종 손실, 약한 전체 시간 혼합, 초기 UTG AA limp를 함께 고려한다. 현재 120회까지 설정을 유지한 연장이 진행 중이다. 이 실행이 끝나기 전에 성적에 따라 학습 설정을 바꾸지 않는다.
 
 새 대화에서 사용할 요청:
 
-> `/workspace/deep/docs/continue-work.md`와 `docs/compact-training-results.md`를 읽으세요. V4 세 seed×60회와 432,000핸드 본 평가를 완료했습니다. 코드·백업·원시 결과를 보존하고, 공개 상대에서 두 seed가 여전히 지는 이유와 전체 시간 혼합의 약점을 분석하세요. 후속 상태 regret fitting과 정보 손실·표본 분산을 구분해 다음 제한 실험을 정하고, 기존 통과 기준을 유지하세요.
+> `/workspace/deep/docs/continue-work.md`와 `docs/compact-continuation.md`를 읽으세요. 60→120회 연장 실행의 실제 상태를 먼저 확인하고 살아 있는 작업을 유지하세요. 완료되면 원시 대전 결과와 `progress-decision.json`을 확인하고, 사전 조건을 근거로 다음 구간을 판단하세요. 기존 모델과 원시 결과를 보존하고 통과 기준을 유지하세요.
 
 ## 이전 V3와 검증 기록 — 현재 실행 지침 아님
 

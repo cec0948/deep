@@ -1,0 +1,29 @@
+{
+  "files": {
+    "source/LICENSE.upstream": "8a2daa759da5e2bc87dfdd8f3a02fee6f18b38ccced523022a31c36e1b0512c4",
+    "source/bot/bot.py": "f721b16e0cab72d0c40fae2e94d1ec655a94025fc20addfc689c718fb8f10845",
+    "source/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "source/bot/features.py": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "source/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "source/training/__init__.py": "dd47ca434e58a3ba04952d871c3899db7b675eed0dd5e2e4dc23645f72f08d1f",
+    "source/training/_hand_eval.py": "e97c081806e67f964ace1c6dd7bb62c8f49ea8cd0c2060d8643d6c58daeb3a96",
+    "source/training/_hand_eval_lut.py": "d57d29959b6441fbad16f1e65c35dab0e6d38e7fda29a1b8edbaf6271cea5e46",
+    "source/training/buffer.py": "a513bf28f44992218053745e77faedd5a6a71c663cc642273ccaa01e0cd4f611",
+    "source/training/features.py": "b6f8b26df06b4147c87e1543242d5cf29af9366be7681af272bbc677bdc97946",
+    "source/training/game.py": "df405d6d9efbeca3ecb778cfa70dd770fee5c34d04eb3f65ed1ab11261696381",
+    "source/training/game_numba.py": "3d581b954fa028ea8c6e5b31457c95cbcfa8f9e09bc14dd939c59ae7457437dc",
+    "source/training/network.py": "e8c75e85722fa32e311316f06b93596f6610b934af5a8ab0ef6c99d72d2f2c49",
+    "source/training/r1_support.py": "08b19999b38066c1848ca3e0a5a67b65a0b577250dce59c0dff084ae7683dfd0",
+    "source/training/train.py": "844c8e6d3aea891e95d39f60b9e50906bcc854df20bc489d440558be945bb316",
+    "source/training/traverse_fast.py": "b0d199732ddd46be242c90b382fe4e7c93add829ca8e493d6c59dce67af319a6",
+    "source/training/traverse_numba.py": "03c17cd7b717005737cabafe7c4e7963dc6eb1fbd9f8e4295d3c8417127ec803",
+    "source/training/worker.py": "282435f5e10770dce373b4579e14552af9f0e3beb6178046a8229a33acad9bea",
+    "tools/compact_regret.py": "4cff184154657d6e1040536fd02a1cd25bb518e8a813a67b72851dd6f1882d60",
+    "tools/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "tools/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "tools/root_regret_replay.py": "0078f0cde6631e3b8ba12dd134523521a5a6f7ffd0bc5e88b7c0bce8ee9c349d",
+    "tools/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+    "tools/train_compact_selfplay.py": "ced4b1817a837c83bd0f28ef640bfa0220fe1bd2bb5142a9ef0e04d48fd35b51"
+  },
+  "driver_sha256": "ced4b1817a837c83bd0f28ef640bfa0220fe1bd2bb5142a9ef0e04d48fd35b51"
+}

@@ -1,6 +1,8 @@
-"""Evaluate fixed baselines while training, then each published 30/60 policy."""
+"""Evaluate fixed baselines and the declared checkpoints on common cards."""
 import argparse
+import gzip
 import json
+import shutil
 from pathlib import Path
 import subprocess
 import sys
@@ -9,22 +11,29 @@ import time
 from fullhouse_v3_common import ROOT,atomic_json,digest
 
 
-def main():
-    p=argparse.ArgumentParser();p.add_argument('folder',type=Path);a=p.parse_args();folder=a.folder.resolve()
-    cfg=json.loads((folder/'config.json').read_text());evaluation=folder/'evaluation';evaluation.mkdir(exist_ok=True)
+def evaluation_jobs(folder,cfg):
+    folder=Path(folder)
     jobs=[]
     for label,model,source in [('public',None,None),('old-v3-adv42',ROOT/cfg['source_run']/'seed-42_adv/iter_00120.npz',ROOT/cfg['source_run']/'source')]:
         for field in cfg['evaluation_fields']:jobs.append(dict(id=f'{field}-{label}',model=str(model) if model else None,source=str(source) if source else None,field=field))
     for iteration in cfg['evaluation_iterations']:
-        fields=cfg['evaluation_fields'] if iteration==max(cfg['evaluation_iterations']) else ['noregrets','public']
+        fields=cfg['evaluation_fields'] if cfg.get('evaluation_all_stages_fields') or iteration==max(cfg['evaluation_iterations']) else ['noregrets','public']
         for seed in cfg['seeds']:
             for kind in ('current','mixture'):
                 model=folder/f'seed-{seed}'/f'{kind}_{iteration:05d}.{ "json" if kind=="mixture" else "npz"}'
                 for field in fields:jobs.append(dict(id=f'{field}-seed-{seed}-{kind}-{iteration}',model=str(model),source=str(folder/'source'),field=field,iteration=iteration,seed=seed,kind=kind))
-    running=[];finished=[];failed=[];started=time.monotonic()
+    return jobs
+
+
+def main():
+    p=argparse.ArgumentParser();p.add_argument('folder',type=Path);a=p.parse_args();folder=a.folder.resolve()
+    cfg=json.loads((folder/'config.json').read_text());evaluation=folder/'evaluation';evaluation.mkdir(exist_ok=True)
+    jobs=evaluation_jobs(folder,cfg)
+    running=[];finished=[];failed=[];retries=[];started=time.monotonic()
     while jobs or running:
         launch=json.loads((folder/'launch.json').read_text());training=launch['status']=='running'
         limit=1 if training else 3
+        if any(j.get('startup_attempt') for j in jobs) or any(j.get('startup_attempt') for j,_,_ in running):limit=1
         for job in jobs[:]:
             result=evaluation/job['id']/'results.json'
             if result.exists():
@@ -51,10 +60,21 @@ def main():
             if child.returncode==0:
                 r=json.loads((evaluation/job['id']/'results.json').read_text());finished.append(job)
                 print('complete',job['id'],r['bb_per_100'],r['ci95_half_width'],flush=True)
-            else:failed.append(dict(**job,error=f'exit {child.returncode}'));print('failed',job['id'],child.returncode,flush=True)
+            else:
+                output=evaluation/job['id'];logpath=evaluation/(job['id']+'.log')
+                empty=False;raw=output/'hands.jsonl.gz'
+                if raw.exists():
+                    with gzip.open(raw,'rt') as stream:empty=next(stream,None) is None
+                if empty and 'Engine response timeout' in logpath.read_text() and not job.get('startup_attempt'):
+                    saved=evaluation/'failed-startup';saved.mkdir(exist_ok=True)
+                    shutil.move(str(output),saved/(job['id']+'-attempt-1'))
+                    shutil.move(str(logpath),saved/(job['id']+'-attempt-1.log'))
+                    retries.append(dict(id=job['id'],reason='Engine startup timeout, zero hands',preserved=str(saved)))
+                    jobs.append(dict(**job,startup_attempt=1));print('retry startup',job['id'],flush=True)
+                else:failed.append(dict(**job,error=f'exit {child.returncode}'));print('failed',job['id'],child.returncode,flush=True)
         atomic_json(folder/'evaluation-status.json',dict(status='running' if jobs or running else 'complete',finished=finished,failed=failed,
                     pending=[j['id'] for j in jobs],running={j['id']:p.pid for j,p,_ in running},seconds=time.monotonic()-started,
-                    evaluator_sha256=digest(ROOT/'scripts/evaluate_compact.py')))
+                    startup_retries=retries,evaluator_sha256=digest(ROOT/'scripts/evaluate_compact.py')))
         if jobs or running:time.sleep(3)
     if failed:raise SystemExit(2)
 

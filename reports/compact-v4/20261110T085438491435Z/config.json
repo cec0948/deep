@@ -1,0 +1,51 @@
+{
+  "revision": "compact-cfr-v4",
+  "method": "compact-opening-expert",
+  "gate_run": "artifacts/learning-validation/20261110T015233258042Z",
+  "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "iterations": 120,
+  "stages": [
+    120
+  ],
+  "traversals": 256,
+  "buffer_capacity": 100000,
+  "main_steps": 1024,
+  "batch_size": 512,
+  "opening_steps": 2048,
+  "opening_max_steps": 8192,
+  "max_opening_tv": 0.1,
+  "root_repetitions_first": 16,
+  "root_repetitions": 4,
+  "learning_rate": 0.001,
+  "checkpoint_every": 6,
+  "deployment_average": "Every pre-update policy, weight t, selected once per hand independently of cards",
+  "evaluation_fields": [
+    "noregrets",
+    "public",
+    "mixed"
+  ],
+  "evaluation_iterations": [
+    60,
+    120
+  ],
+  "evaluation_deals": 2000,
+  "evaluation_deal_seed": 190261110,
+  "seconds_per_training_worker": 5400,
+  "promotion": "none",
+  "evaluation_all_stages_fields": true,
+  "extension_from": {
+    "parent": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z",
+    "iteration": 60,
+    "config_sha256": "ef86d660a98595070aa50f3d4e8dcca5782596b7dd2376a29e9d8a25001bd997",
+    "checkpoints": {
+      "342": "55a7fb9530ad647ed2c080c001bda29ccd3fd2dffd23dd96d524404ad3ee9344",
+      "343": "71fc748ca8f3725941623446a8e790f9db760510ff89bbbcac1ac39de6555142",
+      "344": "094d77f0aa6bcbb7e7580b9793eef1d78f2c53fcd8ff51c4aae73536c05cc7f1"
+    }
+  }
+}
