@@ -1,0 +1,42 @@
+{
+  "revision": "compact-cfr-v4",
+  "method": "compact-opening-expert",
+  "gate_run": "artifacts/learning-validation/20261110T015233258042Z",
+  "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "iterations": 60,
+  "stages": [
+    12,
+    30,
+    60
+  ],
+  "traversals": 256,
+  "buffer_capacity": 100000,
+  "main_steps": 1024,
+  "batch_size": 512,
+  "opening_steps": 2048,
+  "opening_max_steps": 8192,
+  "max_opening_tv": 0.1,
+  "root_repetitions_first": 16,
+  "root_repetitions": 4,
+  "learning_rate": 0.001,
+  "checkpoint_every": 6,
+  "deployment_average": "Every pre-update policy, weight t, selected once per hand independently of cards",
+  "evaluation_fields": [
+    "noregrets",
+    "public",
+    "mixed"
+  ],
+  "evaluation_iterations": [
+    30,
+    60
+  ],
+  "evaluation_deals": 2000,
+  "evaluation_deal_seed": 170261110,
+  "seconds_per_training_worker": 5400,
+  "promotion": "none"
+}

@@ -1,0 +1,46 @@
+{
+  "noregrets": {
+    "uniform": {
+      "bb_per_100": 230.66066666666666,
+      "ci95_half_width": 136.12440833827492,
+      "negative_score_counts": {
+        "decisions": 3692,
+        "all_negative": 268
+      }
+    },
+    "argmax": {
+      "bb_per_100": 200.73166666666665,
+      "ci95_half_width": 121.8233026201549,
+      "negative_score_counts": {
+        "decisions": 3654,
+        "all_negative": 268
+      }
+    },
+    "paired_argmax_minus_uniform": {
+      "mean": -29.929000000000002,
+      "ci95_half_width": 98.80048449627398
+    }
+  },
+  "public": {
+    "uniform": {
+      "bb_per_100": 10.738,
+      "ci95_half_width": 46.18061929314111,
+      "negative_score_counts": {
+        "decisions": 4686,
+        "all_negative": 353
+      }
+    },
+    "argmax": {
+      "bb_per_100": 3.2699999999999996,
+      "ci95_half_width": 33.6957122856748,
+      "negative_score_counts": {
+        "decisions": 4672,
+        "all_negative": 362
+      }
+    },
+    "paired_argmax_minus_uniform": {
+      "mean": -7.468000000000001,
+      "ci95_half_width": 35.51955030564514
+    }
+  }
+}

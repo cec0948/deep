@@ -1,0 +1,24 @@
+{
+  "iteration": 60,
+  "through": 60,
+  "status": "complete",
+  "quality": {
+    "weighted_tv": 0.040828477838394904,
+    "aa_fold": 0.0,
+    "aa_target_fold": 0.0,
+    "aa_regrets": [
+      -62.55386467391159,
+      -8.07690053456733,
+      2.938617224995512,
+      -4.830182638392467,
+      0.0
+    ]
+  },
+  "root": {
+    "classes": 169,
+    "observations": 42588,
+    "minimum_observations": 252,
+    "median_observations": 252.0,
+    "minimum_weight_ess": 181.48944746085348
+  }
+}

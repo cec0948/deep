@@ -1,0 +1,319 @@
+{
+  "status": "complete",
+  "finished": [
+    {
+      "id": "noregrets-public",
+      "model": null,
+      "source": null,
+      "field": "noregrets"
+    },
+    {
+      "id": "public-public",
+      "model": null,
+      "source": null,
+      "field": "public"
+    },
+    {
+      "id": "mixed-public",
+      "model": null,
+      "source": null,
+      "field": "mixed"
+    },
+    {
+      "id": "noregrets-old-v3-adv42",
+      "model": "/workspace/deep/artifacts/fullhouse-v3/20261109T034714104421Z/seed-42_adv/iter_00120.npz",
+      "source": "/workspace/deep/artifacts/fullhouse-v3/20261109T034714104421Z/source",
+      "field": "noregrets"
+    },
+    {
+      "id": "public-old-v3-adv42",
+      "model": "/workspace/deep/artifacts/fullhouse-v3/20261109T034714104421Z/seed-42_adv/iter_00120.npz",
+      "source": "/workspace/deep/artifacts/fullhouse-v3/20261109T034714104421Z/source",
+      "field": "public"
+    },
+    {
+      "id": "mixed-old-v3-adv42",
+      "model": "/workspace/deep/artifacts/fullhouse-v3/20261109T034714104421Z/seed-42_adv/iter_00120.npz",
+      "source": "/workspace/deep/artifacts/fullhouse-v3/20261109T034714104421Z/source",
+      "field": "mixed"
+    },
+    {
+      "id": "noregrets-seed-342-current-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-342/current_00030.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 30,
+      "seed": 342,
+      "kind": "current"
+    },
+    {
+      "id": "public-seed-342-current-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-342/current_00030.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 30,
+      "seed": 342,
+      "kind": "current"
+    },
+    {
+      "id": "noregrets-seed-342-mixture-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-342/mixture_00030.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 30,
+      "seed": 342,
+      "kind": "mixture"
+    },
+    {
+      "id": "public-seed-342-mixture-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-342/mixture_00030.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 30,
+      "seed": 342,
+      "kind": "mixture"
+    },
+    {
+      "id": "noregrets-seed-343-current-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-343/current_00030.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 30,
+      "seed": 343,
+      "kind": "current"
+    },
+    {
+      "id": "public-seed-343-current-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-343/current_00030.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 30,
+      "seed": 343,
+      "kind": "current"
+    },
+    {
+      "id": "noregrets-seed-343-mixture-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-343/mixture_00030.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 30,
+      "seed": 343,
+      "kind": "mixture"
+    },
+    {
+      "id": "public-seed-343-mixture-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-343/mixture_00030.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 30,
+      "seed": 343,
+      "kind": "mixture"
+    },
+    {
+      "id": "noregrets-seed-344-current-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-344/current_00030.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 30,
+      "seed": 344,
+      "kind": "current"
+    },
+    {
+      "id": "public-seed-344-current-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-344/current_00030.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 30,
+      "seed": 344,
+      "kind": "current"
+    },
+    {
+      "id": "noregrets-seed-344-mixture-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-344/mixture_00030.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 30,
+      "seed": 344,
+      "kind": "mixture"
+    },
+    {
+      "id": "public-seed-344-mixture-30",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-344/mixture_00030.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 30,
+      "seed": 344,
+      "kind": "mixture"
+    },
+    {
+      "id": "noregrets-seed-344-current-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-344/current_00060.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 60,
+      "seed": 344,
+      "kind": "current"
+    },
+    {
+      "id": "public-seed-344-current-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-344/current_00060.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 60,
+      "seed": 344,
+      "kind": "current"
+    },
+    {
+      "id": "noregrets-seed-343-current-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-343/current_00060.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 60,
+      "seed": 343,
+      "kind": "current"
+    },
+    {
+      "id": "noregrets-seed-342-current-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-342/current_00060.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 60,
+      "seed": 342,
+      "kind": "current"
+    },
+    {
+      "id": "public-seed-342-current-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-342/current_00060.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 60,
+      "seed": 342,
+      "kind": "current"
+    },
+    {
+      "id": "mixed-seed-342-current-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-342/current_00060.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "mixed",
+      "iteration": 60,
+      "seed": 342,
+      "kind": "current"
+    },
+    {
+      "id": "public-seed-342-mixture-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-342/mixture_00060.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 60,
+      "seed": 342,
+      "kind": "mixture"
+    },
+    {
+      "id": "public-seed-343-current-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-343/current_00060.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 60,
+      "seed": 343,
+      "kind": "current"
+    },
+    {
+      "id": "mixed-seed-343-current-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-343/current_00060.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "mixed",
+      "iteration": 60,
+      "seed": 343,
+      "kind": "current"
+    },
+    {
+      "id": "noregrets-seed-343-mixture-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-343/mixture_00060.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 60,
+      "seed": 343,
+      "kind": "mixture"
+    },
+    {
+      "id": "public-seed-343-mixture-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-343/mixture_00060.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 60,
+      "seed": 343,
+      "kind": "mixture"
+    },
+    {
+      "id": "mixed-seed-343-mixture-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-343/mixture_00060.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "mixed",
+      "iteration": 60,
+      "seed": 343,
+      "kind": "mixture"
+    },
+    {
+      "id": "mixed-seed-344-current-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-344/current_00060.npz",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "mixed",
+      "iteration": 60,
+      "seed": 344,
+      "kind": "current"
+    },
+    {
+      "id": "noregrets-seed-344-mixture-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-344/mixture_00060.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 60,
+      "seed": 344,
+      "kind": "mixture"
+    },
+    {
+      "id": "public-seed-344-mixture-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-344/mixture_00060.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "public",
+      "iteration": 60,
+      "seed": 344,
+      "kind": "mixture"
+    },
+    {
+      "id": "mixed-seed-344-mixture-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-344/mixture_00060.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "mixed",
+      "iteration": 60,
+      "seed": 344,
+      "kind": "mixture"
+    }
+  ],
+  "failed": [
+    {
+      "id": "noregrets-seed-342-mixture-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-342/mixture_00060.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "noregrets",
+      "iteration": 60,
+      "seed": 342,
+      "kind": "mixture",
+      "error": "exit 1"
+    },
+    {
+      "id": "mixed-seed-342-mixture-60",
+      "model": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/seed-342/mixture_00060.json",
+      "source": "/workspace/deep/artifacts/compact-v4/20261110T022413561323Z/source",
+      "field": "mixed",
+      "iteration": 60,
+      "seed": 342,
+      "kind": "mixture",
+      "error": "exit 1"
+    }
+  ],
+  "pending": [],
+  "running": {},
+  "seconds": 2387.0933846979997,
+  "evaluator_sha256": "262a6e3e2be9f556c3e5863fe00eb636b7203c9148ad834ea1933918e32bcfe2"
+}

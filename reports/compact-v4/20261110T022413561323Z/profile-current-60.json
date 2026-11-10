@@ -1,0 +1,27 @@
+{
+  "model": "artifacts/compact-v4/20261110T022413561323Z/seed-342/current_00060.npz",
+  "model_sha256": "908a2a1b81c3c8aabf7177fb582909aba70f20a082ebf14cb05b4a69c363a2be",
+  "model_bytes": 1183010,
+  "model_type": "compact_advantage",
+  "resident_bytes": 37249024,
+  "torch_imported": false,
+  "measurements": [
+    {
+      "street": "preflop",
+      "median_ms": 0.1708605,
+      "p95_ms": 0.340477,
+      "calls": 500
+    },
+    {
+      "street": "flop",
+      "median_ms": 0.20769100000000001,
+      "p95_ms": 0.388747,
+      "calls": 500
+    }
+  ],
+  "cached_snapshots": 0,
+  "limitations": [
+    "Current cloud CPU, single BLAS thread, with concurrent training/evaluation",
+    "Warm policy calls; engine replay and model loading excluded"
+  ]
+}

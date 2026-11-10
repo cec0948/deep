@@ -1,8 +1,30 @@
 # 여기서 작업 이어가기
 
-2026-11-10 최신 방향: 사용자 요청으로 **작은 신경망 기반 Deep CFR를 계속 사용한다.** [새 학습 계획](compact-training-plan.md)의 첫 행동 전문가가 고정 버퍼·Kuhn 세 seed·NumPy 배포 검사를 통과했다. 전체 회귀 검사 39개와 연속/분할 재개 검사를 통과한 뒤 seed 342·343·344의 새 CPU 학습을 시작했다. 실제 상태는 `python scripts/compact_status.py`와 `artifacts/compact-v4/current.json`을 확인한다. 60회 학습의 대전 결과가 나오기 전에는 강도 향상을 주장하지 않는다. 아래 11-09 기록은 이전 실험이다.
+2026-11-10 최신 방향: 사용자 요청으로 **작은 신경망 기반 Deep CFR를 계속 사용한다.** [새 학습·평가 결과](compact-training-results.md)의 세 seed×60회, 본 평가 432,000핸드와 추가 탐색 12,000핸드를 완료했다. UTG AA 폴드와 root fitting을 보강했고 공개 상대에서 30→60회 개선을 확인했다. 두 seed는 여전히 공개 상대에 지며 최고 seed도 기존 모델 대비 우월성이 미확인이다. 프로그램 실행은 가볍지만 프로급 강도를 검증한 것은 아니다. 실제 상태는 `python scripts/compact_status.py`와 `artifacts/compact-v4/current.json`을 확인한다. 다음은 후속 상황의 regret fitting·상대 일반화 검토이며 같은 설정의 장기 연장은 결과를 근거로 판단한다. 아래 11-09 기록은 이전 실험이다.
 
-최신 작업은 [학습기 검증 결과](learning-validation-results.md)다. **고정 6인 replay 적합도와 Kuhn 학습 전체 검사를 완료했다.** 조건부 평균을 쓰는 개선 후보는 Kuhn 세 seed를 통과했지만, 6인 replay는 두 후보 모두 실패했다. `python scripts/check_learning_gates.py --require-six-player`의 현재 예상 종료 코드는 2다. 다음 단계는 regret 표적 수집의 분산·입력별 표본 수와 공유 fitting 개선이며, 같은 설정의 장기 6인 학습으로 바로 넘어가지 않는다.
+## 현재 V4 실행과 백업
+
+완료 실행은 `artifacts/compact-v4/20261110T022413561323Z`다. 상태와 결과를 확인한다.
+
+```bash
+cd /workspace/deep
+python scripts/compact_status.py
+python scripts/summarize_compact.py artifacts/compact-v4/20261110T022413561323Z
+```
+
+`launch: complete`, 각 seed의 `checkpoint_iteration: 60`이 정상이다. 완료 실행을 재개하거나 중복 학습하지 않는다. 실제 프로그램 호출법과 CPU/RAM 측정은 [V4 결과](compact-training-results.md)에 있다. 기본 모델은 교체하지 않았다.
+
+백업 `artifacts/exports/compact-v4-20261110T022413561323Z.tar.gz`는 약 289MB이며 세 seed의 전체 모델·버퍼·RNG와 결과를 포함한다. [크기·SHA-256](../reports/compact-v4/20261110T022413561323Z/backup.json)을 확인한다. **환경이 사라져도 보존하려면 별도로 내려받아야 한다. GitHub에는 큰 모델과 checkpoint가 없다.** 새 환경의 저장소·고정 의존성을 준비한 뒤 이 archive를 프로젝트 루트에 푼다. 과거 연구와 기준 모델 평가 재실행에는 V3 백업도 필요하다.
+
+다음 담당자는 [V4 계획](compact-training-plan.md), [결과](compact-training-results.md), `reports/compact-v4/20261110T022413561323Z/summary.json`을 먼저 읽는다. 공개 상대에서의 30→60회 개선, 두 seed의 최종 손실, 약한 전체 시간 혼합, 초기 UTG AA limp를 함께 고려한다. 다음 쟁점은 후속 상태의 regret fitting·정보 손실과 상대 일반화다. 훈련 예산만 늘리기 전에 이 가설을 구분할 실험을 정한다.
+
+새 대화에서 사용할 요청:
+
+> `/workspace/deep/docs/continue-work.md`와 `docs/compact-training-results.md`를 읽으세요. V4 세 seed×60회와 432,000핸드 본 평가를 완료했습니다. 코드·백업·원시 결과를 보존하고, 공개 상대에서 두 seed가 여전히 지는 이유와 전체 시간 혼합의 약점을 분석하세요. 후속 상태 regret fitting과 정보 손실·표본 분산을 구분해 다음 제한 실험을 정하고, 기존 통과 기준을 유지하세요.
+
+## 이전 V3와 검증 기록 — 현재 실행 지침 아님
+
+[이전 학습기 검증 결과](learning-validation-results.md)의 두 후보는 6인 replay에서 실패했다. 이후 V4의 별도 첫 행동 전문가가 고정 replay와 작은 게임의 기준을 모두 통과했다. `scripts/check_learning_gates.py`는 이전 실험용이며, 현재 gate는 `reports/learning-validation/20261110T015233258042Z/`를 확인한다.
 
 목표는 자체 프로그램에서 실행하는 6인·100BB 포커 AI다. **[V3의 새 버퍼 3-seed×120회 학습과 288,000핸드 평가를 완료했다](fullhouse-v3-results.md).** 규칙·특징·평균 전략 fitting을 수정해 기존 평균 전략보다 개선됐지만 60→120회의 일관된 이득은 미확인이다. 같은 학습의 advantage 정책이 더 강했으며 seed 42가 다음 독립 평가 후보다. 기본 모델은 유지한다. V2 600회 실행은 [원인 조사](fullhouse-regression-diagnosis.md)와 비교용으로 보존한다. 프로급 강도는 미검증이다.
 
@@ -82,13 +104,13 @@ python scripts/train_fullhouse_v3.py status
 
 다른 플랫폼에서 Rust binary를 다시 빌드할 때는 [JSON API 안내](json-api.md)의 고정 NoRegrets commit과 Rust 1.90.0을 사용한다. oracle·전체 회귀 검사를 새 환경에서 실행하려면 NoRegrets 원본과 별도 smoke 모델 등 기존 검사 자산도 준비해야 한다. V3 훈련 재개용 bundle이 프로젝트의 모든 과거 실험 자산을 포함하는 것은 아니다.
 
-## 다음 담당자
+## 이전 V3 작업 순서
 
 1. 상태를 먼저 확인하고 기존 실행이 살아 있으면 유지한다.
 2. V3 구현 문서와 완료 결과를 읽는다. 승률뿐 아니라 세 학습 seed의 편차, 평균 전략 적합도, 60→120회 paired 차이를 확인한다.
 3. [학습기 검증 결과](learning-validation-results.md)를 읽는다. 고정 버퍼의 예산·상태 균형 비교는 이미 완료했다. AA만 보고 개선됐다고 판단하지 않는다. 현재 작은 게임에서 통과한 후보를 회귀 기준으로 삼고, 6인 표적 수집의 변동성과 여러 상태를 함께 fitting하는 문제를 다음에 개선한다. 같은 후보가 두 검증을 모두 통과해야 제한된 새 6인 실험으로 진행한다.
 4. 51개 요약 특징의 imperfect recall, 공유 신경망 근사와 6인 균형 수렴은 별도 이론 쟁점으로 남긴다.
 
-새 대화에서 사용할 요청:
+이전 실험 당시 요청(현재 요청으로 사용하지 않음):
 
 > `/workspace/deep/docs/continue-work.md`와 `docs/learning-validation-results.md`를 읽으세요. 고정 6인 replay 검증은 실패했고, 조건부 평균 방식의 Kuhn 검증은 통과했습니다. 기존 증거와 체크포인트를 보존하며 regret 표적 수집의 변동성과 공유 fitting을 개선하세요. 사전 기준을 유지하고 같은 방식이 두 검사를 모두 통과했을 때 제한된 6인 실험으로 진행하세요.

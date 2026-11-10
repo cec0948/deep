@@ -12,6 +12,16 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 
 
+def test_maximum_negative_regret_fallback_respects_legal_actions_and_ties():
+    from evaluate_negative_fallback import regret_strategy
+    legal=np.array([0,1,1,1,0],np.float32)
+    raw=np.array([100,-3,-1,-2,100],np.float32)
+    np.testing.assert_array_equal(regret_strategy(raw,legal,'argmax'),[0,0,1,0,0])
+    np.testing.assert_allclose(regret_strategy(raw,legal,'uniform'),[0,1/3,1/3,1/3,0])
+    np.testing.assert_allclose(regret_strategy(np.zeros(5),legal,'argmax'),[0,1/3,1/3,1/3,0])
+    np.testing.assert_allclose(regret_strategy(np.array([100,2,3,-4,100]),legal,'argmax'),[0,.4,.6,0,0])
+
+
 def test_hand_mixture_matches_own_reach_average():
     from kuhn_validation import own_reach,policy_value,OWNER
     rng=np.random.default_rng(717)

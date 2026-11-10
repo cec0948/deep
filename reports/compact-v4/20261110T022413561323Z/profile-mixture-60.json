@@ -1,0 +1,27 @@
+{
+  "model": "artifacts/compact-v4/20261110T022413561323Z/seed-342/mixture_00060.json",
+  "model_sha256": "f8bd96bc2c68292cc41d889544a454fd8a638f6d7f373e0de611b135a21c47b0",
+  "model_bytes": 10580,
+  "model_type": "snapshot_mixture",
+  "resident_bytes": 108892160,
+  "torch_imported": false,
+  "measurements": [
+    {
+      "street": "preflop",
+      "median_ms": 0.34415850000000003,
+      "p95_ms": 0.659989,
+      "calls": 500
+    },
+    {
+      "street": "flop",
+      "median_ms": 0.3962445,
+      "p95_ms": 0.71562,
+      "calls": 500
+    }
+  ],
+  "cached_snapshots": 59,
+  "limitations": [
+    "Current cloud CPU, single BLAS thread, with concurrent training/evaluation",
+    "Warm policy calls; engine replay and model loading excluded"
+  ]
+}

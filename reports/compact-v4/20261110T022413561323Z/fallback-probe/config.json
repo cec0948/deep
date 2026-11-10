@@ -1,0 +1,20 @@
+{
+  "seed": 342,
+  "iteration": 60,
+  "deal_seed": 180261110,
+  "deals": 500,
+  "fields": [
+    "noregrets",
+    "public"
+  ],
+  "variants": [
+    "uniform",
+    "argmax"
+  ],
+  "model": "artifacts/compact-v4/20261110T022413561323Z/seed-342/current_00060.npz",
+  "limitations": [
+    "Exploratory after seeing uniform-policy evaluations",
+    "Same fresh cards for both variants",
+    "Single prespecified seed, no automatic promotion"
+  ]
+}

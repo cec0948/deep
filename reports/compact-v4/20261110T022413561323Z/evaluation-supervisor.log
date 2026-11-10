@@ -1,0 +1,72 @@
+started noregrets-public 7517
+complete noregrets-public 52.53058333333333 39.066255674327515
+started public-public 7816
+complete public-public -8.382583333333333 25.30753539183484
+started mixed-public 7963
+complete mixed-public 162.72233333333332 39.86315807614389
+started noregrets-old-v3-adv42 7969
+complete noregrets-old-v3-adv42 184.473 92.87408378293433
+started public-old-v3-adv42 8060
+complete public-old-v3-adv42 7.4437500000000005 19.82777898220931
+started mixed-old-v3-adv42 8358
+complete mixed-old-v3-adv42 92.48725 53.11599409788645
+started noregrets-seed-342-current-30 8364
+complete noregrets-seed-342-current-30 255.22875 142.98883433169902
+started public-seed-342-current-30 8477
+complete public-seed-342-current-30 -154.89858333333333 50.3397185582835
+started noregrets-seed-342-mixture-30 8775
+complete noregrets-seed-342-mixture-30 365.0518333333333 139.03412643737983
+started public-seed-342-mixture-30 8837
+complete public-seed-342-mixture-30 -180.3435 69.8530198395416
+started noregrets-seed-343-current-30 8988
+complete noregrets-seed-343-current-30 484.8399166666667 149.84591366126594
+started public-seed-343-current-30 9284
+complete public-seed-343-current-30 -127.93266666666666 61.19499086646375
+started noregrets-seed-343-mixture-30 9317
+complete noregrets-seed-343-mixture-30 398.7074166666667 137.9810473856681
+started public-seed-343-mixture-30 9379
+complete public-seed-343-mixture-30 -196.86275 65.67350740213205
+started noregrets-seed-344-current-30 9530
+complete noregrets-seed-344-current-30 442.4839166666667 121.61720286825273
+started public-seed-344-current-30 9826
+complete public-seed-344-current-30 -142.12508333333332 46.76586384209079
+started noregrets-seed-344-mixture-30 9839
+complete noregrets-seed-344-mixture-30 386.59766666666667 136.0701271191519
+started public-seed-344-mixture-30 9982
+complete public-seed-344-mixture-30 -151.09908333333334 59.296028565093685
+started noregrets-seed-344-current-60 10344
+complete noregrets-seed-344-current-60 355.7481666666667 90.89345125749982
+started public-seed-344-current-60 10435
+complete public-seed-344-current-60 -56.17491666666667 37.46315079363591
+started noregrets-seed-343-current-60 10770
+complete noregrets-seed-343-current-60 383.07933333333335 110.82337531247308
+started noregrets-seed-342-current-60 10774
+started public-seed-342-current-60 10778
+started mixed-seed-342-current-60 10779
+complete noregrets-seed-342-current-60 182.51675 66.97317779198622
+started noregrets-seed-342-mixture-60 10790
+failed noregrets-seed-342-mixture-60 1
+started public-seed-342-mixture-60 10792
+complete public-seed-342-current-60 9.174666666666667 22.839855418571755
+started mixed-seed-342-mixture-60 10916
+complete mixed-seed-342-current-60 125.13166666666666 41.75358671413072
+started public-seed-343-current-60 10920
+failed mixed-seed-342-mixture-60 1
+started mixed-seed-343-current-60 11028
+complete public-seed-342-mixture-60 -148.31508333333332 51.40508406514609
+started noregrets-seed-343-mixture-60 11034
+complete public-seed-343-current-60 -50.47958333333333 40.18329249582222
+started public-seed-343-mixture-60 11154
+complete mixed-seed-343-current-60 332.50275 75.74068452948215
+started mixed-seed-343-mixture-60 11278
+complete noregrets-seed-343-mixture-60 396.7006666666667 133.0996194729735
+started mixed-seed-344-current-60 11488
+complete public-seed-343-mixture-60 -111.74916666666667 54.50144819918308
+started noregrets-seed-344-mixture-60 11730
+complete mixed-seed-343-mixture-60 381.45816666666667 90.0924217841224
+started public-seed-344-mixture-60 11800
+complete mixed-seed-344-current-60 293.19875 65.9014572096312
+started mixed-seed-344-mixture-60 11994
+complete noregrets-seed-344-mixture-60 290.29808333333335 126.72991165511829
+complete public-seed-344-mixture-60 -81.12866666666666 45.800934765823385
+complete mixed-seed-344-mixture-60 325.3435 86.14732349574808

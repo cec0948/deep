@@ -1,0 +1,206 @@
+{
+  "rows": [
+    {
+      "seed": 342,
+      "iteration": 60,
+      "checkpoint_sha256": "55a7fb9530ad647ed2c080c001bda29ccd3fd2dffd23dd96d524404ad3ee9344",
+      "streets": [
+        {
+          "street": 0,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.18688178736944042,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            200,
+            176,
+            1,
+            2,
+            11
+          ],
+          "mse": 3233.351442076653,
+          "zero_mse": 3325.109442331409
+        },
+        {
+          "street": 1,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.23820488073900456,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            172,
+            227,
+            9,
+            14,
+            73
+          ],
+          "mse": 1480.666204171979,
+          "zero_mse": 1774.9808681763552
+        },
+        {
+          "street": 2,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.1937389928277904,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            163,
+            161,
+            10,
+            3,
+            78
+          ],
+          "mse": 1197.5351377356496,
+          "zero_mse": 1490.8928336032236
+        },
+        {
+          "street": 3,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.12192509550501625,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            67,
+            106,
+            6,
+            15,
+            58
+          ],
+          "mse": 915.479955422573,
+          "zero_mse": 1260.0276406005285
+        }
+      ]
+    },
+    {
+      "seed": 343,
+      "iteration": 60,
+      "checkpoint_sha256": "71fc748ca8f3725941623446a8e790f9db760510ff89bbbcac1ac39de6555142",
+      "streets": [
+        {
+          "street": 0,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.3318735568118481,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            135,
+            477,
+            23,
+            12,
+            18
+          ],
+          "mse": 3451.286762503587,
+          "zero_mse": 3600.570936609756
+        },
+        {
+          "street": 1,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.2607630186577555,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            148,
+            254,
+            52,
+            25,
+            56
+          ],
+          "mse": 1533.0112554217217,
+          "zero_mse": 1927.2343771145647
+        },
+        {
+          "street": 2,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.2717336143966897,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            179,
+            241,
+            42,
+            6,
+            103
+          ],
+          "mse": 1239.632949939459,
+          "zero_mse": 1632.8189846216703
+        },
+        {
+          "street": 3,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.31631256475524117,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            164,
+            274,
+            31,
+            5,
+            172
+          ],
+          "mse": 937.7093844120391,
+          "zero_mse": 1286.1630034723103
+        }
+      ]
+    },
+    {
+      "seed": 344,
+      "iteration": 60,
+      "checkpoint_sha256": "094d77f0aa6bcbb7e7580b9793eef1d78f2c53fcd8ff51c4aae73536c05cc7f1",
+      "streets": [
+        {
+          "street": 0,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.17997801640314534,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            180,
+            144,
+            1,
+            2,
+            11
+          ],
+          "mse": 2981.324537797814,
+          "zero_mse": 3104.472987773154
+        },
+        {
+          "street": 1,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.22608671359928484,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            165,
+            200,
+            35,
+            8,
+            46
+          ],
+          "mse": 1475.6876926088366,
+          "zero_mse": 1773.2430825718068
+        },
+        {
+          "street": 2,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.211125661171879,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            130,
+            193,
+            25,
+            21,
+            69
+          ],
+          "mse": 1226.7541474095717,
+          "zero_mse": 1543.4150723453065
+        },
+        {
+          "street": 3,
+          "sampled_rows": 2048,
+          "weighted_all_negative_fraction": 0.20508196113794425,
+          "near_zero_max_fraction": 0.0,
+          "best_negative_action_counts": [
+            89,
+            166,
+            34,
+            33,
+            94
+          ],
+          "mse": 923.6807352702662,
+          "zero_mse": 1265.880894645484
+        }
+      ]
+    }
+  ],
+  "limitation": "Training replay distribution and finite labels, not a held-out game-strength test"
+}
