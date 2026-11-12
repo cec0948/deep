@@ -1,66 +1,66 @@
 {
-  "observed_utc": "2026-11-12T03:26:27.260899+00:00",
+  "observed_utc": "2026-11-12T03:26:58.733212+00:00",
   "run": "20261112T032318825281Z",
   "phase": "training",
   "target_iterations": 120,
   "supervisor_alive": true,
   "seeds": {
     "342": {
-      "iteration": 66,
+      "iteration": 67,
       "checkpoint": 66,
       "quality": {
-        "weighted_tv": 0.005330377828701833,
+        "weighted_tv": 0.0056186627154355085,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -67.38599341162413,
-          -1.7705756142473759,
-          4.853164774716897,
-          2.2405649895518107,
+          -67.28659876753484,
+          -1.6120756112573948,
+          4.486922413325576,
+          2.652413798312404,
           0.0
         ]
       },
-      "iteration_seconds": 26.193160858998453
+      "iteration_seconds": 31.328952907000712
     },
     "343": {
-      "iteration": 65,
-      "checkpoint": 60,
-      "quality": {
-        "weighted_tv": 0.040859751900660185,
-        "aa_fold": 0.0,
-        "aa_target_fold": 0.0,
-        "aa_regrets": [
-          -55.883726454496035,
-          0.9110765758069864,
-          -3.06173840088299,
-          5.937118242473655,
-          0.0
-        ]
-      },
-      "iteration_seconds": 29.672150918000625
-    },
-    "344": {
       "iteration": 66,
       "checkpoint": 66,
       "quality": {
-        "weighted_tv": 0.08273174756808993,
+        "weighted_tv": 0.047834116013781944,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -85.11928691168413,
-          1.2869656324135739,
-          0.7224393999395803,
-          8.73567379614039,
+          -54.22365605684133,
+          0.21906330091533377,
+          -2.9859064525898678,
+          5.796566410368072,
           0.0
         ]
       },
-      "iteration_seconds": 27.43821082999966
+      "iteration_seconds": 29.075630081999407
+    },
+    "344": {
+      "iteration": 67,
+      "checkpoint": 66,
+      "quality": {
+        "weighted_tv": 0.04200568276258546,
+        "aa_fold": 0.0,
+        "aa_target_fold": 0.0,
+        "aa_regrets": [
+          -86.68771712367462,
+          -1.8044425955797745,
+          3.6035172376072317,
+          8.786362386860958,
+          0.0
+        ]
+      },
+      "iteration_seconds": 28.006931658999747
     }
   },
   "evaluation": {
-    "completed": 4,
+    "completed": 5,
     "failed": 0,
-    "pending": 34,
+    "pending": 33,
     "running": 1
   },
   "external_checkpoint": {
