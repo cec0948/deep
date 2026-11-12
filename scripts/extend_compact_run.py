@@ -8,6 +8,14 @@ import shutil
 from fullhouse_v3_common import ROOT, atomic_json, digest
 
 
+def validate_card_ranges(previous_seed, previous_deals, new_seed, new_deals):
+    if min(previous_deals, new_deals) < 2:
+        raise ValueError('At least two evaluation deals required')
+    # evaluate_compact resets the engine with starting seed + deal index.
+    if max(previous_seed, new_seed) < min(previous_seed + previous_deals, new_seed + new_deals):
+        raise ValueError('Evaluation card seed ranges overlap')
+
+
 def extend(parent, folder, through, deal_seed):
     import torch
 
@@ -19,8 +27,8 @@ def extend(parent, folder, through, deal_seed):
         raise ValueError('Parent training must be complete')
     if through <= cfg['iterations'] or through % cfg['checkpoint_every']:
         raise ValueError('Extend to a later checkpoint boundary')
-    if deal_seed == cfg['evaluation_deal_seed']:
-        raise ValueError('Use a new evaluation card seed')
+    validate_card_ranges(cfg['evaluation_deal_seed'], cfg['evaluation_deals'],
+                         deal_seed, cfg['evaluation_deals'])
     if folder.exists():
         raise FileExistsError(folder)
     if manifest['driver_sha256'] != digest(ROOT / 'scripts/train_compact_selfplay.py'):

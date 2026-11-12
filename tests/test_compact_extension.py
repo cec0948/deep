@@ -9,6 +9,7 @@ import tempfile
 
 import numpy as np
 import torch
+import pytest
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
@@ -112,3 +113,14 @@ def test_automatic_extensions_keep_the_predeclared_stage_guards():
     decision['conditions']['at_least_two_public_seeds_improve']=False
     assert not extension_allowed(60,decision)
     assert not extension_allowed(180,decision)
+
+
+def test_card_ranges_reject_different_but_overlapping_starts():
+    from extend_compact_run import validate_card_ranges
+    # Production regression: different starting seeds reused 1,998 decks.
+    with pytest.raises(ValueError, match='ranges overlap'):
+        validate_card_ranges(2026111201,2000,2026111203,2000)
+    with pytest.raises(ValueError, match='ranges overlap'):
+        validate_card_ranges(2026111201,2000,2026113200,2000)
+    validate_card_ranges(2026111201,2000,2026113201,2000)
+    validate_card_ranges(2026111203,2000,2026120000,2000)

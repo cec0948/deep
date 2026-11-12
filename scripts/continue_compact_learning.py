@@ -48,8 +48,9 @@ def watch(folder, maximum):
                 record('bounded_plan_complete',decision=decision);return
             through=min(iteration+60,maximum)
             next_folder=ROOT/'artifacts/compact-v4'/datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
-            # Distinct, fixed card seeds per stage; all candidates within one stage share cards.
-            extend(folder,next_folder,through,2026111201+through//60)
+            # Reserve the entire previous contiguous deck-seed range.
+            next_card_seed=cfg['evaluation_deal_seed']+cfg['evaluation_deals']
+            extend(folder,next_folder,through,next_card_seed)
             folder=next_folder;runs.append(str(folder))
             with (folder/'supervisor.log').open('w') as log:
                 child=subprocess.Popen([str(PYTHON),str(ROOT/'scripts/run_compact_retraining.py'),str(folder),'--resume'],

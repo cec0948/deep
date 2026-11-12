@@ -1,0 +1,1489 @@
+{
+  "observed_utc": "2026-11-12T04:35:58.413879+00:00",
+  "run": "20261112T032318825281Z",
+  "raw_verified_hands": 468000,
+  "verified_cells": 39,
+  "scores": {
+    "noregrets/current/60": {
+      "mean": 424.81905555555556,
+      "ci95_half_width": 101.88752568541996,
+      "lower": 322.9315298701356,
+      "upper": 526.7065812409755,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": 452.74825
+        },
+        {
+          "seed": 343,
+          "bb_per_100": 527.06675
+        },
+        {
+          "seed": 344,
+          "bb_per_100": 294.64216666666664
+        }
+      ]
+    },
+    "noregrets/current/120": {
+      "mean": 157.7225,
+      "ci95_half_width": 97.1622738760692,
+      "lower": 60.5602261239308,
+      "upper": 254.88477387606918,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": 131.1105
+        },
+        {
+          "seed": 343,
+          "bb_per_100": 334.3635
+        },
+        {
+          "seed": 344,
+          "bb_per_100": 7.693500000000001
+        }
+      ]
+    },
+    "noregrets/mixture/60": {
+      "mean": 312.0240277777778,
+      "ci95_half_width": 91.9758607991581,
+      "lower": 220.0481669786197,
+      "upper": 403.9998885769359,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": 354.50491666666665
+        },
+        {
+          "seed": 343,
+          "bb_per_100": 303.9651666666667
+        },
+        {
+          "seed": 344,
+          "bb_per_100": 277.602
+        }
+      ]
+    },
+    "noregrets/mixture/120": {
+      "mean": 374.08127777777776,
+      "ci95_half_width": 88.72093492674738,
+      "lower": 285.3603428510304,
+      "upper": 462.8022127045251,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": 330.50191666666666
+        },
+        {
+          "seed": 343,
+          "bb_per_100": 351.584
+        },
+        {
+          "seed": 344,
+          "bb_per_100": 440.15791666666667
+        }
+      ]
+    },
+    "public/current/60": {
+      "mean": -102.12558333333334,
+      "ci95_half_width": 37.54863486122735,
+      "lower": -139.6742181945607,
+      "upper": -64.57694847210598,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": -143.31758333333335
+        },
+        {
+          "seed": 343,
+          "bb_per_100": -110.90083333333334
+        },
+        {
+          "seed": 344,
+          "bb_per_100": -52.15833333333333
+        }
+      ]
+    },
+    "public/current/120": {
+      "mean": -61.002944444444445,
+      "ci95_half_width": 22.94561908738397,
+      "lower": -83.94856353182841,
+      "upper": -38.05732535706048,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": -59.68075
+        },
+        {
+          "seed": 343,
+          "bb_per_100": -29.897
+        },
+        {
+          "seed": 344,
+          "bb_per_100": -93.43108333333333
+        }
+      ]
+    },
+    "public/mixture/60": {
+      "mean": -110.11852777777777,
+      "ci95_half_width": 38.47358563838857,
+      "lower": -148.59211341616634,
+      "upper": -71.6449421393892,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": -112.41633333333334
+        },
+        {
+          "seed": 343,
+          "bb_per_100": -76.32291666666667
+        },
+        {
+          "seed": 344,
+          "bb_per_100": -141.61633333333333
+        }
+      ]
+    },
+    "public/mixture/120": {
+      "mean": -77.03205555555556,
+      "ci95_half_width": 31.014412893517836,
+      "lower": -108.04646844907339,
+      "upper": -46.01764266203772,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": -71.20075
+        },
+        {
+          "seed": 343,
+          "bb_per_100": -76.34283333333333
+        },
+        {
+          "seed": 344,
+          "bb_per_100": -83.55258333333333
+        }
+      ]
+    },
+    "mixed/current/60": {
+      "mean": 310.8819722222222,
+      "ci95_half_width": 66.12611546853297,
+      "lower": 244.75585675368922,
+      "upper": 377.0080876907552,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": 352.3834166666667
+        },
+        {
+          "seed": 343,
+          "bb_per_100": 323.9556666666667
+        },
+        {
+          "seed": 344,
+          "bb_per_100": 256.3068333333333
+        }
+      ]
+    },
+    "mixed/current/120": {
+      "mean": 175.73219444444445,
+      "ci95_half_width": 59.314754900761656,
+      "lower": 116.41743954368279,
+      "upper": 235.0469493452061,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": 209.18766666666667
+        },
+        {
+          "seed": 343,
+          "bb_per_100": 216.56858333333332
+        },
+        {
+          "seed": 344,
+          "bb_per_100": 101.44033333333333
+        }
+      ]
+    },
+    "mixed/mixture/60": {
+      "mean": 303.10925,
+      "ci95_half_width": 63.456877714413395,
+      "lower": 239.65237228558658,
+      "upper": 366.56612771441337,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": 302.18791666666664
+        },
+        {
+          "seed": 343,
+          "bb_per_100": 312.1565
+        },
+        {
+          "seed": 344,
+          "bb_per_100": 294.98333333333335
+        }
+      ]
+    },
+    "mixed/mixture/120": {
+      "mean": 283.68227777777776,
+      "ci95_half_width": 58.829042465078274,
+      "lower": 224.8532353126995,
+      "upper": 342.511320242856,
+      "per_seed": [
+        {
+          "seed": 342,
+          "bb_per_100": 301.78358333333335
+        },
+        {
+          "seed": 343,
+          "bb_per_100": 245.98358333333334
+        },
+        {
+          "seed": 344,
+          "bb_per_100": 303.2796666666667
+        }
+      ]
+    }
+  },
+  "paired_comparisons": {
+    "noregrets/current/120-minus-60": {
+      "mean": -267.09655555555554,
+      "ci95_half_width": 91.34163165926037,
+      "lower": -358.4381872148159,
+      "upper": -175.75492389629517,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -321.63775,
+          "ci95_half_width": 146.91158033905108,
+          "lower": -468.54933033905104,
+          "upper": -174.7261696609489
+        },
+        {
+          "seed": 343,
+          "mean": -192.70325,
+          "ci95_half_width": 138.2588199141092,
+          "lower": -330.9620699141092,
+          "upper": -54.44443008589079
+        },
+        {
+          "seed": 344,
+          "mean": -286.94866666666667,
+          "ci95_half_width": 137.87141170593978,
+          "lower": -424.8200783726064,
+          "upper": -149.0772549607269
+        }
+      ]
+    },
+    "noregrets/mixture/120-minus-60": {
+      "mean": 62.057249999999996,
+      "ci95_half_width": 77.25494656792122,
+      "lower": -15.197696567921227,
+      "upper": 139.3121965679212,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -24.003000000000004,
+          "ci95_half_width": 138.7488318827034,
+          "lower": -162.7518318827034,
+          "upper": 114.7458318827034
+        },
+        {
+          "seed": 343,
+          "mean": 47.61883333333333,
+          "ci95_half_width": 127.882037621331,
+          "lower": -80.26320428799767,
+          "upper": 175.50087095466432
+        },
+        {
+          "seed": 344,
+          "mean": 162.55591666666666,
+          "ci95_half_width": 143.8647015117017,
+          "lower": 18.691215154964965,
+          "upper": 306.4206181783684
+        }
+      ]
+    },
+    "noregrets/mixture120-minus-current120": {
+      "mean": 216.3587777777778,
+      "ci95_half_width": 85.11296361430828,
+      "lower": 131.2458141634695,
+      "upper": 301.4717413920861,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 199.39141666666666,
+          "ci95_half_width": 135.3466042328631,
+          "lower": 64.04481243380357,
+          "upper": 334.7380208995297
+        },
+        {
+          "seed": 343,
+          "mean": 17.220499999999998,
+          "ci95_half_width": 138.57056673552188,
+          "lower": -121.35006673552188,
+          "upper": 155.79106673552187
+        },
+        {
+          "seed": 344,
+          "mean": 432.46441666666664,
+          "ci95_half_width": 146.45621357112995,
+          "lower": 286.0082030955367,
+          "upper": 578.9206302377966
+        }
+      ]
+    },
+    "noregrets/mixture120-minus-current60": {
+      "mean": -50.73777777777778,
+      "ci95_half_width": 78.92768203411444,
+      "lower": -129.66545981189222,
+      "upper": 28.18990425633666,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -122.24633333333333,
+          "ci95_half_width": 134.60511257444514,
+          "lower": -256.8514459077785,
+          "upper": 12.358779241111819
+        },
+        {
+          "seed": 343,
+          "mean": -175.48275,
+          "ci95_half_width": 138.67897885261448,
+          "lower": -314.1617288526145,
+          "upper": -36.80377114738553
+        },
+        {
+          "seed": 344,
+          "mean": 145.51575,
+          "ci95_half_width": 132.2095207536782,
+          "lower": 13.306229246321806,
+          "upper": 277.72527075367816
+        }
+      ]
+    },
+    "public/current/120-minus-60": {
+      "mean": 41.122638888888886,
+      "ci95_half_width": 34.215168325735945,
+      "lower": 6.907470563152941,
+      "upper": 75.33780721462483,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 83.63683333333333,
+          "ci95_half_width": 61.93452205620205,
+          "lower": 21.70231127713128,
+          "upper": 145.57135538953537
+        },
+        {
+          "seed": 343,
+          "mean": 81.00383333333333,
+          "ci95_half_width": 51.73869809024308,
+          "lower": 29.26513524309025,
+          "upper": 132.74253142357642
+        },
+        {
+          "seed": 344,
+          "mean": -41.27275,
+          "ci95_half_width": 48.17537773394243,
+          "lower": -89.44812773394244,
+          "upper": 6.902627733942431
+        }
+      ]
+    },
+    "public/mixture/120-minus-60": {
+      "mean": 33.08647222222223,
+      "ci95_half_width": 33.07075615612031,
+      "lower": 0.015716066101916226,
+      "upper": 66.15722837834254,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 41.215583333333335,
+          "ci95_half_width": 59.11173840460686,
+          "lower": -17.896155071273526,
+          "upper": 100.3273217379402
+        },
+        {
+          "seed": 343,
+          "mean": -0.019916666666666496,
+          "ci95_half_width": 52.86170799728842,
+          "lower": -52.88162466395509,
+          "upper": 52.84179133062175
+        },
+        {
+          "seed": 344,
+          "mean": 58.063750000000006,
+          "ci95_half_width": 58.473660585275795,
+          "lower": -0.4099105852757887,
+          "upper": 116.53741058527581
+        }
+      ]
+    },
+    "public/mixture120-minus-current120": {
+      "mean": -16.029111111111114,
+      "ci95_half_width": 29.71840764988093,
+      "lower": -45.747518760992044,
+      "upper": 13.689296538769817,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -11.52,
+          "ci95_half_width": 49.820636195581656,
+          "lower": -61.34063619558165,
+          "upper": 38.30063619558166
+        },
+        {
+          "seed": 343,
+          "mean": -46.44583333333333,
+          "ci95_half_width": 44.12198090051048,
+          "lower": -90.56781423384382,
+          "upper": -2.3238524328228536
+        },
+        {
+          "seed": 344,
+          "mean": 9.8785,
+          "ci95_half_width": 52.70911254740001,
+          "lower": -42.83061254740001,
+          "upper": 62.58761254740001
+        }
+      ]
+    },
+    "public/mixture120-minus-current60": {
+      "mean": 25.093527777777776,
+      "ci95_half_width": 31.79765412934921,
+      "lower": -6.704126351571432,
+      "upper": 56.891181907126985,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 72.11683333333333,
+          "ci95_half_width": 63.117460574078315,
+          "lower": 8.999372759255017,
+          "upper": 135.23429390741165
+        },
+        {
+          "seed": 343,
+          "mean": 34.558,
+          "ci95_half_width": 52.615896903031064,
+          "lower": -18.057896903031065,
+          "upper": 87.17389690303106
+        },
+        {
+          "seed": 344,
+          "mean": -31.394249999999996,
+          "ci95_half_width": 51.26547815003824,
+          "lower": -82.65972815003823,
+          "upper": 19.871228150038245
+        }
+      ]
+    },
+    "mixed/current/120-minus-60": {
+      "mean": -135.14977777777779,
+      "ci95_half_width": 59.77654961099333,
+      "lower": -194.9263273887711,
+      "upper": -75.37322816678446,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -143.19575,
+          "ci95_half_width": 100.59914838670768,
+          "lower": -243.7948983867077,
+          "upper": -42.59660161329232
+        },
+        {
+          "seed": 343,
+          "mean": -107.38708333333334,
+          "ci95_half_width": 92.9537651065875,
+          "lower": -200.34084843992082,
+          "upper": -14.43331822674584
+        },
+        {
+          "seed": 344,
+          "mean": -154.8665,
+          "ci95_half_width": 96.44531427910175,
+          "lower": -251.31181427910175,
+          "upper": -58.42118572089825
+        }
+      ]
+    },
+    "mixed/mixture/120-minus-60": {
+      "mean": -19.426972222222222,
+      "ci95_half_width": 55.9311205890263,
+      "lower": -75.35809281124853,
+      "upper": 36.504148366804074,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -0.40433333333333543,
+          "ci95_half_width": 101.04021664616938,
+          "lower": -101.44454997950272,
+          "upper": 100.63588331283604
+        },
+        {
+          "seed": 343,
+          "mean": -66.17291666666667,
+          "ci95_half_width": 91.65603679461347,
+          "lower": -157.82895346128015,
+          "upper": 25.483120127946805
+        },
+        {
+          "seed": 344,
+          "mean": 8.296333333333333,
+          "ci95_half_width": 99.52370742842206,
+          "lower": -91.22737409508872,
+          "upper": 107.8200407617554
+        }
+      ]
+    },
+    "mixed/mixture120-minus-current120": {
+      "mean": 107.95008333333332,
+      "ci95_half_width": 55.43901756409555,
+      "lower": 52.511065769237774,
+      "upper": 163.38910089742888,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 92.59591666666667,
+          "ci95_half_width": 93.5715980172676,
+          "lower": -0.9756813506009365,
+          "upper": 186.16751468393426
+        },
+        {
+          "seed": 343,
+          "mean": 29.415,
+          "ci95_half_width": 90.5486316491381,
+          "lower": -61.1336316491381,
+          "upper": 119.96363164913811
+        },
+        {
+          "seed": 344,
+          "mean": 201.83933333333334,
+          "ci95_half_width": 97.60147113438279,
+          "lower": 104.23786219895055,
+          "upper": 299.44080446771613
+        }
+      ]
+    },
+    "mixed/mixture120-minus-current60": {
+      "mean": -27.199694444444447,
+      "ci95_half_width": 55.412875245694686,
+      "lower": -82.61256969013914,
+      "upper": 28.21318080125024,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -50.599833333333336,
+          "ci95_half_width": 97.94202120526461,
+          "lower": -148.54185453859793,
+          "upper": 47.34218787193127
+        },
+        {
+          "seed": 343,
+          "mean": -77.97208333333333,
+          "ci95_half_width": 95.88099059362854,
+          "lower": -173.85307392696188,
+          "upper": 17.90890726029521
+        },
+        {
+          "seed": 344,
+          "mean": 46.972833333333334,
+          "ci95_half_width": 89.16978877178873,
+          "lower": -42.1969554384554,
+          "upper": 136.14262210512206
+        }
+      ]
+    }
+  },
+  "behavior": {
+    "noregrets/current/60": {
+      "hands": 36000,
+      "counts": {
+        "opponent/preflop/fallback": 22213,
+        "opponent/preflop/decisions": 238309,
+        "hero/preflop/fold": 24474,
+        "opponent/flop/fallback": 12747,
+        "opponent/flop/decisions": 24352,
+        "hero/preflop/call": 14244,
+        "opponent/turn/fallback": 9973,
+        "opponent/turn/decisions": 10940,
+        "opponent/river/fallback": 9284,
+        "opponent/river/decisions": 9421,
+        "hero/preflop/raise": 7442,
+        "hero/flop/fold": 575,
+        "hero/flop/check": 534,
+        "hero/flop/raise": 1105,
+        "hero/turn/raise": 339,
+        "hero/river/raise": 261,
+        "hero/flop/call": 366,
+        "hero/turn/check": 353,
+        "hero/turn/fold": 36,
+        "hero/river/check": 214,
+        "hero/preflop/check": 12,
+        "hero/turn/call": 23,
+        "hero/river/fold": 3
+      },
+      "preflop_folded_hands_fraction": 0.6798333333333333,
+      "preflop_raise_events_per_hand": 0.20672222222222222,
+      "hero_events_per_hand": {
+        "hero/preflop/fold": 0.6798333333333333,
+        "hero/preflop/call": 0.39566666666666667,
+        "hero/preflop/raise": 0.20672222222222222,
+        "hero/flop/fold": 0.01597222222222222,
+        "hero/flop/check": 0.014833333333333334,
+        "hero/flop/raise": 0.030694444444444444,
+        "hero/turn/raise": 0.009416666666666667,
+        "hero/river/raise": 0.00725,
+        "hero/flop/call": 0.010166666666666666,
+        "hero/turn/check": 0.009805555555555555,
+        "hero/turn/fold": 0.001,
+        "hero/river/check": 0.005944444444444444,
+        "hero/preflop/check": 0.0003333333333333333,
+        "hero/turn/call": 0.0006388888888888889,
+        "hero/river/fold": 8.333333333333333e-05
+      },
+      "noregrets_fallback_fraction": {
+        "preflop": 0.09321091524029726,
+        "flop": 0.5234477660972404,
+        "turn": 0.9116087751371115,
+        "river": 0.9854580193185437
+      }
+    },
+    "noregrets/current/120": {
+      "hands": 36000,
+      "counts": {
+        "opponent/preflop/fallback": 20941,
+        "opponent/preflop/decisions": 237847,
+        "hero/preflop/call": 13241,
+        "opponent/flop/fallback": 12905,
+        "opponent/flop/decisions": 25092,
+        "hero/flop/fold": 673,
+        "hero/preflop/fold": 25288,
+        "opponent/turn/fallback": 9837,
+        "opponent/turn/decisions": 10793,
+        "opponent/river/fallback": 9180,
+        "opponent/river/decisions": 9312,
+        "hero/flop/raise": 912,
+        "hero/turn/check": 427,
+        "hero/river/check": 309,
+        "hero/preflop/raise": 5386,
+        "hero/flop/call": 371,
+        "hero/flop/check": 627,
+        "hero/turn/raise": 243,
+        "hero/river/raise": 180,
+        "hero/preflop/check": 16,
+        "hero/turn/fold": 38,
+        "hero/turn/call": 18,
+        "hero/river/call": 1,
+        "hero/river/fold": 2
+      },
+      "preflop_folded_hands_fraction": 0.7024444444444444,
+      "preflop_raise_events_per_hand": 0.1496111111111111,
+      "hero_events_per_hand": {
+        "hero/preflop/call": 0.36780555555555555,
+        "hero/flop/fold": 0.018694444444444444,
+        "hero/preflop/fold": 0.7024444444444444,
+        "hero/flop/raise": 0.025333333333333333,
+        "hero/turn/check": 0.01186111111111111,
+        "hero/river/check": 0.008583333333333333,
+        "hero/preflop/raise": 0.1496111111111111,
+        "hero/flop/call": 0.010305555555555556,
+        "hero/flop/check": 0.017416666666666667,
+        "hero/turn/raise": 0.00675,
+        "hero/river/raise": 0.005,
+        "hero/preflop/check": 0.00044444444444444447,
+        "hero/turn/fold": 0.0010555555555555555,
+        "hero/turn/call": 0.0005,
+        "hero/river/call": 2.777777777777778e-05,
+        "hero/river/fold": 5.555555555555556e-05
+      },
+      "noregrets_fallback_fraction": {
+        "preflop": 0.08804399466884173,
+        "flop": 0.5143073489558425,
+        "turn": 0.9114240711572316,
+        "river": 0.9858247422680413
+      }
+    },
+    "noregrets/mixture/60": {
+      "hands": 36000,
+      "counts": {
+        "opponent/preflop/fallback": 21995,
+        "opponent/preflop/decisions": 238492,
+        "hero/preflop/fold": 25606,
+        "opponent/flop/fallback": 12672,
+        "opponent/flop/decisions": 23858,
+        "hero/preflop/call": 12068,
+        "hero/preflop/raise": 8852,
+        "hero/flop/raise": 1187,
+        "hero/flop/fold": 552,
+        "opponent/turn/fallback": 9762,
+        "opponent/turn/decisions": 10664,
+        "opponent/river/fallback": 8803,
+        "opponent/river/decisions": 8948,
+        "hero/turn/check": 324,
+        "hero/river/check": 253,
+        "hero/flop/call": 365,
+        "hero/turn/raise": 438,
+        "hero/flop/check": 539,
+        "hero/river/raise": 242,
+        "hero/turn/call": 25,
+        "hero/river/fold": 3,
+        "hero/turn/fold": 36,
+        "hero/preflop/check": 14,
+        "hero/river/call": 2
+      },
+      "preflop_folded_hands_fraction": 0.7112777777777778,
+      "preflop_raise_events_per_hand": 0.24588888888888888,
+      "hero_events_per_hand": {
+        "hero/preflop/fold": 0.7112777777777778,
+        "hero/preflop/call": 0.3352222222222222,
+        "hero/preflop/raise": 0.24588888888888888,
+        "hero/flop/raise": 0.03297222222222222,
+        "hero/flop/fold": 0.015333333333333332,
+        "hero/turn/check": 0.009,
+        "hero/river/check": 0.007027777777777778,
+        "hero/flop/call": 0.010138888888888888,
+        "hero/turn/raise": 0.012166666666666666,
+        "hero/flop/check": 0.014972222222222222,
+        "hero/river/raise": 0.006722222222222222,
+        "hero/turn/call": 0.0006944444444444445,
+        "hero/river/fold": 8.333333333333333e-05,
+        "hero/turn/fold": 0.001,
+        "hero/preflop/check": 0.00038888888888888887,
+        "hero/river/call": 5.555555555555556e-05
+      },
+      "noregrets_fallback_fraction": {
+        "preflop": 0.0922253157338611,
+        "flop": 0.531142593679269,
+        "turn": 0.9154163540885222,
+        "river": 0.9837952615109522
+      }
+    },
+    "noregrets/mixture/120": {
+      "hands": 36000,
+      "counts": {
+        "opponent/preflop/fallback": 21156,
+        "opponent/preflop/decisions": 238154,
+        "hero/preflop/fold": 26988,
+        "opponent/flop/fallback": 12614,
+        "opponent/flop/decisions": 24638,
+        "hero/preflop/call": 10946,
+        "opponent/turn/fallback": 10063,
+        "opponent/turn/decisions": 11060,
+        "opponent/river/fallback": 9179,
+        "opponent/river/decisions": 9326,
+        "hero/preflop/raise": 6754,
+        "hero/flop/fold": 526,
+        "hero/flop/check": 571,
+        "hero/turn/check": 328,
+        "hero/river/check": 234,
+        "hero/flop/call": 346,
+        "hero/river/raise": 198,
+        "hero/turn/raise": 342,
+        "hero/flop/raise": 897,
+        "hero/turn/fold": 29,
+        "hero/preflop/check": 8,
+        "hero/turn/call": 27,
+        "hero/river/fold": 5,
+        "hero/river/call": 3
+      },
+      "preflop_folded_hands_fraction": 0.7496666666666667,
+      "preflop_raise_events_per_hand": 0.18761111111111112,
+      "hero_events_per_hand": {
+        "hero/preflop/fold": 0.7496666666666667,
+        "hero/preflop/call": 0.3040555555555556,
+        "hero/preflop/raise": 0.18761111111111112,
+        "hero/flop/fold": 0.014611111111111111,
+        "hero/flop/check": 0.01586111111111111,
+        "hero/turn/check": 0.009111111111111111,
+        "hero/river/check": 0.0065,
+        "hero/flop/call": 0.009611111111111112,
+        "hero/river/raise": 0.0055,
+        "hero/turn/raise": 0.0095,
+        "hero/flop/raise": 0.024916666666666667,
+        "hero/turn/fold": 0.0008055555555555556,
+        "hero/preflop/check": 0.00022222222222222223,
+        "hero/turn/call": 0.00075,
+        "hero/river/fold": 0.0001388888888888889,
+        "hero/river/call": 8.333333333333333e-05
+      },
+      "noregrets_fallback_fraction": {
+        "preflop": 0.08883327594749615,
+        "flop": 0.5119733744622128,
+        "turn": 0.9098553345388788,
+        "river": 0.98423761526914
+      }
+    },
+    "public/current/60": {
+      "hands": 36000,
+      "counts": {
+        "hero/preflop/fold": 19010,
+        "hero/preflop/call": 10768,
+        "hero/flop/raise": 9347,
+        "hero/flop/check": 4070,
+        "hero/turn/check": 3066,
+        "hero/river/check": 1361,
+        "hero/flop/call": 1829,
+        "hero/turn/raise": 4169,
+        "hero/preflop/raise": 12391,
+        "hero/river/raise": 2652,
+        "hero/turn/call": 1070,
+        "hero/flop/fold": 2051,
+        "hero/river/fold": 620,
+        "hero/preflop/check": 339,
+        "hero/turn/fold": 1055,
+        "hero/river/call": 551
+      },
+      "preflop_folded_hands_fraction": 0.5280555555555555,
+      "preflop_raise_events_per_hand": 0.34419444444444447,
+      "hero_events_per_hand": {
+        "hero/preflop/fold": 0.5280555555555555,
+        "hero/preflop/call": 0.2991111111111111,
+        "hero/flop/raise": 0.25963888888888886,
+        "hero/flop/check": 0.11305555555555556,
+        "hero/turn/check": 0.08516666666666667,
+        "hero/river/check": 0.03780555555555556,
+        "hero/flop/call": 0.050805555555555555,
+        "hero/turn/raise": 0.11580555555555555,
+        "hero/preflop/raise": 0.34419444444444447,
+        "hero/river/raise": 0.07366666666666667,
+        "hero/turn/call": 0.029722222222222223,
+        "hero/flop/fold": 0.05697222222222222,
+        "hero/river/fold": 0.017222222222222222,
+        "hero/preflop/check": 0.009416666666666667,
+        "hero/turn/fold": 0.029305555555555557,
+        "hero/river/call": 0.015305555555555555
+      },
+      "noregrets_fallback_fraction": {}
+    },
+    "public/current/120": {
+      "hands": 36000,
+      "counts": {
+        "hero/preflop/call": 7397,
+        "hero/flop/check": 3899,
+        "hero/turn/fold": 829,
+        "hero/flop/raise": 3836,
+        "hero/preflop/fold": 25592,
+        "hero/preflop/raise": 6942,
+        "hero/flop/fold": 1837,
+        "hero/flop/call": 1180,
+        "hero/turn/check": 2383,
+        "hero/river/raise": 1306,
+        "hero/river/check": 1381,
+        "hero/preflop/check": 326,
+        "hero/turn/raise": 1966,
+        "hero/turn/call": 747,
+        "hero/river/fold": 523,
+        "hero/river/call": 576
+      },
+      "preflop_folded_hands_fraction": 0.7108888888888889,
+      "preflop_raise_events_per_hand": 0.19283333333333333,
+      "hero_events_per_hand": {
+        "hero/preflop/call": 0.20547222222222222,
+        "hero/flop/check": 0.10830555555555556,
+        "hero/turn/fold": 0.02302777777777778,
+        "hero/flop/raise": 0.10655555555555556,
+        "hero/preflop/fold": 0.7108888888888889,
+        "hero/preflop/raise": 0.19283333333333333,
+        "hero/flop/fold": 0.051027777777777776,
+        "hero/flop/call": 0.03277777777777778,
+        "hero/turn/check": 0.06619444444444444,
+        "hero/river/raise": 0.03627777777777778,
+        "hero/river/check": 0.03836111111111111,
+        "hero/preflop/check": 0.009055555555555556,
+        "hero/turn/raise": 0.05461111111111111,
+        "hero/turn/call": 0.02075,
+        "hero/river/fold": 0.014527777777777778,
+        "hero/river/call": 0.016
+      },
+      "noregrets_fallback_fraction": {}
+    },
+    "public/mixture/60": {
+      "hands": 36000,
+      "counts": {
+        "hero/preflop/fold": 18830,
+        "hero/preflop/raise": 14644,
+        "hero/flop/raise": 9085,
+        "hero/preflop/call": 9326,
+        "hero/turn/raise": 4290,
+        "hero/flop/fold": 2161,
+        "hero/turn/fold": 953,
+        "hero/turn/check": 2461,
+        "hero/flop/check": 4106,
+        "hero/river/check": 1440,
+        "hero/flop/call": 1817,
+        "hero/river/raise": 2011,
+        "hero/turn/call": 859,
+        "hero/river/fold": 542,
+        "hero/river/call": 518,
+        "hero/preflop/check": 306
+      },
+      "preflop_folded_hands_fraction": 0.5230555555555556,
+      "preflop_raise_events_per_hand": 0.4067777777777778,
+      "hero_events_per_hand": {
+        "hero/preflop/fold": 0.5230555555555556,
+        "hero/preflop/raise": 0.4067777777777778,
+        "hero/flop/raise": 0.2523611111111111,
+        "hero/preflop/call": 0.25905555555555554,
+        "hero/turn/raise": 0.11916666666666667,
+        "hero/flop/fold": 0.06002777777777778,
+        "hero/turn/fold": 0.026472222222222223,
+        "hero/turn/check": 0.06836111111111111,
+        "hero/flop/check": 0.11405555555555555,
+        "hero/river/check": 0.04,
+        "hero/flop/call": 0.050472222222222224,
+        "hero/river/raise": 0.05586111111111111,
+        "hero/turn/call": 0.02386111111111111,
+        "hero/river/fold": 0.015055555555555556,
+        "hero/river/call": 0.014388888888888889,
+        "hero/preflop/check": 0.0085
+      },
+      "noregrets_fallback_fraction": {}
+    },
+    "public/mixture/120": {
+      "hands": 36000,
+      "counts": {
+        "hero/preflop/fold": 21334,
+        "hero/preflop/call": 9267,
+        "hero/preflop/raise": 10805,
+        "hero/flop/raise": 6943,
+        "hero/turn/raise": 3730,
+        "hero/flop/check": 4598,
+        "hero/flop/fold": 1981,
+        "hero/flop/call": 1716,
+        "hero/turn/check": 2703,
+        "hero/turn/call": 924,
+        "hero/river/check": 1600,
+        "hero/river/raise": 1984,
+        "hero/preflop/check": 380,
+        "hero/turn/fold": 945,
+        "hero/river/call": 605,
+        "hero/river/fold": 641
+      },
+      "preflop_folded_hands_fraction": 0.5926111111111111,
+      "preflop_raise_events_per_hand": 0.3001388888888889,
+      "hero_events_per_hand": {
+        "hero/preflop/fold": 0.5926111111111111,
+        "hero/preflop/call": 0.2574166666666667,
+        "hero/preflop/raise": 0.3001388888888889,
+        "hero/flop/raise": 0.19286111111111112,
+        "hero/turn/raise": 0.10361111111111111,
+        "hero/flop/check": 0.1277222222222222,
+        "hero/flop/fold": 0.05502777777777778,
+        "hero/flop/call": 0.04766666666666667,
+        "hero/turn/check": 0.07508333333333334,
+        "hero/turn/call": 0.025666666666666667,
+        "hero/river/check": 0.044444444444444446,
+        "hero/river/raise": 0.05511111111111111,
+        "hero/preflop/check": 0.010555555555555556,
+        "hero/turn/fold": 0.02625,
+        "hero/river/call": 0.016805555555555556,
+        "hero/river/fold": 0.017805555555555557
+      },
+      "noregrets_fallback_fraction": {}
+    },
+    "mixed/current/60": {
+      "hands": 36000,
+      "counts": {
+        "opponent/preflop/fallback": 8526,
+        "opponent/preflop/decisions": 94462,
+        "hero/preflop/fold": 22406,
+        "opponent/flop/fallback": 9046,
+        "opponent/flop/decisions": 25270,
+        "hero/preflop/raise": 10622,
+        "hero/preflop/call": 13526,
+        "hero/flop/raise": 4048,
+        "hero/turn/raise": 1645,
+        "opponent/turn/fallback": 9567,
+        "opponent/turn/decisions": 11917,
+        "hero/river/raise": 1318,
+        "opponent/river/fallback": 9229,
+        "opponent/river/decisions": 9579,
+        "hero/flop/check": 2012,
+        "hero/turn/check": 1499,
+        "hero/river/check": 835,
+        "hero/flop/call": 1336,
+        "hero/turn/fold": 344,
+        "hero/turn/call": 260,
+        "hero/flop/fold": 1835,
+        "hero/river/fold": 114,
+        "hero/preflop/check": 176,
+        "hero/river/call": 72
+      },
+      "preflop_folded_hands_fraction": 0.6223888888888889,
+      "preflop_raise_events_per_hand": 0.29505555555555557,
+      "hero_events_per_hand": {
+        "hero/preflop/fold": 0.6223888888888889,
+        "hero/preflop/raise": 0.29505555555555557,
+        "hero/preflop/call": 0.37572222222222224,
+        "hero/flop/raise": 0.11244444444444444,
+        "hero/turn/raise": 0.04569444444444445,
+        "hero/river/raise": 0.03661111111111111,
+        "hero/flop/check": 0.05588888888888889,
+        "hero/turn/check": 0.04163888888888889,
+        "hero/river/check": 0.023194444444444445,
+        "hero/flop/call": 0.03711111111111111,
+        "hero/turn/fold": 0.009555555555555555,
+        "hero/turn/call": 0.007222222222222222,
+        "hero/flop/fold": 0.050972222222222224,
+        "hero/river/fold": 0.0031666666666666666,
+        "hero/preflop/check": 0.004888888888888889,
+        "hero/river/call": 0.002
+      },
+      "noregrets_fallback_fraction": {
+        "preflop": 0.09025851665219876,
+        "flop": 0.3579738820736051,
+        "turn": 0.8028027188050684,
+        "river": 0.963461739221213
+      }
+    },
+    "mixed/current/120": {
+      "hands": 36000,
+      "counts": {
+        "opponent/preflop/fallback": 7524,
+        "opponent/preflop/decisions": 93205,
+        "hero/preflop/call": 10804,
+        "opponent/flop/fallback": 8459,
+        "opponent/flop/decisions": 24871,
+        "hero/flop/check": 1863,
+        "opponent/turn/fallback": 8999,
+        "opponent/turn/decisions": 11476,
+        "hero/turn/fold": 268,
+        "opponent/river/fallback": 8885,
+        "opponent/river/decisions": 9298,
+        "hero/preflop/fold": 26215,
+        "hero/flop/fold": 1663,
+        "hero/preflop/raise": 6662,
+        "hero/flop/raise": 2103,
+        "hero/flop/call": 958,
+        "hero/turn/check": 1216,
+        "hero/river/check": 821,
+        "hero/river/fold": 111,
+        "hero/river/raise": 670,
+        "hero/turn/raise": 877,
+        "hero/preflop/check": 178,
+        "hero/turn/call": 158,
+        "hero/river/call": 72
+      },
+      "preflop_folded_hands_fraction": 0.7281944444444445,
+      "preflop_raise_events_per_hand": 0.18505555555555556,
+      "hero_events_per_hand": {
+        "hero/preflop/call": 0.3001111111111111,
+        "hero/flop/check": 0.05175,
+        "hero/turn/fold": 0.0074444444444444445,
+        "hero/preflop/fold": 0.7281944444444445,
+        "hero/flop/fold": 0.04619444444444445,
+        "hero/preflop/raise": 0.18505555555555556,
+        "hero/flop/raise": 0.058416666666666665,
+        "hero/flop/call": 0.02661111111111111,
+        "hero/turn/check": 0.033777777777777775,
+        "hero/river/check": 0.022805555555555555,
+        "hero/river/fold": 0.0030833333333333333,
+        "hero/river/raise": 0.01861111111111111,
+        "hero/turn/raise": 0.02436111111111111,
+        "hero/preflop/check": 0.004944444444444444,
+        "hero/turn/call": 0.004388888888888889,
+        "hero/river/call": 0.002
+      },
+      "noregrets_fallback_fraction": {
+        "preflop": 0.08072528297838098,
+        "flop": 0.34011499336576734,
+        "turn": 0.7841582432903451,
+        "river": 0.9555818455581846
+      }
+    },
+    "mixed/mixture/60": {
+      "hands": 36000,
+      "counts": {
+        "opponent/preflop/fallback": 8840,
+        "opponent/preflop/decisions": 95174,
+        "hero/preflop/fold": 22992,
+        "opponent/flop/fallback": 8977,
+        "opponent/flop/decisions": 24551,
+        "hero/preflop/call": 11771,
+        "hero/flop/raise": 3918,
+        "hero/flop/fold": 1722,
+        "hero/preflop/raise": 12600,
+        "opponent/turn/fallback": 9436,
+        "opponent/turn/decisions": 11712,
+        "opponent/river/fallback": 8741,
+        "opponent/river/decisions": 9110,
+        "hero/flop/check": 1959,
+        "hero/turn/check": 1212,
+        "hero/river/check": 866,
+        "hero/turn/raise": 1852,
+        "hero/flop/call": 1279,
+        "hero/river/raise": 1117,
+        "hero/turn/fold": 304,
+        "hero/turn/call": 231,
+        "hero/river/fold": 97,
+        "hero/river/call": 71,
+        "hero/preflop/check": 158
+      },
+      "preflop_folded_hands_fraction": 0.6386666666666667,
+      "preflop_raise_events_per_hand": 0.35,
+      "hero_events_per_hand": {
+        "hero/preflop/fold": 0.6386666666666667,
+        "hero/preflop/call": 0.3269722222222222,
+        "hero/flop/raise": 0.10883333333333334,
+        "hero/flop/fold": 0.04783333333333333,
+        "hero/preflop/raise": 0.35,
+        "hero/flop/check": 0.05441666666666667,
+        "hero/turn/check": 0.033666666666666664,
+        "hero/river/check": 0.024055555555555556,
+        "hero/turn/raise": 0.051444444444444445,
+        "hero/flop/call": 0.035527777777777776,
+        "hero/river/raise": 0.03102777777777778,
+        "hero/turn/fold": 0.008444444444444444,
+        "hero/turn/call": 0.006416666666666667,
+        "hero/river/fold": 0.0026944444444444446,
+        "hero/river/call": 0.0019722222222222224,
+        "hero/preflop/check": 0.004388888888888889
+      },
+      "noregrets_fallback_fraction": {
+        "preflop": 0.09288250992918234,
+        "flop": 0.3656470204879638,
+        "turn": 0.8056693989071039,
+        "river": 0.9594950603732162
+      }
+    },
+    "mixed/mixture/120": {
+      "hands": 36000,
+      "counts": {
+        "opponent/preflop/fallback": 8112,
+        "opponent/preflop/decisions": 94140,
+        "hero/preflop/fold": 25024,
+        "opponent/flop/fallback": 8681,
+        "opponent/flop/decisions": 25028,
+        "hero/preflop/call": 10871,
+        "hero/preflop/raise": 9377,
+        "hero/flop/check": 2076,
+        "hero/turn/check": 1258,
+        "opponent/turn/fallback": 9398,
+        "opponent/turn/decisions": 11850,
+        "hero/river/check": 874,
+        "opponent/river/fallback": 9102,
+        "opponent/river/decisions": 9485,
+        "hero/flop/call": 1137,
+        "hero/turn/raise": 1440,
+        "hero/turn/fold": 301,
+        "hero/flop/raise": 3063,
+        "hero/flop/fold": 1717,
+        "hero/river/raise": 952,
+        "hero/preflop/check": 210,
+        "hero/river/fold": 108,
+        "hero/turn/call": 227,
+        "hero/river/call": 75
+      },
+      "preflop_folded_hands_fraction": 0.6951111111111111,
+      "preflop_raise_events_per_hand": 0.2604722222222222,
+      "hero_events_per_hand": {
+        "hero/preflop/fold": 0.6951111111111111,
+        "hero/preflop/call": 0.3019722222222222,
+        "hero/preflop/raise": 0.2604722222222222,
+        "hero/flop/check": 0.057666666666666665,
+        "hero/turn/check": 0.034944444444444445,
+        "hero/river/check": 0.024277777777777777,
+        "hero/flop/call": 0.03158333333333333,
+        "hero/turn/raise": 0.04,
+        "hero/turn/fold": 0.00836111111111111,
+        "hero/flop/raise": 0.08508333333333333,
+        "hero/flop/fold": 0.04769444444444444,
+        "hero/river/raise": 0.026444444444444444,
+        "hero/preflop/check": 0.005833333333333334,
+        "hero/river/fold": 0.003,
+        "hero/turn/call": 0.006305555555555556,
+        "hero/river/call": 0.0020833333333333333
+      },
+      "noregrets_fallback_fraction": {
+        "preflop": 0.08616953473550032,
+        "flop": 0.3468515262905546,
+        "turn": 0.7930801687763713,
+        "river": 0.9596204533473907
+      }
+    }
+  },
+  "provenance": {
+    "common_values": {
+      "deal_seed": [
+        "2026111203"
+      ],
+      "deals": [
+        "2000"
+      ],
+      "engine_sha256": [
+        "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547"
+      ],
+      "evaluator_sha256": [
+        "262a6e3e2be9f556c3e5863fe00eb636b7203c9148ad834ea1933918e32bcfe2"
+      ],
+      "runtime_sha256": [
+        "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21"
+      ]
+    },
+    "working_implementation_hashes": {
+      "engine_sha256": {
+        "recorded": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+        "local": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+        "matches": true
+      },
+      "evaluator_sha256": {
+        "recorded": "262a6e3e2be9f556c3e5863fe00eb636b7203c9148ad834ea1933918e32bcfe2",
+        "local": "262a6e3e2be9f556c3e5863fe00eb636b7203c9148ad834ea1933918e32bcfe2",
+        "matches": true
+      },
+      "runtime_sha256": {
+        "recorded": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+        "local": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+        "matches": true
+      }
+    },
+    "candidate_hash_checks": [
+      {
+        "cell": "mixed-public",
+        "candidate_sha256": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-342-current-120",
+        "candidate_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-342-current-60",
+        "candidate_sha256": "35a9573902b4ec45e09b2449a4e5d508bacd91b498498a5e5453df8b8c642d7f",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-342-mixture-120",
+        "candidate_sha256": "75aefd670c3c71ae475030319d818c8fd2beba86c2189293e515dd3ed7df6788",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-342-mixture-60",
+        "candidate_sha256": "e7f788ccb7d9fc9c8e4c3301d1d912159a4d0ced99afb7a60a6900437629b5c5",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-343-current-120",
+        "candidate_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-343-current-60",
+        "candidate_sha256": "ce23910c26680a58006a905614225f79b6d800b36f64fd6b48d4b16029e12cf9",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-343-mixture-120",
+        "candidate_sha256": "ce887f7b76daea3577fa5ef11002842637e24cc3afc1291117f92d3c57a263f4",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-343-mixture-60",
+        "candidate_sha256": "8ca409dcbaaba222b34cf004fc16a07456f551fd9cdde43b53f752bf36ac1e97",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-344-current-120",
+        "candidate_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-344-current-60",
+        "candidate_sha256": "bdcd176cecdbbb482df9305ebc5601102c756e50ad06671332d722666fd9747d",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-344-mixture-120",
+        "candidate_sha256": "08c4e0527e9fa959f05319bee7c451168d782a65d6794a8a9762432af589ad0d",
+        "matches_local": true
+      },
+      {
+        "cell": "mixed-seed-344-mixture-60",
+        "candidate_sha256": "a3694bdeb2e33302efdff92e8ed379602bc5935c7f796cbb08dccca4ff5b011e",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-public",
+        "candidate_sha256": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-342-current-120",
+        "candidate_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-342-current-60",
+        "candidate_sha256": "35a9573902b4ec45e09b2449a4e5d508bacd91b498498a5e5453df8b8c642d7f",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-342-mixture-120",
+        "candidate_sha256": "75aefd670c3c71ae475030319d818c8fd2beba86c2189293e515dd3ed7df6788",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-342-mixture-60",
+        "candidate_sha256": "e7f788ccb7d9fc9c8e4c3301d1d912159a4d0ced99afb7a60a6900437629b5c5",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-343-current-120",
+        "candidate_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-343-current-60",
+        "candidate_sha256": "ce23910c26680a58006a905614225f79b6d800b36f64fd6b48d4b16029e12cf9",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-343-mixture-120",
+        "candidate_sha256": "ce887f7b76daea3577fa5ef11002842637e24cc3afc1291117f92d3c57a263f4",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-343-mixture-60",
+        "candidate_sha256": "8ca409dcbaaba222b34cf004fc16a07456f551fd9cdde43b53f752bf36ac1e97",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-344-current-120",
+        "candidate_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-344-current-60",
+        "candidate_sha256": "bdcd176cecdbbb482df9305ebc5601102c756e50ad06671332d722666fd9747d",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-344-mixture-120",
+        "candidate_sha256": "08c4e0527e9fa959f05319bee7c451168d782a65d6794a8a9762432af589ad0d",
+        "matches_local": true
+      },
+      {
+        "cell": "noregrets-seed-344-mixture-60",
+        "candidate_sha256": "a3694bdeb2e33302efdff92e8ed379602bc5935c7f796cbb08dccca4ff5b011e",
+        "matches_local": true
+      },
+      {
+        "cell": "public-public",
+        "candidate_sha256": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-342-current-120",
+        "candidate_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-342-current-60",
+        "candidate_sha256": "35a9573902b4ec45e09b2449a4e5d508bacd91b498498a5e5453df8b8c642d7f",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-342-mixture-120",
+        "candidate_sha256": "75aefd670c3c71ae475030319d818c8fd2beba86c2189293e515dd3ed7df6788",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-342-mixture-60",
+        "candidate_sha256": "e7f788ccb7d9fc9c8e4c3301d1d912159a4d0ced99afb7a60a6900437629b5c5",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-343-current-120",
+        "candidate_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-343-current-60",
+        "candidate_sha256": "ce23910c26680a58006a905614225f79b6d800b36f64fd6b48d4b16029e12cf9",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-343-mixture-120",
+        "candidate_sha256": "ce887f7b76daea3577fa5ef11002842637e24cc3afc1291117f92d3c57a263f4",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-343-mixture-60",
+        "candidate_sha256": "8ca409dcbaaba222b34cf004fc16a07456f551fd9cdde43b53f752bf36ac1e97",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-344-current-120",
+        "candidate_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-344-current-60",
+        "candidate_sha256": "bdcd176cecdbbb482df9305ebc5601102c756e50ad06671332d722666fd9747d",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-344-mixture-120",
+        "candidate_sha256": "08c4e0527e9fa959f05319bee7c451168d782a65d6794a8a9762432af589ad0d",
+        "matches_local": true
+      },
+      {
+        "cell": "public-seed-344-mixture-60",
+        "candidate_sha256": "a3694bdeb2e33302efdff92e8ed379602bc5935c7f796cbb08dccca4ff5b011e",
+        "matches_local": true
+      }
+    ],
+    "noregrets_fixed_sha256": "4d86512cd76bb7d863a14e11c0fae2bf44f3561b57225d6abc593c41a27fe648",
+    "public_fixed_sha256": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+    "source_features_sha256": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "all_mixture_members_hash_checked": true
+  },
+  "deck_seed_audit": {
+    "existing_ranges": [
+      {
+        "run": "20261112T025126577365Z",
+        "start": 2026111201,
+        "end": 2026113200,
+        "deals": 2000
+      },
+      {
+        "run": "20261112T032318825281Z",
+        "start": 2026111203,
+        "end": 2026113202,
+        "deals": 2000
+      }
+    ],
+    "overlaps": [
+      {
+        "run_a": "20261112T025126577365Z",
+        "run_b": "20261112T032318825281Z",
+        "overlapping_decks": 1998,
+        "fraction_of_smaller": 0.999
+      }
+    ],
+    "proposed": {
+      "start": 2026120000,
+      "end": 2026121999,
+      "deals": 2000,
+      "overlaps_existing": []
+    },
+    "mechanism": "Evaluator reset deck seed is evaluation_deal_seed + deal_index. Merely changing the start by 2 reuses 1998 of 2000 decks.",
+    "interpretation": "Within-stage paired arithmetic is intact. Cross-stage fresh-card/holdout independence was overstated; action RNG also depends on deal index, so reused decks need not yield identical action trajectories."
+  },
+  "findings": [
+    "Current policy at 120 folds preflop more often and raises less often than at 60; this is descriptive behavior, not proof of the training cause.",
+    "Temporal mixture120 exceeds current120 on mixed and NoRegrets in these nominal paired intervals, while public difference is uncertain.",
+    "The original four-condition current-policy stop rule remains failed; mixture preservation against its own60 baseline also does not certify the mixed margin.",
+    "NoRegrets often uses fallback on later streets; its fixed score measures exploitation of that particular opponent rather than broad poker strength.",
+    "Historical stages substantially reused card decks; next diagnostic needs an explicitly disjoint seed interval."
+  ],
+  "limitations": [
+    "Post hoc exploratory analysis, unadjusted nominal95% deal-block intervals and fixed trained seeds.",
+    "Action counts are events; raises/calls/checks may occur several times in a hand. Preflop fold occurs at most once per hero hand.",
+    "Fallback fractions count NoRegrets decisions, not hands; mixed means three public and two NoRegrets seats.",
+    "Two fixed opponent models and one alternating mixed seat arrangement do not establish general or professional strength.",
+    "No policy promotion, controller criterion change, old artifact mutation, or training was performed by this analyzer."
+  ]
+}
