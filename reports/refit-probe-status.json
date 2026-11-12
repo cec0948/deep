@@ -1,100 +1,84 @@
 {
-  "observed_utc": "2026-11-12T05:14:53.723315+00:00",
-  "run": "20261112T050839072733Z",
-  "status": "complete",
-  "phase": "complete",
-  "recorded_status": "complete",
-  "recorded_phase": "complete",
-  "status_updated_utc": "2026-11-12T05:13:09.562608+00:00",
-  "status_age_seconds": 104.160707,
-  "supervisor_alive": false,
+  "observed_utc": "2026-11-12T06:07:55.345166+00:00",
+  "run": "20261112T060737163350Z",
+  "status": "running",
+  "phase": "fitting",
+  "recorded_status": "running",
+  "recorded_phase": "fitting",
+  "status_updated_utc": "2026-11-12T06:07:54.468393+00:00",
+  "status_age_seconds": 0.876773,
+  "supervisor_alive": true,
   "liveness_evidence": "Matching registry/status PID, /proc start token and runner output argument",
-  "completed_evaluations": 18,
-  "planned_evaluations": 18,
+  "completed_evaluations": 0,
+  "planned_evaluations": 54,
   "parent_iteration": 120,
   "resumable_selfplay": false,
-  "artifact_kind": "derived-offline-anchored-refit",
-  "plan_sha256": "af0f7f41870eea0dc8632a37de960fe613ccdea6e6fc9256b367ce0f259737d8",
+  "artifact_kind": "derived-offline-raw-objective-refit",
+  "plan_sha256": "293ce2cbc3bef587a3e8203327b24a395a33d1aab875c17928696137aab2cac8",
   "candidate_fits": {
     "342": {
-      "status": "complete",
-      "complete": true,
+      "status": "reported_running",
+      "complete": false,
       "planned_steps": 3072,
-      "completed_steps": 3072,
+      "completed_steps": null,
       "before": {
         "normalized_training_mse": 0.8603372573852539,
         "normalized_teacher_score_mse": 0.0,
-        "normalized_anchored_objective": 0.21508431434631348,
         "unraised_preflop_conditional_target_tv": 0.5742611371928604,
         "positive_regret_absent_fraction": 0.2169189453125,
+        "raw_iteration_weighted_training_mse": 1376.9661696611884,
+        "raw_iteration_weighted_conditional_mse": 1371.9980897087253,
+        "normalized_importance_training_objective": 0.8239160605180296,
+        "raw_conditional_objective_over_z": 0.8239160618781295,
+        "normalized_objective_rounding_gap": -1.3600999215768184e-09,
         "policy_drift": {
           "teacher_policy_tv": 0.0,
           "teacher_policy_tv_p95": 0.0,
           "teacher_policy_tv_over_half_fraction": 0.0,
           "newly_absent_fraction": 0.0,
           "resolved_absent_fraction": 0.0
-        }
-      },
-      "after": {
-        "normalized_training_mse": 0.8093194961547852,
-        "normalized_teacher_score_mse": 0.008278775960206985,
-        "normalized_anchored_objective": 0.20853895600885153,
-        "unraised_preflop_conditional_target_tv": 0.5402609514224448,
-        "positive_regret_absent_fraction": 0.21832275390625,
-        "policy_drift": {
-          "teacher_policy_tv": 0.18067917227745056,
-          "teacher_policy_tv_p95": 0.75,
-          "teacher_policy_tv_over_half_fraction": 0.13006591796875,
-          "newly_absent_fraction": 0.08123779296875,
-          "resolved_absent_fraction": 0.079833984375
         }
       }
     },
     "343": {
-      "status": "complete",
-      "complete": true,
+      "status": "reported_running",
+      "complete": false,
       "planned_steps": 3072,
-      "completed_steps": 3072,
+      "completed_steps": null,
       "before": {
         "normalized_training_mse": 0.8395305871963501,
         "normalized_teacher_score_mse": 0.0,
-        "normalized_anchored_objective": 0.20988264679908752,
         "unraised_preflop_conditional_target_tv": 0.5718812874186306,
         "positive_regret_absent_fraction": 0.10870361328125,
+        "raw_iteration_weighted_training_mse": 1272.9946626887554,
+        "raw_iteration_weighted_conditional_mse": 1269.0058915473194,
+        "normalized_importance_training_objective": 0.8324454273059398,
+        "raw_conditional_objective_over_z": 0.8324454261065852,
+        "normalized_objective_rounding_gap": 1.1993546156219281e-09,
         "policy_drift": {
           "teacher_policy_tv": 0.0,
           "teacher_policy_tv_p95": 0.0,
           "teacher_policy_tv_over_half_fraction": 0.0,
           "newly_absent_fraction": 0.0,
           "resolved_absent_fraction": 0.0
-        }
-      },
-      "after": {
-        "normalized_training_mse": 0.793335497379303,
-        "normalized_teacher_score_mse": 0.007585051003843546,
-        "normalized_anchored_objective": 0.2040226625977084,
-        "unraised_preflop_conditional_target_tv": 0.5471166020040794,
-        "positive_regret_absent_fraction": 0.1798095703125,
-        "policy_drift": {
-          "teacher_policy_tv": 0.16890248656272888,
-          "teacher_policy_tv_p95": 0.75,
-          "teacher_policy_tv_over_half_fraction": 0.1236572265625,
-          "newly_absent_fraction": 0.0994873046875,
-          "resolved_absent_fraction": 0.02838134765625
         }
       }
     },
     "344": {
-      "status": "complete",
-      "complete": true,
+      "status": "reported_running",
+      "complete": false,
       "planned_steps": 3072,
-      "completed_steps": 3072,
+      "completed_steps": null,
       "before": {
         "normalized_training_mse": 0.8542253375053406,
         "normalized_teacher_score_mse": 0.0,
-        "normalized_anchored_objective": 0.21355633437633514,
         "unraised_preflop_conditional_target_tv": 0.5788670484909926,
         "positive_regret_absent_fraction": 0.192626953125,
+        "raw_iteration_weighted_training_mse": 1392.6684542360606,
+        "raw_iteration_weighted_conditional_mse": 1386.0800994169779,
+        "normalized_importance_training_objective": 0.8368213747416531,
+        "raw_conditional_objective_over_z": 0.8368213758474897,
+        "normalized_objective_rounding_gap": -1.105836644477165e-09,
         "policy_drift": {
           "teacher_policy_tv": 0.0,
           "teacher_policy_tv_p95": 0.0,
@@ -102,59 +86,23 @@
           "newly_absent_fraction": 0.0,
           "resolved_absent_fraction": 0.0
         }
-      },
-      "after": {
-        "normalized_training_mse": 0.8117278814315796,
-        "normalized_teacher_score_mse": 0.008619260042905807,
-        "normalized_anchored_objective": 0.20939641539007425,
-        "unraised_preflop_conditional_target_tv": 0.5496536834402596,
-        "positive_regret_absent_fraction": 0.20513916015625,
-        "policy_drift": {
-          "teacher_policy_tv": 0.1638147085905075,
-          "teacher_policy_tv_p95": 0.75,
-          "teacher_policy_tv_over_half_fraction": 0.13299560546875,
-          "newly_absent_fraction": 0.07354736328125,
-          "resolved_absent_fraction": 0.06103515625
-        }
       }
     }
   },
-  "decisions": {
-    "anchored": {
-      "conditions": {
-        "public_lower_above_zero": false,
-        "at_least_two_public_seeds_improve": false,
-        "mixed_lower_above_minus_25": true,
-        "noregrets_lower_above_minus_50": true
-      },
-      "original_four_conditions_pass": false,
-      "deployment_authorized": false
-    }
-  },
-  "summary_verified": true,
-  "external_backup": {
-    "kind": "derived-policy-probe",
-    "run": "20261112T050839072733Z",
-    "bytes": 14533619,
-    "recorded_at": "2026-11-12T05:14:21.474888+00:00",
-    "verified_remote_size": true,
-    "verified_owner_only": true,
-    "remote_checksum_available": false,
-    "resumable_selfplay": false,
-    "verification_scope": "Previously recorded verification; no fresh Drive request by this publisher"
-  },
+  "decisions": null,
+  "summary_verified": false,
+  "external_backup": null,
   "limitations": [
     "Process liveness was checked only at observed_utc; old timestamps never prove current execution",
     "Candidate fitting is offline reuse of the original120 replay, not additional self-play rounds",
     "Fit metrics and Torch policy diagnostics are not held-out poker strength or deployment behavior",
     "Backup verification is read from the private index; no fresh remote metadata or checksum check is performed",
-    "Score anchoring does not guarantee a bound on policy drift or poker performance",
-    "Nominal confidence intervals are not adjusted for repeated experimentation",
-    "Shared cards are one block across fixed seeds, not independent seed-by-deal samples",
-    "The fixed opponent pool does not establish general or professional poker strength"
+    "The Leduc objective gate validates replay loss/gradient identities, not poker strength",
+    "The previous refit is a frozen comparison policy, not a newly fitted candidate",
+    "Rule-based reference opponents are diagnostics, not validated strong opponents"
   ],
-  "completed_candidate_fits": 3,
+  "completed_candidate_fits": 0,
   "planned_candidate_fits": 3,
-  "total_hands": 216000,
-  "next_action": "paused_for_analysis; failed original conditions, no automatic retrial or promotion"
+  "objective_gate_passed": true,
+  "next_action": "observe the existing bounded experiment; do not start a duplicate"
 }
