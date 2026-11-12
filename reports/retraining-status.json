@@ -1,0 +1,76 @@
+{
+  "observed_utc": "2026-11-12T02:55:46.723792+00:00",
+  "run": "20261112T025126577365Z",
+  "phase": "training",
+  "target_iterations": 60,
+  "supervisor_alive": true,
+  "seeds": {
+    "342": {
+      "iteration": 9,
+      "checkpoint": 6,
+      "quality": {
+        "weighted_tv": 0.03429467302271532,
+        "aa_fold": 0.0,
+        "aa_target_fold": 0.0,
+        "aa_regrets": [
+          -62.18541504175856,
+          6.563557180463665,
+          11.214390513796992,
+          8.616598847130327,
+          0.0
+        ]
+      },
+      "iteration_seconds": 24.74063926100007
+    },
+    "343": {
+      "iteration": 9,
+      "checkpoint": 6,
+      "quality": {
+        "weighted_tv": 0.04743127991983066,
+        "aa_fold": 0.0,
+        "aa_target_fold": 0.0,
+        "aa_regrets": [
+          -99.84090072103965,
+          18.140932612293692,
+          15.477029834515916,
+          7.893474278960361,
+          0.0
+        ]
+      },
+      "iteration_seconds": 25.43006622199937
+    },
+    "344": {
+      "iteration": 10,
+      "checkpoint": 6,
+      "quality": {
+        "weighted_tv": 0.03332920974335514,
+        "aa_fold": 0.0,
+        "aa_target_fold": 0.0,
+        "aa_regrets": [
+          -88.14963244027068,
+          10.849356196092955,
+          -37.665416531179766,
+          -12.254121076634316,
+          0.0
+        ]
+      },
+      "iteration_seconds": 22.114796859999842
+    }
+  },
+  "evaluation": {
+    "completed": 3,
+    "failed": 0,
+    "pending": 36,
+    "running": 0
+  },
+  "external_checkpoint": null,
+  "loop_status": "watching",
+  "max_iterations": 240,
+  "progress_decision": null,
+  "errors": {},
+  "limitations": [
+    "Observed at the timestamp, not a guarantee the cloud process remains alive",
+    "Checkpoint iteration is saved progress; latest iteration may be newer",
+    "Training fit metrics do not establish poker strength"
+  ]
+}
