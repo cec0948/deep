@@ -1,76 +1,76 @@
 {
-  "observed_utc": "2026-11-12T03:15:08.307369+00:00",
+  "observed_utc": "2026-11-12T03:15:39.709151+00:00",
   "run": "20261112T025126577365Z",
   "phase": "training",
   "target_iterations": 60,
   "supervisor_alive": true,
   "seeds": {
     "342": {
-      "iteration": 53,
-      "checkpoint": 48,
-      "quality": {
-        "weighted_tv": 0.04361475883360768,
-        "aa_fold": 0.0,
-        "aa_target_fold": 0.0,
-        "aa_regrets": [
-          -68.94008992643754,
-          -5.106785419100002,
-          5.2676730015848365,
-          3.7954154020041204,
-          0.0
-        ]
-      },
-      "iteration_seconds": 28.712173941999936
-    },
-    "343": {
-      "iteration": 53,
-      "checkpoint": 48,
-      "quality": {
-        "weighted_tv": 0.060282210158113136,
-        "aa_fold": 0.0,
-        "aa_target_fold": 0.0,
-        "aa_regrets": [
-          -58.09994917933048,
-          -0.9969774812173071,
-          0.24851125043887992,
-          5.873633542542302,
-          0.0
-        ]
-      },
-      "iteration_seconds": 28.479454330000408
-    },
-    "344": {
       "iteration": 54,
       "checkpoint": 54,
       "quality": {
-        "weighted_tv": 0.004732612653795074,
+        "weighted_tv": 0.031768076238229866,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -77.88205391859839,
-          -3.8482344741539203,
-          1.3916897682703235,
-          9.255155256485809,
+          -70.40537436944739,
+          -3.2478263896494006,
+          4.033469906646898,
+          5.194294401596391,
           0.0
         ]
       },
-      "iteration_seconds": 26.54461381100009
+      "iteration_seconds": 25.982648037999752
+    },
+    "343": {
+      "iteration": 54,
+      "checkpoint": 54,
+      "quality": {
+        "weighted_tv": 0.04847446741940426,
+        "aa_fold": 0.0,
+        "aa_target_fold": 0.0,
+        "aa_regrets": [
+          -57.6118247591137,
+          -0.6080520318410012,
+          -0.9328537995177661,
+          5.687718591054622,
+          0.0
+        ]
+      },
+      "iteration_seconds": 27.034213387999444
+    },
+    "344": {
+      "iteration": 55,
+      "checkpoint": 54,
+      "quality": {
+        "weighted_tv": 0.034977344629940565,
+        "aa_fold": 0.0,
+        "aa_target_fold": 0.0,
+        "aa_regrets": [
+          -76.8747024713124,
+          -5.2505730070266665,
+          -0.11636034468900265,
+          9.143767090375931,
+          0.0
+        ]
+      },
+      "iteration_seconds": 28.125884668000253
     }
   },
   "evaluation": {
-    "completed": 18,
+    "completed": 19,
     "failed": 0,
-    "pending": 20,
+    "pending": 19,
     "running": 1
   },
   "external_checkpoint": {
     "run": "20261112T025126577365Z",
     "iterations": {
-      "342": 6,
-      "343": 6,
-      "344": 6
+      "342": 42,
+      "343": 42,
+      "344": 42
     },
-    "recorded_at": "2026-11-12T03:02:49.258772+00:00",
+    "recorded_at": "2026-11-12T03:15:27.100176+00:00",
     "verified_size": true,
     "verified_private": true
   },
