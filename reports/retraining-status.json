@@ -1,9 +1,9 @@
 {
-  "observed_utc": "2026-11-12T03:57:34.719044+00:00",
+  "observed_utc": "2026-11-12T03:58:06.013526+00:00",
   "run": "20261112T032318825281Z",
-  "phase": "evaluating",
+  "phase": "complete",
   "target_iterations": 120,
-  "supervisor_alive": true,
+  "supervisor_alive": false,
   "seeds": {
     "342": {
       "iteration": 120,
