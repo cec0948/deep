@@ -1,67 +1,67 @@
 {
-  "observed_utc": "2026-11-12T03:39:10.688603+00:00",
+  "observed_utc": "2026-11-12T03:39:42.132965+00:00",
   "run": "20261112T032318825281Z",
   "phase": "training",
   "target_iterations": 120,
   "supervisor_alive": true,
   "seeds": {
     "342": {
-      "iteration": 91,
+      "iteration": 92,
       "checkpoint": 90,
       "quality": {
-        "weighted_tv": 0.0036916423264557164,
+        "weighted_tv": 0.012162133230170858,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -55.86090290857233,
-          0.8202177913798794,
-          2.8196737158901546,
-          1.0988093764252704,
+          -56.03261515080849,
+          1.8838577921555089,
+          2.3221963849558858,
+          1.4239312785977731,
           0.0
         ]
       },
-      "iteration_seconds": 34.82777175099909
+      "iteration_seconds": 28.39598923899939
     },
     "343": {
+      "iteration": 92,
+      "checkpoint": 90,
+      "quality": {
+        "weighted_tv": 0.023404644058614258,
+        "aa_fold": 0.0,
+        "aa_target_fold": 0.0,
+        "aa_regrets": [
+          -47.67808314655328,
+          2.1189657080516797,
+          -2.6797429466935285,
+          3.1385862959432185,
+          0.0
+        ]
+      },
+      "iteration_seconds": 35.291329900001074
+    },
+    "344": {
       "iteration": 91,
       "checkpoint": 90,
       "quality": {
-        "weighted_tv": 0.03842177531044126,
+        "weighted_tv": 0.018771165741058814,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -49.422381677246754,
-          -1.0494086719911402,
-          -4.376001033434045,
-          3.2075662145353774,
+          -69.60516328804479,
+          0.6023001316876756,
+          -1.3905396915325832,
+          5.901671548314524,
           0.0
         ]
       },
-      "iteration_seconds": 28.567207533000328
-    },
-    "344": {
-      "iteration": 90,
-      "checkpoint": 90,
-      "quality": {
-        "weighted_tv": 0.012652896974652803,
-        "aa_fold": 0.0,
-        "aa_target_fold": 0.0,
-        "aa_regrets": [
-          -71.33009920326231,
-          1.4680856257975503,
-          -1.069039526827603,
-          5.818554185016106,
-          0.0
-        ]
-      },
-      "iteration_seconds": 29.723058499999752
+      "iteration_seconds": 35.73948627700156
     }
   },
   "evaluation": {
-    "completed": 20,
+    "completed": 21,
     "failed": 0,
     "pending": 18,
-    "running": 1
+    "running": 0
   },
   "external_checkpoint": {
     "run": "20261112T025126577365Z",
