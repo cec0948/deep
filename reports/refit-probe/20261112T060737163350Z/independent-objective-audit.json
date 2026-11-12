@@ -1,0 +1,182 @@
+{
+  "format": "independent-retained-objective-audit-v1",
+  "run_id": "20261112T060737163350Z",
+  "complete": true,
+  "updated_utc": "2026-11-12T06:10:54.187530+00:00",
+  "method": "Independent dictionary-based conditional reconstruction and direct torch autograd; no production objective helper imported",
+  "gate": {
+    "passed": true,
+    "report_sha256": "fd56fdf61188de0e1a282226b43c14310b4d3c35d4c519e76da655d77ed87db7",
+    "archive_sha256": "1768a7f3cacd86602916705ea93470af83e6f5463ade65890f517772accb7190",
+    "source_hashes_verified": true,
+    "retained_rows": 2340,
+    "conditional_records": 1605,
+    "normalizer_z": 13.122187138664057,
+    "conditional_variance_constant": 4.422601400299607,
+    "importance_min": 0.07808435754095279,
+    "importance_max": 2.4258207076055998,
+    "probe_checks": [
+      {
+        "probe_seed": 181,
+        "gradient_relative_error": 7.312570569378824e-16,
+        "loss_relative_error": 1.4284891023822563e-16,
+        "missing_scale_squared_relative_gradient_error": 0.1250607808277787,
+        "monte_carlo_error_standard_errors": 0.6884030227617893,
+        "reported_raw_loss_reproduced": true
+      },
+      {
+        "probe_seed": 182,
+        "gradient_relative_error": 9.188641572080802e-16,
+        "loss_relative_error": 0.0,
+        "missing_scale_squared_relative_gradient_error": 0.1336685857587173,
+        "monte_carlo_error_standard_errors": 0.6282113020804262,
+        "reported_raw_loss_reproduced": true
+      },
+      {
+        "probe_seed": 183,
+        "gradient_relative_error": 8.889658264005142e-16,
+        "loss_relative_error": 1.3855601669527503e-16,
+        "missing_scale_squared_relative_gradient_error": 0.12168172578469612,
+        "monte_carlo_error_standard_errors": 0.6386240158947067,
+        "reported_raw_loss_reproduced": true
+      }
+    ]
+  },
+  "production_fits": {
+    "status": "complete",
+    "passed": true,
+    "original_parent_source_manifest_verified": true,
+    "verification_cpu_threads": 1,
+    "elapsed_seconds": 22.455797032998817,
+    "seeds": [
+      {
+        "seed": 342,
+        "passed": true,
+        "parent_checkpoint_sha256": "b85835c50c7a9eed9d62481ad6fba7fb0517c5e1f8867675ab23f6a05040c5e0",
+        "candidate_pt_sha256": "29dfcf2a79e78454a08351f6c337d27918cbdc46ac24db8c9009f2f9b4cb12f1",
+        "candidate_npz_sha256": "d830836ccc00d4ff0f65a7624b384c3f5f709c0498d6ae9dddd0bc75b938c75a",
+        "opening_and_scales_tensor_equal_to_parent": true,
+        "main_tensors_changed": true,
+        "parent_checkpoint_hash_unchanged": true,
+        "new_selfplay_samples": 0,
+        "sampled_record_ids_sha256": "7c0f45f3d50fd74a5cd8caeb1c5b16836543b41cde83c98165321440d396bd6d",
+        "sample_schedule_reproduced_from_frozen_old_sampler": true,
+        "total_sample_draws": 1572864,
+        "distinct_sampled_records": 365745,
+        "prior_refit_budget_and_rng_match": true,
+        "original_main_rows": 596623,
+        "conditional_records": 592353,
+        "normalizer_z": 1665.2158553399645,
+        "conditional_variance_constant": 4.968079952462975,
+        "importance_min": 2.5460833682337947e-05,
+        "importance_max": 4.296243491736736,
+        "raw_mse_check_relative_tolerance": 5e-06,
+        "raw_mse_checks": [
+          {
+            "phase": "before",
+            "independent_uncompressed_raw_iteration_weighted_mse": 1376.9661696612013,
+            "reported_mse": 1376.9661696611884,
+            "relative_difference": 9.412213448536064e-15,
+            "reported_normalized_float32_rounding_gap": -1.3600999215768184e-09
+          },
+          {
+            "phase": "after",
+            "independent_uncompressed_raw_iteration_weighted_mse": 1358.3534724501903,
+            "reported_mse": 1358.353472450191,
+            "relative_difference": 5.021675434003859e-16,
+            "reported_normalized_float32_rounding_gap": -1.303141927699869e-09
+          }
+        ],
+        "raw_mse_relative_reduction": 0.013517178287377326
+      },
+      {
+        "seed": 343,
+        "passed": true,
+        "parent_checkpoint_sha256": "b73e9d619fafbb0c7d989da6717d1f0be5c66136386f822e1cd53cb056e06cc3",
+        "candidate_pt_sha256": "bbe78bbdb4ba559f753e9feb93a259603d2f32d9973cf59c680a6e7da86cc4eb",
+        "candidate_npz_sha256": "bafef7e85a1f67eecc364a1bbe9e30869a9ec2c218531f4d76572f4d3854a035",
+        "opening_and_scales_tensor_equal_to_parent": true,
+        "main_tensors_changed": true,
+        "parent_checkpoint_hash_unchanged": true,
+        "new_selfplay_samples": 0,
+        "sampled_record_ids_sha256": "73396622d45a7553f5b53574e133034b40260e4637e07b22c7a1b503d6de2058",
+        "sample_schedule_reproduced_from_frozen_old_sampler": true,
+        "total_sample_draws": 1572864,
+        "distinct_sampled_records": 360949,
+        "prior_refit_budget_and_rng_match": true,
+        "original_main_rows": 596745,
+        "conditional_records": 591764,
+        "normalizer_z": 1524.4313341747393,
+        "conditional_variance_constant": 3.9887711414360476,
+        "importance_min": 3.696494771675299e-05,
+        "importance_max": 4.800299318586674,
+        "raw_mse_check_relative_tolerance": 5e-06,
+        "raw_mse_checks": [
+          {
+            "phase": "before",
+            "independent_uncompressed_raw_iteration_weighted_mse": 1272.9946626887572,
+            "reported_mse": 1272.9946626887554,
+            "relative_difference": 1.4289057580994711e-15,
+            "reported_normalized_float32_rounding_gap": 1.1993546156219281e-09
+          },
+          {
+            "phase": "after",
+            "independent_uncompressed_raw_iteration_weighted_mse": 1253.7671858273368,
+            "reported_mse": 1253.7671858273306,
+            "relative_difference": 4.896514525474862e-15,
+            "reported_normalized_float32_rounding_gap": 1.0655857307639849e-09
+          }
+        ],
+        "raw_mse_relative_reduction": 0.015104129989683883
+      },
+      {
+        "seed": 344,
+        "passed": true,
+        "parent_checkpoint_sha256": "9fe7826385423efd63fd668ef599db59e6dbd68fe161d1039b661381ed3b81c0",
+        "candidate_pt_sha256": "3a0a3b74eb597652709fdc2c67c37f8ab5c15e4b6d29ac0ecabc30b792f1db34",
+        "candidate_npz_sha256": "bc32d05b2051bd768405718b8e850d8e3573f242226254576cf38a75ea79939d",
+        "opening_and_scales_tensor_equal_to_parent": true,
+        "main_tensors_changed": true,
+        "parent_checkpoint_hash_unchanged": true,
+        "new_selfplay_samples": 0,
+        "sampled_record_ids_sha256": "8fa841d28a01d28157087806072ebf364ad647041aae680a6c95f27267166c2d",
+        "sample_schedule_reproduced_from_frozen_old_sampler": true,
+        "total_sample_draws": 1572864,
+        "distinct_sampled_records": 375126,
+        "prior_refit_budget_and_rng_match": true,
+        "original_main_rows": 596395,
+        "conditional_records": 591183,
+        "normalizer_z": 1656.3631611503743,
+        "conditional_variance_constant": 6.588354819082781,
+        "importance_min": 7.964277086246629e-05,
+        "importance_max": 4.234593510791429,
+        "raw_mse_check_relative_tolerance": 5e-06,
+        "raw_mse_checks": [
+          {
+            "phase": "before",
+            "independent_uncompressed_raw_iteration_weighted_mse": 1392.6684542360042,
+            "reported_mse": 1392.6684542360606,
+            "relative_difference": 4.0489659501085777e-14,
+            "reported_normalized_float32_rounding_gap": -1.105836644477165e-09
+          },
+          {
+            "phase": "after",
+            "independent_uncompressed_raw_iteration_weighted_mse": 1368.1603777207201,
+            "reported_mse": 1368.1603777206703,
+            "relative_difference": 3.63954663012717e-14,
+            "reported_normalized_float32_rounding_gap": -1.0355114543614263e-09
+          }
+        ],
+        "raw_mse_relative_reduction": 0.017597926082725847
+      }
+    ]
+  },
+  "limitations": [
+    "Mathematical verification of a retained empirical objective, not poker strength or convergence.",
+    "Expected objective gradient equality applies before gradient clipping and Adam.",
+    "Production float32 rounding is separate from float64 identities.",
+    "No new training or self-play was launched by this audit.",
+    "Raw replay MSE is an in-sample fitting diagnostic; success in this audit does not establish held-out six-player performance."
+  ],
+  "passed": true
+}
