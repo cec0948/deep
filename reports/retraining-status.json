@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-12T03:58:06.013526+00:00",
+  "observed_utc": "2026-11-12T03:58:37.226944+00:00",
   "run": "20261112T032318825281Z",
   "phase": "complete",
   "target_iterations": 120,
@@ -74,7 +74,7 @@
     "verified_size": true,
     "verified_private": true
   },
-  "loop_status": "watching",
+  "loop_status": "paused_for_analysis",
   "max_iterations": 240,
   "progress_decision": {
     "before": 60,
