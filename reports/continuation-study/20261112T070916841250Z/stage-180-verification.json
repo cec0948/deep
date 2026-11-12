@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "passed": true,
+  "stage": 180,
+  "verified_utc": "2026-11-12T07:38:29.735773+00:00",
+  "seeds": [
+    {
+      "seed": 342,
+      "iteration": 180,
+      "checkpoint_sha256": "c1213fbbcb27d1b9485614ae63d56a2fb9a629615c60ecd2453484bd5b50b049",
+      "current_sha256": "def4baa44200136c0c75c9ed66e99793620890ff58a263d7821595faef80c0e7",
+      "mixture_sha256": "e3efa0ff96698863dd58c0fe909aa288a28f3050fd9939475e41d874b7419e16",
+      "snapshots": 180,
+      "finite_state": true,
+      "root_weighting_verified": true,
+      "pre_update_history_verified": true,
+      "current_export_checkpoint_parity": true
+    },
+    {
+      "seed": 343,
+      "iteration": 180,
+      "checkpoint_sha256": "1908212d951c3207ec0a66d3fa1f762f636b147ce1d8dc6b76d0d5fab0a65002",
+      "current_sha256": "79e56c6cbbf0a75aec09dc7d830ce7a8322a68e30a5e5c4270541ed3265b21c7",
+      "mixture_sha256": "a48641b1fb7a902def73d1e92361bbdfaca2070e1a1cb7e4e72a25b4271c2199",
+      "snapshots": 180,
+      "finite_state": true,
+      "root_weighting_verified": true,
+      "pre_update_history_verified": true,
+      "current_export_checkpoint_parity": true
+    },
+    {
+      "seed": 344,
+      "iteration": 180,
+      "checkpoint_sha256": "94d127305d97a58580f15bcb64818b2b3890a980509fd913d5149081719639dd",
+      "current_sha256": "0dd819e1bc416adff181add229e57f0516e82cc49ed231257791b3139e081bd9",
+      "mixture_sha256": "73870e328bee2b3d90dcab855b1141ffbdf312d8def5feee913c92168636bce4",
+      "snapshots": 180,
+      "finite_state": true,
+      "root_weighting_verified": true,
+      "pre_update_history_verified": true,
+      "current_export_checkpoint_parity": true
+    }
+  ]
+}

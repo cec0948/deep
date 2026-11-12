@@ -1,12 +1,12 @@
 {
-  "observed_utc": "2026-11-12T07:37:13.967995+00:00",
+  "observed_utc": "2026-11-12T08:46:37.999900+00:00",
   "run": "20261112T070916841250Z",
   "status": "running",
-  "phase": "training",
+  "phase": "evaluating",
   "recorded_status": "running",
-  "recorded_phase": "training",
-  "status_updated_utc": "2026-11-12T07:37:13.026397+00:00",
-  "status_age_seconds": 0.941598,
+  "recorded_phase": "evaluating",
+  "status_updated_utc": "2026-11-12T08:46:36.791882+00:00",
+  "status_age_seconds": 1.208018,
   "supervisor_alive": true,
   "liveness_evidence": "Matching registry/status PID, non-zombie /proc start token, runner command and output argument",
   "plan_sha256": "fea2187fe3477c03a88b7a058318bbb36ef5e8a80eb01b6153cf05ec69034f8a",
@@ -18,45 +18,95 @@
   "original_registries_unchanged": true,
   "seed_progress": {
     "342": {
-      "checkpoint_iteration": 174,
-      "additional_selfplay_iterations": 54,
-      "worker_alive": true,
-      "checkpoint_state": "running"
+      "checkpoint_iteration": 240,
+      "additional_selfplay_iterations": 120,
+      "worker_alive": false,
+      "checkpoint_state": "complete"
     },
     "343": {
-      "checkpoint_iteration": 174,
-      "additional_selfplay_iterations": 54,
-      "worker_alive": true,
-      "checkpoint_state": "running"
+      "checkpoint_iteration": 240,
+      "additional_selfplay_iterations": 120,
+      "worker_alive": false,
+      "checkpoint_state": "complete"
     },
     "344": {
-      "checkpoint_iteration": 174,
-      "additional_selfplay_iterations": 54,
-      "worker_alive": true,
-      "checkpoint_state": "running"
+      "checkpoint_iteration": 240,
+      "additional_selfplay_iterations": 120,
+      "worker_alive": false,
+      "checkpoint_state": "complete"
     }
   },
-  "completed_training_stages": [],
-  "training_stages": {},
-  "training_complete": false,
+  "completed_training_stages": [
+    180,
+    240
+  ],
+  "training_stages": {
+    "180": {
+      "iteration": 180,
+      "checkpoint_verified": true,
+      "evaluation_complete": false,
+      "local_snapshot_verified": true,
+      "external_backup": null,
+      "local_snapshot_bytes": 786537648
+    },
+    "240": {
+      "iteration": 240,
+      "checkpoint_verified": true,
+      "evaluation_complete": false,
+      "local_snapshot_verified": true,
+      "external_backup": {
+        "kind": "training-checkpoint",
+        "run": "20261112T070916841250Z",
+        "iterations": {
+          "342": 240,
+          "343": 240,
+          "344": 240
+        },
+        "bytes": 1021413105,
+        "recorded_at": "2026-11-12T08:44:59.443611+00:00",
+        "verified_remote_size": true,
+        "verified_owner_only": true,
+        "remote_checksum_available": false,
+        "resumable_selfplay": true,
+        "verification_scope": "Previously recorded private-index verification; this publisher makes no Drive request"
+      },
+      "local_snapshot_bytes": 1021413105
+    }
+  },
+  "training_complete": true,
   "study_complete": false,
   "evaluation": {
     "recorded_status": "running",
-    "completed_evaluations": 5,
+    "completed_evaluations": 30,
     "planned_evaluations": 54,
-    "verified_hands": 600000,
+    "verified_hands": 3600000,
     "completed_checkpoint_evaluations": [],
     "evaluation_plan_sha256": "ec3938895445c1e42031b9a1536b2c78cbbde8574214ae2bef705d302b1ce79a",
-    "status_updated_utc": "2026-11-12T07:37:13.204618+00:00",
+    "status_updated_utc": "2026-11-12T08:46:37.234526+00:00",
     "evaluator_alive": true,
     "observed_status": "running"
   },
-  "completed_evaluations": 5,
+  "completed_evaluations": 30,
   "planned_evaluations": 54,
   "planned_hands": 6480000,
   "independent_card_blocks": 20000,
   "adoption_decisions": {},
-  "external_checkpoint": null,
+  "external_checkpoint": {
+    "kind": "training-checkpoint",
+    "run": "20261112T070916841250Z",
+    "iterations": {
+      "342": 240,
+      "343": 240,
+      "344": 240
+    },
+    "bytes": 1021413105,
+    "recorded_at": "2026-11-12T08:44:59.443611+00:00",
+    "verified_remote_size": true,
+    "verified_owner_only": true,
+    "remote_checksum_available": false,
+    "resumable_selfplay": true,
+    "verification_scope": "Previously recorded private-index verification; this publisher makes no Drive request"
+  },
   "limitations": [
     "A completed training checkpoint does not mean all large evaluations or the research study are complete",
     "Observed process liveness applies only at observed_utc; timestamps never prove continuing execution",

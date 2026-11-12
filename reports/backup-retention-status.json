@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-12T07:37:30.419973+00:00",
+  "observed_utc": "2026-11-12T08:46:59.727801+00:00",
   "scope": "Private poker training backups only",
   "removed_checkpoint_iterations": [
     6,
@@ -8,12 +8,13 @@
   ],
   "removed_remote_files": 14,
   "reclaimed_bytes": 701407029,
-  "retained_remote_files": 20,
-  "retained_bytes": 976565562,
+  "retained_remote_files": 37,
+  "retained_bytes": 1997989308,
   "retained": [
     "evaluation assets",
     "full60 baseline checkpoint",
-    "full120 latest checkpoint",
+    "full240 latest completed training checkpoint",
+    "full120 required parent of retained probes and studies",
     "latest two derived-policy probes",
     "latest research-validation study"
   ],
@@ -38,5 +39,13 @@
   "remote_sha256_verified": false,
   "new_probe_local_sha256_verified": true,
   "deleted_old_comparator_preserved_in_latest_probe": true,
-  "last_check_changed_remote_files": false
+  "last_check_changed_remote_files": true,
+  "new_training_checkpoint_run": "20261112T070916841250Z",
+  "new_training_checkpoint_iteration": 240,
+  "new_training_checkpoint_bytes": 1021413105,
+  "new_training_checkpoint_parts": 16,
+  "new_training_manifest_bytes": 10641,
+  "new_training_checkpoint_local_sha256_verified": true,
+  "new_training_checkpoint_recombined_sha256_verified": true,
+  "study_evaluation_complete": false
 }

@@ -1,0 +1,21 @@
+{
+  "updated_utc": "2026-11-12T08:10:17.908266+00:00",
+  "completed_stages": [
+    180,
+    240
+  ],
+  "checkpoints": {
+    "120": {
+      "iteration": 120,
+      "parent_verified": true
+    },
+    "180": {
+      "iteration": 180,
+      "verification_sha256": "3e7d7d62f8fe002fb9d28cccc701fa76a26381bf706fb15dfbd621fc8a70c580"
+    },
+    "240": {
+      "iteration": 240,
+      "verification_sha256": "71483b9cc3150d77b6f4baeb134df39f04924c81e2eab8da1553fa21629fb771"
+    }
+  }
+}
