@@ -1,15 +1,15 @@
 {
-  "observed_utc": "2026-11-12T05:47:51.526622+00:00",
+  "observed_utc": "2026-11-12T06:31:02.995665+00:00",
   "scope": "Private poker training backups only",
   "removed_checkpoint_iterations": [
     6,
     42,
     102
   ],
-  "removed_remote_files": 13,
-  "reclaimed_bytes": 682513514,
+  "removed_remote_files": 14,
+  "reclaimed_bytes": 701407029,
   "retained_remote_files": 20,
-  "retained_bytes": 957548842,
+  "retained_bytes": 976565562,
   "retained": [
     "evaluation assets",
     "full60 baseline checkpoint",
@@ -25,8 +25,17 @@
   "remote_checksum_available": false,
   "local_archives_preserved": true,
   "private_index_updated": true,
-  "new_probe_backup_bytes": 14533619,
+  "new_probe_backup_bytes": 37910235,
   "remaining_cleanup_candidates": 0,
   "new_research_backup_bytes": 17345740,
-  "keep_latest_research_validations": 1
+  "keep_latest_research_validations": 1,
+  "removed_derived_probe_runs": [
+    "20261112T043945051666Z"
+  ],
+  "latest_derived_probe_run": "20261112T060737163350Z",
+  "new_probe_kind": "derived-policy-probe",
+  "new_probe_resumable_selfplay": false,
+  "remote_sha256_verified": false,
+  "new_probe_local_sha256_verified": true,
+  "deleted_old_comparator_preserved_in_latest_probe": true
 }

@@ -1,12 +1,12 @@
 {
-  "observed_utc": "2026-11-12T06:19:06.699352+00:00",
+  "observed_utc": "2026-11-12T06:29:35.640869+00:00",
   "run": "20261112T060737163350Z",
   "status": "complete",
   "phase": "complete",
   "recorded_status": "complete",
   "recorded_phase": "complete",
   "status_updated_utc": "2026-11-12T06:18:44.762129+00:00",
-  "status_age_seconds": 21.937223,
+  "status_age_seconds": 650.87874,
   "supervisor_alive": false,
   "liveness_evidence": "Matching registry/status PID, /proc start token and runner output argument",
   "completed_evaluations": 54,
@@ -156,7 +156,17 @@
     }
   },
   "summary_verified": true,
-  "external_backup": null,
+  "external_backup": {
+    "kind": "derived-policy-probe",
+    "run": "20261112T060737163350Z",
+    "bytes": 37910235,
+    "recorded_at": "2026-11-12T06:27:44.935305+00:00",
+    "verified_remote_size": true,
+    "verified_owner_only": true,
+    "remote_checksum_available": false,
+    "resumable_selfplay": false,
+    "verification_scope": "Previously recorded verification; no fresh Drive request by this publisher"
+  },
   "limitations": [
     "Process liveness was checked only at observed_utc; old timestamps never prove current execution",
     "Candidate fitting is offline reuse of the original120 replay, not additional self-play rounds",
