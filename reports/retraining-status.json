@@ -1,67 +1,67 @@
 {
-  "observed_utc": "2026-11-12T03:15:39.709151+00:00",
+  "observed_utc": "2026-11-12T03:17:11.039166+00:00",
   "run": "20261112T025126577365Z",
   "phase": "training",
   "target_iterations": 60,
   "supervisor_alive": true,
   "seeds": {
     "342": {
-      "iteration": 54,
+      "iteration": 58,
       "checkpoint": 54,
       "quality": {
-        "weighted_tv": 0.031768076238229866,
+        "weighted_tv": 0.04512149387299767,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -70.40537436944739,
-          -3.2478263896494006,
-          4.033469906646898,
-          5.194294401596391,
+          -73.69855576763437,
+          -5.472919443847094,
+          4.827787744931402,
+          3.4229057314889673,
           0.0
         ]
       },
-      "iteration_seconds": 25.982648037999752
+      "iteration_seconds": 27.559421916000247
     },
     "343": {
-      "iteration": 54,
+      "iteration": 58,
       "checkpoint": 54,
       "quality": {
-        "weighted_tv": 0.04847446741940426,
+        "weighted_tv": 0.04003314110886633,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -57.6118247591137,
-          -0.6080520318410012,
-          -0.9328537995177661,
-          5.687718591054622,
+          -53.876523065441624,
+          -2.6907311309004385,
+          -3.7978282232440956,
+          4.9571323261422275,
           0.0
         ]
       },
-      "iteration_seconds": 27.034213387999444
+      "iteration_seconds": 31.992992698000307
     },
     "344": {
-      "iteration": 55,
+      "iteration": 59,
       "checkpoint": 54,
       "quality": {
-        "weighted_tv": 0.034977344629940565,
+        "weighted_tv": 0.06093816233015856,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -76.8747024713124,
-          -5.2505730070266665,
-          -0.11636034468900265,
-          9.143767090375931,
+          -77.65665283857106,
+          3.174230989112565,
+          7.046119407191662,
+          6.4561681360052185,
           0.0
         ]
       },
-      "iteration_seconds": 28.125884668000253
+      "iteration_seconds": 28.27028205500028
     }
   },
   "evaluation": {
-    "completed": 19,
+    "completed": 21,
     "failed": 0,
-    "pending": 19,
-    "running": 1
+    "pending": 18,
+    "running": 0
   },
   "external_checkpoint": {
     "run": "20261112T025126577365Z",
