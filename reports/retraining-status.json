@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-12T03:22:20.601832+00:00",
+  "observed_utc": "2026-11-12T03:22:51.844590+00:00",
   "run": "20261112T025126577365Z",
   "phase": "evaluating",
   "target_iterations": 60,
@@ -58,19 +58,19 @@
     }
   },
   "evaluation": {
-    "completed": 38,
+    "completed": 39,
     "failed": 0,
     "pending": 0,
-    "running": 1
+    "running": 0
   },
   "external_checkpoint": {
     "run": "20261112T025126577365Z",
     "iterations": {
-      "342": 42,
-      "343": 42,
-      "344": 42
+      "342": 60,
+      "343": 60,
+      "344": 60
     },
-    "recorded_at": "2026-11-12T03:15:27.100176+00:00",
+    "recorded_at": "2026-11-12T03:22:33.205386+00:00",
     "verified_size": true,
     "verified_private": true
   },
