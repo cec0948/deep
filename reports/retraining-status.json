@@ -1,43 +1,43 @@
 {
-  "observed_utc": "2026-11-12T03:17:42.388087+00:00",
+  "observed_utc": "2026-11-12T03:18:13.626748+00:00",
   "run": "20261112T025126577365Z",
-  "phase": "training",
+  "phase": "evaluating",
   "target_iterations": 60,
   "supervisor_alive": true,
   "seeds": {
     "342": {
-      "iteration": 59,
-      "checkpoint": 54,
+      "iteration": 60,
+      "checkpoint": 60,
       "quality": {
-        "weighted_tv": 0.04124776136068748,
+        "weighted_tv": 0.008771381256187323,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -72.60806566584053,
-          -3.873283886179489,
-          5.0653163963063905,
-          2.817680449978704,
+          -71.24508458171816,
+          -2.075377614505029,
+          4.910317740686232,
+          2.7056370712873212,
           0.0
         ]
       },
-      "iteration_seconds": 26.63808766999955
+      "iteration_seconds": 27.18598987400037
     },
     "343": {
-      "iteration": 59,
-      "checkpoint": 54,
+      "iteration": 60,
+      "checkpoint": 60,
       "quality": {
-        "weighted_tv": 0.04920055893214587,
+        "weighted_tv": 0.07609518464970444,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -52.232722296593565,
-          -1.6489567598704238,
-          -2.908733949135959,
-          4.791894581937487,
+          -48.276321565557716,
+          2.0535500191417215,
+          -2.196562344246255,
+          4.634783284169044,
           0.0
         ]
       },
-      "iteration_seconds": 26.90815511799974
+      "iteration_seconds": 27.300551484000607
     },
     "344": {
       "iteration": 60,
@@ -58,10 +58,10 @@
     }
   },
   "evaluation": {
-    "completed": 21,
+    "completed": 22,
     "failed": 0,
-    "pending": 17,
-    "running": 1
+    "pending": 14,
+    "running": 3
   },
   "external_checkpoint": {
     "run": "20261112T025126577365Z",
