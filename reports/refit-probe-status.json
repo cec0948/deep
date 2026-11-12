@@ -1,0 +1,22 @@
+{
+  "observed_utc": "2026-11-12T04:40:23.796081+00:00",
+  "run": "20261112T043945051666Z",
+  "status": "running",
+  "phase": "evaluating",
+  "supervisor_alive": true,
+  "completed_evaluations": 0,
+  "planned_evaluations": 27,
+  "finished_fits": [
+    "fit/342",
+    "fit/343",
+    "fit/344"
+  ],
+  "parent_iteration": 120,
+  "artifact_kind": "derived-offline-refit",
+  "resumable_selfplay": false,
+  "plan_sha256": "51b552194d214cced2fab743189cfd4387e94defe3e3a2ce2c93cec12d7c3926",
+  "limitations": [
+    "Timestamped observation only",
+    "Original self-play remains paused; no model promotion"
+  ]
+}
