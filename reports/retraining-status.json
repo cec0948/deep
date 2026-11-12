@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-12T03:56:33.445642+00:00",
+  "observed_utc": "2026-11-12T03:57:34.719044+00:00",
   "run": "20261112T032318825281Z",
   "phase": "evaluating",
   "target_iterations": 120,
@@ -58,10 +58,10 @@
     }
   },
   "evaluation": {
-    "completed": 37,
+    "completed": 39,
     "failed": 0,
     "pending": 0,
-    "running": 2
+    "running": 0
   },
   "external_checkpoint": {
     "run": "20261112T032318825281Z",
@@ -76,7 +76,151 @@
   },
   "loop_status": "watching",
   "max_iterations": 240,
-  "progress_decision": null,
+  "progress_decision": {
+    "before": 60,
+    "after": 120,
+    "changes": {
+      "noregrets/current": {
+        "mean": -267.09655555555554,
+        "ci95_half_width": 91.34163165926037,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -321.63775,
+            "ci95_half_width": 146.91158033905108
+          },
+          {
+            "seed": 343,
+            "mean": -192.70325,
+            "ci95_half_width": 138.2588199141092
+          },
+          {
+            "seed": 344,
+            "mean": -286.94866666666667,
+            "ci95_half_width": 137.87141170593978
+          }
+        ]
+      },
+      "public/current": {
+        "mean": 41.122638888888886,
+        "ci95_half_width": 34.215168325735945,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 83.63683333333333,
+            "ci95_half_width": 61.93452205620205
+          },
+          {
+            "seed": 343,
+            "mean": 81.00383333333333,
+            "ci95_half_width": 51.73869809024308
+          },
+          {
+            "seed": 344,
+            "mean": -41.27275,
+            "ci95_half_width": 48.17537773394243
+          }
+        ]
+      },
+      "mixed/current": {
+        "mean": -135.14977777777779,
+        "ci95_half_width": 59.77654961099333,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -143.19575,
+            "ci95_half_width": 100.59914838670768
+          },
+          {
+            "seed": 343,
+            "mean": -107.38708333333334,
+            "ci95_half_width": 92.9537651065875
+          },
+          {
+            "seed": 344,
+            "mean": -154.8665,
+            "ci95_half_width": 96.44531427910175
+          }
+        ]
+      },
+      "noregrets/mixture": {
+        "mean": 62.057249999999996,
+        "ci95_half_width": 77.25494656792122,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -24.003000000000004,
+            "ci95_half_width": 138.7488318827034
+          },
+          {
+            "seed": 343,
+            "mean": 47.61883333333333,
+            "ci95_half_width": 127.882037621331
+          },
+          {
+            "seed": 344,
+            "mean": 162.55591666666666,
+            "ci95_half_width": 143.8647015117017
+          }
+        ]
+      },
+      "public/mixture": {
+        "mean": 33.08647222222223,
+        "ci95_half_width": 33.07075615612031,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 41.215583333333335,
+            "ci95_half_width": 59.11173840460686
+          },
+          {
+            "seed": 343,
+            "mean": -0.019916666666666496,
+            "ci95_half_width": 52.86170799728842
+          },
+          {
+            "seed": 344,
+            "mean": 58.063750000000006,
+            "ci95_half_width": 58.473660585275795
+          }
+        ]
+      },
+      "mixed/mixture": {
+        "mean": -19.426972222222222,
+        "ci95_half_width": 55.9311205890263,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -0.40433333333333543,
+            "ci95_half_width": 101.04021664616938
+          },
+          {
+            "seed": 343,
+            "mean": -66.17291666666667,
+            "ci95_half_width": 91.65603679461347
+          },
+          {
+            "seed": 344,
+            "mean": 8.296333333333333,
+            "ci95_half_width": 99.52370742842206
+          }
+        ]
+      }
+    },
+    "conditions": {
+      "public_lower_above_zero": true,
+      "at_least_two_public_seeds_improve": true,
+      "mixed_lower_above_minus_25": false,
+      "noregrets_lower_above_minus_50": false
+    },
+    "recommendation": "pause_and_analyze",
+    "limitations": [
+      "Nominal 95% paired deal-block intervals, conditional on these three trained seeds",
+      "Fixed budget rule, not proof of optimality, professional strength or future improvement",
+      "No model promotion or unbounded automatic training"
+    ],
+    "checker_sha256": "fb5f930c59377ad292fe438e827049f48718c1f681c15e753020d4f4b857a84a"
+  },
   "errors": {},
   "limitations": [
     "Observed at the timestamp, not a guarantee the cloud process remains alive",
