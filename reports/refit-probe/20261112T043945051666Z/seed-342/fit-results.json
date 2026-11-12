@@ -1,0 +1,168 @@
+{
+  "format": "compact-offline-refit-v1",
+  "complete": true,
+  "artifact_kind": "derived-offline-refit",
+  "resumable_selfplay": false,
+  "parent": "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z",
+  "parent_iteration": 120,
+  "seed": 342,
+  "parent_checkpoint_sha256": "b85835c50c7a9eed9d62481ad6fba7fb0517c5e1f8867675ab23f6a05040c5e0",
+  "parent_config": {
+    "revision": "compact-cfr-v4",
+    "method": "compact-opening-expert",
+    "gate_run": "artifacts/retraining-validation/20261112T024258390982Z",
+    "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "iterations": 120,
+    "stages": [
+      120
+    ],
+    "traversals": 256,
+    "buffer_capacity": 100000,
+    "main_steps": 1024,
+    "batch_size": 512,
+    "opening_steps": 2048,
+    "opening_max_steps": 8192,
+    "max_opening_tv": 0.1,
+    "root_repetitions_first": 16,
+    "root_repetitions": 4,
+    "learning_rate": 0.001,
+    "checkpoint_every": 6,
+    "deployment_average": "Every pre-update policy, weight t, selected once per hand independently of cards",
+    "evaluation_fields": [
+      "noregrets",
+      "public",
+      "mixed"
+    ],
+    "evaluation_iterations": [
+      60,
+      120
+    ],
+    "evaluation_deals": 2000,
+    "evaluation_deal_seed": 2026111203,
+    "seconds_per_training_worker": 5400,
+    "promotion": "none",
+    "recovery_validation": "artifacts/retraining-validation/20261112T024258390982Z",
+    "evaluation_baselines": [
+      "public"
+    ],
+    "evaluation_all_stages_fields": true,
+    "extension_from": {
+      "parent": "/workspace/deep/artifacts/compact-v4/20261112T025126577365Z",
+      "iteration": 60,
+      "config_sha256": "5e2419f8970cfa85841f6ce90dbb645a4969faa37a9924fe1f9f8293128b78fa",
+      "checkpoints": {
+        "342": "bcb4947999fe2d9cde3d7c5feb9942d2074e90754d5f5690273f9d5a34cb71db",
+        "343": "bc78c9b827a34b53207cd4053b66bf4073f0d0b18d2f8593e4a3f1c45de4188d",
+        "344": "00eb6e34ffd7f8eef209a6373cc68d9cc8e9655483afd09677b94572602a2f13"
+      }
+    }
+  },
+  "parent_config_sha256": "b37e825ab2ad67ff2bfbe321b48a84c2366b5a45da174da895d267d0f812de4c",
+  "parent_source_manifest_sha256": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb",
+  "script_sha256": "67ba716b7b8359cdf7e0badb521cead1a88a47cc2134d877882dc6fa4cc7334f",
+  "extra_steps": 3072,
+  "fit_seed": 2026111542,
+  "diagnostic_seed": 2027111542,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "replay_rows": [
+    100000,
+    100000,
+    100000,
+    100000,
+    100000,
+    100000
+  ],
+  "new_selfplay_samples": 0,
+  "started_utc": "2026-11-12T04:39:49.919775+00:00",
+  "limitations": [
+    "Diagnostics are training-fit measurements on frozen replay, not held-out poker strength",
+    "Candidate is an offline main-expert refit; it cannot resume the original self-play trajectory",
+    "No default-model promotion and no change to continuation criteria"
+  ],
+  "before": {
+    "fixed_training_sample_size": 16384,
+    "normalized_training_mse": 0.8603372573852539,
+    "zero_predictor_mse": 1.0011026859283447,
+    "training_mse_over_zero": 0.8593896205437148,
+    "unraised_preflop_conditional_target_tv": 0.5742611371928604,
+    "unraised_preflop_by_group": {
+      "0": {
+        "inputs": 404,
+        "conditional_target_tv": 0.6129983317033193
+      },
+      "1": {
+        "inputs": 398,
+        "conditional_target_tv": 0.6046952314712294
+      },
+      "2": {
+        "inputs": 241,
+        "conditional_target_tv": 0.5380912534428827
+      },
+      "4": {
+        "inputs": 323,
+        "conditional_target_tv": 0.5288360303631138
+      },
+      "5": {
+        "inputs": 392,
+        "conditional_target_tv": 0.5866848389837566
+      }
+    },
+    "positive_regret_absent_fraction": 0.2169189453125
+  },
+  "refit_mean_loss": 0.7928869538979294,
+  "after": {
+    "fixed_training_sample_size": 16384,
+    "normalized_training_mse": 0.72773277759552,
+    "zero_predictor_mse": 1.0011026859283447,
+    "training_mse_over_zero": 0.7269312007895347,
+    "unraised_preflop_conditional_target_tv": 0.5021886916347019,
+    "unraised_preflop_by_group": {
+      "0": {
+        "inputs": 404,
+        "conditional_target_tv": 0.517932391112283
+      },
+      "1": {
+        "inputs": 398,
+        "conditional_target_tv": 0.5292906465228815
+      },
+      "2": {
+        "inputs": 241,
+        "conditional_target_tv": 0.451729802229283
+      },
+      "4": {
+        "inputs": 323,
+        "conditional_target_tv": 0.4872304434446912
+      },
+      "5": {
+        "inputs": 392,
+        "conditional_target_tv": 0.5247601748643709
+      }
+    },
+    "positive_regret_absent_fraction": 0.23175048828125
+  },
+  "opening_unchanged": true,
+  "scales_unchanged": true,
+  "parent_checkpoint_unchanged": true,
+  "files": {
+    "candidate.npz": {
+      "bytes": 1184435,
+      "sha256": "21e1a424a7163caabfb07ae22927653c75884d09354c187634113b0e408fe63c"
+    },
+    "candidate.pt": {
+      "bytes": 1185916,
+      "sha256": "966fd66bcc75049b7a5b965539f10a6f2f7f11e6ffb61f4768e4577e401c5e67"
+    },
+    "source-manifest.json": {
+      "bytes": 2573,
+      "sha256": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb"
+    }
+  },
+  "seconds": 29.426649664999786,
+  "completed_utc": "2026-11-12T04:40:19.346481+00:00"
+}

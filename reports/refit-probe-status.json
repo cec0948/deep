@@ -1,22 +1,52 @@
 {
-  "observed_utc": "2026-11-12T04:40:23.796081+00:00",
+  "observed_utc": "2026-11-12T04:48:56.833282+00:00",
   "run": "20261112T043945051666Z",
-  "status": "running",
-  "phase": "evaluating",
-  "supervisor_alive": true,
-  "completed_evaluations": 0,
+  "status": "complete",
+  "phase": "complete",
+  "supervisor_alive": false,
+  "completed_evaluations": 27,
   "planned_evaluations": 27,
-  "finished_fits": [
-    "fit/342",
-    "fit/343",
-    "fit/344"
-  ],
+  "total_hands": 324000,
   "parent_iteration": 120,
   "artifact_kind": "derived-offline-refit",
   "resumable_selfplay": false,
   "plan_sha256": "51b552194d214cced2fab743189cfd4387e94defe3e3a2ce2c93cec12d7c3926",
+  "decisions": {
+    "mixture": {
+      "conditions": {
+        "public_lower_above_zero": false,
+        "at_least_two_public_seeds_improve": false,
+        "mixed_lower_above_minus_25": true,
+        "noregrets_lower_above_minus_50": true
+      },
+      "original_four_conditions_pass": false,
+      "deployment_authorized": false
+    },
+    "refit": {
+      "conditions": {
+        "public_lower_above_zero": false,
+        "at_least_two_public_seeds_improve": false,
+        "mixed_lower_above_minus_25": true,
+        "noregrets_lower_above_minus_50": true
+      },
+      "original_four_conditions_pass": false,
+      "deployment_authorized": false
+    }
+  },
+  "next_action": "paused_for_analysis; no automatic retrial or model promotion",
   "limitations": [
-    "Timestamped observation only",
-    "Original self-play remains paused; no model promotion"
-  ]
+    "Exploratory two-candidate comparison; nominal intervals are not multiplicity-adjusted",
+    "Shared cards are one block across seeds, not independent seed-by-deal samples",
+    "Fixed trained seeds and a fixed two-model opponent pool",
+    "No automatic model promotion, self-play continuation, or professional-strength claim"
+  ],
+  "external_backup": {
+    "kind": "derived-policy-probe",
+    "run": "20261112T043945051666Z",
+    "recorded_at": "2026-11-12T04:48:56.831653+00:00",
+    "verified_remote_size": true,
+    "verified_owner_only": true,
+    "remote_checksum_available": false,
+    "resumable_selfplay": false
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "purpose": "Frozen 120-round replay: test main-network underfitting without new self-play or promotion",
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "extra_steps": 3072,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "evaluation_deals": 2000,
+  "evaluation_deal_seed": 2026120000,
+  "evaluation_fields": [
+    "public",
+    "mixed",
+    "noregrets"
+  ],
+  "variants": [
+    "current",
+    "mixture",
+    "refit"
+  ],
+  "parallelism": 3,
+  "promotion": "none",
+  "criteria": "Original four progress conditions applied to each candidate minus current120, with shared deal blocks averaged across seeds before computing intervals",
+  "limitations": [
+    "Two exploratory candidates; nominal intervals have no multiple-comparison correction",
+    "Fit diagnostics use training replay and do not establish poker strength",
+    "A positive probe requires subsequent independent validation before production changes"
+  ]
+}
