@@ -67,3 +67,5 @@ Drive 업로드 도구의 파일당 한도는 100 MiB다. 큰 archive는 64 MiB 
 ## 사용자 승인 후 추가 자기 대전 연구
 
 사용자는 이후 평가 카드 수를10배로 늘리고 방법 점검 후 계속 학습하도록 명시적으로 승인했다. 별도 고정 예산 계획은 [추가 학습 곡선 연구](retraining-learning-curve-20261112.md), 진행 기록은 `reports/continuation-study-status.json`이다. 원본120회에서 실제 새 자기 대전을180·240회까지 진행하고20,000개 새 카드로 평가한다. 기존 controller·원본registry는 분석 대기로 유지하며 새 연구는 `artifacts/continuation-study/current.json`으로 추적한다. 앞서 완료한 고정replay 파생 후보와 구분한다.
+
+이 별도 연구는2026-11-12 18:27 KST에240회 학습과54셀·648만 핸드 평가를 모두 완료했다. 최신240회는 원본 최신120회 대비 혼합·NoRegrets 성적이 개선됐지만 공개 상대 차이는−3.16bb/100(명목95% 구간−12.47~+6.15)으로 개선 조건을 충족하지 못했다. 계획한240회에서 종료했고 자동 연장·모델 교체는 하지 않는다. 마지막 검증 완료 비공개 복구본은 전체240회이며 보존량은약1.86GiB다. 상세 수치와 백업 범위는 위 연구 문서에 기록한다. 기존 `reports/retraining-status.json`은 원래120회 실행 기록이고 별도 연구의 현재 상태는 `reports/continuation-study-status.json`을 따른다.

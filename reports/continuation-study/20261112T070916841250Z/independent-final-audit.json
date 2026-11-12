@@ -1,0 +1,46 @@
+{
+  "observed_utc": "2026-11-12T10:20:54+00:00",
+  "run": "20261112T070916841250Z",
+  "scope": "Independent read-only audit of completed fixed-budget self-play study; no new training or evaluation matches",
+  "passed": true,
+  "completed_utc": "2026-11-12T09:27:57.412204+00:00",
+  "raw_cells_verified": 54,
+  "raw_hands_verified": 6480000,
+  "independent_card_blocks": 20000,
+  "paired_comparisons_recomputed": 33,
+  "numeric_comparison_absolute_tolerance": 1e-08,
+  "checks": {
+    "deal_and_seat_coverage": true,
+    "finite_zero_sum_payoffs": true,
+    "deterministic_seeds_and_mixture_selections": true,
+    "reported_metrics_match_raw": true,
+    "source_policy_and_result_provenance": true,
+    "fresh_card_range_disjoint_from_17_prior_ranges": true,
+    "original_registries_unchanged": true,
+    "all_four_candidate_decisions_recomputed": true,
+    "no_pending_or_running_cells": true,
+    "no_active_study_training_or_evaluation_process": true,
+    "no_recorded_execution_failure": true
+  },
+  "candidate_adoption": {
+    "current-180": false,
+    "mixture-180": false,
+    "current-240": false,
+    "mixture-240": false
+  },
+  "source_evidence_sha256": {
+    "plan.json": "fea2187fe3477c03a88b7a058318bbb36ef5e8a80eb01b6153cf05ec69034f8a",
+    "evaluation-plan.json": "ec3938895445c1e42031b9a1536b2c78cbbde8574214ae2bef705d302b1ce79a",
+    "status.json": "b5fdd5e31909590faf0783bedb1b2921eddcc144db16501538112eb892f4a824",
+    "evaluation-status.json": "6ea9fc0c10ba3c86b9f9cb2328ab30108e0bbfaaeeabf61f387f556fb7634573",
+    "evaluation-summary.json": "76f4a7749f1e5b90ac6827bc2b8fdfb4aa46550d9230cb2df3840bf84b958699",
+    "summary.json": "88b3444ab9091be0b878746e23a95c7e3fe549bf48302683d5bbb734f1b3ff51"
+  },
+  "limitations": [
+    "Intervals are nominal95%, conditional on three fixed training seeds and fixed opponents; no multiplicity adjustment",
+    "Current240 public difference versus current120 includes zero; neither improvement nor worsening is established",
+    "Current240 mixed and NoRegrets gains are heavily concentrated in seed344",
+    "Completed authorized240-round budget; no automatic retry, extension or model promotion",
+    "This evaluation audit does not verify remote Drive checksums or place raw evaluation logs in the full240 training backup"
+  ]
+}

@@ -1,13 +1,13 @@
 {
-  "observed_utc": "2026-11-12T08:49:39.786939+00:00",
+  "observed_utc": "2026-11-12T10:20:07.450610+00:00",
   "run": "20261112T070916841250Z",
-  "status": "running",
-  "phase": "evaluating",
-  "recorded_status": "running",
-  "recorded_phase": "evaluating",
-  "status_updated_utc": "2026-11-12T08:49:37.084280+00:00",
-  "status_age_seconds": 2.702659,
-  "supervisor_alive": true,
+  "status": "complete",
+  "phase": "complete",
+  "recorded_status": "complete",
+  "recorded_phase": "complete",
+  "status_updated_utc": "2026-11-12T09:27:57.414132+00:00",
+  "status_age_seconds": 3130.036478,
+  "supervisor_alive": false,
   "liveness_evidence": "Matching registry/status PID, non-zombie /proc start token, runner command and output argument",
   "plan_sha256": "fea2187fe3477c03a88b7a058318bbb36ef5e8a80eb01b6153cf05ec69034f8a",
   "source_provenance_verified": true,
@@ -44,7 +44,7 @@
     "180": {
       "iteration": 180,
       "checkpoint_verified": true,
-      "evaluation_complete": false,
+      "evaluation_complete": true,
       "local_snapshot_verified": true,
       "external_backup": null,
       "local_snapshot_bytes": 786537648
@@ -52,7 +52,7 @@
     "240": {
       "iteration": 240,
       "checkpoint_verified": true,
-      "evaluation_complete": false,
+      "evaluation_complete": true,
       "local_snapshot_verified": true,
       "external_backup": {
         "kind": "training-checkpoint",
@@ -74,23 +74,67 @@
     }
   },
   "training_complete": true,
-  "study_complete": false,
+  "study_complete": true,
   "evaluation": {
-    "recorded_status": "running",
-    "completed_evaluations": 31,
+    "recorded_status": "complete",
+    "completed_evaluations": 54,
     "planned_evaluations": 54,
-    "verified_hands": 3720000,
-    "completed_checkpoint_evaluations": [],
+    "verified_hands": 6480000,
+    "completed_checkpoint_evaluations": [
+      180,
+      240
+    ],
     "evaluation_plan_sha256": "ec3938895445c1e42031b9a1536b2c78cbbde8574214ae2bef705d302b1ce79a",
-    "status_updated_utc": "2026-11-12T08:49:38.437496+00:00",
-    "evaluator_alive": true,
-    "observed_status": "running"
+    "status_updated_utc": "2026-11-12T09:27:50.230256+00:00",
+    "evaluator_alive": false,
+    "observed_status": "complete"
   },
-  "completed_evaluations": 31,
+  "completed_evaluations": 54,
   "planned_evaluations": 54,
   "planned_hands": 6480000,
   "independent_card_blocks": 20000,
-  "adoption_decisions": {},
+  "adoption_decisions": {
+    "current-180": {
+      "conditions": {
+        "public_lower_above_zero": false,
+        "at_least_two_public_seeds_improve": true,
+        "mixed_lower_above_minus_25": true,
+        "noregrets_lower_above_minus_50": true
+      },
+      "original_four_conditions_pass": false,
+      "deployment_authorized": false
+    },
+    "current-240": {
+      "conditions": {
+        "public_lower_above_zero": false,
+        "at_least_two_public_seeds_improve": false,
+        "mixed_lower_above_minus_25": true,
+        "noregrets_lower_above_minus_50": true
+      },
+      "original_four_conditions_pass": false,
+      "deployment_authorized": false
+    },
+    "mixture-180": {
+      "conditions": {
+        "public_lower_above_zero": false,
+        "at_least_two_public_seeds_improve": false,
+        "mixed_lower_above_minus_25": true,
+        "noregrets_lower_above_minus_50": true
+      },
+      "original_four_conditions_pass": false,
+      "deployment_authorized": false
+    },
+    "mixture-240": {
+      "conditions": {
+        "public_lower_above_zero": false,
+        "at_least_two_public_seeds_improve": false,
+        "mixed_lower_above_minus_25": true,
+        "noregrets_lower_above_minus_50": true
+      },
+      "original_four_conditions_pass": false,
+      "deployment_authorized": false
+    }
+  },
   "external_checkpoint": {
     "kind": "training-checkpoint",
     "run": "20261112T070916841250Z",
@@ -116,5 +160,6 @@
     "Fixed opponents and three seeds do not establish professional strength or general robustness",
     "Off-site backup facts come from the private index; this publisher makes no remote metadata or checksum request"
   ],
-  "next_action": "Observe the existing fixed-budget study; do not start a duplicate"
+  "total_hands": 6480000,
+  "next_action": "Analyze completed fixed-budget study; no automatic promotion, retry or extension"
 }
