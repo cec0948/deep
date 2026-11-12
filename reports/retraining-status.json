@@ -1,60 +1,60 @@
 {
-  "observed_utc": "2026-11-12T03:01:51.119092+00:00",
+  "observed_utc": "2026-11-12T03:02:53.124354+00:00",
   "run": "20261112T025126577365Z",
   "phase": "training",
   "target_iterations": 60,
   "supervisor_alive": true,
   "seeds": {
     "342": {
-      "iteration": 24,
+      "iteration": 26,
       "checkpoint": 24,
       "quality": {
-        "weighted_tv": 0.034968333967281565,
+        "weighted_tv": 0.058098963374074775,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -62.440180171111095,
-          5.8359239955555875,
-          7.50172399555559,
-          7.239013578888921,
+          -76.1999329423016,
+          0.6703127841941543,
+          6.750505091886463,
+          9.371315277071645,
           0.0
         ]
       },
-      "iteration_seconds": 24.56791829699978
+      "iteration_seconds": 26.587391097000364
     },
     "343": {
-      "iteration": 24,
+      "iteration": 26,
       "checkpoint": 24,
       "quality": {
-        "weighted_tv": 0.06125391249693146,
+        "weighted_tv": 0.055520124302055336,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -85.21566907556908,
-          9.01306425776423,
-          -18.090887825569098,
-          3.488237174430898,
+          -75.12677507397639,
+          8.069179341978005,
+          -8.894148649474982,
+          8.441734541408207,
           0.0
         ]
       },
-      "iteration_seconds": 24.027824666000015
+      "iteration_seconds": 25.30669353200028
     },
     "344": {
-      "iteration": 24,
+      "iteration": 27,
       "checkpoint": 24,
       "quality": {
-        "weighted_tv": 0.04094506549141118,
+        "weighted_tv": 0.04867605031496737,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -59.803137972191315,
-          1.6049599444753584,
-          -0.6615567221913004,
-          10.461289111142026,
+          -68.72362430262781,
+          1.2652761603351437,
+          1.0927827740917635,
+          10.245167033351017,
           0.0
         ]
       },
-      "iteration_seconds": 26.037260848000187
+      "iteration_seconds": 25.64752164499987
     }
   },
   "evaluation": {
@@ -63,7 +63,17 @@
     "pending": 36,
     "running": 0
   },
-  "external_checkpoint": null,
+  "external_checkpoint": {
+    "run": "20261112T025126577365Z",
+    "iterations": {
+      "342": 6,
+      "343": 6,
+      "344": 6
+    },
+    "recorded_at": "2026-11-12T03:02:49.258772+00:00",
+    "verified_size": true,
+    "verified_private": true
+  },
   "loop_status": "watching",
   "max_iterations": 240,
   "progress_decision": null,
