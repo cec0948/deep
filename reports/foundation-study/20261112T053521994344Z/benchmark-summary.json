@@ -1,0 +1,35 @@
+{
+  "initial_uniform_exploitability": 2.373611111111111,
+  "tabular_final_exploitability": 0.02150720912667381,
+  "neural_final_exploitability": {
+    "71": {
+      "current": 1.932365305444316,
+      "realized_average": 0.6312819511001067,
+      "fitted_average": 0.6908229684900364
+    },
+    "72": {
+      "current": 1.273173979673603,
+      "realized_average": 0.6647595150406824,
+      "fitted_average": 0.6590047114842297
+    },
+    "73": {
+      "current": 1.4598865558850718,
+      "realized_average": 0.6842216291401885,
+      "fitted_average": 0.6959249775400747
+    }
+  },
+  "checks": {
+    "tabular_final_at_most_tenth_uniform": true,
+    "every_realized_average_at_most_half_uniform": true,
+    "every_fitted_average_at_most_half_uniform": true
+  },
+  "all_reference_checks_pass": true,
+  "saved_policy_metrics_recomputed": true,
+  "six_player_adoption_authorized": false,
+  "interpretation": "Fixed-budget two-player Leduc reference checks; no requirement for every checkpoint to improve",
+  "limitations": [
+    "This reduced-budget reference benchmark does not validate the compact six-player architecture",
+    "Realized average quality and strategy-network fitting quality are separate measurements",
+    "A failed check is retained without automatic rerun or changed criteria"
+  ]
+}

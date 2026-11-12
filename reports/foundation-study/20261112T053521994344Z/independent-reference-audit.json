@@ -1,0 +1,1079 @@
+{
+  "audit_utc": "2026-11-12T05:44:19.997959+00:00",
+  "run": "20261112T053521994344Z",
+  "audit_scope": "Independent read-only six-player reference evaluation validation; no rerun of training or game engine",
+  "complete": true,
+  "completed_evaluations": 27,
+  "raw_hands_checked": 324000,
+  "study_frozen_files_checked": 446,
+  "unique_frozen_files_including_evaluation_plans_checked": 446,
+  "trace_hands_checked": 324,
+  "mixture_selection_hands_checked": 108000,
+  "mixture_snapshot_files_checked": 360,
+  "plan_sha256": "f96635fa1f88ca1d104e528eff508aebc783fff84643e065a273ab97ee26ee0b",
+  "summary_sha256": "0c0c640767d3bdfce7de47f0659c7514fcde4963f0bbfb2cb44fb17a585e6afe",
+  "code_hashes": {
+    "evaluator_sha256": "f53f88ee630522f34caf999237353e2b895f9d38b69c5c2cbb1b2260291d1805",
+    "runtime_sha256": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+    "engine_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+    "source_features_sha256": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "opponent_source_sha256": "b3a90569d56667366a93428f897b9d98df0585012794d442e027df010896350f"
+  },
+  "card_range_start_inclusive": 2026140000,
+  "card_range_end_exclusive": 2026142000,
+  "prior_ranges_checked": 13,
+  "overlap_with_recorded_prior_ranges": 0,
+  "independent_checks": [
+    "All frozen source/model hashes match preregistration and evaluation plans",
+    "Every raw deal/hero record ordered, complete, zero-sum, within payoff bounds, and on planned card and hand-seed schedules",
+    "All mixture manifests contain iterations 1..120 weighted by iteration, all member hashes match, and every sampled iteration matches the deterministic per-hand stream",
+    "All raw deal blocks, per-seat results, per-context counts and payoffs, aggregate hero action counts, and nominal intervals independently reproduced",
+    "All absolute and paired statistics reproduce published summary after averaging the three model seeds within each shared card block",
+    "All 324 traces match corresponding raw records; trace action legality and price/SPR context labels checked"
+  ],
+  "statistical_unit": "2000 independent scheduled deal blocks; six hero seats and three model seeds averaged inside each block; bb/100 equals chips per hand with 100 chips per big blind",
+  "absolute_scores": {
+    "calling-station/current60": {
+      "mean": 230.13925,
+      "ci95_half_width": 112.35086295249833,
+      "lower": 117.78838704750167,
+      "upper": 342.49011295249835,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 887.6541666666667,
+          "ci95_half_width": 183.36887299133113,
+          "lower": 704.2852936753355,
+          "upper": 1071.0230396579977
+        },
+        {
+          "seed": 343,
+          "mean": 279.52708333333334,
+          "ci95_half_width": 179.51995021385468,
+          "lower": 100.00713311947865,
+          "upper": 459.047033547188
+        },
+        {
+          "seed": 344,
+          "mean": -476.7635,
+          "ci95_half_width": 152.02694590476705,
+          "lower": -628.790445904767,
+          "upper": -324.736554095233
+        }
+      ]
+    },
+    "calling-station/current120": {
+      "mean": 782.6038333333333,
+      "ci95_half_width": 89.22079319179154,
+      "lower": 693.3830401415418,
+      "upper": 871.8246265251249,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 1156.5041666666666,
+          "ci95_half_width": 140.04926991077554,
+          "lower": 1016.454896755891,
+          "upper": 1296.5534365774422
+        },
+        {
+          "seed": 343,
+          "mean": 440.15208333333334,
+          "ci95_half_width": 126.45891193786764,
+          "lower": 313.6931713954657,
+          "upper": 566.610995271201
+        },
+        {
+          "seed": 344,
+          "mean": 751.15525,
+          "ci95_half_width": 112.78769221969092,
+          "lower": 638.3675577803091,
+          "upper": 863.942942219691
+        }
+      ]
+    },
+    "calling-station/mixture120": {
+      "mean": 788.5034722222222,
+      "ci95_half_width": 114.52659491912995,
+      "lower": 673.9768773030922,
+      "upper": 903.0300671413521,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 1054.99475,
+          "ci95_half_width": 174.21143288050607,
+          "lower": 880.783317119494,
+          "upper": 1229.206182880506
+        },
+        {
+          "seed": 343,
+          "mean": 636.84275,
+          "ci95_half_width": 170.12677568861935,
+          "lower": 466.7159743113807,
+          "upper": 806.9695256886193
+        },
+        {
+          "seed": 344,
+          "mean": 673.6729166666667,
+          "ci95_half_width": 154.8644821645039,
+          "lower": 518.8084345021628,
+          "upper": 828.5373988311705
+        }
+      ]
+    },
+    "tight-value/current60": {
+      "mean": -116.76188888888889,
+      "ci95_half_width": 37.093906603055096,
+      "lower": -153.85579549194398,
+      "upper": -79.6679822858338,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -205.98066666666668,
+          "ci95_half_width": 55.58644132138492,
+          "lower": -261.5671079880516,
+          "upper": -150.39422534528177
+        },
+        {
+          "seed": 343,
+          "mean": -70.89083333333333,
+          "ci95_half_width": 48.18693997823464,
+          "lower": -119.07777331156797,
+          "upper": -22.703893355098693
+        },
+        {
+          "seed": 344,
+          "mean": -73.41416666666666,
+          "ci95_half_width": 43.19158453142909,
+          "lower": -116.60575119809576,
+          "upper": -30.222582135237566
+        }
+      ]
+    },
+    "tight-value/current120": {
+      "mean": 0.36488888888888854,
+      "ci95_half_width": 24.281506373717686,
+      "lower": -23.916617484828798,
+      "upper": 24.646395262606575,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -12.911,
+          "ci95_half_width": 34.58745088251416,
+          "lower": -47.49845088251416,
+          "upper": 21.67645088251416
+        },
+        {
+          "seed": 343,
+          "mean": 61.72166666666667,
+          "ci95_half_width": 36.09901187885627,
+          "lower": 25.622654787810404,
+          "upper": 97.82067854552294
+        },
+        {
+          "seed": 344,
+          "mean": -47.716,
+          "ci95_half_width": 32.07360266336257,
+          "lower": -79.78960266336257,
+          "upper": -15.64239733663743
+        }
+      ]
+    },
+    "tight-value/mixture120": {
+      "mean": -78.21269444444444,
+      "ci95_half_width": 31.811146716927002,
+      "lower": -110.02384116137144,
+      "upper": -46.40154772751744,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -93.871,
+          "ci95_half_width": 43.425211293200626,
+          "lower": -137.29621129320063,
+          "upper": -50.44578870679937
+        },
+        {
+          "seed": 343,
+          "mean": -35.86108333333333,
+          "ci95_half_width": 41.06175770611668,
+          "lower": -76.92284103945002,
+          "upper": 5.200674372783347
+        },
+        {
+          "seed": 344,
+          "mean": -104.906,
+          "ci95_half_width": 44.86404788019812,
+          "lower": -149.77004788019812,
+          "upper": -60.041952119801884
+        }
+      ]
+    },
+    "pressure/current60": {
+      "mean": 790.5336111111111,
+      "ci95_half_width": 144.45777947043848,
+      "lower": 646.0758316406726,
+      "upper": 934.9913905815496,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 758.60625,
+          "ci95_half_width": 169.2268138086687,
+          "lower": 589.3794361913314,
+          "upper": 927.8330638086687
+        },
+        {
+          "seed": 343,
+          "mean": 833.8923333333333,
+          "ci95_half_width": 193.279221039839,
+          "lower": 640.6131122934944,
+          "upper": 1027.1715543731723
+        },
+        {
+          "seed": 344,
+          "mean": 779.10225,
+          "ci95_half_width": 189.33548203354178,
+          "lower": 589.7667679664582,
+          "upper": 968.4377320335418
+        }
+      ]
+    },
+    "pressure/current120": {
+      "mean": 453.1111666666667,
+      "ci95_half_width": 132.07674409235298,
+      "lower": 321.0344225743137,
+      "upper": 585.1879107590197,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 563.60925,
+          "ci95_half_width": 179.43424247050763,
+          "lower": 384.17500752949235,
+          "upper": 743.0434924705075
+        },
+        {
+          "seed": 343,
+          "mean": 694.2520833333333,
+          "ci95_half_width": 176.16933340608426,
+          "lower": 518.0827499272491,
+          "upper": 870.4214167394175
+        },
+        {
+          "seed": 344,
+          "mean": 101.47216666666667,
+          "ci95_half_width": 160.57429051412842,
+          "lower": -59.102123847461755,
+          "upper": 262.0464571807951
+        }
+      ]
+    },
+    "pressure/mixture120": {
+      "mean": 545.4751111111111,
+      "ci95_half_width": 131.84816057728514,
+      "lower": 413.62695053382595,
+      "upper": 677.3232716883963,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 513.2111666666667,
+          "ci95_half_width": 172.88234043915634,
+          "lower": 340.3288262275104,
+          "upper": 686.093507105823
+        },
+        {
+          "seed": 343,
+          "mean": 626.2690833333334,
+          "ci95_half_width": 179.69232035050157,
+          "lower": 446.5767629828318,
+          "upper": 805.961403683835
+        },
+        {
+          "seed": 344,
+          "mean": 496.94508333333334,
+          "ci95_half_width": 180.17279934032555,
+          "lower": 316.7722839930078,
+          "upper": 677.1178826736589
+        }
+      ]
+    }
+  },
+  "paired_changes": {
+    "calling-station/current120-minus-current60": {
+      "mean": 552.4645833333334,
+      "ci95_half_width": 114.25127437693102,
+      "lower": 438.2133089564024,
+      "upper": 666.7158577102645,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 268.85,
+          "ci95_half_width": 192.9376298715958,
+          "lower": 75.91237012840423,
+          "upper": 461.7876298715958
+        },
+        {
+          "seed": 343,
+          "mean": 160.625,
+          "ci95_half_width": 198.31927303482948,
+          "lower": -37.69427303482948,
+          "upper": 358.9442730348295
+        },
+        {
+          "seed": 344,
+          "mean": 1227.91875,
+          "ci95_half_width": 174.77035404232268,
+          "lower": 1053.1483959576774,
+          "upper": 1402.6891040423227
+        }
+      ]
+    },
+    "calling-station/mixture120-minus-current120": {
+      "mean": 5.899638888888891,
+      "ci95_half_width": 103.85844598505491,
+      "lower": -97.95880709616603,
+      "upper": 109.7580848739438,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -101.50941666666668,
+          "ci95_half_width": 179.6766756503866,
+          "lower": -281.1860923170533,
+          "upper": 78.16725898371993
+        },
+        {
+          "seed": 343,
+          "mean": 196.6906666666667,
+          "ci95_half_width": 183.43756062723477,
+          "lower": 13.253106039431913,
+          "upper": 380.12822729390143
+        },
+        {
+          "seed": 344,
+          "mean": -77.48233333333333,
+          "ci95_half_width": 157.97146431862492,
+          "lower": -235.45379765195827,
+          "upper": 80.4891309852916
+        }
+      ]
+    },
+    "tight-value/current120-minus-current60": {
+      "mean": 117.12677777777778,
+      "ci95_half_width": 30.96218395445512,
+      "lower": 86.16459382332266,
+      "upper": 148.0889617322329,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 193.06966666666668,
+          "ci95_half_width": 56.22516779465723,
+          "lower": 136.84449887200944,
+          "upper": 249.29483446132392
+        },
+        {
+          "seed": 343,
+          "mean": 132.6125,
+          "ci95_half_width": 48.161460844159954,
+          "lower": 84.45103915584005,
+          "upper": 180.77396084415997
+        },
+        {
+          "seed": 344,
+          "mean": 25.69816666666667,
+          "ci95_half_width": 47.339826646908215,
+          "lower": -21.641659980241545,
+          "upper": 73.03799331357489
+        }
+      ]
+    },
+    "tight-value/mixture120-minus-current120": {
+      "mean": -78.57758333333334,
+      "ci95_half_width": 27.517360915803874,
+      "lower": -106.09494424913721,
+      "upper": -51.06022241752946,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -80.96,
+          "ci95_half_width": 44.834869224854096,
+          "lower": -125.7948692248541,
+          "upper": -36.1251307751459
+        },
+        {
+          "seed": 343,
+          "mean": -97.58275,
+          "ci95_half_width": 42.243374824847166,
+          "lower": -139.82612482484717,
+          "upper": -55.33937517515284
+        },
+        {
+          "seed": 344,
+          "mean": -57.19,
+          "ci95_half_width": 49.47730738253907,
+          "lower": -106.66730738253906,
+          "upper": -7.712692617460931
+        }
+      ]
+    },
+    "pressure/current120-minus-current60": {
+      "mean": -337.42244444444447,
+      "ci95_half_width": 127.83746225495273,
+      "lower": -465.2599066993972,
+      "upper": -209.58498218949174,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -194.99699999999999,
+          "ci95_half_width": 200.6532843340236,
+          "lower": -395.6502843340236,
+          "upper": 5.65628433402361
+        },
+        {
+          "seed": 343,
+          "mean": -139.64024999999998,
+          "ci95_half_width": 196.78632515311992,
+          "lower": -336.42657515311987,
+          "upper": 57.14607515311994
+        },
+        {
+          "seed": 344,
+          "mean": -677.6300833333333,
+          "ci95_half_width": 204.33389619952655,
+          "lower": -881.9639795328599,
+          "upper": -473.2961871338068
+        }
+      ]
+    },
+    "pressure/mixture120-minus-current120": {
+      "mean": 92.36394444444444,
+      "ci95_half_width": 116.68124828716013,
+      "lower": -24.31730384271569,
+      "upper": 209.04519273160457,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -50.398083333333346,
+          "ci95_half_width": 197.27047443870856,
+          "lower": -247.6685577720419,
+          "upper": 146.87239110537521
+        },
+        {
+          "seed": 343,
+          "mean": -67.98300000000002,
+          "ci95_half_width": 189.70568135309605,
+          "lower": -257.68868135309606,
+          "upper": 121.72268135309604
+        },
+        {
+          "seed": 344,
+          "mean": 395.47291666666666,
+          "ci95_half_width": 199.684815253927,
+          "lower": 195.78810141273965,
+          "upper": 595.1577319205937
+        }
+      ]
+    }
+  },
+  "descriptive_contexts": {
+    "calling-station/current60": {
+      "hands": 36000,
+      "hero_action_events_per_hand": {
+        "fold": 0.2980555555555556,
+        "check": 0.8550555555555556,
+        "call": 0.25430555555555556,
+        "raise": 1.4719166666666668
+      },
+      "unique_hand_fractions": {
+        "acted_on_flop": 0.7019444444444445,
+        "acted_on_turn": 0.6494166666666666,
+        "acted_on_river": 0.5279722222222222,
+        "postflop_low_spr": 0.30816666666666664,
+        "preflop_fold": 0.2980555555555556
+      },
+      "unique_hand_counts": {
+        "acted_on_flop": 25270,
+        "acted_on_turn": 23379,
+        "acted_on_river": 19007,
+        "postflop_low_spr": 11094,
+        "preflop_fold": 10730
+      },
+      "conditional_whole_hand_chips": {
+        "acted_on_flop": 332.64000791452315,
+        "acted_on_turn": 285.11968005475,
+        "acted_on_river": 152.6181406850108,
+        "postflop_low_spr": 764.0932035334415,
+        "preflop_fold": -11.258154706430568
+      }
+    },
+    "tight-value/current60": {
+      "hands": 36000,
+      "hero_action_events_per_hand": {
+        "fold": 0.4836388888888889,
+        "check": 0.38630555555555557,
+        "call": 0.24405555555555555,
+        "raise": 0.7953055555555556
+      },
+      "unique_hand_fractions": {
+        "preflop_fold": 0.4361388888888889,
+        "acted_on_flop": 0.36766666666666664,
+        "acted_on_turn": 0.25344444444444447,
+        "acted_on_river": 0.2031111111111111,
+        "postflop_heads_up": 0.25080555555555556,
+        "postflop_low_spr": 0.059805555555555556,
+        "postflop_high_price": 0.0038055555555555555
+      },
+      "unique_hand_counts": {
+        "preflop_fold": 15701,
+        "acted_on_flop": 13236,
+        "acted_on_turn": 9124,
+        "acted_on_river": 7312,
+        "postflop_heads_up": 9029,
+        "postflop_low_spr": 2153,
+        "postflop_high_price": 137
+      },
+      "conditional_whole_hand_chips": {
+        "preflop_fold": -34.47060696770906,
+        "acted_on_flop": -243.643774554246,
+        "acted_on_turn": -369.46832529592285,
+        "acted_on_river": -295.74165754923416,
+        "postflop_heads_up": -346.39428508140435,
+        "postflop_low_spr": -1481.01300510915,
+        "postflop_high_price": -710.7153284671533
+      }
+    },
+    "pressure/current60": {
+      "hands": 36000,
+      "hero_action_events_per_hand": {
+        "fold": 0.7282222222222222,
+        "check": 0.025694444444444443,
+        "call": 0.45675,
+        "raise": 0.3353055555555556
+      },
+      "unique_hand_fractions": {
+        "preflop_fold": 0.6755,
+        "acted_on_flop": 0.08958333333333333,
+        "postflop_low_spr": 0.07852777777777778,
+        "acted_on_turn": 0.00875,
+        "postflop_high_price": 0.011027777777777777,
+        "acted_on_river": 0.0008611111111111111,
+        "postflop_heads_up": 5.555555555555556e-05
+      },
+      "unique_hand_counts": {
+        "preflop_fold": 24318,
+        "acted_on_flop": 3225,
+        "postflop_low_spr": 2827,
+        "acted_on_turn": 315,
+        "postflop_high_price": 397,
+        "acted_on_river": 31,
+        "postflop_heads_up": 2
+      },
+      "conditional_whole_hand_chips": {
+        "preflop_fold": -168.89546837733366,
+        "acted_on_flop": 2813.5851162790696,
+        "postflop_low_spr": 3212.20799434029,
+        "acted_on_turn": 4799.368253968254,
+        "postflop_high_price": 3544.3954659949623,
+        "acted_on_river": 9612.935483870968,
+        "postflop_heads_up": 10544.0
+      }
+    },
+    "calling-station/current120": {
+      "hands": 36000,
+      "hero_action_events_per_hand": {
+        "fold": 0.5001388888888889,
+        "check": 1.2161111111111111,
+        "call": 0.19302777777777777,
+        "raise": 0.5605
+      },
+      "unique_hand_fractions": {
+        "preflop_fold": 0.5001388888888889,
+        "acted_on_flop": 0.4998611111111111,
+        "acted_on_turn": 0.49372222222222223,
+        "acted_on_river": 0.4761944444444444,
+        "postflop_low_spr": 0.10530555555555556
+      },
+      "unique_hand_counts": {
+        "preflop_fold": 18005,
+        "acted_on_flop": 17995,
+        "acted_on_turn": 17774,
+        "acted_on_river": 17143,
+        "postflop_low_spr": 3791
+      },
+      "conditional_whole_hand_chips": {
+        "preflop_fold": -10.910858094973618,
+        "acted_on_flop": 1576.5594887468742,
+        "acted_on_turn": 1526.9600540114775,
+        "acted_on_river": 1324.749927083941,
+        "postflop_low_spr": 4999.202057504616
+      }
+    },
+    "tight-value/current120": {
+      "hands": 36000,
+      "hero_action_events_per_hand": {
+        "fold": 0.6283611111111111,
+        "check": 0.4106666666666667,
+        "call": 0.19216666666666668,
+        "raise": 0.46441666666666664
+      },
+      "unique_hand_fractions": {
+        "preflop_fold": 0.5896388888888889,
+        "acted_on_flop": 0.276,
+        "acted_on_turn": 0.21163888888888888,
+        "acted_on_river": 0.17166666666666666,
+        "postflop_heads_up": 0.18305555555555555,
+        "postflop_low_spr": 0.03575,
+        "postflop_high_price": 0.003277777777777778
+      },
+      "unique_hand_counts": {
+        "preflop_fold": 21227,
+        "acted_on_flop": 9936,
+        "acted_on_turn": 7619,
+        "acted_on_river": 6180,
+        "postflop_heads_up": 6590,
+        "postflop_low_spr": 1287,
+        "postflop_high_price": 118
+      },
+      "conditional_whole_hand_chips": {
+        "preflop_fold": -27.031422245253687,
+        "acted_on_flop": 72.33967391304348,
+        "acted_on_turn": 80.09174432340203,
+        "acted_on_river": 142.5027508090615,
+        "postflop_heads_up": 53.3597875569044,
+        "postflop_low_spr": -94.7948717948718,
+        "postflop_high_price": 171.07627118644066
+      }
+    },
+    "pressure/current120": {
+      "hands": 36000,
+      "hero_action_events_per_hand": {
+        "fold": 0.7723055555555556,
+        "check": 0.04041666666666666,
+        "call": 0.4191111111111111,
+        "raise": 0.25116666666666665
+      },
+      "unique_hand_fractions": {
+        "acted_on_flop": 0.09080555555555556,
+        "postflop_low_spr": 0.07958333333333334,
+        "preflop_fold": 0.7088888888888889,
+        "acted_on_turn": 0.009055555555555556,
+        "postflop_high_price": 0.010055555555555555,
+        "acted_on_river": 0.0011111111111111111
+      },
+      "unique_hand_counts": {
+        "acted_on_flop": 3269,
+        "postflop_low_spr": 2865,
+        "preflop_fold": 25520,
+        "acted_on_turn": 326,
+        "postflop_high_price": 362,
+        "acted_on_river": 40
+      },
+      "conditional_whole_hand_chips": {
+        "acted_on_flop": 1896.4255123891098,
+        "postflop_low_spr": 2073.028970331588,
+        "preflop_fold": -217.52692006269592,
+        "acted_on_turn": 2647.9263803680983,
+        "postflop_high_price": 1378.0386740331492,
+        "acted_on_river": 2345.925
+      }
+    },
+    "calling-station/mixture120": {
+      "hands": 36000,
+      "hero_action_events_per_hand": {
+        "fold": 0.40375,
+        "check": 0.9856944444444444,
+        "call": 0.18544444444444444,
+        "raise": 1.0833333333333333
+      },
+      "unique_hand_fractions": {
+        "acted_on_flop": 0.59625,
+        "acted_on_turn": 0.5694166666666667,
+        "acted_on_river": 0.4925555555555556,
+        "postflop_low_spr": 0.2421111111111111,
+        "preflop_fold": 0.40375
+      },
+      "unique_hand_counts": {
+        "acted_on_flop": 21465,
+        "acted_on_turn": 20499,
+        "acted_on_river": 17732,
+        "postflop_low_spr": 8716,
+        "preflop_fold": 14535
+      },
+      "conditional_whole_hand_chips": {
+        "acted_on_flop": 1329.856743535989,
+        "acted_on_turn": 1280.324649982926,
+        "acted_on_river": 906.0103203248365,
+        "postflop_low_spr": 2404.6380220284536,
+        "preflop_fold": -10.956312349501204
+      }
+    },
+    "tight-value/mixture120": {
+      "hands": 36000,
+      "hero_action_events_per_hand": {
+        "fold": 0.5128611111111111,
+        "check": 0.4315277777777778,
+        "call": 0.2313888888888889,
+        "raise": 0.7136111111111111
+      },
+      "unique_hand_fractions": {
+        "acted_on_flop": 0.35391666666666666,
+        "acted_on_turn": 0.261,
+        "acted_on_river": 0.20577777777777778,
+        "postflop_heads_up": 0.2456111111111111,
+        "preflop_fold": 0.46702777777777776,
+        "postflop_low_spr": 0.05333333333333334,
+        "postflop_high_price": 0.0034444444444444444
+      },
+      "unique_hand_counts": {
+        "acted_on_flop": 12741,
+        "acted_on_turn": 9396,
+        "acted_on_river": 7408,
+        "postflop_heads_up": 8842,
+        "preflop_fold": 16813,
+        "postflop_low_spr": 1920,
+        "postflop_high_price": 124
+      },
+      "conditional_whole_hand_chips": {
+        "acted_on_flop": -151.55443057844752,
+        "acted_on_turn": -198.91836951894422,
+        "acted_on_river": -120.97205723542116,
+        "postflop_heads_up": -189.93180275955666,
+        "preflop_fold": -31.424611907452565,
+        "postflop_low_spr": -1043.3604166666667,
+        "postflop_high_price": -223.23387096774192
+      }
+    },
+    "pressure/mixture120": {
+      "hands": 36000,
+      "hero_action_events_per_hand": {
+        "fold": 0.7644722222222222,
+        "check": 0.022416666666666668,
+        "call": 0.33891666666666664,
+        "raise": 0.33866666666666667
+      },
+      "unique_hand_fractions": {
+        "preflop_fold": 0.7217222222222223,
+        "acted_on_flop": 0.07175,
+        "postflop_low_spr": 0.06261111111111112,
+        "postflop_high_price": 0.008388888888888888,
+        "acted_on_turn": 0.0069166666666666664,
+        "acted_on_river": 0.0006388888888888889,
+        "postflop_heads_up": 2.777777777777778e-05
+      },
+      "unique_hand_counts": {
+        "preflop_fold": 25982,
+        "acted_on_flop": 2583,
+        "postflop_low_spr": 2254,
+        "postflop_high_price": 302,
+        "acted_on_turn": 249,
+        "acted_on_river": 23,
+        "postflop_heads_up": 1
+      },
+      "conditional_whole_hand_chips": {
+        "preflop_fold": -182.10830575013472,
+        "acted_on_flop": 2023.6821525358112,
+        "postflop_low_spr": 2282.2076308784385,
+        "postflop_high_price": 3743.1291390728475,
+        "acted_on_turn": 4174.100401606425,
+        "acted_on_river": 6709.260869565217,
+        "postflop_heads_up": 10763.0
+      }
+    }
+  },
+  "cells": {
+    "calling-station-seed-342-current60": {
+      "hands": 12000,
+      "candidate_sha256": "35a9573902b4ec45e09b2449a4e5d508bacd91b498498a5e5453df8b8c642d7f",
+      "raw_hands_sha256": "f470f1216ac3570d6d227f01e82edccaed43121ab8a0cdaace5637ae0ef1498f",
+      "traces_sha256": "1914f4fa805545a2879249ebfb264c8157a9239278057013b0fa02cfdf4bb563",
+      "evaluation_plan_sha256": "ca879c196b883cb8fd945471562d03a875264fb523960561738f954887522d23",
+      "unique_selected_iterations": null,
+      "mean": 887.6541666666667
+    },
+    "tight-value-seed-342-current60": {
+      "hands": 12000,
+      "candidate_sha256": "35a9573902b4ec45e09b2449a4e5d508bacd91b498498a5e5453df8b8c642d7f",
+      "raw_hands_sha256": "70ecaef3da34bdbac702ef65acfe369086d15eaf6d0d0b5d313cc396d70ee76f",
+      "traces_sha256": "6e86a503812b1e107e6a2e0149ba0b8b793860e1507bb60f99434dc25909cd57",
+      "evaluation_plan_sha256": "91705d6ebcf9195f69ddd6fce951ff269700848848a86298a911f4da25a78e31",
+      "unique_selected_iterations": null,
+      "mean": -205.98066666666668
+    },
+    "pressure-seed-342-current60": {
+      "hands": 12000,
+      "candidate_sha256": "35a9573902b4ec45e09b2449a4e5d508bacd91b498498a5e5453df8b8c642d7f",
+      "raw_hands_sha256": "a3f3dfb0e603ba9a74fac32b3b785c50a954caa66d10b7ea917460f44650d0ca",
+      "traces_sha256": "0d4f2f8fdf49cb66b047f14dcc4c493c426f8f44efcd487cb6dc271d94b93bec",
+      "evaluation_plan_sha256": "c60125310217609f50f4fb436a8f83789874899db5ca0ed16f0150dde4fbc841",
+      "unique_selected_iterations": null,
+      "mean": 758.60625
+    },
+    "calling-station-seed-343-current60": {
+      "hands": 12000,
+      "candidate_sha256": "ce23910c26680a58006a905614225f79b6d800b36f64fd6b48d4b16029e12cf9",
+      "raw_hands_sha256": "419efd0575a6b8916c22272730667213b1e57250ea9fdf6db786e12f08d02bd3",
+      "traces_sha256": "b455cc6bdcca31336640ec5dce6540fcfbb1f32226918012439a763cab2ab410",
+      "evaluation_plan_sha256": "024f1c3aebd7ecb9526e964b19ad18173b0532dd010cfd257eeb643c7cbb171b",
+      "unique_selected_iterations": null,
+      "mean": 279.52708333333334
+    },
+    "tight-value-seed-343-current60": {
+      "hands": 12000,
+      "candidate_sha256": "ce23910c26680a58006a905614225f79b6d800b36f64fd6b48d4b16029e12cf9",
+      "raw_hands_sha256": "298dab209e113d990ee844dad008ac89f4e1b076d2006423470f70c0b208c985",
+      "traces_sha256": "5735f96f568425c48e02c52a48b1575aae7308b5ae0f9c1c0c9d772ed55c69d1",
+      "evaluation_plan_sha256": "c7357ce3f3fb2c9d048f97826d5b84719458ee2cbfd4bed7067f5e3ab94cb674",
+      "unique_selected_iterations": null,
+      "mean": -70.89083333333333
+    },
+    "pressure-seed-343-current60": {
+      "hands": 12000,
+      "candidate_sha256": "ce23910c26680a58006a905614225f79b6d800b36f64fd6b48d4b16029e12cf9",
+      "raw_hands_sha256": "cc84970b7641978b9804adff4d48acc0a57d37a8369bb33bb6903a074d95f817",
+      "traces_sha256": "f6f5182d59f4eff48deaa66c24bd996da7a3776ae3273b866ff38b1db145c8bf",
+      "evaluation_plan_sha256": "a0c3dd8135bbe1d34f0d5a42dbf53174363ae65b38907c4adb5671c6b639b071",
+      "unique_selected_iterations": null,
+      "mean": 833.8923333333333
+    },
+    "calling-station-seed-344-current60": {
+      "hands": 12000,
+      "candidate_sha256": "bdcd176cecdbbb482df9305ebc5601102c756e50ad06671332d722666fd9747d",
+      "raw_hands_sha256": "ed2ae23e09347655c1ed8142a33f074d619d0866a3d14d896a9ea0ea02d86585",
+      "traces_sha256": "a5d0250b13b21611d3e0af11d0649c4555c4d29881aee14f88bfdaf9aed8a09d",
+      "evaluation_plan_sha256": "a8d249703b91ec8650e25017b61c20dfa80ad9943e63af301cc55200726f1425",
+      "unique_selected_iterations": null,
+      "mean": -476.7635
+    },
+    "tight-value-seed-344-current60": {
+      "hands": 12000,
+      "candidate_sha256": "bdcd176cecdbbb482df9305ebc5601102c756e50ad06671332d722666fd9747d",
+      "raw_hands_sha256": "c3c94c2c6d4f9fe6e51b579406359c0a4d00d543ed809fac9b6c284d3611ec35",
+      "traces_sha256": "967b50aa832f7b9afa8c87788cb9672a5c6557ea6014c1115d4af75ae49c0e91",
+      "evaluation_plan_sha256": "db21db079380fb8558381eaa120aef9a5e56229729553a9693a00716a6bc7db9",
+      "unique_selected_iterations": null,
+      "mean": -73.41416666666666
+    },
+    "pressure-seed-344-current60": {
+      "hands": 12000,
+      "candidate_sha256": "bdcd176cecdbbb482df9305ebc5601102c756e50ad06671332d722666fd9747d",
+      "raw_hands_sha256": "a304ae1c5fc1ec92a908d9e3d49e3848236dd55df92d6e13d00854c6968d165e",
+      "traces_sha256": "0321c008c691e63c59de4a7c114dad4e31ca64a9447c2e7c67ae17ccb4780efc",
+      "evaluation_plan_sha256": "2cd223ce6e7cfce8f0e81e8bab1bcfe8288dc0f722fe885509128a47ede5c374",
+      "unique_selected_iterations": null,
+      "mean": 779.10225
+    },
+    "calling-station-seed-342-current120": {
+      "hands": 12000,
+      "candidate_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+      "raw_hands_sha256": "4d331d40b8b49fef870b26f722c66d623f9b0903276517b90c2759208595496c",
+      "traces_sha256": "ee9c889ba9549f1cb1866f21f74e9779693b5524c21ca2add28cd47672a7f172",
+      "evaluation_plan_sha256": "3abaa27add7745ec93e4ae31ca64aae6b7596103ada3285d1e4489831d05d4c7",
+      "unique_selected_iterations": null,
+      "mean": 1156.5041666666666
+    },
+    "tight-value-seed-342-current120": {
+      "hands": 12000,
+      "candidate_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+      "raw_hands_sha256": "6bd80f6e214b4bc1222f97991e80826128def7a153229b4cc54bd0ed7e91a0f6",
+      "traces_sha256": "0029918f4b5af54f5173489c8614067ade6d78f96ab9c5667fa8c65fb9139ce1",
+      "evaluation_plan_sha256": "8beb9b065507bc56b677ff704a551eaf4297e0fc9383ceabf650029a119bf477",
+      "unique_selected_iterations": null,
+      "mean": -12.911
+    },
+    "pressure-seed-342-current120": {
+      "hands": 12000,
+      "candidate_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+      "raw_hands_sha256": "6bee09613e6258ac1a3482c80a0ccea4c7145bc0af7346419730d6b3afd3edc3",
+      "traces_sha256": "9cf481f4b719b45c4b0baf18c123ad3c405da8aa8b0debb9d284721d23cd71de",
+      "evaluation_plan_sha256": "49073cf7fdbb6126a81f62f98817c8ef48b0286385f4d8f5516411408aa1761a",
+      "unique_selected_iterations": null,
+      "mean": 563.60925
+    },
+    "calling-station-seed-343-current120": {
+      "hands": 12000,
+      "candidate_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+      "raw_hands_sha256": "619bc6b0d232c4269b348372c02124e6a5a17e3378b77b437de216bfd8c8f545",
+      "traces_sha256": "b8530a8bddc179dcdb33d20b68bf8d5882f72c8bd2f78fdd3a7b64e2e4bba2df",
+      "evaluation_plan_sha256": "fe069e31be3f3b08723b8171a9470c29a828ab84796804391059d88b1adeb38b",
+      "unique_selected_iterations": null,
+      "mean": 440.15208333333334
+    },
+    "tight-value-seed-343-current120": {
+      "hands": 12000,
+      "candidate_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+      "raw_hands_sha256": "9cd64910a4c5b7291bc4f8ee0f0d3001715ccf2f550d53561bab68858137469d",
+      "traces_sha256": "f76155a76b2a5c7d141d20c3026369a478e4de0593001ae26b0cb75970c2d3e4",
+      "evaluation_plan_sha256": "09006948b93e2cb7cc77fc9b5c9fcb521b8f3048647e5f77f072908ba6c5bb66",
+      "unique_selected_iterations": null,
+      "mean": 61.72166666666667
+    },
+    "pressure-seed-343-current120": {
+      "hands": 12000,
+      "candidate_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+      "raw_hands_sha256": "dcc81479a75bd640c9b2ae40f3095f9a7f7cd8d83b414ef3fcae0de446af12be",
+      "traces_sha256": "e800845c5709276f8925ef224f480e3bbf0ef74bcd5cc2738551806dd2adbdee",
+      "evaluation_plan_sha256": "8d97a2b8ff9b4f4432243bda3f8538f89a80aa2426fdd5437a5b39986ae1d781",
+      "unique_selected_iterations": null,
+      "mean": 694.2520833333333
+    },
+    "calling-station-seed-344-current120": {
+      "hands": 12000,
+      "candidate_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+      "raw_hands_sha256": "93e7ddb8cb6797ae4f277b9a899db29057664635efaadbb8e5863940b823c2ed",
+      "traces_sha256": "b0eeffb5840f9689418b2852d630cc461ad099b47ba908f3f23642f77ca56d26",
+      "evaluation_plan_sha256": "77ffcb0e3596e011dba18a865573eeba01cbbd53ce6d052a8cf452174f4e2520",
+      "unique_selected_iterations": null,
+      "mean": 751.15525
+    },
+    "tight-value-seed-344-current120": {
+      "hands": 12000,
+      "candidate_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+      "raw_hands_sha256": "1f7a20d137ef95e1c546a7f9744e2eb68c13f1f0857f4dbedcb54066273cec14",
+      "traces_sha256": "1327867e1f4e357fb11607847aafd6e812d71502ba4427717e8c4eb10524ebbd",
+      "evaluation_plan_sha256": "183f5e0cdb4d37a71e2738d2b6ac2f6845204db283e997d667297d7891099df9",
+      "unique_selected_iterations": null,
+      "mean": -47.716
+    },
+    "pressure-seed-344-current120": {
+      "hands": 12000,
+      "candidate_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+      "raw_hands_sha256": "e5080d7838902a218eecdf7aa9c78e60597237995b1f85af097ceb9a55f8a7e8",
+      "traces_sha256": "135ac1b1a0c52f6a46365e69bb6737d043b54da4cd107f49a8aa21f4545d14d7",
+      "evaluation_plan_sha256": "d879f6ea4d41d2614fe929c858b43e96bdb619cccd600f74345284f50e866420",
+      "unique_selected_iterations": null,
+      "mean": 101.47216666666667
+    },
+    "calling-station-seed-342-mixture120": {
+      "hands": 12000,
+      "candidate_sha256": "75aefd670c3c71ae475030319d818c8fd2beba86c2189293e515dd3ed7df6788",
+      "raw_hands_sha256": "8293e5d758866558288edede7b1c17286b318a4b866dd7f566537d378c9b7b85",
+      "traces_sha256": "52000fef16a1c443d7c8ac948427869fd2ea3f2ef3feaae3370902c6ad1e137a",
+      "evaluation_plan_sha256": "46ae6b6dcb6809e33a280475591702d9528833dc44a06066897ee633d72a0a81",
+      "unique_selected_iterations": 120,
+      "mean": 1054.99475
+    },
+    "tight-value-seed-342-mixture120": {
+      "hands": 12000,
+      "candidate_sha256": "75aefd670c3c71ae475030319d818c8fd2beba86c2189293e515dd3ed7df6788",
+      "raw_hands_sha256": "0ca924382401e59f0dfc2f1f1a5d5ad7d8cc0652da25a32a5a175d486c26aa7d",
+      "traces_sha256": "0b96d6994d327b85858d8196501e596208747b395afeaad5e9737f33fada61ed",
+      "evaluation_plan_sha256": "60406601823d9d5ad3f2016dfb31f8ec3d7e24a091d36071625c80bbd41a6b37",
+      "unique_selected_iterations": 120,
+      "mean": -93.871
+    },
+    "pressure-seed-342-mixture120": {
+      "hands": 12000,
+      "candidate_sha256": "75aefd670c3c71ae475030319d818c8fd2beba86c2189293e515dd3ed7df6788",
+      "raw_hands_sha256": "9fededcc7ff8e1c3a1577ea8094f84cc5eacf8e3a3173a543e7ea3322aae1424",
+      "traces_sha256": "b9b0eabb3adc8c1f3949b2b0590e53eda1c49790c7b74a8ee2c985492de2ce35",
+      "evaluation_plan_sha256": "df002bb175738cf104da4c266932835cf664315c956661252f1c8bd166aaaed1",
+      "unique_selected_iterations": 120,
+      "mean": 513.2111666666667
+    },
+    "calling-station-seed-343-mixture120": {
+      "hands": 12000,
+      "candidate_sha256": "ce887f7b76daea3577fa5ef11002842637e24cc3afc1291117f92d3c57a263f4",
+      "raw_hands_sha256": "969f7efd1134664b8a89df8ce0c3755afbee466607f6db47e3aaa4019bc6e15a",
+      "traces_sha256": "875aaa84c44581157941bae9d94547f9c36bba872647f2bad11b81ff8834792b",
+      "evaluation_plan_sha256": "a8a8fa771ca165feec596387745c9323481d8fd56b8650c0d29851a36a15d861",
+      "unique_selected_iterations": 120,
+      "mean": 636.84275
+    },
+    "tight-value-seed-343-mixture120": {
+      "hands": 12000,
+      "candidate_sha256": "ce887f7b76daea3577fa5ef11002842637e24cc3afc1291117f92d3c57a263f4",
+      "raw_hands_sha256": "1cdff277bee173a8961e007bdf8519d1fd8e041837330351f9da7e7635fcbc24",
+      "traces_sha256": "3fc46022b20697cf94243d25ccd24c45f102ca4c21dfe20f12c4e82c157828af",
+      "evaluation_plan_sha256": "e4498fb5f6bd3bbaca1534229a52b3943afb5c386ee786d64ce2247603a904c2",
+      "unique_selected_iterations": 120,
+      "mean": -35.86108333333333
+    },
+    "pressure-seed-343-mixture120": {
+      "hands": 12000,
+      "candidate_sha256": "ce887f7b76daea3577fa5ef11002842637e24cc3afc1291117f92d3c57a263f4",
+      "raw_hands_sha256": "171fcd83042be2f56890383853576c15eea25e365ab99a9243a1bf74b18d05d7",
+      "traces_sha256": "dd3f0cc611762ee0e32414adf189f3ee5141a2125439012676cd95ffafe03e5e",
+      "evaluation_plan_sha256": "825ce32337b495065a5529bc034c2d011ea8be6238f1d5aa01b883a97f57a3a2",
+      "unique_selected_iterations": 120,
+      "mean": 626.2690833333334
+    },
+    "calling-station-seed-344-mixture120": {
+      "hands": 12000,
+      "candidate_sha256": "08c4e0527e9fa959f05319bee7c451168d782a65d6794a8a9762432af589ad0d",
+      "raw_hands_sha256": "8dcd070f9df6390f029794679d7a628385fc8667e809890035a2a0a3927159b7",
+      "traces_sha256": "80b7ed17bbc9c3d8e17d6f28e957afe7a16842e4fef9ae1a630ca1fd07c1f5a4",
+      "evaluation_plan_sha256": "e30313df993b7913ccc24a52dfa9075cdaa1ce7ffa09d180d92e2aef457bcc8a",
+      "unique_selected_iterations": 120,
+      "mean": 673.6729166666667
+    },
+    "tight-value-seed-344-mixture120": {
+      "hands": 12000,
+      "candidate_sha256": "08c4e0527e9fa959f05319bee7c451168d782a65d6794a8a9762432af589ad0d",
+      "raw_hands_sha256": "a286b0e1fc65ef09f6084dcbf91eb08fa52ba3ae2f8d147b158e200bfc54a5b5",
+      "traces_sha256": "c191d14b6a7579b80a5244038d013ad442e7cdae61ee7c93b4bb8d8f7ef118a3",
+      "evaluation_plan_sha256": "b4d5492c0659eaeb30f0967125829afbfadbe0114be2924080433fb8a0c4f3f9",
+      "unique_selected_iterations": 120,
+      "mean": -104.906
+    },
+    "pressure-seed-344-mixture120": {
+      "hands": 12000,
+      "candidate_sha256": "08c4e0527e9fa959f05319bee7c451168d782a65d6794a8a9762432af589ad0d",
+      "raw_hands_sha256": "5995172cda8d9e31ca9e7fe910857f86767ea9da57aa78be330fd4fffcbf8712",
+      "traces_sha256": "130db169903bed93bc4cc935d966e1090e8ea97c8ebe5fd54cb6b3865edc5746",
+      "evaluation_plan_sha256": "c52a7f32a12b4f811d80d62fb60540b45cbf62dea178923bc3469fcdbbe6cf5e",
+      "unique_selected_iterations": 120,
+      "mean": 496.94508333333334
+    }
+  },
+  "original_continuation_gates_evaluated": false,
+  "deployment_authorized": false,
+  "limitations": [
+    "This diagnostic does not evaluate or replace the original public/mixed/NoRegrets continuation gates; no model promotion or automatic training extension is justified",
+    "Fixed heuristic opponents are deliberately exploitable; these results do not establish broad six-player strength",
+    "Nominal 95% normal deal-block intervals are unadjusted for multiple comparisons and condition on three fixed training seeds",
+    "Contexts depend on the played policy; unique-hand fractions and conditional whole-hand outcomes are observational, not causal effects of actions",
+    "Hero action counts are decision-event totals and may exceed one event per hand; context categories can overlap; acted-on-street excludes all-in runouts with no further hero decision",
+    "Raw logs and fixed code establish recorded schedules and accounting; this audit did not replay games or recheck every opponent action beyond the saved 12 traces per cell"
+  ],
+  "observational_findings": [
+    {
+      "comparison": "calling-station/current120 vs current60",
+      "finding": "The later snapshot has more preflop folds, fewer raises, and fewer hands with a postflop low-SPR decision, while its total paired score improves. This is a policy/encountered-context association, not evidence that folding caused the gain.",
+      "current60": {
+        "preflop_fold_fraction": 0.2980555555555556,
+        "raise_events_per_hand": 1.4719166666666668,
+        "postflop_low_spr_hand_fraction": 0.30816666666666664
+      },
+      "current120": {
+        "preflop_fold_fraction": 0.5001388888888889,
+        "raise_events_per_hand": 0.5605,
+        "postflop_low_spr_hand_fraction": 0.10530555555555556
+      }
+    },
+    {
+      "comparison": "tight-value/mixture120 vs current120",
+      "finding": "The mixture encounters heads-up and low-SPR postflop decisions in more hands. Whole-hand payoff conditional on a low-SPR postflop encounter is more negative. The compared subsets are selected by different policies and are not equivalent controlled states.",
+      "mixture120": {
+        "postflop_heads_up_hand_fraction": 0.2456111111111111,
+        "postflop_low_spr_hands": 1920,
+        "conditional_whole_hand_chips": -1043.3604166666667
+      },
+      "current120": {
+        "postflop_heads_up_hand_fraction": 0.18305555555555555,
+        "postflop_low_spr_hands": 1287,
+        "conditional_whole_hand_chips": -94.7948717948718
+      }
+    },
+    {
+      "comparison": "pressure/current120 vs current60",
+      "finding": "The fraction of hands with a low-SPR postflop decision is similar, but their conditional whole-hand mean is lower for current120. Only 31 and 40 hands respectively contain a hero river decision, so these logs do not support attributing the regression to river play.",
+      "current60": {
+        "postflop_low_spr_hands": 2827,
+        "conditional_whole_hand_chips": 3212.20799434029,
+        "hero_river_decision_hands": 31
+      },
+      "current120": {
+        "postflop_low_spr_hands": 2865,
+        "conditional_whole_hand_chips": 2073.028970331588,
+        "hero_river_decision_hands": 40
+      }
+    }
+  ],
+  "interpretation": "Current120 has opponent-dependent changes: clear nominal improvements against calling-station and tight-value, but clear regression against pressure. Mixture120 loses to current120 against tight-value; its calling-station and pressure differences have intervals crossing zero. A universal performance improvement or a mixture rescue is not established. Preserve the original continuation gates and stopped production campaign."
+}

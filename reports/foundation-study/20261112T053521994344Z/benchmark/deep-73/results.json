@@ -1,0 +1,404 @@
+{
+  "format": "leduc-reference-benchmark-v1",
+  "complete": true,
+  "method": "deep",
+  "seed": 73,
+  "config": {
+    "game": "leduc_poker",
+    "seeds": [
+      71,
+      72,
+      73
+    ],
+    "deep_iterations": 120,
+    "deep_checkpoints": [
+      0,
+      10,
+      30,
+      60,
+      120
+    ],
+    "tabular_iterations": 500,
+    "tabular_checkpoints": [
+      0,
+      10,
+      30,
+      60,
+      120,
+      250,
+      500
+    ],
+    "traversals_per_player": 32,
+    "advantage_steps": 128,
+    "strategy_steps": 1024,
+    "batch_size": 128,
+    "memory_capacity": 50000,
+    "network_layers": [
+      64,
+      64
+    ],
+    "learning_rate": 0.001,
+    "max_seconds_per_process": 900,
+    "tabular_max_uniform_ratio": 0.1,
+    "deep_average_max_uniform_ratio": 0.5,
+    "deep_strategy_max_uniform_ratio": 0.5
+  },
+  "started_utc": "2026-11-12T05:36:21.769505+00:00",
+  "source_hashes": {
+    "/workspace/deep/scripts/benchmark_leduc_reference.py": "9fb9c038fe756928c6e02a68f8699d74e95ac25e1555833382d20bb9b26bcc7a",
+    "/workspace/deep/artifacts/foundation-study/20261112T053521994344Z/leduc-config.json": "19ab64c20ea75bc00b42191cd875b90230fabdbf9af291e7e852f844e632525a",
+    "/workspace/.venvs/fullhouse/lib/python3.12/site-packages/open_spiel/python/policy.py": "34973af5e8cbab211e845865c5e31c324f2cd5803f2f38a7cee07c490058cc7f",
+    "/workspace/.venvs/fullhouse/lib/python3.12/site-packages/open_spiel/python/algorithms/cfr.py": "56f8f472a83166c4e3312016e709d7ece1a78ba34ca1684d842a26cbc8d89fc7",
+    "/workspace/.venvs/fullhouse/lib/python3.12/site-packages/open_spiel/python/algorithms/exploitability.py": "c9b616b3b89e7f2da8a905b72166e6373a3c079bd028804ba015906d33b88ee7",
+    "/workspace/.venvs/fullhouse/lib/python3.12/site-packages/open_spiel/python/algorithms/best_response.py": "5fa451e78c4ba7d970c28357bc6148b9c0f02d7af95d845a8ef96018231a1511",
+    "/workspace/.venvs/fullhouse/lib/python3.12/site-packages/open_spiel/python/algorithms/expected_game_score.py": "9a5fe6f7b1827e1ece8205e306a5a98731fc4460f44554eb363446ff480c732d",
+    "/workspace/.venvs/fullhouse/lib/python3.12/site-packages/open_spiel/python/pytorch/deep_cfr.py": "d1d32f985113f0abafd73403ea45cbf9f4783e7e2b8ddb96b401d80c4110fa5d",
+    "/workspace/.venvs/fullhouse/lib/python3.12/site-packages/pyspiel.so": "adb75ce813c5b254ecee95fcde170e82f180395bdd7ed2b4524da55cb3c0987e"
+  },
+  "versions": {
+    "open_spiel": "1.6.15",
+    "torch": "2.5.1+cpu",
+    "numpy": "2.2.6",
+    "dm-tree": "0.1.9"
+  },
+  "game": "leduc_poker(players=2)",
+  "num_players": 2,
+  "information_states": 936,
+  "input_dimensions": 30,
+  "actions": 3,
+  "initial_uniform": {
+    "exploitability": 2.373611111111111,
+    "nash_conv": 4.747222222222222,
+    "player_improvements": [
+      2.165625,
+      2.5815972222222223
+    ],
+    "policy_value": [
+      -0.078125,
+      0.078125
+    ],
+    "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+  },
+  "curve": [
+    {
+      "iteration": 0,
+      "seconds": 0.7235201519997645,
+      "metrics": {
+        "current": {
+          "exploitability": 4.908553413150754,
+          "nash_conv": 9.817106826301508,
+          "player_improvements": [
+            4.732023692305814,
+            5.085083133995695
+          ],
+          "policy_value": [
+            -0.869956454795914,
+            0.869956454795914
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        },
+        "realized_average": {
+          "exploitability": 2.373611111111111,
+          "nash_conv": 4.747222222222222,
+          "player_improvements": [
+            2.165625,
+            2.5815972222222223
+          ],
+          "policy_value": [
+            -0.078125,
+            0.078125
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        },
+        "uniform": {
+          "exploitability": 2.373611111111111,
+          "nash_conv": 4.747222222222222,
+          "player_improvements": [
+            2.165625,
+            2.5815972222222223
+          ],
+          "policy_value": [
+            -0.078125,
+            0.078125
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        }
+      },
+      "policy_file": {
+        "name": "policies-00000.npz",
+        "bytes": 8630,
+        "sha256": "1631470e1599f7ccee0b1c2210557d08a978ece45e04f38ece730673d26d5aa3"
+      }
+    },
+    {
+      "iteration": 10,
+      "seconds": 6.238094809999893,
+      "metrics": {
+        "current": {
+          "exploitability": 1.0969634716794519,
+          "nash_conv": 2.1939269433589037,
+          "player_improvements": [
+            1.3438528389591653,
+            0.8500741043997384
+          ],
+          "policy_value": [
+            -0.32449557521184014,
+            0.32449557521184014
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        },
+        "realized_average": {
+          "exploitability": 1.198098761110511,
+          "nash_conv": 2.396197522221022,
+          "player_improvements": [
+            1.2603010394106149,
+            1.1358964828104068
+          ],
+          "policy_value": [
+            -0.23805094781582353,
+            0.23805094781582353
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        },
+        "fitted_average": {
+          "exploitability": 1.07713873091525,
+          "nash_conv": 2.1542774618305,
+          "player_improvements": [
+            1.084338400142029,
+            1.069939061688471
+          ],
+          "policy_value": [
+            -0.29182437624402247,
+            0.29182437624402247
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        }
+      },
+      "advantage_losses": [
+        85.72039031982422,
+        79.37805938720703
+      ],
+      "strategy_fit": {
+        "loss": 0.3070405423641205,
+        "raw_legal_mass_min": 0.391004778444767,
+        "raw_legal_mass_mean": 0.9863005688077666,
+        "adapter": "Mask illegal softmax outputs and renormalize; OpenSpiel action_probabilities does not renormalize legal mass"
+      },
+      "advantage_rows": [
+        1930,
+        1209
+      ],
+      "strategy_rows": 4174,
+      "policy_file": {
+        "name": "policies-00010.npz",
+        "bytes": 31517,
+        "sha256": "d1ec6c5fbe1cac460a96d995aefe96ba9f19fe7df2c6f6c1da4fbe2cff391fd8"
+      }
+    },
+    {
+      "iteration": 30,
+      "seconds": 15.699789304999285,
+      "metrics": {
+        "current": {
+          "exploitability": 0.6384061472249974,
+          "nash_conv": 1.276812294449995,
+          "player_improvements": [
+            0.7521807458225038,
+            0.5246315486274911
+          ],
+          "policy_value": [
+            -0.14759933870311331,
+            0.14759933870311331
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        },
+        "realized_average": {
+          "exploitability": 0.6211667189625938,
+          "nash_conv": 1.2423334379251876,
+          "player_improvements": [
+            0.6575236930187477,
+            0.5848097449064398
+          ],
+          "policy_value": [
+            -0.1047817727398048,
+            0.1047817727398048
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        },
+        "fitted_average": {
+          "exploitability": 0.6863010480000971,
+          "nash_conv": 1.3726020960001941,
+          "player_improvements": [
+            0.7183438201303505,
+            0.6542582758698436
+          ],
+          "policy_value": [
+            -0.06832735846973442,
+            0.06832735846973442
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        }
+      },
+      "advantage_losses": [
+        187.2158203125,
+        136.0378875732422
+      ],
+      "strategy_fit": {
+        "loss": 1.0857045650482178,
+        "raw_legal_mass_min": 0.5002304064109921,
+        "raw_legal_mass_mean": 0.9894280582422621,
+        "adapter": "Mask illegal softmax outputs and renormalize; OpenSpiel action_probabilities does not renormalize legal mass"
+      },
+      "advantage_rows": [
+        5012,
+        3128
+      ],
+      "strategy_rows": 12097,
+      "policy_file": {
+        "name": "policies-00030.npz",
+        "bytes": 33078,
+        "sha256": "36033716440992f75d9d49a2ccbb2c020d79e376795c5d7305e82ef19bbea842"
+      }
+    },
+    {
+      "iteration": 60,
+      "seconds": 29.617536727999322,
+      "metrics": {
+        "current": {
+          "exploitability": 1.2873286138644664,
+          "nash_conv": 2.574657227728933,
+          "player_improvements": [
+            1.553229452914984,
+            1.0214277748139489
+          ],
+          "policy_value": [
+            -0.19423312127259135,
+            0.19423312127259135
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        },
+        "realized_average": {
+          "exploitability": 0.6326889708876033,
+          "nash_conv": 1.2653779417752067,
+          "player_improvements": [
+            0.6493492175492007,
+            0.6160287242260061
+          ],
+          "policy_value": [
+            -0.11180075403614173,
+            0.11180075403614173
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        },
+        "fitted_average": {
+          "exploitability": 0.7602398739782324,
+          "nash_conv": 1.520479747956465,
+          "player_improvements": [
+            0.7591810582632041,
+            0.7612986896932608
+          ],
+          "policy_value": [
+            -0.1150799371489703,
+            0.1150799371489703
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        }
+      },
+      "advantage_losses": [
+        292.8076477050781,
+        455.2455749511719
+      ],
+      "strategy_fit": {
+        "loss": 2.4608798027038574,
+        "raw_legal_mass_min": 0.8679338172078133,
+        "raw_legal_mass_mean": 0.9875645618151941,
+        "adapter": "Mask illegal softmax outputs and renormalize; OpenSpiel action_probabilities does not renormalize legal mass"
+      },
+      "advantage_rows": [
+        9939,
+        5930
+      ],
+      "strategy_rows": 24723,
+      "policy_file": {
+        "name": "policies-00060.npz",
+        "bytes": 33478,
+        "sha256": "81762c6448882d68d6789916126bdd221e737c411bd2e5c31572f8cfe0af18c5"
+      }
+    },
+    {
+      "iteration": 120,
+      "seconds": 58.21923575299843,
+      "metrics": {
+        "current": {
+          "exploitability": 1.4598865558850718,
+          "nash_conv": 2.9197731117701435,
+          "player_improvements": [
+            1.7306617161319438,
+            1.1891113956381996
+          ],
+          "policy_value": [
+            -0.3009630483085289,
+            0.3009630483085289
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        },
+        "realized_average": {
+          "exploitability": 0.6842216291401885,
+          "nash_conv": 1.368443258280377,
+          "player_improvements": [
+            0.7441688953273221,
+            0.6242743629530548
+          ],
+          "policy_value": [
+            -0.12616280533505578,
+            0.12616280533505578
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        },
+        "fitted_average": {
+          "exploitability": 0.6959249775400747,
+          "nash_conv": 1.3918499550801493,
+          "player_improvements": [
+            0.7354564154792974,
+            0.656393539600852
+          ],
+          "policy_value": [
+            -0.16040546402282538,
+            0.16040546402282538
+          ],
+          "evaluation": "OpenSpiel exact best response over all chance outcomes and information sets"
+        }
+      },
+      "advantage_losses": [
+        674.9541015625,
+        648.9505004882812
+      ],
+      "strategy_fit": {
+        "loss": 6.211740970611572,
+        "raw_legal_mass_min": 0.8361738733947277,
+        "raw_legal_mass_mean": 0.989883108886902,
+        "adapter": "Mask illegal softmax outputs and renormalize; OpenSpiel action_probabilities does not renormalize legal mass"
+      },
+      "advantage_rows": [
+        21479,
+        11824
+      ],
+      "strategy_rows": 50000,
+      "policy_file": {
+        "name": "policies-00120.npz",
+        "bytes": 33887,
+        "sha256": "01429351830b32d26946f5dd99750cb98c5a01f501acc02bfa595dab5c84322e"
+      }
+    }
+  ],
+  "limitations": [
+    "Reduced-budget OpenSpiel reference implementation, not full paper reproduction",
+    "Exact two-player Leduc exploitability does not validate the six-player hold-em model or its compressed features",
+    "Neural advantage/value networks are not the compact-v4 training architecture",
+    "Realized average uses exact own-reach weights and linear iteration weights; it avoids a strategy-network fitting error",
+    "Checkpoint strategy fits use full current sampled memory but preserve advantage-training RNG; each fit starts fresh",
+    "The latest/current policy need not improve monotonically"
+  ],
+  "completed_utc": "2026-11-12T05:37:20.751146+00:00",
+  "seconds": 58.76799001299878
+}

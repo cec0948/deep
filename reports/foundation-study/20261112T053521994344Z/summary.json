@@ -1,0 +1,577 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-12T05:42:03.572155+00:00",
+  "seconds": 399.3259032629994,
+  "config": {
+    "purpose": "Validate reference learning on full-information-state Leduc, then diagnose frozen six-player policies against independent behavioral baselines",
+    "parent60": "artifacts/compact-v4/20261112T025126577365Z",
+    "parent120": "artifacts/compact-v4/20261112T032318825281Z",
+    "parallelism": 3,
+    "seconds_per_benchmark": 900,
+    "seconds_per_ref_eval": 600,
+    "max_study_seconds": 1800,
+    "evaluation_deals": 2000,
+    "evaluation_deal_seed": 2026140000,
+    "leduc": {
+      "game": "leduc_poker",
+      "seeds": [
+        71,
+        72,
+        73
+      ],
+      "deep_iterations": 120,
+      "deep_checkpoints": [
+        0,
+        10,
+        30,
+        60,
+        120
+      ],
+      "tabular_iterations": 500,
+      "tabular_checkpoints": [
+        0,
+        10,
+        30,
+        60,
+        120,
+        250,
+        500
+      ],
+      "traversals_per_player": 32,
+      "advantage_steps": 128,
+      "strategy_steps": 1024,
+      "batch_size": 128,
+      "memory_capacity": 50000,
+      "network_layers": [
+        64,
+        64
+      ],
+      "learning_rate": 0.001,
+      "max_seconds_per_process": 900,
+      "tabular_max_uniform_ratio": 0.1,
+      "deep_average_max_uniform_ratio": 0.5,
+      "deep_strategy_max_uniform_ratio": 0.5
+    },
+    "reference": {
+      "seeds": [
+        342,
+        343,
+        344
+      ],
+      "variants": [
+        "current60",
+        "current120",
+        "mixture120"
+      ],
+      "opponents": [
+        "calling-station",
+        "tight-value",
+        "pressure"
+      ],
+      "evaluation_deals": 2000,
+      "evaluation_deal_seed": 2026140000,
+      "trace_hands": 12
+    },
+    "promotion": "none",
+    "limitations": [
+      "Leduc is a two-player reduced poker game; reference learning does not establish six-player poker strength",
+      "Small CPU budget and explicit legal-policy normalization differ from a full paper reproduction",
+      "Reference opponents are fixed transparent heuristics, not validated strong poker agents",
+      "Six-player diagnostic comparisons do not replace the original four performance conditions",
+      "No original self-play extension, candidate promotion, or automatic retrial"
+    ]
+  },
+  "plan_sha256": "f96635fa1f88ca1d104e528eff508aebc783fff84643e065a273ab97ee26ee0b",
+  "benchmarks": {
+    "initial_uniform_exploitability": 2.373611111111111,
+    "tabular_final_exploitability": 0.02150720912667381,
+    "neural_final_exploitability": {
+      "71": {
+        "current": 1.932365305444316,
+        "realized_average": 0.6312819511001067,
+        "fitted_average": 0.6908229684900364
+      },
+      "72": {
+        "current": 1.273173979673603,
+        "realized_average": 0.6647595150406824,
+        "fitted_average": 0.6590047114842297
+      },
+      "73": {
+        "current": 1.4598865558850718,
+        "realized_average": 0.6842216291401885,
+        "fitted_average": 0.6959249775400747
+      }
+    },
+    "checks": {
+      "tabular_final_at_most_tenth_uniform": true,
+      "every_realized_average_at_most_half_uniform": true,
+      "every_fitted_average_at_most_half_uniform": true
+    },
+    "all_reference_checks_pass": true,
+    "saved_policy_metrics_recomputed": true,
+    "six_player_adoption_authorized": false,
+    "interpretation": "Fixed-budget two-player Leduc reference checks; no requirement for every checkpoint to improve",
+    "limitations": [
+      "This reduced-budget reference benchmark does not validate the compact six-player architecture",
+      "Realized average quality and strategy-network fitting quality are separate measurements",
+      "A failed check is retained without automatic rerun or changed criteria"
+    ]
+  },
+  "reference_evaluation": {
+    "completed_evaluations": 27,
+    "total_hands": 324000,
+    "absolute_scores": {
+      "calling-station/current60": {
+        "mean": 230.13925,
+        "ci95_half_width": 112.35086295249833,
+        "lower": 117.78838704750167,
+        "upper": 342.49011295249835,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 887.6541666666667,
+            "ci95_half_width": 183.36887299133113,
+            "lower": 704.2852936753355,
+            "upper": 1071.0230396579977
+          },
+          {
+            "seed": 343,
+            "mean": 279.52708333333334,
+            "ci95_half_width": 179.51995021385468,
+            "lower": 100.00713311947865,
+            "upper": 459.047033547188
+          },
+          {
+            "seed": 344,
+            "mean": -476.7635,
+            "ci95_half_width": 152.02694590476705,
+            "lower": -628.790445904767,
+            "upper": -324.736554095233
+          }
+        ]
+      },
+      "calling-station/current120": {
+        "mean": 782.6038333333333,
+        "ci95_half_width": 89.22079319179154,
+        "lower": 693.3830401415418,
+        "upper": 871.8246265251249,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 1156.5041666666666,
+            "ci95_half_width": 140.04926991077554,
+            "lower": 1016.454896755891,
+            "upper": 1296.5534365774422
+          },
+          {
+            "seed": 343,
+            "mean": 440.15208333333334,
+            "ci95_half_width": 126.45891193786764,
+            "lower": 313.6931713954657,
+            "upper": 566.610995271201
+          },
+          {
+            "seed": 344,
+            "mean": 751.15525,
+            "ci95_half_width": 112.78769221969092,
+            "lower": 638.3675577803091,
+            "upper": 863.942942219691
+          }
+        ]
+      },
+      "calling-station/mixture120": {
+        "mean": 788.5034722222222,
+        "ci95_half_width": 114.52659491912995,
+        "lower": 673.9768773030922,
+        "upper": 903.0300671413521,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 1054.99475,
+            "ci95_half_width": 174.21143288050607,
+            "lower": 880.783317119494,
+            "upper": 1229.206182880506
+          },
+          {
+            "seed": 343,
+            "mean": 636.84275,
+            "ci95_half_width": 170.12677568861935,
+            "lower": 466.7159743113807,
+            "upper": 806.9695256886193
+          },
+          {
+            "seed": 344,
+            "mean": 673.6729166666667,
+            "ci95_half_width": 154.8644821645039,
+            "lower": 518.8084345021628,
+            "upper": 828.5373988311705
+          }
+        ]
+      },
+      "tight-value/current60": {
+        "mean": -116.76188888888889,
+        "ci95_half_width": 37.093906603055096,
+        "lower": -153.85579549194398,
+        "upper": -79.6679822858338,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -205.98066666666668,
+            "ci95_half_width": 55.58644132138492,
+            "lower": -261.5671079880516,
+            "upper": -150.39422534528177
+          },
+          {
+            "seed": 343,
+            "mean": -70.89083333333333,
+            "ci95_half_width": 48.18693997823464,
+            "lower": -119.07777331156797,
+            "upper": -22.703893355098693
+          },
+          {
+            "seed": 344,
+            "mean": -73.41416666666666,
+            "ci95_half_width": 43.19158453142909,
+            "lower": -116.60575119809576,
+            "upper": -30.222582135237566
+          }
+        ]
+      },
+      "tight-value/current120": {
+        "mean": 0.36488888888888854,
+        "ci95_half_width": 24.281506373717686,
+        "lower": -23.916617484828798,
+        "upper": 24.646395262606575,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -12.911,
+            "ci95_half_width": 34.58745088251416,
+            "lower": -47.49845088251416,
+            "upper": 21.67645088251416
+          },
+          {
+            "seed": 343,
+            "mean": 61.72166666666667,
+            "ci95_half_width": 36.09901187885627,
+            "lower": 25.622654787810404,
+            "upper": 97.82067854552294
+          },
+          {
+            "seed": 344,
+            "mean": -47.716,
+            "ci95_half_width": 32.07360266336257,
+            "lower": -79.78960266336257,
+            "upper": -15.64239733663743
+          }
+        ]
+      },
+      "tight-value/mixture120": {
+        "mean": -78.21269444444444,
+        "ci95_half_width": 31.811146716927002,
+        "lower": -110.02384116137144,
+        "upper": -46.40154772751744,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -93.871,
+            "ci95_half_width": 43.425211293200626,
+            "lower": -137.29621129320063,
+            "upper": -50.44578870679937
+          },
+          {
+            "seed": 343,
+            "mean": -35.86108333333333,
+            "ci95_half_width": 41.06175770611668,
+            "lower": -76.92284103945002,
+            "upper": 5.200674372783347
+          },
+          {
+            "seed": 344,
+            "mean": -104.906,
+            "ci95_half_width": 44.86404788019812,
+            "lower": -149.77004788019812,
+            "upper": -60.041952119801884
+          }
+        ]
+      },
+      "pressure/current60": {
+        "mean": 790.5336111111111,
+        "ci95_half_width": 144.45777947043848,
+        "lower": 646.0758316406726,
+        "upper": 934.9913905815496,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 758.60625,
+            "ci95_half_width": 169.2268138086687,
+            "lower": 589.3794361913314,
+            "upper": 927.8330638086687
+          },
+          {
+            "seed": 343,
+            "mean": 833.8923333333333,
+            "ci95_half_width": 193.279221039839,
+            "lower": 640.6131122934944,
+            "upper": 1027.1715543731723
+          },
+          {
+            "seed": 344,
+            "mean": 779.10225,
+            "ci95_half_width": 189.33548203354178,
+            "lower": 589.7667679664582,
+            "upper": 968.4377320335418
+          }
+        ]
+      },
+      "pressure/current120": {
+        "mean": 453.1111666666667,
+        "ci95_half_width": 132.07674409235298,
+        "lower": 321.0344225743137,
+        "upper": 585.1879107590197,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 563.60925,
+            "ci95_half_width": 179.43424247050763,
+            "lower": 384.17500752949235,
+            "upper": 743.0434924705075
+          },
+          {
+            "seed": 343,
+            "mean": 694.2520833333333,
+            "ci95_half_width": 176.16933340608426,
+            "lower": 518.0827499272491,
+            "upper": 870.4214167394175
+          },
+          {
+            "seed": 344,
+            "mean": 101.47216666666667,
+            "ci95_half_width": 160.57429051412842,
+            "lower": -59.102123847461755,
+            "upper": 262.0464571807951
+          }
+        ]
+      },
+      "pressure/mixture120": {
+        "mean": 545.4751111111111,
+        "ci95_half_width": 131.84816057728514,
+        "lower": 413.62695053382595,
+        "upper": 677.3232716883963,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 513.2111666666667,
+            "ci95_half_width": 172.88234043915634,
+            "lower": 340.3288262275104,
+            "upper": 686.093507105823
+          },
+          {
+            "seed": 343,
+            "mean": 626.2690833333334,
+            "ci95_half_width": 179.69232035050157,
+            "lower": 446.5767629828318,
+            "upper": 805.961403683835
+          },
+          {
+            "seed": 344,
+            "mean": 496.94508333333334,
+            "ci95_half_width": 180.17279934032555,
+            "lower": 316.7722839930078,
+            "upper": 677.1178826736589
+          }
+        ]
+      }
+    },
+    "paired_changes": {
+      "calling-station/current120-minus-current60": {
+        "mean": 552.4645833333334,
+        "ci95_half_width": 114.25127437693102,
+        "lower": 438.2133089564024,
+        "upper": 666.7158577102645,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 268.85,
+            "ci95_half_width": 192.9376298715958,
+            "lower": 75.91237012840423,
+            "upper": 461.7876298715958
+          },
+          {
+            "seed": 343,
+            "mean": 160.625,
+            "ci95_half_width": 198.31927303482948,
+            "lower": -37.69427303482948,
+            "upper": 358.9442730348295
+          },
+          {
+            "seed": 344,
+            "mean": 1227.91875,
+            "ci95_half_width": 174.77035404232268,
+            "lower": 1053.1483959576774,
+            "upper": 1402.6891040423227
+          }
+        ]
+      },
+      "calling-station/mixture120-minus-current120": {
+        "mean": 5.899638888888891,
+        "ci95_half_width": 103.85844598505491,
+        "lower": -97.95880709616603,
+        "upper": 109.7580848739438,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -101.50941666666668,
+            "ci95_half_width": 179.6766756503866,
+            "lower": -281.1860923170533,
+            "upper": 78.16725898371993
+          },
+          {
+            "seed": 343,
+            "mean": 196.6906666666667,
+            "ci95_half_width": 183.43756062723477,
+            "lower": 13.253106039431913,
+            "upper": 380.12822729390143
+          },
+          {
+            "seed": 344,
+            "mean": -77.48233333333333,
+            "ci95_half_width": 157.97146431862492,
+            "lower": -235.45379765195827,
+            "upper": 80.4891309852916
+          }
+        ]
+      },
+      "tight-value/current120-minus-current60": {
+        "mean": 117.12677777777778,
+        "ci95_half_width": 30.96218395445512,
+        "lower": 86.16459382332266,
+        "upper": 148.0889617322329,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 193.06966666666668,
+            "ci95_half_width": 56.22516779465723,
+            "lower": 136.84449887200944,
+            "upper": 249.29483446132392
+          },
+          {
+            "seed": 343,
+            "mean": 132.6125,
+            "ci95_half_width": 48.161460844159954,
+            "lower": 84.45103915584005,
+            "upper": 180.77396084415997
+          },
+          {
+            "seed": 344,
+            "mean": 25.69816666666667,
+            "ci95_half_width": 47.339826646908215,
+            "lower": -21.641659980241545,
+            "upper": 73.03799331357489
+          }
+        ]
+      },
+      "tight-value/mixture120-minus-current120": {
+        "mean": -78.57758333333334,
+        "ci95_half_width": 27.517360915803874,
+        "lower": -106.09494424913721,
+        "upper": -51.06022241752946,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -80.96,
+            "ci95_half_width": 44.834869224854096,
+            "lower": -125.7948692248541,
+            "upper": -36.1251307751459
+          },
+          {
+            "seed": 343,
+            "mean": -97.58275,
+            "ci95_half_width": 42.243374824847166,
+            "lower": -139.82612482484717,
+            "upper": -55.33937517515284
+          },
+          {
+            "seed": 344,
+            "mean": -57.19,
+            "ci95_half_width": 49.47730738253907,
+            "lower": -106.66730738253906,
+            "upper": -7.712692617460931
+          }
+        ]
+      },
+      "pressure/current120-minus-current60": {
+        "mean": -337.42244444444447,
+        "ci95_half_width": 127.83746225495273,
+        "lower": -465.2599066993972,
+        "upper": -209.58498218949174,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -194.99699999999999,
+            "ci95_half_width": 200.6532843340236,
+            "lower": -395.6502843340236,
+            "upper": 5.65628433402361
+          },
+          {
+            "seed": 343,
+            "mean": -139.64024999999998,
+            "ci95_half_width": 196.78632515311992,
+            "lower": -336.42657515311987,
+            "upper": 57.14607515311994
+          },
+          {
+            "seed": 344,
+            "mean": -677.6300833333333,
+            "ci95_half_width": 204.33389619952655,
+            "lower": -881.9639795328599,
+            "upper": -473.2961871338068
+          }
+        ]
+      },
+      "pressure/mixture120-minus-current120": {
+        "mean": 92.36394444444444,
+        "ci95_half_width": 116.68124828716013,
+        "lower": -24.31730384271569,
+        "upper": 209.04519273160457,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -50.398083333333346,
+            "ci95_half_width": 197.27047443870856,
+            "lower": -247.6685577720419,
+            "upper": 146.87239110537521
+          },
+          {
+            "seed": 343,
+            "mean": -67.98300000000002,
+            "ci95_half_width": 189.70568135309605,
+            "lower": -257.68868135309606,
+            "upper": 121.72268135309604
+          },
+          {
+            "seed": 344,
+            "mean": 395.47291666666666,
+            "ci95_half_width": 199.684815253927,
+            "lower": 195.78810141273965,
+            "upper": 595.1577319205937
+          }
+        ]
+      }
+    },
+    "raw_hands_verified": true,
+    "diagnostic_only": true,
+    "deployment_authorized": false,
+    "limitations": [
+      "Independent behavior families are transparent heuristic baselines, not proven strong poker opponents",
+      "Shared cards form one block across seats, seeds and policies; nominal intervals are not multiplicity-adjusted",
+      "Conditional context payoffs are associations, not causal action values",
+      "Original four continuation conditions are unchanged and are not replaced by these diagnostics"
+    ]
+  },
+  "source_provenance_verified": true,
+  "no_automatic_retry": true,
+  "no_model_promotion": true,
+  "selfplay_iteration": 120,
+  "next_action": "Analyze reference learning and six-player information/evaluation evidence before proposing a new training experiment"
+}

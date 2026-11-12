@@ -1,0 +1,366 @@
+{
+  "format": "independent-leduc-audit-v1",
+  "audit_utc": "2026-11-12T05:38:47.016017+00:00",
+  "run": "20261112T053521994344Z",
+  "passed": true,
+  "checks": {
+    "tabular_final_at_most_tenth_uniform": true,
+    "every_realized_average_at_most_half_uniform": true,
+    "every_fitted_average_at_most_half_uniform": true
+  },
+  "all_reference_checks_pass": true,
+  "independent_evaluator": "pyspiel C++ exploitability over explicit full information-set policy tables; separate from Python best-response evaluator used during training",
+  "uniform_python_cpp_crosscheck": 2.373611111111111,
+  "verified_policy_profiles": 59,
+  "verified_policy_files": 22,
+  "unique_frozen_source_files_rechecked": 9,
+  "maximum_cpp_vs_python_absolute_error": 4.440892098500626e-16,
+  "full_information_states": 936,
+  "information_state_tensor_dimensions": 30,
+  "curves": {
+    "tabular": {
+      "report_sha256": "3520eb27d2979d6ea5573cb0529efe671b619a3c702063acfea9af8dcf637e7a",
+      "curve": [
+        {
+          "iteration": 0,
+          "cpp_exploitability": {
+            "current": 2.373611111111111,
+            "average": 2.373611111111111
+          },
+          "archive_sha256": "96b4cfd69189a14986d2d649713fde5abf5f822403fd397ea571ee435746f985"
+        },
+        {
+          "iteration": 10,
+          "cpp_exploitability": {
+            "current": 0.6973887851581564,
+            "average": 0.888578983168769
+          },
+          "archive_sha256": "e694525248172272379014a072715a39525bbd01a619a4019ae6cfde034a3533"
+        },
+        {
+          "iteration": 30,
+          "cpp_exploitability": {
+            "current": 1.014576733214262,
+            "average": 0.31091772472731505
+          },
+          "archive_sha256": "a7c16fd8cb2c142506d3f6a784b264a35826281a9a1be5d05c6df2ff09bc72c3"
+        },
+        {
+          "iteration": 60,
+          "cpp_exploitability": {
+            "current": 0.7842334063810199,
+            "average": 0.15584876088961125
+          },
+          "archive_sha256": "fe01577a4b74ae9e4cf04284f7c2aab0db99c4e2b863db878a061275a05184a0"
+        },
+        {
+          "iteration": 120,
+          "cpp_exploitability": {
+            "current": 0.5235111012636957,
+            "average": 0.0781080601018238
+          },
+          "archive_sha256": "31693f4f1081c4b25004b9eb2b3f7808699e8e5ce201754d163ab3cd9a9b2104"
+        },
+        {
+          "iteration": 250,
+          "cpp_exploitability": {
+            "current": 0.6428061467563779,
+            "average": 0.04046900108716073
+          },
+          "archive_sha256": "d219dd9e879463afcf4c12aebdfcfbc39a55f84c9279c7bcbb7eca20889531d8"
+        },
+        {
+          "iteration": 500,
+          "cpp_exploitability": {
+            "current": 0.537699820795191,
+            "average": 0.02150720912667381
+          },
+          "archive_sha256": "19e6ef9b18b40b40e0b62189919a53b62803929fb0ef48460bd4f63f013df85b"
+        }
+      ],
+      "seconds": 50.862093166000705
+    },
+    "deep-71": {
+      "report_sha256": "75640f06f6b1cb3bfae8d8e378556811f902488e2bbbeb5b83697692a6d3ed39",
+      "curve": [
+        {
+          "iteration": 0,
+          "cpp_exploitability": {
+            "current": 1.2206817046541403,
+            "realized_average": 2.373611111111111,
+            "uniform": 2.373611111111111
+          },
+          "archive_sha256": "72ffdb2cdfae8d97fee6089306a95c25d601c852ea440b26776e277f602e44bd"
+        },
+        {
+          "iteration": 10,
+          "cpp_exploitability": {
+            "current": 1.5123228346395226,
+            "realized_average": 1.4544069947886702,
+            "fitted_average": 1.5567588200291227
+          },
+          "archive_sha256": "5a999e73efcef0ab431320500aead6ac112e669d505d3ce28444e5ab2b4807b1"
+        },
+        {
+          "iteration": 30,
+          "cpp_exploitability": {
+            "current": 2.0756815603810477,
+            "realized_average": 0.7669952345513373,
+            "fitted_average": 0.8338732204955618
+          },
+          "archive_sha256": "551c82e6185114f6178091fc2f1946dd0549cd57215e16a8358aef4392e1ff66"
+        },
+        {
+          "iteration": 60,
+          "cpp_exploitability": {
+            "current": 1.3025237384098731,
+            "realized_average": 0.7380507333795245,
+            "fitted_average": 0.80110538966993
+          },
+          "archive_sha256": "46e8f99efe1b0b0a44875c256bbf156287a70a949d99ad3fe8d45c1ee4e33bf7"
+        },
+        {
+          "iteration": 120,
+          "cpp_exploitability": {
+            "current": 1.932365305444316,
+            "realized_average": 0.6312819511001067,
+            "fitted_average": 0.6908229684900364
+          },
+          "archive_sha256": "93e29ab7937165f0f2caaf5b0c8f4bef842e66ac05b9e711c20f12841aad71ad"
+        }
+      ],
+      "seconds": 61.64620837300026,
+      "final_strategy_fit": {
+        "loss": 5.704052448272705,
+        "raw_legal_mass_min": 0.8776647672057152,
+        "raw_legal_mass_mean": 0.9903647596712779,
+        "adapter": "Mask illegal softmax outputs and renormalize; OpenSpiel action_probabilities does not renormalize legal mass"
+      }
+    },
+    "deep-72": {
+      "report_sha256": "bb41e024db3694d5f5bf4d4019823a63b088f6f97f327fb0e7eb9cefa5432c20",
+      "curve": [
+        {
+          "iteration": 0,
+          "cpp_exploitability": {
+            "current": 2.2643848045694535,
+            "realized_average": 2.373611111111111,
+            "uniform": 2.373611111111111
+          },
+          "archive_sha256": "075f4d1944d787bfb28c268e798ef530f4bde961f7009c521f7a0ae32a8d1752"
+        },
+        {
+          "iteration": 10,
+          "cpp_exploitability": {
+            "current": 1.350316301017209,
+            "realized_average": 1.27009399703684,
+            "fitted_average": 1.3840766172776813
+          },
+          "archive_sha256": "63f45d2b51ede1d04f1af00157ebaef8c84d93a38df5be7ef4502979167131a2"
+        },
+        {
+          "iteration": 30,
+          "cpp_exploitability": {
+            "current": 1.2610068262197287,
+            "realized_average": 0.7527366862908599,
+            "fitted_average": 0.9378306570843371
+          },
+          "archive_sha256": "cd9e38b077a8be11f5eae5cfcbee3ca9fbfb8994e7b51c812fefd32dfddb3eee"
+        },
+        {
+          "iteration": 60,
+          "cpp_exploitability": {
+            "current": 1.2444340631543878,
+            "realized_average": 0.6641732122107287,
+            "fitted_average": 0.7154042519834258
+          },
+          "archive_sha256": "36ca05915315c977c4e4c24c1c613d77921131034e8330c5834df4dd34d3dd7a"
+        },
+        {
+          "iteration": 120,
+          "cpp_exploitability": {
+            "current": 1.273173979673603,
+            "realized_average": 0.6647595150406824,
+            "fitted_average": 0.6590047114842297
+          },
+          "archive_sha256": "13ce5b461326d73e44aa3159fd9bcecba057ef6cdf4cf81697e3dcbf9dd8211b"
+        }
+      ],
+      "seconds": 62.75781311500032,
+      "final_strategy_fit": {
+        "loss": 6.189627170562744,
+        "raw_legal_mass_min": 0.8181920703500509,
+        "raw_legal_mass_mean": 0.9856531787663698,
+        "adapter": "Mask illegal softmax outputs and renormalize; OpenSpiel action_probabilities does not renormalize legal mass"
+      }
+    },
+    "deep-73": {
+      "report_sha256": "b9ad1158b516f1991077e913954dfd5d49f55071abd5b793837ae1a2e4bb6ea6",
+      "curve": [
+        {
+          "iteration": 0,
+          "cpp_exploitability": {
+            "current": 4.908553413150754,
+            "realized_average": 2.373611111111111,
+            "uniform": 2.373611111111111
+          },
+          "archive_sha256": "1631470e1599f7ccee0b1c2210557d08a978ece45e04f38ece730673d26d5aa3"
+        },
+        {
+          "iteration": 10,
+          "cpp_exploitability": {
+            "current": 1.0969634716794519,
+            "realized_average": 1.198098761110511,
+            "fitted_average": 1.07713873091525
+          },
+          "archive_sha256": "d1ec6c5fbe1cac460a96d995aefe96ba9f19fe7df2c6f6c1da4fbe2cff391fd8"
+        },
+        {
+          "iteration": 30,
+          "cpp_exploitability": {
+            "current": 0.6384061472249976,
+            "realized_average": 0.6211667189625938,
+            "fitted_average": 0.6863010480000971
+          },
+          "archive_sha256": "36033716440992f75d9d49a2ccbb2c020d79e376795c5d7305e82ef19bbea842"
+        },
+        {
+          "iteration": 60,
+          "cpp_exploitability": {
+            "current": 1.2873286138644664,
+            "realized_average": 0.6326889708876033,
+            "fitted_average": 0.7602398739782324
+          },
+          "archive_sha256": "81762c6448882d68d6789916126bdd221e737c411bd2e5c31572f8cfe0af18c5"
+        },
+        {
+          "iteration": 120,
+          "cpp_exploitability": {
+            "current": 1.4598865558850718,
+            "realized_average": 0.6842216291401885,
+            "fitted_average": 0.6959249775400747
+          },
+          "archive_sha256": "01429351830b32d26946f5dd99750cb98c5a01f501acc02bfa595dab5c84322e"
+        }
+      ],
+      "seconds": 58.76799001299878,
+      "final_strategy_fit": {
+        "loss": 6.211740970611572,
+        "raw_legal_mass_min": 0.8361738733947277,
+        "raw_legal_mass_mean": 0.989883108886902,
+        "adapter": "Mask illegal softmax outputs and renormalize; OpenSpiel action_probabilities does not renormalize legal mass"
+      }
+    }
+  },
+  "observed_checkpoint_nonmonotonicity": {
+    "deep-71": {
+      "current": {
+        "values": [
+          1.2206817046541403,
+          1.5123228346395226,
+          2.0756815603810477,
+          1.3025237384098731,
+          1.932365305444316
+        ],
+        "observed_increases": 3
+      },
+      "realized_average": {
+        "values": [
+          2.373611111111111,
+          1.4544069947886702,
+          0.7669952345513373,
+          0.7380507333795245,
+          0.6312819511001067
+        ],
+        "observed_increases": 0
+      },
+      "fitted_average": {
+        "values": [
+          1.5567588200291227,
+          0.8338732204955618,
+          0.80110538966993,
+          0.6908229684900364
+        ],
+        "observed_increases": 0
+      }
+    },
+    "deep-72": {
+      "current": {
+        "values": [
+          2.2643848045694535,
+          1.350316301017209,
+          1.2610068262197287,
+          1.2444340631543878,
+          1.273173979673603
+        ],
+        "observed_increases": 1
+      },
+      "realized_average": {
+        "values": [
+          2.373611111111111,
+          1.27009399703684,
+          0.7527366862908599,
+          0.6641732122107287,
+          0.6647595150406824
+        ],
+        "observed_increases": 1
+      },
+      "fitted_average": {
+        "values": [
+          1.3840766172776813,
+          0.9378306570843371,
+          0.7154042519834258,
+          0.6590047114842297
+        ],
+        "observed_increases": 0
+      }
+    },
+    "deep-73": {
+      "current": {
+        "values": [
+          4.908553413150754,
+          1.0969634716794519,
+          0.6384061472249976,
+          1.2873286138644664,
+          1.4598865558850718
+        ],
+        "observed_increases": 2
+      },
+      "realized_average": {
+        "values": [
+          2.373611111111111,
+          1.198098761110511,
+          0.6211667189625938,
+          0.6326889708876033,
+          0.6842216291401885
+        ],
+        "observed_increases": 2
+      },
+      "fitted_average": {
+        "values": [
+          1.07713873091525,
+          0.6863010480000971,
+          0.7602398739782324,
+          0.6959249775400747
+        ],
+        "observed_increases": 1
+      }
+    }
+  },
+  "algorithm_review": {
+    "traversal_and_advantage_fitting": "Installed OpenSpiel DeepCFR routines; wrapper calls same alternating update order",
+    "realized_average": "Linear iteration weights times own reach; p0 after update and p1 before update match the profile observed by the opposite traverser",
+    "checkpoint_strategy_fit": "Fresh policy network; NumPy/Torch/Python RNG restored and original policy network/optimizer restored",
+    "test_evidence": "Five tests passed before production, including exact advantage-weight and replay equality to official solver after diagnostic strategy fits",
+    "legal_policy_adapter": "Official softmax output is restricted to legal actions and renormalized; raw legal mass recorded"
+  },
+  "limitations": [
+    "Small fixed-budget two-player Leduc validation; not a full original-paper reproduction",
+    "The same OpenSpiel game rules are used by both evaluators; C++ best response is independent of the Python best-response implementation, not an independently authored poker engine",
+    "Checkpoint curves cannot prove monotonic improvement between checkpoints or across future budgets",
+    "The realized average has a substantial residual exploitability gap versus tabular CFR under these different fixed budgets",
+    "This benchmark does not test compact-v4 features, six-player convergence, full hold-em strength or generalization",
+    "The full sequence of every neural policy is not archived; own-reach average construction is supported by algorithm review and independent mixture-equivalence tests, not a replay of every production training iteration"
+  ],
+  "six_player_adoption_authorized": false
+}

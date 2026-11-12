@@ -1,0 +1,79 @@
+{
+  "purpose": "Validate reference learning on full-information-state Leduc, then diagnose frozen six-player policies against independent behavioral baselines",
+  "parent60": "artifacts/compact-v4/20261112T025126577365Z",
+  "parent120": "artifacts/compact-v4/20261112T032318825281Z",
+  "parallelism": 3,
+  "seconds_per_benchmark": 900,
+  "seconds_per_ref_eval": 600,
+  "max_study_seconds": 1800,
+  "evaluation_deals": 2000,
+  "evaluation_deal_seed": 2026140000,
+  "leduc": {
+    "game": "leduc_poker",
+    "seeds": [
+      71,
+      72,
+      73
+    ],
+    "deep_iterations": 120,
+    "deep_checkpoints": [
+      0,
+      10,
+      30,
+      60,
+      120
+    ],
+    "tabular_iterations": 500,
+    "tabular_checkpoints": [
+      0,
+      10,
+      30,
+      60,
+      120,
+      250,
+      500
+    ],
+    "traversals_per_player": 32,
+    "advantage_steps": 128,
+    "strategy_steps": 1024,
+    "batch_size": 128,
+    "memory_capacity": 50000,
+    "network_layers": [
+      64,
+      64
+    ],
+    "learning_rate": 0.001,
+    "max_seconds_per_process": 900,
+    "tabular_max_uniform_ratio": 0.1,
+    "deep_average_max_uniform_ratio": 0.5,
+    "deep_strategy_max_uniform_ratio": 0.5
+  },
+  "reference": {
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "variants": [
+      "current60",
+      "current120",
+      "mixture120"
+    ],
+    "opponents": [
+      "calling-station",
+      "tight-value",
+      "pressure"
+    ],
+    "evaluation_deals": 2000,
+    "evaluation_deal_seed": 2026140000,
+    "trace_hands": 12
+  },
+  "promotion": "none",
+  "limitations": [
+    "Leduc is a two-player reduced poker game; reference learning does not establish six-player poker strength",
+    "Small CPU budget and explicit legal-policy normalization differ from a full paper reproduction",
+    "Reference opponents are fixed transparent heuristics, not validated strong poker agents",
+    "Six-player diagnostic comparisons do not replace the original four performance conditions",
+    "No original self-play extension, candidate promotion, or automatic retrial"
+  ]
+}

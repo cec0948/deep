@@ -1,20 +1,20 @@
 {
-  "observed_utc": "2026-11-12T05:37:21.654020+00:00",
+  "observed_utc": "2026-11-12T05:47:11.287071+00:00",
   "run": "20261112T053521994344Z",
-  "status": "running",
-  "recorded_status": "running",
-  "phase": "benchmarking",
-  "status_updated_utc": "2026-11-12T05:37:20.463326+00:00",
-  "supervisor_alive": true,
+  "status": "complete",
+  "recorded_status": "complete",
+  "phase": "complete",
+  "status_updated_utc": "2026-11-12T05:42:03.888083+00:00",
+  "supervisor_alive": false,
   "liveness_evidence": "Recorded PID, /proc start token, runner command and output argument",
   "plan_sha256": "f96635fa1f88ca1d104e528eff508aebc783fff84643e065a273ab97ee26ee0b",
   "study_kind": "research-validation",
   "selfplay_iteration": 120,
   "new_six_player_selfplay_samples": 0,
   "six_player_model_replaced": false,
-  "completed_benchmarks": 3,
+  "completed_benchmarks": 4,
   "planned_benchmarks": 4,
-  "completed_evaluations": 0,
+  "completed_evaluations": 27,
   "planned_evaluations": 27,
   "benchmark_progress": {
     "tabular": {
@@ -193,11 +193,28 @@
       }
     }
   },
-  "external_backup": null,
+  "external_backup": {
+    "kind": "research-validation",
+    "run": "20261112T053521994344Z",
+    "bytes": 17345740,
+    "recorded_at": "2026-11-12T05:47:09.971715+00:00",
+    "verified_remote_size": true,
+    "verified_owner_only": true,
+    "remote_checksum_available": false,
+    "resumable_selfplay": false,
+    "verification_scope": "Recorded private-index verification; this publisher performs no Drive request"
+  },
   "limitations": [
     "Leduc is a two-player reference benchmark, not validation of the six-player architecture",
     "Reference opponents are transparent untrained heuristics, not proven strong poker agents",
     "Process liveness is observed only at the recorded observation time"
   ],
-  "next_action": "Observe the existing bounded study; do not start a duplicate"
+  "reference_checks": {
+    "tabular_final_at_most_tenth_uniform": true,
+    "every_realized_average_at_most_half_uniform": true,
+    "every_fitted_average_at_most_half_uniform": true
+  },
+  "total_reference_hands": 324000,
+  "source_provenance_verified": true,
+  "next_action": "Analyze completed evidence; no automatic retrial, self-play continuation or promotion"
 }
