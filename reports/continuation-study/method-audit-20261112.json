@@ -1,0 +1,227 @@
+{
+  "format": "poker-continuation-method-audit-v1",
+  "observed_utc": "2026-11-12T06:56:02.283404+00:00",
+  "complete": true,
+  "parent": "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z",
+  "parent_iteration": 120,
+  "no_blocking_implementation_faults": true,
+  "checks": {
+    "exact_continuous_vs_resumed_training": true,
+    "archive_restore_resume_matches": true,
+    "forked_extension_preserves_parent_and_rng": true,
+    "legal_masks_and_zero_illegal_targets": true,
+    "iteration_labels_match_seat": true,
+    "root_repetitions_preserve_iteration_mass": true,
+    "nonuniform_root_rollout_matches_exact_tree": true,
+    "mixture_own_reach_semantics_and_per_hand_selection": true,
+    "torch_numpy_export_parity": true,
+    "actual_engine_payoffs_and_rules": true,
+    "frozen_source_and_checkpoint_hashes": true,
+    "sampled_regrets_centered_under_collection_policy": true,
+    "zero_opponent_exploration_in_production": true,
+    "all_traverser_legal_actions_enumerated": true,
+    "iteration_weight_horizon_not_used_in_compact_sampler": true
+  },
+  "blockers": [],
+  "method_scope": "Frozen compact-opening-expert120 continuation, not the failed derived raw-objective candidate",
+  "source_hashes": {
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/LICENSE.upstream": "8a2daa759da5e2bc87dfdd8f3a02fee6f18b38ccced523022a31c36e1b0512c4",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/bot/bot.py": "f721b16e0cab72d0c40fae2e94d1ec655a94025fc20addfc689c718fb8f10845",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/bot/features.py": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/__init__.py": "dd47ca434e58a3ba04952d871c3899db7b675eed0dd5e2e4dc23645f72f08d1f",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/_hand_eval.py": "e97c081806e67f964ace1c6dd7bb62c8f49ea8cd0c2060d8643d6c58daeb3a96",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/_hand_eval_lut.py": "d57d29959b6441fbad16f1e65c35dab0e6d38e7fda29a1b8edbaf6271cea5e46",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/buffer.py": "a513bf28f44992218053745e77faedd5a6a71c663cc642273ccaa01e0cd4f611",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/features.py": "b6f8b26df06b4147c87e1543242d5cf29af9366be7681af272bbc677bdc97946",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/game.py": "df405d6d9efbeca3ecb778cfa70dd770fee5c34d04eb3f65ed1ab11261696381",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/game_numba.py": "3d581b954fa028ea8c6e5b31457c95cbcfa8f9e09bc14dd939c59ae7457437dc",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/network.py": "e8c75e85722fa32e311316f06b93596f6610b934af5a8ab0ef6c99d72d2f2c49",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/r1_support.py": "08b19999b38066c1848ca3e0a5a67b65a0b577250dce59c0dff084ae7683dfd0",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/train.py": "844c8e6d3aea891e95d39f60b9e50906bcc854df20bc489d440558be945bb316",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/traverse_fast.py": "b0d199732ddd46be242c90b382fe4e7c93add829ca8e493d6c59dce67af319a6",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/traverse_numba.py": "03c17cd7b717005737cabafe7c4e7963dc6eb1fbd9f8e4295d3c8417127ec803",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source/training/worker.py": "282435f5e10770dce373b4579e14552af9f0e3beb6178046a8229a33acad9bea",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/tools/compact_regret.py": "4cff184154657d6e1040536fd02a1cd25bb518e8a813a67b72851dd6f1882d60",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/tools/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/tools/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/tools/root_regret_replay.py": "0078f0cde6631e3b8ba12dd134523521a5a6f7ffd0bc5e88b7c0bce8ee9c349d",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/tools/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/tools/train_compact_selfplay.py": "ced4b1817a837c83bd0f28ef640bfa0220fe1bd2bb5142a9ef0e04d48fd35b51",
+    "/workspace/deep/scripts/train_compact_selfplay.py": "ced4b1817a837c83bd0f28ef640bfa0220fe1bd2bb5142a9ef0e04d48fd35b51",
+    "/workspace/deep/tests/test_compact_training.py": "18add58b933ec7b1a06469fea6e3b458de40efcf901161cd3126b6a853dd6941",
+    "/workspace/deep/tests/test_compact_extension.py": "914416db55eb3bf6c509bdd7f06dff7e9c2cc9b73ca9e4527e369fcf2463194a",
+    "/workspace/deep/tests/test_scaled_regret.py": "12f83e6490b965e3e2b04de43505c7a5c1c4e9792b70cfe9def677a065912cf3",
+    "/workspace/deep/tests/test_fullhouse_v3.py": "cdcb829cfbd754441a2fe2e2f9359b77b50dbc2a64857ee9c685709388b72133",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/config.json": "b37e825ab2ad67ff2bfbe321b48a84c2366b5a45da174da895d267d0f812de4c",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/source-manifest.json": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/verification.json": "1660d09b2cae6375f1b3671f07845055fbfac83428602d388ce96a22eee7639d",
+    "/workspace/deep/scripts/fullhouse_v4_runtime.py": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+    "/workspace/deep/scripts/fullhouse_v3_runtime.py": "19f0c117d80ffd9e013387bb17d3daf215e3476a4a135fe72a7bfb18d4db8e0e",
+    "/workspace/deep/scripts/fullhouse_runtime.py": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+    "/workspace/deep/scripts/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/scripts/extend_compact_run.py": "40e686699d5e00158a35a64cb58a090ac811e7d6a22b38db990f837a9ee9058e",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/seed-342/latest.pt": "b85835c50c7a9eed9d62481ad6fba7fb0517c5e1f8867675ab23f6a05040c5e0",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/seed-343/latest.pt": "b73e9d619fafbb0c7d989da6717d1f0be5c66136386f822e1cd53cb056e06cc3",
+    "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/seed-344/latest.pt": "9fe7826385423efd63fd668ef599db59e6dbd68fe161d1039b661381ed3b81c0"
+  },
+  "checkpoint_checks": [
+    {
+      "seed": 342,
+      "checkpoint_sha256": "b85835c50c7a9eed9d62481ad6fba7fb0517c5e1f8867675ab23f6a05040c5e0",
+      "iteration": 120,
+      "replay_rows": 600000,
+      "finite_parameters": true,
+      "finite_legal_replay": true,
+      "illegal_action_targets_zero": true,
+      "buffer_iteration_labels_match_traversing_seat": true,
+      "root_classes": 169,
+      "root_observations_per_class": 492,
+      "root_time_mass_per_class": 7260,
+      "ordered_snapshot_hashes_verified": 120,
+      "rng_sources": [
+        "generator",
+        "numpy",
+        "python",
+        "torch"
+      ]
+    },
+    {
+      "seed": 343,
+      "checkpoint_sha256": "b73e9d619fafbb0c7d989da6717d1f0be5c66136386f822e1cd53cb056e06cc3",
+      "iteration": 120,
+      "replay_rows": 600000,
+      "finite_parameters": true,
+      "finite_legal_replay": true,
+      "illegal_action_targets_zero": true,
+      "buffer_iteration_labels_match_traversing_seat": true,
+      "root_classes": 169,
+      "root_observations_per_class": 492,
+      "root_time_mass_per_class": 7260,
+      "ordered_snapshot_hashes_verified": 120,
+      "rng_sources": [
+        "generator",
+        "numpy",
+        "python",
+        "torch"
+      ]
+    },
+    {
+      "seed": 344,
+      "checkpoint_sha256": "9fe7826385423efd63fd668ef599db59e6dbd68fe161d1039b661381ed3b81c0",
+      "iteration": 120,
+      "replay_rows": 600000,
+      "finite_parameters": true,
+      "finite_legal_replay": true,
+      "illegal_action_targets_zero": true,
+      "buffer_iteration_labels_match_traversing_seat": true,
+      "root_classes": 169,
+      "root_observations_per_class": 492,
+      "root_time_mass_per_class": 7260,
+      "ordered_snapshot_hashes_verified": 120,
+      "rng_sources": [
+        "generator",
+        "numpy",
+        "python",
+        "torch"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "command": "pytest -q tests/test_fullhouse_v3.py::FullhouseV3Tests::test_rules_counterexamples_and_terminal_payoffs tests/test_fullhouse_v3.py::FullhouseV3Tests::test_layered_pots_and_single_live_actor_runout",
+      "passed": 2,
+      "seconds": 4.41,
+      "status": "passed"
+    },
+    {
+      "command": "pytest -q tests/test_compact_training.py tests/test_compact_extension.py tests/test_scaled_regret.py",
+      "status": "passed",
+      "passed": 15,
+      "seconds": 78.46
+    }
+  ],
+  "tests_passed": 17,
+  "real_replay_centering_check": {
+    "method": "Stored external-sampling advantage must be centered under its pre-update collection policy; independent fixed random sample of12rows per seat per seed",
+    "rows": [
+      {
+        "seed": 342,
+        "samples": 72,
+        "distinct_snapshots": 54,
+        "buffer_iteration_seat_congruence": true,
+        "max_absolute_residual": 2.543131586207892e-06,
+        "max_scaled_residual": 1.220703120452526e-06,
+        "passed": true
+      },
+      {
+        "seed": 343,
+        "samples": 72,
+        "distinct_snapshots": 62,
+        "buffer_iteration_seat_congruence": true,
+        "max_absolute_residual": 9.765623981365952e-06,
+        "max_scaled_residual": 2.6129042552799083e-07,
+        "passed": true
+      },
+      {
+        "seed": 344,
+        "samples": 72,
+        "distinct_snapshots": 55,
+        "buffer_iteration_seat_congruence": true,
+        "max_absolute_residual": 5.086263172415784e-06,
+        "max_scaled_residual": 3.1147877608673637e-07,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "code_review": [
+    {
+      "topic": "External sampling",
+      "finding": "At every traverser node all legal children are explored, opponents are sampled from sigma with production exploration0, action values are centered by sigma and converted from chips toBB using100. No missing behavior-policy correction was found for this production setting.",
+      "evidence": [
+        "source/training/traverse_fast.py:202",
+        "source/training/traverse_fast.py:261",
+        "scripts/train_compact_selfplay.py:69"
+      ]
+    },
+    {
+      "topic": "Regret fitting",
+      "finding": "Conditional targets retain rawiteration mass before stratum/feature reweighting; scales are positive and shared over all iterations within an input stratum. Positive scaling preserves exact regret matching, but network projection changes. This is explicitly documented and not treated as mathematical equivalence to raw MSE.",
+      "evidence": [
+        "tools/regret_fitting.py:16",
+        "tools/scaled_regret_fitting.py:1",
+        "tools/compact_regret.py:95"
+      ]
+    },
+    {
+      "topic": "Opening root replay",
+      "finding": "All169hole-cardclasses receive equal per-iteration mass t. Replicate weighting1/repetitions prevents the first iteration16replicates from counting4times as much as later4replicates. Action rollouts follow the frozen collection policy and conditional decks are uniformly completed.",
+      "evidence": [
+        "tools/root_regret_replay.py:111"
+      ]
+    },
+    {
+      "topic": "Snapshots and resume",
+      "finding": "Policies are exported before update t withweight t. Runtime selects one stored policy once per hand using an independenthandseed and verifiesits hash. Checkpoints restore network,buffers,rootstatistics,history andPython/NumPy/globalGenerator/Torch RNG; training uses rawiterationweights so changing stop horizon does not silently renormalize its fitting objective.",
+      "evidence": [
+        "scripts/train_compact_selfplay.py:50",
+        "scripts/train_compact_selfplay.py:66",
+        "scripts/fullhouse_v4_runtime.py:37"
+      ]
+    }
+  ],
+  "limitations": [
+    "No newly found blocking implementation fault is not a claim that the learning method has no limitations or that additional training will improve poker performance.",
+    "The51-feature encoder loses some action-history and card-suit relationship information; collisions were demonstrated in the completed foundation study. More fitting or more samples alone cannot restore distinctions that the encoder discards.",
+    "Shared regret-network parameters across player positions and equal-stratum/feature sampling with stratum scales are approximations. They change the finite-network projection objective relative to raw iteration-weighted regret MSE; this is not a faithful unrestricted Deep CFR convergence reproduction.",
+    "The previous raw-objective correction was a separate frozen-replay refit and failed the public performance criteria; this audit does not endorse importing that correction into the original self-play algorithm.",
+    "External sampling uses on-policy opponent draws and exhaustive traverser actions, but values are Monte Carlo samples over cards/opponents rather than exact full-game counterfactual values.",
+    "A bounded120→240 learning-curve experiment can test additional self-play data; it cannot establish six-player Nash convergence. The original controller and adoption criteria must remain distinct from the new fixed diagnostic budget.",
+    "The full hand-policy mixture preserves declared time weights and once-per-hand selection; improvement over the latest policy remains empirical and is not guaranteed against every opponent.",
+    "20,000 shared card sets improve conditional paired precision but do not supply20,000 independent training seeds or verify strength against unknown strong opponents.",
+    "No production training or frozen source was modified or launched by this audit."
+  ],
+  "recommendation": "Proceed only with the separately preregistered bounded additional-selfplay study after its runner/evaluation isolation tests pass; retain original120 and unchanged adoption criteria"
+}

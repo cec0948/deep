@@ -1,0 +1,27 @@
+{
+  "observed_utc": "2026-11-12T06:59:22.245062+00:00",
+  "status": "preparing",
+  "phase": "validating_isolated_runner",
+  "supervisor_alive": false,
+  "parent_iteration": 120,
+  "target_iteration": 240,
+  "completed_selfplay_iterations": {
+    "342": 120,
+    "343": 120,
+    "344": 120
+  },
+  "evaluation_deals": 20000,
+  "planned_evaluations": 54,
+  "planned_hands": 6480000,
+  "completed_evaluations": 0,
+  "method_audit_complete": true,
+  "method_audit_passed": true,
+  "method_audit_sha256": "66747e84b151df0519105cbb3d4be04cad8c89318c717afd51a576d8a9aa6c60",
+  "original_controller_status": "paused_for_analysis",
+  "new_training_started": false,
+  "next_action": "Validate isolated continuation/evaluation/snapshot helpers, then run the separately authorized fixed budget",
+  "limitations": [
+    "Method audit found no new blocking implementation faults; known representation and heuristic objective limitations remain",
+    "Original120 checkpoint remains unchanged; no continuation has started at this observed timestamp"
+  ]
+}

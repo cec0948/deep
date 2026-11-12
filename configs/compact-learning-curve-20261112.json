@@ -1,0 +1,26 @@
+{
+  "purpose": "A separately authorized fixed-budget extension of original120 self-play, with ten times as many fresh evaluation card blocks",
+  "seeds": [342, 343, 344],
+  "stages": [180, 240],
+  "evaluation_iterations": [120, 180, 240],
+  "evaluation_fields": ["public", "mixed", "noregrets"],
+  "variants": ["current", "mixture"],
+  "evaluation_deals": 20000,
+  "evaluation_deal_seed": 2026160000,
+  "evaluation_seconds_per_cell": 2400,
+  "training_seconds_per_stage": 5400,
+  "max_seconds": 14400,
+  "snapshot_stages": [180, 240],
+  "promotion": "none",
+  "continuation_rule": "Complete the predeclared180 and240 stages unless runtime, legality, finite-state, fitting-quality, or provenance checks fail; performance gates determine candidate eligibility, not intermediate study continuation",
+  "adoption_baseline": "original current120 for both current and mixture candidates",
+  "evaluation_plan": "54 cells and6480000 hands; same20000 independent card blocks across fixed seeds, hero seats, policies and stages",
+  "limitations": [
+    "No claim that the existing six-player heuristic is a faithful Deep CFR reproduction or converges to equilibrium",
+    "The original51-feature representation and scaled balanced fitting remain fixed; additional self-play cannot recover information omitted by the representation",
+    "This study does not use the failed raw-objective correction or refit candidates",
+    "Shared evaluation blocks provide paired comparisons; stages are not independent final holdouts and nominal intervals are not multiplicity-adjusted",
+    "Three training seeds do not establish general robustness; fixed opponents are not certified strong poker agents",
+    "No automatic model promotion, old-controller changes, or retry after an execution failure"
+  ]
+}
