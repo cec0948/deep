@@ -1,12 +1,12 @@
 {
-  "observed_utc": "2026-11-12T07:09:45.823437+00:00",
+  "observed_utc": "2026-11-12T07:13:09.976683+00:00",
   "run": "20261112T070916841250Z",
   "status": "running",
   "phase": "training",
   "recorded_status": "running",
   "recorded_phase": "training",
-  "status_updated_utc": "2026-11-12T07:09:45.097916+00:00",
-  "status_age_seconds": 0.725521,
+  "status_updated_utc": "2026-11-12T07:13:09.636229+00:00",
+  "status_age_seconds": 0.340454,
   "supervisor_alive": true,
   "liveness_evidence": "Matching registry/status PID, non-zombie /proc start token, runner command and output argument",
   "plan_sha256": "fea2187fe3477c03a88b7a058318bbb36ef5e8a80eb01b6153cf05ec69034f8a",
@@ -18,22 +18,22 @@
   "original_registries_unchanged": true,
   "seed_progress": {
     "342": {
-      "checkpoint_iteration": 120,
-      "additional_selfplay_iterations": 0,
+      "checkpoint_iteration": 126,
+      "additional_selfplay_iterations": 6,
       "worker_alive": true,
-      "checkpoint_state": "complete"
+      "checkpoint_state": "running"
     },
     "343": {
-      "checkpoint_iteration": 120,
-      "additional_selfplay_iterations": 0,
+      "checkpoint_iteration": 126,
+      "additional_selfplay_iterations": 6,
       "worker_alive": true,
-      "checkpoint_state": "complete"
+      "checkpoint_state": "running"
     },
     "344": {
-      "checkpoint_iteration": 120,
-      "additional_selfplay_iterations": 0,
+      "checkpoint_iteration": 126,
+      "additional_selfplay_iterations": 6,
       "worker_alive": true,
-      "checkpoint_state": "complete"
+      "checkpoint_state": "running"
     }
   },
   "completed_training_stages": [],
@@ -47,7 +47,7 @@
     "verified_hands": 0,
     "completed_checkpoint_evaluations": [],
     "evaluation_plan_sha256": "ec3938895445c1e42031b9a1536b2c78cbbde8574214ae2bef705d302b1ce79a",
-    "status_updated_utc": "2026-11-12T07:09:45.914110+00:00",
+    "status_updated_utc": "2026-11-12T07:13:08.429360+00:00",
     "evaluator_alive": true,
     "observed_status": "running"
   },
