@@ -1,0 +1,16 @@
+{
+  "purpose": "Frozen 120-round replay: test whether a fixed parent-score anchor reduces destructive main-policy drift",
+  "seeds": [342, 343, 344],
+  "extra_steps": 3072,
+  "anchor_weight": 3.0,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "evaluation_deals": 2000,
+  "evaluation_deal_seed": 2026130000,
+  "evaluation_fields": ["public", "mixed", "noregrets"],
+  "variants": ["current", "anchored"],
+  "parallelism": 3,
+  "promotion": "none",
+  "criteria": "Unchanged original four conditions; shared deal blocks averaged across seeds before computing intervals",
+  "limitations": ["Single predeclared candidate; nominal intervals are not adjusted for repeated experimentation", "Score anchoring does not guarantee a bound on regret-matched policy change", "Replay diagnostics are not held-out strength measurements", "A passing probe requires subsequent independent validation before any production changes"]
+}
