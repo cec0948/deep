@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-12T06:31:02.995665+00:00",
+  "observed_utc": "2026-11-12T07:37:30.419973+00:00",
   "scope": "Private poker training backups only",
   "removed_checkpoint_iterations": [
     6,
@@ -37,5 +37,6 @@
   "new_probe_resumable_selfplay": false,
   "remote_sha256_verified": false,
   "new_probe_local_sha256_verified": true,
-  "deleted_old_comparator_preserved_in_latest_probe": true
+  "deleted_old_comparator_preserved_in_latest_probe": true,
+  "last_check_changed_remote_files": false
 }
