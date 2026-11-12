@@ -1,0 +1,183 @@
+{
+  "format": "independent-anchored-probe-audit-v1",
+  "run": "20261112T050839072733Z",
+  "audit_utc": "2026-11-12T05:16:01.496019+00:00",
+  "audit_method": "Independent read-only recomputation from raw hand logs and recorded artifacts; no runner summarization or verification helper was called",
+  "verification": {
+    "passed": true,
+    "verified_frozen_file_hashes": 48,
+    "verified_evaluation_cells": 18,
+    "verified_raw_hands": 216000,
+    "raw_hand_payoff_and_deal_block_checks": true,
+    "candidate_and_opponent_hash_checks": true,
+    "evaluator_runtime_engine_feature_hash_checks": true,
+    "plan_sha256": "af0f7f41870eea0dc8632a37de960fe613ccdea6e6fc9256b367ce0f259737d8",
+    "evaluation_plan_sha256": "3f7471653b770a7e8dcf24e4cb44d7723129188485dd9d2e0ffe2560c4574d0b",
+    "plan_hashes_match": true,
+    "summary_sha256": "b45a79b5aaae4a79225bcec3751ea526b74e02a00ef140e9f8b50137197e1224",
+    "card_seed_interval_inclusive": [
+      2026130000,
+      2026131999
+    ],
+    "card_interval_disjoint_from_recorded_prior_ranges": true,
+    "paired_means_intervals_and_conditions_replicated": true
+  },
+  "paired_changes": {
+    "public": {
+      "mean": -16.6565,
+      "ci95_half_width": 22.098303051574458,
+      "lower": -38.754803051574456,
+      "upper": 5.441803051574457,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -15.312749999999998,
+          "ci95_half_width": 40.221181000646716,
+          "lower": -55.53393100064672,
+          "upper": 24.90843100064672
+        },
+        {
+          "seed": 343,
+          "mean": -46.77158333333333,
+          "ci95_half_width": 35.170186936157194,
+          "lower": -81.94177026949052,
+          "upper": -11.601396397176138
+        },
+        {
+          "seed": 344,
+          "mean": 12.114833333333333,
+          "ci95_half_width": 35.18566116239687,
+          "lower": -23.070827829063536,
+          "upper": 47.300494495730206
+        }
+      ]
+    },
+    "mixed": {
+      "mean": 52.89063888888889,
+      "ci95_half_width": 37.23390380619339,
+      "lower": 15.656735082695498,
+      "upper": 90.12454269508228,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 117.36075000000001,
+          "ci95_half_width": 65.85707410891746,
+          "lower": 51.50367589108255,
+          "upper": 183.21782410891745
+        },
+        {
+          "seed": 343,
+          "mean": -5.171833333333332,
+          "ci95_half_width": 64.76156631225378,
+          "lower": -69.93339964558712,
+          "upper": 59.589732978920445
+        },
+        {
+          "seed": 344,
+          "mean": 46.483,
+          "ci95_half_width": 60.918931885324284,
+          "lower": -14.435931885324287,
+          "upper": 107.40193188532427
+        }
+      ]
+    },
+    "noregrets": {
+      "mean": 43.73411111111111,
+      "ci95_half_width": 57.37083895960908,
+      "lower": -13.63672784849797,
+      "upper": 101.1049500707202,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 194.05125,
+          "ci95_half_width": 99.30236257625421,
+          "lower": 94.7488874237458,
+          "upper": 293.35361257625425
+        },
+        {
+          "seed": 343,
+          "mean": -66.31216666666667,
+          "ci95_half_width": 99.53624764939264,
+          "lower": -165.8484143160593,
+          "upper": 33.224080982725965
+        },
+        {
+          "seed": 344,
+          "mean": 3.463250000000007,
+          "ci95_half_width": 91.84188074473886,
+          "lower": -88.37863074473886,
+          "upper": 95.30513074473886
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "public_lower_above_zero": false,
+    "at_least_two_public_seeds_improve": false,
+    "mixed_lower_above_minus_25": true,
+    "noregrets_lower_above_minus_50": true
+  },
+  "original_four_conditions_pass": false,
+  "public_improving_seeds": 1,
+  "absolute_scores": {
+    "public": {
+      "current": -37.532805555555555,
+      "anchored": -54.189305555555556
+    },
+    "mixed": {
+      "current": 176.6414722222222,
+      "anchored": 229.5321111111111
+    },
+    "noregrets": {
+      "current": 191.40005555555555,
+      "anchored": 235.13416666666666
+    }
+  },
+  "fixed_replay_drift_comparison": [
+    {
+      "seed": 342,
+      "diagnostic_sample_size": 16384,
+      "diagnostic_seed": 2027111542,
+      "previous_unanchored_policy_tv": 0.38127651810646057,
+      "anchored_policy_tv": 0.18067917227745056,
+      "previous_unanchored_tv_over_half_fraction": 0.33380126953125,
+      "anchored_tv_over_half_fraction": 0.13006591796875,
+      "parent_training_mse": 0.8603372573852539,
+      "previous_unanchored_training_mse": 0.72773277759552,
+      "anchored_training_mse": 0.8093194961547852
+    },
+    {
+      "seed": 343,
+      "diagnostic_sample_size": 16384,
+      "diagnostic_seed": 2027111543,
+      "previous_unanchored_policy_tv": 0.4053860008716583,
+      "anchored_policy_tv": 0.16890248656272888,
+      "previous_unanchored_tv_over_half_fraction": 0.369140625,
+      "anchored_tv_over_half_fraction": 0.1236572265625,
+      "parent_training_mse": 0.8395305871963501,
+      "previous_unanchored_training_mse": 0.7147364616394043,
+      "anchored_training_mse": 0.793335497379303
+    },
+    {
+      "seed": 344,
+      "diagnostic_sample_size": 16384,
+      "diagnostic_seed": 2027111544,
+      "previous_unanchored_policy_tv": 0.3522877097129822,
+      "anchored_policy_tv": 0.1638147085905075,
+      "previous_unanchored_tv_over_half_fraction": 0.31378173828125,
+      "anchored_tv_over_half_fraction": 0.13299560546875,
+      "parent_training_mse": 0.8542253375053406,
+      "previous_unanchored_training_mse": 0.7535311579704285,
+      "anchored_training_mse": 0.8117278814315796
+    }
+  ],
+  "recommendation": "Preserve the original 120-iteration model and pause decision; no automatic continuation or deployment promotion. Retain the anchored candidate as a bounded research result that reduced training-graph policy drift but failed aggregate performance criteria.",
+  "limitations": [
+    "Nominal95% paired deal-block intervals; three fixed training seeds share cards and were averaged within each block before computing uncertainty.",
+    "Repeated exploratory experiments are not multiplicity-adjusted; this does not establish broad or professional poker strength.",
+    "Public change interval includes zero: required improvement was not demonstrated, rather than a conclusive public-matchup deterioration.",
+    "Drift measurements compare the same fixed replay diagnostic samples using the Torch training graph; they are not held-out deployment-behavior or poker-strength measurements.",
+    "The earlier unanchored probe used different evaluation cards, so this audit does not establish direct head-to-head strength superiority over that candidate.",
+    "This audit performs no new training or evaluation and contains no offsite backup identifiers or remote-checksum claims."
+  ]
+}

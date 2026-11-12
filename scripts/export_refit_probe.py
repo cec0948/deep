@@ -76,7 +76,7 @@ def export(run):
         raise ValueError('Archive is incomplete')
     temporary.replace(archive)
     result = dict(kind='derived-policy-probe', run=run.name, parent_run=parent,
-        resumable_selfplay=False, archive=str(archive), bytes=archive.stat().st_size,
+        resumable_selfplay=False, local_archive=str(archive), bytes=archive.stat().st_size,
         sha256=digest(archive), verified_files=len(checked), folder_id=index['folder_id'],
         parent_manifest_file_id=base['manifest_file_id'])
     atomic_json(exports / f'refit-probe-{run.name}.backup.json', result)

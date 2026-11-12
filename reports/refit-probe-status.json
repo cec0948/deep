@@ -1,15 +1,15 @@
 {
-  "observed_utc": "2026-11-12T05:12:43.488538+00:00",
+  "observed_utc": "2026-11-12T05:14:53.723315+00:00",
   "run": "20261112T050839072733Z",
-  "status": "running",
-  "phase": "evaluating",
-  "recorded_status": "running",
-  "recorded_phase": "evaluating",
-  "status_updated_utc": "2026-11-12T05:12:43.295446+00:00",
-  "status_age_seconds": 0.193092,
-  "supervisor_alive": true,
+  "status": "complete",
+  "phase": "complete",
+  "recorded_status": "complete",
+  "recorded_phase": "complete",
+  "status_updated_utc": "2026-11-12T05:13:09.562608+00:00",
+  "status_age_seconds": 104.160707,
+  "supervisor_alive": false,
   "liveness_evidence": "Matching registry/status PID, /proc start token and runner output argument",
-  "completed_evaluations": 15,
+  "completed_evaluations": 18,
   "planned_evaluations": 18,
   "parent_iteration": 120,
   "resumable_selfplay": false,
@@ -119,17 +119,42 @@
       }
     }
   },
-  "decisions": null,
-  "summary_verified": false,
-  "external_backup": null,
+  "decisions": {
+    "anchored": {
+      "conditions": {
+        "public_lower_above_zero": false,
+        "at_least_two_public_seeds_improve": false,
+        "mixed_lower_above_minus_25": true,
+        "noregrets_lower_above_minus_50": true
+      },
+      "original_four_conditions_pass": false,
+      "deployment_authorized": false
+    }
+  },
+  "summary_verified": true,
+  "external_backup": {
+    "kind": "derived-policy-probe",
+    "run": "20261112T050839072733Z",
+    "bytes": 14533619,
+    "recorded_at": "2026-11-12T05:14:21.474888+00:00",
+    "verified_remote_size": true,
+    "verified_owner_only": true,
+    "remote_checksum_available": false,
+    "resumable_selfplay": false,
+    "verification_scope": "Previously recorded verification; no fresh Drive request by this publisher"
+  },
   "limitations": [
     "Process liveness was checked only at observed_utc; old timestamps never prove current execution",
     "Candidate fitting is offline reuse of the original120 replay, not additional self-play rounds",
     "Fit metrics and Torch policy diagnostics are not held-out poker strength or deployment behavior",
     "Backup verification is read from the private index; no fresh remote metadata or checksum check is performed",
-    "Score anchoring does not guarantee a bound on policy drift or poker performance"
+    "Score anchoring does not guarantee a bound on policy drift or poker performance",
+    "Nominal confidence intervals are not adjusted for repeated experimentation",
+    "Shared cards are one block across fixed seeds, not independent seed-by-deal samples",
+    "The fixed opponent pool does not establish general or professional poker strength"
   ],
   "completed_candidate_fits": 3,
   "planned_candidate_fits": 3,
-  "next_action": "observe the existing bounded experiment; do not start a duplicate"
+  "total_hands": 216000,
+  "next_action": "paused_for_analysis; failed original conditions, no automatic retrial or promotion"
 }

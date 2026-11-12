@@ -1,0 +1,763 @@
+{
+  "format": "compact-anchored-offline-refit-v1",
+  "complete": true,
+  "artifact_kind": "derived-offline-anchored-refit",
+  "resumable_selfplay": false,
+  "parent": "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z",
+  "parent_iteration": 120,
+  "seed": 342,
+  "parent_checkpoint_sha256": "b85835c50c7a9eed9d62481ad6fba7fb0517c5e1f8867675ab23f6a05040c5e0",
+  "parent_config": {
+    "revision": "compact-cfr-v4",
+    "method": "compact-opening-expert",
+    "gate_run": "artifacts/retraining-validation/20261112T024258390982Z",
+    "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "iterations": 120,
+    "stages": [
+      120
+    ],
+    "traversals": 256,
+    "buffer_capacity": 100000,
+    "main_steps": 1024,
+    "batch_size": 512,
+    "opening_steps": 2048,
+    "opening_max_steps": 8192,
+    "max_opening_tv": 0.1,
+    "root_repetitions_first": 16,
+    "root_repetitions": 4,
+    "learning_rate": 0.001,
+    "checkpoint_every": 6,
+    "deployment_average": "Every pre-update policy, weight t, selected once per hand independently of cards",
+    "evaluation_fields": [
+      "noregrets",
+      "public",
+      "mixed"
+    ],
+    "evaluation_iterations": [
+      60,
+      120
+    ],
+    "evaluation_deals": 2000,
+    "evaluation_deal_seed": 2026111203,
+    "seconds_per_training_worker": 5400,
+    "promotion": "none",
+    "recovery_validation": "artifacts/retraining-validation/20261112T024258390982Z",
+    "evaluation_baselines": [
+      "public"
+    ],
+    "evaluation_all_stages_fields": true,
+    "extension_from": {
+      "parent": "/workspace/deep/artifacts/compact-v4/20261112T025126577365Z",
+      "iteration": 60,
+      "config_sha256": "5e2419f8970cfa85841f6ce90dbb645a4969faa37a9924fe1f9f8293128b78fa",
+      "checkpoints": {
+        "342": "bcb4947999fe2d9cde3d7c5feb9942d2074e90754d5f5690273f9d5a34cb71db",
+        "343": "bc78c9b827a34b53207cd4053b66bf4073f0d0b18d2f8593e4a3f1c45de4188d",
+        "344": "00eb6e34ffd7f8eef209a6373cc68d9cc8e9655483afd09677b94572602a2f13"
+      }
+    }
+  },
+  "parent_config_sha256": "b37e825ab2ad67ff2bfbe321b48a84c2366b5a45da174da895d267d0f812de4c",
+  "parent_source_manifest_sha256": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb",
+  "script_sha256": "a07413289689c342bb71f2fd9810d333fff41b8eea5fe5217a37163056b935d2",
+  "extra_steps": 3072,
+  "anchor_weight": 3.0,
+  "objective": "(replay_score_mse + anchor_weight * frozen_parent_score_mse) / (1 + anchor_weight)",
+  "teacher_main_tensor_state_sha256": "100fb59396477f202ef336b69d5d8b092072b2532fdb583ff9b1749df7f3776c",
+  "teacher_source": "Exact frozen deepcopy of parent120 main; eval mode; requires_grad=False",
+  "fit_seed": 2026111542,
+  "diagnostic_seed": 2027111542,
+  "diagnostic_policy_implementation": "Torch training graph; not NumPy deployment inference",
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "replay_rows": [
+    100000,
+    100000,
+    100000,
+    100000,
+    100000,
+    100000
+  ],
+  "new_selfplay_samples": 0,
+  "started_utc": "2026-11-12T05:08:44.240075+00:00",
+  "limitations": [
+    "Diagnostics are training-fit measurements on frozen replay, not held-out poker strength",
+    "Torch fitting-graph policy diagnostics are not measurements of deployment behavior",
+    "Score anchoring does not guarantee a policy-drift or poker-performance bound",
+    "Candidate is an offline main-expert refit; it cannot resume the original self-play trajectory",
+    "No default-model promotion and no change to continuation criteria"
+  ],
+  "before": {
+    "fixed_training_sample_size": 16384,
+    "normalized_training_mse": 0.8603372573852539,
+    "normalized_teacher_score_mse": 0.0,
+    "normalized_anchored_objective": 0.21508431434631348,
+    "zero_predictor_mse": 1.0011026859283447,
+    "training_mse_over_zero": 0.8593896205437148,
+    "unraised_preflop_conditional_target_tv": 0.5742611371928604,
+    "unraised_preflop_by_group": {
+      "0": {
+        "inputs": 404,
+        "conditional_target_tv": 0.6129983317033193
+      },
+      "1": {
+        "inputs": 398,
+        "conditional_target_tv": 0.6046952314712294
+      },
+      "2": {
+        "inputs": 241,
+        "conditional_target_tv": 0.5380912534428827
+      },
+      "4": {
+        "inputs": 323,
+        "conditional_target_tv": 0.5288360303631138
+      },
+      "5": {
+        "inputs": 392,
+        "conditional_target_tv": 0.5866848389837566
+      }
+    },
+    "positive_regret_absent_fraction": 0.2169189453125,
+    "policy_drift": {
+      "inputs": 16384,
+      "teacher_policy_tv": 0.0,
+      "teacher_policy_tv_p95": 0.0,
+      "teacher_policy_tv_over_half_fraction": 0.0,
+      "conditional_target_tv": 0.5803287029266357,
+      "teacher_positive_regret_absent_fraction": 0.2169189453125,
+      "positive_regret_absent_fraction": 0.2169189453125,
+      "newly_absent_fraction": 0.0,
+      "resolved_absent_fraction": 0.0
+    },
+    "policy_drift_by_street": {
+      "0": {
+        "inputs": 7068,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5907469391822815,
+        "teacher_positive_regret_absent_fraction": 0.19666100735710243,
+        "positive_regret_absent_fraction": 0.19666100735710243,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "1": {
+        "inputs": 3128,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5648482441902161,
+        "teacher_positive_regret_absent_fraction": 0.3209718670076726,
+        "positive_regret_absent_fraction": 0.3209718670076726,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "2": {
+        "inputs": 3059,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5839266777038574,
+        "teacher_positive_regret_absent_fraction": 0.1994115724092841,
+        "positive_regret_absent_fraction": 0.1994115724092841,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "3": {
+        "inputs": 3129,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5687532424926758,
+        "teacher_positive_regret_absent_fraction": 0.17577500798977308,
+        "positive_regret_absent_fraction": 0.17577500798977308,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      }
+    },
+    "policy_drift_by_stratum": {
+      "0": {
+        "inputs": 766,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6290661096572876,
+        "teacher_positive_regret_absent_fraction": 0.07571801566579635,
+        "positive_regret_absent_fraction": 0.07571801566579635,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "1": {
+        "inputs": 781,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.591912567615509,
+        "teacher_positive_regret_absent_fraction": 0.1203585147247119,
+        "positive_regret_absent_fraction": 0.1203585147247119,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "2": {
+        "inputs": 768,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5392191410064697,
+        "teacher_positive_regret_absent_fraction": 0.059895833333333336,
+        "positive_regret_absent_fraction": 0.059895833333333336,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "4": {
+        "inputs": 748,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5225659608840942,
+        "teacher_positive_regret_absent_fraction": 0.06951871657754011,
+        "positive_regret_absent_fraction": 0.06951871657754011,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "5": {
+        "inputs": 843,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5915270447731018,
+        "teacher_positive_regret_absent_fraction": 0.027283511269276393,
+        "positive_regret_absent_fraction": 0.027283511269276393,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "6": {
+        "inputs": 775,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6831769943237305,
+        "teacher_positive_regret_absent_fraction": 0.1935483870967742,
+        "positive_regret_absent_fraction": 0.1935483870967742,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "7": {
+        "inputs": 776,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6673040390014648,
+        "teacher_positive_regret_absent_fraction": 0.23840206185567012,
+        "positive_regret_absent_fraction": 0.23840206185567012,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "8": {
+        "inputs": 814,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5194150805473328,
+        "teacher_positive_regret_absent_fraction": 0.5073710073710074,
+        "positive_regret_absent_fraction": 0.5073710073710074,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "9": {
+        "inputs": 797,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5740275979042053,
+        "teacher_positive_regret_absent_fraction": 0.4629861982434128,
+        "positive_regret_absent_fraction": 0.4629861982434128,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "10": {
+        "inputs": 751,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5941340327262878,
+        "teacher_positive_regret_absent_fraction": 0.19307589880159787,
+        "positive_regret_absent_fraction": 0.19307589880159787,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "11": {
+        "inputs": 804,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6577169895172119,
+        "teacher_positive_regret_absent_fraction": 0.2798507462686567,
+        "positive_regret_absent_fraction": 0.2798507462686567,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "12": {
+        "inputs": 811,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5107023119926453,
+        "teacher_positive_regret_absent_fraction": 0.39827373612823674,
+        "positive_regret_absent_fraction": 0.39827373612823674,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "13": {
+        "inputs": 762,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.4956255257129669,
+        "teacher_positive_regret_absent_fraction": 0.40813648293963256,
+        "positive_regret_absent_fraction": 0.40813648293963256,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "14": {
+        "inputs": 720,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5744897723197937,
+        "teacher_positive_regret_absent_fraction": 0.043055555555555555,
+        "positive_regret_absent_fraction": 0.043055555555555555,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "15": {
+        "inputs": 775,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6963312029838562,
+        "teacher_positive_regret_absent_fraction": 0.1406451612903226,
+        "positive_regret_absent_fraction": 0.1406451612903226,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "16": {
+        "inputs": 780,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5277584791183472,
+        "teacher_positive_regret_absent_fraction": 0.3435897435897436,
+        "positive_regret_absent_fraction": 0.3435897435897436,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "17": {
+        "inputs": 784,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5373608469963074,
+        "teacher_positive_regret_absent_fraction": 0.2576530612244898,
+        "positive_regret_absent_fraction": 0.2576530612244898,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "18": {
+        "inputs": 788,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5787864923477173,
+        "teacher_positive_regret_absent_fraction": 0.07868020304568528,
+        "positive_regret_absent_fraction": 0.07868020304568528,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "19": {
+        "inputs": 795,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6952820420265198,
+        "teacher_positive_regret_absent_fraction": 0.0930817610062893,
+        "positive_regret_absent_fraction": 0.0930817610062893,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "20": {
+        "inputs": 793,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5104613900184631,
+        "teacher_positive_regret_absent_fraction": 0.27994955863808324,
+        "positive_regret_absent_fraction": 0.27994955863808324,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "21": {
+        "inputs": 753,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.48605579137802124,
+        "teacher_positive_regret_absent_fraction": 0.2549800796812749,
+        "positive_regret_absent_fraction": 0.2549800796812749,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      }
+    }
+  },
+  "refit_mean_loss": 0.2117595722763023,
+  "refit_mean_replay_score_mse": 0.82758827280486,
+  "refit_mean_teacher_score_mse": 0.006483338755742807,
+  "after": {
+    "fixed_training_sample_size": 16384,
+    "normalized_training_mse": 0.8093194961547852,
+    "normalized_teacher_score_mse": 0.008278775960206985,
+    "normalized_anchored_objective": 0.20853895600885153,
+    "zero_predictor_mse": 1.0011026859283447,
+    "training_mse_over_zero": 0.8084280539156532,
+    "unraised_preflop_conditional_target_tv": 0.5402609514224448,
+    "unraised_preflop_by_group": {
+      "0": {
+        "inputs": 404,
+        "conditional_target_tv": 0.5636198023647658
+      },
+      "1": {
+        "inputs": 398,
+        "conditional_target_tv": 0.5771465875330057
+      },
+      "2": {
+        "inputs": 241,
+        "conditional_target_tv": 0.51036075443895
+      },
+      "4": {
+        "inputs": 323,
+        "conditional_target_tv": 0.4871198524571031
+      },
+      "5": {
+        "inputs": 392,
+        "conditional_target_tv": 0.563057760318399
+      }
+    },
+    "positive_regret_absent_fraction": 0.21832275390625,
+    "policy_drift": {
+      "inputs": 16384,
+      "teacher_policy_tv": 0.18067917227745056,
+      "teacher_policy_tv_p95": 0.75,
+      "teacher_policy_tv_over_half_fraction": 0.13006591796875,
+      "conditional_target_tv": 0.5776079893112183,
+      "teacher_positive_regret_absent_fraction": 0.2169189453125,
+      "positive_regret_absent_fraction": 0.21832275390625,
+      "newly_absent_fraction": 0.08123779296875,
+      "resolved_absent_fraction": 0.079833984375
+    },
+    "policy_drift_by_street": {
+      "0": {
+        "inputs": 7068,
+        "teacher_policy_tv": 0.17945359647274017,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.11474250141482739,
+        "conditional_target_tv": 0.5847589373588562,
+        "teacher_positive_regret_absent_fraction": 0.19666100735710243,
+        "positive_regret_absent_fraction": 0.17487266553480477,
+        "newly_absent_fraction": 0.056310130164119974,
+        "resolved_absent_fraction": 0.07809847198641766
+      },
+      "1": {
+        "inputs": 3128,
+        "teacher_policy_tv": 0.18964387476444244,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.16911764705882354,
+        "conditional_target_tv": 0.5671700239181519,
+        "teacher_positive_regret_absent_fraction": 0.3209718670076726,
+        "positive_regret_absent_fraction": 0.3305626598465473,
+        "newly_absent_fraction": 0.11413043478260869,
+        "resolved_absent_fraction": 0.10453964194373401
+      },
+      "2": {
+        "inputs": 3059,
+        "teacher_policy_tv": 0.17694808542728424,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.12945406995750244,
+        "conditional_target_tv": 0.5788120627403259,
+        "teacher_positive_regret_absent_fraction": 0.1994115724092841,
+        "positive_regret_absent_fraction": 0.2386400784570121,
+        "newly_absent_fraction": 0.10559006211180125,
+        "resolved_absent_fraction": 0.06636155606407322
+      },
+      "3": {
+        "inputs": 3129,
+        "teacher_policy_tv": 0.17813335359096527,
+        "teacher_policy_tv_p95": 0.737922191619873,
+        "teacher_policy_tv_over_half_fraction": 0.12623841482901885,
+        "conditional_target_tv": 0.5707124471664429,
+        "teacher_positive_regret_absent_fraction": 0.17577500798977308,
+        "positive_regret_absent_fraction": 0.18440396292745287,
+        "newly_absent_fraction": 0.08085650367529562,
+        "resolved_absent_fraction": 0.07222754873761585
+      }
+    },
+    "policy_drift_by_stratum": {
+      "0": {
+        "inputs": 766,
+        "teacher_policy_tv": 0.23737671971321106,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.1514360313315927,
+        "conditional_target_tv": 0.576159656047821,
+        "teacher_positive_regret_absent_fraction": 0.07571801566579635,
+        "positive_regret_absent_fraction": 0.05221932114882506,
+        "newly_absent_fraction": 0.02741514360313316,
+        "resolved_absent_fraction": 0.050913838120104436
+      },
+      "1": {
+        "inputs": 781,
+        "teacher_policy_tv": 0.1970011293888092,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.12419974391805377,
+        "conditional_target_tv": 0.5683526396751404,
+        "teacher_positive_regret_absent_fraction": 0.1203585147247119,
+        "positive_regret_absent_fraction": 0.09475032010243278,
+        "newly_absent_fraction": 0.016645326504481434,
+        "resolved_absent_fraction": 0.04225352112676056
+      },
+      "2": {
+        "inputs": 768,
+        "teacher_policy_tv": 0.16899006068706512,
+        "teacher_policy_tv_p95": 0.6666666269302368,
+        "teacher_policy_tv_over_half_fraction": 0.078125,
+        "conditional_target_tv": 0.5102381706237793,
+        "teacher_positive_regret_absent_fraction": 0.059895833333333336,
+        "positive_regret_absent_fraction": 0.06380208333333333,
+        "newly_absent_fraction": 0.029947916666666668,
+        "resolved_absent_fraction": 0.026041666666666668
+      },
+      "4": {
+        "inputs": 748,
+        "teacher_policy_tv": 0.19054947793483734,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.09358288770053476,
+        "conditional_target_tv": 0.48860999941825867,
+        "teacher_positive_regret_absent_fraction": 0.06951871657754011,
+        "positive_regret_absent_fraction": 0.05080213903743316,
+        "newly_absent_fraction": 0.029411764705882353,
+        "resolved_absent_fraction": 0.0481283422459893
+      },
+      "5": {
+        "inputs": 843,
+        "teacher_policy_tv": 0.1687227487564087,
+        "teacher_policy_tv_p95": 0.5689114928245544,
+        "teacher_policy_tv_over_half_fraction": 0.07591933570581258,
+        "conditional_target_tv": 0.5600298047065735,
+        "teacher_positive_regret_absent_fraction": 0.027283511269276393,
+        "positive_regret_absent_fraction": 0.020166073546856466,
+        "newly_absent_fraction": 0.010676156583629894,
+        "resolved_absent_fraction": 0.017793594306049824
+      },
+      "6": {
+        "inputs": 775,
+        "teacher_policy_tv": 0.2088182419538498,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.24387096774193548,
+        "conditional_target_tv": 0.6529305577278137,
+        "teacher_positive_regret_absent_fraction": 0.1935483870967742,
+        "positive_regret_absent_fraction": 0.29161290322580646,
+        "newly_absent_fraction": 0.15354838709677418,
+        "resolved_absent_fraction": 0.05548387096774193
+      },
+      "7": {
+        "inputs": 776,
+        "teacher_policy_tv": 0.1763892024755478,
+        "teacher_policy_tv_p95": 0.8000000715255737,
+        "teacher_policy_tv_over_half_fraction": 0.20876288659793815,
+        "conditional_target_tv": 0.6508706212043762,
+        "teacher_positive_regret_absent_fraction": 0.23840206185567012,
+        "positive_regret_absent_fraction": 0.33762886597938147,
+        "newly_absent_fraction": 0.14432989690721648,
+        "resolved_absent_fraction": 0.045103092783505154
+      },
+      "8": {
+        "inputs": 814,
+        "teacher_policy_tv": 0.15019924938678741,
+        "teacher_policy_tv_p95": 0.6666666269302368,
+        "teacher_policy_tv_over_half_fraction": 0.06265356265356266,
+        "conditional_target_tv": 0.5932773947715759,
+        "teacher_positive_regret_absent_fraction": 0.5073710073710074,
+        "positive_regret_absent_fraction": 0.36977886977886976,
+        "newly_absent_fraction": 0.06388206388206388,
+        "resolved_absent_fraction": 0.20147420147420148
+      },
+      "9": {
+        "inputs": 797,
+        "teacher_policy_tv": 0.12191551923751831,
+        "teacher_policy_tv_p95": 0.5,
+        "teacher_policy_tv_over_half_fraction": 0.002509410288582183,
+        "conditional_target_tv": 0.6579441428184509,
+        "teacher_positive_regret_absent_fraction": 0.4629861982434128,
+        "positive_regret_absent_fraction": 0.28732747804265996,
+        "newly_absent_fraction": 0.033877038895859475,
+        "resolved_absent_fraction": 0.2095357590966123
+      },
+      "10": {
+        "inputs": 751,
+        "teacher_policy_tv": 0.2916944921016693,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.3155792276964048,
+        "conditional_target_tv": 0.5722913146018982,
+        "teacher_positive_regret_absent_fraction": 0.19307589880159787,
+        "positive_regret_absent_fraction": 0.2996005326231691,
+        "newly_absent_fraction": 0.16378162450066577,
+        "resolved_absent_fraction": 0.05725699067909454
+      },
+      "11": {
+        "inputs": 804,
+        "teacher_policy_tv": 0.24631300568580627,
+        "teacher_policy_tv_p95": 0.8000000715255737,
+        "teacher_policy_tv_over_half_fraction": 0.291044776119403,
+        "conditional_target_tv": 0.616061270236969,
+        "teacher_positive_regret_absent_fraction": 0.2798507462686567,
+        "positive_regret_absent_fraction": 0.4191542288557214,
+        "newly_absent_fraction": 0.19776119402985073,
+        "resolved_absent_fraction": 0.05845771144278607
+      },
+      "12": {
+        "inputs": 811,
+        "teacher_policy_tv": 0.12117698043584824,
+        "teacher_policy_tv_p95": 0.6666666865348816,
+        "teacher_policy_tv_over_half_fraction": 0.0690505548705302,
+        "conditional_target_tv": 0.5431614518165588,
+        "teacher_positive_regret_absent_fraction": 0.39827373612823674,
+        "positive_regret_absent_fraction": 0.31072749691738594,
+        "newly_absent_fraction": 0.0530209617755857,
+        "resolved_absent_fraction": 0.1405672009864365
+      },
+      "13": {
+        "inputs": 762,
+        "teacher_policy_tv": 0.10214348882436752,
+        "teacher_policy_tv_p95": 0.5,
+        "teacher_policy_tv_over_half_fraction": 0.0026246719160104987,
+        "conditional_target_tv": 0.5360892415046692,
+        "teacher_positive_regret_absent_fraction": 0.40813648293963256,
+        "positive_regret_absent_fraction": 0.2887139107611549,
+        "newly_absent_fraction": 0.04199475065616798,
+        "resolved_absent_fraction": 0.16141732283464566
+      },
+      "14": {
+        "inputs": 720,
+        "teacher_policy_tv": 0.2673613727092743,
+        "teacher_policy_tv_p95": 0.669869065284729,
+        "teacher_policy_tv_over_half_fraction": 0.2013888888888889,
+        "conditional_target_tv": 0.5549704432487488,
+        "teacher_positive_regret_absent_fraction": 0.043055555555555555,
+        "positive_regret_absent_fraction": 0.14305555555555555,
+        "newly_absent_fraction": 0.11944444444444445,
+        "resolved_absent_fraction": 0.019444444444444445
+      },
+      "15": {
+        "inputs": 775,
+        "teacher_policy_tv": 0.2450636327266693,
+        "teacher_policy_tv_p95": 0.8000000715255737,
+        "teacher_policy_tv_over_half_fraction": 0.2503225806451613,
+        "conditional_target_tv": 0.6663542985916138,
+        "teacher_positive_regret_absent_fraction": 0.1406451612903226,
+        "positive_regret_absent_fraction": 0.24903225806451612,
+        "newly_absent_fraction": 0.15354838709677418,
+        "resolved_absent_fraction": 0.04516129032258064
+      },
+      "16": {
+        "inputs": 780,
+        "teacher_policy_tv": 0.12113583832979202,
+        "teacher_policy_tv_p95": 0.6666666865348816,
+        "teacher_policy_tv_over_half_fraction": 0.07179487179487179,
+        "conditional_target_tv": 0.5431613326072693,
+        "teacher_positive_regret_absent_fraction": 0.3435897435897436,
+        "positive_regret_absent_fraction": 0.31666666666666665,
+        "newly_absent_fraction": 0.0782051282051282,
+        "resolved_absent_fraction": 0.10512820512820513
+      },
+      "17": {
+        "inputs": 784,
+        "teacher_policy_tv": 0.08210927248001099,
+        "teacher_policy_tv_p95": 0.5,
+        "teacher_policy_tv_over_half_fraction": 0.0012755102040816326,
+        "conditional_target_tv": 0.5496393442153931,
+        "teacher_positive_regret_absent_fraction": 0.2576530612244898,
+        "positive_regret_absent_fraction": 0.2385204081632653,
+        "newly_absent_fraction": 0.07270408163265306,
+        "resolved_absent_fraction": 0.09183673469387756
+      },
+      "18": {
+        "inputs": 788,
+        "teacher_policy_tv": 0.26662352681159973,
+        "teacher_policy_tv_p95": 0.7583755850791931,
+        "teacher_policy_tv_over_half_fraction": 0.217005076142132,
+        "conditional_target_tv": 0.5557834506034851,
+        "teacher_positive_regret_absent_fraction": 0.07868020304568528,
+        "positive_regret_absent_fraction": 0.10152284263959391,
+        "newly_absent_fraction": 0.0583756345177665,
+        "resolved_absent_fraction": 0.03553299492385787
+      },
+      "19": {
+        "inputs": 795,
+        "teacher_policy_tv": 0.20829114317893982,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.189937106918239,
+        "conditional_target_tv": 0.6841381788253784,
+        "teacher_positive_regret_absent_fraction": 0.0930817610062893,
+        "positive_regret_absent_fraction": 0.16729559748427672,
+        "newly_absent_fraction": 0.10062893081761007,
+        "resolved_absent_fraction": 0.026415094339622643
+      },
+      "20": {
+        "inputs": 793,
+        "teacher_policy_tv": 0.13705985248088837,
+        "teacher_policy_tv_p95": 0.6666666865348816,
+        "teacher_policy_tv_over_half_fraction": 0.09205548549810845,
+        "conditional_target_tv": 0.5118688941001892,
+        "teacher_positive_regret_absent_fraction": 0.27994955863808324,
+        "positive_regret_absent_fraction": 0.26229508196721313,
+        "newly_absent_fraction": 0.09079445145018916,
+        "resolved_absent_fraction": 0.10844892812105927
+      },
+      "21": {
+        "inputs": 753,
+        "teacher_policy_tv": 0.09694555401802063,
+        "teacher_policy_tv_p95": 0.5,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5285524725914001,
+        "teacher_positive_regret_absent_fraction": 0.2549800796812749,
+        "positive_regret_absent_fraction": 0.20717131474103587,
+        "newly_absent_fraction": 0.07304116865869854,
+        "resolved_absent_fraction": 0.12084993359893759
+      }
+    }
+  },
+  "opening_unchanged": true,
+  "scales_unchanged": true,
+  "parent_checkpoint_unchanged": true,
+  "parent_frozen_files_unchanged": true,
+  "teacher_unchanged": true,
+  "files": {
+    "candidate.npz": {
+      "bytes": 1185289,
+      "sha256": "5acb4f6da76becc53a6ea1d72808a0c2bbc71c66da6a280eddff218ccd50fae2"
+    },
+    "candidate.pt": {
+      "bytes": 1186172,
+      "sha256": "2a92a6d59cee5b02ffd3b597e1b484d6ffe8293830b24d33a474abc2a1165fef"
+    },
+    "source-manifest.json": {
+      "bytes": 2573,
+      "sha256": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb"
+    }
+  },
+  "seconds": 37.291913389999536,
+  "completed_utc": "2026-11-12T05:09:21.532020+00:00"
+}

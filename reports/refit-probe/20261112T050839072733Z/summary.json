@@ -1,0 +1,327 @@
+{
+  "complete": true,
+  "completed_evaluations": 18,
+  "total_hands": 216000,
+  "absolute_scores": {
+    "public/current": {
+      "mean": -37.532805555555555,
+      "ci95_half_width": 23.189417025641696,
+      "lower": -60.72222258119725,
+      "upper": -14.34338852991386,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -47.18775,
+          "ci95_half_width": 35.66675925045281,
+          "lower": -82.85450925045282,
+          "upper": -11.520990749547188
+        },
+        {
+          "seed": 343,
+          "mean": 14.517000000000001,
+          "ci95_half_width": 31.697160763312763,
+          "lower": -17.180160763312763,
+          "upper": 46.21416076331276
+        },
+        {
+          "seed": 344,
+          "mean": -79.92766666666667,
+          "ci95_half_width": 37.33460265164781,
+          "lower": -117.26226931831448,
+          "upper": -42.593064015018854
+        }
+      ]
+    },
+    "mixed/current": {
+      "mean": 176.6414722222222,
+      "ci95_half_width": 61.25976600028271,
+      "lower": 115.3817062219395,
+      "upper": 237.9012382225049,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 201.57191666666665,
+          "ci95_half_width": 77.76575884515228,
+          "lower": 123.80615782151438,
+          "upper": 279.33767551181893
+        },
+        {
+          "seed": 343,
+          "mean": 279.5568333333333,
+          "ci95_half_width": 82.20098533540497,
+          "lower": 197.35584799792835,
+          "upper": 361.7578186687383
+        },
+        {
+          "seed": 344,
+          "mean": 48.79566666666667,
+          "ci95_half_width": 87.21888290198663,
+          "lower": -38.42321623531996,
+          "upper": 136.0145495686533
+        }
+      ]
+    },
+    "noregrets/current": {
+      "mean": 191.40005555555555,
+      "ci95_half_width": 97.6952373977371,
+      "lower": 93.70481815781845,
+      "upper": 289.09529295329264,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 148.798,
+          "ci95_half_width": 118.74109130704605,
+          "lower": 30.056908692953954,
+          "upper": 267.5390913070461
+        },
+        {
+          "seed": 343,
+          "mean": 380.945,
+          "ci95_half_width": 134.52919361598728,
+          "lower": 246.4158063840127,
+          "upper": 515.4741936159872
+        },
+        {
+          "seed": 344,
+          "mean": 44.457166666666666,
+          "ci95_half_width": 129.16062255646415,
+          "lower": -84.70345588979748,
+          "upper": 173.6177892231308
+        }
+      ]
+    },
+    "public/anchored": {
+      "mean": -54.189305555555556,
+      "ci95_half_width": 28.714766003771285,
+      "lower": -82.90407155932684,
+      "upper": -25.47453955178427,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -62.5005,
+          "ci95_half_width": 43.64095050283524,
+          "lower": -106.14145050283524,
+          "upper": -18.859549497164764
+        },
+        {
+          "seed": 343,
+          "mean": -32.254583333333336,
+          "ci95_half_width": 39.654456609561755,
+          "lower": -71.90903994289509,
+          "upper": 7.399873276228419
+        },
+        {
+          "seed": 344,
+          "mean": -67.81283333333333,
+          "ci95_half_width": 38.65706210269118,
+          "lower": -106.4698954360245,
+          "upper": -29.155771230642152
+        }
+      ]
+    },
+    "mixed/anchored": {
+      "mean": 229.5321111111111,
+      "ci95_half_width": 65.51018934380147,
+      "lower": 164.02192176730964,
+      "upper": 295.0423004549126,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 318.93266666666665,
+          "ci95_half_width": 83.02679775763683,
+          "lower": 235.90586890902983,
+          "upper": 401.95946442430346
+        },
+        {
+          "seed": 343,
+          "mean": 274.385,
+          "ci95_half_width": 87.14219333942566,
+          "lower": 187.24280666057433,
+          "upper": 361.52719333942565
+        },
+        {
+          "seed": 344,
+          "mean": 95.27866666666667,
+          "ci95_half_width": 89.30427412994783,
+          "lower": 5.974392536718838,
+          "upper": 184.58294079661448
+        }
+      ]
+    },
+    "noregrets/anchored": {
+      "mean": 235.13416666666666,
+      "ci95_half_width": 103.87764689581923,
+      "lower": 131.25651977084743,
+      "upper": 339.0118135624859,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 342.84925,
+          "ci95_half_width": 127.03090359216542,
+          "lower": 215.81834640783455,
+          "upper": 469.8801535921654
+        },
+        {
+          "seed": 343,
+          "mean": 314.63283333333334,
+          "ci95_half_width": 138.70387562592003,
+          "lower": 175.9289577074133,
+          "upper": 453.3367089592534
+        },
+        {
+          "seed": 344,
+          "mean": 47.92041666666667,
+          "ci95_half_width": 130.5903781954651,
+          "lower": -82.66996152879842,
+          "upper": 178.51079486213177
+        }
+      ]
+    }
+  },
+  "paired_changes": {
+    "public/anchored-minus-current": {
+      "mean": -16.6565,
+      "ci95_half_width": 22.098303051574458,
+      "lower": -38.754803051574456,
+      "upper": 5.441803051574457,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -15.312749999999998,
+          "ci95_half_width": 40.221181000646716,
+          "lower": -55.53393100064672,
+          "upper": 24.90843100064672
+        },
+        {
+          "seed": 343,
+          "mean": -46.77158333333333,
+          "ci95_half_width": 35.170186936157194,
+          "lower": -81.94177026949052,
+          "upper": -11.601396397176138
+        },
+        {
+          "seed": 344,
+          "mean": 12.114833333333333,
+          "ci95_half_width": 35.18566116239687,
+          "lower": -23.070827829063536,
+          "upper": 47.300494495730206
+        }
+      ]
+    },
+    "mixed/anchored-minus-current": {
+      "mean": 52.89063888888889,
+      "ci95_half_width": 37.23390380619339,
+      "lower": 15.656735082695498,
+      "upper": 90.12454269508228,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 117.36075000000001,
+          "ci95_half_width": 65.85707410891746,
+          "lower": 51.50367589108255,
+          "upper": 183.21782410891745
+        },
+        {
+          "seed": 343,
+          "mean": -5.171833333333332,
+          "ci95_half_width": 64.76156631225378,
+          "lower": -69.93339964558712,
+          "upper": 59.589732978920445
+        },
+        {
+          "seed": 344,
+          "mean": 46.483,
+          "ci95_half_width": 60.918931885324284,
+          "lower": -14.435931885324287,
+          "upper": 107.40193188532427
+        }
+      ]
+    },
+    "noregrets/anchored-minus-current": {
+      "mean": 43.73411111111111,
+      "ci95_half_width": 57.37083895960908,
+      "lower": -13.63672784849797,
+      "upper": 101.1049500707202,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 194.05125,
+          "ci95_half_width": 99.30236257625421,
+          "lower": 94.7488874237458,
+          "upper": 293.35361257625425
+        },
+        {
+          "seed": 343,
+          "mean": -66.31216666666667,
+          "ci95_half_width": 99.53624764939264,
+          "lower": -165.8484143160593,
+          "upper": 33.224080982725965
+        },
+        {
+          "seed": 344,
+          "mean": 3.463250000000007,
+          "ci95_half_width": 91.84188074473886,
+          "lower": -88.37863074473886,
+          "upper": 95.30513074473886
+        }
+      ]
+    }
+  },
+  "decisions": {
+    "anchored": {
+      "conditions": {
+        "public_lower_above_zero": false,
+        "at_least_two_public_seeds_improve": false,
+        "mixed_lower_above_minus_25": true,
+        "noregrets_lower_above_minus_50": true
+      },
+      "original_four_conditions_pass": false,
+      "deployment_authorized": false
+    }
+  },
+  "limitations": [
+    "Single predeclared candidate; nominal intervals are not adjusted for repeated experimentation",
+    "Shared cards are one block across seeds, not independent seed-by-deal samples",
+    "Fixed trained seeds and a fixed two-model opponent pool",
+    "No automatic model promotion, self-play continuation, or professional-strength claim"
+  ],
+  "plan_sha256": "af0f7f41870eea0dc8632a37de960fe613ccdea6e6fc9256b367ce0f259737d8",
+  "evaluation_plan_sha256": "3f7471653b770a7e8dcf24e4cb44d7723129188485dd9d2e0ffe2560c4574d0b",
+  "config": {
+    "purpose": "Frozen 120-round replay: test whether a fixed parent-score anchor reduces destructive main-policy drift",
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "extra_steps": 3072,
+    "anchor_weight": 3.0,
+    "batch_size": 512,
+    "learning_rate": 0.001,
+    "evaluation_deals": 2000,
+    "evaluation_deal_seed": 2026130000,
+    "evaluation_fields": [
+      "public",
+      "mixed",
+      "noregrets"
+    ],
+    "variants": [
+      "current",
+      "anchored"
+    ],
+    "parallelism": 3,
+    "promotion": "none",
+    "criteria": "Unchanged original four conditions; shared deal blocks averaged across seeds before computing intervals",
+    "limitations": [
+      "Single predeclared candidate; nominal intervals are not adjusted for repeated experimentation",
+      "Score anchoring does not guarantee a bound on regret-matched policy change",
+      "Replay diagnostics are not held-out strength measurements",
+      "A passing probe requires subsequent independent validation before any production changes"
+    ]
+  },
+  "parent": "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z",
+  "completed_utc": "2026-11-12T05:13:09.553601+00:00",
+  "seconds": 268.7966095920001,
+  "raw_hands_verified": true,
+  "source_provenance_verified": true
+}
