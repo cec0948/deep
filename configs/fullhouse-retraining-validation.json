@@ -1,0 +1,76 @@
+{
+  "revision": "compact-learning-validation-v1",
+  "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+  "control_run": "artifacts/learning-validation/20261109T055825812142Z",
+  "frozen_pairs": [
+    [
+      42,
+      7
+    ],
+    [
+      43,
+      8
+    ],
+    [
+      44,
+      9
+    ]
+  ],
+  "baseline_steps": 512,
+  "baseline_batch": 128,
+  "candidate_steps": [
+    2048,
+    8192
+  ],
+  "candidate_batch": 512,
+  "candidate_modes": [
+    "compact-opening-expert"
+  ],
+  "fixed_buffer_gates": {
+    "eligible_steps": 8192,
+    "max_root_weighted_tv": 0.1,
+    "max_aa_fold": 0.01,
+    "max_global_mse_ratio_to_control": 1.05,
+    "max_street_mse_ratio_to_control": 1.1,
+    "all_three_pairs_required": true
+  },
+  "kuhn": {
+    "seeds": [
+      71,
+      72,
+      73
+    ],
+    "iterations": 240,
+    "milestones": [
+      12,
+      60,
+      120,
+      240
+    ],
+    "traversals": 256,
+    "regret_steps": 256,
+    "regret_batch": 128,
+    "strategy_steps": 512,
+    "capacity": 100000,
+    "max_final_exploitability_ante": 0.05,
+    "max_average_collector_tv": 0.05,
+    "max_average_network_tv": 0.03,
+    "tabular_reference_iterations": 5000,
+    "max_tabular_exploitability_ante": 0.005
+  },
+  "six_player_gate": "Both unchanged numerical gates must pass for the same method before new six-player learning.",
+  "limits": {
+    "seconds_per_process": 1800,
+    "parallel_processes": 3
+  },
+  "limitations": [
+    "Existing 512-step controls are reused with exact checkpoint/model hashes.",
+    "Stratum scaling is constant across a fit's replay iterations; no row centering or per-row scaling.",
+    "Uniform feature mass changes the finite-network projection objective.",
+    "Fitting noisy finite targets is not evidence of poker strength.",
+    "Only the initial six-player UTG decision uses the opening expert; no hand/action overrides.",
+    "The frozen main expert is the predeclared 32768-step stratum-normalized refit; it is identical before and after the opening expert is added.",
+    "Deployment selects one 256-wide neural expert per decision; no live search."
+  ],
+  "base_fit_run": "artifacts/learning-validation/20261110T013047373416Z"
+}

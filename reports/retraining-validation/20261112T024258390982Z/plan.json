@@ -1,0 +1,6 @@
+{
+  "reason": "One seed measured exploitability 0.051358 at 120 against unchanged threshold 0.05",
+  "decision_before_results": "Uniformly repeat all three seeds through 240; do not select seeds or change numerical pass criteria",
+  "prior": "/workspace/deep/artifacts/retraining-validation/20261112T022544991831Z",
+  "config": "configs/fullhouse-retraining-validation.json"
+}

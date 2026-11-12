@@ -14,7 +14,12 @@ from fullhouse_v3_common import ROOT,atomic_json,digest
 def evaluation_jobs(folder,cfg):
     folder=Path(folder)
     jobs=[]
-    for label,model,source in [('public',None,None),('old-v3-adv42',ROOT/cfg['source_run']/'seed-42_adv/iter_00120.npz',ROOT/cfg['source_run']/'source')]:
+    baselines = cfg.get('evaluation_baselines', ['public', 'old-v3-adv42'])
+    if len(baselines) != len(set(baselines)) or set(baselines)-{'public','old-v3-adv42'}:
+        raise ValueError('Invalid evaluation baselines')
+    available = [('public',None,None),('old-v3-adv42',ROOT/cfg['source_run']/'seed-42_adv/iter_00120.npz',ROOT/cfg['source_run']/'source')]
+    for label,model,source in available:
+        if label not in baselines:continue
         for field in cfg['evaluation_fields']:jobs.append(dict(id=f'{field}-{label}',model=str(model) if model else None,source=str(source) if source else None,field=field))
     for iteration in cfg['evaluation_iterations']:
         fields=cfg['evaluation_fields'] if cfg.get('evaluation_all_stages_fields') or iteration==max(cfg['evaluation_iterations']) else ['noregrets','public']

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "seeds": [
+    {
+      "seed": 42,
+      "iteration": 12,
+      "root_observations": 2028,
+      "minimum_class_observations": 12,
+      "snapshots": 12,
+      "mixture_aa_fold": 0.13414710607284155,
+      "checkpoint_sha256": "a4cfc28846d7f225a590e03eceffd4e434456ebfcfc00e97b893fa1b2bfef50f"
+    }
+  ],
+  "verified_mixture_hands": 72,
+  "verifier_sha256": "8c52ba4479f94681bec4f1733cccd27a4d5b5034940b954a73dc4c3d0dbbba60"
+}

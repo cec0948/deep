@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "seed": 42,
+      "model_sha256": "da63c342d0c078806bcce4a316c3fca2870b09e480040c94accf46d6b0f75c94",
+      "model_bytes": 1183010,
+      "root_weighted_tv": 3.898507352449029e-07,
+      "aa_fold": 0.0,
+      "max_deployment_policy_error": 0.0,
+      "max_torch_numpy_score_error": 2.384185791015625e-06,
+      "passed": true
+    },
+    {
+      "seed": 43,
+      "model_sha256": "4d7fe5d038ab3cd8acf8495fa371398a0c17e7a3afe96d248a12f74df945c6a9",
+      "model_bytes": 1183010,
+      "root_weighted_tv": 0.00679894801510825,
+      "aa_fold": 0.0,
+      "max_deployment_policy_error": 0.0,
+      "max_torch_numpy_score_error": 2.86102294921875e-06,
+      "passed": true
+    },
+    {
+      "seed": 44,
+      "model_sha256": "4d3cd9e2a9a01b31f7bc7ff22f4641f169f8a0f4577f1b6505caf208524e85cc",
+      "model_bytes": 1183010,
+      "root_weighted_tv": 3.7304301508460026e-07,
+      "aa_fold": 0.0,
+      "max_deployment_policy_error": 0.0,
+      "max_torch_numpy_score_error": 1.7881393432617188e-06,
+      "passed": true
+    }
+  ],
+  "runtime_sha256": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+  "compact_fitter_sha256": "4cff184154657d6e1040536fd02a1cd25bb518e8a813a67b72851dd6f1882d60",
+  "partition_sha256": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+  "verifier_sha256": "11e03cad72070fe9503842459ef78b8feac94fa05796ae80be325dc1692a3a3c",
+  "recovery_provenance": {
+    "frozen_replay_basis": "Archived verified reports; historical weights and buffers were lost and were not rechecked",
+    "small_game_basis": "Fresh three-seed full learning runs with independently verified final checkpoints",
+    "source_basis": "All 24 restored source/tool files match the last saved campaign manifest",
+    "archive": "reports/learning-validation/20261110T015233258042Z",
+    "archive_gate_sha256": "4e813394eed2a1513d5e28eb2606d36b2bf9a09ba27e063f73c278abf2126068",
+    "source_manifest_sha256": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb",
+    "recovery_verifier_sha256": "032ab213ad667af0d4a50b9023b23da326c119af7c05777a4c6ecde32229f70d",
+    "fresh_verifications": {
+      "71": "f32f87f8738f25ec00e4729b202caa97a42bd54f046fed7af84400ebe8308284",
+      "72": "aa26e8e2e8e60fca274c70ebfb78ffc4bdc7c4aa3117944847063febb1d9af22",
+      "73": "80a82c91236d0e68ad58320b688e5fd359e89437fe3f212f6bdfe9acf2b46536"
+    },
+    "validation_extension": "All original Kuhn seeds rerun through 240 after one failed at 120; unchanged pass thresholds; both runs retained"
+  }
+}

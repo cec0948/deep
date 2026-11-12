@@ -14,7 +14,11 @@ TOOLS=['compact_regret.py','regret_fitting.py','scaled_regret_fitting.py','regre
 def prepare(folder,cfg):
     folder=Path(folder)
     if not cfg.get('verification_fixture'):
-        subprocess.run([sys.executable,str(ROOT/'scripts/check_learning_gates.py'),str(ROOT/cfg['gate_run']),'--require-six-player'],check=True,stdout=subprocess.DEVNULL)
+        if cfg.get('recovery_validation'):
+            from verify_compact_recovery import verify_recovery
+            verify_recovery(cfg)
+        else:
+            subprocess.run([sys.executable,str(ROOT/'scripts/check_learning_gates.py'),str(ROOT/cfg['gate_run']),'--require-six-player'],check=True,stdout=subprocess.DEVNULL)
         verified=json.loads((ROOT/cfg['gate_run']/'deployment-verification.json').read_text())
         if not verified['passed']:raise ValueError('Deployment verification failed')
     folder.mkdir(parents=True,exist_ok=False)

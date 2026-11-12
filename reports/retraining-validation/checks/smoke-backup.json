@@ -1,0 +1,10 @@
+{
+  "archive": "artifacts/exports/compact-v4-20261112T024445071933Z.tar.gz",
+  "bytes": 15503992,
+  "sha256": "4ecada2b7591410103b56cf3b7ceb957bb01347a25dac1ea39763b20d7636aec",
+  "verified_files": 120,
+  "requirements": "Repository scripts and the pinned setup dependencies. Original V3 backup is needed only for redoing old research and baseline evaluations.",
+  "iterations": {
+    "42": 12
+  }
+}

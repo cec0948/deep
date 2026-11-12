@@ -1,0 +1,85 @@
+{
+  "before": 6,
+  "after": 12,
+  "changes": {
+    "noregrets/current": {
+      "mean": 3293.8333333333335,
+      "ci95_half_width": 8946.746666666664,
+      "per_seed": [
+        {
+          "seed": 42,
+          "mean": 3293.8333333333335,
+          "ci95_half_width": 8946.746666666664
+        }
+      ]
+    },
+    "public/current": {
+      "mean": 745.75,
+      "ci95_half_width": 1952.6499999999999,
+      "per_seed": [
+        {
+          "seed": 42,
+          "mean": 745.75,
+          "ci95_half_width": 1952.6499999999999
+        }
+      ]
+    },
+    "mixed/current": {
+      "mean": 391.9999999999999,
+      "ci95_half_width": 1037.8199999999997,
+      "per_seed": [
+        {
+          "seed": 42,
+          "mean": 391.9999999999999,
+          "ci95_half_width": 1037.8199999999997
+        }
+      ]
+    },
+    "noregrets/mixture": {
+      "mean": -1613.5833333333333,
+      "ci95_half_width": 3182.876666666666,
+      "per_seed": [
+        {
+          "seed": 42,
+          "mean": -1613.5833333333333,
+          "ci95_half_width": 3182.876666666666
+        }
+      ]
+    },
+    "public/mixture": {
+      "mean": 1702.1666666666667,
+      "ci95_half_width": 2600.92,
+      "per_seed": [
+        {
+          "seed": 42,
+          "mean": 1702.1666666666667,
+          "ci95_half_width": 2600.92
+        }
+      ]
+    },
+    "mixed/mixture": {
+      "mean": 1898.5833333333335,
+      "ci95_half_width": 2991.776666666666,
+      "per_seed": [
+        {
+          "seed": 42,
+          "mean": 1898.5833333333335,
+          "ci95_half_width": 2991.776666666666
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "public_lower_above_zero": false,
+    "at_least_two_public_seeds_improve": false,
+    "mixed_lower_above_minus_25": false,
+    "noregrets_lower_above_minus_50": false
+  },
+  "recommendation": "pause_and_analyze",
+  "limitations": [
+    "Nominal 95% paired deal-block intervals, conditional on these three trained seeds",
+    "Fixed budget rule, not proof of optimality, professional strength or future improvement",
+    "No model promotion or unbounded automatic training"
+  ],
+  "checker_sha256": "fb5f930c59377ad292fe438e827049f48718c1f681c15e753020d4f4b857a84a"
+}

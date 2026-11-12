@@ -1,0 +1,1 @@
+{"seed": 73, "method": "compact-opening-expert", "gate": {"passed": true, "checks": {"tabular": true, "exploitability": true, "improvement": true, "collector": true, "average_fitting": true, "all_infosets_observed": true}}, "neural_exploitability": 0.02243658471782743}

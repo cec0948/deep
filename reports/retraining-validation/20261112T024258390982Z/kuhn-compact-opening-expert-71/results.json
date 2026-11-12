@@ -1,0 +1,1116 @@
+{
+  "complete": true,
+  "seed": 71,
+  "method": "compact-opening-expert",
+  "config": {
+    "revision": "compact-learning-validation-v1",
+    "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+    "control_run": "artifacts/learning-validation/20261109T055825812142Z",
+    "frozen_pairs": [
+      [
+        42,
+        7
+      ],
+      [
+        43,
+        8
+      ],
+      [
+        44,
+        9
+      ]
+    ],
+    "baseline_steps": 512,
+    "baseline_batch": 128,
+    "candidate_steps": [
+      2048,
+      8192
+    ],
+    "candidate_batch": 512,
+    "candidate_modes": [
+      "compact-opening-expert"
+    ],
+    "fixed_buffer_gates": {
+      "eligible_steps": 8192,
+      "max_root_weighted_tv": 0.1,
+      "max_aa_fold": 0.01,
+      "max_global_mse_ratio_to_control": 1.05,
+      "max_street_mse_ratio_to_control": 1.1,
+      "all_three_pairs_required": true
+    },
+    "kuhn": {
+      "seeds": [
+        71,
+        72,
+        73
+      ],
+      "iterations": 240,
+      "milestones": [
+        12,
+        60,
+        120,
+        240
+      ],
+      "traversals": 256,
+      "regret_steps": 256,
+      "regret_batch": 128,
+      "strategy_steps": 512,
+      "capacity": 100000,
+      "max_final_exploitability_ante": 0.05,
+      "max_average_collector_tv": 0.05,
+      "max_average_network_tv": 0.03,
+      "tabular_reference_iterations": 5000,
+      "max_tabular_exploitability_ante": 0.005
+    },
+    "six_player_gate": "Both unchanged numerical gates must pass for the same method before new six-player learning.",
+    "limits": {
+      "seconds_per_process": 1800,
+      "parallel_processes": 3
+    },
+    "limitations": [
+      "Existing 512-step controls are reused with exact checkpoint/model hashes.",
+      "Stratum scaling is constant across a fit's replay iterations; no row centering or per-row scaling.",
+      "Uniform feature mass changes the finite-network projection objective.",
+      "Fitting noisy finite targets is not evidence of poker strength.",
+      "Only the initial six-player UTG decision uses the opening expert; no hand/action overrides.",
+      "The frozen main expert is the predeclared 32768-step stratum-normalized refit; it is identical before and after the opening expert is added.",
+      "Deployment selects one 256-wide neural expert per decision; no live search."
+    ],
+    "base_fit_run": "artifacts/learning-validation/20261110T013047373416Z"
+  },
+  "config_sha256": "461ae0a8f47c0cf1b12c992f585920b4e2cdc4c3e4f35212fb9025581f446dcb",
+  "script_sha256": "e3be148eb0315b3ca3212afbd6d96be52ce803438d641f1cf5659156af51a637",
+  "oracle_sha256": "b298652790f17ce64435a25eec3fab009f38352d8f9372063fd88d07a5e4b71c",
+  "fitter_sha256": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+  "scaled_fitter_sha256": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+  "compact_fitter_sha256": "4cff184154657d6e1040536fd02a1cd25bb518e8a813a67b72851dd6f1882d60",
+  "partition_sha256": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+  "root_collector_sha256": "0078f0cde6631e3b8ba12dd134523521a5a6f7ffd0bc5e88b7c0bce8ee9c349d",
+  "feature_encoding": "kuhn-opening-partition-v1",
+  "source_hashes": {
+    "bot/bot.py": "f721b16e0cab72d0c40fae2e94d1ec655a94025fc20addfc689c718fb8f10845",
+    "bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "bot/features.py": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "training/__init__.py": "dd47ca434e58a3ba04952d871c3899db7b675eed0dd5e2e4dc23645f72f08d1f",
+    "training/_hand_eval.py": "e97c081806e67f964ace1c6dd7bb62c8f49ea8cd0c2060d8643d6c58daeb3a96",
+    "training/_hand_eval_lut.py": "d57d29959b6441fbad16f1e65c35dab0e6d38e7fda29a1b8edbaf6271cea5e46",
+    "training/buffer.py": "a513bf28f44992218053745e77faedd5a6a71c663cc642273ccaa01e0cd4f611",
+    "training/features.py": "b6f8b26df06b4147c87e1543242d5cf29af9366be7681af272bbc677bdc97946",
+    "training/game.py": "df405d6d9efbeca3ecb778cfa70dd770fee5c34d04eb3f65ed1ab11261696381",
+    "training/game_numba.py": "3d581b954fa028ea8c6e5b31457c95cbcfa8f9e09bc14dd939c59ae7457437dc",
+    "training/network.py": "e8c75e85722fa32e311316f06b93596f6610b934af5a8ab0ef6c99d72d2f2c49",
+    "training/r1_support.py": "08b19999b38066c1848ca3e0a5a67b65a0b577250dce59c0dff084ae7683dfd0",
+    "training/train.py": "844c8e6d3aea891e95d39f60b9e50906bcc854df20bc489d440558be945bb316",
+    "training/traverse_fast.py": "b0d199732ddd46be242c90b382fe4e7c93add829ca8e493d6c59dce67af319a6",
+    "training/traverse_numba.py": "03c17cd7b717005737cabafe7c4e7963dc6eb1fbd9f8e4295d3c8417127ec803",
+    "training/worker.py": "282435f5e10770dce373b4579e14552af9f0e3beb6178046a8229a33acad9bea"
+  },
+  "known_equilibrium": {
+    "value_player0": -0.055555555555555504,
+    "best_response_values": [
+      -0.055555555555555504,
+      0.05555555555555558
+    ],
+    "nash_conv": 7.632783294297951e-17,
+    "exploitability": 3.8163916471489756e-17,
+    "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+  },
+  "tabular_reference": {
+    "iterations": 5000,
+    "profile": [
+      [
+        0.7975876640889642,
+        0.20241233591103586
+      ],
+      [
+        0.9999997100579884,
+        2.8994201159768043e-07
+      ],
+      [
+        0.3794609786103197,
+        0.6205390213896803
+      ],
+      [
+        0.6557778490686018,
+        0.34422215093139824
+      ],
+      [
+        0.9999995174298474,
+        4.825701526361394e-07
+      ],
+      [
+        3.999200159968006e-08,
+        0.9999999600079984
+      ],
+      [
+        0.9999999600079984,
+        3.999200159968006e-08
+      ],
+      [
+        0.6704794411526531,
+        0.3295205588473469
+      ],
+      [
+        3.999200159968006e-08,
+        0.9999999600079984
+      ],
+      [
+        0.9999999749294005,
+        2.5070599383805942e-08
+      ],
+      [
+        0.4527012161879917,
+        0.5472987838120082
+      ],
+      [
+        5.269580253830153e-08,
+        0.9999999473041975
+      ]
+    ],
+    "value_player0": -0.05552522948282975,
+    "best_response_values": [
+      -0.05001945535684745,
+      0.05748109985901243
+    ],
+    "nash_conv": 0.00746164450216498,
+    "exploitability": 0.00373082225108249,
+    "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+  },
+  "traversal_oracle": {
+    "infosets": 12,
+    "maximum_error": 0.0,
+    "uniform_expected_regrets": [
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        -1.5,
+        1.5
+      ],
+      [
+        0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        -1.5,
+        1.5
+      ]
+    ],
+    "observed": [
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.375,
+        0.375
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        -0.25,
+        0.25
+      ],
+      [
+        0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        -1.5,
+        1.5
+      ],
+      [
+        0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        -1.5,
+        1.5
+      ]
+    ]
+  },
+  "initial": {
+    "value_player0": 0.125,
+    "best_response_values": [
+      0.5,
+      0.4166666666666667
+    ],
+    "nash_conv": 0.9166666666666667,
+    "exploitability": 0.45833333333333337,
+    "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+  },
+  "curve": [
+    {
+      "iteration": 12,
+      "seconds": 19.646596149999823,
+      "exact_average": {
+        "value_player0": -0.0273785422575011,
+        "best_response_values": [
+          0.042542890848544124,
+          0.11063398758315635
+        ],
+        "nash_conv": 0.15317687843170047,
+        "exploitability": 0.07658843921585023,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "replay_average": {
+        "value_player0": -0.023425164239813445,
+        "best_response_values": [
+          0.050257915389161245,
+          0.1143910406661653
+        ],
+        "nash_conv": 0.16464895605532653,
+        "exploitability": 0.08232447802766327,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "neural_average": {
+        "value_player0": -0.022509845616392687,
+        "best_response_values": [
+          0.05050899709264437,
+          0.11785512527548477
+        ],
+        "nash_conv": 0.16836412236812914,
+        "exploitability": 0.08418206118406457,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "current_regret_policy": {
+        "value_player0": -0.3053665782014529,
+        "best_response_values": [
+          0.3053665707508723,
+          0.3333333333333333
+        ],
+        "nash_conv": 0.6386999040842056,
+        "exploitability": 0.3193499520421028,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "collector_max_tv": 0.018823647335631716,
+      "network_max_tv": 0.008262544801778154,
+      "all_infosets_observed": true,
+      "exact_profile": [
+        [
+          0.9198718132116855,
+          0.08012818908080077
+        ],
+        [
+          0.8621793458094964,
+          0.13782065419050363
+        ],
+        [
+          0.2285692993647013,
+          0.7714307056023524
+        ],
+        [
+          0.8734097182750702,
+          0.12659027873992157
+        ],
+        [
+          0.894089441650953,
+          0.10591055720280378
+        ],
+        [
+          0.10897435897435898,
+          0.8910256410256411
+        ],
+        [
+          0.967948717948718,
+          0.03205128205128205
+        ],
+        [
+          0.5236133635044098,
+          0.47638662942709065
+        ],
+        [
+          0.019230769230769232,
+          0.9807692307692307
+        ],
+        [
+          0.9965156795119772,
+          0.003484320488022851
+        ],
+        [
+          0.47661791962258004,
+          0.5233820724005889
+        ],
+        [
+          0.014022566521561397,
+          0.9859774334784386
+        ]
+      ],
+      "replay_profile": [
+        [
+          0.9229857989397094,
+          0.07701419936537178
+        ],
+        [
+          0.8756236858614816,
+          0.12437631413851838
+        ],
+        [
+          0.24020959591949637,
+          0.7597904050441295
+        ],
+        [
+          0.8905862184831967,
+          0.10941378666258124
+        ],
+        [
+          0.8916936853382795,
+          0.1083063136560388
+        ],
+        [
+          0.10646051481920667,
+          0.8935394851807933
+        ],
+        [
+          0.9628904804601451,
+          0.037109519539854904
+        ],
+        [
+          0.5167344629404209,
+          0.4832655385141971
+        ],
+        [
+          0.02089622924443399,
+          0.979103770755566
+        ],
+        [
+          0.996445759286556,
+          0.0035542407134439894
+        ],
+        [
+          0.49544157224434665,
+          0.504558430351092
+        ],
+        [
+          0.011479510201688999,
+          0.988520489798311
+        ]
+      ],
+      "neural_profile": [
+        [
+          0.9231238961219788,
+          0.07687613368034363
+        ],
+        [
+          0.8788981437683105,
+          0.12110182642936707
+        ],
+        [
+          0.23540839552879333,
+          0.7645915746688843
+        ],
+        [
+          0.8910102844238281,
+          0.10898970067501068
+        ],
+        [
+          0.899789035320282,
+          0.1002109944820404
+        ],
+        [
+          0.10670635849237442,
+          0.8932936191558838
+        ],
+        [
+          0.9645546078681946,
+          0.035445380955934525
+        ],
+        [
+          0.5144120454788208,
+          0.4855879843235016
+        ],
+        [
+          0.021597757935523987,
+          0.9784021973609924
+        ],
+        [
+          0.9968509078025818,
+          0.003149124328047037
+        ],
+        [
+          0.5037041306495667,
+          0.49629589915275574
+        ],
+        [
+          0.014155588112771511,
+          0.9858444333076477
+        ]
+      ],
+      "regret_rows": [
+        2137,
+        1536
+      ],
+      "strategy_rows": 6812
+    },
+    {
+      "iteration": 60,
+      "seconds": 89.31847696899968,
+      "exact_average": {
+        "value_player0": -0.052454158772438496,
+        "best_response_values": [
+          -0.023544881118892896,
+          0.09268321072735648
+        ],
+        "nash_conv": 0.06913832960846358,
+        "exploitability": 0.03456916480423179,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "replay_average": {
+        "value_player0": -0.05239583884083332,
+        "best_response_values": [
+          -0.021993236286027673,
+          0.09476275117669479
+        ],
+        "nash_conv": 0.07276951489066712,
+        "exploitability": 0.03638475744533356,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "neural_average": {
+        "value_player0": -0.052072700671414375,
+        "best_response_values": [
+          -0.022822206219037373,
+          0.09211581443713963
+        ],
+        "nash_conv": 0.06929360821810227,
+        "exploitability": 0.03464680410905113,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "current_regret_policy": {
+        "value_player0": -0.05495232427669805,
+        "best_response_values": [
+          0.15689551023145518,
+          0.15287200609842935
+        ],
+        "nash_conv": 0.30976751632988453,
+        "exploitability": 0.15488375816494226,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "collector_max_tv": 0.013748011139536942,
+      "network_max_tv": 0.004694335725548171,
+      "all_infosets_observed": true,
+      "exact_profile": [
+        [
+          0.8578912774314645,
+          0.14210872385508375
+        ],
+        [
+          0.9907031328626018,
+          0.009296867365394134
+        ],
+        [
+          0.5547530296558891,
+          0.4452469684010565
+        ],
+        [
+          0.6663478106998233,
+          0.33365219139234453
+        ],
+        [
+          0.9307316811195488,
+          0.06926831883159491
+        ],
+        [
+          0.022404371584699455,
+          0.9775956284153006
+        ],
+        [
+          0.9674863387978142,
+          0.032513661202185795
+        ],
+        [
+          0.5298395100919927,
+          0.4701604884371983
+        ],
+        [
+          0.000819672131147541,
+          0.9991803278688525
+        ],
+        [
+          0.9521870586457055,
+          0.04781294135429444
+        ],
+        [
+          0.6067589587482823,
+          0.3932410421424651
+        ],
+        [
+          0.000246257369595013,
+          0.999753742630405
+        ]
+      ],
+      "replay_profile": [
+        [
+          0.8534192712083934,
+          0.1465807289007767
+        ],
+        [
+          0.9911808679573985,
+          0.008819132281074941
+        ],
+        [
+          0.543782106253467,
+          0.45621789233045446
+        ],
+        [
+          0.6525997985041893,
+          0.3474002014757844
+        ],
+        [
+          0.9316997169624535,
+          0.06830028299545496
+        ],
+        [
+          0.020968044504944088,
+          0.979031955495056
+        ],
+        [
+          0.9686973391160822,
+          0.03130266088391777
+        ],
+        [
+          0.531630320732953,
+          0.4683696773320848
+        ],
+        [
+          0.0008011326736597635,
+          0.9991988673263402
+        ],
+        [
+          0.9594350288306411,
+          0.04056497116935885
+        ],
+        [
+          0.6129945298319948,
+          0.3870054700924005
+        ],
+        [
+          0.00019884097149582691,
+          0.9998011590285042
+        ]
+      ],
+      "neural_profile": [
+        [
+          0.8533533215522766,
+          0.14664672315120697
+        ],
+        [
+          0.9902216196060181,
+          0.009778399020433426
+        ],
+        [
+          0.5475286841392517,
+          0.4524713456630707
+        ],
+        [
+          0.6558523178100586,
+          0.3441477417945862
+        ],
+        [
+          0.9339008331298828,
+          0.06609918922185898
+        ],
+        [
+          0.02219473011791706,
+          0.9778052568435669
+        ],
+        [
+          0.9711812138557434,
+          0.028818799182772636
+        ],
+        [
+          0.5320946574211121,
+          0.4679053723812103
+        ],
+        [
+          0.0011699347523972392,
+          0.9988300800323486
+        ],
+        [
+          0.9630118012428284,
+          0.03698822110891342
+        ],
+        [
+          0.6083002090454102,
+          0.39169982075691223
+        ],
+        [
+          0.0005015303031541407,
+          0.9994984865188599
+        ]
+      ],
+      "regret_rows": [
+        11010,
+        7680
+      ],
+      "strategy_rows": 35139
+    },
+    {
+      "iteration": 120,
+      "seconds": 217.52645650900013,
+      "exact_average": {
+        "value_player0": -0.044774023949727106,
+        "best_response_values": [
+          -0.02890081309529391,
+          0.07758634604882797
+        ],
+        "nash_conv": 0.04868553295353406,
+        "exploitability": 0.02434276647676703,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "replay_average": {
+        "value_player0": -0.04445340181076148,
+        "best_response_values": [
+          -0.03013118037124189,
+          0.07841881445816255
+        ],
+        "nash_conv": 0.04828763408692066,
+        "exploitability": 0.02414381704346033,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "neural_average": {
+        "value_player0": -0.04497124997157246,
+        "best_response_values": [
+          -0.029342078293363254,
+          0.07841882902782071
+        ],
+        "nash_conv": 0.049076750734457456,
+        "exploitability": 0.024538375367228728,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "current_regret_policy": {
+        "value_player0": -0.0954235591410173,
+        "best_response_values": [
+          0.1463304522136847,
+          0.16060267885526022
+        ],
+        "nash_conv": 0.30693313106894493,
+        "exploitability": 0.15346656553447247,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "collector_max_tv": 0.0049346808555039146,
+      "network_max_tv": 0.003068127972208956,
+      "all_infosets_observed": true,
+      "exact_profile": [
+        [
+          0.7803379049168043,
+          0.21966209558785454
+        ],
+        [
+          0.991320486658204,
+          0.008679513399266014
+        ],
+        [
+          0.14523560673645106,
+          0.8547643922153891
+        ],
+        [
+          0.6974562402166806,
+          0.3025437597880658
+        ],
+        [
+          0.885432365902035,
+          0.11456763408564996
+        ],
+        [
+          0.025413223140495867,
+          0.9745867768595041
+        ],
+        [
+          0.9641184573002755,
+          0.03588154269972452
+        ],
+        [
+          0.604198902379978,
+          0.3958010979538021
+        ],
+        [
+          0.015151515151515152,
+          0.9848484848484849
+        ],
+        [
+          0.9825965881087784,
+          0.01740341189122158
+        ],
+        [
+          0.3312756923890737,
+          0.6687243113137071
+        ],
+        [
+          0.00023709930699347199,
+          0.9997629006930066
+        ]
+      ],
+      "replay_profile": [
+        [
+          0.783208172066875,
+          0.21679182807802105
+        ],
+        [
+          0.9908845011840962,
+          0.009115498875755704
+        ],
+        [
+          0.14398880685566265,
+          0.8560111921987099
+        ],
+        [
+          0.6925215593261633,
+          0.30747844060855634
+        ],
+        [
+          0.8866272096703876,
+          0.11337279031912073
+        ],
+        [
+          0.024023214505845075,
+          0.9759767854941549
+        ],
+        [
+          0.9654510190296416,
+          0.03454898097035847
+        ],
+        [
+          0.600379178041613,
+          0.3996208200162393
+        ],
+        [
+          0.015221024838633964,
+          0.984778975161366
+        ],
+        [
+          0.9856050331141455,
+          0.014394966885854498
+        ],
+        [
+          0.3269498555616265,
+          0.6730501451573566
+        ],
+        [
+          0.00019433708487472727,
+          0.9998056629151253
+        ]
+      ],
+      "neural_profile": [
+        [
+          0.7830076217651367,
+          0.21699240803718567
+        ],
+        [
+          0.9911723732948303,
+          0.008827665820717812
+        ],
+        [
+          0.1427537202835083,
+          0.8572462797164917
+        ],
+        [
+          0.6947699785232544,
+          0.3052300214767456
+        ],
+        [
+          0.8835591077804565,
+          0.11644094437360764
+        ],
+        [
+          0.022352123633027077,
+          0.9776479005813599
+        ],
+        [
+          0.9682250618934631,
+          0.03177494928240776
+        ],
+        [
+          0.5973672270774841,
+          0.4026327431201935
+        ],
+        [
+          0.014232183806598186,
+          0.9857678413391113
+        ],
+        [
+          0.9863725304603577,
+          0.013627519831061363
+        ],
+        [
+          0.3260434567928314,
+          0.673956573009491
+        ],
+        [
+          0.0014681756729260087,
+          0.9985318183898926
+        ]
+      ],
+      "regret_rows": [
+        22441,
+        15360
+      ],
+      "strategy_rows": 69644
+    },
+    {
+      "iteration": 240,
+      "seconds": 413.95578932100034,
+      "exact_average": {
+        "value_player0": -0.04412524579929392,
+        "best_response_values": [
+          -0.02944354111692793,
+          0.06516825953859251
+        ],
+        "nash_conv": 0.03572471842166458,
+        "exploitability": 0.01786235921083229,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "replay_average": {
+        "value_player0": -0.04449945514383058,
+        "best_response_values": [
+          -0.02861778237259971,
+          0.06348146199215214
+        ],
+        "nash_conv": 0.03486367961955243,
+        "exploitability": 0.017431839809776216,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "neural_average": {
+        "value_player0": -0.04451510404605815,
+        "best_response_values": [
+          -0.028206666310628254,
+          0.06314069916531133
+        ],
+        "nash_conv": 0.03493403285468308,
+        "exploitability": 0.01746701642734154,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "current_regret_policy": {
+        "value_player0": -0.07092546919981639,
+        "best_response_values": [
+          -0.001270093023777008,
+          0.16666666666666666
+        ],
+        "nash_conv": 0.16539657364288965,
+        "exploitability": 0.08269828682144482,
+        "definition": "half the sum of unilateral best-response improvements, in antes/hand"
+      },
+      "collector_max_tv": 0.009037284627125247,
+      "network_max_tv": 0.0118070125190613,
+      "all_infosets_observed": true,
+      "exact_profile": [
+        [
+          0.7765226894149101,
+          0.22347730910031957
+        ],
+        [
+          0.9946745066783735,
+          0.0053254933360536395
+        ],
+        [
+          0.2990401747826082,
+          0.7009598241711259
+        ],
+        [
+          0.6850900427686607,
+          0.3149099564577168
+        ],
+        [
+          0.8979681527126132,
+          0.10203184728429525
+        ],
+        [
+          0.023979944674965423,
+          0.9760200553250346
+        ],
+        [
+          0.9667185338865837,
+          0.03328146611341632
+        ],
+        [
+          0.580122802404102,
+          0.4198771992334393
+        ],
+        [
+          0.01737551867219917,
+          0.9826244813278008
+        ],
+        [
+          0.9873293666389944,
+          0.012670633361005634
+        ],
+        [
+          0.3974688874494305,
+          0.6025311137791836
+        ],
+        [
+          2.8907609685286218e-05,
+          0.9999710923903147
+        ]
+      ],
+      "replay_profile": [
+        [
+          0.7756673261486765,
+          0.22433267285473502
+        ],
+        [
+          0.9944219700076654,
+          0.0055780300085455205
+        ],
+        [
+          0.2985078121263507,
+          0.7014921882413727
+        ],
+        [
+          0.6878401973777437,
+          0.3121598011910764
+        ],
+        [
+          0.9003891297515798,
+          0.09961087024536512
+        ],
+        [
+          0.025116427046116427,
+          0.9748835729538836
+        ],
+        [
+          0.9682980452586643,
+          0.031701954741335796
+        ],
+        [
+          0.5790890417221639,
+          0.42091095655558985
+        ],
+        [
+          0.015367533715485316,
+          0.9846324662845147
+        ],
+        [
+          0.9878039008885597,
+          0.012196099111440251
+        ],
+        [
+          0.4065061713880378,
+          0.5934938284635404
+        ],
+        [
+          2.4848995472055566e-05,
+          0.9999751510045279
+        ]
+      ],
+      "neural_profile": [
+        [
+          0.774390697479248,
+          0.22560930252075195
+        ],
+        [
+          0.9931848645210266,
+          0.006815099157392979
+        ],
+        [
+          0.2949241101741791,
+          0.7050759196281433
+        ],
+        [
+          0.6950283646583557,
+          0.3049716651439667
+        ],
+        [
+          0.8997486233711243,
+          0.10025137662887573
+        ],
+        [
+          0.02677750214934349,
+          0.973222553730011
+        ],
+        [
+          0.9684005975723267,
+          0.031599413603544235
+        ],
+        [
+          0.5908960700035095,
+          0.40910395979881287
+        ],
+        [
+          0.015186473727226257,
+          0.9848135113716125
+        ],
+        [
+          0.9881990551948547,
+          0.01180094201117754
+        ],
+        [
+          0.40746191143989563,
+          0.5925381183624268
+        ],
+        [
+          0.0003493671538308263,
+          0.9996506571769714
+        ]
+      ],
+      "regret_rows": [
+        44970,
+        30720
+      ],
+      "strategy_rows": 100000
+    }
+  ],
+  "max_torch_numpy_policy_error": 0.0,
+  "gate": {
+    "passed": true,
+    "checks": {
+      "tabular": true,
+      "exploitability": true,
+      "improvement": true,
+      "collector": true,
+      "average_fitting": true,
+      "all_infosets_observed": true
+    }
+  },
+  "elapsed_seconds": 414.4962823570004
+}

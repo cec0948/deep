@@ -1,0 +1,137 @@
+{
+  "status": "complete",
+  "finished": [
+    {
+      "id": "noregrets-public",
+      "model": null,
+      "source": null,
+      "field": "noregrets"
+    },
+    {
+      "id": "public-public",
+      "model": null,
+      "source": null,
+      "field": "public"
+    },
+    {
+      "id": "mixed-public",
+      "model": null,
+      "source": null,
+      "field": "mixed"
+    },
+    {
+      "id": "public-seed-42-current-6",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/current_00006.npz",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "public",
+      "iteration": 6,
+      "seed": 42,
+      "kind": "current"
+    },
+    {
+      "id": "noregrets-seed-42-current-6",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/current_00006.npz",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "noregrets",
+      "iteration": 6,
+      "seed": 42,
+      "kind": "current"
+    },
+    {
+      "id": "mixed-seed-42-current-6",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/current_00006.npz",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "mixed",
+      "iteration": 6,
+      "seed": 42,
+      "kind": "current"
+    },
+    {
+      "id": "noregrets-seed-42-mixture-6",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/mixture_00006.json",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "noregrets",
+      "iteration": 6,
+      "seed": 42,
+      "kind": "mixture"
+    },
+    {
+      "id": "public-seed-42-mixture-6",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/mixture_00006.json",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "public",
+      "iteration": 6,
+      "seed": 42,
+      "kind": "mixture"
+    },
+    {
+      "id": "public-seed-42-current-12",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/current_00012.npz",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "public",
+      "iteration": 12,
+      "seed": 42,
+      "kind": "current"
+    },
+    {
+      "id": "mixed-seed-42-mixture-6",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/mixture_00006.json",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "mixed",
+      "iteration": 6,
+      "seed": 42,
+      "kind": "mixture"
+    },
+    {
+      "id": "noregrets-seed-42-current-12",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/current_00012.npz",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "noregrets",
+      "iteration": 12,
+      "seed": 42,
+      "kind": "current"
+    },
+    {
+      "id": "public-seed-42-mixture-12",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/mixture_00012.json",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "public",
+      "iteration": 12,
+      "seed": 42,
+      "kind": "mixture"
+    },
+    {
+      "id": "mixed-seed-42-current-12",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/current_00012.npz",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "mixed",
+      "iteration": 12,
+      "seed": 42,
+      "kind": "current"
+    },
+    {
+      "id": "noregrets-seed-42-mixture-12",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/mixture_00012.json",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "noregrets",
+      "iteration": 12,
+      "seed": 42,
+      "kind": "mixture"
+    },
+    {
+      "id": "mixed-seed-42-mixture-12",
+      "model": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/seed-42/mixture_00012.json",
+      "source": "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/source",
+      "field": "mixed",
+      "iteration": 12,
+      "seed": 42,
+      "kind": "mixture"
+    }
+  ],
+  "failed": [],
+  "pending": [],
+  "running": {},
+  "seconds": 108.34752420899986,
+  "startup_retries": [],
+  "evaluator_sha256": "262a6e3e2be9f556c3e5863fe00eb636b7203c9148ad834ea1933918e32bcfe2"
+}

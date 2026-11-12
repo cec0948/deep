@@ -72,6 +72,19 @@ def test_evaluation_plan_covers_both_stages_and_all_fields():
     assert len([j for j in jobs if j.get('iteration')==60 and j['field']=='mixed'])==6
 
 
+def test_retraining_without_lost_baseline_preserves_all_paired_fields():
+    from run_compact_evaluation import evaluation_jobs
+    cfg=json.loads((ROOT/'configs/fullhouse-compact-training.json').read_text())
+    cfg.update(evaluation_baselines=['public'],evaluation_all_stages_fields=True)
+    jobs=evaluation_jobs(ROOT/'artifacts/example',cfg)
+    assert len(jobs)==len({j['id'] for j in jobs})==39
+    assert not any('old-v3' in j['id'] for j in jobs)
+    for iteration in (30,60):
+        for seed in cfg['seeds']:
+            for kind in ('current','mixture'):
+                assert {j['field'] for j in jobs if j.get('iteration')==iteration and j.get('seed')==seed and j.get('kind')==kind}==set(cfg['evaluation_fields'])
+
+
 def test_paired_progress_does_not_treat_shared_cards_as_independent_seeds():
     from compact_progress import progress
     cfg=dict(evaluation_iterations=[60,120],evaluation_fields=['noregrets','public','mixed'],
@@ -86,3 +99,16 @@ def test_paired_progress_does_not_treat_shared_cards_as_independent_seeds():
     expected=1.96*statistics.stdev(differences)/2
     assert abs(result['changes']['public/current']['ci95_half_width']-expected)<1e-12
     assert result['recommendation']=='pause_and_analyze'
+
+
+def test_automatic_extensions_keep_the_predeclared_stage_guards():
+    from continue_compact_learning import extension_allowed
+    decision={'conditions':dict(public_lower_above_zero=True,at_least_two_public_seeds_improve=True,
+                               mixed_lower_above_minus_25=False,noregrets_lower_above_minus_50=False)}
+    assert extension_allowed(60,decision)
+    assert not extension_allowed(120,decision)
+    decision['conditions'].update(mixed_lower_above_minus_25=True,noregrets_lower_above_minus_50=True)
+    assert extension_allowed(120,decision)
+    decision['conditions']['at_least_two_public_seeds_improve']=False
+    assert not extension_allowed(60,decision)
+    assert not extension_allowed(180,decision)

@@ -1,0 +1,112 @@
+{
+  "eligible_methods": [
+    "compact-opening-expert"
+  ],
+  "six_player_ready": true,
+  "methods": {
+    "compact-opening-expert": {
+      "frozen": [
+        {
+          "replay_seed": 42,
+          "passed": true,
+          "checks": {
+            "root_tv": true,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 2.819403585869608e-07,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.8421754814823419
+        },
+        {
+          "replay_seed": 43,
+          "passed": true,
+          "checks": {
+            "root_tv": true,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 0.0067988380857571815,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.826541240500567
+        },
+        {
+          "replay_seed": 44,
+          "passed": true,
+          "checks": {
+            "root_tv": true,
+            "aa_target_consistent": true,
+            "aa_fold": true,
+            "global_mse": true,
+            "all_streets": true
+          },
+          "root_tv": 2.3059420403431265e-07,
+          "aa_fold": 0.0,
+          "global_mse_ratio": 0.7877747909308624
+        }
+      ],
+      "kuhn": [
+        {
+          "seed": 71,
+          "passed": true,
+          "checks": {
+            "tabular": true,
+            "exploitability": true,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.01746701642734154
+        },
+        {
+          "seed": 72,
+          "passed": true,
+          "checks": {
+            "tabular": true,
+            "exploitability": true,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.021643535102582025
+        },
+        {
+          "seed": 73,
+          "passed": true,
+          "checks": {
+            "tabular": true,
+            "exploitability": true,
+            "improvement": true,
+            "collector": true,
+            "average_fitting": true,
+            "all_infosets_observed": true
+          },
+          "exploitability": 0.02915166884313406
+        }
+      ],
+      "passed": true
+    }
+  },
+  "decision": "eligible for a bounded six-player experiment",
+  "recovery_provenance": {
+    "frozen_replay_basis": "Archived verified reports; historical weights and buffers were lost and were not rechecked",
+    "small_game_basis": "Fresh three-seed full learning runs with independently verified final checkpoints",
+    "source_basis": "All 24 restored source/tool files match the last saved campaign manifest",
+    "archive": "reports/learning-validation/20261110T015233258042Z",
+    "archive_gate_sha256": "4e813394eed2a1513d5e28eb2606d36b2bf9a09ba27e063f73c278abf2126068",
+    "source_manifest_sha256": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb",
+    "recovery_verifier_sha256": "032ab213ad667af0d4a50b9023b23da326c119af7c05777a4c6ecde32229f70d",
+    "fresh_verifications": {
+      "71": "f32f87f8738f25ec00e4729b202caa97a42bd54f046fed7af84400ebe8308284",
+      "72": "aa26e8e2e8e60fca274c70ebfb78ffc4bdc7c4aa3117944847063febb1d9af22",
+      "73": "80a82c91236d0e68ad58320b688e5fd359e89437fe3f212f6bdfe9acf2b46536"
+    },
+    "validation_extension": "All original Kuhn seeds rerun through 240 after one failed at 120; unchanged pass thresholds; both runs retained"
+  }
+}

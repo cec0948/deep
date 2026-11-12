@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+import tarfile
 import tempfile
 
 import numpy as np
@@ -73,12 +74,25 @@ def test_continuous_and_resumed_compact_training_match():
                main_steps=4,opening_steps=4,opening_max_steps=4,root_repetitions_first=1,root_repetitions=1,checkpoint_every=6)
     env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1')
     with tempfile.TemporaryDirectory(dir=ROOT/'artifacts',prefix='compact-resume-') as name:
-        folder=Path(name);continuous=prepare(folder/'continuous',cfg);split=prepare(folder/'split',cfg)
+        folder=Path(name)
+        gate=folder/'fixture-gate';gate.mkdir()
+        for filename in ('gates.json','deployment-verification.json'):
+            (gate/filename).write_text(json.dumps({'verification_fixture':True}))
+        cfg['gate_run']=str(gate.relative_to(ROOT))
+        continuous=prepare(folder/'continuous',cfg);split=prepare(folder/'split',cfg)
         def run(path,*extra):
             p=subprocess.run([sys.executable,'scripts/train_compact_selfplay.py','--run-dir',str(path),'--seed','42',*extra],cwd=ROOT,
                              env=env,capture_output=True,text=True,timeout=180)
             assert p.returncode==0,p.stdout+'\n'+p.stderr
-        run(continuous);run(split,'--through','6');run(split,'--resume')
+        run(continuous);run(split,'--through','6')
+        from snapshot_compact import snapshot
+        exported=snapshot(split)
+        assert exported['iterations']=={'42':6} and exported['verified_files']>0
+        unpacked=folder/'unpacked'
+        with tarfile.open(exported['archive'],'r:gz') as archive:
+            archive.extractall(unpacked,filter='data')
+        restored=unpacked/split.relative_to(ROOT)
+        run(restored,'--resume');run(split,'--resume')
         a=torch.load(continuous/'seed-42/latest.pt',map_location='cpu',weights_only=False)
         b=torch.load(split/'seed-42/latest.pt',map_location='cpu',weights_only=False)
         def equal(a,b):
@@ -92,6 +106,10 @@ def test_continuous_and_resumed_compact_training_match():
                 for x,y in zip(a,b):equal(x,y)
             else:assert a==b
         equal(a,b)
+        c=torch.load(restored/'seed-42/latest.pt',map_location='cpu',weights_only=False)
+        equal(a,c)
+        Path(exported['archive']).unlink()
+        Path(exported['archive']).with_suffix('.json').unlink()
         mixture=json.loads((split/'seed-42/mixture_00012.json').read_text())
         assert [r['weight'] for r in mixture['models']]==list(range(1,13))
         with np.load(split/'seed-42/policy_00001.npz') as first:
