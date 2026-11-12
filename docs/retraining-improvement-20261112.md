@@ -83,3 +83,7 @@
 사용자가 학습 방향과 논문 재현 조건을 점검한 뒤 진행을 승인했다. 새 계획은 `docs/retraining-foundations-20261112.md`, 진행 기록은 `reports/foundation-study-status.json`이다. 이는2인 Leduc 기준 구현과 기존6인 모델의 진단이며 원래120회 자기 대전 재개가 아니다. 연구 백업은 `research-validation`으로 구분하고 최신1개 및 복원 의존성을 보존한다. 파생 후보2개 보존과2GiB 목표는 유지한다.
 
 후속 목적함수 보정 실험은 `docs/retraining-objective-20261112.md`에 별도 고정했다. 같은120회 replay와 기존 표본 순서에서 손실 가중치만 보정하며, 먼저 실제 Leduc replay의 목적함수·gradient 동치를 검증한다. 진행 상태는 기존 `reports/refit-probe-status.json`에서 `derived-offline-raw-objective-refit`으로 구분한다. 기존 refit은 복사한 비교 정책이며 새로 학습하거나 자기 대전을 연장한 것으로 세지 않는다.
+
+## 사용자 승인 후 추가 자기 대전 연구
+
+사용자는 이후 평가 카드 수를10배로 늘리고 방법 점검 후 계속 학습하도록 명시적으로 승인했다. 별도 고정 예산 계획은 [추가 학습 곡선 연구](retraining-learning-curve-20261112.md), 진행 기록은 `reports/continuation-study-status.json`이다. 원본120회에서 실제 새 자기 대전을180·240회까지 진행하고20,000개 새 카드로 평가한다. 기존 controller·원본registry는 분석 대기로 유지하며 새 연구는 `artifacts/continuation-study/current.json`으로 추적한다. 앞서 완료한 고정replay 파생 후보와 구분한다.

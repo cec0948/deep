@@ -63,3 +63,7 @@ Drive 업로드 도구의 파일당 한도는 100 MiB다. 큰 archive는 64 MiB 
 공개 상대 개선량의 명목 paired 95% 구간은 +6.91~+75.34이고, 3개 중 2개 seed가 평균 개선량 양수다. 이 두 조건은 통과했다. 혼합 상대 개선량의 구간 하한은 -194.93으로 기준 -25에 미달했고, NoRegrets 상대 하한은 -358.44로 기준 -50에 미달했다. 120회 이후에는 네 조건을 모두 요구하므로 controller가 분석 대기로 멈췄다. 공개 상대에는 여전히 평균 손실이 난다. 기본 모델 교체나 성능 기준 변경은 하지 않았다.
 
 완료 결과는 `reports/compact-v4/20261112T032318825281Z/summary.json`, `verification.json`, `progress-decision.json`에 보존한다. 최종 120회 checkpoint archive는 545,298,289 bytes, 내부 검증 파일은 622개다. 로컬 원본과 재결합한 조각의 SHA-256 일치를 확인한 뒤 9개 조각과 복원 manifest를 기존 비공개 Drive 폴더에 업로드했다. 12:59 KST에 모든 조각과 manifest의 원격 크기·소유자 전용 권한을 확인하고 비공개 인덱스에 기록했다. 원격 체크섬은 제공되지 않았다. 평가 상대 자산은 별도 백업에 보존되어 있다.
+
+## 사용자 승인 후 추가 자기 대전 연구
+
+사용자는 이후 평가 카드 수를10배로 늘리고 방법 점검 후 계속 학습하도록 명시적으로 승인했다. 별도 고정 예산 계획은 [추가 학습 곡선 연구](retraining-learning-curve-20261112.md), 진행 기록은 `reports/continuation-study-status.json`이다. 원본120회에서 실제 새 자기 대전을180·240회까지 진행하고20,000개 새 카드로 평가한다. 기존 controller·원본registry는 분석 대기로 유지하며 새 연구는 `artifacts/continuation-study/current.json`으로 추적한다. 앞서 완료한 고정replay 파생 후보와 구분한다.
