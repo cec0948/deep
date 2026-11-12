@@ -43,6 +43,8 @@ def backup(root, number, rounds=None, kind='training-checkpoint', parent=None):
                 remote_checksum_available=False))
     if kind == 'derived-policy-probe':
         record.update(parent_manifest_file_id=parent, resumable_selfplay=False, run=stamp)
+    if kind == 'research-validation':
+        record.update(resumable_selfplay=False, run=stamp)
     return record
 
 
@@ -166,3 +168,56 @@ def test_planning_does_not_mutate_index(index, tmp_path):
     before = copy.deepcopy(index)
     plan_retention(index, tmp_path)
     assert index == before
+
+
+def test_research_keeps_latest_one_and_nested_full_dependencies(index, tmp_path):
+    for number in (8, 9, 10):
+        record = backup(tmp_path, number, kind='research-validation')
+        record['restore_dependencies'] = [{'parent_manifest_file_id': 'manifest_4'},
+                                          {'parent_manifest_file_id': 'manifest_6'}]
+        index['backups'].append(record)
+    result = plan_retention(index, tmp_path)
+    studies = [r for r in result['retained'] if r['kind'] == 'research-validation']
+    assert [r['backup_index'] for r in studies] == [9]
+    assert [r['backup_index'] for r in result['candidates'] if r['kind'] == 'research-validation'] == [7, 8]
+    assert result['policy']['latest_research_validations'] == 1
+    assert result['retained_latest_research_local_verification']['backup_index'] == 9
+    assert result['within_budget'] is True
+
+
+def test_research_dependency_closure_preserves_older_research_and_its_parent(index, tmp_path):
+    older = backup(tmp_path, 8, 1, kind='research-validation')
+    older['restore_dependencies'] = [{'parent_manifest_file_id': 'manifest_5'}]
+    newer = backup(tmp_path, 9, kind='research-validation')
+    newer['restore_dependencies'] = [{'parent_manifest_file_id': 'manifest_8'}]
+    index['backups'].extend([older, newer])
+    result = plan_retention(index, tmp_path)
+    assert {r['backup_index'] for r in result['retained']} >= {4, 7, 8}
+    assert all(r['backup_index'] not in (4, 7, 8) for r in result['candidates'])
+
+
+@pytest.mark.parametrize('broken', ['partial', 'unsafe_type', 'corrupt_latest', 'missing_dependency'])
+def test_research_never_replaces_last_safe_backup_with_invalid_new_one(index, tmp_path, broken):
+    older = backup(tmp_path, 8, kind='research-validation')
+    newer = backup(tmp_path, 9, kind='research-validation')
+    index['backups'].extend([older, newer])
+    if broken == 'partial':
+        newer['status'] = 'partial'
+    elif broken == 'unsafe_type':
+        newer['resumable_selfplay'] = True
+    elif broken == 'corrupt_latest':
+        Path(newer['local_archive']).write_bytes(b'x' * newer['bytes'])
+    else:
+        newer['restore_dependencies'] = [{'parent_manifest_file_id': 'missing'}]
+    with pytest.raises(ValueError):
+        plan_retention(index, tmp_path)
+
+
+def test_deleted_newer_research_does_not_displace_last_safe_research(index, tmp_path):
+    index['backups'].extend([backup(tmp_path, 8, kind='research-validation'),
+                             backup(tmp_path, 9, kind='research-validation')])
+    index['backups'][-1]['deleted_remote'] = True
+    result = plan_retention(index, tmp_path, budget_bytes=1)
+    assert result['retained_latest_research_local_verification']['backup_index'] == 7
+    assert any(r['backup_index'] == 7 for r in result['retained'])
+    assert result['within_budget'] is False

@@ -13,7 +13,7 @@ from urllib.parse import urlsplit
 
 from fullhouse_v3_common import ROOT, atomic_json, digest
 
-KNOWN_KINDS = {'evaluation-assets', 'training-checkpoint', 'derived-policy-probe'}
+KNOWN_KINDS = {'evaluation-assets', 'training-checkpoint', 'derived-policy-probe', 'research-validation'}
 COMPLETE = {None, 'complete', 'verified', 'uploaded'}
 INCOMPLETE = {'pending', 'uploading', 'partial', 'failed', 'interrupted'}
 MAX_PART = 64 * 1024**2
@@ -84,6 +84,8 @@ def validate_record(record, root):
     if record['kind'] == 'derived-policy-probe':
         if record.get('resumable_selfplay') is not False or not record.get('parent_manifest_file_id'):
             raise ValueError('Derived probe must identify its full parent and non-resumable status')
+    if record['kind'] == 'research-validation' and record.get('resumable_selfplay') is not False:
+        raise ValueError('Research validation is not a resumable six-player checkpoint')
     parts = record.get('parts')
     files = []
     if parts is not None:
@@ -172,6 +174,10 @@ def plan_retention(index, root=ROOT, budget_bytes=DEFAULT_BUDGET):
                     key=lambda n: times[n], reverse=True)
     for n in probes[:2]:
         reasons.setdefault(n, []).append('one_of_latest_two_derived_probes')
+    studies = [n for n in records if records[n].get('kind') == 'research-validation' and n not in opaque]
+    latest_study = max(studies, key=lambda n: times[n]) if studies else None
+    if latest_study is not None:
+        reasons.setdefault(latest_study, []).append('latest_research_validation')
     for n, record in records.items():
         if record.get('kind') == 'evaluation-assets':
             reasons.setdefault(n, []).append('evaluation_assets')
@@ -186,12 +192,21 @@ def plan_retention(index, root=ROOT, budget_bytes=DEFAULT_BUDGET):
                 reasons[parent] = ['required_parent_manifest_dependency']
                 pending.append(parent)
 
-    # This reads the actual local retained archive once. No remote checksum
+    # Read each latest retained archive once. No remote checksum
     # claim follows from this check; the executor must re-read remote metadata.
     latest_path = paths[latest]
     if (not latest_path.is_file() or latest_path.stat().st_size != records[latest]['bytes']
             or digest(latest_path) != records[latest]['sha256']):
         raise ValueError('Retained latest full checkpoint local size/SHA-256 mismatch')
+    study_verification = None
+    if latest_study is not None:
+        study_path = paths[latest_study]
+        study_record = records[latest_study]
+        if (not study_path.is_file() or study_path.stat().st_size != study_record['bytes']
+                or digest(study_path) != study_record['sha256']):
+            raise ValueError('Retained latest research validation local size/SHA-256 mismatch')
+        study_verification = dict(backup_index=latest_study, archive=str(study_path),
+                                  bytes=study_record['bytes'], sha256=study_record['sha256'])
     retained, candidates = [], []
     for n, record in records.items():
         item = dict(backup_index=n, kind=record.get('kind'), run=record.get('run'),
@@ -210,6 +225,7 @@ def plan_retention(index, root=ROOT, budget_bytes=DEFAULT_BUDGET):
                 created_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
                 index_sha256=hashlib.sha256(json.dumps(index, sort_keys=True, separators=(',', ':')).encode()).hexdigest(),
                 policy=dict(baseline_round=60, latest_completed_stages=1, latest_derived_probes=2,
+                            latest_research_validations=1,
                             keep_latest_poststage_recovery=True, preserve_dependency_closure=True,
                             budget_bytes=budget_bytes),
                 retained=retained, candidates=candidates, ignored_deleted_records=ignored,
@@ -222,6 +238,7 @@ def plan_retention(index, root=ROOT, budget_bytes=DEFAULT_BUDGET):
                              'Retained indexed files fit the budget'),
                 retained_latest_local_verification=dict(backup_index=latest, archive=str(latest_path),
                     bytes=records[latest]['bytes'], sha256=records[latest]['sha256']),
+                retained_latest_research_local_verification=study_verification,
                 execution_requirements=['Re-read each retained/candidate remote ID and verify recorded size and owner-only permission before deletion',
                     'Recompute plan if the private index changes; record every successful remote deletion',
                     'Recorded URLs are used verbatim; no Drive URL is synthesized',
