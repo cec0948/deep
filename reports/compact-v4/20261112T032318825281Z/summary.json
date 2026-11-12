@@ -1,0 +1,495 @@
+{
+  "complete": true,
+  "completed_evaluations": 39,
+  "planned_evaluations": 39,
+  "total_hands": 468000,
+  "scores": {
+    "mixed-public": {
+      "bb_per_100": 159.61541666666668,
+      "ci95_half_width": 41.34907454961891,
+      "hands": 12000,
+      "candidate_type": "advantage",
+      "candidate_sha256": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+      "elapsed_seconds": 48.10936689400023,
+      "peak_sampled_rss_bytes": 1493508096
+    },
+    "mixed-seed-342-current-120": {
+      "bb_per_100": 209.18766666666667,
+      "ci95_half_width": 76.71559833271797,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+      "elapsed_seconds": 37.97357509500034,
+      "peak_sampled_rss_bytes": 1490550784
+    },
+    "mixed-seed-342-current-60": {
+      "bb_per_100": 352.3834166666667,
+      "ci95_half_width": 88.81151374570544,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "35a9573902b4ec45e09b2449a4e5d508bacd91b498498a5e5453df8b8c642d7f",
+      "elapsed_seconds": 43.174791803001426,
+      "peak_sampled_rss_bytes": 1490665472
+    },
+    "mixed-seed-342-mixture-120": {
+      "bb_per_100": 301.78358333333335,
+      "ci95_half_width": 84.42103229033756,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "75aefd670c3c71ae475030319d818c8fd2beba86c2189293e515dd3ed7df6788",
+      "elapsed_seconds": 45.791664869999295,
+      "peak_sampled_rss_bytes": 1639387136
+    },
+    "mixed-seed-342-mixture-60": {
+      "bb_per_100": 302.18791666666664,
+      "ci95_half_width": 87.39653683382991,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "e7f788ccb7d9fc9c8e4c3301d1d912159a4d0ced99afb7a60a6900437629b5c5",
+      "elapsed_seconds": 50.12846380799965,
+      "peak_sampled_rss_bytes": 1561726976
+    },
+    "mixed-seed-343-current-120": {
+      "bb_per_100": 216.56858333333332,
+      "ci95_half_width": 79.86370155390861,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+      "elapsed_seconds": 42.42241802799981,
+      "peak_sampled_rss_bytes": 1494343680
+    },
+    "mixed-seed-343-current-60": {
+      "bb_per_100": 323.9556666666667,
+      "ci95_half_width": 88.47019355372508,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "ce23910c26680a58006a905614225f79b6d800b36f64fd6b48d4b16029e12cf9",
+      "elapsed_seconds": 46.689451832000486,
+      "peak_sampled_rss_bytes": 1490669568
+    },
+    "mixed-seed-343-mixture-120": {
+      "bb_per_100": 245.98358333333334,
+      "ci95_half_width": 75.81606516196462,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "ce887f7b76daea3577fa5ef11002842637e24cc3afc1291117f92d3c57a263f4",
+      "elapsed_seconds": 45.68192485899999,
+      "peak_sampled_rss_bytes": 1636089856
+    },
+    "mixed-seed-343-mixture-60": {
+      "bb_per_100": 312.1565,
+      "ci95_half_width": 82.58833968427066,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "8ca409dcbaaba222b34cf004fc16a07456f551fd9cdde43b53f752bf36ac1e97",
+      "elapsed_seconds": 49.969218383001134,
+      "peak_sampled_rss_bytes": 1561706496
+    },
+    "mixed-seed-344-current-120": {
+      "bb_per_100": 101.44033333333333,
+      "ci95_half_width": 83.6440334746692,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+      "elapsed_seconds": 39.65705402399908,
+      "peak_sampled_rss_bytes": 1489862656
+    },
+    "mixed-seed-344-current-60": {
+      "bb_per_100": 256.3068333333333,
+      "ci95_half_width": 86.15157779777039,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "bdcd176cecdbbb482df9305ebc5601102c756e50ad06671332d722666fd9747d",
+      "elapsed_seconds": 48.281513263000306,
+      "peak_sampled_rss_bytes": 1493975040
+    },
+    "mixed-seed-344-mixture-120": {
+      "bb_per_100": 303.2796666666667,
+      "ci95_half_width": 81.57098090963399,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "08c4e0527e9fa959f05319bee7c451168d782a65d6794a8a9762432af589ad0d",
+      "elapsed_seconds": 46.47825707799893,
+      "peak_sampled_rss_bytes": 1635852288
+    },
+    "mixed-seed-344-mixture-60": {
+      "bb_per_100": 294.98333333333335,
+      "ci95_half_width": 91.4873076140297,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "a3694bdeb2e33302efdff92e8ed379602bc5935c7f796cbb08dccca4ff5b011e",
+      "elapsed_seconds": 51.03618146900044,
+      "peak_sampled_rss_bytes": 1565446144
+    },
+    "noregrets-public": {
+      "bb_per_100": 93.82241666666667,
+      "ci95_half_width": 43.06701003214062,
+      "hands": 12000,
+      "candidate_type": "advantage",
+      "candidate_sha256": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+      "elapsed_seconds": 26.081610373999865,
+      "peak_sampled_rss_bytes": 1491894272
+    },
+    "noregrets-seed-342-current-120": {
+      "bb_per_100": 131.1105,
+      "ci95_half_width": 119.21149408809154,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+      "elapsed_seconds": 27.285955031000412,
+      "peak_sampled_rss_bytes": 1488834560
+    },
+    "noregrets-seed-342-current-60": {
+      "bb_per_100": 452.74825,
+      "ci95_half_width": 123.24365403160108,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "35a9573902b4ec45e09b2449a4e5d508bacd91b498498a5e5453df8b8c642d7f",
+      "elapsed_seconds": 26.35509898500095,
+      "peak_sampled_rss_bytes": 1488371712
+    },
+    "noregrets-seed-342-mixture-120": {
+      "bb_per_100": 330.50191666666666,
+      "ci95_half_width": 115.23068990728663,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "75aefd670c3c71ae475030319d818c8fd2beba86c2189293e515dd3ed7df6788",
+      "elapsed_seconds": 30.674010713000825,
+      "peak_sampled_rss_bytes": 1638047744
+    },
+    "noregrets-seed-342-mixture-60": {
+      "bb_per_100": 354.50491666666665,
+      "ci95_half_width": 124.69002780819386,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "e7f788ccb7d9fc9c8e4c3301d1d912159a4d0ced99afb7a60a6900437629b5c5",
+      "elapsed_seconds": 29.51074023900037,
+      "peak_sampled_rss_bytes": 1559584768
+    },
+    "noregrets-seed-343-current-120": {
+      "bb_per_100": 334.3635,
+      "ci95_half_width": 133.8378733541762,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+      "elapsed_seconds": 26.496548237999377,
+      "peak_sampled_rss_bytes": 1488965632
+    },
+    "noregrets-seed-343-current-60": {
+      "bb_per_100": 527.06675,
+      "ci95_half_width": 133.82147403688825,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "ce23910c26680a58006a905614225f79b6d800b36f64fd6b48d4b16029e12cf9",
+      "elapsed_seconds": 26.636525043000802,
+      "peak_sampled_rss_bytes": 1492176896
+    },
+    "noregrets-seed-343-mixture-120": {
+      "bb_per_100": 351.584,
+      "ci95_half_width": 115.85061356571848,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "ce887f7b76daea3577fa5ef11002842637e24cc3afc1291117f92d3c57a263f4",
+      "elapsed_seconds": 29.506055963998733,
+      "peak_sampled_rss_bytes": 1638010880
+    },
+    "noregrets-seed-343-mixture-60": {
+      "bb_per_100": 303.9651666666667,
+      "ci95_half_width": 116.92229505508207,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "8ca409dcbaaba222b34cf004fc16a07456f551fd9cdde43b53f752bf36ac1e97",
+      "elapsed_seconds": 30.62402703599946,
+      "peak_sampled_rss_bytes": 1561800704
+    },
+    "noregrets-seed-344-current-120": {
+      "bb_per_100": 7.693500000000001,
+      "ci95_half_width": 126.46931473481992,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+      "elapsed_seconds": 27.120415360999687,
+      "peak_sampled_rss_bytes": 1491955712
+    },
+    "noregrets-seed-344-current-60": {
+      "bb_per_100": 294.64216666666664,
+      "ci95_half_width": 133.23964109269232,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "bdcd176cecdbbb482df9305ebc5601102c756e50ad06671332d722666fd9747d",
+      "elapsed_seconds": 32.29912110999976,
+      "peak_sampled_rss_bytes": 1488928768
+    },
+    "noregrets-seed-344-mixture-120": {
+      "bb_per_100": 440.15791666666667,
+      "ci95_half_width": 125.17308669324379,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "08c4e0527e9fa959f05319bee7c451168d782a65d6794a8a9762432af589ad0d",
+      "elapsed_seconds": 30.87376908099941,
+      "peak_sampled_rss_bytes": 1633787904
+    },
+    "noregrets-seed-344-mixture-60": {
+      "bb_per_100": 277.602,
+      "ci95_half_width": 134.73985875114178,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "a3694bdeb2e33302efdff92e8ed379602bc5935c7f796cbb08dccca4ff5b011e",
+      "elapsed_seconds": 34.90005057399867,
+      "peak_sampled_rss_bytes": 1561718784
+    },
+    "public-public": {
+      "bb_per_100": 20.160416666666666,
+      "ci95_half_width": 25.226710631265753,
+      "hands": 12000,
+      "candidate_type": "advantage",
+      "candidate_sha256": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+      "elapsed_seconds": 40.48614070199983,
+      "peak_sampled_rss_bytes": 43212800
+    },
+    "public-seed-342-current-120": {
+      "bb_per_100": -59.68075,
+      "ci95_half_width": 35.327369234271096,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+      "elapsed_seconds": 36.72999713900026,
+      "peak_sampled_rss_bytes": 43675648
+    },
+    "public-seed-342-current-60": {
+      "bb_per_100": -143.31758333333335,
+      "ci95_half_width": 61.969283728337636,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "35a9573902b4ec45e09b2449a4e5d508bacd91b498498a5e5453df8b8c642d7f",
+      "elapsed_seconds": 44.81557097699988,
+      "peak_sampled_rss_bytes": 40546304
+    },
+    "public-seed-342-mixture-120": {
+      "bb_per_100": -71.20075,
+      "ci95_half_width": 45.59024566766812,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "75aefd670c3c71ae475030319d818c8fd2beba86c2189293e515dd3ed7df6788",
+      "elapsed_seconds": 44.63311888899989,
+      "peak_sampled_rss_bytes": 185901056
+    },
+    "public-seed-342-mixture-60": {
+      "bb_per_100": -112.41633333333334,
+      "ci95_half_width": 54.27414869846634,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "e7f788ccb7d9fc9c8e4c3301d1d912159a4d0ced99afb7a60a6900437629b5c5",
+      "elapsed_seconds": 47.07644088200141,
+      "peak_sampled_rss_bytes": 111206400
+    },
+    "public-seed-343-current-120": {
+      "bb_per_100": -29.897,
+      "ci95_half_width": 29.88069249119271,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+      "elapsed_seconds": 38.54365708399928,
+      "peak_sampled_rss_bytes": 40017920
+    },
+    "public-seed-343-current-60": {
+      "bb_per_100": -110.90083333333334,
+      "ci95_half_width": 49.04122130855027,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "ce23910c26680a58006a905614225f79b6d800b36f64fd6b48d4b16029e12cf9",
+      "elapsed_seconds": 44.13136373799898,
+      "peak_sampled_rss_bytes": 43917312
+    },
+    "public-seed-343-mixture-120": {
+      "bb_per_100": -76.34283333333333,
+      "ci95_half_width": 39.383922741201296,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "ce887f7b76daea3577fa5ef11002842637e24cc3afc1291117f92d3c57a263f4",
+      "elapsed_seconds": 42.123681003000456,
+      "peak_sampled_rss_bytes": 185569280
+    },
+    "public-seed-343-mixture-60": {
+      "bb_per_100": -76.32291666666667,
+      "ci95_half_width": 48.77872026201603,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "8ca409dcbaaba222b34cf004fc16a07456f551fd9cdde43b53f752bf36ac1e97",
+      "elapsed_seconds": 45.85345237799993,
+      "peak_sampled_rss_bytes": 111681536
+    },
+    "public-seed-344-current-120": {
+      "bb_per_100": -93.43108333333333,
+      "ci95_half_width": 36.287141703930686,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+      "elapsed_seconds": 36.546435975998975,
+      "peak_sampled_rss_bytes": 44105728
+    },
+    "public-seed-344-current-60": {
+      "bb_per_100": -52.15833333333333,
+      "ci95_half_width": 41.51374963453719,
+      "hands": 12000,
+      "candidate_type": "compact_advantage",
+      "candidate_sha256": "bdcd176cecdbbb482df9305ebc5601102c756e50ad06671332d722666fd9747d",
+      "elapsed_seconds": 49.27234427199983,
+      "peak_sampled_rss_bytes": 40263680
+    },
+    "public-seed-344-mixture-120": {
+      "bb_per_100": -83.55258333333333,
+      "ci95_half_width": 45.550673480039116,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "08c4e0527e9fa959f05319bee7c451168d782a65d6794a8a9762432af589ad0d",
+      "elapsed_seconds": 46.08110600799955,
+      "peak_sampled_rss_bytes": 185647104
+    },
+    "public-seed-344-mixture-60": {
+      "bb_per_100": -141.61633333333333,
+      "ci95_half_width": 55.45824933669707,
+      "hands": 12000,
+      "candidate_type": "snapshot_mixture",
+      "candidate_sha256": "a3694bdeb2e33302efdff92e8ed379602bc5935c7f796cbb08dccca4ff5b011e",
+      "elapsed_seconds": 50.258026006000364,
+      "peak_sampled_rss_bytes": 115404800
+    }
+  },
+  "paired_comparisons": {
+    "noregrets-seed-342-current-120-minus-60": {
+      "mean": -321.63775,
+      "ci95_half_width": 146.91158033905108
+    },
+    "public-seed-342-current-120-minus-60": {
+      "mean": 83.63683333333333,
+      "ci95_half_width": 61.93452205620205
+    },
+    "mixed-seed-342-current-120-minus-60": {
+      "mean": -143.19575,
+      "ci95_half_width": 100.59914838670768
+    },
+    "noregrets-seed-342-mixture-120-minus-60": {
+      "mean": -24.003000000000004,
+      "ci95_half_width": 138.7488318827034
+    },
+    "public-seed-342-mixture-120-minus-60": {
+      "mean": 41.215583333333335,
+      "ci95_half_width": 59.11173840460686
+    },
+    "mixed-seed-342-mixture-120-minus-60": {
+      "mean": -0.40433333333333543,
+      "ci95_half_width": 101.04021664616938
+    },
+    "noregrets-seed-343-current-120-minus-60": {
+      "mean": -192.70325,
+      "ci95_half_width": 138.2588199141092
+    },
+    "public-seed-343-current-120-minus-60": {
+      "mean": 81.00383333333333,
+      "ci95_half_width": 51.73869809024308
+    },
+    "mixed-seed-343-current-120-minus-60": {
+      "mean": -107.38708333333334,
+      "ci95_half_width": 92.9537651065875
+    },
+    "noregrets-seed-343-mixture-120-minus-60": {
+      "mean": 47.61883333333333,
+      "ci95_half_width": 127.882037621331
+    },
+    "public-seed-343-mixture-120-minus-60": {
+      "mean": -0.019916666666666496,
+      "ci95_half_width": 52.86170799728842
+    },
+    "mixed-seed-343-mixture-120-minus-60": {
+      "mean": -66.17291666666667,
+      "ci95_half_width": 91.65603679461347
+    },
+    "noregrets-seed-344-current-120-minus-60": {
+      "mean": -286.94866666666667,
+      "ci95_half_width": 137.87141170593978
+    },
+    "public-seed-344-current-120-minus-60": {
+      "mean": -41.27275,
+      "ci95_half_width": 48.17537773394243
+    },
+    "mixed-seed-344-current-120-minus-60": {
+      "mean": -154.8665,
+      "ci95_half_width": 96.44531427910175
+    },
+    "noregrets-seed-344-mixture-120-minus-60": {
+      "mean": 162.55591666666666,
+      "ci95_half_width": 143.8647015117017
+    },
+    "public-seed-344-mixture-120-minus-60": {
+      "mean": 58.063750000000006,
+      "ci95_half_width": 58.473660585275795
+    },
+    "mixed-seed-344-mixture-120-minus-60": {
+      "mean": 8.296333333333333,
+      "ci95_half_width": 99.52370742842206
+    }
+  },
+  "config": {
+    "revision": "compact-cfr-v4",
+    "method": "compact-opening-expert",
+    "gate_run": "artifacts/retraining-validation/20261112T024258390982Z",
+    "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "iterations": 120,
+    "stages": [
+      120
+    ],
+    "traversals": 256,
+    "buffer_capacity": 100000,
+    "main_steps": 1024,
+    "batch_size": 512,
+    "opening_steps": 2048,
+    "opening_max_steps": 8192,
+    "max_opening_tv": 0.1,
+    "root_repetitions_first": 16,
+    "root_repetitions": 4,
+    "learning_rate": 0.001,
+    "checkpoint_every": 6,
+    "deployment_average": "Every pre-update policy, weight t, selected once per hand independently of cards",
+    "evaluation_fields": [
+      "noregrets",
+      "public",
+      "mixed"
+    ],
+    "evaluation_iterations": [
+      60,
+      120
+    ],
+    "evaluation_deals": 2000,
+    "evaluation_deal_seed": 2026111203,
+    "seconds_per_training_worker": 5400,
+    "promotion": "none",
+    "recovery_validation": "artifacts/retraining-validation/20261112T024258390982Z",
+    "evaluation_baselines": [
+      "public"
+    ],
+    "evaluation_all_stages_fields": true,
+    "extension_from": {
+      "parent": "/workspace/deep/artifacts/compact-v4/20261112T025126577365Z",
+      "iteration": 60,
+      "config_sha256": "5e2419f8970cfa85841f6ce90dbb645a4969faa37a9924fe1f9f8293128b78fa",
+      "checkpoints": {
+        "342": "bcb4947999fe2d9cde3d7c5feb9942d2074e90754d5f5690273f9d5a34cb71db",
+        "343": "bc78c9b827a34b53207cd4053b66bf4073f0d0b18d2f8593e4a3f1c45de4188d",
+        "344": "00eb6e34ffd7f8eef209a6373cc68d9cc8e9655483afd09677b94572602a2f13"
+      }
+    }
+  },
+  "summarizer_sha256": "9bb3e3f5955d883fdd5494e3df04cbfa8ef4ba43e3efff429b51bb5bc4c81adf",
+  "limitations": [
+    "Nominal deal-block intervals; no adjustment for multiple comparisons",
+    "Fixed trained models and two-model opponent pool",
+    "Three learning seeds are not independent card evaluation sets",
+    "No professional strength or automatic promotion"
+  ]
+}

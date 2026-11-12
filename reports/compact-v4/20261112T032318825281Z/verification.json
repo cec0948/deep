@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "seeds": [
+    {
+      "seed": 342,
+      "iteration": 120,
+      "root_observations": 83148,
+      "minimum_class_observations": 492,
+      "snapshots": 120,
+      "mixture_aa_fold": 3.443526170798898e-05,
+      "checkpoint_sha256": "b85835c50c7a9eed9d62481ad6fba7fb0517c5e1f8867675ab23f6a05040c5e0"
+    },
+    {
+      "seed": 343,
+      "iteration": 120,
+      "root_observations": 83148,
+      "minimum_class_observations": 492,
+      "snapshots": 120,
+      "mixture_aa_fold": 3.443526170798898e-05,
+      "checkpoint_sha256": "b73e9d619fafbb0c7d989da6717d1f0be5c66136386f822e1cd53cb056e06cc3"
+    },
+    {
+      "seed": 344,
+      "iteration": 120,
+      "root_observations": 83148,
+      "minimum_class_observations": 492,
+      "snapshots": 120,
+      "mixture_aa_fold": 3.443526170798898e-05,
+      "checkpoint_sha256": "9fe7826385423efd63fd668ef599db59e6dbd68fe161d1039b661381ed3b81c0"
+    }
+  ],
+  "verified_mixture_hands": 216000,
+  "verifier_sha256": "8c52ba4479f94681bec4f1733cccd27a4d5b5034940b954a73dc4c3d0dbbba60"
+}
