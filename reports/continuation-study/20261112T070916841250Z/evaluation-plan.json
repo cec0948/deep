@@ -1,0 +1,741 @@
+{
+  "created_utc": "2026-11-12T07:09:33.627538+00:00",
+  "config": {
+    "purpose": "A separately authorized fixed-budget extension of original120 self-play, with ten times as many fresh evaluation card blocks",
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "stages": [
+      180,
+      240
+    ],
+    "evaluation_iterations": [
+      120,
+      180,
+      240
+    ],
+    "evaluation_fields": [
+      "public",
+      "mixed",
+      "noregrets"
+    ],
+    "variants": [
+      "current",
+      "mixture"
+    ],
+    "evaluation_deals": 20000,
+    "evaluation_deal_seed": 2026160000,
+    "evaluation_seconds_per_cell": 2400,
+    "training_seconds_per_stage": 5400,
+    "max_seconds": 14400,
+    "snapshot_stages": [
+      180,
+      240
+    ],
+    "promotion": "none",
+    "continuation_rule": "Complete the predeclared180 and240 stages unless runtime, legality, finite-state, fitting-quality, or provenance checks fail; performance gates determine candidate eligibility, not intermediate study continuation",
+    "adoption_baseline": "original current120 for both current and mixture candidates",
+    "evaluation_plan": "54 cells and6480000 hands; same20000 independent card blocks across fixed seeds, hero seats, policies and stages",
+    "limitations": [
+      "No claim that the existing six-player heuristic is a faithful Deep CFR reproduction or converges to equilibrium",
+      "The original51-feature representation and scaled balanced fitting remain fixed; additional self-play cannot recover information omitted by the representation",
+      "This study does not use the failed raw-objective correction or refit candidates",
+      "Shared evaluation blocks provide paired comparisons; stages are not independent final holdouts and nominal intervals are not multiplicity-adjusted",
+      "Three training seeds do not establish general robustness; fixed opponents are not certified strong poker agents",
+      "No automatic model promotion, old-controller changes, or retry after an execution failure"
+    ]
+  },
+  "study_plan_sha256": "fea2187fe3477c03a88b7a058318bbb36ef5e8a80eb01b6153cf05ec69034f8a",
+  "jobs": [
+    {
+      "id": "public-seed-342-current-120",
+      "field": "public",
+      "variant": "current",
+      "iteration": 120,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/current_00120.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-342-current-120",
+      "field": "mixed",
+      "variant": "current",
+      "iteration": 120,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/current_00120.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-342-current-120",
+      "field": "noregrets",
+      "variant": "current",
+      "iteration": 120,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/current_00120.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-343-current-120",
+      "field": "public",
+      "variant": "current",
+      "iteration": 120,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/current_00120.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-343-current-120",
+      "field": "mixed",
+      "variant": "current",
+      "iteration": 120,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/current_00120.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-343-current-120",
+      "field": "noregrets",
+      "variant": "current",
+      "iteration": 120,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/current_00120.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-344-current-120",
+      "field": "public",
+      "variant": "current",
+      "iteration": 120,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/current_00120.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-344-current-120",
+      "field": "mixed",
+      "variant": "current",
+      "iteration": 120,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/current_00120.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-344-current-120",
+      "field": "noregrets",
+      "variant": "current",
+      "iteration": 120,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/current_00120.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-342-mixture-120",
+      "field": "public",
+      "variant": "mixture",
+      "iteration": 120,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/mixture_00120.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-342-mixture-120",
+      "field": "mixed",
+      "variant": "mixture",
+      "iteration": 120,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/mixture_00120.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-342-mixture-120",
+      "field": "noregrets",
+      "variant": "mixture",
+      "iteration": 120,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/mixture_00120.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-343-mixture-120",
+      "field": "public",
+      "variant": "mixture",
+      "iteration": 120,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/mixture_00120.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-343-mixture-120",
+      "field": "mixed",
+      "variant": "mixture",
+      "iteration": 120,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/mixture_00120.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-343-mixture-120",
+      "field": "noregrets",
+      "variant": "mixture",
+      "iteration": 120,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/mixture_00120.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-344-mixture-120",
+      "field": "public",
+      "variant": "mixture",
+      "iteration": 120,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/mixture_00120.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-344-mixture-120",
+      "field": "mixed",
+      "variant": "mixture",
+      "iteration": 120,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/mixture_00120.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-344-mixture-120",
+      "field": "noregrets",
+      "variant": "mixture",
+      "iteration": 120,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/mixture_00120.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-342-current-180",
+      "field": "public",
+      "variant": "current",
+      "iteration": 180,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/current_00180.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-342-current-180",
+      "field": "mixed",
+      "variant": "current",
+      "iteration": 180,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/current_00180.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-342-current-180",
+      "field": "noregrets",
+      "variant": "current",
+      "iteration": 180,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/current_00180.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-343-current-180",
+      "field": "public",
+      "variant": "current",
+      "iteration": 180,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/current_00180.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-343-current-180",
+      "field": "mixed",
+      "variant": "current",
+      "iteration": 180,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/current_00180.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-343-current-180",
+      "field": "noregrets",
+      "variant": "current",
+      "iteration": 180,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/current_00180.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-344-current-180",
+      "field": "public",
+      "variant": "current",
+      "iteration": 180,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/current_00180.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-344-current-180",
+      "field": "mixed",
+      "variant": "current",
+      "iteration": 180,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/current_00180.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-344-current-180",
+      "field": "noregrets",
+      "variant": "current",
+      "iteration": 180,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/current_00180.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-342-mixture-180",
+      "field": "public",
+      "variant": "mixture",
+      "iteration": 180,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/mixture_00180.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-342-mixture-180",
+      "field": "mixed",
+      "variant": "mixture",
+      "iteration": 180,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/mixture_00180.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-342-mixture-180",
+      "field": "noregrets",
+      "variant": "mixture",
+      "iteration": 180,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/mixture_00180.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-343-mixture-180",
+      "field": "public",
+      "variant": "mixture",
+      "iteration": 180,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/mixture_00180.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-343-mixture-180",
+      "field": "mixed",
+      "variant": "mixture",
+      "iteration": 180,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/mixture_00180.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-343-mixture-180",
+      "field": "noregrets",
+      "variant": "mixture",
+      "iteration": 180,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/mixture_00180.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-344-mixture-180",
+      "field": "public",
+      "variant": "mixture",
+      "iteration": 180,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/mixture_00180.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-344-mixture-180",
+      "field": "mixed",
+      "variant": "mixture",
+      "iteration": 180,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/mixture_00180.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-344-mixture-180",
+      "field": "noregrets",
+      "variant": "mixture",
+      "iteration": 180,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/mixture_00180.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-342-current-240",
+      "field": "public",
+      "variant": "current",
+      "iteration": 240,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/current_00240.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-342-current-240",
+      "field": "mixed",
+      "variant": "current",
+      "iteration": 240,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/current_00240.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-342-current-240",
+      "field": "noregrets",
+      "variant": "current",
+      "iteration": 240,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/current_00240.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-343-current-240",
+      "field": "public",
+      "variant": "current",
+      "iteration": 240,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/current_00240.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-343-current-240",
+      "field": "mixed",
+      "variant": "current",
+      "iteration": 240,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/current_00240.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-343-current-240",
+      "field": "noregrets",
+      "variant": "current",
+      "iteration": 240,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/current_00240.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-344-current-240",
+      "field": "public",
+      "variant": "current",
+      "iteration": 240,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/current_00240.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-344-current-240",
+      "field": "mixed",
+      "variant": "current",
+      "iteration": 240,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/current_00240.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-344-current-240",
+      "field": "noregrets",
+      "variant": "current",
+      "iteration": 240,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/current_00240.npz",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-342-mixture-240",
+      "field": "public",
+      "variant": "mixture",
+      "iteration": 240,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/mixture_00240.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-342-mixture-240",
+      "field": "mixed",
+      "variant": "mixture",
+      "iteration": 240,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/mixture_00240.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-342-mixture-240",
+      "field": "noregrets",
+      "variant": "mixture",
+      "iteration": 240,
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-342/mixture_00240.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-343-mixture-240",
+      "field": "public",
+      "variant": "mixture",
+      "iteration": 240,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/mixture_00240.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-343-mixture-240",
+      "field": "mixed",
+      "variant": "mixture",
+      "iteration": 240,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/mixture_00240.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-343-mixture-240",
+      "field": "noregrets",
+      "variant": "mixture",
+      "iteration": 240,
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-343/mixture_00240.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "public-seed-344-mixture-240",
+      "field": "public",
+      "variant": "mixture",
+      "iteration": 240,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/mixture_00240.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "mixed-seed-344-mixture-240",
+      "field": "mixed",
+      "variant": "mixture",
+      "iteration": 240,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/mixture_00240.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    },
+    {
+      "id": "noregrets-seed-344-mixture-240",
+      "field": "noregrets",
+      "variant": "mixture",
+      "iteration": 240,
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/seed-344/mixture_00240.json",
+      "source": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source"
+    }
+  ],
+  "prior_card_ranges": {
+    "artifacts/compact-v4/20261112T025126577365Z/config.json": [
+      2026111201,
+      2026113201
+    ],
+    "artifacts/compact-v4/20261112T032318825281Z/config.json": [
+      2026111203,
+      2026113203
+    ],
+    "artifacts/foundation-study/20261112T053521994344Z/config.json": [
+      2026140000,
+      2026142000
+    ],
+    "artifacts/retraining-smoke/20261112T024445071933Z/config.json": [
+      220261112,
+      220261114
+    ],
+    "artifacts/refit-probe/20261112T050839072733Z/config.json": [
+      2026130000,
+      2026132000
+    ],
+    "artifacts/refit-probe/20261112T060737163350Z/config.json": [
+      2026150000,
+      2026152000
+    ],
+    "artifacts/refit-probe/20261112T043945051666Z/config.json": [
+      2026120000,
+      2026122000
+    ],
+    "reports/compact-v4/20261110T085438491435Z/config.json": [
+      190261110,
+      190263110
+    ],
+    "reports/compact-v4/20261112T025126577365Z/config.json": [
+      2026111201,
+      2026113201
+    ],
+    "reports/compact-v4/20261112T024445071933Z/config.json": [
+      220261112,
+      220261114
+    ],
+    "reports/compact-v4/20261110T022413561323Z/config.json": [
+      170261110,
+      170263110
+    ],
+    "reports/compact-v4/20261112T032318825281Z/config.json": [
+      2026111203,
+      2026113203
+    ],
+    "reports/foundation-study/20261112T053521994344Z/config.json": [
+      2026140000,
+      2026142000
+    ],
+    "reports/fullhouse-v3/20261109T034714104421Z/config.json": [
+      160261109,
+      160263109
+    ],
+    "reports/refit-probe/20261112T050839072733Z/config.json": [
+      2026130000,
+      2026132000
+    ],
+    "reports/refit-probe/20261112T060737163350Z/config.json": [
+      2026150000,
+      2026152000
+    ],
+    "reports/refit-probe/20261112T043945051666Z/config.json": [
+      2026120000,
+      2026122000
+    ]
+  },
+  "frozen_files": {
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/config.json": "22d393283f93d731c56392f9007d39534872d2ac7d87e0b3c05a2392535e4bc2",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/plan.json": "fea2187fe3477c03a88b7a058318bbb36ef5e8a80eb01b6153cf05ec69034f8a",
+    "/workspace/deep/scripts/evaluate_compact_learning_curve.py": "241b633efdd48d8d4f4949742f9917792e98790cee48e99a973be40520188b05",
+    "/workspace/deep/scripts/evaluate_compact.py": "262a6e3e2be9f556c3e5863fe00eb636b7203c9148ad834ea1933918e32bcfe2",
+    "/workspace/deep/scripts/run_compact_refit_probe.py": "baa70d4fef2d9047045c0417afb2e7f482d6e5b8a5f348de139fc5bd1a75b8df",
+    "/workspace/deep/scripts/fullhouse_v3_common.py": "ff6bb05e72464fc833b4040a6c51e5f40834c8667da813c8b8bff1cad0069e37",
+    "/workspace/deep/scripts/fullhouse_v4_runtime.py": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+    "/workspace/deep/scripts/fullhouse_v3_runtime.py": "19f0c117d80ffd9e013387bb17d3daf215e3476a4a135fe72a7bfb18d4db8e0e",
+    "/workspace/deep/scripts/fullhouse_runtime.py": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+    "/workspace/deep/scripts/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source-manifest.json": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/LICENSE.upstream": "8a2daa759da5e2bc87dfdd8f3a02fee6f18b38ccced523022a31c36e1b0512c4",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/bot/bot.py": "f721b16e0cab72d0c40fae2e94d1ec655a94025fc20addfc689c718fb8f10845",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/bot/features.py": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/__init__.py": "dd47ca434e58a3ba04952d871c3899db7b675eed0dd5e2e4dc23645f72f08d1f",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/_hand_eval.py": "e97c081806e67f964ace1c6dd7bb62c8f49ea8cd0c2060d8643d6c58daeb3a96",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/_hand_eval_lut.py": "d57d29959b6441fbad16f1e65c35dab0e6d38e7fda29a1b8edbaf6271cea5e46",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/buffer.py": "a513bf28f44992218053745e77faedd5a6a71c663cc642273ccaa01e0cd4f611",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/features.py": "b6f8b26df06b4147c87e1543242d5cf29af9366be7681af272bbc677bdc97946",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/game.py": "df405d6d9efbeca3ecb778cfa70dd770fee5c34d04eb3f65ed1ab11261696381",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/game_numba.py": "3d581b954fa028ea8c6e5b31457c95cbcfa8f9e09bc14dd939c59ae7457437dc",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/network.py": "e8c75e85722fa32e311316f06b93596f6610b934af5a8ab0ef6c99d72d2f2c49",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/r1_support.py": "08b19999b38066c1848ca3e0a5a67b65a0b577250dce59c0dff084ae7683dfd0",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/train.py": "844c8e6d3aea891e95d39f60b9e50906bcc854df20bc489d440558be945bb316",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/traverse_fast.py": "b0d199732ddd46be242c90b382fe4e7c93add829ca8e493d6c59dce67af319a6",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/traverse_numba.py": "03c17cd7b717005737cabafe7c4e7963dc6eb1fbd9f8e4295d3c8417127ec803",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/source/training/worker.py": "282435f5e10770dce373b4579e14552af9f0e3beb6178046a8229a33acad9bea",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/tools/compact_regret.py": "4cff184154657d6e1040536fd02a1cd25bb518e8a813a67b72851dd6f1882d60",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/tools/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/tools/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/tools/root_regret_replay.py": "0078f0cde6631e3b8ba12dd134523521a5a6f7ffd0bc5e88b7c0bce8ee9c349d",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/tools/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+    "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/tools/train_compact_selfplay.py": "ced4b1817a837c83bd0f28ef640bfa0220fe1bd2bb5142a9ef0e04d48fd35b51",
+    "/workspace/deep/artifacts/selfplay/current.json": "e0dd3e81ad40a36d948e4d59425d2f170b175f8e67f985bd74f30ba7442fd58c",
+    "/workspace/deep/artifacts/selfplay/20261112T022813820557Z/blueprint-1000000.bin": "4d86512cd76bb7d863a14e11c0fae2bf44f3561b57225d6abc593c41a27fe648",
+    "/workspace/deep/.cache/fullhouse-bot/data/deep_cfr_model.npz": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+    "/workspace/deep/.cache/noregrets/target/release/poker-bridge": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+    "/workspace/deep/configs/fullhouse-model.json": "24fdf60e5698c8baa6737eaa1dd9c41bab7c94f9c5f8b05f7292d2b9e346e9ae",
+    "/workspace/deep/.cache/fullhouse-bot/training/_hand_eval.py": "e97c081806e67f964ace1c6dd7bb62c8f49ea8cd0c2060d8643d6c58daeb3a96",
+    "/workspace/deep/.cache/fullhouse-bot/training/traverse_numba.py": "03c17cd7b717005737cabafe7c4e7963dc6eb1fbd9f8e4295d3c8417127ec803",
+    "/workspace/deep/.cache/fullhouse-bot/training/train.py": "d5073a19d38dfe7adb26ac598e3d2949ca679016e793143250984d2c944cbf93",
+    "/workspace/deep/.cache/fullhouse-bot/training/game_numba.py": "3d581b954fa028ea8c6e5b31457c95cbcfa8f9e09bc14dd939c59ae7457437dc",
+    "/workspace/deep/.cache/fullhouse-bot/training/game.py": "06c2c68ac6854581a6025b512860b6b7881ce7d28dd0c6916342d830aaa77fb0",
+    "/workspace/deep/.cache/fullhouse-bot/training/worker.py": "282435f5e10770dce373b4579e14552af9f0e3beb6178046a8229a33acad9bea",
+    "/workspace/deep/.cache/fullhouse-bot/training/traverse_fast.py": "b0d199732ddd46be242c90b382fe4e7c93add829ca8e493d6c59dce67af319a6",
+    "/workspace/deep/.cache/fullhouse-bot/training/buffer.py": "f883e7c10ab1ad70076aea0476bac15f73f0d99ddf28b2c4b21a0a4c6efc4d7e",
+    "/workspace/deep/.cache/fullhouse-bot/training/network.py": "e8c75e85722fa32e311316f06b93596f6610b934af5a8ab0ef6c99d72d2f2c49",
+    "/workspace/deep/.cache/fullhouse-bot/training/__init__.py": "dd47ca434e58a3ba04952d871c3899db7b675eed0dd5e2e4dc23645f72f08d1f",
+    "/workspace/deep/.cache/fullhouse-bot/training/_hand_eval_lut.py": "d57d29959b6441fbad16f1e65c35dab0e6d38e7fda29a1b8edbaf6271cea5e46",
+    "/workspace/deep/.cache/fullhouse-bot/training/features.py": "b6f8b26df06b4147c87e1543242d5cf29af9366be7681af272bbc677bdc97946",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/runtime_data.py": "3874f9e439810922ba75fa70d7d95419f7ba147441b9710f1cde93148fa9221b",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/__init__.py": "2e6b06a7e2a384014ed2c7bda8e1a19bb876e8c1d9b61af9e92e7ef91a796c83",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/demo.py": "26ec232b134b9e5be325944289df1ed910b4860a166c6d9c8cfe04235668379c",
+    "/workspace/deep/.cache/fullhouse-bot/scripts/_bootstrap.py": "84d3a56cf5280d5d44b67989ae7eac03087dc10d0b299073d47584c2ecc2ea62",
+    "/workspace/deep/.cache/fullhouse-bot/scripts/plot_benchmark.py": "47a4a78a18146f4d93b9bf43b3a36b2c2b219e5fa0442cf42526c60fc91a4313",
+    "/workspace/deep/.cache/fullhouse-bot/scripts/cluster.py": "bf43385012dd2c2da03331709f6e44d7f990621cb64a27feba2bea61e0b4db9a",
+    "/workspace/deep/.cache/fullhouse-bot/scripts/watch_training.py": "d41f23f643d03d6644f20c8f6450865f038bfee1085eb6142116e3c5dbc60cfc",
+    "/workspace/deep/.cache/fullhouse-bot/scripts/build_submission.py": "5acfc57e61aa0c5b45aeff43c383401e6d4460c0ca82e80e29cd16a6939fe7de",
+    "/workspace/deep/.cache/fullhouse-bot/scripts/build_preflop_equity.py": "7ca73df53577a027e7a362e194a5d914d2005bcc05979b4995e203b8c6e390cc",
+    "/workspace/deep/.cache/fullhouse-bot/scripts/cluster_worker.py": "18c5ab25702fed30073df992ec4f5c5271454241b73b2505404c8107d4c19f92",
+    "/workspace/deep/.cache/fullhouse-bot/scripts/bench.py": "864405b9fdc7a8981a820d4457424979a3c5dde4a57e33afa9d8e1c8350736ce",
+    "/workspace/deep/.cache/fullhouse-bot/tests/test_strategy_weights.py": "f5890c35d86ae26ad6eefb8f143d59ca0935c8b694893ed9accc09d0259993c8",
+    "/workspace/deep/.cache/fullhouse-bot/tests/test_bot.py": "ca9c3bea236001df81f2cad91e3c848c83b04873e1088c0d4ca9af722c178005",
+    "/workspace/deep/.cache/fullhouse-bot/tests/test_numba_parity.py": "fea17ac16803b392eda86c81ce361804e9af18bb78e0c9609e4dd76ffa5597cb",
+    "/workspace/deep/.cache/fullhouse-bot/tests/test_bot_scenarios.py": "ad3d60da4e88d2a9e9d404880e3ce7928f729022aed1f9b0cd1ca5fac5df11c5",
+    "/workspace/deep/.cache/fullhouse-bot/tests/test_package.py": "b0bdc6a5006027a5d959f2b8113d1b304f73f1dbcae69f135534289213b5bb98",
+    "/workspace/deep/.cache/fullhouse-bot/tests/test_integration.py": "2067ff282159b674bcda71851a32c73dc0e81952744b739c951e1d1db65ce70a",
+    "/workspace/deep/.cache/fullhouse-bot/tests/test_smoke.py": "a27e2d23bf2ccb6ae62ea30e3df26198f1ab4416b86e6c17c7dc6c0c2d393b1f",
+    "/workspace/deep/.cache/fullhouse-bot/tests/test_encoding.py": "a1cf9af5910d2c0fbde58626c8c343bf41701aa5bc2c5c4d4f01fb6fe061ea6f",
+    "/workspace/deep/.cache/fullhouse-bot/bot/bot.py": "f721b16e0cab72d0c40fae2e94d1ec655a94025fc20addfc689c718fb8f10845",
+    "/workspace/deep/.cache/fullhouse-bot/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/.cache/fullhouse-bot/bot/features.py": "b43361365ed911f358b3588f0c487614029158bf1420c5ffec8260bd427475c8",
+    "/workspace/deep/.cache/fullhouse-bot/bots/adversarial/maniac.py": "21a3d59d8993d3ad0cb15ec75fd46524f91598ab87846d3e4f4e677cc028e2d6",
+    "/workspace/deep/.cache/fullhouse-bot/bots/adversarial/random_bot.py": "3839844d0f3cc6319b4a4e38ad8755540eecdd07aacd449ef7aa4a74b9301a14",
+    "/workspace/deep/.cache/fullhouse-bot/bots/adversarial/tournament_specialist.py": "04476804985f2827916b96c0ccbee77d8434ded8dfa10cce5566eaa200246530",
+    "/workspace/deep/.cache/fullhouse-bot/bots/adversarial/nit.py": "be1f3e8682bf2a26d729bfacd83eeb84421d3f14b1a576164dae2cb808598eeb",
+    "/workspace/deep/.cache/fullhouse-bot/bots/adversarial/solver_like.py": "76ef638a9a7e9762316ba34d54eca435bd37086afd9bb30433423346282a5240",
+    "/workspace/deep/.cache/fullhouse-bot/bots/adversarial/station.py": "d73a65b481063fa813d6ba92ff88aed0cf8359407f0da234246401080c03774f",
+    "/workspace/deep/.cache/fullhouse-bot/bots/strong/bot.py": "e02f88ed25cbbd6397936bbb1385bcec047df5da644cde78b066821281c3018f",
+    "/workspace/deep/.cache/fullhouse-bot/bots/competitors/solver_hybrid/bot.py": "115656f4638d012a60c74ca8732c2e482c9fc12d3790f8ed10a40ee04c391550",
+    "/workspace/deep/.cache/fullhouse-bot/bots/competitors/equity_table/bot.py": "7ad40a835c6192ee2573290a5c79f660704ca8149a63c374bbdf56a48e4f6b66",
+    "/workspace/deep/.cache/fullhouse-bot/bots/competitors/bayesian_exploiter/bot.py": "4d8b2772b9b7387c00b3ccbe33343618f13720be7841ea2ab806d062a92db738",
+    "/workspace/deep/.cache/fullhouse-bot/bots/competitors/adaptive_hydra/bot.py": "eb5280b4d757ded435cf0b8dc5ae9b006bb3be0df822910e0e5777e9f018b25e",
+    "/workspace/deep/.cache/fullhouse-bot/bots/competitors/cfr_lite/bot.py": "7eb3e3dc75333b2a940fa9784dc130e6c3936f4605f56f7b76bc94b3a6b0d231",
+    "/workspace/deep/.cache/fullhouse-bot/bots/competitors/cfr_equity_v28/bot.py": "421ce24e99b330c089ad95431bed1aedb3ac19fd0312a5366b51aada50e3352b",
+    "/workspace/deep/.cache/fullhouse-bot/bots/competitors/equity_balanced/bot.py": "315877bff6ff78cbd42d40f8262d600ce6bf852ff566cfac451b14cb57da6661",
+    "/workspace/deep/.cache/fullhouse-bot/bots/extra/mc_equity/bot.py": "9a28f9c6bd86ab18a82c0e1adf811697c11b008df198c4b6de04d19a79c685ed",
+    "/workspace/deep/.cache/fullhouse-bot/bots/extra/cfr_kmeans_router/bot.py": "9ab82e45e7db7ae98bad167d7f42dd703684fe68cfdc37e9c3aa69de8d567e5e",
+    "/workspace/deep/.cache/fullhouse-bot/bots/extra/cfr_opp_profiler/bot.py": "95bb9e5fc7abb7cfdc8b02d9e9b82e17f0cf28e0d9ff6ec3128d7579571b75e1",
+    "/workspace/deep/.cache/fullhouse-bot/bots/extra/cfr_variance_guard/bot.py": "f9b4419abbd486a36010a15caa3887debf611691b8df37c9fcf63c9f74adb712",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/harness/engine.py": "2286f278d1a0eacf3d13c31e2e65e2f2ffd4735232234007b0f303b0b7decf4e",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/harness/bot_registry.py": "b6a932eafe9eec7bb290c19ad84b073fb9effe3134e636438b4c39854140882d",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/harness/diagnostics.py": "25422c2abf6a420d7076fd5e3719ac8ce72315ff7a49c6c9041a60171e2c7b92",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/harness/benchmarks.py": "f661e7d74d6c5b0426c59ed59842f0d34691e81e0f2733fddbb5983237ecf91a",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/harness/__init__.py": "699a5607641fd3dc583d52c7b74f05f72845069898f1db1394b7aee5df28452b",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/cluster/aggregate.py": "42d6e2577fd7a1f3a63a17aba94d7bc5ed801175ae0f71feb6c6d527a6156460",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/cluster/common.py": "bcc8fb25bcba979cb4be33b2fd5d1b04bbcccb3146f10f90f41e880e2e0035e7",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/cluster/sync.py": "4e0a1a92775d493bbbb1d9a9e6434dc734dd2d4d4e5690407cb4a62a79c78235",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/cluster/worker.py": "eab2f003cdf1c87a9cc3a760ce6804b815c609a467ae3bb3f12edf7e4ebd2ccc",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/cluster/submit.py": "82b291a8a8066809942c9250b083ec832eb97057225e08ca390b0deba1d96d2e",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/cluster/__init__.py": "44dbc230554f18d1b2f5120e82c1f4650fa5f55db809c8a139a320e59b125682",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/watcher/runner.py": "54d9810ad80fab03d47990f1aadb04739bdd5915efe13ca8780124d1b118a0d0",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/watcher/cli.py": "3eedc647852206f92f7b17e3ef2089fbdd86126e99d57b90ff169257a19ea0bc",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/watcher/sync.py": "a121e60a372ab272a63150fb7a85868133ae35b57dea3693a4018e8053f0f00e",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/watcher/analysis.py": "e6181f6258d7d08ecfdfeb93d162ba4e55d1fd537450ee60e88719168b127e69",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/watcher/state.py": "01da1bd7e0aedeb4b4254947dc9f291844845c3d44e788605e55b77dcc65670a",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/watcher/utils.py": "0871f64831d2d68be12fa28ae9f75f5cb0c30053cf04f4442696a4b7060019db",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/watcher/__init__.py": "f3d74a8f4bfa89d4aa0c6217b12472b05d11847e17b55a66fff913be2e093e0e",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/release/submission.py": "04622812b6639a3fa6110ad774d043625755900819625914b8b7c4616c2a0fac",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/release/__init__.py": "59874bd457dce61752f5ca853badab98badb2bb5328438949aef2bec2f606d98",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/data_tools/__init__.py": "2a08962f42ff827d64562aac1e923c4810e25f1a95e60fa734883a0b5132268e",
+    "/workspace/deep/.cache/fullhouse-bot/tooling/data_tools/preflop_equity.py": "20f496cc47734c8ed856b0acaf1fc56581b14cbf995d995f577658b6cadb4510",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/sandbox/runner.py": "fa7114e6b3f944b8fdc4ea83dd12e74a216ffea1a3702aed45f7459c203eaa5f",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/sandbox/match.py": "ccacdf9ac3350347a5583a80fc1a621fc7246b2cbd992a8fe6251be4a9ed633d",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/sandbox/validator.py": "cc2441fbd2038664716d2151fc523606f219b6398e9be808e075865bfe4ebcb0",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/engine/tournament.py": "9759284729099b98d7e784824fc7ff8705c1fa846c6b8ebede848832e4a2325a",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/engine/game.py": "95c87ade625041f7cc6221d6cc36eac11f89f3f452753b20a402126c31f7e9c2",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/tests/test_engine.py": "b86d521fa4337fbb926eedba6d7cfb7ba088d0de7d67df0d6101a271f54f0ae9",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/bots/mathematician/bot.py": "782e554e28f81093bb7d164b89e703fd37c931f0c56bc586f9a488af1261cf4b",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/bots/ref_bot_2/bot.py": "b617c65292ccc02e2b40e7c9eb9c33f819accdc8bdf250830e1df37fed8a765c",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/bots/shark/bot.py": "1409a778b3cc6905196194d834a77be7fcfdc0f5a02213121501bb7bcf09edf9",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/bots/template/bot.py": "7460fa5d6d508c2117793fc175a3af52806cac753963d34d28401320bfc38d7c",
+    "/workspace/deep/.cache/fullhouse-bot/engine_vendored/bots/aggressor/bot.py": "04db5e1eeb0f3e39b6325af598743c6fe1a57b587d5d54feb5544fea465bff44",
+    "/workspace/deep/.cache/fullhouse-bot/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3"
+  },
+  "card_range": [
+    2026160000,
+    2026180000
+  ]
+}

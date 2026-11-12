@@ -1,0 +1,68 @@
+{
+  "format": "poker-learning-curve-orchestration-audit-v1",
+  "complete": true,
+  "observed_utc": "2026-11-12T07:09:03.260540+00:00",
+  "no_blocking_implementation_faults": true,
+  "source_hashes": {
+    "/workspace/deep/scripts/run_compact_learning_curve.py": "2434d031a48aa2e4bf5cc3c955d54e851f5c80e2f8f74a550697a388fc7dbe35",
+    "/workspace/deep/scripts/evaluate_compact_learning_curve.py": "241b633efdd48d8d4f4949742f9917792e98790cee48e99a973be40520188b05",
+    "/workspace/deep/scripts/snapshot_learning_curve.py": "4582ceaf3cfb07813acc2341b363ba479d39dcc690b2a18fd3229c61030237ab",
+    "/workspace/deep/tests/test_compact_learning_curve.py": "50609a1e774870182d917cf3c8a90748e4d3faaa9e0b39e5a94dd3130dce33b7",
+    "/workspace/deep/tests/test_learning_curve_evaluation.py": "30fc399c387ec1eb668bd6d8f5cfea2de77ec2ff0d3e468715e4539e24d472bb",
+    "/workspace/deep/tests/test_learning_curve_snapshot.py": "c3a6c784732645c4e49ede2ad48a2f22405d9d0c43762552a0876ab72d3b6d20",
+    "/workspace/deep/configs/compact-learning-curve-20261112.json": "5e92d0d85e20b72ec94ca05b33d4d11cd55ffccc416d7e77dea1a6ea3e411b08",
+    "/workspace/deep/reports/continuation-study/method-audit-20261112.json": "66747e84b151df0519105cbb3d4be04cad8c89318c717afd51a576d8a9aa6c60"
+  },
+  "tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 /workspace/.venvs/fullhouse/bin/python -m pytest -q tests/test_compact_learning_curve.py tests/test_learning_curve_evaluation.py tests/test_learning_curve_snapshot.py",
+    "passed": 34,
+    "seconds": 6.96
+  },
+  "checks": {
+    "metadata_only_checkpoint_config_and_exact_payload_preservation": true,
+    "original_registry_and_controller_protected": true,
+    "one_evaluator_while_training_and_between_stages": true,
+    "evaluator_shutdown_grace_prevents_tested_orphan_case": true,
+    "new_stage_evaluation_requires_verified_candidate_hash": true,
+    "original120_baseline_pinned_to_original_policy": true,
+    "twenty_thousand_card_blocks_and54_cells": true,
+    "shared_cards_not_counted_as_independent_training_seeds": true,
+    "adoption_baseline_and_original_four_conditions_preserved": true,
+    "full_mixture_history_frozen_before_sampling": true,
+    "raw_hand_payoffs_and_mixture_selection_reverified": true,
+    "snapshot_accepts_real_unicode_model_metadata_and_rejects_numeric_nan": true,
+    "checkpoint_rng_validation_does_not_mutate_training_rng": true,
+    "archive_hashes_sizes_and_restore_boundaries_verified": true,
+    "actual_original120_passes_new_stage_verifier": true
+  },
+  "actual_original120_stage_check": {
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "complete": true,
+    "pre_update_history_verified": true,
+    "current_export_checkpoint_parity": true,
+    "root_weighting_verified": true,
+    "finite_state": true
+  },
+  "resolved_findings": [
+    {
+      "issue": "Snapshot initially called np.isfinite on Unicode metadata in realNPZ exports",
+      "resolution": "Numeric tensors and declared Unicode revision/method are validated separately; actual3original120exports andNaN regressiontests pass"
+    },
+    {
+      "issue": "Generic outer5s shutdown could kill the evaluator before its separate cellgroups were cleaned",
+      "resolution": "Newrunner-specific cleanup signalsownedgroups first, verifiesPID/starttoken andallows evaluator30s grace; realprocess regression waits5.2s andchecks childremoved"
+    }
+  ],
+  "scope": "Read-only review of the new runner/evaluator/snapshot plus targeted tests. The frozen original learning-method audit remains separate and unchanged.",
+  "limitations": [
+    "No production training was launched by this audit; passing implementation checks does not predict better poker strength.",
+    "The20,000cardblocks are intentionally shared across all fixedcheckpoints forpairedlearningcurves; they are not a newfinalholdout after eachstage.",
+    "The fixed240 researchbudget is separately authorized and does not silentlymodify the oldcontroller or weakenfinaladoptioncriteria.",
+    "Restorearchive supports the fullsavedtrainingstate anddeliberateworkerrecovery, notautomaticorchestration/evaluationresume.",
+    "Shutdownregression covers the tested orderlyTERM/grace path; no claim that arbitraryexternalSIGKILL/resourcefailure is universallyrecoverable."
+  ]
+}

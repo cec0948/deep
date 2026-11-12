@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "prepared_utc": "2026-11-12T07:09:32.368262+00:00",
+  "parent": "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z",
+  "campaign": "/workspace/deep/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z",
+  "preserved_payloads": {
+    "342": {
+      "parent_checkpoint_sha256": "b85835c50c7a9eed9d62481ad6fba7fb0517c5e1f8867675ab23f6a05040c5e0",
+      "initial_checkpoint_sha256": "03b61c41490825e6a47412864958b18d495f8b75c6a0215bc170eb1d50cc3cdf",
+      "complete_payload_except_config_identical": true,
+      "original_iteration": 120,
+      "original_seed": 342
+    },
+    "343": {
+      "parent_checkpoint_sha256": "b73e9d619fafbb0c7d989da6717d1f0be5c66136386f822e1cd53cb056e06cc3",
+      "initial_checkpoint_sha256": "127aa88964113eef99ca3fc6220be332f60b0300933da2a643fbefb1820b617e",
+      "complete_payload_except_config_identical": true,
+      "original_iteration": 120,
+      "original_seed": 343
+    },
+    "344": {
+      "parent_checkpoint_sha256": "9fe7826385423efd63fd668ef599db59e6dbd68fe161d1039b661381ed3b81c0",
+      "initial_checkpoint_sha256": "9a239c55aaf03341bc4bbc25ed2f58016adb8c01ed63975fee9763366035a86c",
+      "complete_payload_except_config_identical": true,
+      "original_iteration": 120,
+      "original_seed": 344
+    }
+  },
+  "changed_config_keys": [
+    "evaluation_baselines",
+    "evaluation_deal_seed",
+    "evaluation_deals",
+    "evaluation_iterations",
+    "extension_from",
+    "iterations",
+    "stages"
+  ],
+  "original_registries_unchanged": true,
+  "method_audit_sha256": "3af240911a3f7f394a0eb321f7e89deae8c068dd5ea4bd4e0aa5471ccb7da85c"
+}

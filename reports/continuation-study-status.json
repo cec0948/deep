@@ -1,27 +1,70 @@
 {
-  "observed_utc": "2026-11-12T06:59:22.245062+00:00",
-  "status": "preparing",
-  "phase": "validating_isolated_runner",
-  "supervisor_alive": false,
-  "parent_iteration": 120,
-  "target_iteration": 240,
-  "completed_selfplay_iterations": {
-    "342": 120,
-    "343": 120,
-    "344": 120
+  "observed_utc": "2026-11-12T07:09:45.823437+00:00",
+  "run": "20261112T070916841250Z",
+  "status": "running",
+  "phase": "training",
+  "recorded_status": "running",
+  "recorded_phase": "training",
+  "status_updated_utc": "2026-11-12T07:09:45.097916+00:00",
+  "status_age_seconds": 0.725521,
+  "supervisor_alive": true,
+  "liveness_evidence": "Matching registry/status PID, non-zombie /proc start token, runner command and output argument",
+  "plan_sha256": "fea2187fe3477c03a88b7a058318bbb36ef5e8a80eb01b6153cf05ec69034f8a",
+  "source_provenance_verified": true,
+  "method_audit_passed": true,
+  "original_selfplay_iteration": 120,
+  "planned_selfplay_iteration": 240,
+  "original_model_replaced": false,
+  "original_registries_unchanged": true,
+  "seed_progress": {
+    "342": {
+      "checkpoint_iteration": 120,
+      "additional_selfplay_iterations": 0,
+      "worker_alive": true,
+      "checkpoint_state": "complete"
+    },
+    "343": {
+      "checkpoint_iteration": 120,
+      "additional_selfplay_iterations": 0,
+      "worker_alive": true,
+      "checkpoint_state": "complete"
+    },
+    "344": {
+      "checkpoint_iteration": 120,
+      "additional_selfplay_iterations": 0,
+      "worker_alive": true,
+      "checkpoint_state": "complete"
+    }
   },
-  "evaluation_deals": 20000,
+  "completed_training_stages": [],
+  "training_stages": {},
+  "training_complete": false,
+  "study_complete": false,
+  "evaluation": {
+    "recorded_status": "running",
+    "completed_evaluations": 0,
+    "planned_evaluations": 54,
+    "verified_hands": 0,
+    "completed_checkpoint_evaluations": [],
+    "evaluation_plan_sha256": "ec3938895445c1e42031b9a1536b2c78cbbde8574214ae2bef705d302b1ce79a",
+    "status_updated_utc": "2026-11-12T07:09:45.914110+00:00",
+    "evaluator_alive": true,
+    "observed_status": "running"
+  },
+  "completed_evaluations": 0,
   "planned_evaluations": 54,
   "planned_hands": 6480000,
-  "completed_evaluations": 0,
-  "method_audit_complete": true,
-  "method_audit_passed": true,
-  "method_audit_sha256": "66747e84b151df0519105cbb3d4be04cad8c89318c717afd51a576d8a9aa6c60",
-  "original_controller_status": "paused_for_analysis",
-  "new_training_started": false,
-  "next_action": "Validate isolated continuation/evaluation/snapshot helpers, then run the separately authorized fixed budget",
+  "independent_card_blocks": 20000,
+  "adoption_decisions": {},
+  "external_checkpoint": null,
   "limitations": [
-    "Method audit found no new blocking implementation faults; known representation and heuristic objective limitations remain",
-    "Original120 checkpoint remains unchanged; no continuation has started at this observed timestamp"
-  ]
+    "A completed training checkpoint does not mean all large evaluations or the research study are complete",
+    "Observed process liveness applies only at observed_utc; timestamps never prove continuing execution",
+    "This study collects new self-play through240 and does not reuse the failed offline-refit correction",
+    "Original adoption gates are unchanged; interim gate results do not alter the authorized fixed study budget",
+    "Common cards across stages are paired research comparisons, not independent final holdouts",
+    "Fixed opponents and three seeds do not establish professional strength or general robustness",
+    "Off-site backup facts come from the private index; this publisher makes no remote metadata or checksum request"
+  ],
+  "next_action": "Observe the existing fixed-budget study; do not start a duplicate"
 }
