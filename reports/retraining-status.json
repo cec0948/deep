@@ -1,66 +1,66 @@
 {
-  "observed_utc": "2026-11-12T03:28:00.098929+00:00",
+  "observed_utc": "2026-11-12T03:29:31.273754+00:00",
   "run": "20261112T032318825281Z",
   "phase": "training",
   "target_iterations": 120,
   "supervisor_alive": true,
   "seeds": {
     "342": {
-      "iteration": 69,
-      "checkpoint": 66,
+      "iteration": 72,
+      "checkpoint": 72,
       "quality": {
-        "weighted_tv": 0.014714534020499857,
+        "weighted_tv": 0.01090141122597177,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -67.9649260693423,
-          -2.053771307437542,
-          5.078456435833683,
-          0.7720172536390633,
+          -68.49213637046427,
+          -5.9896482616362725,
+          4.927273351757947,
+          -3.665555082412527,
           0.0
         ]
       },
-      "iteration_seconds": 32.16463806699903
+      "iteration_seconds": 28.60587503700117
     },
     "343": {
-      "iteration": 68,
-      "checkpoint": 66,
+      "iteration": 72,
+      "checkpoint": 72,
       "quality": {
-        "weighted_tv": 0.01173716176445266,
+        "weighted_tv": 0.014782280153134405,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -52.17079647562552,
-          1.4579108986285216,
-          -2.71646916317881,
-          5.342081561458873,
+          -58.20323047981542,
+          -2.2300769410026304,
+          -6.109346585218765,
+          5.109159883578801,
           0.0
         ]
       },
-      "iteration_seconds": 30.876258959000552
+      "iteration_seconds": 24.03645350199986
     },
     "344": {
-      "iteration": 69,
-      "checkpoint": 66,
+      "iteration": 72,
+      "checkpoint": 72,
       "quality": {
-        "weighted_tv": 0.02057112315165145,
+        "weighted_tv": 0.05056122298837874,
         "aa_fold": 0.0,
         "aa_target_fold": 0.0,
         "aa_regrets": [
-          -82.48646883764869,
-          -0.011505328331894785,
-          2.2824801789144815,
-          8.986855437713649,
+          -80.78003147739342,
+          1.531269654646176,
+          -1.5323576284588478,
+          8.716002816746629,
           0.0
         ]
       },
-      "iteration_seconds": 25.79783678399872
+      "iteration_seconds": 33.001405672001056
     }
   },
   "evaluation": {
-    "completed": 6,
+    "completed": 8,
     "failed": 0,
-    "pending": 32,
+    "pending": 30,
     "running": 1
   },
   "external_checkpoint": {
