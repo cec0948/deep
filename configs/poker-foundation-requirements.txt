@@ -1,0 +1,4 @@
+# Additional validation dependencies; install into the existing fullhouse venv.
+open_spiel==1.6.15
+dm-tree==0.1.9
+matplotlib==3.10.7

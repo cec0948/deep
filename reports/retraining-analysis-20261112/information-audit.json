@@ -1,0 +1,1991 @@
+{
+  "format": "poker-information-audit-v1",
+  "complete": true,
+  "observed_utc": "2026-11-12T05:30:31.255482+00:00",
+  "parent_run": "20261112T032318825281Z",
+  "parent_iteration": 120,
+  "source_manifest_sha256": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb",
+  "script_sha256": "93d07157990e2270fc445b5877d993d3c584bbb9b90a2fc48a26a50ccb3a31fa",
+  "engine_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+  "features_sha256": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+  "runtime_sha256": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+  "partition_sha256": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+  "witnesses": [
+    {
+      "name": "preflop_aggressor_and_action_sequence",
+      "interpretation": "Seat3 raises and seat4 calls versus seat3 limps, seat4 raises and seat3 calls; same flop material state.",
+      "engine_accepted_both": true,
+      "terminal": false,
+      "hero": 1,
+      "street": "flop",
+      "requests": [
+        {
+          "op": "replay",
+          "hero": 1,
+          "button": 0,
+          "hole": [
+            "As",
+            "Kd"
+          ],
+          "board": [
+            "2c",
+            "7d",
+            "Th"
+          ],
+          "actions": [
+            {
+              "seat": 3,
+              "kind": "raise",
+              "to": 200
+            },
+            {
+              "seat": 4,
+              "kind": "call"
+            },
+            {
+              "seat": 5,
+              "kind": "fold"
+            },
+            {
+              "seat": 0,
+              "kind": "fold"
+            },
+            {
+              "seat": 1,
+              "kind": "call"
+            },
+            {
+              "seat": 2,
+              "kind": "call"
+            }
+          ],
+          "seed": 202611120917
+        },
+        {
+          "op": "replay",
+          "hero": 1,
+          "button": 0,
+          "hole": [
+            "As",
+            "Kd"
+          ],
+          "board": [
+            "2c",
+            "7d",
+            "Th"
+          ],
+          "actions": [
+            {
+              "seat": 3,
+              "kind": "call"
+            },
+            {
+              "seat": 4,
+              "kind": "raise",
+              "to": 200
+            },
+            {
+              "seat": 5,
+              "kind": "fold"
+            },
+            {
+              "seat": 0,
+              "kind": "fold"
+            },
+            {
+              "seat": 1,
+              "kind": "call"
+            },
+            {
+              "seat": 2,
+              "kind": "call"
+            },
+            {
+              "seat": 3,
+              "kind": "call"
+            }
+          ],
+          "seed": 202611120917
+        }
+      ],
+      "states": [
+        {
+          "action_log": [
+            {
+              "action": "small_blind",
+              "amount": 50,
+              "seat": 1
+            },
+            {
+              "action": "big_blind",
+              "amount": 100,
+              "seat": 2
+            },
+            {
+              "action": "raise",
+              "amount": 200,
+              "seat": 3
+            },
+            {
+              "action": "call",
+              "amount": 200,
+              "seat": 4
+            },
+            {
+              "action": "fold",
+              "amount": 0,
+              "seat": 5
+            },
+            {
+              "action": "fold",
+              "amount": 0,
+              "seat": 0
+            },
+            {
+              "action": "call",
+              "amount": 150,
+              "seat": 1
+            },
+            {
+              "action": "call",
+              "amount": 100,
+              "seat": 2
+            },
+            {
+              "action": "deal"
+            }
+          ],
+          "amount_owed": 0,
+          "can_check": true,
+          "community_cards": [
+            "2c",
+            "7d",
+            "Th"
+          ],
+          "current_bet": 0,
+          "dealer": 0,
+          "min_raise_to": 100,
+          "players": [
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": true,
+              "seat": 0,
+              "stack": 10000
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 1,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 2,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 3,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 4,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": true,
+              "seat": 5,
+              "stack": 10000
+            }
+          ],
+          "pot": 800,
+          "raise_bounds": [
+            100,
+            9800
+          ],
+          "seat_to_act": 1,
+          "street": "flop",
+          "terminal": false,
+          "your_bet_this_street": 0,
+          "your_cards": [
+            "As",
+            "Kd"
+          ],
+          "your_stack": 9800
+        },
+        {
+          "action_log": [
+            {
+              "action": "small_blind",
+              "amount": 50,
+              "seat": 1
+            },
+            {
+              "action": "big_blind",
+              "amount": 100,
+              "seat": 2
+            },
+            {
+              "action": "call",
+              "amount": 100,
+              "seat": 3
+            },
+            {
+              "action": "raise",
+              "amount": 200,
+              "seat": 4
+            },
+            {
+              "action": "fold",
+              "amount": 0,
+              "seat": 5
+            },
+            {
+              "action": "fold",
+              "amount": 0,
+              "seat": 0
+            },
+            {
+              "action": "call",
+              "amount": 150,
+              "seat": 1
+            },
+            {
+              "action": "call",
+              "amount": 100,
+              "seat": 2
+            },
+            {
+              "action": "call",
+              "amount": 100,
+              "seat": 3
+            },
+            {
+              "action": "deal"
+            }
+          ],
+          "amount_owed": 0,
+          "can_check": true,
+          "community_cards": [
+            "2c",
+            "7d",
+            "Th"
+          ],
+          "current_bet": 0,
+          "dealer": 0,
+          "min_raise_to": 100,
+          "players": [
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": true,
+              "seat": 0,
+              "stack": 10000
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 1,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 2,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 3,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 4,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": true,
+              "seat": 5,
+              "stack": 10000
+            }
+          ],
+          "pot": 800,
+          "raise_bounds": [
+            100,
+            9800
+          ],
+          "seat_to_act": 1,
+          "street": "flop",
+          "terminal": false,
+          "your_bet_this_street": 0,
+          "your_cards": [
+            "As",
+            "Kd"
+          ],
+          "your_stack": 9800
+        }
+      ],
+      "state_sha256": [
+        "fd4b9b0c7777089d91d5fe4d4e4063ff0e715c0f87de612ea1b27c6a0ccbef03",
+        "245d58b0237b7efe2e2801197f32415e208b42f2d45cdc44df016883b268f8c3"
+      ],
+      "feature_sha256": "9eca74f45bbc6a667096f0b18acd2c111f0109c41697014a4a22e34c32bc7476",
+      "feature_dtype": "float32",
+      "feature_dimension": 51,
+      "byte_identical_features": true,
+      "legal_masks_equal": true,
+      "legal_mask": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "features": [
+        0.6525775194168091,
+        0.006174743175506592,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.9166666865348816,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.07999999821186066,
+        0.9800000190734863,
+        1.0,
+        0.0,
+        0.9800000190734863,
+        0.9800000190734863,
+        0.9800000190734863,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.019999999552965164,
+        0.6666666865348816,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "same_card_observation": true,
+      "card_observations_globally_suit_isomorphic": true,
+      "policy_outputs": {
+        "342": {
+          "probabilities": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "byte_identical": true,
+          "model_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8"
+        },
+        "343": {
+          "probabilities": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "byte_identical": true,
+          "model_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c"
+        },
+        "344": {
+          "probabilities": [
+            0.0,
+            0.294376015663147,
+            0.3786485493183136,
+            0.32697537541389465,
+            0.0
+          ],
+          "byte_identical": true,
+          "model_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3"
+        }
+      },
+      "demonstrated": "Distinct engine-legal public observations map to one policy input.",
+      "not_demonstrated": "Different optimal actions, frequency in real play, exploitability cost, or causality for the previous regression."
+    },
+    {
+      "name": "board_rank_suit_association",
+      "interpretation": "Board suit placement changes while hero cards stay fixed; these observations are not related by one global suit relabeling.",
+      "engine_accepted_both": true,
+      "terminal": false,
+      "hero": 1,
+      "street": "flop",
+      "requests": [
+        {
+          "op": "replay",
+          "hero": 1,
+          "button": 0,
+          "hole": [
+            "As",
+            "Kd"
+          ],
+          "board": [
+            "2s",
+            "7d",
+            "Th"
+          ],
+          "actions": [
+            {
+              "seat": 3,
+              "kind": "raise",
+              "to": 200
+            },
+            {
+              "seat": 4,
+              "kind": "call"
+            },
+            {
+              "seat": 5,
+              "kind": "fold"
+            },
+            {
+              "seat": 0,
+              "kind": "fold"
+            },
+            {
+              "seat": 1,
+              "kind": "call"
+            },
+            {
+              "seat": 2,
+              "kind": "call"
+            }
+          ],
+          "seed": 202611120917
+        },
+        {
+          "op": "replay",
+          "hero": 1,
+          "button": 0,
+          "hole": [
+            "As",
+            "Kd"
+          ],
+          "board": [
+            "2h",
+            "7d",
+            "Ts"
+          ],
+          "actions": [
+            {
+              "seat": 3,
+              "kind": "raise",
+              "to": 200
+            },
+            {
+              "seat": 4,
+              "kind": "call"
+            },
+            {
+              "seat": 5,
+              "kind": "fold"
+            },
+            {
+              "seat": 0,
+              "kind": "fold"
+            },
+            {
+              "seat": 1,
+              "kind": "call"
+            },
+            {
+              "seat": 2,
+              "kind": "call"
+            }
+          ],
+          "seed": 202611120917
+        }
+      ],
+      "states": [
+        {
+          "action_log": [
+            {
+              "action": "small_blind",
+              "amount": 50,
+              "seat": 1
+            },
+            {
+              "action": "big_blind",
+              "amount": 100,
+              "seat": 2
+            },
+            {
+              "action": "raise",
+              "amount": 200,
+              "seat": 3
+            },
+            {
+              "action": "call",
+              "amount": 200,
+              "seat": 4
+            },
+            {
+              "action": "fold",
+              "amount": 0,
+              "seat": 5
+            },
+            {
+              "action": "fold",
+              "amount": 0,
+              "seat": 0
+            },
+            {
+              "action": "call",
+              "amount": 150,
+              "seat": 1
+            },
+            {
+              "action": "call",
+              "amount": 100,
+              "seat": 2
+            },
+            {
+              "action": "deal"
+            }
+          ],
+          "amount_owed": 0,
+          "can_check": true,
+          "community_cards": [
+            "2s",
+            "7d",
+            "Th"
+          ],
+          "current_bet": 0,
+          "dealer": 0,
+          "min_raise_to": 100,
+          "players": [
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": true,
+              "seat": 0,
+              "stack": 10000
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 1,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 2,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 3,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 4,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": true,
+              "seat": 5,
+              "stack": 10000
+            }
+          ],
+          "pot": 800,
+          "raise_bounds": [
+            100,
+            9800
+          ],
+          "seat_to_act": 1,
+          "street": "flop",
+          "terminal": false,
+          "your_bet_this_street": 0,
+          "your_cards": [
+            "As",
+            "Kd"
+          ],
+          "your_stack": 9800
+        },
+        {
+          "action_log": [
+            {
+              "action": "small_blind",
+              "amount": 50,
+              "seat": 1
+            },
+            {
+              "action": "big_blind",
+              "amount": 100,
+              "seat": 2
+            },
+            {
+              "action": "raise",
+              "amount": 200,
+              "seat": 3
+            },
+            {
+              "action": "call",
+              "amount": 200,
+              "seat": 4
+            },
+            {
+              "action": "fold",
+              "amount": 0,
+              "seat": 5
+            },
+            {
+              "action": "fold",
+              "amount": 0,
+              "seat": 0
+            },
+            {
+              "action": "call",
+              "amount": 150,
+              "seat": 1
+            },
+            {
+              "action": "call",
+              "amount": 100,
+              "seat": 2
+            },
+            {
+              "action": "deal"
+            }
+          ],
+          "amount_owed": 0,
+          "can_check": true,
+          "community_cards": [
+            "2h",
+            "7d",
+            "Ts"
+          ],
+          "current_bet": 0,
+          "dealer": 0,
+          "min_raise_to": 100,
+          "players": [
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": true,
+              "seat": 0,
+              "stack": 10000
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 1,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 2,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 3,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": false,
+              "seat": 4,
+              "stack": 9800
+            },
+            {
+              "bet_this_street": 0,
+              "is_all_in": false,
+              "is_folded": true,
+              "seat": 5,
+              "stack": 10000
+            }
+          ],
+          "pot": 800,
+          "raise_bounds": [
+            100,
+            9800
+          ],
+          "seat_to_act": 1,
+          "street": "flop",
+          "terminal": false,
+          "your_bet_this_street": 0,
+          "your_cards": [
+            "As",
+            "Kd"
+          ],
+          "your_stack": 9800
+        }
+      ],
+      "state_sha256": [
+        "1a81781970735b77edce382253c9e758aeae05172a77578bda905cf87e7a2e1c",
+        "369a9e29766689e4911c52f4de7de86d7186fa75f358ba5e442bc1b27485c8cb"
+      ],
+      "feature_sha256": "9eca74f45bbc6a667096f0b18acd2c111f0109c41697014a4a22e34c32bc7476",
+      "feature_dtype": "float32",
+      "feature_dimension": 51,
+      "byte_identical_features": true,
+      "legal_masks_equal": true,
+      "legal_mask": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "features": [
+        0.6525775194168091,
+        0.006174743175506592,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.9166666865348816,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.07999999821186066,
+        0.9800000190734863,
+        1.0,
+        0.0,
+        0.9800000190734863,
+        0.9800000190734863,
+        0.9800000190734863,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.019999999552965164,
+        0.6666666865348816,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "same_card_observation": false,
+      "card_observations_globally_suit_isomorphic": false,
+      "policy_outputs": {
+        "342": {
+          "probabilities": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "byte_identical": true,
+          "model_sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8"
+        },
+        "343": {
+          "probabilities": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "byte_identical": true,
+          "model_sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c"
+        },
+        "344": {
+          "probabilities": [
+            0.0,
+            0.294376015663147,
+            0.3786485493183136,
+            0.32697537541389465,
+            0.0
+          ],
+          "byte_identical": true,
+          "model_sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3"
+        }
+      },
+      "demonstrated": "Distinct engine-legal public observations map to one policy input.",
+      "not_demonstrated": "Different optimal actions, frequency in real play, exploitability cost, or causality for the previous regression."
+    }
+  ],
+  "replay": {
+    "342": {
+      "main_rows": 596623,
+      "opening_rows_excluded": 3377,
+      "by_street": {
+        "preflop": {
+          "rows": 102547,
+          "row_share": 0.17187905930545755,
+          "iteration_weight_share": 0.14928644725655107
+        },
+        "flop": {
+          "rows": 135868,
+          "row_share": 0.2277283980000771,
+          "iteration_weight_share": 0.22143318439313073
+        },
+        "turn": {
+          "rows": 170038,
+          "row_share": 0.28500074586464147,
+          "iteration_weight_share": 0.29316897786851637
+        },
+        "river": {
+          "rows": 188170,
+          "row_share": 0.3153917968298239,
+          "iteration_weight_share": 0.33611139048180183
+        }
+      },
+      "by_stratum": {
+        "0": {
+          "rows": 1090,
+          "unique_feature_vectors": 404,
+          "rows_in_repeated_feature_groups": 963,
+          "raw_iteration_weight_share": 0.0018582213369358778,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 25.62614402952086,
+          "target_rms": 27.25001766365641,
+          "weighted_within_feature_target_variance": 401.8943423067693,
+          "within_feature_variance_fraction_of_second_moment": 0.541225582069337,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "1": {
+          "rows": 709,
+          "unique_feature_vectors": 398,
+          "rows_in_repeated_feature_groups": 499,
+          "raw_iteration_weight_share": 0.0012389808887197915,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 38.434045313040464,
+          "target_rms": 18.48170531148323,
+          "weighted_within_feature_target_variance": 94.5472010289258,
+          "within_feature_variance_fraction_of_second_moment": 0.27679904930278243,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "2": {
+          "rows": 290,
+          "unique_feature_vectors": 241,
+          "rows_in_repeated_feature_groups": 90,
+          "raw_iteration_weight_share": 0.0005160420400515322,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 92.27745788752475,
+          "target_rms": 17.087157309711937,
+          "weighted_within_feature_target_variance": 24.050674202838213,
+          "within_feature_variance_fraction_of_second_moment": 0.08237351908034717,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "4": {
+          "rows": 2337,
+          "unique_feature_vectors": 323,
+          "rows_in_repeated_feature_groups": 2312,
+          "raw_iteration_weight_share": 0.003693643025556331,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 12.892162910592939,
+          "target_rms": 30.5929778287962,
+          "weighted_within_feature_target_variance": 748.0074298511245,
+          "within_feature_variance_fraction_of_second_moment": 0.799212757508326,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "5": {
+          "rows": 1602,
+          "unique_feature_vectors": 392,
+          "rows_in_repeated_feature_groups": 1511,
+          "raw_iteration_weight_share": 0.002632759389686414,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 18.087124788383903,
+          "target_rms": 28.741150808528314,
+          "weighted_within_feature_target_variance": 504.7349010051564,
+          "within_feature_variance_fraction_of_second_moment": 0.611019441686737,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "6": {
+          "rows": 11954,
+          "unique_feature_vectors": 7170,
+          "rows_in_repeated_feature_groups": 7196,
+          "raw_iteration_weight_share": 0.019150304606551444,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 2.4865947877798678,
+          "target_rms": 32.9579245046638,
+          "weighted_within_feature_target_variance": 381.30899647037745,
+          "within_feature_variance_fraction_of_second_moment": 0.35104059565196083,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "7": {
+          "rows": 24151,
+          "unique_feature_vectors": 22056,
+          "rows_in_repeated_feature_groups": 3761,
+          "raw_iteration_weight_share": 0.03588094653639968,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 1.3271402294457348,
+          "target_rms": 58.391417830521995,
+          "weighted_within_feature_target_variance": 185.4638477674768,
+          "within_feature_variance_fraction_of_second_moment": 0.05439528096529847,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "8": {
+          "rows": 36534,
+          "unique_feature_vectors": 34466,
+          "rows_in_repeated_feature_groups": 3703,
+          "raw_iteration_weight_share": 0.05351507452997537,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.8898249332040972,
+          "target_rms": 53.05369203685529,
+          "weighted_within_feature_target_variance": 78.28399771730155,
+          "within_feature_variance_fraction_of_second_moment": 0.02781261162928454,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "9": {
+          "rows": 23880,
+          "unique_feature_vectors": 23720,
+          "rows_in_repeated_feature_groups": 319,
+          "raw_iteration_weight_share": 0.030800474902674627,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 1.546049136239536,
+          "target_rms": 62.6461919640573,
+          "weighted_within_feature_target_variance": 8.87854402198848,
+          "within_feature_variance_fraction_of_second_moment": 0.0022623114756916782,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "10": {
+          "rows": 8586,
+          "unique_feature_vectors": 8525,
+          "rows_in_repeated_feature_groups": 122,
+          "raw_iteration_weight_share": 0.015803156236315057,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 3.013261838772488,
+          "target_rms": 14.80120218595815,
+          "weighted_within_feature_target_variance": 0.3421235098787482,
+          "within_feature_variance_fraction_of_second_moment": 0.0015616688098011218,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "11": {
+          "rows": 40836,
+          "unique_feature_vectors": 40654,
+          "rows_in_repeated_feature_groups": 364,
+          "raw_iteration_weight_share": 0.06885901284972679,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.6915441515690645,
+          "target_rms": 37.78329617983763,
+          "weighted_within_feature_target_variance": 2.082130670741256,
+          "within_feature_variance_fraction_of_second_moment": 0.0014585062556570813,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "12": {
+          "rows": 75291,
+          "unique_feature_vectors": 74195,
+          "rows_in_repeated_feature_groups": 2164,
+          "raw_iteration_weight_share": 0.1201372968821956,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.396371891617821,
+          "target_rms": 43.96947503746335,
+          "weighted_within_feature_target_variance": 0.791867982619979,
+          "within_feature_variance_fraction_of_second_moment": 0.000409590827740348,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "13": {
+          "rows": 11155,
+          "unique_feature_vectors": 11110,
+          "rows_in_repeated_feature_groups": 90,
+          "raw_iteration_weight_share": 0.016633718424893296,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 2.8628023153129147,
+          "target_rms": 54.542351473254165,
+          "weighted_within_feature_target_variance": 0.0,
+          "within_feature_variance_fraction_of_second_moment": 0.0,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "14": {
+          "rows": 4282,
+          "unique_feature_vectors": 4123,
+          "rows_in_repeated_feature_groups": 312,
+          "raw_iteration_weight_share": 0.008266647486962514,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 5.7603820284037175,
+          "target_rms": 11.781753660054479,
+          "weighted_within_feature_target_variance": 2.5132941749158033,
+          "within_feature_variance_fraction_of_second_moment": 0.018106038881698233,
+          "iteration_min": 2.0,
+          "iteration_max": 120.0
+        },
+        "15": {
+          "rows": 44096,
+          "unique_feature_vectors": 40486,
+          "rows_in_repeated_feature_groups": 6853,
+          "raw_iteration_weight_share": 0.07891965766428052,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.603386393560096,
+          "target_rms": 34.02209685880387,
+          "weighted_within_feature_target_variance": 33.24452851978082,
+          "within_feature_variance_fraction_of_second_moment": 0.028720898671706366,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "16": {
+          "rows": 114376,
+          "unique_feature_vectors": 104718,
+          "rows_in_repeated_feature_groups": 17902,
+          "raw_iteration_weight_share": 0.19413840541509647,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.24528401537671585,
+          "target_rms": 40.17996764209281,
+          "weighted_within_feature_target_variance": 12.16837668589177,
+          "within_feature_variance_fraction_of_second_moment": 0.007537259711140755,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "17": {
+          "rows": 7284,
+          "unique_feature_vectors": 7135,
+          "rows_in_repeated_feature_groups": 291,
+          "raw_iteration_weight_share": 0.011844267302176864,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 4.020430002478557,
+          "target_rms": 50.00314069426073,
+          "weighted_within_feature_target_variance": 0.9857735985038093,
+          "within_feature_variance_fraction_of_second_moment": 0.0003942599078527449,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "18": {
+          "rows": 2690,
+          "unique_feature_vectors": 2509,
+          "rows_in_repeated_feature_groups": 344,
+          "raw_iteration_weight_share": 0.005354292410039575,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 8.89362103753606,
+          "target_rms": 8.290272004835117,
+          "weighted_within_feature_target_variance": 1.3266287151619325,
+          "within_feature_variance_fraction_of_second_moment": 0.0193024232094755,
+          "iteration_min": 2.0,
+          "iteration_max": 120.0
+        },
+        "19": {
+          "rows": 39058,
+          "unique_feature_vectors": 32254,
+          "rows_in_repeated_feature_groups": 11798,
+          "raw_iteration_weight_share": 0.07240028322563125,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.6577190792285389,
+          "target_rms": 29.46239325646957,
+          "weighted_within_feature_target_variance": 62.381194033019824,
+          "within_feature_variance_fraction_of_second_moment": 0.07186503462486883,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "20": {
+          "rows": 140803,
+          "unique_feature_vectors": 110984,
+          "rows_in_repeated_feature_groups": 49587,
+          "raw_iteration_weight_share": 0.24848189216681332,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.1916399106743743,
+          "target_rms": 37.02735398544737,
+          "weighted_within_feature_target_variance": 28.508661826226483,
+          "within_feature_variance_fraction_of_second_moment": 0.020793685751947774,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "21": {
+          "rows": 5619,
+          "unique_feature_vectors": 5265,
+          "rows_in_repeated_feature_groups": 661,
+          "raw_iteration_weight_share": 0.009874922679317671,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 4.822219795075697,
+          "target_rms": 46.76029655200705,
+          "weighted_within_feature_target_variance": 2.9707545492570997,
+          "within_feature_variance_fraction_of_second_moment": 0.0013586645915155786,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        }
+      },
+      "malformed_rows": 0,
+      "validation_scope": [
+        "51-feature/5-target shapes",
+        "finite features and targets",
+        "positive finite iteration weights",
+        "street and position one-hot",
+        "binary nonempty legal-action mask"
+      ],
+      "illegal_action_target_nonzero_entries": 0,
+      "limitations": [
+        "Replay is reservoir-retained training data, not an unbiased count of all game situations.",
+        "Repeated feature inputs can be identical information sets, sampling repetition, or lost information; this audit cannot distinguish them without full observation logs.",
+        "Within-feature regret-target variance also includes Monte Carlo chance and changing opponent policies; it is not proof of incorrect targets.",
+        "Equal stratum fitting mass changes the finite-network projection objective; these ratios do not establish that reweighting is harmful."
+      ],
+      "buffers": [
+        {
+          "seat": 0,
+          "retained_rows": 100000,
+          "total_seen": 153633,
+          "retention_fraction": 0.650901824477814
+        },
+        {
+          "seat": 1,
+          "retained_rows": 100000,
+          "total_seen": 151190,
+          "retention_fraction": 0.6614194060453734
+        },
+        {
+          "seat": 2,
+          "retained_rows": 100000,
+          "total_seen": 146042,
+          "retention_fraction": 0.6847345284233303
+        },
+        {
+          "seat": 3,
+          "retained_rows": 100000,
+          "total_seen": 149092,
+          "retention_fraction": 0.6707267995600033
+        },
+        {
+          "seat": 4,
+          "retained_rows": 100000,
+          "total_seen": 154084,
+          "retention_fraction": 0.6489966511772799
+        },
+        {
+          "seat": 5,
+          "retained_rows": 100000,
+          "total_seen": 160037,
+          "retention_fraction": 0.6248555021651243
+        }
+      ],
+      "checkpoint_sha256": "b85835c50c7a9eed9d62481ad6fba7fb0517c5e1f8867675ab23f6a05040c5e0"
+    },
+    "343": {
+      "main_rows": 596745,
+      "opening_rows_excluded": 3255,
+      "by_street": {
+        "preflop": {
+          "rows": 94642,
+          "row_share": 0.15859705569380556,
+          "iteration_weight_share": 0.13000036613312382
+        },
+        "flop": {
+          "rows": 127553,
+          "row_share": 0.2137479157764204,
+          "iteration_weight_share": 0.20717916415986526
+        },
+        "turn": {
+          "rows": 173656,
+          "row_share": 0.29100537080327443,
+          "iteration_weight_share": 0.3018224873194071
+        },
+        "river": {
+          "rows": 200894,
+          "row_share": 0.3366496577264996,
+          "iteration_weight_share": 0.36099798238760383
+        }
+      },
+      "by_stratum": {
+        "0": {
+          "rows": 1257,
+          "unique_feature_vectors": 430,
+          "rows_in_repeated_feature_groups": 1110,
+          "raw_iteration_weight_share": 0.0021847849997647,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 21.79575913610546,
+          "target_rms": 22.706935029265463,
+          "weighted_within_feature_target_variance": 258.7875558011581,
+          "within_feature_variance_fraction_of_second_moment": 0.5019105842332552,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "1": {
+          "rows": 1001,
+          "unique_feature_vectors": 434,
+          "rows_in_repeated_feature_groups": 816,
+          "raw_iteration_weight_share": 0.001840216917957029,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 25.876866555445705,
+          "target_rms": 17.114617368931416,
+          "weighted_within_feature_target_variance": 128.6509894471228,
+          "within_feature_variance_fraction_of_second_moment": 0.43921659679008174,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "2": {
+          "rows": 559,
+          "unique_feature_vectors": 355,
+          "rows_in_repeated_feature_groups": 329,
+          "raw_iteration_weight_share": 0.0010149996184455083,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 46.91533548749222,
+          "target_rms": 13.053344234971526,
+          "weighted_within_feature_target_variance": 45.08672833022404,
+          "within_feature_variance_fraction_of_second_moment": 0.26460932205821347,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "4": {
+          "rows": 2219,
+          "unique_feature_vectors": 319,
+          "rows_in_repeated_feature_groups": 2186,
+          "raw_iteration_weight_share": 0.003502864245498627,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 13.5943171877816,
+          "target_rms": 27.276081701767836,
+          "weighted_within_feature_target_variance": 584.5183947476205,
+          "within_feature_variance_fraction_of_second_moment": 0.7856592311449407,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "5": {
+          "rows": 1869,
+          "unique_feature_vectors": 386,
+          "rows_in_repeated_feature_groups": 1797,
+          "raw_iteration_weight_share": 0.003019279993242456,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 15.771656727970006,
+          "target_rms": 22.350088565632998,
+          "weighted_within_feature_target_variance": 362.1322463304823,
+          "within_feature_variance_fraction_of_second_moment": 0.7249510809377144,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "6": {
+          "rows": 11613,
+          "unique_feature_vectors": 7371,
+          "rows_in_repeated_feature_groups": 6508,
+          "raw_iteration_weight_share": 0.018486265381446543,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 2.5759149637027146,
+          "target_rms": 30.31222270718013,
+          "weighted_within_feature_target_variance": 288.92293576683045,
+          "within_feature_variance_fraction_of_second_moment": 0.3144462739770432,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "7": {
+          "rows": 22106,
+          "unique_feature_vectors": 20470,
+          "rows_in_repeated_feature_groups": 3048,
+          "raw_iteration_weight_share": 0.031241925545834347,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 1.524203351332707,
+          "target_rms": 58.340823588486025,
+          "weighted_within_feature_target_variance": 151.82254583647588,
+          "within_feature_variance_fraction_of_second_moment": 0.04460578206961022,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "8": {
+          "rows": 34221,
+          "unique_feature_vectors": 32331,
+          "rows_in_repeated_feature_groups": 3490,
+          "raw_iteration_weight_share": 0.04605909925878936,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 1.0338684078794826,
+          "target_rms": 51.4015401182492,
+          "weighted_within_feature_target_variance": 66.100191137434,
+          "within_feature_variance_fraction_of_second_moment": 0.025017876933731618,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "9": {
+          "rows": 19797,
+          "unique_feature_vectors": 19695,
+          "rows_in_repeated_feature_groups": 203,
+          "raw_iteration_weight_share": 0.02265093017214525,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 2.102299872771082,
+          "target_rms": 63.069274722384975,
+          "weighted_within_feature_target_variance": 7.756352227329039,
+          "within_feature_variance_fraction_of_second_moment": 0.0019499426985264746,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "10": {
+          "rows": 9997,
+          "unique_feature_vectors": 9907,
+          "rows_in_repeated_feature_groups": 180,
+          "raw_iteration_weight_share": 0.01888453464629202,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 2.5215896770004664,
+          "target_rms": 14.26040578993719,
+          "weighted_within_feature_target_variance": 0.6580214778118691,
+          "within_feature_variance_fraction_of_second_moment": 0.0032357599962388227,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "11": {
+          "rows": 39211,
+          "unique_feature_vectors": 38894,
+          "rows_in_repeated_feature_groups": 628,
+          "raw_iteration_weight_share": 0.06665423671242701,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.7144189172024458,
+          "target_rms": 37.632971620437566,
+          "weighted_within_feature_target_variance": 2.895821047814765,
+          "within_feature_variance_fraction_of_second_moment": 0.0020447239995436935,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "12": {
+          "rows": 69774,
+          "unique_feature_vectors": 68427,
+          "rows_in_repeated_feature_groups": 2657,
+          "raw_iteration_weight_share": 0.11027646135121628,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.43181515833544115,
+          "target_rms": 42.7561250496821,
+          "weighted_within_feature_target_variance": 1.335271893313103,
+          "within_feature_variance_fraction_of_second_moment": 0.0007304206289276922,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "13": {
+          "rows": 8571,
+          "unique_feature_vectors": 8531,
+          "rows_in_repeated_feature_groups": 79,
+          "raw_iteration_weight_share": 0.011363931449929952,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 4.190367376718129,
+          "target_rms": 52.807407525114634,
+          "weighted_within_feature_target_variance": 0.0,
+          "within_feature_variance_fraction_of_second_moment": 0.0,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "14": {
+          "rows": 5668,
+          "unique_feature_vectors": 5428,
+          "rows_in_repeated_feature_groups": 466,
+          "raw_iteration_weight_share": 0.011041525366309724,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 4.3127236535944995,
+          "target_rms": 11.689974537376216,
+          "weighted_within_feature_target_variance": 3.243316885891004,
+          "within_feature_variance_fraction_of_second_moment": 0.023733525359105216,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "15": {
+          "rows": 46302,
+          "unique_feature_vectors": 42451,
+          "rows_in_repeated_feature_groups": 7247,
+          "raw_iteration_weight_share": 0.08416067314370755,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.5658111543111862,
+          "target_rms": 34.00633170086096,
+          "weighted_within_feature_target_variance": 32.76734526196199,
+          "within_feature_variance_fraction_of_second_moment": 0.028334899977927066,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "16": {
+          "rows": 115834,
+          "unique_feature_vectors": 104440,
+          "rows_in_repeated_feature_groups": 20787,
+          "raw_iteration_weight_share": 0.19788281531300053,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.2406426628998902,
+          "target_rms": 39.44178714806443,
+          "weighted_within_feature_target_variance": 16.29070282013634,
+          "within_feature_variance_fraction_of_second_moment": 0.010471928086312825,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "17": {
+          "rows": 5852,
+          "unique_feature_vectors": 5736,
+          "rows_in_repeated_feature_groups": 228,
+          "raw_iteration_weight_share": 0.00873747349638926,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 5.44997906302389,
+          "target_rms": 48.00845542561457,
+          "weighted_within_feature_target_variance": 1.1328688286627386,
+          "within_feature_variance_fraction_of_second_moment": 0.0004915233566668259,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "18": {
+          "rows": 3460,
+          "unique_feature_vectors": 3223,
+          "rows_in_repeated_feature_groups": 445,
+          "raw_iteration_weight_share": 0.006737744912465828,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 7.067505261433289,
+          "target_rms": 7.66888536678371,
+          "weighted_within_feature_target_variance": 0.8478887758401606,
+          "within_feature_variance_fraction_of_second_moment": 0.01441698325712558,
+          "iteration_min": 2.0,
+          "iteration_max": 120.0
+        },
+        "19": {
+          "rows": 41220,
+          "unique_feature_vectors": 33859,
+          "rows_in_repeated_feature_groups": 12655,
+          "raw_iteration_weight_share": 0.07593053778090893,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.627139606945078,
+          "target_rms": 28.498502338222178,
+          "weighted_within_feature_target_variance": 52.68203659242918,
+          "within_feature_variance_fraction_of_second_moment": 0.06486620358517754,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "20": {
+          "rows": 151418,
+          "unique_feature_vectors": 115076,
+          "rows_in_repeated_feature_groups": 59014,
+          "raw_iteration_weight_share": 0.27077982077186635,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.17585892288172741,
+          "target_rms": 35.873213315016564,
+          "weighted_within_feature_target_variance": 32.041278235774016,
+          "within_feature_variance_fraction_of_second_moment": 0.02489827579364696,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "21": {
+          "rows": 4796,
+          "unique_feature_vectors": 4461,
+          "rows_in_repeated_feature_groups": 618,
+          "raw_iteration_weight_share": 0.007549878922362765,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 6.30725977313356,
+          "target_rms": 45.23160992757139,
+          "weighted_within_feature_target_variance": 2.5935702641545046,
+          "within_feature_variance_fraction_of_second_moment": 0.0012676925163717958,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        }
+      },
+      "malformed_rows": 0,
+      "validation_scope": [
+        "51-feature/5-target shapes",
+        "finite features and targets",
+        "positive finite iteration weights",
+        "street and position one-hot",
+        "binary nonempty legal-action mask"
+      ],
+      "illegal_action_target_nonzero_entries": 0,
+      "limitations": [
+        "Replay is reservoir-retained training data, not an unbiased count of all game situations.",
+        "Repeated feature inputs can be identical information sets, sampling repetition, or lost information; this audit cannot distinguish them without full observation logs.",
+        "Within-feature regret-target variance also includes Monte Carlo chance and changing opponent policies; it is not proof of incorrect targets.",
+        "Equal stratum fitting mass changes the finite-network projection objective; these ratios do not establish that reweighting is harmful."
+      ],
+      "buffers": [
+        {
+          "seat": 0,
+          "retained_rows": 100000,
+          "total_seen": 161899,
+          "retention_fraction": 0.6176690405746793
+        },
+        {
+          "seat": 1,
+          "retained_rows": 100000,
+          "total_seen": 160119,
+          "retention_fraction": 0.6245355017205954
+        },
+        {
+          "seat": 2,
+          "retained_rows": 100000,
+          "total_seen": 161803,
+          "retention_fraction": 0.6180355123205379
+        },
+        {
+          "seat": 3,
+          "retained_rows": 100000,
+          "total_seen": 152662,
+          "retention_fraction": 0.6550418571746734
+        },
+        {
+          "seat": 4,
+          "retained_rows": 100000,
+          "total_seen": 155639,
+          "retention_fraction": 0.6425124808049396
+        },
+        {
+          "seat": 5,
+          "retained_rows": 100000,
+          "total_seen": 155705,
+          "retention_fraction": 0.6422401335859478
+        }
+      ],
+      "checkpoint_sha256": "b73e9d619fafbb0c7d989da6717d1f0be5c66136386f822e1cd53cb056e06cc3"
+    },
+    "344": {
+      "main_rows": 596395,
+      "opening_rows_excluded": 3605,
+      "by_street": {
+        "preflop": {
+          "rows": 112868,
+          "row_share": 0.18925041289749242,
+          "iteration_weight_share": 0.1544373859549383
+        },
+        "flop": {
+          "rows": 121728,
+          "row_share": 0.20410633891967572,
+          "iteration_weight_share": 0.19727256257649362
+        },
+        "turn": {
+          "rows": 169917,
+          "row_share": 0.2849068151141442,
+          "iteration_weight_share": 0.2959884452219135
+        },
+        "river": {
+          "rows": 191882,
+          "row_share": 0.3217364330686877,
+          "iteration_weight_share": 0.3523016062466546
+        }
+      },
+      "by_stratum": {
+        "0": {
+          "rows": 1350,
+          "unique_feature_vectors": 491,
+          "rows_in_repeated_feature_groups": 1174,
+          "raw_iteration_weight_share": 0.0023802946780178027,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 20.005526231190213,
+          "target_rms": 27.159553893334827,
+          "weighted_within_feature_target_variance": 410.4496612263357,
+          "within_feature_variance_fraction_of_second_moment": 0.5564352532376352,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "1": {
+          "rows": 956,
+          "unique_feature_vectors": 424,
+          "rows_in_repeated_feature_groups": 772,
+          "raw_iteration_weight_share": 0.0017796400127852914,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 26.75768541780518,
+          "target_rms": 23.077604058445484,
+          "weighted_within_feature_target_variance": 233.73411766348138,
+          "within_feature_variance_fraction_of_second_moment": 0.43887482998515737,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "2": {
+          "rows": 596,
+          "unique_feature_vectors": 413,
+          "rows_in_repeated_feature_groups": 308,
+          "raw_iteration_weight_share": 0.0011645276818951754,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 40.89129726959469,
+          "target_rms": 19.711234221454554,
+          "weighted_within_feature_target_variance": 75.30792827825417,
+          "within_feature_variance_fraction_of_second_moment": 0.1938264596732987,
+          "iteration_min": 2.0,
+          "iteration_max": 120.0
+        },
+        "4": {
+          "rows": 2515,
+          "unique_feature_vectors": 327,
+          "rows_in_repeated_feature_groups": 2491,
+          "raw_iteration_weight_share": 0.00394427250674248,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 12.072960866077564,
+          "target_rms": 32.13866216399039,
+          "weighted_within_feature_target_variance": 839.5563557161372,
+          "within_feature_variance_fraction_of_second_moment": 0.8128197822992539,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "5": {
+          "rows": 1878,
+          "unique_feature_vectors": 428,
+          "rows_in_repeated_feature_groups": 1776,
+          "raw_iteration_weight_share": 0.0030944937390970616,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 15.388316032897297,
+          "target_rms": 29.866832846580607,
+          "weighted_within_feature_target_variance": 580.4709976212082,
+          "within_feature_variance_fraction_of_second_moment": 0.6507320286493793,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "6": {
+          "rows": 11184,
+          "unique_feature_vectors": 7127,
+          "rows_in_repeated_feature_groups": 6225,
+          "raw_iteration_weight_share": 0.01730803894563155,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 2.751267649017302,
+          "target_rms": 34.518358760876204,
+          "weighted_within_feature_target_variance": 382.1265228718139,
+          "within_feature_variance_fraction_of_second_moment": 0.320705867824745,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "7": {
+          "rows": 24212,
+          "unique_feature_vectors": 22544,
+          "rows_in_repeated_feature_groups": 3144,
+          "raw_iteration_weight_share": 0.034359015303547354,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 1.3859258537636627,
+          "target_rms": 60.190562644616335,
+          "weighted_within_feature_target_variance": 149.9908560375895,
+          "within_feature_variance_fraction_of_second_moment": 0.0414007279835809,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "8": {
+          "rows": 39426,
+          "unique_feature_vectors": 37642,
+          "rows_in_repeated_feature_groups": 3259,
+          "raw_iteration_weight_share": 0.05480383846452566,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.868899860907941,
+          "target_rms": 54.32563196491568,
+          "weighted_within_feature_target_variance": 61.32213526050288,
+          "within_feature_variance_fraction_of_second_moment": 0.02077818910353072,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "9": {
+          "rows": 30751,
+          "unique_feature_vectors": 30544,
+          "rows_in_repeated_feature_groups": 409,
+          "raw_iteration_weight_share": 0.03560326462269594,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 1.337491045377114,
+          "target_rms": 63.533118258429596,
+          "weighted_within_feature_target_variance": 15.079809465767811,
+          "within_feature_variance_fraction_of_second_moment": 0.0037359023108011705,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "10": {
+          "rows": 9482,
+          "unique_feature_vectors": 9409,
+          "rows_in_repeated_feature_groups": 146,
+          "raw_iteration_weight_share": 0.01827566813600011,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 2.6055981792121625,
+          "target_rms": 15.629966674103713,
+          "weighted_within_feature_target_variance": 0.9705486790229501,
+          "within_feature_variance_fraction_of_second_moment": 0.0039728413164292105,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "11": {
+          "rows": 36117,
+          "unique_feature_vectors": 35893,
+          "rows_in_repeated_feature_groups": 444,
+          "raw_iteration_weight_share": 0.06082284613317463,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.7829138333116368,
+          "target_rms": 38.913795201838084,
+          "weighted_within_feature_target_variance": 2.1489616004096903,
+          "within_feature_variance_fraction_of_second_moment": 0.0014191277006037133,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "12": {
+          "rows": 65320,
+          "unique_feature_vectors": 64152,
+          "rows_in_repeated_feature_groups": 2304,
+          "raw_iteration_weight_share": 0.10362980504788073,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.4595111184185465,
+          "target_rms": 43.83231323292048,
+          "weighted_within_feature_target_variance": 1.7829881570138497,
+          "within_feature_variance_fraction_of_second_moment": 0.0009280250015999965,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "13": {
+          "rows": 10809,
+          "unique_feature_vectors": 10769,
+          "rows_in_repeated_feature_groups": 80,
+          "raw_iteration_weight_share": 0.014544243259438143,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 3.2740821759940215,
+          "target_rms": 54.27923902913492,
+          "weighted_within_feature_target_variance": 0.0,
+          "within_feature_variance_fraction_of_second_moment": 0.0,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "14": {
+          "rows": 6195,
+          "unique_feature_vectors": 5933,
+          "rows_in_repeated_feature_groups": 513,
+          "raw_iteration_weight_share": 0.012928400660068213,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 3.6832899034547997,
+          "target_rms": 12.523526487463677,
+          "weighted_within_feature_target_variance": 2.554667498896332,
+          "within_feature_variance_fraction_of_second_moment": 0.016288500500557194,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "15": {
+          "rows": 42922,
+          "unique_feature_vectors": 39660,
+          "rows_in_repeated_feature_groups": 6171,
+          "raw_iteration_weight_share": 0.07889184903512401,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.6035990815457601,
+          "target_rms": 34.45246486943493,
+          "weighted_within_feature_target_variance": 24.37692046068206,
+          "within_feature_variance_fraction_of_second_moment": 0.02053705864069511,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "16": {
+          "rows": 112108,
+          "unique_feature_vectors": 101666,
+          "rows_in_repeated_feature_groups": 19038,
+          "raw_iteration_weight_share": 0.19049894173976908,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.24997014253285235,
+          "target_rms": 39.59218648087506,
+          "weighted_within_feature_target_variance": 11.507823880778405,
+          "within_feature_variance_fraction_of_second_moment": 0.007341321336925147,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "17": {
+          "rows": 8692,
+          "unique_feature_vectors": 8447,
+          "rows_in_repeated_feature_groups": 482,
+          "raw_iteration_weight_share": 0.013669253786952176,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 3.483661095275136,
+          "target_rms": 49.190010642826515,
+          "weighted_within_feature_target_variance": 0.8337509639964948,
+          "within_feature_variance_fraction_of_second_moment": 0.00034457400917975363,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "18": {
+          "rows": 4214,
+          "unique_feature_vectors": 3872,
+          "rows_in_repeated_feature_groups": 650,
+          "raw_iteration_weight_share": 0.009093125962135398,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 5.236818209418593,
+          "target_rms": 7.997595578951514,
+          "weighted_within_feature_target_variance": 1.2815889682926467,
+          "within_feature_variance_fraction_of_second_moment": 0.02003687008765051,
+          "iteration_min": 2.0,
+          "iteration_max": 120.0
+        },
+        "19": {
+          "rows": 42901,
+          "unique_feature_vectors": 35452,
+          "rows_in_repeated_feature_groups": 12985,
+          "raw_iteration_weight_share": 0.08362703523819053,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.569421688613219,
+          "target_rms": 29.6852763844577,
+          "weighted_within_feature_target_variance": 50.32255614201922,
+          "within_feature_variance_fraction_of_second_moment": 0.05710583675457502,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "20": {
+          "rows": 138158,
+          "unique_feature_vectors": 109747,
+          "rows_in_repeated_feature_groups": 47095,
+          "raw_iteration_weight_share": 0.24836207999188253,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 0.19173235954781823,
+          "target_rms": 36.67172678787342,
+          "weighted_within_feature_target_variance": 24.133901805778905,
+          "within_feature_variance_fraction_of_second_moment": 0.017945882529883918,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        },
+        "21": {
+          "rows": 6609,
+          "unique_feature_vectors": 6145,
+          "rows_in_repeated_feature_groups": 858,
+          "raw_iteration_weight_share": 0.0112193650544461,
+          "fitter_stratum_probability": 0.047619047619047616,
+          "fitter_to_raw_weight_share_ratio": 4.24436208180754,
+          "target_rms": 45.784598386678894,
+          "weighted_within_feature_target_variance": 3.004883063333891,
+          "within_feature_variance_fraction_of_second_moment": 0.0014334704934861567,
+          "iteration_min": 1.0,
+          "iteration_max": 120.0
+        }
+      },
+      "malformed_rows": 0,
+      "validation_scope": [
+        "51-feature/5-target shapes",
+        "finite features and targets",
+        "positive finite iteration weights",
+        "street and position one-hot",
+        "binary nonempty legal-action mask"
+      ],
+      "illegal_action_target_nonzero_entries": 0,
+      "limitations": [
+        "Replay is reservoir-retained training data, not an unbiased count of all game situations.",
+        "Repeated feature inputs can be identical information sets, sampling repetition, or lost information; this audit cannot distinguish them without full observation logs.",
+        "Within-feature regret-target variance also includes Monte Carlo chance and changing opponent policies; it is not proof of incorrect targets.",
+        "Equal stratum fitting mass changes the finite-network projection objective; these ratios do not establish that reweighting is harmful."
+      ],
+      "buffers": [
+        {
+          "seat": 0,
+          "retained_rows": 100000,
+          "total_seen": 144015,
+          "retention_fraction": 0.6943721140159012
+        },
+        {
+          "seat": 1,
+          "retained_rows": 100000,
+          "total_seen": 128382,
+          "retention_fraction": 0.7789253945257123
+        },
+        {
+          "seat": 2,
+          "retained_rows": 100000,
+          "total_seen": 147009,
+          "retention_fraction": 0.6802304620805529
+        },
+        {
+          "seat": 3,
+          "retained_rows": 100000,
+          "total_seen": 148551,
+          "retention_fraction": 0.6731694838809567
+        },
+        {
+          "seat": 4,
+          "retained_rows": 100000,
+          "total_seen": 134726,
+          "retention_fraction": 0.7422472277066046
+        },
+        {
+          "seat": 5,
+          "retained_rows": 100000,
+          "total_seen": 150190,
+          "retention_fraction": 0.6658232904987016
+        }
+      ],
+      "checkpoint_sha256": "9fe7826385423efd63fd668ef599db59e6dbd68fe161d1039b661381ed3b81c0"
+    }
+  },
+  "new_selfplay_samples": 0,
+  "trained_models": false,
+  "parents_modified": false,
+  "seconds": 10.072860445001425,
+  "frozen_artifacts_verified": 33,
+  "findings": [
+    "Two reproducible engine-legal public-information collisions were demonstrated.",
+    "All three frozen current120 policies necessarily produce the same action probabilities within each collision pair.",
+    "Existing hand-level evaluation logs have no per-decision public state, feature or action distribution; specific loss attribution requires a separate diagnostic evaluation."
+  ],
+  "limitations": [
+    "Synthetic witnesses establish a representational limit, not its incidence or performance cost.",
+    "No optimal-response solver or six-player exploitability calculation was performed.",
+    "No feature replacement, model promotion, retraining or continuation was performed by this audit."
+  ],
+  "evaluation_log_inspection": {
+    "representative_log": "artifacts/compact-v4/20261112T032318825281Z/evaluation/mixed-public/hands.jsonl.gz",
+    "sha256": "7e5e2147a3d519c80e7e2d56d905cb5023170076bab659974e3641a65dd750c2",
+    "first_record_fields": [
+      "chips",
+      "deal",
+      "hand_seed",
+      "hero",
+      "policy_iteration",
+      "seed",
+      "steps",
+      "utilities"
+    ],
+    "evaluator_sha256": "262a6e3e2be9f556c3e5863fe00eb636b7203c9148ad834ea1933918e32bcfe2",
+    "per_decision_observations_recorded": false,
+    "scope": "Representative original120 terminal-hand log and current evaluator row schema; no decision-level loss attribution attempted."
+  }
+}
