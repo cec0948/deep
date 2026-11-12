@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-12T03:19:46.291651+00:00",
+  "observed_utc": "2026-11-12T03:20:47.644838+00:00",
   "run": "20261112T025126577365Z",
   "phase": "evaluating",
   "target_iterations": 60,
@@ -58,10 +58,10 @@
     }
   },
   "evaluation": {
-    "completed": 27,
+    "completed": 32,
     "failed": 0,
-    "pending": 10,
-    "running": 2
+    "pending": 4,
+    "running": 3
   },
   "external_checkpoint": {
     "run": "20261112T025126577365Z",
