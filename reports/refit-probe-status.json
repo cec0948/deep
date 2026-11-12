@@ -1,52 +1,135 @@
 {
-  "observed_utc": "2026-11-12T04:48:56.833282+00:00",
-  "run": "20261112T043945051666Z",
-  "status": "complete",
-  "phase": "complete",
-  "supervisor_alive": false,
-  "completed_evaluations": 27,
-  "planned_evaluations": 27,
-  "total_hands": 324000,
+  "observed_utc": "2026-11-12T05:12:43.488538+00:00",
+  "run": "20261112T050839072733Z",
+  "status": "running",
+  "phase": "evaluating",
+  "recorded_status": "running",
+  "recorded_phase": "evaluating",
+  "status_updated_utc": "2026-11-12T05:12:43.295446+00:00",
+  "status_age_seconds": 0.193092,
+  "supervisor_alive": true,
+  "liveness_evidence": "Matching registry/status PID, /proc start token and runner output argument",
+  "completed_evaluations": 15,
+  "planned_evaluations": 18,
   "parent_iteration": 120,
-  "artifact_kind": "derived-offline-refit",
   "resumable_selfplay": false,
-  "plan_sha256": "51b552194d214cced2fab743189cfd4387e94defe3e3a2ce2c93cec12d7c3926",
-  "decisions": {
-    "mixture": {
-      "conditions": {
-        "public_lower_above_zero": false,
-        "at_least_two_public_seeds_improve": false,
-        "mixed_lower_above_minus_25": true,
-        "noregrets_lower_above_minus_50": true
+  "artifact_kind": "derived-offline-anchored-refit",
+  "plan_sha256": "af0f7f41870eea0dc8632a37de960fe613ccdea6e6fc9256b367ce0f259737d8",
+  "candidate_fits": {
+    "342": {
+      "status": "complete",
+      "complete": true,
+      "planned_steps": 3072,
+      "completed_steps": 3072,
+      "before": {
+        "normalized_training_mse": 0.8603372573852539,
+        "normalized_teacher_score_mse": 0.0,
+        "normalized_anchored_objective": 0.21508431434631348,
+        "unraised_preflop_conditional_target_tv": 0.5742611371928604,
+        "positive_regret_absent_fraction": 0.2169189453125,
+        "policy_drift": {
+          "teacher_policy_tv": 0.0,
+          "teacher_policy_tv_p95": 0.0,
+          "teacher_policy_tv_over_half_fraction": 0.0,
+          "newly_absent_fraction": 0.0,
+          "resolved_absent_fraction": 0.0
+        }
       },
-      "original_four_conditions_pass": false,
-      "deployment_authorized": false
+      "after": {
+        "normalized_training_mse": 0.8093194961547852,
+        "normalized_teacher_score_mse": 0.008278775960206985,
+        "normalized_anchored_objective": 0.20853895600885153,
+        "unraised_preflop_conditional_target_tv": 0.5402609514224448,
+        "positive_regret_absent_fraction": 0.21832275390625,
+        "policy_drift": {
+          "teacher_policy_tv": 0.18067917227745056,
+          "teacher_policy_tv_p95": 0.75,
+          "teacher_policy_tv_over_half_fraction": 0.13006591796875,
+          "newly_absent_fraction": 0.08123779296875,
+          "resolved_absent_fraction": 0.079833984375
+        }
+      }
     },
-    "refit": {
-      "conditions": {
-        "public_lower_above_zero": false,
-        "at_least_two_public_seeds_improve": false,
-        "mixed_lower_above_minus_25": true,
-        "noregrets_lower_above_minus_50": true
+    "343": {
+      "status": "complete",
+      "complete": true,
+      "planned_steps": 3072,
+      "completed_steps": 3072,
+      "before": {
+        "normalized_training_mse": 0.8395305871963501,
+        "normalized_teacher_score_mse": 0.0,
+        "normalized_anchored_objective": 0.20988264679908752,
+        "unraised_preflop_conditional_target_tv": 0.5718812874186306,
+        "positive_regret_absent_fraction": 0.10870361328125,
+        "policy_drift": {
+          "teacher_policy_tv": 0.0,
+          "teacher_policy_tv_p95": 0.0,
+          "teacher_policy_tv_over_half_fraction": 0.0,
+          "newly_absent_fraction": 0.0,
+          "resolved_absent_fraction": 0.0
+        }
       },
-      "original_four_conditions_pass": false,
-      "deployment_authorized": false
+      "after": {
+        "normalized_training_mse": 0.793335497379303,
+        "normalized_teacher_score_mse": 0.007585051003843546,
+        "normalized_anchored_objective": 0.2040226625977084,
+        "unraised_preflop_conditional_target_tv": 0.5471166020040794,
+        "positive_regret_absent_fraction": 0.1798095703125,
+        "policy_drift": {
+          "teacher_policy_tv": 0.16890248656272888,
+          "teacher_policy_tv_p95": 0.75,
+          "teacher_policy_tv_over_half_fraction": 0.1236572265625,
+          "newly_absent_fraction": 0.0994873046875,
+          "resolved_absent_fraction": 0.02838134765625
+        }
+      }
+    },
+    "344": {
+      "status": "complete",
+      "complete": true,
+      "planned_steps": 3072,
+      "completed_steps": 3072,
+      "before": {
+        "normalized_training_mse": 0.8542253375053406,
+        "normalized_teacher_score_mse": 0.0,
+        "normalized_anchored_objective": 0.21355633437633514,
+        "unraised_preflop_conditional_target_tv": 0.5788670484909926,
+        "positive_regret_absent_fraction": 0.192626953125,
+        "policy_drift": {
+          "teacher_policy_tv": 0.0,
+          "teacher_policy_tv_p95": 0.0,
+          "teacher_policy_tv_over_half_fraction": 0.0,
+          "newly_absent_fraction": 0.0,
+          "resolved_absent_fraction": 0.0
+        }
+      },
+      "after": {
+        "normalized_training_mse": 0.8117278814315796,
+        "normalized_teacher_score_mse": 0.008619260042905807,
+        "normalized_anchored_objective": 0.20939641539007425,
+        "unraised_preflop_conditional_target_tv": 0.5496536834402596,
+        "positive_regret_absent_fraction": 0.20513916015625,
+        "policy_drift": {
+          "teacher_policy_tv": 0.1638147085905075,
+          "teacher_policy_tv_p95": 0.75,
+          "teacher_policy_tv_over_half_fraction": 0.13299560546875,
+          "newly_absent_fraction": 0.07354736328125,
+          "resolved_absent_fraction": 0.06103515625
+        }
+      }
     }
   },
-  "next_action": "paused_for_analysis; no automatic retrial or model promotion",
+  "decisions": null,
+  "summary_verified": false,
+  "external_backup": null,
   "limitations": [
-    "Exploratory two-candidate comparison; nominal intervals are not multiplicity-adjusted",
-    "Shared cards are one block across seeds, not independent seed-by-deal samples",
-    "Fixed trained seeds and a fixed two-model opponent pool",
-    "No automatic model promotion, self-play continuation, or professional-strength claim"
+    "Process liveness was checked only at observed_utc; old timestamps never prove current execution",
+    "Candidate fitting is offline reuse of the original120 replay, not additional self-play rounds",
+    "Fit metrics and Torch policy diagnostics are not held-out poker strength or deployment behavior",
+    "Backup verification is read from the private index; no fresh remote metadata or checksum check is performed",
+    "Score anchoring does not guarantee a bound on policy drift or poker performance"
   ],
-  "external_backup": {
-    "kind": "derived-policy-probe",
-    "run": "20261112T043945051666Z",
-    "recorded_at": "2026-11-12T04:48:56.831653+00:00",
-    "verified_remote_size": true,
-    "verified_owner_only": true,
-    "remote_checksum_available": false,
-    "resumable_selfplay": false
-  }
+  "completed_candidate_fits": 3,
+  "planned_candidate_fits": 3,
+  "next_action": "observe the existing bounded experiment; do not start a duplicate"
 }

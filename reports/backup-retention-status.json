@@ -1,0 +1,27 @@
+{
+  "observed_utc": "2026-11-12T05:11:19.699097+00:00",
+  "scope": "Private poker training backups only",
+  "removed_checkpoint_iterations": [
+    6,
+    42,
+    102
+  ],
+  "removed_remote_files": 13,
+  "reclaimed_bytes": 682513514,
+  "retained_remote_files": 18,
+  "retained_bytes": 925669483,
+  "retained": [
+    "evaluation assets",
+    "full60 baseline checkpoint",
+    "full120 latest checkpoint",
+    "latest derived-policy probe"
+  ],
+  "retention_budget_bytes": 2147483648,
+  "keep_latest_derived_probes": 2,
+  "within_budget": true,
+  "all_deleted_files_confirmed_not_found": true,
+  "retained_remote_sizes_and_owner_only_permissions_verified": true,
+  "remote_checksum_available": false,
+  "local_archives_preserved": true,
+  "private_index_updated": true
+}

@@ -31,7 +31,7 @@ def collect():
                              quality=latest.get('quality'),iteration_seconds=latest.get('seconds'))
     evaluation=read(folder/'evaluation-status.json',{})
     backups=read(ROOT/'artifacts/offsite-backups.json',{}).get('backups',[])
-    checkpoints=[b for b in backups if b.get('kind')=='training-checkpoint']
+    checkpoints=[b for b in backups if b.get('kind')=='training-checkpoint' and not b.get('deleted_remote',False)]
     external=checkpoints[-1] if checkpoints else None
     loop=read(ROOT/'artifacts/retraining-loop.json',{})
     decision=read(folder/'progress-decision.json')
