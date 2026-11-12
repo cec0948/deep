@@ -1,15 +1,15 @@
 {
-  "observed_utc": "2026-11-12T06:07:55.345166+00:00",
+  "observed_utc": "2026-11-12T06:09:36.425070+00:00",
   "run": "20261112T060737163350Z",
   "status": "running",
-  "phase": "fitting",
+  "phase": "evaluating",
   "recorded_status": "running",
-  "recorded_phase": "fitting",
-  "status_updated_utc": "2026-11-12T06:07:54.468393+00:00",
-  "status_age_seconds": 0.876773,
+  "recorded_phase": "evaluating",
+  "status_updated_utc": "2026-11-12T06:09:35.718263+00:00",
+  "status_age_seconds": 0.706807,
   "supervisor_alive": true,
   "liveness_evidence": "Matching registry/status PID, /proc start token and runner output argument",
-  "completed_evaluations": 0,
+  "completed_evaluations": 6,
   "planned_evaluations": 54,
   "parent_iteration": 120,
   "resumable_selfplay": false,
@@ -17,10 +17,10 @@
   "plan_sha256": "293ce2cbc3bef587a3e8203327b24a395a33d1aab875c17928696137aab2cac8",
   "candidate_fits": {
     "342": {
-      "status": "reported_running",
-      "complete": false,
+      "status": "complete",
+      "complete": true,
       "planned_steps": 3072,
-      "completed_steps": null,
+      "completed_steps": 3072,
       "before": {
         "normalized_training_mse": 0.8603372573852539,
         "normalized_teacher_score_mse": 0.0,
@@ -38,13 +38,31 @@
           "newly_absent_fraction": 0.0,
           "resolved_absent_fraction": 0.0
         }
+      },
+      "after": {
+        "normalized_training_mse": 0.8905852437019348,
+        "normalized_teacher_score_mse": 0.05084634944796562,
+        "unraised_preflop_conditional_target_tv": 0.6177258525204727,
+        "positive_regret_absent_fraction": 0.15631103515625,
+        "raw_iteration_weighted_training_mse": 1358.353472450191,
+        "raw_iteration_weighted_conditional_mse": 1353.385392497728,
+        "normalized_importance_training_objective": 0.8127387125144879,
+        "raw_conditional_objective_over_z": 0.8127387138176299,
+        "normalized_objective_rounding_gap": -1.303141927699869e-09,
+        "policy_drift": {
+          "teacher_policy_tv": 0.3461105227470398,
+          "teacher_policy_tv_p95": 1.0,
+          "teacher_policy_tv_over_half_fraction": 0.29608154296875,
+          "newly_absent_fraction": 0.08734130859375,
+          "resolved_absent_fraction": 0.14794921875
+        }
       }
     },
     "343": {
-      "status": "reported_running",
-      "complete": false,
+      "status": "complete",
+      "complete": true,
       "planned_steps": 3072,
-      "completed_steps": null,
+      "completed_steps": 3072,
       "before": {
         "normalized_training_mse": 0.8395305871963501,
         "normalized_teacher_score_mse": 0.0,
@@ -62,13 +80,31 @@
           "newly_absent_fraction": 0.0,
           "resolved_absent_fraction": 0.0
         }
+      },
+      "after": {
+        "normalized_training_mse": 0.8642936944961548,
+        "normalized_teacher_score_mse": 0.045400623232126236,
+        "unraised_preflop_conditional_target_tv": 0.6870173093658053,
+        "positive_regret_absent_fraction": 0.29425048828125,
+        "raw_iteration_weighted_training_mse": 1253.7671858273306,
+        "raw_iteration_weighted_conditional_mse": 1249.7784146858946,
+        "normalized_importance_training_objective": 0.8198325423341447,
+        "raw_conditional_objective_over_z": 0.819832541268559,
+        "normalized_objective_rounding_gap": 1.0655857307639849e-09,
+        "policy_drift": {
+          "teacher_policy_tv": 0.43462806940078735,
+          "teacher_policy_tv_p95": 1.0,
+          "teacher_policy_tv_over_half_fraction": 0.44830322265625,
+          "newly_absent_fraction": 0.24560546875,
+          "resolved_absent_fraction": 0.06005859375
+        }
       }
     },
     "344": {
-      "status": "reported_running",
-      "complete": false,
+      "status": "complete",
+      "complete": true,
       "planned_steps": 3072,
-      "completed_steps": null,
+      "completed_steps": 3072,
       "before": {
         "normalized_training_mse": 0.8542253375053406,
         "normalized_teacher_score_mse": 0.0,
@@ -86,6 +122,24 @@
           "newly_absent_fraction": 0.0,
           "resolved_absent_fraction": 0.0
         }
+      },
+      "after": {
+        "normalized_training_mse": 0.8601127862930298,
+        "normalized_teacher_score_mse": 0.024807414039969444,
+        "unraised_preflop_conditional_target_tv": 0.6131177992293805,
+        "positive_regret_absent_fraction": 0.1463623046875,
+        "raw_iteration_weighted_training_mse": 1368.1603777206703,
+        "raw_iteration_weighted_conditional_mse": 1361.5720229015876,
+        "normalized_importance_training_objective": 0.8220250565345489,
+        "raw_conditional_objective_over_z": 0.8220250575700604,
+        "normalized_objective_rounding_gap": -1.0355114543614263e-09,
+        "policy_drift": {
+          "teacher_policy_tv": 0.3450283110141754,
+          "teacher_policy_tv_p95": 1.0,
+          "teacher_policy_tv_over_half_fraction": 0.29974365234375,
+          "newly_absent_fraction": 0.11419677734375,
+          "resolved_absent_fraction": 0.16046142578125
+        }
       }
     }
   },
@@ -101,7 +155,7 @@
     "The previous refit is a frozen comparison policy, not a newly fitted candidate",
     "Rule-based reference opponents are diagnostics, not validated strong opponents"
   ],
-  "completed_candidate_fits": 0,
+  "completed_candidate_fits": 3,
   "planned_candidate_fits": 3,
   "objective_gate_passed": true,
   "next_action": "observe the existing bounded experiment; do not start a duplicate"

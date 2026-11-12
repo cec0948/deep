@@ -1,0 +1,203 @@
+{
+  "format": "leduc-sampling-objective-gate-v1",
+  "complete": true,
+  "passed": true,
+  "method": "importance-corrected-balanced",
+  "config": {
+    "game": "leduc_poker",
+    "method": "importance-corrected-balanced",
+    "seed": 81,
+    "iterations": 8,
+    "traversals_per_player": 32,
+    "advantage_steps": 128,
+    "batch_size": 128,
+    "memory_capacity": 50000,
+    "network_layers": [
+      64,
+      64
+    ],
+    "learning_rate": 0.001,
+    "max_seconds": 120,
+    "sampling_draws": 60000,
+    "sampling_seed": 2026111281,
+    "probe_seeds": [
+      181,
+      182,
+      183
+    ],
+    "gradient_relative_tolerance": 1e-09,
+    "loss_relative_tolerance": 1e-09,
+    "monte_carlo_sigma": 8.0,
+    "negative_control_min_relative_error": 0.0001
+  },
+  "source_hashes": {
+    "/workspace/deep/scripts/validate_sampling_objective.py": "cf814365e992a745a6f418f27ea5f5003442ffc4d9040f28c87175062aae2a47",
+    "/workspace/deep/artifacts/refit-probe/20261112T060737163350Z/gate-config.json": "ee0af928cd64ba7b5466b697befcf1487f77fa7a57fdf585a0c4494afcd2ab78",
+    "/workspace/deep/scripts/raw_objective_fitting.py": "a06c184069686927f3e0514d80ca69527c4722d74f35ce38355756eb044688cb",
+    "/workspace/.venvs/fullhouse/lib/python3.12/site-packages/open_spiel/python/policy.py": "34973af5e8cbab211e845865c5e31c324f2cd5803f2f38a7cee07c490058cc7f",
+    "/workspace/.venvs/fullhouse/lib/python3.12/site-packages/open_spiel/python/pytorch/deep_cfr.py": "d1d32f985113f0abafd73403ea45cbf9f4783e7e2b8ddb96b401d80c4110fa5d",
+    "/workspace/.venvs/fullhouse/lib/python3.12/site-packages/pyspiel.so": "adb75ce813c5b254ecee95fcde170e82f180395bdd7ed2b4524da55cb3c0987e"
+  },
+  "started_utc": "2026-11-12T06:07:40.213028+00:00",
+  "versions": {
+    "open_spiel": "1.6.15",
+    "torch": "2.5.1+cpu",
+    "numpy": "2.2.6",
+    "dm-tree": "0.1.9"
+  },
+  "objective": "Original retained-row iteration-weighted raw-unit legal-action mean squared error, divided by one fixed positive Z",
+  "limitations": [
+    "Exact objective identity on retained empirical replay, not an equilibrium or poker-strength guarantee",
+    "This fixed Leduc data collection is a mathematical validation fixture; no candidate selection or strength gate",
+    "Full Leduc information states do not validate the compressed51feature six-player input",
+    "Float64 identities are separate from production float32 rounding and stochastic optimization effects",
+    "No importance clipping, minibatch self-normalization, or new six-player self-play"
+  ],
+  "gate": {
+    "passed": true,
+    "checks": {
+      "all_exact_gradient_identities": true,
+      "direct_sampling_equivalence": true,
+      "conditional_loss_identity": true,
+      "missing_scale_squared_negative_control_detected": true,
+      "importance_sampling_monte_carlo": true,
+      "fixed_weights_have_full_support": true,
+      "compression_actually_exercised": true
+    }
+  },
+  "gradient_checks": [
+    {
+      "probe_seed": 181,
+      "raw_loss": 20.397151466524058,
+      "normalized_corrected_loss": 1.2173694748763346,
+      "conditional_variance_constant": 4.422601400299606,
+      "normalizer_z": 13.122187138664057,
+      "gradient_relative_error": 7.312570569378824e-16,
+      "direct_sampling_gradient_relative_error": 7.483119207849529e-16,
+      "missing_scale_squared_relative_gradient_error": 0.1250607808277787,
+      "loss_relative_error": 1.0713668267866922e-16,
+      "monte_carlo": {
+        "draws": 60000,
+        "expected": 1.2173694748763342,
+        "estimate": 1.2107974197338838,
+        "exact_standard_error": 0.009546813313056237,
+        "within_predeclared_sigma": true
+      }
+    },
+    {
+      "probe_seed": 182,
+      "raw_loss": 21.05601715253946,
+      "normalized_corrected_loss": 1.267579525918365,
+      "conditional_variance_constant": 4.422601400299606,
+      "normalizer_z": 13.122187138664057,
+      "gradient_relative_error": 9.188641572080802e-16,
+      "direct_sampling_gradient_relative_error": 9.303720400716041e-16,
+      "missing_scale_squared_relative_gradient_error": 0.1336685857587173,
+      "loss_relative_error": 3.459475310369392e-17,
+      "monte_carlo": {
+        "draws": 60000,
+        "expected": 1.267579525918365,
+        "estimate": 1.2611685987439671,
+        "exact_standard_error": 0.010205049086457215,
+        "within_predeclared_sigma": true
+      }
+    },
+    {
+      "probe_seed": 183,
+      "raw_loss": 21.02911824727962,
+      "normalized_corrected_loss": 1.2655296462012422,
+      "conditional_variance_constant": 4.422601400299606,
+      "normalizer_z": 13.122187138664057,
+      "gradient_relative_error": 8.889658264005142e-16,
+      "direct_sampling_gradient_relative_error": 8.89039207920435e-16,
+      "missing_scale_squared_relative_gradient_error": 0.12168172578469612,
+      "loss_relative_error": 1.0391701252145627e-16,
+      "monte_carlo": {
+        "draws": 60000,
+        "expected": 1.265529646201242,
+        "estimate": 1.2589422519965459,
+        "exact_standard_error": 0.010314980396512704,
+        "within_predeclared_sigma": true
+      }
+    }
+  ],
+  "sampling_check": {
+    "original_rows": 2340,
+    "conditional_records": 1605,
+    "normalizer_z": 13.122187138664057,
+    "conditional_variance_constant": 4.422601400299606,
+    "balanced_q_min": 4.470672389127325e-05,
+    "balanced_q_max": 0.013888888888888888,
+    "importance_min": 0.07808435754095279,
+    "importance_max": 2.4258207076055998,
+    "by_group": {
+      "0": {
+        "raw_rows": 396,
+        "conditional_records": 12,
+        "retained_iteration_mass": 0.17370808503068577,
+        "balanced_draw_mass": 0.16666666666666669,
+        "corrected_loss_mass": 0.05295095495745859,
+        "scale": 2.0
+      },
+      "1": {
+        "raw_rows": 146,
+        "conditional_records": 12,
+        "retained_iteration_mass": 0.07302321444454327,
+        "balanced_draw_mass": 0.16666666666666669,
+        "corrected_loss_mass": 0.022259464424000775,
+        "scale": 2.0
+      },
+      "2": {
+        "raw_rows": 229,
+        "conditional_records": 12,
+        "retained_iteration_mass": 0.07364582406830916,
+        "balanced_draw_mass": 0.16666666666666669,
+        "corrected_loss_mass": 0.035076957489099884,
+        "scale": 2.5
+      },
+      "6": {
+        "raw_rows": 761,
+        "conditional_records": 761,
+        "retained_iteration_mass": 0.3315840967713244,
+        "balanced_draw_mass": 0.16666666666666669,
+        "corrected_loss_mass": 0.4043034512675998,
+        "scale": 4.0
+      },
+      "7": {
+        "raw_rows": 347,
+        "conditional_records": 347,
+        "retained_iteration_mass": 0.1595659521480032,
+        "balanced_draw_mass": 0.16666666666666669,
+        "corrected_loss_mass": 0.19456019087287396,
+        "scale": 4.0
+      },
+      "8": {
+        "raw_rows": 461,
+        "conditional_records": 461,
+        "retained_iteration_mass": 0.18847282753713418,
+        "balanced_draw_mass": 0.16666666666666669,
+        "corrected_loss_mass": 0.2908489809889669,
+        "scale": 4.5
+      }
+    }
+  },
+  "completed_utc": "2026-11-12T06:07:43.799146+00:00",
+  "seconds": 3.5861465220004902,
+  "collection": {
+    "retained_rows_per_player": [
+      1488,
+      852
+    ],
+    "full_information_states": 936,
+    "retained_rows": 2340,
+    "input_dimensions": 30,
+    "game": "leduc_poker(players=2)",
+    "illegal_nonzero_regret_targets": 0,
+    "group_definition": "Betting round and exact legal-action pattern; groups below6 are round1"
+  },
+  "replay_file": {
+    "name": "retained-replay.npz",
+    "bytes": 25029,
+    "sha256": "1768a7f3cacd86602916705ea93470af83e6f5463ade65890f517772accb7190"
+  }
+}

@@ -1,0 +1,1166 @@
+{
+  "format": "compact-raw-objective-offline-refit-v1",
+  "complete": true,
+  "artifact_kind": "derived-offline-raw-objective-refit",
+  "resumable_selfplay": false,
+  "parent": "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z",
+  "parent_iteration": 120,
+  "seed": 344,
+  "parent_checkpoint_sha256": "9fe7826385423efd63fd668ef599db59e6dbd68fe161d1039b661381ed3b81c0",
+  "parent_config": {
+    "revision": "compact-cfr-v4",
+    "method": "compact-opening-expert",
+    "gate_run": "artifacts/retraining-validation/20261112T024258390982Z",
+    "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "iterations": 120,
+    "stages": [
+      120
+    ],
+    "traversals": 256,
+    "buffer_capacity": 100000,
+    "main_steps": 1024,
+    "batch_size": 512,
+    "opening_steps": 2048,
+    "opening_max_steps": 8192,
+    "max_opening_tv": 0.1,
+    "root_repetitions_first": 16,
+    "root_repetitions": 4,
+    "learning_rate": 0.001,
+    "checkpoint_every": 6,
+    "deployment_average": "Every pre-update policy, weight t, selected once per hand independently of cards",
+    "evaluation_fields": [
+      "noregrets",
+      "public",
+      "mixed"
+    ],
+    "evaluation_iterations": [
+      60,
+      120
+    ],
+    "evaluation_deals": 2000,
+    "evaluation_deal_seed": 2026111203,
+    "seconds_per_training_worker": 5400,
+    "promotion": "none",
+    "recovery_validation": "artifacts/retraining-validation/20261112T024258390982Z",
+    "evaluation_baselines": [
+      "public"
+    ],
+    "evaluation_all_stages_fields": true,
+    "extension_from": {
+      "parent": "/workspace/deep/artifacts/compact-v4/20261112T025126577365Z",
+      "iteration": 60,
+      "config_sha256": "5e2419f8970cfa85841f6ce90dbb645a4969faa37a9924fe1f9f8293128b78fa",
+      "checkpoints": {
+        "342": "bcb4947999fe2d9cde3d7c5feb9942d2074e90754d5f5690273f9d5a34cb71db",
+        "343": "bc78c9b827a34b53207cd4053b66bf4073f0d0b18d2f8593e4a3f1c45de4188d",
+        "344": "00eb6e34ffd7f8eef209a6373cc68d9cc8e9655483afd09677b94572602a2f13"
+      }
+    }
+  },
+  "parent_config_sha256": "b37e825ab2ad67ff2bfbe321b48a84c2366b5a45da174da895d267d0f812de4c",
+  "parent_source_manifest_sha256": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb",
+  "script_sha256": "ba54329d17abdd24fdd50b7c31c0dedcf78975037690cd1812575e191aa8330e",
+  "extra_steps": 3072,
+  "sampler_method": "importance-corrected-balanced",
+  "objective": "E_oldq[(p_i*s_i^2/(Z*oldq_i))*mean_actions((f(x_i)-conditional_raw_target_i/s_i)^2)]",
+  "objective_scope": "Retained main replay with original iteration weights, raw BB squared error; conditional variance is parameter independent",
+  "helper_sha256": "a06c184069686927f3e0514d80ca69527c4722d74f35ce38355756eb044688cb",
+  "sampler": {
+    "method": "importance-corrected-balanced",
+    "original_rows": 596395,
+    "conditional_records": 591183,
+    "draws": 0,
+    "distinct_entries": 0,
+    "normalizer_z": 1656.3631611504034,
+    "conditional_variance_constant": 6.588354819082782,
+    "target_probability_min": 1.8578773435711872e-09,
+    "target_probability_max": 1.6466801849756367e-05,
+    "old_to_corrected_importance_min": 7.964277086246488e-05,
+    "old_to_corrected_importance_max": 4.234593510791354,
+    "importance_second_moment": 2.520726162106521,
+    "effective_batch_fraction": 0.39671108073251393,
+    "raw_mean_rounding_max_abs": 5.829200318885341e-06,
+    "normalized_target_rounding_max_abs": 8.783667730938305e-07,
+    "importance_weight_rounding_max_abs": 1.1937289734476053e-07,
+    "by_stratum": {
+      "0": {
+        "records": 491,
+        "retained_iteration_mass": 0.0023802946780178023,
+        "previous_sampler_mass": 0.0476190476190476,
+        "actual_sampler_mass": 0.0476190476190476,
+        "objective_normalized_score_mass": 0.0009888672222132869,
+        "scale": 26.23200035095215
+      },
+      "1": {
+        "records": 424,
+        "retained_iteration_mass": 0.0017796400127852914,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.0006617129992850729,
+        "scale": 24.816843032836914
+      },
+      "2": {
+        "records": 413,
+        "retained_iteration_mass": 0.0011645276818951751,
+        "previous_sampler_mass": 0.0476190476190476,
+        "actual_sampler_mass": 0.0476190476190476,
+        "objective_normalized_score_mass": 0.00037637537639008997,
+        "scale": 23.13734245300293
+      },
+      "4": {
+        "records": 327,
+        "retained_iteration_mass": 0.00394427250674248,
+        "previous_sampler_mass": 0.04761904761904763,
+        "actual_sampler_mass": 0.04761904761904763,
+        "objective_normalized_score_mass": 0.0013220866515200678,
+        "scale": 23.562658309936523
+      },
+      "5": {
+        "records": 428,
+        "retained_iteration_mass": 0.0030944937390970616,
+        "previous_sampler_mass": 0.0476190476190476,
+        "actual_sampler_mass": 0.0476190476190476,
+        "objective_normalized_score_mass": 0.0015621238860966885,
+        "scale": 28.916166305541992
+      },
+      "6": {
+        "records": 11184,
+        "retained_iteration_mass": 0.01730803894563155,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.012450666830790285,
+        "scale": 34.51836013793945
+      },
+      "7": {
+        "records": 24212,
+        "retained_iteration_mass": 0.03435901530354735,
+        "previous_sampler_mass": 0.04761904761904762,
+        "actual_sampler_mass": 0.04761904761904762,
+        "objective_normalized_score_mass": 0.07515224524042945,
+        "scale": 60.1905632019043
+      },
+      "8": {
+        "records": 39426,
+        "retained_iteration_mass": 0.05480383846452567,
+        "previous_sampler_mass": 0.04761904761904763,
+        "actual_sampler_mass": 0.04761904761904763,
+        "objective_normalized_score_mass": 0.09764836152974718,
+        "scale": 54.32563018798828
+      },
+      "9": {
+        "records": 30751,
+        "retained_iteration_mass": 0.03560326462269594,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.08676301095323666,
+        "scale": 63.533119201660156
+      },
+      "10": {
+        "records": 9482,
+        "retained_iteration_mass": 0.01827566813600011,
+        "previous_sampler_mass": 0.04761904761904761,
+        "actual_sampler_mass": 0.04761904761904761,
+        "objective_normalized_score_mass": 0.002695465687757274,
+        "scale": 15.629966735839844
+      },
+      "11": {
+        "records": 36117,
+        "retained_iteration_mass": 0.06082284613317464,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.05560557801758587,
+        "scale": 38.913795471191406
+      },
+      "12": {
+        "records": 65320,
+        "retained_iteration_mass": 0.10362980504788075,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.12020371946636622,
+        "scale": 43.832313537597656
+      },
+      "13": {
+        "records": 10809,
+        "retained_iteration_mass": 0.014544243259438143,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.02587039606763275,
+        "scale": 54.279239654541016
+      },
+      "14": {
+        "records": 6195,
+        "retained_iteration_mass": 0.012928400660068215,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.0012241721544759354,
+        "scale": 12.523526191711426
+      },
+      "15": {
+        "records": 42922,
+        "retained_iteration_mass": 0.07889184903512403,
+        "previous_sampler_mass": 0.04761904761904762,
+        "actual_sampler_mass": 0.04761904761904762,
+        "objective_normalized_score_mass": 0.05653497102894921,
+        "scale": 34.45246505737305
+      },
+      "16": {
+        "records": 112108,
+        "retained_iteration_mass": 0.1904989417397691,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.18028349390539955,
+        "scale": 39.592185974121094
+      },
+      "17": {
+        "records": 8692,
+        "retained_iteration_mass": 0.013669253786952175,
+        "previous_sampler_mass": 0.04761904761904762,
+        "actual_sampler_mass": 0.04761904761904762,
+        "objective_normalized_score_mass": 0.01996839076528365,
+        "scale": 49.19001007080078
+      },
+      "18": {
+        "records": 4214,
+        "retained_iteration_mass": 0.009093125962135398,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.0003511369600576108,
+        "scale": 7.99759578704834
+      },
+      "19": {
+        "records": 42901,
+        "retained_iteration_mass": 0.08362703523819054,
+        "previous_sampler_mass": 0.04761904761904762,
+        "actual_sampler_mass": 0.04761904761904762,
+        "objective_normalized_score_mass": 0.044491118164648964,
+        "scale": 29.68527603149414
+      },
+      "20": {
+        "records": 138158,
+        "retained_iteration_mass": 0.24836207999188253,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.20164731003768352,
+        "scale": 36.67172622680664
+      },
+      "21": {
+        "records": 6609,
+        "retained_iteration_mass": 0.0112193650544461,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.014198797054450582,
+        "scale": 45.78459930419922
+      }
+    },
+    "identity": "Expected q-sampled (q*/q)-weighted normalized-MSE gradient = retained-row raw-unit iteration-weighted-MSE gradient / Z, up to float32 rounding",
+    "limitations": [
+      "Empirical retained replay objective; not a full-game or six-player convergence guarantee",
+      "Correcting objective mass may reduce deliberate coverage of rare contexts",
+      "Conditional variance and lost state information cannot be recovered by extra fitting"
+    ]
+  },
+  "teacher_main_tensor_state_sha256": "fc331d8e22e56e444c3b9fa3d36daf694b07a9a8d871a09a868ba57d5ac06f08",
+  "teacher_source": "Diagnostic reference only: exact frozen deepcopy of parent120 main; not a training target",
+  "fit_seed": 2026111544,
+  "diagnostic_seed": 2027111544,
+  "diagnostic_policy_implementation": "Torch training graph; not NumPy deployment inference",
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "replay_rows": [
+    100000,
+    100000,
+    100000,
+    100000,
+    100000,
+    100000
+  ],
+  "new_selfplay_samples": 0,
+  "started_utc": "2026-11-12T06:07:50.250769+00:00",
+  "limitations": [
+    "Diagnostics are training-fit measurements on frozen replay, not held-out poker strength",
+    "Torch fitting-graph policy diagnostics are not measurements of deployment behavior",
+    "Objective conservation does not guarantee lower exploitability or improved six-player poker strength",
+    "Existing float32 targets/scales are preserved and fixed importance weights are cast to float32; conservation is numerical rather than bitwise",
+    "Candidate is an offline main-expert refit; it cannot resume the original self-play trajectory",
+    "No default-model promotion and no change to continuation criteria"
+  ],
+  "before": {
+    "fixed_training_sample_size": 16384,
+    "normalized_training_mse": 0.8542253375053406,
+    "normalized_teacher_score_mse": 0.0,
+    "raw_iteration_weighted_training_mse": 1392.6684542360606,
+    "raw_iteration_weighted_conditional_mse": 1386.0800994169779,
+    "normalized_importance_training_objective": 0.8368213747416531,
+    "raw_conditional_objective_over_z": 0.8368213758474897,
+    "normalized_objective_rounding_gap": -1.105836644477165e-09,
+    "conditional_variance_constant": 6.588354819082782,
+    "objective_normalizer_z": 1656.3631611504034,
+    "zero_predictor_mse": 0.967154860496521,
+    "training_mse_over_zero": 0.8832353249683258,
+    "unraised_preflop_conditional_target_tv": 0.5788670484909926,
+    "unraised_preflop_by_group": {
+      "0": {
+        "inputs": 491,
+        "conditional_target_tv": 0.600124578787189
+      },
+      "1": {
+        "inputs": 424,
+        "conditional_target_tv": 0.5805031939163663
+      },
+      "2": {
+        "inputs": 413,
+        "conditional_target_tv": 0.5794031908701809
+      },
+      "4": {
+        "inputs": 327,
+        "conditional_target_tv": 0.5837276189129467
+      },
+      "5": {
+        "inputs": 428,
+        "conditional_target_tv": 0.5505766599682796
+      }
+    },
+    "positive_regret_absent_fraction": 0.192626953125,
+    "policy_drift": {
+      "inputs": 16384,
+      "teacher_policy_tv": 0.0,
+      "teacher_policy_tv_p95": 0.0,
+      "teacher_policy_tv_over_half_fraction": 0.0,
+      "conditional_target_tv": 0.5951042175292969,
+      "teacher_positive_regret_absent_fraction": 0.192626953125,
+      "positive_regret_absent_fraction": 0.192626953125,
+      "newly_absent_fraction": 0.0,
+      "resolved_absent_fraction": 0.0
+    },
+    "policy_drift_by_street": {
+      "0": {
+        "inputs": 6973,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5703812837600708,
+        "teacher_positive_regret_absent_fraction": 0.26645633156460635,
+        "positive_regret_absent_fraction": 0.26645633156460635,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "1": {
+        "inputs": 3109,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6165621280670166,
+        "teacher_positive_regret_absent_fraction": 0.17754905114184624,
+        "positive_regret_absent_fraction": 0.17754905114184624,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "2": {
+        "inputs": 3148,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6174686551094055,
+        "teacher_positive_regret_absent_fraction": 0.10705209656925031,
+        "positive_regret_absent_fraction": 0.10705209656925031,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "3": {
+        "inputs": 3154,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.606288731098175,
+        "teacher_positive_regret_absent_fraction": 0.12967660114140775,
+        "positive_regret_absent_fraction": 0.12967660114140775,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      }
+    },
+    "policy_drift_by_stratum": {
+      "0": {
+        "inputs": 771,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5859127044677734,
+        "teacher_positive_regret_absent_fraction": 0.03501945525291829,
+        "positive_regret_absent_fraction": 0.03501945525291829,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "1": {
+        "inputs": 772,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5720133185386658,
+        "teacher_positive_regret_absent_fraction": 0.022020725388601035,
+        "positive_regret_absent_fraction": 0.022020725388601035,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "2": {
+        "inputs": 732,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5852358341217041,
+        "teacher_positive_regret_absent_fraction": 0.09836065573770492,
+        "positive_regret_absent_fraction": 0.09836065573770492,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "4": {
+        "inputs": 783,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5774073600769043,
+        "teacher_positive_regret_absent_fraction": 0.020434227330779056,
+        "positive_regret_absent_fraction": 0.020434227330779056,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "5": {
+        "inputs": 785,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5628736019134521,
+        "teacher_positive_regret_absent_fraction": 0.18980891719745224,
+        "positive_regret_absent_fraction": 0.18980891719745224,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "6": {
+        "inputs": 764,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6132096648216248,
+        "teacher_positive_regret_absent_fraction": 0.3403141361256545,
+        "positive_regret_absent_fraction": 0.3403141361256545,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "7": {
+        "inputs": 805,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.505283534526825,
+        "teacher_positive_regret_absent_fraction": 0.6409937888198758,
+        "positive_regret_absent_fraction": 0.6409937888198758,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "8": {
+        "inputs": 807,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5165934562683105,
+        "teacher_positive_regret_absent_fraction": 0.5898389095415117,
+        "positive_regret_absent_fraction": 0.5898389095415117,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "9": {
+        "inputs": 754,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.622601330280304,
+        "teacher_positive_regret_absent_fraction": 0.43103448275862066,
+        "positive_regret_absent_fraction": 0.43103448275862066,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "10": {
+        "inputs": 753,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.611077606678009,
+        "teacher_positive_regret_absent_fraction": 0.1049136786188579,
+        "positive_regret_absent_fraction": 0.1049136786188579,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "11": {
+        "inputs": 788,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6763759851455688,
+        "teacher_positive_regret_absent_fraction": 0.18527918781725888,
+        "positive_regret_absent_fraction": 0.18527918781725888,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "12": {
+        "inputs": 758,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5830246806144714,
+        "teacher_positive_regret_absent_fraction": 0.23878627968337732,
+        "positive_regret_absent_fraction": 0.23878627968337732,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "13": {
+        "inputs": 810,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5948559641838074,
+        "teacher_positive_regret_absent_fraction": 0.18024691358024691,
+        "positive_regret_absent_fraction": 0.18024691358024691,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "14": {
+        "inputs": 762,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5967260003089905,
+        "teacher_positive_regret_absent_fraction": 0.023622047244094488,
+        "positive_regret_absent_fraction": 0.023622047244094488,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "15": {
+        "inputs": 806,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6932331919670105,
+        "teacher_positive_regret_absent_fraction": 0.06823821339950373,
+        "positive_regret_absent_fraction": 0.06823821339950373,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "16": {
+        "inputs": 773,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5681416988372803,
+        "teacher_positive_regret_absent_fraction": 0.19534282018111254,
+        "positive_regret_absent_fraction": 0.19534282018111254,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "17": {
+        "inputs": 807,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.6086328029632568,
+        "teacher_positive_regret_absent_fraction": 0.14002478314745972,
+        "positive_regret_absent_fraction": 0.14002478314745972,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "18": {
+        "inputs": 788,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.565387487411499,
+        "teacher_positive_regret_absent_fraction": 0.05710659898477157,
+        "positive_regret_absent_fraction": 0.05710659898477157,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "19": {
+        "inputs": 781,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.693292498588562,
+        "teacher_positive_regret_absent_fraction": 0.11267605633802817,
+        "positive_regret_absent_fraction": 0.11267605633802817,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "20": {
+        "inputs": 787,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.5574701428413391,
+        "teacher_positive_regret_absent_fraction": 0.22236340533672172,
+        "positive_regret_absent_fraction": 0.22236340533672172,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      },
+      "21": {
+        "inputs": 798,
+        "teacher_policy_tv": 0.0,
+        "teacher_policy_tv_p95": 0.0,
+        "teacher_policy_tv_over_half_fraction": 0.0,
+        "conditional_target_tv": 0.609673023223877,
+        "teacher_positive_regret_absent_fraction": 0.12656641604010024,
+        "positive_regret_absent_fraction": 0.12656641604010024,
+        "newly_absent_fraction": 0.0,
+        "resolved_absent_fraction": 0.0
+      }
+    }
+  },
+  "refit_mean_loss": 0.8309805721704228,
+  "matched_control_input_schedule_verified": true,
+  "sampled_record_ids_sha256": "8fa841d28a01d28157087806072ebf364ad647041aae680a6c95f27267166c2d",
+  "sampler_after": {
+    "method": "importance-corrected-balanced",
+    "original_rows": 596395,
+    "conditional_records": 591183,
+    "draws": 1572864,
+    "distinct_entries": 375126,
+    "normalizer_z": 1656.3631611504034,
+    "conditional_variance_constant": 6.588354819082782,
+    "target_probability_min": 1.8578773435711872e-09,
+    "target_probability_max": 1.6466801849756367e-05,
+    "old_to_corrected_importance_min": 7.964277086246488e-05,
+    "old_to_corrected_importance_max": 4.234593510791354,
+    "importance_second_moment": 2.520726162106521,
+    "effective_batch_fraction": 0.39671108073251393,
+    "raw_mean_rounding_max_abs": 5.829200318885341e-06,
+    "normalized_target_rounding_max_abs": 8.783667730938305e-07,
+    "importance_weight_rounding_max_abs": 1.1937289734476053e-07,
+    "by_stratum": {
+      "0": {
+        "records": 491,
+        "retained_iteration_mass": 0.0023802946780178023,
+        "previous_sampler_mass": 0.0476190476190476,
+        "actual_sampler_mass": 0.0476190476190476,
+        "objective_normalized_score_mass": 0.0009888672222132869,
+        "scale": 26.23200035095215
+      },
+      "1": {
+        "records": 424,
+        "retained_iteration_mass": 0.0017796400127852914,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.0006617129992850729,
+        "scale": 24.816843032836914
+      },
+      "2": {
+        "records": 413,
+        "retained_iteration_mass": 0.0011645276818951751,
+        "previous_sampler_mass": 0.0476190476190476,
+        "actual_sampler_mass": 0.0476190476190476,
+        "objective_normalized_score_mass": 0.00037637537639008997,
+        "scale": 23.13734245300293
+      },
+      "4": {
+        "records": 327,
+        "retained_iteration_mass": 0.00394427250674248,
+        "previous_sampler_mass": 0.04761904761904763,
+        "actual_sampler_mass": 0.04761904761904763,
+        "objective_normalized_score_mass": 0.0013220866515200678,
+        "scale": 23.562658309936523
+      },
+      "5": {
+        "records": 428,
+        "retained_iteration_mass": 0.0030944937390970616,
+        "previous_sampler_mass": 0.0476190476190476,
+        "actual_sampler_mass": 0.0476190476190476,
+        "objective_normalized_score_mass": 0.0015621238860966885,
+        "scale": 28.916166305541992
+      },
+      "6": {
+        "records": 11184,
+        "retained_iteration_mass": 0.01730803894563155,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.012450666830790285,
+        "scale": 34.51836013793945
+      },
+      "7": {
+        "records": 24212,
+        "retained_iteration_mass": 0.03435901530354735,
+        "previous_sampler_mass": 0.04761904761904762,
+        "actual_sampler_mass": 0.04761904761904762,
+        "objective_normalized_score_mass": 0.07515224524042945,
+        "scale": 60.1905632019043
+      },
+      "8": {
+        "records": 39426,
+        "retained_iteration_mass": 0.05480383846452567,
+        "previous_sampler_mass": 0.04761904761904763,
+        "actual_sampler_mass": 0.04761904761904763,
+        "objective_normalized_score_mass": 0.09764836152974718,
+        "scale": 54.32563018798828
+      },
+      "9": {
+        "records": 30751,
+        "retained_iteration_mass": 0.03560326462269594,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.08676301095323666,
+        "scale": 63.533119201660156
+      },
+      "10": {
+        "records": 9482,
+        "retained_iteration_mass": 0.01827566813600011,
+        "previous_sampler_mass": 0.04761904761904761,
+        "actual_sampler_mass": 0.04761904761904761,
+        "objective_normalized_score_mass": 0.002695465687757274,
+        "scale": 15.629966735839844
+      },
+      "11": {
+        "records": 36117,
+        "retained_iteration_mass": 0.06082284613317464,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.05560557801758587,
+        "scale": 38.913795471191406
+      },
+      "12": {
+        "records": 65320,
+        "retained_iteration_mass": 0.10362980504788075,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.12020371946636622,
+        "scale": 43.832313537597656
+      },
+      "13": {
+        "records": 10809,
+        "retained_iteration_mass": 0.014544243259438143,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.02587039606763275,
+        "scale": 54.279239654541016
+      },
+      "14": {
+        "records": 6195,
+        "retained_iteration_mass": 0.012928400660068215,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.0012241721544759354,
+        "scale": 12.523526191711426
+      },
+      "15": {
+        "records": 42922,
+        "retained_iteration_mass": 0.07889184903512403,
+        "previous_sampler_mass": 0.04761904761904762,
+        "actual_sampler_mass": 0.04761904761904762,
+        "objective_normalized_score_mass": 0.05653497102894921,
+        "scale": 34.45246505737305
+      },
+      "16": {
+        "records": 112108,
+        "retained_iteration_mass": 0.1904989417397691,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.18028349390539955,
+        "scale": 39.592185974121094
+      },
+      "17": {
+        "records": 8692,
+        "retained_iteration_mass": 0.013669253786952175,
+        "previous_sampler_mass": 0.04761904761904762,
+        "actual_sampler_mass": 0.04761904761904762,
+        "objective_normalized_score_mass": 0.01996839076528365,
+        "scale": 49.19001007080078
+      },
+      "18": {
+        "records": 4214,
+        "retained_iteration_mass": 0.009093125962135398,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.0003511369600576108,
+        "scale": 7.99759578704834
+      },
+      "19": {
+        "records": 42901,
+        "retained_iteration_mass": 0.08362703523819054,
+        "previous_sampler_mass": 0.04761904761904762,
+        "actual_sampler_mass": 0.04761904761904762,
+        "objective_normalized_score_mass": 0.044491118164648964,
+        "scale": 29.68527603149414
+      },
+      "20": {
+        "records": 138158,
+        "retained_iteration_mass": 0.24836207999188253,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.20164731003768352,
+        "scale": 36.67172622680664
+      },
+      "21": {
+        "records": 6609,
+        "retained_iteration_mass": 0.0112193650544461,
+        "previous_sampler_mass": 0.047619047619047616,
+        "actual_sampler_mass": 0.047619047619047616,
+        "objective_normalized_score_mass": 0.014198797054450582,
+        "scale": 45.78459930419922
+      }
+    },
+    "identity": "Expected q-sampled (q*/q)-weighted normalized-MSE gradient = retained-row raw-unit iteration-weighted-MSE gradient / Z, up to float32 rounding",
+    "limitations": [
+      "Empirical retained replay objective; not a full-game or six-player convergence guarantee",
+      "Correcting objective mass may reduce deliberate coverage of rare contexts",
+      "Conditional variance and lost state information cannot be recovered by extra fitting"
+    ]
+  },
+  "after": {
+    "fixed_training_sample_size": 16384,
+    "normalized_training_mse": 0.8601127862930298,
+    "normalized_teacher_score_mse": 0.024807414039969444,
+    "raw_iteration_weighted_training_mse": 1368.1603777206703,
+    "raw_iteration_weighted_conditional_mse": 1361.5720229015876,
+    "normalized_importance_training_objective": 0.8220250565345489,
+    "raw_conditional_objective_over_z": 0.8220250575700604,
+    "normalized_objective_rounding_gap": -1.0355114543614263e-09,
+    "conditional_variance_constant": 6.588354819082782,
+    "objective_normalizer_z": 1656.3631611504034,
+    "zero_predictor_mse": 0.967154860496521,
+    "training_mse_over_zero": 0.889322714928468,
+    "unraised_preflop_conditional_target_tv": 0.6131177992293805,
+    "unraised_preflop_by_group": {
+      "0": {
+        "inputs": 491,
+        "conditional_target_tv": 0.631853933466974
+      },
+      "1": {
+        "inputs": 424,
+        "conditional_target_tv": 0.6024135745828971
+      },
+      "2": {
+        "inputs": 413,
+        "conditional_target_tv": 0.6147977874882646
+      },
+      "4": {
+        "inputs": 327,
+        "conditional_target_tv": 0.6238542476025286
+      },
+      "5": {
+        "inputs": 428,
+        "conditional_target_tv": 0.592669453006238
+      }
+    },
+    "positive_regret_absent_fraction": 0.1463623046875,
+    "policy_drift": {
+      "inputs": 16384,
+      "teacher_policy_tv": 0.3450283110141754,
+      "teacher_policy_tv_p95": 1.0,
+      "teacher_policy_tv_over_half_fraction": 0.29974365234375,
+      "conditional_target_tv": 0.6253299713134766,
+      "teacher_positive_regret_absent_fraction": 0.192626953125,
+      "positive_regret_absent_fraction": 0.1463623046875,
+      "newly_absent_fraction": 0.11419677734375,
+      "resolved_absent_fraction": 0.16046142578125
+    },
+    "policy_drift_by_street": {
+      "0": {
+        "inputs": 6973,
+        "teacher_policy_tv": 0.422870397567749,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.3668435393661265,
+        "conditional_target_tv": 0.6520862579345703,
+        "teacher_positive_regret_absent_fraction": 0.26645633156460635,
+        "positive_regret_absent_fraction": 0.1137243654094364,
+        "newly_absent_fraction": 0.08360820306898036,
+        "resolved_absent_fraction": 0.2363401692241503
+      },
+      "1": {
+        "inputs": 3109,
+        "teacher_policy_tv": 0.2739641070365906,
+        "teacher_policy_tv_p95": 0.9820325374603271,
+        "teacher_policy_tv_over_half_fraction": 0.25989064007719526,
+        "conditional_target_tv": 0.6401873230934143,
+        "teacher_positive_regret_absent_fraction": 0.17754905114184624,
+        "positive_regret_absent_fraction": 0.1154712126085558,
+        "newly_absent_fraction": 0.08041170794467674,
+        "resolved_absent_fraction": 0.1424895464779672
+      },
+      "2": {
+        "inputs": 3148,
+        "teacher_policy_tv": 0.27959802746772766,
+        "teacher_policy_tv_p95": 0.8987308740615845,
+        "teacher_policy_tv_over_half_fraction": 0.22299872935196952,
+        "conditional_target_tv": 0.5927686095237732,
+        "teacher_positive_regret_absent_fraction": 0.10705209656925031,
+        "positive_regret_absent_fraction": 0.1991740787801779,
+        "newly_absent_fraction": 0.16740787801778909,
+        "resolved_absent_fraction": 0.0752858958068615
+      },
+      "3": {
+        "inputs": 3154,
+        "teacher_policy_tv": 0.3082878887653351,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.267279644895371,
+        "conditional_target_tv": 0.5840297937393188,
+        "teacher_positive_regret_absent_fraction": 0.12967660114140775,
+        "positive_regret_absent_fraction": 0.1962587190868738,
+        "newly_absent_fraction": 0.16201648700063412,
+        "resolved_absent_fraction": 0.09543436905516804
+      }
+    },
+    "policy_drift_by_stratum": {
+      "0": {
+        "inputs": 771,
+        "teacher_policy_tv": 0.3958575129508972,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.2931258106355383,
+        "conditional_target_tv": 0.6310586333274841,
+        "teacher_positive_regret_absent_fraction": 0.03501945525291829,
+        "positive_regret_absent_fraction": 0.14915693904020752,
+        "newly_absent_fraction": 0.14137483787289234,
+        "resolved_absent_fraction": 0.027237354085603113
+      },
+      "1": {
+        "inputs": 772,
+        "teacher_policy_tv": 0.2426181435585022,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.15155440414507773,
+        "conditional_target_tv": 0.5963077545166016,
+        "teacher_positive_regret_absent_fraction": 0.022020725388601035,
+        "positive_regret_absent_fraction": 0.13989637305699482,
+        "newly_absent_fraction": 0.133419689119171,
+        "resolved_absent_fraction": 0.015544041450777202
+      },
+      "2": {
+        "inputs": 732,
+        "teacher_policy_tv": 0.7070093750953674,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.7800546448087432,
+        "conditional_target_tv": 0.6430312991142273,
+        "teacher_positive_regret_absent_fraction": 0.09836065573770492,
+        "positive_regret_absent_fraction": 0.01366120218579235,
+        "newly_absent_fraction": 0.01092896174863388,
+        "resolved_absent_fraction": 0.09562841530054644
+      },
+      "4": {
+        "inputs": 783,
+        "teacher_policy_tv": 0.45581570267677307,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.367816091954023,
+        "conditional_target_tv": 0.6380082964897156,
+        "teacher_positive_regret_absent_fraction": 0.020434227330779056,
+        "positive_regret_absent_fraction": 0.09195402298850575,
+        "newly_absent_fraction": 0.09195402298850575,
+        "resolved_absent_fraction": 0.020434227330779056
+      },
+      "5": {
+        "inputs": 785,
+        "teacher_policy_tv": 0.49346426129341125,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.4178343949044586,
+        "conditional_target_tv": 0.6136800646781921,
+        "teacher_positive_regret_absent_fraction": 0.18980891719745224,
+        "positive_regret_absent_fraction": 0.21656050955414013,
+        "newly_absent_fraction": 0.21656050955414013,
+        "resolved_absent_fraction": 0.18980891719745224
+      },
+      "6": {
+        "inputs": 764,
+        "teacher_policy_tv": 0.4240400195121765,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.36780104712041883,
+        "conditional_target_tv": 0.6700400114059448,
+        "teacher_positive_regret_absent_fraction": 0.3403141361256545,
+        "positive_regret_absent_fraction": 0.1256544502617801,
+        "newly_absent_fraction": 0.07722513089005235,
+        "resolved_absent_fraction": 0.2918848167539267
+      },
+      "7": {
+        "inputs": 805,
+        "teacher_policy_tv": 0.5443041920661926,
+        "teacher_policy_tv_p95": 0.8000000715255737,
+        "teacher_policy_tv_over_half_fraction": 0.6298136645962733,
+        "conditional_target_tv": 0.6757491230964661,
+        "teacher_positive_regret_absent_fraction": 0.6409937888198758,
+        "positive_regret_absent_fraction": 0.10062111801242236,
+        "newly_absent_fraction": 0.05093167701863354,
+        "resolved_absent_fraction": 0.591304347826087
+      },
+      "8": {
+        "inputs": 807,
+        "teacher_policy_tv": 0.3153744339942932,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.265179677819083,
+        "conditional_target_tv": 0.6489652395248413,
+        "teacher_positive_regret_absent_fraction": 0.5898389095415117,
+        "positive_regret_absent_fraction": 0.13135068153655513,
+        "newly_absent_fraction": 0.0161090458488228,
+        "resolved_absent_fraction": 0.4745972738537794
+      },
+      "9": {
+        "inputs": 754,
+        "teacher_policy_tv": 0.23570990562438965,
+        "teacher_policy_tv_p95": 0.5,
+        "teacher_policy_tv_over_half_fraction": 0.034482758620689655,
+        "conditional_target_tv": 0.7539787888526917,
+        "teacher_positive_regret_absent_fraction": 0.43103448275862066,
+        "positive_regret_absent_fraction": 0.046419098143236075,
+        "newly_absent_fraction": 0.010610079575596816,
+        "resolved_absent_fraction": 0.3952254641909814
+      },
+      "10": {
+        "inputs": 753,
+        "teacher_policy_tv": 0.4687539041042328,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.5205843293492696,
+        "conditional_target_tv": 0.6351717710494995,
+        "teacher_positive_regret_absent_fraction": 0.1049136786188579,
+        "positive_regret_absent_fraction": 0.1248339973439575,
+        "newly_absent_fraction": 0.10624169986719788,
+        "resolved_absent_fraction": 0.08632138114209828
+      },
+      "11": {
+        "inputs": 788,
+        "teacher_policy_tv": 0.33030328154563904,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.38578680203045684,
+        "conditional_target_tv": 0.6944273114204407,
+        "teacher_positive_regret_absent_fraction": 0.18527918781725888,
+        "positive_regret_absent_fraction": 0.09771573604060914,
+        "newly_absent_fraction": 0.07106598984771574,
+        "resolved_absent_fraction": 0.15862944162436549
+      },
+      "12": {
+        "inputs": 758,
+        "teacher_policy_tv": 0.1859620064496994,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.1279683377308707,
+        "conditional_target_tv": 0.6174353957176208,
+        "teacher_positive_regret_absent_fraction": 0.23878627968337732,
+        "positive_regret_absent_fraction": 0.11345646437994723,
+        "newly_absent_fraction": 0.06860158311345646,
+        "resolved_absent_fraction": 0.19393139841688653
+      },
+      "13": {
+        "inputs": 810,
+        "teacher_policy_tv": 0.12042532116174698,
+        "teacher_policy_tv_p95": 0.5,
+        "teacher_policy_tv_over_half_fraction": 0.018518518518518517,
+        "conditional_target_tv": 0.6133745312690735,
+        "teacher_positive_regret_absent_fraction": 0.18024691358024691,
+        "positive_regret_absent_fraction": 0.1259259259259259,
+        "newly_absent_fraction": 0.07654320987654321,
+        "resolved_absent_fraction": 0.1308641975308642
+      },
+      "14": {
+        "inputs": 762,
+        "teacher_policy_tv": 0.4498206377029419,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.4094488188976378,
+        "conditional_target_tv": 0.6215397119522095,
+        "teacher_positive_regret_absent_fraction": 0.023622047244094488,
+        "positive_regret_absent_fraction": 0.17716535433070865,
+        "newly_absent_fraction": 0.16929133858267717,
+        "resolved_absent_fraction": 0.015748031496062992
+      },
+      "15": {
+        "inputs": 806,
+        "teacher_policy_tv": 0.3335987329483032,
+        "teacher_policy_tv_p95": 0.8902097940444946,
+        "teacher_policy_tv_over_half_fraction": 0.3560794044665012,
+        "conditional_target_tv": 0.6251508593559265,
+        "teacher_positive_regret_absent_fraction": 0.06823821339950373,
+        "positive_regret_absent_fraction": 0.24069478908188585,
+        "newly_absent_fraction": 0.21339950372208435,
+        "resolved_absent_fraction": 0.04094292803970223
+      },
+      "16": {
+        "inputs": 773,
+        "teacher_policy_tv": 0.19624486565589905,
+        "teacher_policy_tv_p95": 0.6666666865348816,
+        "teacher_policy_tv_over_half_fraction": 0.11513583441138421,
+        "conditional_target_tv": 0.5522433519363403,
+        "teacher_positive_regret_absent_fraction": 0.19534282018111254,
+        "positive_regret_absent_fraction": 0.17076326002587322,
+        "newly_absent_fraction": 0.12289780077619664,
+        "resolved_absent_fraction": 0.14747736093143596
+      },
+      "17": {
+        "inputs": 807,
+        "teacher_policy_tv": 0.1447748839855194,
+        "teacher_policy_tv_p95": 0.5,
+        "teacher_policy_tv_over_half_fraction": 0.01734820322180917,
+        "conditional_target_tv": 0.5720776319503784,
+        "teacher_positive_regret_absent_fraction": 0.14002478314745972,
+        "positive_regret_absent_fraction": 0.2057001239157373,
+        "newly_absent_fraction": 0.1623296158612144,
+        "resolved_absent_fraction": 0.09665427509293681
+      },
+      "18": {
+        "inputs": 788,
+        "teacher_policy_tv": 0.5114975571632385,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.4949238578680203,
+        "conditional_target_tv": 0.6088616251945496,
+        "teacher_positive_regret_absent_fraction": 0.05710659898477157,
+        "positive_regret_absent_fraction": 0.21954314720812182,
+        "newly_absent_fraction": 0.20812182741116753,
+        "resolved_absent_fraction": 0.04568527918781726
+      },
+      "19": {
+        "inputs": 781,
+        "teacher_policy_tv": 0.3705170750617981,
+        "teacher_policy_tv_p95": 1.0,
+        "teacher_policy_tv_over_half_fraction": 0.3994878361075544,
+        "conditional_target_tv": 0.6524685025215149,
+        "teacher_positive_regret_absent_fraction": 0.11267605633802817,
+        "positive_regret_absent_fraction": 0.21895006402048656,
+        "newly_absent_fraction": 0.19590268886043533,
+        "resolved_absent_fraction": 0.08962868117797695
+      },
+      "20": {
+        "inputs": 787,
+        "teacher_policy_tv": 0.21064938604831696,
+        "teacher_policy_tv_p95": 0.75,
+        "teacher_policy_tv_over_half_fraction": 0.1397712833545108,
+        "conditional_target_tv": 0.5282462239265442,
+        "teacher_positive_regret_absent_fraction": 0.22236340533672172,
+        "positive_regret_absent_fraction": 0.18297331639135958,
+        "newly_absent_fraction": 0.12198221092757307,
+        "resolved_absent_fraction": 0.1613722998729352
+      },
+      "21": {
+        "inputs": 798,
+        "teacher_policy_tv": 0.14301376044750214,
+        "teacher_policy_tv_p95": 0.5,
+        "teacher_policy_tv_over_half_fraction": 0.03884711779448621,
+        "conditional_target_tv": 0.547542929649353,
+        "teacher_positive_regret_absent_fraction": 0.12656641604010024,
+        "positive_regret_absent_fraction": 0.16416040100250626,
+        "newly_absent_fraction": 0.12280701754385964,
+        "resolved_absent_fraction": 0.08521303258145363
+      }
+    }
+  },
+  "opening_unchanged": true,
+  "scales_unchanged": true,
+  "parent_checkpoint_unchanged": true,
+  "parent_frozen_files_unchanged": true,
+  "teacher_unchanged": true,
+  "files": {
+    "candidate.npz": {
+      "bytes": 1185703,
+      "sha256": "bc32d05b2051bd768405718b8e850d8e3573f242226254576cf38a75ea79939d"
+    },
+    "candidate.pt": {
+      "bytes": 1186300,
+      "sha256": "3a0a3b74eb597652709fdc2c67c37f8ab5c15e4b6d29ac0ecabc30b792f1db34"
+    },
+    "source-manifest.json": {
+      "bytes": 2573,
+      "sha256": "b0af0a6f4b8a5d088b603b1da756de7dbb647398b4099c8fa96852e57dc62bbb"
+    }
+  },
+  "seconds": 35.35520628999802,
+  "completed_utc": "2026-11-12T06:08:25.606004+00:00"
+}
