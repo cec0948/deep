@@ -15,12 +15,14 @@ import time
 from fullhouse_v3_common import ROOT, atomic_json, digest, process_start
 
 STAMP = re.compile(r'\d{8}T\d{6,12}Z')
-PHASES = {'fitting', 'evaluating', 'verifying', 'complete', 'failed', 'interrupted'}
+PHASES = {'objective_gate', 'fitting', 'evaluating', 'verifying', 'complete', 'failed', 'interrupted'}
 CONDITIONS = ('public_lower_above_zero', 'at_least_two_public_seeds_improve',
               'mixed_lower_above_minus_25', 'noregrets_lower_above_minus_50')
 METRICS = ('normalized_training_mse', 'normalized_teacher_score_mse',
            'normalized_anchored_objective', 'unraised_preflop_conditional_target_tv',
-           'positive_regret_absent_fraction')
+           'positive_regret_absent_fraction', 'raw_iteration_weighted_training_mse',
+           'raw_iteration_weighted_conditional_mse', 'normalized_importance_training_objective',
+           'raw_conditional_objective_over_z', 'normalized_objective_rounding_gap')
 DRIFT = ('teacher_policy_tv', 'teacher_policy_tv_p95',
          'teacher_policy_tv_over_half_fraction', 'newly_absent_fraction',
          'resolved_absent_fraction')
@@ -58,7 +60,8 @@ def runner_alive(registry, status, folder):
         if process_start(pid) != start:
             return False
         args = Path(f'/proc/{pid}/cmdline').read_bytes().decode().split('\0')
-        runners = {'run_compact_refit_probe.py', 'run_compact_anchored_probe.py'}
+        runners = {'run_compact_refit_probe.py', 'run_compact_anchored_probe.py',
+                   'run_raw_objective_probe.py'}
         if not any(Path(arg).name in runners for arg in args):
             return False
         position = args.index('--output')
@@ -117,10 +120,14 @@ def collect(root=ROOT):
         raise ValueError('Probe plan/status provenance mismatch')
     seeds, variants, fields = cfg['seeds'], cfg['variants'], cfg['evaluation_fields']
     if (any(type(seed) is not int for seed in seeds)
-            or any(v not in {'current', 'mixture', 'refit', 'anchored'} for v in variants)
+            or any(v not in {'current', 'mixture', 'refit', 'anchored', 'raw-objective'} for v in variants)
             or set(fields) != {'public', 'mixed', 'noregrets'}):
         raise ValueError('Unrecognized probe configuration')
-    planned = len(seeds) * len(variants) * len(fields)
+    references = cfg.get('reference_opponents', [])
+    if (not isinstance(references, list) or len(set(references)) != len(references)
+            or any(v not in {'calling-station', 'tight-value', 'pressure'} for v in references)):
+        raise ValueError('Unrecognized reference opponents')
+    planned = len(seeds) * len(variants) * (len(fields) + len(references))
     completed = status.get('completed_evaluations')
     if (status.get('planned_evaluations') != planned or type(completed) is not int
             or not 0 <= completed <= planned):
@@ -141,6 +148,17 @@ def collect(root=ROOT):
         and summary.get('completed_evaluations') == planned
         and type(summary.get('total_hands')) is int
         and summary['total_hands'] == planned * cfg['evaluation_deals'] * 6)
+    if summary_verified and 'raw-objective' in variants:
+        gate_file = folder/'objective-gate/results.json'
+        gate = read(gate_file, {})
+        gate_summary = summary.get('objective_gate', {})
+        summary_verified = bool(status.get('gate_passed') is True
+            and gate_summary.get('passed') is True and gate.get('passed') is True
+            and gate.get('complete') is True and gate.get('config') == cfg['gate_config']
+            and gate_file.is_file() and gate_summary.get('report_sha256') == digest(gate_file)
+            and gate_summary.get('checks') == gate.get('gate', {}).get('checks')
+            and len(gate_summary.get('checks', {})) == 7
+            and all(v is True for v in gate_summary['checks'].values()))
     if saved_state == 'complete' and not summary_verified:
         observed_state, phase = 'unverified_complete', 'verification_required'
     index = read(root/'artifacts/offsite-backups.json', {})
@@ -152,7 +170,8 @@ def collect(root=ROOT):
                   liveness_evidence='Matching registry/status PID, /proc start token and runner output argument',
                   completed_evaluations=completed, planned_evaluations=planned,
                   parent_iteration=120, resumable_selfplay=False,
-                  artifact_kind='derived-offline-anchored-refit' if 'anchored' in variants else 'derived-offline-refit',
+                  artifact_kind=('derived-offline-raw-objective-refit' if 'raw-objective' in variants else
+                      'derived-offline-anchored-refit' if 'anchored' in variants else 'derived-offline-refit'),
                   plan_sha256=plan_sha, candidate_fits={}, decisions=None,
                   summary_verified=summary_verified,
                   external_backup=external_backup(index, folder.name),
@@ -186,11 +205,24 @@ def collect(root=ROOT):
         result['candidate_fits'][str(seed)] = item
     result['completed_candidate_fits'] = sum(row['complete'] for row in result['candidate_fits'].values())
     result['planned_candidate_fits'] = len(seeds)
+    if summary_verified and result['completed_candidate_fits'] != len(seeds):
+        summary_verified = False
+        result['summary_verified'] = False
+        if saved_state == 'complete':
+            observed_state = 'unverified_complete'
+            result.update(status=observed_state, phase='verification_required')
     if 'anchored' in variants:
         result['limitations'].append('Score anchoring does not guarantee a bound on policy drift or poker performance')
+    if 'raw-objective' in variants:
+        result['objective_gate_passed'] = status.get('gate_passed') is True
+        result['limitations'] += [
+            'The Leduc objective gate validates replay loss/gradient identities, not poker strength',
+            'The previous refit is a frozen comparison policy, not a newly fitted candidate',
+            'Rule-based reference opponents are diagnostics, not validated strong opponents']
     if summary_verified:
         decisions = {}
-        for variant in variants:
+        decision_variants = ['raw-objective'] if 'raw-objective' in variants else variants
+        for variant in decision_variants:
             if variant == 'current':
                 continue
             decision = summary.get('decisions', {}).get(variant, {})
@@ -218,6 +250,8 @@ def collect(root=ROOT):
     if status.get('error'):
         result['recorded_error_present'] = True
         result['failure_detail'] = 'Runner recorded an error; inspect its private status.json for details'
+        if status.get('failure_stage') in PHASES:
+            result['failure_stage'] = status['failure_stage']
     return result
 
 

@@ -40,6 +40,8 @@ def export(run):
             files.add(p)
     for name in ('scripts/export_refit_probe.py', 'docs/retraining-improvement-20261112.md'):
         files.add(ROOT / name)
+    if 'raw-objective' in plan['config'].get('variants', []):
+        files.add(ROOT / 'docs/retraining-objective-20261112.md')
     files = sorted(files)
     manifest = dict(format='derived-policy-probe-backup-v1', run=run.name,
         resumable_selfplay=False, parent_full_checkpoint=base, evaluation_assets=assets,
