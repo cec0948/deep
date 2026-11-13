@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-13T02:57:57.180500+00:00",
+  "observed_utc": "2026-11-13T03:47:45.541498+00:00",
   "active_backup_records": 7,
   "retained_remote_files": 21,
   "retained_bytes": 1066588074,
@@ -40,6 +40,10 @@
   "net_storage_increase_bytes": 2620905,
   "local_archives_preserved": true,
   "private_index_updated": true,
-  "study_evaluation_complete": false,
-  "training_stage_completed": true
+  "study_evaluation_complete": true,
+  "training_stage_completed": true,
+  "study_completed_utc": "2026-11-13T03:30:19.842197+00:00",
+  "latest_training_checkpoint_remote_metadata_verified_utc": "2026-11-13T03:47:45.541498+00:00",
+  "archive_includes_final_evaluation": false,
+  "last_check_changed_remote_files": false
 }

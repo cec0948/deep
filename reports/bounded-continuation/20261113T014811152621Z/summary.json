@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-13T03:30:19.842197+00:00",
+  "seconds": 5686.855686390001,
+  "parent_iteration": 240,
+  "selfplay_iteration": 360,
+  "additional_selfplay_iterations": 120,
+  "completed_stages": [
+    300,
+    360
+  ],
+  "plan_sha256": "8ced836382ce8689437bc00ea3c9fc19b41e85187234109918f35b62191a7a46",
+  "completed_evaluations": 36,
+  "total_hands": 4320000,
+  "evaluation_summary_sha256": "17f1b802c038ac81c9603b94913d77ac9f8483f726667b0d8546703d7616c128",
+  "raw_hands_verified": true,
+  "source_provenance_verified": true,
+  "original_registries_unchanged": true,
+  "no_model_promotion": true,
+  "no_automatic_retry": true,
+  "local_stage_archives": {
+    "300": {
+      "bytes": 88993696,
+      "sha256": "dc892e340ac36c136f080e9c0ca7fe7b39317f38908cfb286693f820bbf916c2",
+      "iterations": {
+        "342": 300,
+        "343": 300,
+        "344": 300
+      },
+      "checkpoint_mode": "compact-bounded-replay-recovery-v1",
+      "warm_start_state_verified": true
+    },
+    "360": {
+      "bytes": 90022512,
+      "sha256": "65ec65f90cc1c0f73700ec4683d421baaaeb4bb82bb10c14fa2c9249fc504be8",
+      "iterations": {
+        "342": 360,
+        "343": 360,
+        "344": 360
+      },
+      "checkpoint_mode": "compact-bounded-replay-recovery-v1",
+      "warm_start_state_verified": true
+    }
+  },
+  "offsite_backup_scope": "Current360 compact recovery verified separately in stage-360-backup-verification.json and private index; local snapshots predate remote verification."
+}

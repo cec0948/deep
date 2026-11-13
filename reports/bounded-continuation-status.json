@@ -1,11 +1,11 @@
 {
-  "observed_utc": "2026-11-13T02:59:57.130869+00:00",
+  "observed_utc": "2026-11-13T03:47:45.541498+00:00",
   "run": "20261113T014811152621Z",
-  "status": "running",
-  "phase": "evaluating",
-  "status_updated_utc": "2026-11-13T02:59:56.765020+00:00",
-  "status_age_seconds": 0.365849,
-  "supervisor_alive": true,
+  "status": "complete",
+  "phase": "complete",
+  "status_updated_utc": "2026-11-13T03:30:19.843786+00:00",
+  "status_age_seconds": 1045.697712,
+  "supervisor_alive": false,
   "seed_progress": {
     "342": {
       "checkpoint_iteration": 360,
@@ -38,32 +38,53 @@
   "training_stages": {
     "300": {
       "checkpoint_verified": true,
-      "evaluation_complete": false,
+      "evaluation_complete": true,
       "local_recovery_verified": true,
       "local_recovery_bytes": 88993696
     },
     "360": {
       "checkpoint_verified": true,
-      "evaluation_complete": false,
+      "evaluation_complete": true,
       "local_recovery_verified": true,
       "local_recovery_bytes": 90022512
     }
   },
   "training_complete": true,
-  "study_complete": false,
+  "study_complete": true,
   "evaluation": {
-    "recorded_status": "running",
-    "evaluator_alive": true,
-    "completed_evaluations": 15,
+    "recorded_status": "complete",
+    "evaluator_alive": false,
+    "completed_evaluations": 36,
     "planned_evaluations": 36,
-    "verified_hands": 1800000,
-    "status_updated_utc": "2026-11-13T02:59:55.868810+00:00"
+    "verified_hands": 4320000,
+    "status_updated_utc": "2026-11-13T03:30:16.892494+00:00"
   },
-  "completed_evaluations": 15,
+  "completed_evaluations": 36,
   "planned_evaluations": 36,
   "planned_hands": 4320000,
   "independent_card_blocks": 20000,
-  "adoption_decisions": {},
+  "adoption_decisions": {
+    "current-300": {
+      "conditions": {
+        "public_lower_above_zero": false,
+        "at_least_two_public_seeds_improve": false,
+        "mixed_lower_above_minus_25": true,
+        "noregrets_lower_above_minus_50": true
+      },
+      "original_four_conditions_pass": false,
+      "deployment_authorized": false
+    },
+    "current-360": {
+      "conditions": {
+        "public_lower_above_zero": false,
+        "at_least_two_public_seeds_improve": true,
+        "mixed_lower_above_minus_25": true,
+        "noregrets_lower_above_minus_50": true
+      },
+      "original_four_conditions_pass": false,
+      "deployment_authorized": false
+    }
+  },
   "external_checkpoint": {
     "kind": "training-checkpoint",
     "run": "20261113T014811152621Z",
@@ -93,7 +114,7 @@
   "model_replaced": false,
   "error_present": false,
   "failure_stage": null,
-  "next_action": "Observe existing supervised study; no duplicate launch or threshold change",
+  "next_action": "Analyze completed fixed-budget study; no automatic promotion or extension",
   "limitations": [
     "Liveness is observed only at observed_utc; recorded timestamps do not prove continued execution",
     "Training stage completion is separate from the full4320000-hand evaluation",
