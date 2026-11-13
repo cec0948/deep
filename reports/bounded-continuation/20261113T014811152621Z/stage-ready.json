@@ -1,6 +1,9 @@
 {
-  "updated_utc": "2026-11-13T01:52:24.479950+00:00",
-  "completed_stages": [],
+  "updated_utc": "2026-11-13T02:52:21.968277+00:00",
+  "completed_stages": [
+    300,
+    360
+  ],
   "checkpoints": {
     "120": {
       "iteration": 120,
@@ -19,6 +22,24 @@
         "344": "738515f8a7a0b49dfa3f5ee4c464ed1f0952dc7800026f031e9651ee5ad81f9b"
       },
       "parent_recovery_verified": true
+    },
+    "300": {
+      "iteration": 300,
+      "verification_sha256": "3c7fe98cfc95e8b9f86bd513ff1b892891ef3674aa73629259b0c19e8885bad7",
+      "models": {
+        "342": "bf5f6c05aa43bc692024be31a2b6b8fdb540a8db65dd78223949af4435ba70a1",
+        "343": "c7565aef0df6313122c16f57012f3209a0a984a1c09136dd550e5b6f27e07e80",
+        "344": "c6963d30938a59c8073a86e84dab29dd633c3b7aecf69c4655225af2bc852c2e"
+      }
+    },
+    "360": {
+      "iteration": 360,
+      "verification_sha256": "a803bafcbbf434a63e53e817c0e5b3d22ee3e0f3533cea2828619f80d7eb4c86",
+      "models": {
+        "342": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+        "343": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+        "344": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7"
+      }
     }
   }
 }

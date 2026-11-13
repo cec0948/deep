@@ -1,63 +1,79 @@
 {
-  "observed_utc": "2026-11-13T02:04:45.022757+00:00",
+  "observed_utc": "2026-11-13T02:59:57.130869+00:00",
   "run": "20261113T014811152621Z",
   "status": "running",
-  "phase": "training",
-  "status_updated_utc": "2026-11-13T02:04:44.807182+00:00",
-  "status_age_seconds": 0.215575,
+  "phase": "evaluating",
+  "status_updated_utc": "2026-11-13T02:59:56.765020+00:00",
+  "status_age_seconds": 0.365849,
   "supervisor_alive": true,
   "seed_progress": {
     "342": {
-      "checkpoint_iteration": 258,
-      "latest_completed_round": 258,
-      "additional_saved_selfplay_iterations": 18,
-      "worker_alive": true,
-      "recorded_state": "running"
+      "checkpoint_iteration": 360,
+      "latest_completed_round": 360,
+      "additional_saved_selfplay_iterations": 120,
+      "worker_alive": false,
+      "recorded_state": "complete"
     },
     "343": {
-      "checkpoint_iteration": 258,
-      "latest_completed_round": 259,
-      "additional_saved_selfplay_iterations": 18,
-      "worker_alive": true,
-      "recorded_state": "running"
+      "checkpoint_iteration": 360,
+      "latest_completed_round": 360,
+      "additional_saved_selfplay_iterations": 120,
+      "worker_alive": false,
+      "recorded_state": "complete"
     },
     "344": {
-      "checkpoint_iteration": 258,
-      "latest_completed_round": 259,
-      "additional_saved_selfplay_iterations": 18,
-      "worker_alive": true,
-      "recorded_state": "running"
+      "checkpoint_iteration": 360,
+      "latest_completed_round": 360,
+      "additional_saved_selfplay_iterations": 120,
+      "worker_alive": false,
+      "recorded_state": "complete"
     }
   },
   "parent_selfplay_iteration": 240,
   "planned_selfplay_iteration": 360,
-  "completed_training_stages": [],
-  "training_stages": {},
-  "training_complete": false,
+  "completed_training_stages": [
+    300,
+    360
+  ],
+  "training_stages": {
+    "300": {
+      "checkpoint_verified": true,
+      "evaluation_complete": false,
+      "local_recovery_verified": true,
+      "local_recovery_bytes": 88993696
+    },
+    "360": {
+      "checkpoint_verified": true,
+      "evaluation_complete": false,
+      "local_recovery_verified": true,
+      "local_recovery_bytes": 90022512
+    }
+  },
+  "training_complete": true,
   "study_complete": false,
   "evaluation": {
     "recorded_status": "running",
     "evaluator_alive": true,
-    "completed_evaluations": 1,
+    "completed_evaluations": 15,
     "planned_evaluations": 36,
-    "verified_hands": 120000,
-    "status_updated_utc": "2026-11-13T02:04:43.760886+00:00"
+    "verified_hands": 1800000,
+    "status_updated_utc": "2026-11-13T02:59:55.868810+00:00"
   },
-  "completed_evaluations": 1,
+  "completed_evaluations": 15,
   "planned_evaluations": 36,
   "planned_hands": 4320000,
   "independent_card_blocks": 20000,
   "adoption_decisions": {},
   "external_checkpoint": {
     "kind": "training-checkpoint",
-    "run": "20261112T070916841250Z",
+    "run": "20261113T014811152621Z",
     "iterations": {
-      "342": 240,
-      "343": 240,
-      "344": 240
+      "342": 360,
+      "343": 360,
+      "344": 360
     },
-    "bytes": 87401607,
-    "recorded_at": "2026-11-13T01:00:23.923505+00:00",
+    "bytes": 90022512,
+    "recorded_at": "2026-11-13T02:56:33.776489+00:00",
     "verified_remote_size": true,
     "verified_owner_only": true,
     "remote_checksum_available": false,
@@ -67,7 +83,7 @@
     "exact_legacy_resume": false,
     "warm_start_state_verified": true,
     "historical_mixture_available": false,
-    "scope": "Previously verified parent240 recovery; no new study stage claimed"
+    "scope": "This bounded study"
   },
   "source_provenance_verified": true,
   "connection_audit_passed": true,

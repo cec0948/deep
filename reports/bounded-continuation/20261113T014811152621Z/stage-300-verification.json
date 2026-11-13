@@ -1,0 +1,72 @@
+{
+  "complete": true,
+  "passed": true,
+  "stage": 300,
+  "verified_utc": "2026-11-13T02:24:22.177298+00:00",
+  "seeds": [
+    {
+      "seed": 342,
+      "iteration": 300,
+      "current_sha256": "bf5f6c05aa43bc692024be31a2b6b8fdb540a8db65dd78223949af4435ba70a1",
+      "checkpoint_directory": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/checkpoints/iter-00300",
+      "checkpoint_files": {
+        "state.json": "30de0b23715be59a2aca0671afe6b84eebf441a33cfa2f38a5b2c8f9cc3260fa",
+        "arrays.npz": "bdb9f896d47e1513c8e103a336a36ae4997eb48d607474c848e5e55b81193434",
+        "current.npz": "bf5f6c05aa43bc692024be31a2b6b8fdb540a8db65dd78223949af4435ba70a1"
+      },
+      "replay_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "root_weighting_verified": true,
+      "export_parity_verified": true
+    },
+    {
+      "seed": 343,
+      "iteration": 300,
+      "current_sha256": "c7565aef0df6313122c16f57012f3209a0a984a1c09136dd550e5b6f27e07e80",
+      "checkpoint_directory": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/checkpoints/iter-00300",
+      "checkpoint_files": {
+        "state.json": "d71554a5ef06edde81db6fb989c186efb392447a9bedccc6dddea3481db9595f",
+        "arrays.npz": "da475ad9d76d10ef395f0e7be2356494adde0724f295d1fa06a59de8f5f77131",
+        "current.npz": "c7565aef0df6313122c16f57012f3209a0a984a1c09136dd550e5b6f27e07e80"
+      },
+      "replay_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "root_weighting_verified": true,
+      "export_parity_verified": true
+    },
+    {
+      "seed": 344,
+      "iteration": 300,
+      "current_sha256": "c6963d30938a59c8073a86e84dab29dd633c3b7aecf69c4655225af2bc852c2e",
+      "checkpoint_directory": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/checkpoints/iter-00300",
+      "checkpoint_files": {
+        "state.json": "134e7421ae67eafebe64988afc3df46c4ef07ba3805a9e9b48c25f1ff393ce65",
+        "arrays.npz": "767720654c8ac0c0112eeee4a77a0119500d6c76868713e342274bdf83a99aa9",
+        "current.npz": "c6963d30938a59c8073a86e84dab29dd633c3b7aecf69c4655225af2bc852c2e"
+      },
+      "replay_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "root_weighting_verified": true,
+      "export_parity_verified": true
+    }
+  ],
+  "historical_mixture_available": false
+}
