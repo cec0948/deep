@@ -68,6 +68,21 @@ def test_keep_baseline_latest_probe_assets_and_exact_remote_bytes(index, tmp_pat
     assert result['candidates'][0]['remote_files'][0]['url'] == index['backups'][1]['parts'][0]['url']
 
 
+def test_verified_bounded_replay_replaces_same_stage_full_but_keeps_dependencies(index, tmp_path):
+    full=backup(tmp_path,8,240);index['backups'].append(full)
+    light=backup(tmp_path,9,240)
+    light.update(checkpoint_mode='compact-bounded-replay-recovery-v1',resumable_selfplay=False,
+                 exact_legacy_resume=False,historical_mixture_available=False,warm_start_state_verified=True)
+    index['backups'].append(light)
+    result=plan_retention(index,tmp_path)
+    assert result['retained_latest_local_verification']['backup_index']==8
+    assert 7 in [r['backup_index'] for r in result['candidates']]
+    assert all(n in [r['backup_index'] for r in result['retained']] for n in [0,3,5,6,8])
+    assert next(r for r in result['retained'] if r['backup_index']==8)['exact_legacy_resume'] is False
+    light['warm_start_state_verified']=False
+    with pytest.raises(ValueError,match='capability verification'):plan_retention(index,tmp_path)
+
+
 def test_recursive_dependency_closure_retains_older_checkpoint(index, tmp_path):
     index['backups'][-1]['parent_manifest_file_id'] = 'manifest_5'
     index['backups'][4]['parent_manifest_file_id'] = 'manifest_3'

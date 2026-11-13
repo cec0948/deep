@@ -1,19 +1,19 @@
 {
-  "observed_utc": "2026-11-12T08:46:59.727801+00:00",
+  "observed_utc": "2026-11-13T01:05:26.379401+00:00",
   "scope": "Private poker training backups only",
   "removed_checkpoint_iterations": [
     6,
     42,
     102
   ],
-  "removed_remote_files": 14,
-  "reclaimed_bytes": 701407029,
-  "retained_remote_files": 37,
-  "retained_bytes": 1997989308,
+  "removed_remote_files": 31,
+  "reclaimed_bytes": 1722830775,
+  "retained_remote_files": 21,
+  "retained_bytes": 1063967169,
   "retained": [
     "evaluation assets",
     "full60 baseline checkpoint",
-    "full240 latest completed training checkpoint",
+    "latest240 policy and bounded replay recovery",
     "full120 required parent of retained probes and studies",
     "latest two derived-policy probes",
     "latest research-validation study"
@@ -42,10 +42,18 @@
   "last_check_changed_remote_files": true,
   "new_training_checkpoint_run": "20261112T070916841250Z",
   "new_training_checkpoint_iteration": 240,
-  "new_training_checkpoint_bytes": 1021413105,
-  "new_training_checkpoint_parts": 16,
-  "new_training_manifest_bytes": 10641,
+  "new_training_checkpoint_bytes": 87401607,
+  "new_training_checkpoint_parts": 0,
   "new_training_checkpoint_local_sha256_verified": true,
-  "new_training_checkpoint_recombined_sha256_verified": true,
-  "study_evaluation_complete": false
+  "study_evaluation_complete": true,
+  "active_backup_records": 7,
+  "new_training_checkpoint_format": "single-archive-v1",
+  "new_training_manifest_location": "inside_archive:recovery-manifest.json",
+  "new_training_checkpoint_mode": "compact-bounded-replay-recovery-v1",
+  "exact_legacy_resume": false,
+  "warm_start_state_verified": true,
+  "historical_mixture_available_offsite_for240": false,
+  "new_training_started": false,
+  "latest_reduction_net_bytes": 934022139,
+  "latest_replacement_peak_bytes": 2085390915
 }

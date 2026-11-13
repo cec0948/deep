@@ -153,11 +153,19 @@ def external_backup(index, campaign_name, maximum_iteration):
     if not eligible:
         return None
     row = max(eligible, key=lambda item:(min(item['iterations'].values()), timestamp(item['recorded_at'])))
-    return dict(kind='training-checkpoint', run=row['run'], iterations=row['iterations'],
+    result = dict(kind='training-checkpoint', run=row['run'], iterations=row['iterations'],
         bytes=row['bytes'], recorded_at=row['recorded_at'], verified_remote_size=True,
         verified_owner_only=True, remote_checksum_available=row['remote_checksum_available'],
-        resumable_selfplay=True,
+        resumable_selfplay=row.get('resumable_selfplay', True),
         verification_scope='Previously recorded private-index verification; this publisher makes no Drive request')
+    if row.get('checkpoint_mode') == 'compact-bounded-replay-recovery-v1':
+        if (row.get('resumable_selfplay') is not False or row.get('exact_legacy_resume') is not False
+                or row.get('historical_mixture_available') is not False
+                or row.get('warm_start_state_verified') is not True):
+            raise ValueError('Lightweight recovery capabilities are unverified')
+        result.update(checkpoint_mode=row['checkpoint_mode'], exact_legacy_resume=False,
+            warm_start_state_verified=True, historical_mixture_available=False)
+    return result
 
 
 def stage_evidence(folder, campaign, stage, ready, seeds):

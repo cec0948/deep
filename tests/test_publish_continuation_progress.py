@@ -13,6 +13,20 @@ from fullhouse_v3_common import digest, process_start
 from publish_continuation_progress import collect, external_backup, runner_alive
 
 
+def test_lightweight_backup_does_not_claim_legacy_resume_or_mixture():
+    row=dict(kind='training-checkpoint',run='study',iterations={str(s):240 for s in [342,343,344]},
+        bytes=100,status='complete',verified_remote_size=True,verified_owner_only=True,
+        remote_checksum_available=False,recorded_at='2026-11-13T00:00:00+00:00',file_id='file',
+        checkpoint_mode='compact-bounded-replay-recovery-v1',resumable_selfplay=False,
+        exact_legacy_resume=False,historical_mixture_available=False,warm_start_state_verified=True)
+    report=external_backup({'backups':[row]},'study',240)
+    assert report['resumable_selfplay'] is False
+    assert report['historical_mixture_available'] is False
+    assert report['warm_start_state_verified'] is True
+    row['exact_legacy_resume']=True
+    with pytest.raises(ValueError,match='capabilities'):external_backup({'backups':[row]},'study',240)
+
+
 def save(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value))

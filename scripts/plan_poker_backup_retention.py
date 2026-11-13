@@ -72,6 +72,14 @@ def validate_record(record, root):
     if stamp.tzinfo is None:
         raise ValueError('Backup time must include timezone')
     if record['kind'] == 'training-checkpoint':
+        mode = record.get('checkpoint_mode')
+        if mode not in (None, 'compact-bounded-replay-recovery-v1'):
+            raise ValueError('Unknown training checkpoint mode blocks cleanup')
+        if mode is not None and (record.get('resumable_selfplay') is not False
+                or record.get('exact_legacy_resume') is not False
+                or record.get('historical_mixture_available') is not False
+                or record.get('warm_start_state_verified') is not True):
+            raise ValueError('Lightweight checkpoint capability verification is incomplete')
         run = record.get('run', '')
         if not re.fullmatch(STAMP, run) or not re.fullmatch(
                 r'compact-v4-' + re.escape(run) + r'(?:-snapshot-' + STAMP + r')?\.tar\.gz', path.name):
@@ -213,6 +221,9 @@ def plan_retention(index, root=ROOT, budget_bytes=DEFAULT_BUDGET):
                     iterations=record.get('iterations'), sha256=record.get('sha256'),
                     local_archive=record.get('local_archive'), remote_files=files[n],
                     remote_bytes=sum(f['expected_bytes'] for f in files[n]) if n not in opaque else None)
+        if record.get('checkpoint_mode'):
+            item.update(checkpoint_mode=record['checkpoint_mode'], exact_legacy_resume=False,
+                        warm_start_state_verified=True, historical_mixture_available=False)
         if n in reasons:
             item['reasons'] = reasons[n]
             retained.append(item)

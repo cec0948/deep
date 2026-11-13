@@ -1,0 +1,99 @@
+{
+  "observed_utc": "2026-11-13T01:05:26.379401+00:00",
+  "status": "complete",
+  "user_requested_storage_reduction": true,
+  "checkpoint_iteration": 240,
+  "checkpoint_mode": "compact-bounded-replay-recovery-v1",
+  "old_latest_archive_bytes": 1021413105,
+  "new_latest_archive_bytes": 87401607,
+  "before_indexed_remote_bytes": 1997989308,
+  "after_indexed_remote_bytes": 1063967169,
+  "net_remote_bytes_reduced": 934022139,
+  "removed_obsolete_remote_files": 17,
+  "deleted_file_readbacks_not_found": true,
+  "active_backup_records": 7,
+  "active_remote_files": 21,
+  "target_budget_bytes": 2147483648,
+  "peak_during_replacement_bytes": 2085390915,
+  "within_budget_throughout": true,
+  "replay_rows_per_model": 600000,
+  "replay_rows_total": 1800000,
+  "replay_capacity_rows_per_seat": 100000,
+  "latest_models_preserved": 3,
+  "stored_arrays_lossless": true,
+  "network_export_arrays_identical": true,
+  "verified_inner_files": 188,
+  "exact_legacy_resume": false,
+  "historical_mixture_available_offsite_for240": false,
+  "warm_start_state_verified": true,
+  "original_full240_archive_preserved_locally": true,
+  "all_other_required_backups_preserved": true,
+  "remote_size_verified": true,
+  "owner_only_permissions_verified": true,
+  "remote_checksum_available": false,
+  "remote_sha256_verified": false,
+  "new_training_started": false,
+  "model_adoption_changed": false,
+  "tests_passed": 49,
+  "restore_verification": {
+    "passed": true,
+    "archive_verification": {
+      "passed": true,
+      "verified_files": 188,
+      "replay_rows": {
+        "342": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "343": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "344": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ]
+      },
+      "exact_legacy_resume": false,
+      "historical_mixture_available": false
+    },
+    "seeds": {
+      "342": {
+        "full_state_restored_bitwise": true,
+        "strict_network_load": true,
+        "all_export_arrays_identical": true,
+        "replay_rows": 600000
+      },
+      "343": {
+        "full_state_restored_bitwise": true,
+        "strict_network_load": true,
+        "all_export_arrays_identical": true,
+        "replay_rows": 600000
+      },
+      "344": {
+        "full_state_restored_bitwise": true,
+        "strict_network_load": true,
+        "all_export_arrays_identical": true,
+        "replay_rows": 600000
+      }
+    },
+    "new_training_started": false
+  },
+  "limitations": [
+    "This is latest-model and bounded-replay material for a separately authorized training run; old --resume and historical240 mixture are not supported",
+    "Remote checksums are unavailable; hashes verify local archives and restored files only",
+    "Storage totals cover the managed indexed poker backups, not the entire personal Drive account"
+  ]
+}

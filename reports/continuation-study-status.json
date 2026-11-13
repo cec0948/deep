@@ -1,12 +1,12 @@
 {
-  "observed_utc": "2026-11-12T10:20:07.450610+00:00",
+  "observed_utc": "2026-11-13T01:06:28.020021+00:00",
   "run": "20261112T070916841250Z",
   "status": "complete",
   "phase": "complete",
   "recorded_status": "complete",
   "recorded_phase": "complete",
   "status_updated_utc": "2026-11-12T09:27:57.414132+00:00",
-  "status_age_seconds": 3130.036478,
+  "status_age_seconds": 56310.605889,
   "supervisor_alive": false,
   "liveness_evidence": "Matching registry/status PID, non-zombie /proc start token, runner command and output argument",
   "plan_sha256": "fea2187fe3477c03a88b7a058318bbb36ef5e8a80eb01b6153cf05ec69034f8a",
@@ -62,13 +62,17 @@
           "343": 240,
           "344": 240
         },
-        "bytes": 1021413105,
-        "recorded_at": "2026-11-12T08:44:59.443611+00:00",
+        "bytes": 87401607,
+        "recorded_at": "2026-11-13T01:00:23.923505+00:00",
         "verified_remote_size": true,
         "verified_owner_only": true,
         "remote_checksum_available": false,
-        "resumable_selfplay": true,
-        "verification_scope": "Previously recorded private-index verification; this publisher makes no Drive request"
+        "resumable_selfplay": false,
+        "verification_scope": "Previously recorded private-index verification; this publisher makes no Drive request",
+        "checkpoint_mode": "compact-bounded-replay-recovery-v1",
+        "exact_legacy_resume": false,
+        "warm_start_state_verified": true,
+        "historical_mixture_available": false
       },
       "local_snapshot_bytes": 1021413105
     }
@@ -143,13 +147,17 @@
       "343": 240,
       "344": 240
     },
-    "bytes": 1021413105,
-    "recorded_at": "2026-11-12T08:44:59.443611+00:00",
+    "bytes": 87401607,
+    "recorded_at": "2026-11-13T01:00:23.923505+00:00",
     "verified_remote_size": true,
     "verified_owner_only": true,
     "remote_checksum_available": false,
-    "resumable_selfplay": true,
-    "verification_scope": "Previously recorded private-index verification; this publisher makes no Drive request"
+    "resumable_selfplay": false,
+    "verification_scope": "Previously recorded private-index verification; this publisher makes no Drive request",
+    "checkpoint_mode": "compact-bounded-replay-recovery-v1",
+    "exact_legacy_resume": false,
+    "warm_start_state_verified": true,
+    "historical_mixture_available": false
   },
   "limitations": [
     "A completed training checkpoint does not mean all large evaluations or the research study are complete",
