@@ -1,0 +1,24 @@
+{
+  "updated_utc": "2026-11-13T01:52:24.479950+00:00",
+  "completed_stages": [],
+  "checkpoints": {
+    "120": {
+      "iteration": 120,
+      "models": {
+        "342": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+        "343": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+        "344": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3"
+      },
+      "original_baseline_verified": true
+    },
+    "240": {
+      "iteration": 240,
+      "models": {
+        "342": "29c8b7dd5f84ac89e93d9b6846cda7a6b7ab50af12ba6a4bdf94d8404b34afb2",
+        "343": "6bb6bfd8e03e03f1f7b937116b9ba27da7627286873c6976985f3f81b62df7e6",
+        "344": "738515f8a7a0b49dfa3f5ee4c464ed1f0952dc7800026f031e9651ee5ad81f9b"
+      },
+      "parent_recovery_verified": true
+    }
+  }
+}

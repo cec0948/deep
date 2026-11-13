@@ -1,0 +1,105 @@
+{
+  "complete": true,
+  "prepared_utc": "2026-11-13T01:52:24.484305+00:00",
+  "parent_iteration": 240,
+  "source_recovery_sha256": "bceefeeedb991a37e923a2fe4feedaba7076ef58215f93079d016049764000b1",
+  "parent_config": {
+    "revision": "compact-cfr-v4",
+    "method": "compact-opening-expert",
+    "gate_run": "artifacts/retraining-validation/20261112T024258390982Z",
+    "source_run": "artifacts/fullhouse-v3/20261109T034714104421Z",
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "iterations": 240,
+    "stages": [
+      180,
+      240
+    ],
+    "traversals": 256,
+    "buffer_capacity": 100000,
+    "main_steps": 1024,
+    "batch_size": 512,
+    "opening_steps": 2048,
+    "opening_max_steps": 8192,
+    "max_opening_tv": 0.1,
+    "root_repetitions_first": 16,
+    "root_repetitions": 4,
+    "learning_rate": 0.001,
+    "checkpoint_every": 6,
+    "deployment_average": "Every pre-update policy, weight t, selected once per hand independently of cards",
+    "evaluation_fields": [
+      "noregrets",
+      "public",
+      "mixed"
+    ],
+    "evaluation_iterations": [
+      120,
+      180,
+      240
+    ],
+    "evaluation_deals": 20000,
+    "evaluation_deal_seed": 2026160000,
+    "seconds_per_training_worker": 5400,
+    "promotion": "none",
+    "recovery_validation": "artifacts/retraining-validation/20261112T024258390982Z",
+    "evaluation_baselines": [],
+    "evaluation_all_stages_fields": true,
+    "extension_from": {
+      "parent": "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z",
+      "iteration": 120,
+      "config_sha256": "b37e825ab2ad67ff2bfbe321b48a84c2366b5a45da174da895d267d0f812de4c",
+      "checkpoints": {
+        "342": "b85835c50c7a9eed9d62481ad6fba7fb0517c5e1f8867675ab23f6a05040c5e0",
+        "343": "b73e9d619fafbb0c7d989da6717d1f0be5c66136386f822e1cd53cb056e06cc3",
+        "344": "9fe7826385423efd63fd668ef599db59e6dbd68fe161d1039b661381ed3b81c0"
+      }
+    }
+  },
+  "preserved": {
+    "342": {
+      "iteration": 240,
+      "numeric_state_identical": true,
+      "current_policy_identical": true,
+      "replay_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ]
+    },
+    "343": {
+      "iteration": 240,
+      "numeric_state_identical": true,
+      "current_policy_identical": true,
+      "replay_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ]
+    },
+    "344": {
+      "iteration": 240,
+      "numeric_state_identical": true,
+      "current_policy_identical": true,
+      "replay_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ]
+    }
+  },
+  "learning_hyperparameters_unchanged": true,
+  "historical_policy_files_created": false,
+  "original_registries_unchanged": true
+}

@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "continuation_equivalence_passed": true,
+  "observed_utc": "2026-11-13T01:51:53.693138+00:00",
+  "scope": "Adapter equivalence and bounded orchestration checks before authorized240-to360 online self-play; not a strength claim",
+  "tests_passed": 77,
+  "integration_fixture": {
+    "passed": true,
+    "continuation_equivalence_passed": true,
+    "verification_fixture": true,
+    "production_candidates_trained": false,
+    "seed": 42,
+    "initial_iteration": 6,
+    "through_iteration": 7,
+    "next_network_parameters_identical": true,
+    "next_replay_identical": true,
+    "next_root_statistics_identical": true,
+    "next_rng_identical": true,
+    "export_arrays_identical": true,
+    "no_historical_policy_files": true,
+    "bounded_checkpoint_directories": 2
+  },
+  "integration_fixture_result_sha256": "11f6c5de9dc829ccaa11fc7cd77e9d84875a5fd1af58b22c0a78a281a7f8584e",
+  "prior_method_audit_sha256": "66747e84b151df0519105cbb3d4be04cad8c89318c717afd51a576d8a9aa6c60",
+  "prior_method_sources_unchanged": true,
+  "checks": {
+    "next_network_replay_root_rng_and_export_identical": true,
+    "no_policy_history_required": true,
+    "fixed_replay_capacity_enforced": true,
+    "immutable_current_checkpoints_and_bounded_pruning_tested": true,
+    "malformed_or_changed_checkpoint_data_rejected": true,
+    "compact_stage_snapshot_roundtrip_tested": true,
+    "original120_adoption_baseline_and_four_thresholds_preserved": true,
+    "paired_card_block_statistics_tested": true,
+    "stale_process_records_not_treated_as_running": true,
+    "unverified_completion_not_reported_complete": true,
+    "live_worker_parallelism_guard_tested": true,
+    "fresh_card_range_disjoint": true
+  },
+  "source_hashes": {
+    "/workspace/deep/scripts/run_bounded_poker_study.py": "e66458fb3f0f6c8bd1df1131da842401de9754e044d99aad4ad8c2d6315c5367",
+    "/workspace/deep/scripts/train_compact_bounded.py": "969a62df95054de733bc161b417d826d9aefd522e61f1587570243b46f71180c",
+    "/workspace/deep/scripts/evaluate_bounded_poker_study.py": "f0745423b7ca4d8387b2626b5e5a4662a01c5171b3fb21804d289da1deab305a",
+    "/workspace/deep/scripts/publish_bounded_poker_progress.py": "f91a78e7addb825ec637b66e8dbb637e3f2451305dc9f63312ff73ff7385c515",
+    "/workspace/deep/scripts/bounded_poker_study_support.py": "b2df172b4a6d4db861815dc25320e1c05ba7861b3d37b71fbdd5a767fa6f47ec",
+    "/workspace/deep/scripts/compact_lightweight_backup.py": "70110cc4be6b0dabde640194fa85a76599287099b0aee7cdcfdebe5abceb11ad",
+    "/workspace/deep/scripts/fullhouse_v3_common.py": "ff6bb05e72464fc833b4040a6c51e5f40834c8667da813c8b8bff1cad0069e37",
+    "/workspace/deep/scripts/run_compact_learning_curve.py": "2434d031a48aa2e4bf5cc3c955d54e851f5c80e2f8f74a550697a388fc7dbe35",
+    "/workspace/deep/scripts/run_compact_refit_probe.py": "baa70d4fef2d9047045c0417afb2e7f482d6e5b8a5f348de139fc5bd1a75b8df",
+    "/workspace/deep/scripts/evaluate_compact_learning_curve.py": "241b633efdd48d8d4f4949742f9917792e98790cee48e99a973be40520188b05",
+    "/workspace/deep/scripts/evaluate_compact.py": "262a6e3e2be9f556c3e5863fe00eb636b7203c9148ad834ea1933918e32bcfe2",
+    "/workspace/deep/scripts/fullhouse_v4_runtime.py": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+    "/workspace/deep/scripts/fullhouse_v3_runtime.py": "19f0c117d80ffd9e013387bb17d3daf215e3476a4a135fe72a7bfb18d4db8e0e",
+    "/workspace/deep/scripts/fullhouse_runtime.py": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+    "/workspace/deep/scripts/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/scripts/publish_continuation_progress.py": "367b123e55596b993fcbd4eab2c7644750ee843a62e4fe02d603629df53d082b",
+    "/workspace/deep/scripts/extend_compact_run.py": "40e686699d5e00158a35a64cb58a090ac811e7d6a22b38db990f837a9ee9058e",
+    "/workspace/deep/scripts/prepare_compact_run.py": "1b5caa34b168bc6bec7cd7dc57b417841f41b455fe1a3029ab2e31b083eaceee",
+    "/workspace/deep/tests/verify_bounded_resume_integration.py": "672cb2bc406799788fdbb364254a4919977c11b69327859d75f1a6d52009c509",
+    "/workspace/deep/configs/poker-bounded-continuation-20261113.json": "1d834f48d4f6bd8b8c64cff207c3785487b7fceb115ce8e1f1374fd645624efd"
+  },
+  "evaluation_card_range": [
+    2026200000,
+    2026220000
+  ],
+  "prior_recorded_ranges": 24,
+  "production_state_import": "Required and separately verified by preparation before the first training process",
+  "limitations": [
+    "Existing51-feature input information loss and scaled balanced fitting remain unchanged",
+    "Mechanical continuation equivalence does not establish poker strength",
+    "This audit does not start production self-play"
+  ]
+}

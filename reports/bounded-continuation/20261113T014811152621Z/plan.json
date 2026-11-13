@@ -1,0 +1,228 @@
+{
+  "created_utc": "2026-11-13T01:52:24.492437+00:00",
+  "config": {
+    "purpose": "Newly authorized online self-play from the lossless compact240 recovery, with fixed replay and current policies only",
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "initial_iteration": 240,
+    "stages": [
+      300,
+      360
+    ],
+    "evaluation_iterations": [
+      120,
+      240,
+      300,
+      360
+    ],
+    "variants": [
+      "current"
+    ],
+    "evaluation_fields": [
+      "public",
+      "mixed",
+      "noregrets"
+    ],
+    "evaluation_deals": 20000,
+    "evaluation_deal_seed": 2026200000,
+    "evaluation_seconds_per_cell": 2400,
+    "training_seconds_per_stage": 5400,
+    "max_seconds": 14400,
+    "promotion": "none",
+    "planned_evaluations": 36,
+    "planned_hands": 4320000,
+    "adoption_baseline": "original current120, using the unchanged four conditions; parentcurrent240 comparisons diagnose additional learning",
+    "continuation_rule": "Complete the fixed300 and360 observations unless execution, provenance, finite-state or fitting-quality checks fail; no automatic retry, extension beyond360 or model replacement",
+    "storage_rule": "Latest policy and at most100000 replay rows per seat; no historical policy mixture; keep only declared stage checkpoints and latest recovery locally, and use compact recovery for offsite backups",
+    "limitations": [
+      "The existing51-feature representation and scaled balanced fitting remain unchanged; the storage change is not a learning-method improvement",
+      "No claim of a faithful six-player equilibrium solver or professional strength",
+      "The20000 fresh card blocks are shared across seats, fixed training seeds and checkpoints; repeated observations are not independent final holdouts",
+      "Nominal95% paired intervals are conditional on three fixed seeds and are not adjusted for multiplicity"
+    ]
+  },
+  "campaign": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign",
+  "parent_iteration": 240,
+  "source_recovery_archive": "/workspace/deep/artifacts/exports/compact-v4-20261112T070916841250Z-snapshot-20261113T005459785322Z.tar.gz",
+  "source_recovery_sha256": "bceefeeedb991a37e923a2fe4feedaba7076ef58215f93079d016049764000b1",
+  "baseline120_archive": "/workspace/deep/artifacts/exports/compact-v4-20261112T032318825281Z-snapshot-20261112T035314888334Z.tar.gz",
+  "baseline120_sha256": "82bf29ffb1ee806d97f6a7b65c11cc539ca607e5ade1b240f81638896eea929d",
+  "frozen_files": {
+    "/workspace/deep/scripts/run_bounded_poker_study.py": "e66458fb3f0f6c8bd1df1131da842401de9754e044d99aad4ad8c2d6315c5367",
+    "/workspace/deep/scripts/train_compact_bounded.py": "969a62df95054de733bc161b417d826d9aefd522e61f1587570243b46f71180c",
+    "/workspace/deep/scripts/evaluate_bounded_poker_study.py": "f0745423b7ca4d8387b2626b5e5a4662a01c5171b3fb21804d289da1deab305a",
+    "/workspace/deep/scripts/publish_bounded_poker_progress.py": "f91a78e7addb825ec637b66e8dbb637e3f2451305dc9f63312ff73ff7385c515",
+    "/workspace/deep/scripts/bounded_poker_study_support.py": "b2df172b4a6d4db861815dc25320e1c05ba7861b3d37b71fbdd5a767fa6f47ec",
+    "/workspace/deep/scripts/compact_lightweight_backup.py": "70110cc4be6b0dabde640194fa85a76599287099b0aee7cdcfdebe5abceb11ad",
+    "/workspace/deep/scripts/fullhouse_v3_common.py": "ff6bb05e72464fc833b4040a6c51e5f40834c8667da813c8b8bff1cad0069e37",
+    "/workspace/deep/scripts/run_compact_learning_curve.py": "2434d031a48aa2e4bf5cc3c955d54e851f5c80e2f8f74a550697a388fc7dbe35",
+    "/workspace/deep/scripts/run_compact_refit_probe.py": "baa70d4fef2d9047045c0417afb2e7f482d6e5b8a5f348de139fc5bd1a75b8df",
+    "/workspace/deep/scripts/evaluate_compact_learning_curve.py": "241b633efdd48d8d4f4949742f9917792e98790cee48e99a973be40520188b05",
+    "/workspace/deep/scripts/evaluate_compact.py": "262a6e3e2be9f556c3e5863fe00eb636b7203c9148ad834ea1933918e32bcfe2",
+    "/workspace/deep/scripts/fullhouse_v4_runtime.py": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+    "/workspace/deep/scripts/fullhouse_v3_runtime.py": "19f0c117d80ffd9e013387bb17d3daf215e3476a4a135fe72a7bfb18d4db8e0e",
+    "/workspace/deep/scripts/fullhouse_runtime.py": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+    "/workspace/deep/scripts/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/scripts/publish_continuation_progress.py": "367b123e55596b993fcbd4eab2c7644750ee843a62e4fe02d603629df53d082b",
+    "/workspace/deep/scripts/extend_compact_run.py": "40e686699d5e00158a35a64cb58a090ac811e7d6a22b38db990f837a9ee9058e",
+    "/workspace/deep/scripts/prepare_compact_run.py": "1b5caa34b168bc6bec7cd7dc57b417841f41b455fe1a3029ab2e31b083eaceee",
+    "/workspace/deep/artifacts/compact-v4/current.json": "efc03c574b9e3df7e066c743c9753733656d9ace474cb6cf214ad34fd28856f2",
+    "/workspace/deep/artifacts/retraining-loop.json": "87149c94902b2ac0d48ce2a1dc7c34af71309a12dd400927fa7f48e9b9045ea4",
+    "/workspace/deep/artifacts/continuation-study/current.json": "8f136f501b3da696bca1749d3d6977d0ccf313151dc6eb89b496d593fa83be01",
+    "/workspace/deep/artifacts/refit-probe/current.json": "fa07aa7701346ebaf95252b5e875901f6d18a9b8ea2a027c6ce1eb012ee62e67",
+    "/workspace/deep/artifacts/foundation-study/current.json": "bd1c10c6d4d0467234d477bda5e7cfdd9a29b3a1fb0120e9d1b63970574de6ec",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/config.json": "2ddf614ecc00398adfc7611bc924cb25377693a504a3f97c26f11d5def75222c",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/connection-audit.json": "e9907554e26bee466120b354e950e954145a7936b19ac35ef74f125d544721de",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/preparation.json": "005b314bead42356eefd533fce8d823265decd741c83ea04ea5ac8cc5b5e9391",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/config.json": "3c4dcac1b4d26386e8865054bc01ac11b2318cf510d9e657abdf9cc5585e6f0d",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source-manifest.json": "aa5285c197dddf1dfd9f8dca46a5a71c61aad7c088d37098785f5ea772321625",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/LICENSE.upstream": "8a2daa759da5e2bc87dfdd8f3a02fee6f18b38ccced523022a31c36e1b0512c4",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/bot/bot.py": "f721b16e0cab72d0c40fae2e94d1ec655a94025fc20addfc689c718fb8f10845",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/bot/features.py": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/__init__.py": "dd47ca434e58a3ba04952d871c3899db7b675eed0dd5e2e4dc23645f72f08d1f",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/_hand_eval.py": "e97c081806e67f964ace1c6dd7bb62c8f49ea8cd0c2060d8643d6c58daeb3a96",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/_hand_eval_lut.py": "d57d29959b6441fbad16f1e65c35dab0e6d38e7fda29a1b8edbaf6271cea5e46",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/buffer.py": "a513bf28f44992218053745e77faedd5a6a71c663cc642273ccaa01e0cd4f611",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/features.py": "b6f8b26df06b4147c87e1543242d5cf29af9366be7681af272bbc677bdc97946",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/game.py": "df405d6d9efbeca3ecb778cfa70dd770fee5c34d04eb3f65ed1ab11261696381",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/game_numba.py": "3d581b954fa028ea8c6e5b31457c95cbcfa8f9e09bc14dd939c59ae7457437dc",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/network.py": "e8c75e85722fa32e311316f06b93596f6610b934af5a8ab0ef6c99d72d2f2c49",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/r1_support.py": "08b19999b38066c1848ca3e0a5a67b65a0b577250dce59c0dff084ae7683dfd0",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/train.py": "844c8e6d3aea891e95d39f60b9e50906bcc854df20bc489d440558be945bb316",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/traverse_fast.py": "b0d199732ddd46be242c90b382fe4e7c93add829ca8e493d6c59dce67af319a6",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/traverse_numba.py": "03c17cd7b717005737cabafe7c4e7963dc6eb1fbd9f8e4295d3c8417127ec803",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/training/worker.py": "282435f5e10770dce373b4579e14552af9f0e3beb6178046a8229a33acad9bea",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/tools/bounded_poker_study_support.py": "b2df172b4a6d4db861815dc25320e1c05ba7861b3d37b71fbdd5a767fa6f47ec",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/tools/compact_lightweight_backup.py": "70110cc4be6b0dabde640194fa85a76599287099b0aee7cdcfdebe5abceb11ad",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/tools/compact_regret.py": "4cff184154657d6e1040536fd02a1cd25bb518e8a813a67b72851dd6f1882d60",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/tools/fullhouse_v3_common.py": "ff6bb05e72464fc833b4040a6c51e5f40834c8667da813c8b8bff1cad0069e37",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/tools/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/tools/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/tools/root_regret_replay.py": "0078f0cde6631e3b8ba12dd134523521a5a6f7ffd0bc5e88b7c0bce8ee9c349d",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/tools/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/tools/train_compact_bounded.py": "969a62df95054de733bc161b417d826d9aefd522e61f1587570243b46f71180c",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/tools/train_compact_selfplay.py": "ced4b1817a837c83bd0f28ef640bfa0220fe1bd2bb5142a9ef0e04d48fd35b51",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/current_00120.npz": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/current_00240.npz": "29c8b7dd5f84ac89e93d9b6846cda7a6b7ab50af12ba6a4bdf94d8404b34afb2",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/current_00120.npz": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/current_00240.npz": "6bb6bfd8e03e03f1f7b937116b9ba27da7627286873c6976985f3f81b62df7e6",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/current_00120.npz": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/current_00240.npz": "738515f8a7a0b49dfa3f5ee4c464ed1f0952dc7800026f031e9651ee5ad81f9b"
+  },
+  "protected_registry_files": {
+    "/workspace/deep/artifacts/compact-v4/current.json": "efc03c574b9e3df7e066c743c9753733656d9ace474cb6cf214ad34fd28856f2",
+    "/workspace/deep/artifacts/retraining-loop.json": "87149c94902b2ac0d48ce2a1dc7c34af71309a12dd400927fa7f48e9b9045ea4",
+    "/workspace/deep/artifacts/continuation-study/current.json": "8f136f501b3da696bca1749d3d6977d0ccf313151dc6eb89b496d593fa83be01",
+    "/workspace/deep/artifacts/refit-probe/current.json": "fa07aa7701346ebaf95252b5e875901f6d18a9b8ea2a027c6ce1eb012ee62e67",
+    "/workspace/deep/artifacts/foundation-study/current.json": "bd1c10c6d4d0467234d477bda5e7cfdd9a29b3a1fb0120e9d1b63970574de6ec"
+  },
+  "prior_card_ranges": {
+    "artifacts/compact-v4/20261112T025126577365Z/config.json": [
+      2026111201,
+      2026113201
+    ],
+    "artifacts/compact-v4/20261112T032318825281Z/config.json": [
+      2026111203,
+      2026113203
+    ],
+    "artifacts/foundation-study/20261112T053521994344Z/config.json": [
+      2026140000,
+      2026142000
+    ],
+    "artifacts/backup-audits/bounded-recovery-20261113/restored/frozen/artifacts/continuation-study/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/backup-audits/bounded-recovery-20261113/restored/frozen/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/retraining-smoke/20261112T024445071933Z/config.json": [
+      220261112,
+      220261114
+    ],
+    "artifacts/refit-probe/20261112T050839072733Z/config.json": [
+      2026130000,
+      2026132000
+    ],
+    "artifacts/refit-probe/20261112T060737163350Z/config.json": [
+      2026150000,
+      2026152000
+    ],
+    "artifacts/refit-probe/20261112T043945051666Z/config.json": [
+      2026120000,
+      2026122000
+    ],
+    "artifacts/bounded-validation/20261113T014100Z/bounded/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/bounded-validation/20261113T014100Z/legacy/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/continuation-study/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "reports/compact-v4/20261110T085438491435Z/config.json": [
+      190261110,
+      190263110
+    ],
+    "reports/compact-v4/20261112T025126577365Z/config.json": [
+      2026111201,
+      2026113201
+    ],
+    "reports/compact-v4/20261112T024445071933Z/config.json": [
+      220261112,
+      220261114
+    ],
+    "reports/compact-v4/20261110T022413561323Z/config.json": [
+      170261110,
+      170263110
+    ],
+    "reports/compact-v4/20261112T032318825281Z/config.json": [
+      2026111203,
+      2026113203
+    ],
+    "reports/foundation-study/20261112T053521994344Z/config.json": [
+      2026140000,
+      2026142000
+    ],
+    "reports/fullhouse-v3/20261109T034714104421Z/config.json": [
+      160261109,
+      160263109
+    ],
+    "reports/refit-probe/20261112T050839072733Z/config.json": [
+      2026130000,
+      2026132000
+    ],
+    "reports/refit-probe/20261112T060737163350Z/config.json": [
+      2026150000,
+      2026152000
+    ],
+    "reports/refit-probe/20261112T043945051666Z/config.json": [
+      2026120000,
+      2026122000
+    ],
+    "reports/continuation-study/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ]
+  },
+  "planned_evaluations": 36,
+  "planned_hands": 4320000,
+  "no_model_promotion": true,
+  "no_automatic_retry": true,
+  "method_audit_sha256": "e9907554e26bee466120b354e950e954145a7936b19ac35ef74f125d544721de",
+  "preparation_sha256": "005b314bead42356eefd533fce8d823265decd741c83ea04ea5ac8cc5b5e9391"
+}

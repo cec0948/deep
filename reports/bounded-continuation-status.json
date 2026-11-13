@@ -1,0 +1,87 @@
+{
+  "observed_utc": "2026-11-13T02:04:45.022757+00:00",
+  "run": "20261113T014811152621Z",
+  "status": "running",
+  "phase": "training",
+  "status_updated_utc": "2026-11-13T02:04:44.807182+00:00",
+  "status_age_seconds": 0.215575,
+  "supervisor_alive": true,
+  "seed_progress": {
+    "342": {
+      "checkpoint_iteration": 258,
+      "latest_completed_round": 258,
+      "additional_saved_selfplay_iterations": 18,
+      "worker_alive": true,
+      "recorded_state": "running"
+    },
+    "343": {
+      "checkpoint_iteration": 258,
+      "latest_completed_round": 259,
+      "additional_saved_selfplay_iterations": 18,
+      "worker_alive": true,
+      "recorded_state": "running"
+    },
+    "344": {
+      "checkpoint_iteration": 258,
+      "latest_completed_round": 259,
+      "additional_saved_selfplay_iterations": 18,
+      "worker_alive": true,
+      "recorded_state": "running"
+    }
+  },
+  "parent_selfplay_iteration": 240,
+  "planned_selfplay_iteration": 360,
+  "completed_training_stages": [],
+  "training_stages": {},
+  "training_complete": false,
+  "study_complete": false,
+  "evaluation": {
+    "recorded_status": "running",
+    "evaluator_alive": true,
+    "completed_evaluations": 1,
+    "planned_evaluations": 36,
+    "verified_hands": 120000,
+    "status_updated_utc": "2026-11-13T02:04:43.760886+00:00"
+  },
+  "completed_evaluations": 1,
+  "planned_evaluations": 36,
+  "planned_hands": 4320000,
+  "independent_card_blocks": 20000,
+  "adoption_decisions": {},
+  "external_checkpoint": {
+    "kind": "training-checkpoint",
+    "run": "20261112T070916841250Z",
+    "iterations": {
+      "342": 240,
+      "343": 240,
+      "344": 240
+    },
+    "bytes": 87401607,
+    "recorded_at": "2026-11-13T01:00:23.923505+00:00",
+    "verified_remote_size": true,
+    "verified_owner_only": true,
+    "remote_checksum_available": false,
+    "resumable_selfplay": false,
+    "verification_scope": "Previously recorded private-index verification; this publisher makes no Drive request",
+    "checkpoint_mode": "compact-bounded-replay-recovery-v1",
+    "exact_legacy_resume": false,
+    "warm_start_state_verified": true,
+    "historical_mixture_available": false,
+    "scope": "Previously verified parent240 recovery; no new study stage claimed"
+  },
+  "source_provenance_verified": true,
+  "connection_audit_passed": true,
+  "original_registries_unchanged": true,
+  "historical_mixture_created": false,
+  "replay_capacity_rows_per_seat": 100000,
+  "model_replaced": false,
+  "error_present": false,
+  "failure_stage": null,
+  "next_action": "Observe existing supervised study; no duplicate launch or threshold change",
+  "limitations": [
+    "Liveness is observed only at observed_utc; recorded timestamps do not prove continued execution",
+    "Training stage completion is separate from the full4320000-hand evaluation",
+    "Shared cards across seats and fixed training seeds are20000 statistical blocks, not4320000 independent observations",
+    "Offsite backup facts are prior private-index verifications; this publisher does not request Drive checksums"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "purpose": "Newly authorized online self-play from the lossless compact240 recovery, with fixed replay and current policies only",
+  "seeds": [342, 343, 344],
+  "initial_iteration": 240,
+  "stages": [300, 360],
+  "evaluation_iterations": [120, 240, 300, 360],
+  "variants": ["current"],
+  "evaluation_fields": ["public", "mixed", "noregrets"],
+  "evaluation_deals": 20000,
+  "evaluation_deal_seed": 2026200000,
+  "evaluation_seconds_per_cell": 2400,
+  "training_seconds_per_stage": 5400,
+  "max_seconds": 14400,
+  "promotion": "none",
+  "planned_evaluations": 36,
+  "planned_hands": 4320000,
+  "adoption_baseline": "original current120, using the unchanged four conditions; parentcurrent240 comparisons diagnose additional learning",
+  "continuation_rule": "Complete the fixed300 and360 observations unless execution, provenance, finite-state or fitting-quality checks fail; no automatic retry, extension beyond360 or model replacement",
+  "storage_rule": "Latest policy and at most100000 replay rows per seat; no historical policy mixture; keep only declared stage checkpoints and latest recovery locally, and use compact recovery for offsite backups",
+  "limitations": [
+    "The existing51-feature representation and scaled balanced fitting remain unchanged; the storage change is not a learning-method improvement",
+    "No claim of a faithful six-player equilibrium solver or professional strength",
+    "The20000 fresh card blocks are shared across seats, fixed training seeds and checkpoints; repeated observations are not independent final holdouts",
+    "Nominal95% paired intervals are conditional on three fixed seeds and are not adjusted for multiplicity"
+  ]
+}

@@ -1,5 +1,7 @@
 # 학습 표본과 고정 용량 백업
 
+2026-11-13 후속 학습: 사용자가 경량 복구본 연결 검증 후 진행을 승인해 별도240→300→360회 자기대전을 시작했다. 새 실행은 `artifacts/bounded-continuation/current.json`, 관측은 `reports/bounded-continuation-status.json`, 계획은 [추가 학습 기록](retraining-bounded-continuation-20261113.md)을 따른다. 기존240회 실험은 완료 상태로 보존한다.
+
 2026-11-13 사용자는 최신 모델과 제한된 학습 표본을 유지하고, 학습 회차와 함께 커지는 백업을 줄이도록 승인했다. 최신240회 후보의 가중치와 학습 표본은 그대로 보존하고, 평균 정책용 과거 모델 이력을 제외한 `compact-bounded-replay-recovery-v1` 복구본으로 Drive 백업을 전환했다. 추가 학습·모델 채택·기존240회 계획 연장은 실행하지 않았다.
 
 ## 실제 정리 결과
