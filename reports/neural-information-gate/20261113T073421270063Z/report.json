@@ -1,0 +1,216 @@
+{
+  "format": "full-information-neural-gate-v1",
+  "status": "complete",
+  "completed_utc": "2026-11-13T07:35:11.575266+00:00",
+  "elapsed_seconds": 49.05192781299411,
+  "seed_results": [
+    {
+      "seed": 71,
+      "game": "leduc_poker",
+      "shared_neural_approximator": true,
+      "tabular_approximator_used": false,
+      "information_state_tensor_size": 30,
+      "padded_input_dimension": 51,
+      "information_sets": 936,
+      "component_checks": {
+        "hand_derived_counterfactual_root_target_max_error": null,
+        "independent_reference_first_iteration_regret_max_error": 3.122502256758253e-17,
+        "actual_conditional_sampler_iteration_weighted_target_max_error": 6.103515625e-05,
+        "actual_conditional_sampler_iteration_weighted_target_max_relative_error": 1.3865831167143858e-07,
+        "synthetic_scaling_fixture_multiplier": 2485.744574555296,
+        "actual_scaled_sampler_regret_matching_max_error": 1.7560483067668997e-08,
+        "nontrivial_positive_scaling_exercised": true,
+        "reach_weighted_average_max_error": 2.7755575615628914e-17,
+        "missing_own_reach_negative_control_detected": true,
+        "full_information_adapter_unique_infosets": 936,
+        "passed": true
+      },
+      "learning_curve": [
+        {
+          "iteration": 0,
+          "average_exploitability": 2.373611111111111,
+          "current_exploitability": 2.373611111111111
+        },
+        {
+          "iteration": 1,
+          "average_exploitability": 2.373611111111111,
+          "current_exploitability": 3.061168458886098
+        },
+        {
+          "iteration": 4,
+          "average_exploitability": 1.2402891464685335,
+          "current_exploitability": 1.2276572249731021
+        },
+        {
+          "iteration": 12,
+          "average_exploitability": 0.7605144711944094,
+          "current_exploitability": 1.4149324630847073
+        },
+        {
+          "iteration": 24,
+          "average_exploitability": 0.4391771965546269,
+          "current_exploitability": 1.3149474023666783
+        },
+        {
+          "iteration": 32,
+          "average_exploitability": 0.378416982498886,
+          "current_exploitability": 1.417380330751448
+        }
+      ],
+      "final_fit": {
+        "loss": 0.3541344058176037,
+        "global_target_unit": 0.014104477629877831,
+        "full_replay_normalized_weighted_mse": 0.05010003693817252,
+        "shared_parameters": 23813
+      },
+      "independent_average_accumulation_max_error": 5.551115123125783e-16,
+      "neural_curve_gate_passed": true,
+      "neural_checkpoint_sha256": "c61d5f947069d418357f70409910ed93f8950724510140af592f0d5c9c75fe5f",
+      "elapsed_seconds": 15.945131072003278
+    },
+    {
+      "seed": 72,
+      "game": "leduc_poker",
+      "shared_neural_approximator": true,
+      "tabular_approximator_used": false,
+      "information_state_tensor_size": 30,
+      "padded_input_dimension": 51,
+      "information_sets": 936,
+      "component_checks": {
+        "hand_derived_counterfactual_root_target_max_error": null,
+        "independent_reference_first_iteration_regret_max_error": 3.122502256758253e-17,
+        "actual_conditional_sampler_iteration_weighted_target_max_error": 6.103515625e-05,
+        "actual_conditional_sampler_iteration_weighted_target_max_relative_error": 1.3865831167143858e-07,
+        "synthetic_scaling_fixture_multiplier": 2485.744574555296,
+        "actual_scaled_sampler_regret_matching_max_error": 1.7560483067668997e-08,
+        "nontrivial_positive_scaling_exercised": true,
+        "reach_weighted_average_max_error": 2.7755575615628914e-17,
+        "missing_own_reach_negative_control_detected": true,
+        "full_information_adapter_unique_infosets": 936,
+        "passed": true
+      },
+      "learning_curve": [
+        {
+          "iteration": 0,
+          "average_exploitability": 2.373611111111111,
+          "current_exploitability": 2.373611111111111
+        },
+        {
+          "iteration": 1,
+          "average_exploitability": 2.373611111111111,
+          "current_exploitability": 2.690572014987426
+        },
+        {
+          "iteration": 4,
+          "average_exploitability": 1.1756082821224356,
+          "current_exploitability": 0.7093659252719571
+        },
+        {
+          "iteration": 12,
+          "average_exploitability": 0.6265755771216563,
+          "current_exploitability": 0.9735601854580376
+        },
+        {
+          "iteration": 24,
+          "average_exploitability": 0.35076648268385224,
+          "current_exploitability": 1.9920714310082166
+        },
+        {
+          "iteration": 32,
+          "average_exploitability": 0.391498450329291,
+          "current_exploitability": 2.069418480629078
+        }
+      ],
+      "final_fit": {
+        "loss": 0.3605489109759219,
+        "global_target_unit": 0.013839476101016199,
+        "full_replay_normalized_weighted_mse": 0.0627958393596373,
+        "shared_parameters": 23813
+      },
+      "independent_average_accumulation_max_error": 4.440892098500626e-16,
+      "neural_curve_gate_passed": true,
+      "neural_checkpoint_sha256": "7c61dea6f1ff39030cf713c61595b9fbcb348cf11f0ea59bef5b6302a142ce9c",
+      "elapsed_seconds": 15.695387804997154
+    },
+    {
+      "seed": 73,
+      "game": "leduc_poker",
+      "shared_neural_approximator": true,
+      "tabular_approximator_used": false,
+      "information_state_tensor_size": 30,
+      "padded_input_dimension": 51,
+      "information_sets": 936,
+      "component_checks": {
+        "hand_derived_counterfactual_root_target_max_error": null,
+        "independent_reference_first_iteration_regret_max_error": 3.122502256758253e-17,
+        "actual_conditional_sampler_iteration_weighted_target_max_error": 6.103515625e-05,
+        "actual_conditional_sampler_iteration_weighted_target_max_relative_error": 1.3865831167143858e-07,
+        "synthetic_scaling_fixture_multiplier": 2485.744574555296,
+        "actual_scaled_sampler_regret_matching_max_error": 1.7560483067668997e-08,
+        "nontrivial_positive_scaling_exercised": true,
+        "reach_weighted_average_max_error": 2.7755575615628914e-17,
+        "missing_own_reach_negative_control_detected": true,
+        "full_information_adapter_unique_infosets": 936,
+        "passed": true
+      },
+      "learning_curve": [
+        {
+          "iteration": 0,
+          "average_exploitability": 2.373611111111111,
+          "current_exploitability": 2.373611111111111
+        },
+        {
+          "iteration": 1,
+          "average_exploitability": 2.373611111111111,
+          "current_exploitability": 2.6864443782493796
+        },
+        {
+          "iteration": 4,
+          "average_exploitability": 1.1087100319019254,
+          "current_exploitability": 0.8319613829079309
+        },
+        {
+          "iteration": 12,
+          "average_exploitability": 0.6987616729479542,
+          "current_exploitability": 0.7369587746051351
+        },
+        {
+          "iteration": 24,
+          "average_exploitability": 0.5087623431698226,
+          "current_exploitability": 2.8237126001480757
+        },
+        {
+          "iteration": 32,
+          "average_exploitability": 0.35577271029166696,
+          "current_exploitability": 1.2063949386614086
+        }
+      ],
+      "final_fit": {
+        "loss": 0.33651759680651594,
+        "global_target_unit": 0.015848728476069537,
+        "full_replay_normalized_weighted_mse": 0.0638009320116006,
+        "shared_parameters": 23813
+      },
+      "independent_average_accumulation_max_error": 4.440892098500626e-16,
+      "neural_curve_gate_passed": true,
+      "neural_checkpoint_sha256": "43e6c92d8291440105e55446f5c7084318d195f838fd6a1cda8aaf4c9f705577",
+      "elapsed_seconds": 15.567063254013192
+    }
+  ],
+  "all_three_neural_gates_passed": true,
+  "shared_neural_training_executed": true,
+  "six_player_policy_trained": false,
+  "production_six_player_path_validated": false,
+  "exact_full_tree_sampling": true,
+  "fixed_six_player_action_abstraction_validated": false,
+  "source_sha256": {
+    "/workspace/deep/scripts/train_neural_information_gate.py": "7988b9edd781e262cfc6bcc6e21491b454efc1422243448dfca357ab35d55e3c",
+    "/workspace/deep/scripts/validate_strength_training.py": "de1dfa724a053ce9488bebb275e68a3074557266f8a6a0cc16ce7b2ac0f9245b",
+    "/workspace/deep/scripts/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/scripts/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98"
+  },
+  "plan_sha256": "f002a52a65dd36d890d6b0493b444cb83e7527644e7396debe55ee77557c569a",
+  "automatic_retry": false,
+  "model_promoted": false,
+  "next_gate": "Richer six-player observation collector and external-sampling neural path; small-game improvement is not six-player strength"
+}

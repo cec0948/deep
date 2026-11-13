@@ -1,0 +1,33 @@
+{
+  "format": "full-information-neural-gate-v1",
+  "created_utc": "2026-11-13T07:34:22.523395+00:00",
+  "game": "leduc_poker",
+  "budget": {
+    "seeds": [
+      71,
+      72,
+      73
+    ],
+    "iterations": 32,
+    "fit_steps": 256,
+    "batch_size": 128,
+    "hidden": 128,
+    "learning_rate": 0.003,
+    "max_seconds": 480.0
+  },
+  "architecture": "shared51\u2192128\u2192128\u21925ReLU MLP; reset each iteration",
+  "collector": "Own exact full-tree counterfactual regret collector",
+  "fitter": "Existing ScaledRegretSampler and train_conditional; explicit global target-unit normalization",
+  "strategy_average": "Exact reach-weighted average of neural-generated policies, not a trained average-policy network",
+  "gate": "All3 seeds: average exploitability below50percent uniform; weighted normalized regression MSE<1; mathematical checks pass",
+  "source_sha256": {
+    "/workspace/deep/scripts/train_neural_information_gate.py": "7988b9edd781e262cfc6bcc6e21491b454efc1422243448dfca357ab35d55e3c",
+    "/workspace/deep/scripts/validate_strength_training.py": "de1dfa724a053ce9488bebb275e68a3074557266f8a6a0cc16ce7b2ac0f9245b",
+    "/workspace/deep/scripts/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/scripts/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98"
+  },
+  "six_player_policy": false,
+  "selfplay_extension": false,
+  "automatic_retry": false,
+  "model_promotion": false
+}

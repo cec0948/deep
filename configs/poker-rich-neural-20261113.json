@@ -1,0 +1,107 @@
+{
+  "purpose": "User-approved continued strength-first rich-input neural selfplay with inherited360teacher",
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "stages": [
+    12,
+    48,
+    96
+  ],
+  "iterations": 96,
+  "parent_iteration": 360,
+  "traversals": 64,
+  "buffer_capacity": 5000,
+  "main_steps": 256,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "checkpoint_every": 6,
+  "width": 128,
+  "max_nodes_per_iteration": 200000,
+  "fitting_max_prior_mse_ratio": 1.05,
+  "prerequisites_passed": true,
+  "prerequisite_tests_passed": 68,
+  "neural_gate_report": "/workspace/deep/artifacts/neural-information-gate/20261113T073421270063Z/report.json",
+  "source": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source",
+  "teachers": {
+    "342": {
+      "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/current_00360.npz",
+      "sha256": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76"
+    },
+    "343": {
+      "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/current_00360.npz",
+      "sha256": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517"
+    },
+    "344": {
+      "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/current_00360.npz",
+      "sha256": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7"
+    }
+  },
+  "baselines120": {
+    "342": {
+      "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/current_00120.npz",
+      "sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8"
+    },
+    "343": {
+      "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/current_00120.npz",
+      "sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c"
+    },
+    "344": {
+      "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/current_00120.npz",
+      "sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3"
+    }
+  },
+  "evaluation_enabled": true,
+  "evaluation_fields": [
+    "public",
+    "mixed",
+    "noregrets"
+  ],
+  "evaluation_deals": 20000,
+  "evaluation_deal_seed": 2035000000,
+  "evaluation_seconds_per_cell": 2400,
+  "max_seconds": 21600,
+  "training_seconds_per_stage": 5400,
+  "seconds_per_training_worker": 5400,
+  "promotion": "none",
+  "automatic_retry": false,
+  "teacher_knowledge_inherited": true,
+  "parent_rng_inherited": false,
+  "old51_replay_transferred": false,
+  "average_policy_available": false,
+  "decision_search_budget_seconds": [
+    5,
+    10
+  ],
+  "frozen_files": {
+    "/workspace/deep/scripts/run_rich_poker_study.py": "d699fd2cf313859dec021fd83429631f1732d042afe01c92e3476fc07e1aa27e",
+    "/workspace/deep/scripts/train_rich_selfplay.py": "ed8b63eade6536feee139ef27dea14e4e716c4633590a34f15dee84c9aef84e9",
+    "/workspace/deep/scripts/rich_regret_model.py": "499d51fa5589404a6e1c332f700f86ded4e4651c2dc977140fa465a539ac8d72",
+    "/workspace/deep/scripts/rich_poker_observation.py": "c68e9b5e8221966d28f5221b4c37c469d317ea3f4a34a8c13ab28fec5fe1de59",
+    "/workspace/deep/scripts/rich_poker_traversal.py": "1e20901729e5cf5b895d52eb3f13d33f5a5bee582a1997a321d47cf079f21832",
+    "/workspace/deep/scripts/rich_poker_runtime.py": "2f6e87c4244e433a3029d897744a7fe63a060c827704c80db1d81ef18c6585d8",
+    "/workspace/deep/scripts/evaluate_rich_selfplay.py": "dfd9786ccfec4515ce20d610e829ea26a0e71f0a01e759bfe3db6a1d26505c9d",
+    "/workspace/deep/scripts/snapshot_rich_selfplay.py": "b044fd83b24fdf840945f8ee1b91dff7282a8a67905bbfcb66e5e0d39278f128",
+    "/workspace/deep/scripts/plan_rich_backup_retention.py": "a9f28b1beefb5682ed62fc5f85d5b7073531671f573446128187476c126f6c65",
+    "/workspace/deep/scripts/fullhouse_runtime.py": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+    "/workspace/deep/scripts/fullhouse_v4_runtime.py": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+    "/workspace/deep/scripts/poker_public_state.py": "1e8931ee22217cbd1c2bce1ee91690990017bcae57dcaa23020edd4694c9036d",
+    "/workspace/deep/scripts/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/scripts/compact_lightweight_backup.py": "70110cc4be6b0dabde640194fa85a76599287099b0aee7cdcfdebe5abceb11ad",
+    "/workspace/deep/scripts/fullhouse_v3_common.py": "ff6bb05e72464fc833b4040a6c51e5f40834c8667da813c8b8bff1cad0069e37",
+    "/workspace/deep/scripts/evaluate_compact_learning_curve.py": "241b633efdd48d8d4f4949742f9917792e98790cee48e99a973be40520188b05",
+    "/workspace/deep/scripts/run_compact_refit_probe.py": "baa70d4fef2d9047045c0417afb2e7f482d6e5b8a5f348de139fc5bd1a75b8df",
+    "/workspace/deep/scripts/train_neural_information_gate.py": "7988b9edd781e262cfc6bcc6e21491b454efc1422243448dfca357ab35d55e3c",
+    "/workspace/deep/configs/fullhouse-model.json": "24fdf60e5698c8baa6737eaa1dd9c41bab7c94f9c5f8b05f7292d2b9e346e9ae",
+    "/workspace/deep/.cache/noregrets/target/release/poker-bridge": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+    "/workspace/deep/.cache/fullhouse-bot/bot/features.py": "b43361365ed911f358b3588f0c487614029158bf1420c5ffec8260bd427475c8",
+    "/workspace/deep/.cache/fullhouse-bot/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/.cache/fullhouse-bot/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/.cache/fullhouse-bot/data/deep_cfr_model.npz": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+    "/workspace/deep/artifacts/neural-information-gate/20261113T073421270063Z/report.json": "9f0df75a5dc65912eeaa9459499e51e240728174512bf99c1c7dde17d07fc588",
+    "/workspace/deep/artifacts/selfplay/current.json": "e0dd3e81ad40a36d948e4d59425d2f170b175f8e67f985bd74f30ba7442fd58c",
+    "/workspace/deep/artifacts/selfplay/20261112T022813820557Z/blueprint-1000000.bin": "4d86512cd76bb7d863a14e11c0fae2bf44f3561b57225d6abc593c41a27fe648"
+  }
+}

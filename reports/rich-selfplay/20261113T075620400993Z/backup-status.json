@@ -1,0 +1,40 @@
+{
+  "kind": "training-checkpoint",
+  "checkpoint_mode": "rich-residual-bounded-replay-v1",
+  "training_family": "rich-regret-residual",
+  "run": "20261113T075620400993Z",
+  "family_iterations": {
+    "342": 12,
+    "343": 12,
+    "344": 12
+  },
+  "parent_iteration": 360,
+  "bytes": 113090689,
+  "sha256": "a6cfdefd9760bb8965e53d062933bf50d0ebb138e69e24996d6d55d15d785308",
+  "training_stage_completed": true,
+  "resumable_selfplay": true,
+  "resumable_worker_family": "rich-regret-residual",
+  "exact_legacy_resume": false,
+  "warm_start_state_verified": true,
+  "historical_mixture_available": false,
+  "average_policy_available": false,
+  "restoration_verified": true,
+  "recorded_at": "2026-11-13T08:04:04.095630+00:00",
+  "verified_remote_size": true,
+  "verified_owner_only": true,
+  "remote_checksum_available": false,
+  "remote_sha256_verified": false,
+  "study_evaluation_complete": false,
+  "remote_files": 3,
+  "split_part_bytes": [
+    67108864,
+    45981825
+  ],
+  "recombined_local_sha256_verified": true,
+  "relocated_restoration_verified": true,
+  "private_index_recorded": true,
+  "managed_remote_bytes": 1179681407,
+  "budget_bytes": 2147483648,
+  "cleanup_candidates": 0,
+  "details_location": "Private artifacts/offsite-backups.json; no Drive identifiers published"
+}
