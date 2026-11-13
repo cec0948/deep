@@ -4,13 +4,13 @@
   "training_family": "rich-regret-residual",
   "run": "20261113T075620400993Z",
   "family_iterations": {
-    "342": 12,
-    "343": 12,
-    "344": 12
+    "342": 96,
+    "343": 96,
+    "344": 96
   },
   "parent_iteration": 360,
-  "bytes": 113090689,
-  "sha256": "a6cfdefd9760bb8965e53d062933bf50d0ebb138e69e24996d6d55d15d785308",
+  "bytes": 122723204,
+  "sha256": "2d97f7ffff17ee4a6146e5f083e13d6aec612b47fa7ae1704ff948994f0bfaf1",
   "training_stage_completed": true,
   "resumable_selfplay": true,
   "resumable_worker_family": "rich-regret-residual",
@@ -19,22 +19,29 @@
   "historical_mixture_available": false,
   "average_policy_available": false,
   "restoration_verified": true,
-  "recorded_at": "2026-11-13T08:04:04.095630+00:00",
+  "recorded_at": "2026-11-13T08:23:45.603837+00:00",
   "verified_remote_size": true,
   "verified_owner_only": true,
   "remote_checksum_available": false,
   "remote_sha256_verified": false,
   "study_evaluation_complete": false,
+  "observed_utc": "2026-11-13T08:26:47.323581+00:00",
   "remote_files": 3,
   "split_part_bytes": [
     67108864,
-    45981825
+    55614340
   ],
   "recombined_local_sha256_verified": true,
   "relocated_restoration_verified": true,
   "private_index_recorded": true,
-  "managed_remote_bytes": 1179681407,
+  "managed_backups": 8,
+  "managed_files": 24,
+  "managed_remote_bytes": 1189313922,
   "budget_bytes": 2147483648,
   "cleanup_candidates": 0,
+  "superseded_rich12_deleted_remote": true,
+  "superseded_deleted_files": 3,
+  "deletion_readback": "NOT_FOUND for all three superseded rich12 files",
+  "original360_parent_preserved": true,
   "details_location": "Private artifacts/offsite-backups.json; no Drive identifiers published"
 }

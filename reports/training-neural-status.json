@@ -1,26 +1,28 @@
 {
   "status": "running",
-  "phase": "training",
-  "observed_utc": "2026-11-13T08:04:46.243570+00:00",
+  "phase": "evaluating",
+  "observed_utc": "2026-11-13T08:27:13.253241+00:00",
   "run": "20261113T075620400993Z",
   "supervisor_pid": 47843,
   "supervisor_start": "11087276",
-  "elapsed_seconds": 462.91412422100257,
+  "elapsed_seconds": 1809.9233219140006,
   "max_seconds": 21600,
   "parent_iteration": 360,
   "new_family": "rich-regret-residual",
   "planned_family_iterations": 96,
-  "current_stage": 48,
+  "current_stage": 96,
   "completed_training_stages": [
-    12
+    12,
+    48,
+    96
   ],
-  "training_complete": false,
+  "training_complete": true,
   "evaluation_complete": false,
   "study_complete": false,
   "seed_progress": {
     "342": {
-      "new_family_iteration": 48,
-      "checkpoint_iteration": 48,
+      "new_family_iteration": 96,
+      "checkpoint_iteration": 96,
       "worker_alive": false,
       "recorded_status": "complete",
       "replay_rows": [
@@ -32,55 +34,25 @@
         5000
       ],
       "fitting": {
-        "loss": 0.10521246492862701,
+        "loss": 0.11838856339454651,
         "rows": 30000,
-        "eligible_rows": 29830,
+        "eligible_rows": 29861,
         "steps": 256,
         "opening_frozen": true,
         "objective": "uniform_replay_sampling_iteration_weighted_raw_BB_MSE",
         "fixed_BB_normalizer": 100.0,
         "fixed_monitor_rows": 512,
-        "replay_mse_before_bb2": 1344.409423828125,
-        "replay_mse_after_bb2": 1342.9710693359375,
-        "teacher_prior_mse_bb2": 1484.9635009765625,
-        "relative_policy_tv": 0.21240705251693726,
+        "replay_mse_before_bb2": 1305.167724609375,
+        "replay_mse_after_bb2": 1304.8294677734375,
+        "teacher_prior_mse_bb2": 1404.6737060546875,
+        "relative_policy_tv": 0.2166510373353958,
         "monitor_scope": "Deterministic retained-replay subset, not independent strength or heldout performance"
       },
-      "last_iteration_seconds": 7.439163104005274
+      "last_iteration_seconds": 7.881188558996655
     },
     "343": {
-      "new_family_iteration": 46,
-      "checkpoint_iteration": 42,
-      "worker_alive": true,
-      "recorded_status": "running",
-      "replay_rows": [
-        5000,
-        5000,
-        5000,
-        5000,
-        5000,
-        5000
-      ],
-      "fitting": {
-        "loss": 0.11017904430627823,
-        "rows": 30000,
-        "eligible_rows": 29881,
-        "steps": 256,
-        "opening_frozen": true,
-        "objective": "uniform_replay_sampling_iteration_weighted_raw_BB_MSE",
-        "fixed_BB_normalizer": 100.0,
-        "fixed_monitor_rows": 512,
-        "replay_mse_before_bb2": 1033.8194580078125,
-        "replay_mse_after_bb2": 1005.2736206054688,
-        "teacher_prior_mse_bb2": 1110.7374267578125,
-        "relative_policy_tv": 0.22363677620887756,
-        "monitor_scope": "Deterministic retained-replay subset, not independent strength or heldout performance"
-      },
-      "last_iteration_seconds": 7.29299929800618
-    },
-    "344": {
-      "new_family_iteration": 48,
-      "checkpoint_iteration": 48,
+      "new_family_iteration": 96,
+      "checkpoint_iteration": 96,
       "worker_alive": false,
       "recorded_status": "complete",
       "replay_rows": [
@@ -92,32 +64,62 @@
         5000
       ],
       "fitting": {
-        "loss": 0.13230156898498535,
+        "loss": 0.12334950268268585,
         "rows": 30000,
-        "eligible_rows": 29848,
+        "eligible_rows": 29854,
         "steps": 256,
         "opening_frozen": true,
         "objective": "uniform_replay_sampling_iteration_weighted_raw_BB_MSE",
         "fixed_BB_normalizer": 100.0,
         "fixed_monitor_rows": 512,
-        "replay_mse_before_bb2": 1502.75048828125,
-        "replay_mse_after_bb2": 1508.4139404296875,
-        "teacher_prior_mse_bb2": 1639.040283203125,
-        "relative_policy_tv": 0.19317051768302917,
+        "replay_mse_before_bb2": 1266.4471435546875,
+        "replay_mse_after_bb2": 1290.0914306640625,
+        "teacher_prior_mse_bb2": 1298.2120361328125,
+        "relative_policy_tv": 0.22677408158779144,
         "monitor_scope": "Deterministic retained-replay subset, not independent strength or heldout performance"
       },
-      "last_iteration_seconds": 7.572657964003156
+      "last_iteration_seconds": 8.016921249000006
+    },
+    "344": {
+      "new_family_iteration": 96,
+      "checkpoint_iteration": 96,
+      "worker_alive": false,
+      "recorded_status": "complete",
+      "replay_rows": [
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000
+      ],
+      "fitting": {
+        "loss": 0.1479651778936386,
+        "rows": 30000,
+        "eligible_rows": 29846,
+        "steps": 256,
+        "opening_frozen": true,
+        "objective": "uniform_replay_sampling_iteration_weighted_raw_BB_MSE",
+        "fixed_BB_normalizer": 100.0,
+        "fixed_monitor_rows": 512,
+        "replay_mse_before_bb2": 1304.659423828125,
+        "replay_mse_after_bb2": 1285.08056640625,
+        "teacher_prior_mse_bb2": 1340.322509765625,
+        "relative_policy_tv": 0.23025648295879364,
+        "monitor_scope": "Deterministic retained-replay subset, not independent strength or heldout performance"
+      },
+      "last_iteration_seconds": 8.096476081002038
     }
   },
   "running": {
-    "eval/public-seed-342-original120": {
-      "pid": 47852,
-      "process_start": "11087349",
+    "eval/public-seed-344-original120": {
+      "pid": 48486,
+      "process_start": "11226710",
       "command": [
         "/workspace/.venvs/fullhouse/bin/python",
         "/workspace/deep/scripts/evaluate_rich_selfplay.py",
         "--model",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/baselines/seed-342-current120.npz",
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/baselines/seed-344-current120.npz",
         "--source",
         "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/source",
         "--field",
@@ -129,27 +131,57 @@
         "--timeout",
         "2400",
         "--output",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/evaluation/public-seed-342-original120"
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/evaluation/public-seed-344-original120"
       ]
     },
-    "train/343": {
-      "pid": 47922,
-      "process_start": "11101365",
+    "eval/mixed-seed-344-original120": {
+      "pid": 48563,
+      "process_start": "11232746",
       "command": [
         "/workspace/.venvs/fullhouse/bin/python",
-        "/workspace/deep/scripts/train_rich_selfplay.py",
-        "--campaign",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign",
-        "--seed",
-        "343",
-        "--through",
-        "48"
+        "/workspace/deep/scripts/evaluate_rich_selfplay.py",
+        "--model",
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/baselines/seed-344-current120.npz",
+        "--source",
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/source",
+        "--field",
+        "mixed",
+        "--deals",
+        "20000",
+        "--deal-seed",
+        "2035000000",
+        "--timeout",
+        "2400",
+        "--output",
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/evaluation/mixed-seed-344-original120"
+      ]
+    },
+    "eval/public-seed-342-parent360": {
+      "pid": 48727,
+      "process_start": "11267650",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/evaluate_rich_selfplay.py",
+        "--model",
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/teachers/seed-342.npz",
+        "--source",
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/source",
+        "--field",
+        "public",
+        "--deals",
+        "20000",
+        "--deal-seed",
+        "2035000000",
+        "--timeout",
+        "2400",
+        "--output",
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/evaluation/public-seed-342-parent360"
       ]
     }
   },
-  "completed_evaluations": 0,
+  "completed_evaluations": 7,
   "planned_evaluations": 45,
-  "verified_hands": 0,
+  "verified_hands": 840000,
   "planned_hands": 5400000,
   "independent_card_blocks": 20000,
   "plan_sha256": "3140f0ddb857711769ec0ca9efde562c91499b9d410d3e9ca61e58784379d6ef",
@@ -164,6 +196,16 @@
     "12": {
       "bytes": 113090689,
       "sha256": "a6cfdefd9760bb8965e53d062933bf50d0ebb138e69e24996d6d55d15d785308",
+      "checkpoint_mode": "rich-residual-bounded-replay-v1"
+    },
+    "48": {
+      "bytes": 121803192,
+      "sha256": "01910d62c89afdfbdc8c09a5681fef68bfd86d45ad080f9ed471fe67fa86cd26",
+      "checkpoint_mode": "rich-residual-bounded-replay-v1"
+    },
+    "96": {
+      "bytes": 122723204,
+      "sha256": "2d97f7ffff17ee4a6146e5f083e13d6aec612b47fa7ae1704ff948994f0bfaf1",
       "checkpoint_mode": "rich-residual-bounded-replay-v1"
     }
   },

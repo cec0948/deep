@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "complete": true,
+  "verified_utc": "2026-11-13T08:12:42.100268+00:00",
+  "training_family": "rich-regret-residual",
+  "family_iteration": 96,
+  "parent_iteration": 360,
+  "seeds": [
+    {
+      "seed": 342,
+      "iteration": 96,
+      "feature_dim": 2885,
+      "teacher_sha256": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+      "export_arrays_equal": true,
+      "replay_rows": [
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000
+      ],
+      "all_rng_states_present": true,
+      "checkpoint_directory": "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-342/checkpoints/iter-00096",
+      "checkpoint_files": {
+        "state.json": "c1909a0329d65de6b7a98cd90f30f80b901ffcb70eb29fca1a13769693cb8c9b",
+        "arrays.npz": "d6ea6fdfa6eae3b1bd2e3e9a574c2a5d7107406cb44a1caf1b3e128c00433f30",
+        "current.npz": "6deb4e286828933a1d33d7f775ae8ddf93e9b2e1ba63bdeb22dbf92f928db81e"
+      },
+      "warm_start_state_verified": true
+    },
+    {
+      "seed": 343,
+      "iteration": 96,
+      "feature_dim": 2885,
+      "teacher_sha256": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+      "export_arrays_equal": true,
+      "replay_rows": [
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000
+      ],
+      "all_rng_states_present": true,
+      "checkpoint_directory": "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-343/checkpoints/iter-00096",
+      "checkpoint_files": {
+        "state.json": "9e80723f212d2c896f82d2ffdead326f63db1d9a1ddea59246354a5601205c3e",
+        "arrays.npz": "88fb4c05f1ff437675f05ccb2b701966fd65d59d4aedfdade7e7b22be8e20a40",
+        "current.npz": "1354df31ce72cbec77631486afee0ded5700af0d9a3d4f1d84f1ddb8d47e7e9b"
+      },
+      "warm_start_state_verified": true
+    },
+    {
+      "seed": 344,
+      "iteration": 96,
+      "feature_dim": 2885,
+      "teacher_sha256": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+      "export_arrays_equal": true,
+      "replay_rows": [
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000
+      ],
+      "all_rng_states_present": true,
+      "checkpoint_directory": "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-344/checkpoints/iter-00096",
+      "checkpoint_files": {
+        "state.json": "1d24c4e89114cb4799203bd59f118ac53e2e9a5f3311c077d883c9c20e56d2f2",
+        "arrays.npz": "9ca4b20334fca4e9b67452c5166d3446dc0d0e2011c0b7185ed1ba2bda7dfbef",
+        "current.npz": "0fda368319c90b7f8b558da516bf134e75e6e7db3850a3370d2d2bed7fcf3878"
+      },
+      "warm_start_state_verified": true
+    }
+  ],
+  "average_policy_available": false,
+  "exact_legacy_resume": false
+}
