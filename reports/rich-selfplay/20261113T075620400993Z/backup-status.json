@@ -24,8 +24,8 @@
   "verified_owner_only": true,
   "remote_checksum_available": false,
   "remote_sha256_verified": false,
-  "study_evaluation_complete": false,
-  "observed_utc": "2026-11-13T08:26:47.323581+00:00",
+  "study_evaluation_complete": true,
+  "observed_utc": "2026-11-13T09:59:42.248494+00:00",
   "remote_files": 3,
   "split_part_bytes": [
     67108864,
@@ -43,5 +43,10 @@
   "superseded_deleted_files": 3,
   "deletion_readback": "NOT_FOUND for all three superseded rich12 files",
   "original360_parent_preserved": true,
-  "details_location": "Private artifacts/offsite-backups.json; no Drive identifiers published"
+  "details_location": "Private artifacts/offsite-backups.json; no Drive identifiers published",
+  "study_evaluation_completed_utc": "2026-11-13T09:57:53.857331+00:00",
+  "study_summary_sha256": "65e90e3b96810527660541b87b03bda25c08afd707b6bd24a626d41a9c0d7062",
+  "evaluation_summary_sha256": "3258bc07813fccf9ea414758bc4527fea65850980f9a30f03c260c02780eba73",
+  "archive_includes_final_evaluation": false,
+  "last_remote_metadata_verified_utc": "2026-11-13T09:55:58.683437+00:00"
 }

@@ -1,0 +1,18 @@
+{
+  "observed_utc": "2026-11-13T10:00:21.361033+00:00",
+  "run": "20261113T075620400993Z",
+  "complete": true,
+  "completed_evaluations": 45,
+  "verified_result_file_hashes": 45,
+  "summary_sha256": "65e90e3b96810527660541b87b03bda25c08afd707b6bd24a626d41a9c0d7062",
+  "evaluation_summary_sha256": "3258bc07813fccf9ea414758bc4527fea65850980f9a30f03c260c02780eba73",
+  "all_numeric_aggregates_and_decisions_recomputed_equal": true,
+  "production_raw_hand_replay_verified": true,
+  "production_raw_hand_count": 5400000,
+  "separate_monitor_raw_record_recheck_cells": 36,
+  "separate_monitor_raw_record_recheck_hands": 4320000,
+  "independent_card_blocks": 20000,
+  "model_promoted": false,
+  "automatic_retry": false,
+  "remote_sha256_verified": false
+}

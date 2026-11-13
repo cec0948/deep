@@ -1,11 +1,11 @@
 {
-  "status": "running",
-  "phase": "evaluating",
-  "observed_utc": "2026-11-13T08:27:13.253241+00:00",
+  "status": "complete",
+  "phase": "complete",
+  "observed_utc": "2026-11-13T09:57:53.879324+00:00",
   "run": "20261113T075620400993Z",
   "supervisor_pid": 47843,
   "supervisor_start": "11087276",
-  "elapsed_seconds": 1809.9233219140006,
+  "elapsed_seconds": 7250.549213670005,
   "max_seconds": 21600,
   "parent_iteration": 360,
   "new_family": "rich-regret-residual",
@@ -17,8 +17,8 @@
     96
   ],
   "training_complete": true,
-  "evaluation_complete": false,
-  "study_complete": false,
+  "evaluation_complete": true,
+  "study_complete": true,
   "seed_progress": {
     "342": {
       "new_family_iteration": 96,
@@ -111,77 +111,10 @@
       "last_iteration_seconds": 8.096476081002038
     }
   },
-  "running": {
-    "eval/public-seed-344-original120": {
-      "pid": 48486,
-      "process_start": "11226710",
-      "command": [
-        "/workspace/.venvs/fullhouse/bin/python",
-        "/workspace/deep/scripts/evaluate_rich_selfplay.py",
-        "--model",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/baselines/seed-344-current120.npz",
-        "--source",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/source",
-        "--field",
-        "public",
-        "--deals",
-        "20000",
-        "--deal-seed",
-        "2035000000",
-        "--timeout",
-        "2400",
-        "--output",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/evaluation/public-seed-344-original120"
-      ]
-    },
-    "eval/mixed-seed-344-original120": {
-      "pid": 48563,
-      "process_start": "11232746",
-      "command": [
-        "/workspace/.venvs/fullhouse/bin/python",
-        "/workspace/deep/scripts/evaluate_rich_selfplay.py",
-        "--model",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/baselines/seed-344-current120.npz",
-        "--source",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/source",
-        "--field",
-        "mixed",
-        "--deals",
-        "20000",
-        "--deal-seed",
-        "2035000000",
-        "--timeout",
-        "2400",
-        "--output",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/evaluation/mixed-seed-344-original120"
-      ]
-    },
-    "eval/public-seed-342-parent360": {
-      "pid": 48727,
-      "process_start": "11267650",
-      "command": [
-        "/workspace/.venvs/fullhouse/bin/python",
-        "/workspace/deep/scripts/evaluate_rich_selfplay.py",
-        "--model",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/teachers/seed-342.npz",
-        "--source",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/source",
-        "--field",
-        "public",
-        "--deals",
-        "20000",
-        "--deal-seed",
-        "2035000000",
-        "--timeout",
-        "2400",
-        "--output",
-        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/evaluation/public-seed-342-parent360"
-      ]
-    }
-  },
-  "completed_evaluations": 7,
+  "running": {},
+  "completed_evaluations": 45,
   "planned_evaluations": 45,
-  "verified_hands": 840000,
+  "verified_hands": 5400000,
   "planned_hands": 5400000,
   "independent_card_blocks": 20000,
   "plan_sha256": "3140f0ddb857711769ec0ca9efde562c91499b9d410d3e9ca61e58784379d6ef",
@@ -209,6 +142,6 @@
       "checkpoint_mode": "rich-residual-bounded-replay-v1"
     }
   },
-  "next_action": "Continue the existing fixed96-round family study and its verified evaluation",
+  "next_action": "Analyze the completed fixed study; no automatic extension or promotion",
   "error": null
 }
