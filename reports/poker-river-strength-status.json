@@ -1,0 +1,136 @@
+{
+  "observed_utc": "2026-11-13T05:32:54.608963+00:00",
+  "run": "20261113T052520602966Z",
+  "status": "complete",
+  "completed_utc": "2026-11-13T05:29:47.320800+00:00",
+  "implementation_complete": true,
+  "implementation_scope": "Lossless public observations, training-component validation and a two-active-player river search prototype",
+  "decision_budget_seconds": [
+    5,
+    10
+  ],
+  "tests_passed": 60,
+  "six_player_selfplay_iterations_added": 0,
+  "six_player_policy_weights_changed": false,
+  "training_component_gates_passed": true,
+  "full_information_tabular_candidate_pipeline_gate_passed": true,
+  "production_six_player_neural_path_validated": false,
+  "pilot_selected_cases": 12,
+  "pilot_independent_card_blocks": 7,
+  "pilot_completed_continuations": 48,
+  "pilot_independent_readback_passed": true,
+  "pilot_comparisons": {
+    "search-1s-minus-baseline": {
+      "mean_bb": 0.0,
+      "lower95_bb": 0.0,
+      "upper95_bb": 0.0,
+      "independent_deal_blocks": 7
+    },
+    "search-5s-minus-baseline": {
+      "mean_bb": -8.257857142857143,
+      "lower95_bb": -53.417142526568206,
+      "upper95_bb": 36.901428240853924,
+      "independent_deal_blocks": 7
+    },
+    "search-10s-minus-baseline": {
+      "mean_bb": -8.257857142857143,
+      "lower95_bb": -53.417142526568206,
+      "upper95_bb": 36.901428240853924,
+      "independent_deal_blocks": 7
+    }
+  },
+  "latency_and_usage": {
+    "baseline": {
+      "cases": 12,
+      "hero_decisions": 17,
+      "search_attempted": 0,
+      "search_used": 0,
+      "fallback_decisions": 0,
+      "timeouts": 0,
+      "outside_scope": 0,
+      "reasons": {
+        "baseline": 17
+      },
+      "elapsed_p50_seconds": 0.0005266030057100579,
+      "elapsed_p95_seconds": 0.0007268222048878669,
+      "elapsed_p99_seconds": 0.0007557860389351844,
+      "cfr_iterations": 0
+    },
+    "search-1s": {
+      "cases": 12,
+      "hero_decisions": 17,
+      "search_attempted": 17,
+      "search_used": 0,
+      "fallback_decisions": 17,
+      "timeouts": 16,
+      "outside_scope": 0,
+      "reasons": {
+        "range_deadline": 16,
+        "insufficient_solver_iterations": 1
+      },
+      "elapsed_p50_seconds": 0.855344220995903,
+      "elapsed_p95_seconds": 0.8637212181987707,
+      "elapsed_p99_seconds": 0.8730611292424146,
+      "cfr_iterations": 0
+    },
+    "search-5s": {
+      "cases": 12,
+      "hero_decisions": 18,
+      "search_attempted": 17,
+      "search_used": 17,
+      "fallback_decisions": 1,
+      "timeouts": 0,
+      "outside_scope": 1,
+      "reasons": {
+        "completed": 17,
+        "outside_two_active_player_river": 1
+      },
+      "elapsed_p50_seconds": 4.782461352006067,
+      "elapsed_p95_seconds": 4.7996440696944775,
+      "elapsed_p99_seconds": 4.800067014737433,
+      "cfr_iterations": 5816
+    },
+    "search-10s": {
+      "cases": 12,
+      "hero_decisions": 18,
+      "search_attempted": 17,
+      "search_used": 17,
+      "fallback_decisions": 1,
+      "timeouts": 0,
+      "outside_scope": 1,
+      "reasons": {
+        "completed": 17,
+        "outside_two_active_player_river": 1
+      },
+      "elapsed_p50_seconds": 9.772491319999972,
+      "elapsed_p95_seconds": 9.801734954954735,
+      "elapsed_p99_seconds": 9.811438522992685,
+      "cfr_iterations": 12519
+    }
+  },
+  "full_game_strength_proven": false,
+  "model_promoted": false,
+  "automatic_retry": false,
+  "next_action": "Validate the full-information neural collector/fitter and belief quality before large learning or a strength claim",
+  "offsite_new_uploads": 0,
+  "retained_backup_records": 7,
+  "retained_backup_bytes": 1066588074,
+  "latest_safe_checkpoint_iteration": 360,
+  "latest_safe_checkpoint_bytes": 90022512,
+  "notes": [
+    "Pilot BB shifts are conditional on selected rivers, not full-game bb/100",
+    "Current51-feature neural weights remain unchanged; the richer representation is used by history, ranges and solver",
+    "The first synthetic scaling-coverage failure is preserved; only its test fixture magnitude was corrected",
+    "Matching5s/10s terminal chips do not imply identical strategies or strength",
+    "The existing360 checkpoint is retained; no new six-player weights or Drive archive were created"
+  ],
+  "cli_integration": {
+    "passed": true,
+    "hand_id_required": true,
+    "used": true,
+    "protocol_elapsed_seconds": 4.7724981930077774,
+    "solver_iterations": 612,
+    "private_strategy_arrays_not_exposed": true,
+    "scope": "Functional protocol smoke, excluded from pilot strength statistics"
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "complete": true,
+  "scope": "Paired conditional river continuation panel only",
+  "full_game_strength_proven": false,
+  "full_game_bb_per_100_reported": false,
+  "model_promotion": false,
+  "selected_cases": 12,
+  "model_seeds": [
+    342,
+    343,
+    344
+  ],
+  "independent_deal_blocks": 7,
+  "completed_arm_continuations": 48,
+  "comparisons": {
+    "search-1s-minus-baseline": {
+      "mean_bb": 0.0,
+      "lower95_bb": 0.0,
+      "upper95_bb": 0.0,
+      "independent_deal_blocks": 7,
+      "case_weighted_mean_bb": 0.0,
+      "per_case": [
+        {
+          "case": "model-342-block-1-hero-4",
+          "model_seed": 342,
+          "deal_block": 1,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-344-block-1-hero-2",
+          "model_seed": 344,
+          "deal_block": 1,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-342-block-2-hero-1",
+          "model_seed": 342,
+          "deal_block": 2,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-344-block-2-hero-1",
+          "model_seed": 344,
+          "deal_block": 2,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-342-block-3-hero-0",
+          "model_seed": 342,
+          "deal_block": 3,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-342-block-4-hero-1",
+          "model_seed": 342,
+          "deal_block": 4,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-343-block-4-hero-1",
+          "model_seed": 343,
+          "deal_block": 4,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-344-block-4-hero-1",
+          "model_seed": 344,
+          "deal_block": 4,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-343-block-6-hero-1",
+          "model_seed": 343,
+          "deal_block": 6,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-344-block-6-hero-1",
+          "model_seed": 344,
+          "deal_block": 6,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-343-block-14-hero-1",
+          "model_seed": 343,
+          "deal_block": 14,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-343-block-20-hero-1",
+          "model_seed": 343,
+          "deal_block": 20,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        }
+      ],
+      "block_mean_deltas_bb": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 0.0,
+        "14": 0.0,
+        "20": 0.0
+      }
+    },
+    "search-5s-minus-baseline": {
+      "mean_bb": -8.257857142857143,
+      "lower95_bb": -53.417142526568206,
+      "upper95_bb": 36.901428240853924,
+      "independent_deal_blocks": 7,
+      "case_weighted_mean_bb": -8.2175,
+      "per_case": [
+        {
+          "case": "model-342-block-1-hero-4",
+          "model_seed": 342,
+          "deal_block": 1,
+          "delta_chips": 6000,
+          "delta_bb": 60.0
+        },
+        {
+          "case": "model-344-block-1-hero-2",
+          "model_seed": 344,
+          "deal_block": 1,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-342-block-2-hero-1",
+          "model_seed": 342,
+          "deal_block": 2,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-344-block-2-hero-1",
+          "model_seed": 344,
+          "deal_block": 2,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-342-block-3-hero-0",
+          "model_seed": 342,
+          "deal_block": 3,
+          "delta_chips": 1050,
+          "delta_bb": 10.5
+        },
+        {
+          "case": "model-342-block-4-hero-1",
+          "model_seed": 342,
+          "deal_block": 4,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-343-block-4-hero-1",
+          "model_seed": 343,
+          "deal_block": 4,
+          "delta_chips": -1200,
+          "delta_bb": -12.0
+        },
+        {
+          "case": "model-344-block-4-hero-1",
+          "model_seed": 344,
+          "deal_block": 4,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-343-block-6-hero-1",
+          "model_seed": 343,
+          "deal_block": 6,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-344-block-6-hero-1",
+          "model_seed": 344,
+          "deal_block": 6,
+          "delta_chips": -12561,
+          "delta_bb": -125.61
+        },
+        {
+          "case": "model-343-block-14-hero-1",
+          "model_seed": 343,
+          "deal_block": 14,
+          "delta_chips": -8400,
+          "delta_bb": -84.0
+        },
+        {
+          "case": "model-343-block-20-hero-1",
+          "model_seed": 343,
+          "deal_block": 20,
+          "delta_chips": 5250,
+          "delta_bb": 52.5
+        }
+      ],
+      "block_mean_deltas_bb": {
+        "1": 30.0,
+        "2": 0.0,
+        "3": 10.5,
+        "4": -4.0,
+        "6": -62.805,
+        "14": -84.0,
+        "20": 52.5
+      }
+    },
+    "search-10s-minus-baseline": {
+      "mean_bb": -8.257857142857143,
+      "lower95_bb": -53.417142526568206,
+      "upper95_bb": 36.901428240853924,
+      "independent_deal_blocks": 7,
+      "case_weighted_mean_bb": -8.2175,
+      "per_case": [
+        {
+          "case": "model-342-block-1-hero-4",
+          "model_seed": 342,
+          "deal_block": 1,
+          "delta_chips": 6000,
+          "delta_bb": 60.0
+        },
+        {
+          "case": "model-344-block-1-hero-2",
+          "model_seed": 344,
+          "deal_block": 1,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-342-block-2-hero-1",
+          "model_seed": 342,
+          "deal_block": 2,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-344-block-2-hero-1",
+          "model_seed": 344,
+          "deal_block": 2,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-342-block-3-hero-0",
+          "model_seed": 342,
+          "deal_block": 3,
+          "delta_chips": 1050,
+          "delta_bb": 10.5
+        },
+        {
+          "case": "model-342-block-4-hero-1",
+          "model_seed": 342,
+          "deal_block": 4,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-343-block-4-hero-1",
+          "model_seed": 343,
+          "deal_block": 4,
+          "delta_chips": -1200,
+          "delta_bb": -12.0
+        },
+        {
+          "case": "model-344-block-4-hero-1",
+          "model_seed": 344,
+          "deal_block": 4,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-343-block-6-hero-1",
+          "model_seed": 343,
+          "deal_block": 6,
+          "delta_chips": 0,
+          "delta_bb": 0.0
+        },
+        {
+          "case": "model-344-block-6-hero-1",
+          "model_seed": 344,
+          "deal_block": 6,
+          "delta_chips": -12561,
+          "delta_bb": -125.61
+        },
+        {
+          "case": "model-343-block-14-hero-1",
+          "model_seed": 343,
+          "deal_block": 14,
+          "delta_chips": -8400,
+          "delta_bb": -84.0
+        },
+        {
+          "case": "model-343-block-20-hero-1",
+          "model_seed": 343,
+          "deal_block": 20,
+          "delta_chips": 5250,
+          "delta_bb": 52.5
+        }
+      ],
+      "block_mean_deltas_bb": {
+        "1": 30.0,
+        "2": 0.0,
+        "3": 10.5,
+        "4": -4.0,
+        "6": -62.805,
+        "14": -84.0,
+        "20": 52.5
+      }
+    }
+  },
+  "arms": {
+    "baseline": {
+      "cases": 12,
+      "hero_decisions": 17,
+      "search_attempted": 0,
+      "search_used": 0,
+      "fallback_decisions": 0,
+      "timeouts": 0,
+      "outside_scope": 0,
+      "reasons": {
+        "baseline": 17
+      },
+      "elapsed_p50_seconds": 0.0005266030057100579,
+      "elapsed_p95_seconds": 0.0007268222048878669,
+      "elapsed_p99_seconds": 0.0007557860389351844,
+      "cfr_iterations": 0
+    },
+    "search-1s": {
+      "cases": 12,
+      "hero_decisions": 17,
+      "search_attempted": 17,
+      "search_used": 0,
+      "fallback_decisions": 17,
+      "timeouts": 16,
+      "outside_scope": 0,
+      "reasons": {
+        "range_deadline": 16,
+        "insufficient_solver_iterations": 1
+      },
+      "elapsed_p50_seconds": 0.855344220995903,
+      "elapsed_p95_seconds": 0.8637212181987707,
+      "elapsed_p99_seconds": 0.8730611292424146,
+      "cfr_iterations": 0
+    },
+    "search-5s": {
+      "cases": 12,
+      "hero_decisions": 18,
+      "search_attempted": 17,
+      "search_used": 17,
+      "fallback_decisions": 1,
+      "timeouts": 0,
+      "outside_scope": 1,
+      "reasons": {
+        "completed": 17,
+        "outside_two_active_player_river": 1
+      },
+      "elapsed_p50_seconds": 4.782461352006067,
+      "elapsed_p95_seconds": 4.7996440696944775,
+      "elapsed_p99_seconds": 4.800067014737433,
+      "cfr_iterations": 5816
+    },
+    "search-10s": {
+      "cases": 12,
+      "hero_decisions": 18,
+      "search_attempted": 17,
+      "search_used": 17,
+      "fallback_decisions": 1,
+      "timeouts": 0,
+      "outside_scope": 1,
+      "reasons": {
+        "completed": 17,
+        "outside_two_active_player_river": 1
+      },
+      "elapsed_p50_seconds": 9.772491319999972,
+      "elapsed_p95_seconds": 9.801734954954735,
+      "elapsed_p99_seconds": 9.811438522992685,
+      "cfr_iterations": 12519
+    }
+  },
+  "statistical_unit": "Unique original dealblock; selectedmodels/heroseats within a dealblock are repeated observations",
+  "interval_scope": "Descriptive Student-t95% intervals on selected dealblock mean conditional BB shifts; small non-generalizing panel",
+  "limitations": [
+    "Cases condition on reaching an eligible river under baseline policies, not complete six-player hands",
+    "First-four-per-model selection and common cards do not create12 independent observations",
+    "Supplied blueprint history marginals and omitted folded-card removal remain approximations",
+    "No conclusion of generally stronger play, professional strength, or authorization to deploy"
+  ],
+  "completed_utc": "2026-11-13T05:29:47.320183+00:00",
+  "elapsed_seconds": 253.41391561400087,
+  "config_sha256": "9758b45f4812a1da6fa63d364283061bcb39199bcac0244c830fd2281f0ef2cc",
+  "source_provenance_verified": true,
+  "private_hands_sha256": "5b05b29b6fde606695682224b631ce0eb0f2e239347e1b5bebded8564468c367",
+  "cases_sha256": "c53383239621593a3950e273a933ad7385bbc5f68eb7d54df495a5b45a895150"
+}

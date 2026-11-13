@@ -1,0 +1,81 @@
+{
+  "format": "river-strength-pilot-v1",
+  "deal_seed_start": 2032111300,
+  "max_deal_blocks": 128,
+  "cases_per_model": 4,
+  "model_seeds": [
+    342,
+    343,
+    344
+  ],
+  "hero_seats": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "search_seconds": [
+    1,
+    5,
+    10
+  ],
+  "max_seconds": 1800,
+  "button": 0,
+  "models": [
+    {
+      "seed": 342,
+      "model": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/current_00360.npz",
+      "source": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source"
+    },
+    {
+      "seed": 343,
+      "model": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/current_00360.npz",
+      "source": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source"
+    },
+    {
+      "seed": 344,
+      "model": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/current_00360.npz",
+      "source": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source"
+    }
+  ],
+  "expected_hashes": {
+    "/workspace/deep/.cache/fullhouse-bot/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/.cache/fullhouse-bot/bot/features.py": "b43361365ed911f358b3588f0c487614029158bf1420c5ffec8260bd427475c8",
+    "/workspace/deep/.cache/fullhouse-bot/data/deep_cfr_model.npz": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+    "/workspace/deep/.cache/fullhouse-bot/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/.cache/noregrets/src/engine.rs": "3943f52a73a23aaebda6e5e490388c07cfbcc24156760f0ece452c02ae892572",
+    "/workspace/deep/.cache/noregrets/target/release/poker-bridge": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/current_00360.npz": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/current_00360.npz": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/current_00360.npz": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/source/bot/features.py": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "/workspace/deep/configs/fullhouse-model.json": "24fdf60e5698c8baa6737eaa1dd9c41bab7c94f9c5f8b05f7292d2b9e346e9ae",
+    "/workspace/deep/native/noregrets-json/bridge.rs": "8882b358dbe1b0e0585ff5f6239b74011371b5b2176f18c4bb621882debc17b9",
+    "/workspace/deep/scripts/fullhouse_runtime.py": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+    "/workspace/deep/scripts/fullhouse_v4_runtime.py": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+    "/workspace/deep/scripts/poker_public_state.py": "1e8931ee22217cbd1c2bce1ee91690990017bcae57dcaa23020edd4694c9036d",
+    "/workspace/deep/scripts/poker_river_runtime.py": "0b5b48b3b285598f2f9acd26a621f17643673e5e8605a46e105c10ebe0877eb1",
+    "/workspace/deep/scripts/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/scripts/river_subgame_solver.py": "27c14e6a22f8e27c8226849f83fa0e980b0d48eb108110fe9ecae43ba5567ec3",
+    "/workspace/deep/scripts/run_river_strength_pilot.py": "43a14fc56d868d0d263a3a1eef0e9a20082d80a4419372a8d44166849a1f3916"
+  },
+  "purpose": "User-approved strength-first implementation: paired conditional two-active-player river diagnostic only",
+  "selfplay_extension": false,
+  "model_promotion": false,
+  "automatic_retry": false,
+  "full_game_strength_claim": false,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "eval7": "0.1.10",
+    "blas_threads": 1
+  },
+  "method": {
+    "own_history": "Exact likelihood of the actual previous blueprint or cached search strategy",
+    "opponent_history": "Fixed public blueprint likelihood with0.01tremble; independent marginal approximation",
+    "range_scope": "All1081board-compatible combinations; exact joint card blockers; folded-player correlations omitted",
+    "river_raise_cap": 2
+  }
+}

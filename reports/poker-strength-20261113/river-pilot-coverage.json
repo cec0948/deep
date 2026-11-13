@@ -1,0 +1,36 @@
+{
+  "coverage": {
+    "scanned_deal_blocks": 21,
+    "baseline_hands_scanned": 153,
+    "selected_per_model": {
+      "342": 4,
+      "344": 4,
+      "343": 4
+    }
+  },
+  "case_ids": [
+    "model-342-block-1-hero-4",
+    "model-344-block-1-hero-2",
+    "model-342-block-2-hero-1",
+    "model-344-block-2-hero-1",
+    "model-342-block-3-hero-0",
+    "model-342-block-4-hero-1",
+    "model-343-block-4-hero-1",
+    "model-344-block-4-hero-1",
+    "model-343-block-6-hero-1",
+    "model-344-block-6-hero-1",
+    "model-343-block-14-hero-1",
+    "model-343-block-20-hero-1"
+  ],
+  "independent_deal_blocks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    14,
+    20
+  ],
+  "raw_observations_and_prefixes_omitted": true,
+  "scope": "Conditionalriverpanelonly"
+}

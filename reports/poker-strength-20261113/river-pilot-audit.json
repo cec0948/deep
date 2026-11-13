@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "observed_utc": "2026-11-13T05:31:58.439092+00:00",
+  "audit_scope": "Independent recorded-trajectory/terminal-chip/RNG/grouped-metric readback only; no new search",
+  "source_provenance_verified": true,
+  "frozen_inputs_verified": 19,
+  "selected_cases": 12,
+  "independent_deal_blocks": 7,
+  "replayed_arm_continuations": 48,
+  "replayed_continuation_decisions": 120,
+  "repeated_own_search_history_checks": 10,
+  "root_observations_reproduced": true,
+  "terminal_chips_and_conservation_verified": true,
+  "semantic_rng_and_frozen_opponent_actions_verified": true,
+  "private_hands_and_cases_hashes_verified": true,
+  "grouped_conditional_metrics_verified": true,
+  "deadline_fallback_counts_and_latency_quantiles_verified": true,
+  "no_actual_hero_conditioning_in_recorded_range_provenance": true,
+  "no_new_search_or_training": true,
+  "full_game_strength_proven": false,
+  "results_sha256": "a5d46b70a4a0b697190cbd1878058c96cfcc3f7b8d26935f9b23fbfbb62db867"
+}

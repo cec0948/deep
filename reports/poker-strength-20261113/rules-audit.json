@@ -1,0 +1,37 @@
+{
+  "observed_utc": "2026-11-13T05:15:21.364716+00:00",
+  "passed": true,
+  "independent_review": true,
+  "hands": 500,
+  "validated_nonterminal_states": 7765,
+  "streets": {
+    "preflop": 4126,
+    "flop": 2052,
+    "turn": 1044,
+    "river": 543
+  },
+  "failures": 0,
+  "deal_seed_start": 2031310000,
+  "deal_seed_end_inclusive": 2031310499,
+  "action_rng_seed": 7183,
+  "actions": "70% check/call; otherwise random check/call/fold/minraise/allin/arbitrarylegalraise",
+  "button": "hand_index modulo6",
+  "source_sha256_before": {
+    "public_state": "1e8931ee22217cbd1c2bce1ee91690990017bcae57dcaa23020edd4694c9036d",
+    "bridge_source": "8882b358dbe1b0e0585ff5f6239b74011371b5b2176f18c4bb621882debc17b9",
+    "engine_source": "3943f52a73a23aaebda6e5e490388c07cfbcc24156760f0ece452c02ae892572",
+    "bridge_binary": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547"
+  },
+  "source_sha256_after": {
+    "public_state": "1e8931ee22217cbd1c2bce1ee91690990017bcae57dcaa23020edd4694c9036d",
+    "bridge_source": "8882b358dbe1b0e0585ff5f6239b74011371b5b2176f18c4bb621882debc17b9",
+    "engine_source": "3943f52a73a23aaebda6e5e490388c07cfbcc24156760f0ece452c02ae892572",
+    "bridge_binary": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547"
+  },
+  "inputs_unchanged": true,
+  "scope": "Public-state ledger agreement with pinned trustedengine; not independent proof of all standardNLHE rules or poker strength",
+  "limitations": [
+    "Pinnedengine short-allin reopening remainsoutsideclaimedrulesproof",
+    "No training or performance evaluation; deterministicrulesfuzz only"
+  ]
+}

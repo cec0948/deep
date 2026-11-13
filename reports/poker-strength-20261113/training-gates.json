@@ -1,0 +1,52 @@
+{
+  "format": "strength-training-full-information-leduc-suite-v1",
+  "status": "complete",
+  "observed_utc": "2026-11-13T05:15:20.670796+00:00",
+  "seeds": [
+    71,
+    72,
+    73
+  ],
+  "game": "leduc_poker",
+  "iterations": 32,
+  "fit_steps": 96,
+  "batch_size": 128,
+  "elapsed_seconds": 31.14658273999521,
+  "declared_max_seconds_per_seed": 90.0,
+  "component_gates_passed": true,
+  "full_information_replacement_component_pipeline_measured": true,
+  "full_information_tabular_candidate_pipeline_gate_passed": true,
+  "all_three_seed_curve_gates_passed": true,
+  "end_to_end_custom_leduc_proven": false,
+  "production_six_player_path_validated": false,
+  "six_player_policies_trained": 0,
+  "next_six_player_training_authorized": false,
+  "curve_gate": "Final exact average-policy exploitability must be below50percent of uniform for each fixed seed",
+  "candidate_scope": "Own full-tree collector + existing sampler/fitting function + tabular function approximator + own reach-weighted averaging. Production external sampler, fixed feature semantics and neural architecture remain unvalidated.",
+  "seed_results": [
+    {
+      "seed": 71,
+      "status": "complete",
+      "component_gates_passed": true,
+      "initial_exploitability": 2.373611111111111,
+      "final_exploitability": 0.5197636075475367,
+      "error": null
+    },
+    {
+      "seed": 72,
+      "status": "complete",
+      "component_gates_passed": true,
+      "initial_exploitability": 2.373611111111111,
+      "final_exploitability": 0.5197633992316342,
+      "error": null
+    },
+    {
+      "seed": 73,
+      "status": "complete",
+      "component_gates_passed": true,
+      "initial_exploitability": 2.373611111111111,
+      "final_exploitability": 0.5197634651052987,
+      "error": null
+    }
+  ]
+}
