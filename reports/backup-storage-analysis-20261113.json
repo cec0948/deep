@@ -1,0 +1,89 @@
+{
+  "observed_utc": "2026-11-13T00:32:44.622342+00:00",
+  "scope": "Storage measurements and hypothetical content reuse only; no backup was created, replaced, uploaded, or deleted",
+  "model_export_bytes_each": 1183010,
+  "seeds": 3,
+  "checkpoint_archive_bytes": {
+    "60": 271339098,
+    "120": 545298289,
+    "240": 1021413105
+  },
+  "full120_uncompressed_groups": {
+    "metadata_sources_logs": {
+      "files": 200,
+      "uncompressed_bytes": 1626041
+    },
+    "current_policy_exports": {
+      "files": 60,
+      "uncompressed_bytes": 70980600
+    },
+    "training_state": {
+      "files": 3,
+      "uncompressed_bytes": 476557447
+    },
+    "policy_history": {
+      "files": 360,
+      "uncompressed_bytes": 425883600
+    }
+  },
+  "full240_uncompressed_groups": {
+    "metadata_sources_logs": {
+      "files": 298,
+      "uncompressed_bytes": 4378327
+    },
+    "current_policy_exports": {
+      "files": 120,
+      "uncompressed_bytes": 141961200
+    },
+    "training_state": {
+      "files": 3,
+      "uncompressed_bytes": 476170567
+    },
+    "policy_history": {
+      "files": 720,
+      "uncompressed_bytes": 851767200
+    }
+  },
+  "identical_full240_content_available_in_full120": {
+    "other": {
+      "files": 184,
+      "uncompressed_bytes": 1307242
+    },
+    "current_policy_exports": {
+      "files": 60,
+      "uncompressed_bytes": 70980600
+    },
+    "policy_history": {
+      "files": 363,
+      "uncompressed_bytes": 429432630
+    }
+  },
+  "hypothetical_overlay_compressed_bytes": 561482789,
+  "hypothetical_archive_saving_bytes": 459930316,
+  "active_remote_records": 7,
+  "active_remote_bytes": 1997989308,
+  "target_budget_bytes": 2147483648,
+  "budget_remaining_bytes": 149494340,
+  "hypothetical_total_remote_bytes_before_upload_overhead": 1538048351,
+  "actual_remote_changes": false,
+  "restore_of_hypothetical_overlay_verified": false,
+  "limitations": [
+    "Group sizes describe uncompressed archive members; full archive sizes are compressed",
+    "The overlay was compressed to a byte counter and discarded; it is not a usable or validated backup",
+    "Full120 must remain for any future parent-dependent format; all existing retention dependencies still apply",
+    "No claim about remaining capacity of the entire personal Drive account",
+    "New backup plus old backup would temporarily require additional space until every part and manifest, restore integrity, remote size and sole-owner permissions are verified"
+  ],
+  "hypothetical_peak_remote_bytes_before_upload_overhead": 2559472097,
+  "model_net_tensor_bytes_seed342": {
+    "120": 1173644,
+    "240": 1173644
+  },
+  "replay_array_bytes_seed342": {
+    "120": 136800000,
+    "240": 136800000
+  },
+  "replay_capacity_rows_per_seat": 100000,
+  "retention_deletions_available_under_current_policy": 0,
+  "remote_checksum_available": false
+}
