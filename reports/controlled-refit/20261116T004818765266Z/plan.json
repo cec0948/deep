@@ -1,0 +1,379 @@
+{
+  "created_utc": "2026-11-16T00:48:19.549339+00:00",
+  "config": {
+    "purpose": "User-approved one-factor diagnosis of poker regression using frozen parent replay",
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "arms": [
+      "legacy_control",
+      "legacy_small_replay",
+      "legacy_fewer_steps",
+      "legacy_smaller_batch",
+      "legacy_raw_objective",
+      "rich_masked",
+      "rich_full"
+    ],
+    "legacy_parent": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z",
+    "rich_parent": "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z",
+    "parent_iteration": 360,
+    "new_selfplay_iterations": 0,
+    "evaluation_deals": 20000,
+    "evaluation_deal_seed": 2037000000,
+    "max_fitting_workers": 2,
+    "max_evaluation_workers": 3,
+    "max_seconds": 21600,
+    "fitting_seconds_per_job": 2700,
+    "evaluation_seconds_per_cell": 2400,
+    "automatic_retry": false,
+    "model_promotion": false
+  },
+  "parents": {
+    "legacy": {
+      "342": {
+        "checkpoint": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/checkpoints/iter-00360",
+        "model": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/parent360-seed-342.npz"
+      },
+      "343": {
+        "checkpoint": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/checkpoints/iter-00360",
+        "model": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/parent360-seed-343.npz"
+      },
+      "344": {
+        "checkpoint": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/checkpoints/iter-00360",
+        "model": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/parent360-seed-344.npz"
+      }
+    },
+    "rich": {
+      "342": {
+        "checkpoint": "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-342/checkpoints/iter-00096"
+      },
+      "343": {
+        "checkpoint": "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-343/checkpoints/iter-00096"
+      },
+      "344": {
+        "checkpoint": "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-344/checkpoints/iter-00096"
+      }
+    }
+  },
+  "source": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source",
+  "legacy_tools": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools",
+  "frozen_files": {
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/stage-360-verification.json": "a803bafcbbf434a63e53e817c0e5b3d22ee3e0f3533cea2828619f80d7eb4c86",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/summary.json": "d5bb89afe108aefab97c6a837a057527d9c2923c3fb8c2d31fd1fb3e8fbc4026",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/checkpoints/iter-00360/state.json": "78918ad48eabc30a440ef67c5599760f8fb33957fa06726dfe5f0504d4cec954",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/checkpoints/iter-00360/arrays.npz": "a7df7be4a43955a376f6ac06e36876336d65557e37fc91c3101f83135d6c74f7",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/checkpoints/iter-00360/current.npz": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/checkpoints/iter-00360/state.json": "09c66051360a0bf0aada2b39e7259c66f909016fbabf2c1a5770f51e6b9ed205",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/checkpoints/iter-00360/arrays.npz": "d0cfd848483454d8eba9ed48a8f3956b59caf8bb305421069e5eb4e5b01a2a39",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/checkpoints/iter-00360/current.npz": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/checkpoints/iter-00360/state.json": "123827eae4de87a59a9c4f549a33c12e7a0b5e4cd5b199668ee21a42953d564c",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/checkpoints/iter-00360/arrays.npz": "3b1174ea9ab71dba8784652864c64c9ff80852a6fb3846ce8fdc800c95c8f7c9",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/checkpoints/iter-00360/current.npz": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/stage-96-verification.json": "86429c71a4f3ac391c9d316befe7bfeac92239ec48bd5c9ac5b9f602fac3f8af",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/summary.json": "65e90e3b96810527660541b87b03bda25c08afd707b6bd24a626d41a9c0d7062",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-342/checkpoints/iter-00096/state.json": "c1909a0329d65de6b7a98cd90f30f80b901ffcb70eb29fca1a13769693cb8c9b",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-342/checkpoints/iter-00096/arrays.npz": "d6ea6fdfa6eae3b1bd2e3e9a574c2a5d7107406cb44a1caf1b3e128c00433f30",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-342/checkpoints/iter-00096/current.npz": "6deb4e286828933a1d33d7f775ae8ddf93e9b2e1ba63bdeb22dbf92f928db81e",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-343/checkpoints/iter-00096/state.json": "9e80723f212d2c896f82d2ffdead326f63db1d9a1ddea59246354a5601205c3e",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-343/checkpoints/iter-00096/arrays.npz": "88fb4c05f1ff437675f05ccb2b701966fd65d59d4aedfdade7e7b22be8e20a40",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-343/checkpoints/iter-00096/current.npz": "1354df31ce72cbec77631486afee0ded5700af0d9a3d4f1d84f1ddb8d47e7e9b",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-344/checkpoints/iter-00096/state.json": "1d24c4e89114cb4799203bd59f118ac53e2e9a5f3311c077d883c9c20e56d2f2",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-344/checkpoints/iter-00096/arrays.npz": "9ca4b20334fca4e9b67452c5166d3446dc0d0e2011c0b7185ed1ba2bda7dfbef",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-344/checkpoints/iter-00096/current.npz": "0fda368319c90b7f8b558da516bf134e75e6e7db3850a3370d2d2bed7fcf3878",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/current_00120.npz": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/original120-seed-342.npz": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/current_00360.npz": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/parent360-seed-342.npz": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-342/policy-00096.json": "7d5359594e3925a98368dfcca21f9826f4860b33de475683a0cf221466a2e2c2",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/teachers/seed-342.npz": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-342.npz": "6deb4e286828933a1d33d7f775ae8ddf93e9b2e1ba63bdeb22dbf92f928db81e",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-342.json": "3f765798ee49ea50dfaf6a8c9aa0a6ace757b45b0559bf49add53051d83bd326",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/current_00120.npz": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/original120-seed-343.npz": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/current_00360.npz": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/parent360-seed-343.npz": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-343/policy-00096.json": "d94c0b6c847d61763c7c76b343030601e7a6bf8bb497d5beb19d93cc2b5f2e6c",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/teachers/seed-343.npz": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-343.npz": "1354df31ce72cbec77631486afee0ded5700af0d9a3d4f1d84f1ddb8d47e7e9b",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-343.json": "cb54de032830223e08a358c8a7e6377347bf34460ff1e3b4b3dfaee78d912481",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/current_00120.npz": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/original120-seed-344.npz": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/current_00360.npz": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/parent360-seed-344.npz": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/seed-344/policy-00096.json": "dc7ef5d915f9ca72c247447b0f9a02ba3a647edae1fbd0b3805f28a0e6205f0e",
+    "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/teachers/seed-344.npz": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-344.npz": "0fda368319c90b7f8b558da516bf134e75e6e7db3850a3370d2d2bed7fcf3878",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-344.json": "2ef54ff2ff357697114e48e95a9ab0c34dbca661663728f2fc4ae71f0a752545",
+    "/workspace/deep/artifacts/compact-v4/current.json": "efc03c574b9e3df7e066c743c9753733656d9ace474cb6cf214ad34fd28856f2",
+    "/workspace/deep/artifacts/bounded-continuation/current.json": "33af83607f95a9251b8016aacaa76b733c9c52e55eceeb6c45bbf43bca69eea0",
+    "/workspace/deep/artifacts/rich-selfplay/current.json": "2b33e600425e55ef0e75bac03c1fc68b553617a18026381f478af94a6a253af9",
+    "/workspace/deep/artifacts/continuation-study/current.json": "8f136f501b3da696bca1749d3d6977d0ccf313151dc6eb89b496d593fa83be01",
+    "/workspace/deep/artifacts/refit-probe/current.json": "fa07aa7701346ebaf95252b5e875901f6d18a9b8ea2a027c6ce1eb012ee62e67",
+    "/workspace/deep/artifacts/foundation-study/current.json": "bd1c10c6d4d0467234d477bda5e7cfdd9a29b3a1fb0120e9d1b63970574de6ec",
+    "/workspace/deep/scripts/controlled_poker_refit.py": "7eb61c8c41a476e5b5557e87f7583a67171b5dbbd8915fd3c23eafdeacbef5bd",
+    "/workspace/deep/scripts/run_controlled_poker_study.py": "1bdc7a1737f6d9c3cdb7ffc2b319d0266d36f31051a423f7f97e9c98dd0b739a",
+    "/workspace/deep/scripts/export_controlled_poker_probe.py": "cf4a4df558c74fb3bd1ccb1f74ed09ae4e75e4f3bae9c758d48605399f866e56",
+    "/workspace/deep/scripts/plan_controlled_backup_retention.py": "450454e62c444b3c241fcda0972d8202bfe9b3ecb67fd6f78f83ccb06131836c",
+    "/workspace/deep/scripts/compact_lightweight_backup.py": "70110cc4be6b0dabde640194fa85a76599287099b0aee7cdcfdebe5abceb11ad",
+    "/workspace/deep/scripts/fullhouse_v3_common.py": "ff6bb05e72464fc833b4040a6c51e5f40834c8667da813c8b8bff1cad0069e37",
+    "/workspace/deep/scripts/rich_regret_model.py": "499d51fa5589404a6e1c332f700f86ded4e4651c2dc977140fa465a539ac8d72",
+    "/workspace/deep/scripts/rich_poker_observation.py": "c68e9b5e8221966d28f5221b4c37c469d317ea3f4a34a8c13ab28fec5fe1de59",
+    "/workspace/deep/scripts/rich_poker_runtime.py": "2f6e87c4244e433a3029d897744a7fe63a060c827704c80db1d81ef18c6585d8",
+    "/workspace/deep/scripts/evaluate_rich_selfplay.py": "dfd9786ccfec4515ce20d610e829ea26a0e71f0a01e759bfe3db6a1d26505c9d",
+    "/workspace/deep/scripts/train_rich_selfplay.py": "ed8b63eade6536feee139ef27dea14e4e716c4633590a34f15dee84c9aef84e9",
+    "/workspace/deep/scripts/fullhouse_runtime.py": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+    "/workspace/deep/scripts/fullhouse_v4_runtime.py": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+    "/workspace/deep/scripts/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/scripts/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/scripts/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+    "/workspace/deep/scripts/run_compact_refit_probe.py": "baa70d4fef2d9047045c0417afb2e7f482d6e5b8a5f348de139fc5bd1a75b8df",
+    "/workspace/deep/scripts/evaluate_compact_learning_curve.py": "241b633efdd48d8d4f4949742f9917792e98790cee48e99a973be40520188b05",
+    "/workspace/deep/scripts/raw_objective_fitting.py": "a06c184069686927f3e0514d80ca69527c4722d74f35ce38355756eb044688cb",
+    "/workspace/deep/scripts/snapshot_rich_selfplay.py": "b044fd83b24fdf840945f8ee1b91dff7282a8a67905bbfcb66e5e0d39278f128",
+    "/workspace/deep/artifacts/selfplay/current.json": "e0dd3e81ad40a36d948e4d59425d2f170b175f8e67f985bd74f30ba7442fd58c",
+    "/workspace/deep/artifacts/selfplay/20261112T022813820557Z/blueprint-1000000.bin": "4d86512cd76bb7d863a14e11c0fae2bf44f3561b57225d6abc593c41a27fe648",
+    "/workspace/deep/.cache/fullhouse-bot/data/deep_cfr_model.npz": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+    "/workspace/deep/configs/fullhouse-model.json": "24fdf60e5698c8baa6737eaa1dd9c41bab7c94f9c5f8b05f7292d2b9e346e9ae",
+    "/workspace/deep/.cache/noregrets/target/release/poker-bridge": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+    "/workspace/deep/.cache/fullhouse-bot/bot/features.py": "b43361365ed911f358b3588f0c487614029158bf1420c5ffec8260bd427475c8",
+    "/workspace/deep/.cache/fullhouse-bot/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/.cache/fullhouse-bot/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/LICENSE.upstream": "8a2daa759da5e2bc87dfdd8f3a02fee6f18b38ccced523022a31c36e1b0512c4",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/_hand_eval.py": "e97c081806e67f964ace1c6dd7bb62c8f49ea8cd0c2060d8643d6c58daeb3a96",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/traverse_numba.py": "03c17cd7b717005737cabafe7c4e7963dc6eb1fbd9f8e4295d3c8417127ec803",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/train.py": "844c8e6d3aea891e95d39f60b9e50906bcc854df20bc489d440558be945bb316",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/game_numba.py": "3d581b954fa028ea8c6e5b31457c95cbcfa8f9e09bc14dd939c59ae7457437dc",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/game.py": "df405d6d9efbeca3ecb778cfa70dd770fee5c34d04eb3f65ed1ab11261696381",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/worker.py": "282435f5e10770dce373b4579e14552af9f0e3beb6178046a8229a33acad9bea",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/traverse_fast.py": "b0d199732ddd46be242c90b382fe4e7c93add829ca8e493d6c59dce67af319a6",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/r1_support.py": "08b19999b38066c1848ca3e0a5a67b65a0b577250dce59c0dff084ae7683dfd0",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/buffer.py": "a513bf28f44992218053745e77faedd5a6a71c663cc642273ccaa01e0cd4f611",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/network.py": "e8c75e85722fa32e311316f06b93596f6610b934af5a8ab0ef6c99d72d2f2c49",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/__init__.py": "dd47ca434e58a3ba04952d871c3899db7b675eed0dd5e2e4dc23645f72f08d1f",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/_hand_eval_lut.py": "d57d29959b6441fbad16f1e65c35dab0e6d38e7fda29a1b8edbaf6271cea5e46",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/training/features.py": "b6f8b26df06b4147c87e1543242d5cf29af9366be7681af272bbc677bdc97946",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/bot/bot.py": "f721b16e0cab72d0c40fae2e94d1ec655a94025fc20addfc689c718fb8f10845",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source/bot/features.py": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools/fullhouse_v3_common.py": "ff6bb05e72464fc833b4040a6c51e5f40834c8667da813c8b8bff1cad0069e37",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools/compact_lightweight_backup.py": "70110cc4be6b0dabde640194fa85a76599287099b0aee7cdcfdebe5abceb11ad",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools/train_compact_bounded.py": "969a62df95054de733bc161b417d826d9aefd522e61f1587570243b46f71180c",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools/compact_regret.py": "4cff184154657d6e1040536fd02a1cd25bb518e8a813a67b72851dd6f1882d60",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools/root_regret_replay.py": "0078f0cde6631e3b8ba12dd134523521a5a6f7ffd0bc5e88b7c0bce8ee9c349d",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools/train_compact_selfplay.py": "ced4b1817a837c83bd0f28ef640bfa0220fe1bd2bb5142a9ef0e04d48fd35b51",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/legacy-tools/bounded_poker_study_support.py": "b2df172b4a6d4db861815dc25320e1c05ba7861b3d37b71fbdd5a767fa6f47ec",
+    "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/config.json": "d6231a2bb4f6955b9f4a1de165df2e567107be705a8f478e1b81b70a090e28ab"
+  },
+  "fixed_replay": true,
+  "new_selfplay_iterations": 0,
+  "planned_fitting_jobs": 21,
+  "planned_evaluations": 90,
+  "planned_hands": 10800000,
+  "independent_card_blocks": 20000,
+  "primary_pairs": [
+    [
+      "legacy_control",
+      "legacy_small_replay"
+    ],
+    [
+      "legacy_control",
+      "legacy_fewer_steps"
+    ],
+    [
+      "legacy_control",
+      "legacy_smaller_batch"
+    ],
+    [
+      "legacy_control",
+      "legacy_raw_objective"
+    ],
+    [
+      "rich_masked",
+      "rich_full"
+    ]
+  ],
+  "simultaneous_primary_intervals": "Bonferroni across5pairs*3fields=15",
+  "limitation": "Input pair uses existing rich96 replay; budget arms use existing360 replay. Cross-group causal attribution and rollout/sampling effects are not identified.",
+  "baseline_policies": {
+    "original120": {
+      "342": {
+        "path": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/original120-seed-342.npz",
+        "sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8"
+      },
+      "343": {
+        "path": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/original120-seed-343.npz",
+        "sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c"
+      },
+      "344": {
+        "path": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/original120-seed-344.npz",
+        "sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3"
+      }
+    },
+    "parent360": {
+      "342": {
+        "path": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/parent360-seed-342.npz",
+        "sha256": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76"
+      },
+      "343": {
+        "path": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/parent360-seed-343.npz",
+        "sha256": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517"
+      },
+      "344": {
+        "path": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/parent360-seed-344.npz",
+        "sha256": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7"
+      }
+    },
+    "previous_rich96": {
+      "342": {
+        "path": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-342.json",
+        "sha256": "3f765798ee49ea50dfaf6a8c9aa0a6ace757b45b0559bf49add53051d83bd326"
+      },
+      "343": {
+        "path": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-343.json",
+        "sha256": "cb54de032830223e08a358c8a7e6377347bf34460ff1e3b4b3dfaee78d912481"
+      },
+      "344": {
+        "path": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-344.json",
+        "sha256": "2ef54ff2ff357697114e48e95a9ab0c34dbca661663728f2fc4ae71f0a752545"
+      }
+    }
+  },
+  "prior_card_ranges": {
+    "artifacts/compact-v4/20261112T025126577365Z/config.json": [
+      2026111201,
+      2026113201
+    ],
+    "artifacts/compact-v4/20261112T032318825281Z/config.json": [
+      2026111203,
+      2026113203
+    ],
+    "artifacts/bounded-continuation/20261113T014811152621Z/config.json": [
+      2026200000,
+      2026220000
+    ],
+    "artifacts/bounded-continuation/20261113T014811152621Z/campaign/config.json": [
+      2026200000,
+      2026220000
+    ],
+    "artifacts/bounded-continuation/20261113T014811152621Z/parent-recovery/frozen/artifacts/continuation-study/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/bounded-continuation/20261113T014811152621Z/parent-recovery/frozen/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/foundation-study/20261112T053521994344Z/config.json": [
+      2026140000,
+      2026142000
+    ],
+    "artifacts/backup-audits/bounded-recovery-20261113/restored/frozen/artifacts/continuation-study/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/backup-audits/bounded-recovery-20261113/restored/frozen/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/backup-audits/bounded-stage360-20261113/restored/frozen/config.json": [
+      2026200000,
+      2026220000
+    ],
+    "artifacts/retraining-smoke/20261112T024445071933Z/config.json": [
+      220261112,
+      220261114
+    ],
+    "artifacts/rich-selfplay/20261113T075620400993Z/config.json": [
+      2035000000,
+      2035020000
+    ],
+    "artifacts/rich-selfplay/20261113T075620400993Z/campaign/config.json": [
+      2035000000,
+      2035020000
+    ],
+    "artifacts/refit-probe/20261112T050839072733Z/config.json": [
+      2026130000,
+      2026132000
+    ],
+    "artifacts/refit-probe/20261112T060737163350Z/config.json": [
+      2026150000,
+      2026152000
+    ],
+    "artifacts/refit-probe/20261112T043945051666Z/config.json": [
+      2026120000,
+      2026122000
+    ],
+    "artifacts/bounded-validation/20261113T014100Z/bounded/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/bounded-validation/20261113T014100Z/legacy/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/continuation-study/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ],
+    "reports/compact-v4/20261110T085438491435Z/config.json": [
+      190261110,
+      190263110
+    ],
+    "reports/compact-v4/20261112T025126577365Z/config.json": [
+      2026111201,
+      2026113201
+    ],
+    "reports/compact-v4/20261112T024445071933Z/config.json": [
+      220261112,
+      220261114
+    ],
+    "reports/compact-v4/20261110T022413561323Z/config.json": [
+      170261110,
+      170263110
+    ],
+    "reports/compact-v4/20261112T032318825281Z/config.json": [
+      2026111203,
+      2026113203
+    ],
+    "reports/bounded-continuation/20261113T014811152621Z/config.json": [
+      2026200000,
+      2026220000
+    ],
+    "reports/foundation-study/20261112T053521994344Z/config.json": [
+      2026140000,
+      2026142000
+    ],
+    "reports/fullhouse-v3/20261109T034714104421Z/config.json": [
+      160261109,
+      160263109
+    ],
+    "reports/refit-probe/20261112T050839072733Z/config.json": [
+      2026130000,
+      2026132000
+    ],
+    "reports/refit-probe/20261112T060737163350Z/config.json": [
+      2026150000,
+      2026152000
+    ],
+    "reports/refit-probe/20261112T043945051666Z/config.json": [
+      2026120000,
+      2026122000
+    ],
+    "reports/continuation-study/20261112T070916841250Z/config.json": [
+      2026160000,
+      2026180000
+    ]
+  },
+  "no_automatic_retry": true,
+  "no_model_promotion": true
+}

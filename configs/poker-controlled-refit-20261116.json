@@ -1,0 +1,18 @@
+{
+  "purpose": "User-approved one-factor diagnosis of poker regression using frozen parent replay",
+  "seeds": [342, 343, 344],
+  "arms": ["legacy_control", "legacy_small_replay", "legacy_fewer_steps", "legacy_smaller_batch", "legacy_raw_objective", "rich_masked", "rich_full"],
+  "legacy_parent": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z",
+  "rich_parent": "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z",
+  "parent_iteration": 360,
+  "new_selfplay_iterations": 0,
+  "evaluation_deals": 20000,
+  "evaluation_deal_seed": 2037000000,
+  "max_fitting_workers": 2,
+  "max_evaluation_workers": 3,
+  "max_seconds": 21600,
+  "fitting_seconds_per_job": 2700,
+  "evaluation_seconds_per_cell": 2400,
+  "automatic_retry": false,
+  "model_promotion": false
+}

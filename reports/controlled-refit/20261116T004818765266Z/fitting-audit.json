@@ -1,0 +1,14 @@
+{
+  "observed_utc": "2026-11-16T00:56:03.807441+00:00",
+  "run": "20261116T004818765266Z",
+  "completed_fitting_jobs": 21,
+  "new_selfplay_iterations": 0,
+  "parent_files_unchanged": true,
+  "original360_numerical_export_verified": true,
+  "legacy_initialization_and_opening_equal": true,
+  "objective_only_cdf_and_draw_order_equal": true,
+  "input_only_initialization_rows_and_final_rng_equal": true,
+  "prerequisite_tests_passed": 22,
+  "independent_strength_evaluation_complete": false,
+  "model_promoted": false
+}

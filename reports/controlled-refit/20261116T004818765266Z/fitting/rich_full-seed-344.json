@@ -1,0 +1,56 @@
+{
+  "model": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/fitting/rich_full-seed-344/policy.json",
+  "model_sha256": "366a3e75c9ec563d5c07e5f871e20b23f00d78441c8152d80c078f2941f6b82b",
+  "settings": {
+    "steps": 1024,
+    "batch": 512,
+    "capacity": 5000,
+    "mask_extra": false
+  },
+  "initial_parameter_sha256": "c768ec4efc95ea013099392d6ca59100394ed144cf143f0e5b47375f91fbfcdc",
+  "final_rng_sha256": "24b7e5113b3ea640ab1642ec9c4b4b626b72337cb293c7ca7cea482ad96abd83",
+  "selected_row_sha256": [
+    "a3d44437f284b46e5d827df6101e63efe16f752040ad67db809c061bc367bde5",
+    "a3d44437f284b46e5d827df6101e63efe16f752040ad67db809c061bc367bde5",
+    "a3d44437f284b46e5d827df6101e63efe16f752040ad67db809c061bc367bde5",
+    "a3d44437f284b46e5d827df6101e63efe16f752040ad67db809c061bc367bde5",
+    "a3d44437f284b46e5d827df6101e63efe16f752040ad67db809c061bc367bde5",
+    "a3d44437f284b46e5d827df6101e63efe16f752040ad67db809c061bc367bde5"
+  ],
+  "replay_rows": [
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000
+  ],
+  "fitting": {
+    "loss": 0.05720879137516022,
+    "rows": 30000,
+    "eligible_rows": 29846,
+    "steps": 1024,
+    "opening_frozen": true,
+    "objective": "uniform_replay_sampling_iteration_weighted_raw_BB_MSE",
+    "fixed_BB_normalizer": 100.0,
+    "fixed_monitor_rows": 512,
+    "replay_mse_before_bb2": 1340.322509765625,
+    "replay_mse_after_bb2": 540.224853515625,
+    "teacher_prior_mse_bb2": 1340.322509765625,
+    "relative_policy_tv": 0.4343390166759491,
+    "monitor_scope": "Deterministic retained-replay subset, not independent strength or heldout performance"
+  },
+  "mask_folded_losslessly": true,
+  "old51_replay_transferred": false,
+  "new_selfplay_iterations": 0,
+  "data_origin": "Completed rich96 replay, shared within this feature pair only",
+  "complete": true,
+  "completed_utc": "2026-11-16T00:52:17.484565+00:00",
+  "arm": "rich_full",
+  "seed": 344,
+  "seconds": 19.445263793999857,
+  "kind": "derived-policy-probe",
+  "resumable_selfplay": false,
+  "model_promoted": false,
+  "automatic_retry": false
+}

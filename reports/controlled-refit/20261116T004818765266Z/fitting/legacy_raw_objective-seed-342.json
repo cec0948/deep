@@ -1,0 +1,247 @@
+{
+  "model": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/fitting/legacy_raw_objective-seed-342/policy.npz",
+  "model_sha256": "6f1a543a55333244d4875f232f445f71b60db90dd7dc9965450ef7c899472465",
+  "parent_numerical_export_verified": true,
+  "settings": {
+    "capacity": 100000,
+    "steps": 1024,
+    "batch": 512,
+    "objective": "raw_BB_importance_corrected"
+  },
+  "initial_parameter_sha256": "ac9a5c244b6bbaa6a0e40271f5cd11c3011ff84b25794ac56840d88d1f075d80",
+  "selected_row_sha256": [
+    "baa5f49fbad78af4964d9ec7eaf2d6327b2d2ca1f4dcf54e2394dfff2e36d58e",
+    "baa5f49fbad78af4964d9ec7eaf2d6327b2d2ca1f4dcf54e2394dfff2e36d58e",
+    "baa5f49fbad78af4964d9ec7eaf2d6327b2d2ca1f4dcf54e2394dfff2e36d58e",
+    "baa5f49fbad78af4964d9ec7eaf2d6327b2d2ca1f4dcf54e2394dfff2e36d58e",
+    "baa5f49fbad78af4964d9ec7eaf2d6327b2d2ca1f4dcf54e2394dfff2e36d58e",
+    "baa5f49fbad78af4964d9ec7eaf2d6327b2d2ca1f4dcf54e2394dfff2e36d58e"
+  ],
+  "sampling_cdf_sha256": "39a6ba12e039f5b9607b66ca89777e5f1a2c4f761cb474fe5f946ada7577d4cf",
+  "fitting_random_stream_sha256": "09deeadc3f7535ef0d8cceba9c07c0a60c530a7d2b17105c50995cda7acfb97b",
+  "replay_rows": [
+    100000,
+    100000,
+    100000,
+    100000,
+    100000,
+    100000
+  ],
+  "fitting": {
+    "main_loss": 0.828798770904541,
+    "opening": {
+      "steps": 2048,
+      "classes": 169,
+      "scale": 3.7736636419839713,
+      "loss": 0.0007838783203624189
+    },
+    "objective": {
+      "method": "importance-corrected-balanced",
+      "original_rows": 597002,
+      "conditional_records": 592369,
+      "draws": 524288,
+      "distinct_entries": 208797,
+      "normalizer_z": 1548.7818679244572,
+      "conditional_variance_constant": 4.533794687981899,
+      "target_probability_min": 8.806445676995948e-10,
+      "target_probability_max": 1.6940301147213036e-05,
+      "old_to_corrected_importance_min": 8.260899104104672e-05,
+      "old_to_corrected_importance_max": 4.477289319176707,
+      "importance_second_moment": 2.6574926331957376,
+      "effective_batch_fraction": 0.3762945520558081,
+      "raw_mean_rounding_max_abs": 9.682283803158498e-06,
+      "normalized_target_rounding_max_abs": 9.067753161673409e-07,
+      "importance_weight_rounding_max_abs": 1.426713494012688e-07,
+      "by_stratum": {
+        "0": {
+          "records": 411,
+          "retained_iteration_mass": 0.002128088332938658,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.0006892754787869924,
+          "scale": 22.397354125976562
+        },
+        "1": {
+          "records": 424,
+          "retained_iteration_mass": 0.0014208570221329836,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.0002719593514274745,
+          "scale": 17.217573165893555
+        },
+        "2": {
+          "records": 367,
+          "retained_iteration_mass": 0.0010254478125600445,
+          "previous_sampler_mass": 0.0476190476190476,
+          "actual_sampler_mass": 0.0476190476190476,
+          "objective_normalized_score_mass": 0.00020264195549521622,
+          "scale": 17.49456024169922
+        },
+        "4": {
+          "records": 313,
+          "retained_iteration_mass": 0.003852144302073957,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.0010947997527734985,
+          "scale": 20.980276107788086
+        },
+        "5": {
+          "records": 373,
+          "retained_iteration_mass": 0.0027872157095297128,
+          "previous_sampler_mass": 0.04761904761904763,
+          "actual_sampler_mass": 0.04761904761904763,
+          "objective_normalized_score_mass": 0.0014618385171788896,
+          "scale": 28.50096321105957
+        },
+        "6": {
+          "records": 10929,
+          "retained_iteration_mass": 0.01747896558410704,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.011680524810359862,
+          "scale": 32.171287536621094
+        },
+        "7": {
+          "records": 21257,
+          "retained_iteration_mass": 0.032687901294512337,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.06886176536739236,
+          "scale": 57.12032699584961
+        },
+        "8": {
+          "records": 32175,
+          "retained_iteration_mass": 0.0498710882663856,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.08594760354028025,
+          "scale": 51.66394805908203
+        },
+        "9": {
+          "records": 17589,
+          "retained_iteration_mass": 0.024780106250526512,
+          "previous_sampler_mass": 0.04761904761904762,
+          "actual_sampler_mass": 0.04761904761904762,
+          "objective_normalized_score_mass": 0.061144537886596746,
+          "scale": 61.81905746459961
+        },
+        "10": {
+          "records": 10868,
+          "retained_iteration_mass": 0.019761855012938048,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.0029453698720118444,
+          "scale": 15.193267822265625
+        },
+        "11": {
+          "records": 39694,
+          "retained_iteration_mass": 0.06583231679611348,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.05999158610204525,
+          "scale": 37.56822967529297
+        },
+        "12": {
+          "records": 68784,
+          "retained_iteration_mass": 0.11060420230627363,
+          "previous_sampler_mass": 0.04761904761904763,
+          "actual_sampler_mass": 0.04761904761904763,
+          "objective_normalized_score_mass": 0.1336666283075049,
+          "scale": 43.2634162902832
+        },
+        "13": {
+          "records": 9573,
+          "retained_iteration_mass": 0.014544324892149768,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.027050888622163368,
+          "scale": 53.670928955078125
+        },
+        "14": {
+          "records": 6456,
+          "retained_iteration_mass": 0.012525295138508861,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.001149549914993716,
+          "scale": 11.92243766784668
+        },
+        "15": {
+          "records": 47337,
+          "retained_iteration_mass": 0.08207319200646869,
+          "previous_sampler_mass": 0.04761904761904762,
+          "actual_sampler_mass": 0.04761904761904762,
+          "objective_normalized_score_mass": 0.05960639430919893,
+          "scale": 33.53828811645508
+        },
+        "16": {
+          "records": 113565,
+          "retained_iteration_mass": 0.18981728420611813,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.19129860512877656,
+          "scale": 39.50782775878906
+        },
+        "17": {
+          "records": 7355,
+          "retained_iteration_mass": 0.011986149003240758,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.018649864725289362,
+          "scale": 49.09001159667969
+        },
+        "18": {
+          "records": 4728,
+          "retained_iteration_mass": 0.009516893311903689,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.0004738101145034259,
+          "scale": 8.781115531921387
+        },
+        "19": {
+          "records": 47716,
+          "retained_iteration_mass": 0.08687246819216898,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.04673679185197874,
+          "scale": 28.865793228149414
+        },
+        "20": {
+          "records": 146297,
+          "retained_iteration_mass": 0.2501331171796006,
+          "previous_sampler_mass": 0.04761904761904762,
+          "actual_sampler_mass": 0.04761904761904762,
+          "objective_normalized_score_mass": 0.21320425329412887,
+          "scale": 36.333518981933594
+        },
+        "21": {
+          "records": 6158,
+          "retained_iteration_mass": 0.010301087379748455,
+          "previous_sampler_mass": 0.047619047619047616,
+          "actual_sampler_mass": 0.047619047619047616,
+          "objective_normalized_score_mass": 0.013871311097113748,
+          "scale": 45.66803741455078
+        }
+      },
+      "identity": "Expected q-sampled (q*/q)-weighted normalized-MSE gradient = retained-row raw-unit iteration-weighted-MSE gradient / Z, up to float32 rounding",
+      "limitations": [
+        "Empirical retained replay objective; not a full-game or six-player convergence guarantee",
+        "Correcting objective mass may reduce deliberate coverage of rare contexts",
+        "Conditional variance and lost state information cannot be recovered by extra fitting"
+      ]
+    }
+  },
+  "opening_steps": 2048,
+  "opening_tv": 0.010564039618934134,
+  "opening_sha256": "593e01bbe567e86d388bcafda6757c0dbf30ddeeccc915ddb598be84ca94c3c9",
+  "exact_online_resume": false,
+  "new_selfplay_iterations": 0,
+  "complete": true,
+  "completed_utc": "2026-11-16T00:50:39.216247+00:00",
+  "arm": "legacy_raw_objective",
+  "seed": 342,
+  "seconds": 23.317729884000073,
+  "kind": "derived-policy-probe",
+  "resumable_selfplay": false,
+  "model_promoted": false,
+  "automatic_retry": false
+}
