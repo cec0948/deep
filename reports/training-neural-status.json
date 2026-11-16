@@ -1,52 +1,124 @@
 {
-  "status": "complete",
-  "phase": "complete",
-  "observed_utc": "2026-11-16T06:44:50.011118+00:00",
-  "run": "20261116T052535674094Z",
-  "study_kind": "independent-frozen-candidate-confirmation",
-  "candidate": "legacy_fewer_steps",
-  "supervisor_pid": 3709,
-  "supervisor_start": "1881044",
-  "completed_evaluations": 36,
+  "status": "running",
+  "phase": "training",
+  "observed_utc": "2026-11-16T08:42:59.499660+00:00",
+  "run": "20261116T084130Z",
+  "study_kind": "budget-preserved-legacy-continuation-window-average",
+  "supervisor_pid": 5661,
+  "supervisor_start": "3049610",
+  "training_progress": {
+    "342": {
+      "status": "running",
+      "phase": "training",
+      "observed_utc": "2026-11-16T08:42:58.187609+00:00",
+      "pid": 5662,
+      "process_start": "3049761",
+      "seed": 342,
+      "iteration": 365,
+      "new_selfplay_iterations": 5,
+      "planned_new_selfplay_iterations": 60,
+      "elapsed_seconds": 151.0698526089982,
+      "opening_tv": 0.0010709387885154099,
+      "strategy_rows": 18092,
+      "average_fit": null
+    },
+    "343": {
+      "status": "running",
+      "phase": "training",
+      "observed_utc": "2026-11-16T08:42:30.767293+00:00",
+      "pid": 5663,
+      "process_start": "3049761",
+      "seed": 343,
+      "iteration": 364,
+      "new_selfplay_iterations": 4,
+      "planned_new_selfplay_iterations": 60,
+      "elapsed_seconds": 123.51905243100191,
+      "opening_tv": 0.008764252039716449,
+      "strategy_rows": 14042,
+      "average_fit": null
+    },
+    "344": {
+      "status": "running",
+      "phase": "training",
+      "observed_utc": "2026-11-16T08:42:53.214419+00:00",
+      "pid": 5664,
+      "process_start": "3049761",
+      "seed": 344,
+      "iteration": 365,
+      "new_selfplay_iterations": 5,
+      "planned_new_selfplay_iterations": 60,
+      "elapsed_seconds": 146.0212193999978,
+      "opening_tv": 0.028555102084275363,
+      "strategy_rows": 18167,
+      "average_fit": null
+    }
+  },
+  "completed_training_workers": 0,
+  "planned_training_workers": 3,
+  "new_selfplay_iterations_per_seed": {
+    "342": 5,
+    "343": 4,
+    "344": 5
+  },
+  "planned_new_selfplay_iterations_per_seed": 60,
+  "training_complete": false,
+  "averaging_window": [
+    361,
+    420
+  ],
+  "historical_average_before361_available": false,
+  "completed_evaluations": 0,
   "planned_evaluations": 36,
-  "verified_hands": 4320000,
+  "verified_hands": 0,
   "planned_hands": 4320000,
   "independent_card_blocks": 20000,
-  "evaluation_deal_seed": 2037100000,
-  "running": {},
+  "running": {
+    "train-342": {
+      "pid": 5662,
+      "process_start": "3049761",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_baseline.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign",
+        "--seed",
+        "342"
+      ]
+    },
+    "train-343": {
+      "pid": 5663,
+      "process_start": "3049761",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_baseline.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign",
+        "--seed",
+        "343"
+      ]
+    },
+    "train-344": {
+      "pid": 5664,
+      "process_start": "3049761",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_baseline.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign",
+        "--seed",
+        "344"
+      ]
+    }
+  },
   "error": null,
-  "new_selfplay_iterations": 0,
-  "new_fitting_jobs": 0,
-  "candidate_weights_changed": false,
+  "small_game_average_gate_passed": true,
+  "full_paper_reproduction": false,
   "model_promoted": false,
   "automatic_retry": false,
-  "study_complete": true,
-  "evaluation_complete": true,
-  "elapsed_seconds": 4751.7813216959985,
-  "max_seconds": 14400,
-  "existing_candidate_backup_sha256": "42ec75b328c31d568e971d2231a2f70c710c8eefa0ea8fe0d3b5453b952fcdca",
-  "new_model_archive_required": false,
-  "next_action": "Analyze independent confirmation; no automatic promotion or further training",
-  "final_audit_checked_utc": "2026-11-16T07:24:46.262619+00:00",
-  "confirmation_pass": false,
-  "adoption_conditions": {
-    "public_lower_above_zero": false,
-    "at_least_two_public_seeds_improve": false,
-    "mixed_lower_above_minus_25": true,
-    "noregrets_lower_above_minus_50": true
-  },
-  "summary_sha256": "8bf8c2b8c7992f72011c676853983c12c6cd83f3a281f3f999110f10753f1701",
-  "evaluation_summary_sha256": "c85482ec877483e3eb36f2574d9d0fd7f5ffb4ca22072cb7a9a94626f565a148",
-  "last_safe_backup": {
-    "sha256": "42ec75b328c31d568e971d2231a2f70c710c8eefa0ea8fe0d3b5453b952fcdca",
-    "bytes": 24408351,
-    "kind": "derived-policy-probe",
-    "private": true,
-    "verified_remote_size": true,
-    "verified_owner_only": true,
-    "remote_checksum_available": false,
-    "remote_sha256_verified": false,
-    "archive_contains_this_later_confirmation": false,
-    "new_upload_required": false
-  }
+  "study_complete": false,
+  "evaluation_complete": false,
+  "elapsed_seconds": 154.56569120100175,
+  "max_seconds": 21600,
+  "backup_ready": false,
+  "next_action": "Continue fixed360to420learning and36cell evaluation"
 }

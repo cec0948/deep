@@ -1,0 +1,25 @@
+{
+  "seed": 73,
+  "passed": true,
+  "initial_exploitability": 2.373611111111111,
+  "exact_neural_trajectory_average_exploitability": 0.35577271029166685,
+  "learned_average_exploitability": 0.40694176340693156,
+  "full_infoset_weighted_tv": 0.04747155494531901,
+  "numpy_torch_max_probability_error": 3.5762786865234375e-07,
+  "fit": {
+    "rows": 100000,
+    "total_seen": 108248,
+    "distinct_inputs": 866,
+    "steps": 2048,
+    "batch_size": 512,
+    "weighted_replay_tv": 0.006839751468082146,
+    "weighted_replay_kl": 0.0014344345766574812,
+    "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+    "scope": "Replay approximation consistency; not independent poker strength",
+    "parameters": 23813
+  },
+  "model_sha256": "d9e1a03dae5215f2eb60cee07d99eb2e7d5a4bd23ffee77e1d2aa6ff07ad366e",
+  "average_targets": "Sampled fixed-reference trajectories only",
+  "exact_policy_table_deployed": false,
+  "six_player_strength_verified": false
+}

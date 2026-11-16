@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-11-16T08:33:56.947129+00:00",
+  "gate": {
+    "seeds": [
+      71,
+      72,
+      73
+    ],
+    "iterations": 32,
+    "reference_hands_per_iteration": 1024,
+    "strategy_capacity": 100000,
+    "average_fit_steps": 2048,
+    "average_batch": 512,
+    "exact_estimator_max_error": 1e-12,
+    "max_weighted_full_infoset_tv": 0.15,
+    "max_average_exploitability_fraction_uniform": 0.5,
+    "max_exploitability_over_exact_average": 0.35,
+    "max_seconds": 1200,
+    "automatic_retry": false
+  },
+  "source_sha256": {
+    "/workspace/deep/scripts/validate_poker_strategy_average.py": "e6b380b5d2b37da66a15661afda2664e04b77229ad7b3a2a9bdd1e6df5a1aeb5",
+    "/workspace/deep/scripts/poker_strategy_average.py": "a711f99d2d6539d1e554adbc964c85480f4708cecb785f995737717b23ae9d7b",
+    "/workspace/deep/scripts/train_neural_information_gate.py": "7988b9edd781e262cfc6bcc6e21491b454efc1422243448dfca357ab35d55e3c",
+    "/workspace/deep/scripts/validate_strength_training.py": "de1dfa724a053ce9488bebb275e68a3074557266f8a6a0cc16ce7b2ac0f9245b",
+    "/workspace/deep/scripts/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+    "/workspace/deep/scripts/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/scripts/poker_average_inference.py": "d2c4071bc8befafdb1961eaf4f070584deb93d97bf3ed81fed940ad54a9456e3"
+  },
+  "scope": "New strategy estimator and neural approximation only; unchanged legacy regret learner",
+  "production_information_loss_unresolved": true,
+  "full_paper_reproduction": false
+}

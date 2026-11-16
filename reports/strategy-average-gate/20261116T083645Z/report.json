@@ -1,0 +1,112 @@
+{
+  "status": "complete",
+  "passed": true,
+  "completed_utc": "2026-11-16T08:35:25.857123+00:00",
+  "estimator_checks": [
+    {
+      "players": 2,
+      "infosets": 12,
+      "max_error": 2.220446049250313e-16,
+      "wrong_on_policy_frequency_error": 0.06868399679525294,
+      "passed": true
+    },
+    {
+      "players": 3,
+      "infosets": 48,
+      "max_error": 3.3306690738754696e-16,
+      "wrong_on_policy_frequency_error": 0.126184526774337,
+      "passed": true
+    }
+  ],
+  "seeds": [
+    {
+      "seed": 71,
+      "passed": true,
+      "initial_exploitability": 2.373611111111111,
+      "exact_neural_trajectory_average_exploitability": 0.37841698249888606,
+      "learned_average_exploitability": 0.3731505206798509,
+      "full_infoset_weighted_tv": 0.046283143003104564,
+      "numpy_torch_max_probability_error": 5.066394805908203e-07,
+      "fit": {
+        "rows": 100000,
+        "total_seen": 106503,
+        "distinct_inputs": 873,
+        "steps": 2048,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.006548412624125926,
+        "weighted_replay_kl": 0.0012548451252376786,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813
+      },
+      "model_sha256": "4520727c0d3ccc47aae13a8d9be53507d20bde2e518fb9be0b6775a10c52eb5d",
+      "average_targets": "Sampled fixed-reference trajectories only",
+      "exact_policy_table_deployed": false,
+      "six_player_strength_verified": false
+    },
+    {
+      "seed": 72,
+      "passed": true,
+      "initial_exploitability": 2.373611111111111,
+      "exact_neural_trajectory_average_exploitability": 0.391498450329291,
+      "learned_average_exploitability": 0.3947103691925301,
+      "full_infoset_weighted_tv": 0.051401096716058546,
+      "numpy_torch_max_probability_error": 3.5762786865234375e-07,
+      "fit": {
+        "rows": 100000,
+        "total_seen": 106855,
+        "distinct_inputs": 855,
+        "steps": 2048,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.007952461915247318,
+        "weighted_replay_kl": 0.0014877225611831773,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813
+      },
+      "model_sha256": "15a1b466d7544afc33363fb7f704c7ed9548a8085590c6f04984128372bcc58c",
+      "average_targets": "Sampled fixed-reference trajectories only",
+      "exact_policy_table_deployed": false,
+      "six_player_strength_verified": false
+    },
+    {
+      "seed": 73,
+      "passed": true,
+      "initial_exploitability": 2.373611111111111,
+      "exact_neural_trajectory_average_exploitability": 0.35577271029166685,
+      "learned_average_exploitability": 0.40694176340693156,
+      "full_infoset_weighted_tv": 0.04747155494531901,
+      "numpy_torch_max_probability_error": 3.5762786865234375e-07,
+      "fit": {
+        "rows": 100000,
+        "total_seen": 108248,
+        "distinct_inputs": 866,
+        "steps": 2048,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.006839751468082146,
+        "weighted_replay_kl": 0.0014344345766574812,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813
+      },
+      "model_sha256": "d9e1a03dae5215f2eb60cee07d99eb2e7d5a4bd23ffee77e1d2aa6ff07ad366e",
+      "average_targets": "Sampled fixed-reference trajectories only",
+      "exact_policy_table_deployed": false,
+      "six_player_strength_verified": false
+    }
+  ],
+  "source_sha256": {
+    "/workspace/deep/scripts/validate_poker_strategy_average.py": "e6b380b5d2b37da66a15661afda2664e04b77229ad7b3a2a9bdd1e6df5a1aeb5",
+    "/workspace/deep/scripts/poker_strategy_average.py": "a711f99d2d6539d1e554adbc964c85480f4708cecb785f995737717b23ae9d7b",
+    "/workspace/deep/scripts/train_neural_information_gate.py": "7988b9edd781e262cfc6bcc6e21491b454efc1422243448dfca357ab35d55e3c",
+    "/workspace/deep/scripts/validate_strength_training.py": "de1dfa724a053ce9488bebb275e68a3074557266f8a6a0cc16ce7b2ac0f9245b",
+    "/workspace/deep/scripts/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+    "/workspace/deep/scripts/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/scripts/poker_average_inference.py": "d2c4071bc8befafdb1961eaf4f070584deb93d97bf3ed81fed940ad54a9456e3"
+  },
+  "plan_sha256": "370b9006cefe5172d3493df8720b13779f225cf32a334083e2bc632040025648",
+  "elapsed_seconds": 88.91073131200028,
+  "automatic_retry": false,
+  "six_player_strength_verified": false,
+  "full_paper_reproduction": false
+}

@@ -4,7 +4,9 @@
 
 ## 최신 실행 확인
 
-- 최신 실행은2026-11-16 개선 후보 독립 재검증 `20261116T052535674094Z`다.15:44:50 KST에36셀·432만 핸드 평가를 완료했고, 공개 상대 변화−0.30bb/100(명목95%−9.60~+8.99), 개선seed1/3개로 기존 네 조건 중 공개 상대 조건2개에 미달했다. `docs/retraining-candidate-confirmation-20261116.md`, `reports/candidate-confirmation-status.json`, `artifacts/candidate-confirmation/current.json`을 먼저 읽는다. 감독은 `run_poker_candidate_confirmation.py`, 평가기는 `evaluate_rich_selfplay.py`다. 기록된 PID·시작 토큰·명령행과 현재 시각·실제 프로세스를 대조하며 완료된 감독의 zombie 상태를 실행 중으로 해석하지 않는다. 가중치 변경·새 fitting·자기대전은0이다. 통계 단위는20,000개 새 카드 묶음이다. 주 판정은 후보−원본120회의 기존 네 조건이며 부모360회·1024steps 대비 진단과 구분한다. 미달 뒤 자동 재시도·후보 변경·모델 교체·추가 학습하지 않으며, 같은 완료·백업 기록은 반복 알리지 않는다.
+- 최신 승인 작업은2026-11-16의 표본·학습 예산 유지 및 평균 전략 기준 실험이다. `docs/retraining-average-baseline-20261116.md`, `reports/average-baseline-status.json`, `artifacts/average-baseline/current.json`을 우선 확인한다. 감독은 `run_poker_average_baseline.py`, 학습기는 `train_poker_average_baseline.py`, 평가기는 `evaluate_average_baseline.py`다. 기존360회 가중치·replay·첫 행동 통계·난수 상태를 이어받아360→420회 새60회 자기대전을 수행한다. 이전256steps 후보 재평가와 구분한다. 표본100,000행/좌석·탐색256·fitting1,024×512를 유지하며, 추가 평균 전략은361~420구간만의 신경망 근사다.420회 전체 역사 평균이나 논문 전체 재현으로 표시하지 않는다. 실제PID·시작 토큰·명령행·기록 시각과 새폴더 `status.json`, `campaign/seed-*/status.json`·`current.json`·`diagnostics.jsonl`, `preflight.json`, `stage-ready.json`, `evaluation-plan.json`, `evaluation-summary.json`, `summary.json`, `failure.json`, `backup-ready.json`을 대조한다. 학습 완료와 새20,000카드 묶음의36셀·432만 핸드 평가 완료를 구분한다. 사전 후보는평균361~420이며 원본120회 대비 기존 네 조건과 부모360회·최신420회 대비 진단을 구분한다.372회는 품질 확인 단계이고420회 이후 연장·실패 자동 재시도·후보 변경·기준 변경·모델 교체를 하지 않는다. 현재 입력51차원의 정보 손실은 남아 있으므로 작은 게임 평균화 검증을6인 실력 향상으로 표현하지 않는다.
+
+- 이전 완료 실행은2026-11-16 개선 후보 독립 재검증 `20261116T052535674094Z`다.15:44:50 KST에36셀·432만 핸드 평가를 완료했고, 공개 상대 변화−0.30bb/100(명목95%−9.60~+8.99), 개선seed1/3개로 기존 네 조건 중 공개 상대 조건2개에 미달했다. `docs/retraining-candidate-confirmation-20261116.md`, `reports/candidate-confirmation-status.json`, `artifacts/candidate-confirmation/current.json`을 먼저 읽는다. 감독은 `run_poker_candidate_confirmation.py`, 평가기는 `evaluate_rich_selfplay.py`다. 기록된 PID·시작 토큰·명령행과 현재 시각·실제 프로세스를 대조하며 완료된 감독의 zombie 상태를 실행 중으로 해석하지 않는다. 가중치 변경·새 fitting·자기대전은0이다. 통계 단위는20,000개 새 카드 묶음이다. 주 판정은 후보−원본120회의 기존 네 조건이며 부모360회·1024steps 대비 진단과 구분한다. 미달 뒤 자동 재시도·후보 변경·모델 교체·추가 학습하지 않으며, 같은 완료·백업 기록은 반복 알리지 않는다.
 
 - 이전 작업은2026-11-16 통제 fitting 진단이다.13:18 KST에21개 fitting과90개 평가를 모두 완료했고13:56 KST에 파생 정책 묶음의 비공개 백업·대체된 이전 파생본 정리를 마쳤다. `docs/retraining-controlled-refit-20261116.md`, `reports/controlled-refit-status.json`, `artifacts/controlled-refit/current.json`을 먼저 확인한다. 고정 replay에서 파생 후보를 비교하는 것으로 새 자기대전 회차·기본 모델 교체가 아니다. 감독 `run_controlled_poker_study.py`, fitting `controlled_poker_refit.py`, 평가 `evaluate_rich_selfplay.py`의 PID·시작 토큰·명령행을 확인한다.21개 fitting과90개 평가의 완료를 구분한다. 기존360회·rich96회 완료와 혼동하지 않으며 같은 완료·백업 기록은 반복 알리지 않는다.
 
@@ -17,6 +19,8 @@
 
 ## 백업
 
+- 새 평균 기준 실험은 `snapshot_poker_average_baseline.py`가 만든 최신420회 `backup-ready.json` 하나를 `kind=training-checkpoint`, `checkpoint_mode=compact-window-average-recovery-v1`로 검증·백업한다. 실제 archive 추출·파일 SHA/크기·current/average 모델 배열·평균 추론·reservoir 다음 난수 상태 검증이 모두 통과해야 한다. `warm_start_state_verified=true`, `average_policy_available=true`, `averaging_window=[361,420]`, `resumable_selfplay=false`, `exact_legacy_resume=false`, `historical_mixture_available=false`를 구분한다. 원격 크기·소유자 전용 권한 확인을 끝내기 전 완료로 기록하지 않는다.100MiB초과이면64MiB조각·재결합 SHA·복원 manifest 규칙을 그대로 적용한다. 학습 종료 시점 archive에는 이후 최종36셀 평가가 포함되지 않으므로 `archive_includes_final_evaluation=false`를 유지하고 최종 평가를 별도 게시한다. 동일 archive SHA와 이미 인덱스에 있는 source SHA를 재업로드하지 않는다.
+
 - 이번 독립 재검증은 기존21정책 백업의256steps 후보를 byte 동일하게 재사용한다. `backup-reference.json`과 비공개 인덱스의 동일 archive SHA를 확인하며, 가중치가 바뀌지 않았으므로 새 모델 archive를 중복 업로드하지 않는다. 완료된 후속 평가의 요약·통계·실패 기록은 새 공개 reports 경로로 별도 게시한다. 기존 archive에 이번 후속 평가가 들어 있다고 주장하지 않는다. 마지막 안전한 가중치 백업은24,408,351 bytes의 검증 완료 통제 파생 묶음이며, 원본360회·rich96회 등 기존 모든 필수 복구본을 유지한다.
 
 - 최신 통제 진단은 `backup-ready.json`의 완전 검증된 `controlled-refit-policy-bundle-v1` 하나만 `kind=derived-policy-probe`, `resumable_selfplay=false`, `new_selfplay_iterations=0`으로 기록한다. `export_controlled_poker_probe.verify_probe`로 실제 추론 runtime 복원을 확인한다. `prepare_upload`의 분할·재결합 검증과 모든 원격 크기·권한 확인 뒤에만 완료로 기록한다. replay를 중복 업로드하지 않으며, 기존360회 및rich96회 복구본 SHA를 `restore_dependencies`에 넣어 둘 다 보존한다.
@@ -27,6 +31,8 @@
 - 자기대전 복구본은 `training-checkpoint`, 고정 replay 파생 후보는 `derived-policy-probe`, 연구 산출물은 `research-validation`으로 구분한다. 기존 compact 복구본의 `exact_legacy_resume=false`, `resumable_selfplay=false`는 옛 worker의 정확 재개 미지원 표시다. 새 rich family는 새 worker의 복구·다음 업데이트 동일성 검증이 통과할 때만 해당 family의 재개 지원을 기록하고, legacy 재개와 구분한다. `warm_start_state_verified=true`와 별개로 기록하며 모델·표본 보존 실패로 해석하지 않는다.
 
 ## 보존·정리
+
+- 새 평균 기준 복구본을 보관할 때는 `scripts/plan_average_backup_retention.py`를 사용한다. 기존 통제 진단 보존 정책을 포함하며 최신 평균 복구본 하나와 원본360회·rich96회·첫60회·필수120회·최근 파생2개·최신 연구·평가 자산 및 모든 복원 의존성을 유지한다.2GiB목표를 넘는 필수 복구본은 알리고 임의 삭제하지 않는다. 매 회차 네트워크·표본을 누적 백업하지 않는다.
 
 - 통제 진단 파생 묶음이 인덱스에 있으면 `scripts/plan_controlled_backup_retention.py`를 사용한다. 최신 파생2개는 이전 후보와 새 묶음을 합산한다. 알려진 `checkpoint_mode=controlled-refit-policy-bundle-v1`만 새 프로필로 처리하며, 완료 전 후보·부분 업로드·불명확한 파일은 정리하지 않는다. 기존60회·필수120회·부모360회·rich96회·최신 연구·평가 자산·복원 의존성과2GiB 기준은 유지한다.
 
