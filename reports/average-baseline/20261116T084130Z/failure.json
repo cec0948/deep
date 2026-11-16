@@ -1,0 +1,8 @@
+{
+  "observed_utc": "2026-11-16T08:47:00.149986+00:00",
+  "error_type": "RuntimeError",
+  "error": "train-342 failed with exit1; no automatic retry",
+  "automatic_retry": false,
+  "model_promoted": false,
+  "last_safe_backup": "Original verified compact360; inspect private index for newer completed recovery"
+}

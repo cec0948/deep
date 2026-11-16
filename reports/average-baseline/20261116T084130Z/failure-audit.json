@@ -1,0 +1,162 @@
+{
+  "status": "failed",
+  "run": "20261116T084130Z",
+  "observed_utc": "2026-11-16T08:53:42.430912+00:00",
+  "stop_reason": "Two of three stage372window-average networks exceeded the predeclared0.15weighted replay TV criterion",
+  "failure_kind": "average_neural_approximation_quality",
+  "seeds": [
+    {
+      "seed": 342,
+      "quality_stage": 372,
+      "average_fit": {
+        "rows": 44231,
+        "total_seen": 44231,
+        "distinct_inputs": 23972,
+        "steps": 8192,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.1594054167453858,
+        "weighted_replay_kl": 0.18700510092473285,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813
+      },
+      "criterion": 0.15,
+      "passed": false,
+      "latest_logged_iteration": 371,
+      "last_committed_iteration": 366,
+      "legacy_rng_isolation_all_logged_rounds": true,
+      "legacy_opening_quality_all_logged_rounds": true,
+      "actual_regret_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ]
+    },
+    {
+      "seed": 343,
+      "quality_stage": 372,
+      "average_fit": {
+        "rows": 44199,
+        "total_seen": 44199,
+        "distinct_inputs": 24000,
+        "steps": 8192,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.16985054683176384,
+        "weighted_replay_kl": 0.19719625171402935,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813
+      },
+      "criterion": 0.15,
+      "passed": false,
+      "latest_logged_iteration": 371,
+      "last_committed_iteration": 366,
+      "legacy_rng_isolation_all_logged_rounds": true,
+      "legacy_opening_quality_all_logged_rounds": true,
+      "actual_regret_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ]
+    },
+    {
+      "seed": 344,
+      "quality_stage": 372,
+      "average_fit": {
+        "rows": 42836,
+        "total_seen": 42836,
+        "distinct_inputs": 22626,
+        "steps": 8192,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.1483655023131266,
+        "weighted_replay_kl": 0.18371929602471787,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813
+      },
+      "criterion": 0.15,
+      "passed": true,
+      "latest_logged_iteration": 372,
+      "last_committed_iteration": 372,
+      "legacy_rng_isolation_all_logged_rounds": true,
+      "legacy_opening_quality_all_logged_rounds": true,
+      "actual_regret_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ]
+    }
+  ],
+  "completed_evaluations": 0,
+  "planned_evaluations": 36,
+  "training_complete": false,
+  "study_complete": false,
+  "evaluation_complete": false,
+  "no_six_player_strength_result": true,
+  "model_promoted": false,
+  "automatic_retry": false,
+  "criterion_changed": false,
+  "all_owned_processes_stopped": true,
+  "process_readback": [
+    {
+      "pid": 5661,
+      "expected_start": "3049610",
+      "actual_start": "3049610",
+      "state": "Z",
+      "live": false
+    },
+    {
+      "pid": 5662,
+      "expected_start": "3049761",
+      "actual_start": null,
+      "state": "absent",
+      "live": false
+    },
+    {
+      "pid": 5663,
+      "expected_start": "3049761",
+      "actual_start": null,
+      "state": "absent",
+      "live": false
+    },
+    {
+      "pid": 5664,
+      "expected_start": "3049761",
+      "actual_start": null,
+      "state": "absent",
+      "live": false
+    }
+  ],
+  "frozen_files_unchanged": true,
+  "successful_prior_checks": [
+    "27tests",
+    "Exact2and3player average estimator",
+    "Three sampled-neural Leduc averages",
+    "Actual360parent full-update net/replay/root/RNG parity",
+    "360trusted-engine protocol hands"
+  ],
+  "diagnosis": "Measured average approximation error. Network capacity, input scaling and optimization have not been causally separated. No replay eviction:44231/44199/42836stored rows are below100000cap.",
+  "last_safe_backups": {
+    "compact360": {
+      "bytes": 90022512,
+      "sha256": "65ec65f90cc1c0f73700ec4683d421baaaeb4bb82bb10c14fa2c9249fc504be8"
+    },
+    "rich96": {
+      "bytes": 122723204,
+      "sha256": "2d97f7ffff17ee4a6146e5f083e13d6aec612b47fa7ae1704ff948994f0bfaf1"
+    }
+  },
+  "remote_size_and_owner_rechecked": true,
+  "remote_sha256_verified": false,
+  "new_upload": false,
+  "backup_ready": false
+}

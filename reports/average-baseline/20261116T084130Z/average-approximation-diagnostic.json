@@ -1,0 +1,135 @@
+{
+  "seed": 344,
+  "stage": 372,
+  "full_weighted_replay_tv": 0.1483655023131266,
+  "strata": [
+    {
+      "stratum": 0,
+      "distinct_inputs": 379,
+      "mass_fraction": 0.018632204371069543,
+      "weighted_tv": 0.1591119974336093
+    },
+    {
+      "stratum": 1,
+      "distinct_inputs": 258,
+      "mass_fraction": 0.009521931575202057,
+      "weighted_tv": 0.19451883936201467
+    },
+    {
+      "stratum": 2,
+      "distinct_inputs": 155,
+      "mass_fraction": 0.004403435877283133,
+      "weighted_tv": 0.28429725807883693
+    },
+    {
+      "stratum": 3,
+      "distinct_inputs": 169,
+      "mass_fraction": 0.15727237181793113,
+      "weighted_tv": 0.15760853243072948
+    },
+    {
+      "stratum": 4,
+      "distinct_inputs": 336,
+      "mass_fraction": 0.07664445306025773,
+      "weighted_tv": 0.08507887139688314
+    },
+    {
+      "stratum": 5,
+      "distinct_inputs": 445,
+      "mass_fraction": 0.037088402613207436,
+      "weighted_tv": 0.14094032933909867
+    },
+    {
+      "stratum": 6,
+      "distinct_inputs": 4088,
+      "mass_fraction": 0.28247388126542416,
+      "weighted_tv": 0.1100730035852585
+    },
+    {
+      "stratum": 7,
+      "distinct_inputs": 8974,
+      "mass_fraction": 0.28659982360638553,
+      "weighted_tv": 0.16537632979450784
+    },
+    {
+      "stratum": 8,
+      "distinct_inputs": 5109,
+      "mass_fraction": 0.10128372184680766,
+      "weighted_tv": 0.21681037260454894
+    },
+    {
+      "stratum": 9,
+      "distinct_inputs": 1792,
+      "mass_fraction": 0.019105306816269273,
+      "weighted_tv": 0.21262823450220272
+    },
+    {
+      "stratum": 10,
+      "distinct_inputs": 126,
+      "mass_fraction": 0.0014380771572268317,
+      "weighted_tv": 0.16569745511921105
+    },
+    {
+      "stratum": 11,
+      "distinct_inputs": 277,
+      "mass_fraction": 0.00257317475331156,
+      "weighted_tv": 0.1954284219948633
+    },
+    {
+      "stratum": 12,
+      "distinct_inputs": 265,
+      "mass_fraction": 0.0017515131652547761,
+      "weighted_tv": 0.19720230051883728
+    },
+    {
+      "stratum": 13,
+      "distinct_inputs": 184,
+      "mass_fraction": 0.0009400297754160093,
+      "weighted_tv": 0.14798107063835728
+    },
+    {
+      "stratum": 14,
+      "distinct_inputs": 6,
+      "mass_fraction": 5.988509592599471e-05,
+      "weighted_tv": 0.05872840291959357
+    },
+    {
+      "stratum": 15,
+      "distinct_inputs": 23,
+      "mass_fraction": 9.375473147517424e-05,
+      "weighted_tv": 0.11765884935449127
+    },
+    {
+      "stratum": 16,
+      "distinct_inputs": 25,
+      "mass_fraction": 7.611154235287675e-05,
+      "weighted_tv": 0.08909286928949407
+    },
+    {
+      "stratum": 17,
+      "distinct_inputs": 6,
+      "mass_fraction": 1.3312076593017267e-05,
+      "weighted_tv": 0.08185643289722266
+    },
+    {
+      "stratum": 19,
+      "distinct_inputs": 4,
+      "mass_fraction": 1.1808408847482854e-05,
+      "weighted_tv": 0.11343645535484312
+    },
+    {
+      "stratum": 20,
+      "distinct_inputs": 4,
+      "mass_fraction": 1.6536794158340203e-05,
+      "weighted_tv": 0.027598447357194363
+    },
+    {
+      "stratum": 21,
+      "distinct_inputs": 1,
+      "mass_fraction": 2.6364960039997403e-07,
+      "weighted_tv": 0.48097677808254957
+    }
+  ],
+  "scope": "Read-only diagnosis of the only saved372average; no refitting or selfplay",
+  "interpretation": "Approximation error is measured; capacity versus optimization versus feature effects are not causally separated"
+}
