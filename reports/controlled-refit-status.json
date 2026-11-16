@@ -1,7 +1,7 @@
 {
   "status": "running",
   "phase": "evaluating",
-  "observed_utc": "2026-11-16T00:56:05.838139+00:00",
+  "observed_utc": "2026-11-16T01:41:53.202390+00:00",
   "run": "20261116T004818765266Z",
   "supervisor_pid": 1386,
   "supervisor_start": "217211",
@@ -12,22 +12,22 @@
   "completed_fitting_jobs": 21,
   "planned_fitting_jobs": 21,
   "fitting_complete": true,
-  "completed_evaluations": 0,
+  "completed_evaluations": 21,
   "planned_evaluations": 90,
-  "verified_hands": 0,
+  "verified_hands": 2520000,
   "planned_hands": 10800000,
   "independent_card_blocks": 20000,
   "evaluation_complete": false,
   "study_complete": false,
   "running": {
-    "eval/public-seed-342-original120": {
-      "pid": 1389,
-      "process_start": "217256",
+    "eval/public-seed-343-previous_rich96": {
+      "pid": 1833,
+      "process_start": "499822",
       "command": [
         "/workspace/.venvs/fullhouse/bin/python",
         "/workspace/deep/scripts/evaluate_rich_selfplay.py",
         "--model",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/original120-seed-342.npz",
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-343.json",
         "--source",
         "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source",
         "--field",
@@ -39,17 +39,17 @@
         "--timeout",
         "2400",
         "--output",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/public-seed-342-original120"
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/public-seed-343-previous_rich96"
       ]
     },
-    "eval/mixed-seed-342-original120": {
-      "pid": 1548,
-      "process_start": "241310",
+    "eval/mixed-seed-343-previous_rich96": {
+      "pid": 1841,
+      "process_start": "508968",
       "command": [
         "/workspace/.venvs/fullhouse/bin/python",
         "/workspace/deep/scripts/evaluate_rich_selfplay.py",
         "--model",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/original120-seed-342.npz",
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-343.json",
         "--source",
         "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source",
         "--field",
@@ -61,17 +61,17 @@
         "--timeout",
         "2400",
         "--output",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/mixed-seed-342-original120"
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/mixed-seed-343-previous_rich96"
       ]
     },
-    "eval/noregrets-seed-342-original120": {
-      "pid": 1549,
-      "process_start": "241310",
+    "eval/noregrets-seed-343-previous_rich96": {
+      "pid": 1847,
+      "process_start": "513043",
       "command": [
         "/workspace/.venvs/fullhouse/bin/python",
         "/workspace/deep/scripts/evaluate_rich_selfplay.py",
         "--model",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/original120-seed-342.npz",
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/baselines/previous-rich96-seed-343.json",
         "--source",
         "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source",
         "--field",
@@ -83,14 +83,14 @@
         "--timeout",
         "2400",
         "--output",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/noregrets-seed-342-original120"
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/noregrets-seed-343-previous_rich96"
       ]
     }
   },
   "error": null,
   "model_promoted": false,
   "automatic_retry": false,
-  "elapsed_seconds": 465.8988652799999,
+  "elapsed_seconds": 3213.263116208,
   "max_seconds": 21600,
   "next_action": "Continue the existing fixed refit/evaluation plan"
 }
