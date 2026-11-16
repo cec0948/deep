@@ -1,0 +1,26 @@
+{
+  "existing_archive_sha256": "42ec75b328c31d568e971d2231a2f70c710c8eefa0ea8fe0d3b5453b952fcdca",
+  "kind": "derived-policy-probe",
+  "candidate_weights_unchanged": true,
+  "new_upload_required": false,
+  "archived_prior_study_complete": true,
+  "archive_contains_this_later_confirmation": false,
+  "final_confirmation_reports": "summary.json and evaluation-summary.json; publish separately",
+  "remote_sha256_verified": false,
+  "backup_bytes": 24408351,
+  "verified_remote_size": true,
+  "verified_owner_only": true,
+  "remote_metadata_validated_utc": "2026-11-16T07:28:43.456964+00:00",
+  "remote_checksum_available": false,
+  "local_archive_sha256_verified": true,
+  "archived_candidate_weights_match": true,
+  "verification_scope": "Current local archive SHA-256 and selected candidate bytes match the existing archive; Drive size and owner-only permissions rechecked. No remote checksum supplied.",
+  "retention": {
+    "indexed_backups": 8,
+    "indexed_remote_files": 24,
+    "indexed_remote_bytes": 1199188654,
+    "budget_bytes": 2147483648,
+    "within_budget": true,
+    "cleanup_candidates": 0
+  }
+}

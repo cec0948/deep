@@ -1,0 +1,422 @@
+{
+  "complete": true,
+  "completed_evaluations": 36,
+  "total_hands": 4320000,
+  "independent_card_blocks": 20000,
+  "absolute_scores": {
+    "public/original120": {
+      "mean": -43.02538888888889,
+      "ci95_half_width": 7.2484778568133645,
+      "lower": -50.27386674570226,
+      "upper": -35.776911032075525
+    },
+    "mixed/original120": {
+      "mean": 173.46332777777778,
+      "ci95_half_width": 18.294890903366998,
+      "lower": 155.1684368744108,
+      "upper": 191.75821868114477
+    },
+    "noregrets/original120": {
+      "mean": 193.2676277777778,
+      "ci95_half_width": 30.6202896367731,
+      "lower": 162.6473381410047,
+      "upper": 223.88791741455088
+    },
+    "public/parent360": {
+      "mean": -52.937158333333336,
+      "ci95_half_width": 7.650422344809183,
+      "lower": -60.587580678142515,
+      "upper": -45.28673598852416
+    },
+    "mixed/parent360": {
+      "mean": 234.81522777777778,
+      "ci95_half_width": 14.990252465832803,
+      "lower": 219.82497531194497,
+      "upper": 249.8054802436106
+    },
+    "noregrets/parent360": {
+      "mean": 344.9367972222222,
+      "ci95_half_width": 24.668192796249677,
+      "lower": 320.2686044259725,
+      "upper": 369.6049900184719
+    },
+    "public/legacy_control": {
+      "mean": -21.79760277777778,
+      "ci95_half_width": 6.898596422904541,
+      "lower": -28.696199200682322,
+      "upper": -14.899006354873238
+    },
+    "mixed/legacy_control": {
+      "mean": 263.5684166666667,
+      "ci95_half_width": 17.378335987528118,
+      "lower": 246.19008067913856,
+      "upper": 280.9467526541948
+    },
+    "noregrets/legacy_control": {
+      "mean": 400.5891555555556,
+      "ci95_half_width": 29.728250698843226,
+      "lower": 370.86090485671235,
+      "upper": 430.3174062543988
+    },
+    "public/legacy_fewer_steps": {
+      "mean": -43.330197222222225,
+      "ci95_half_width": 8.749603443629802,
+      "lower": -52.07980066585203,
+      "upper": -34.58059377859242
+    },
+    "mixed/legacy_fewer_steps": {
+      "mean": 269.0552916666667,
+      "ci95_half_width": 15.511426262706632,
+      "lower": 253.54386540396004,
+      "upper": 284.5667179293733
+    },
+    "noregrets/legacy_fewer_steps": {
+      "mean": 313.5255388888889,
+      "ci95_half_width": 22.0617413656374,
+      "lower": 291.4637975232515,
+      "upper": 335.58728025452626
+    }
+  },
+  "candidate_minus_original120": {
+    "public": {
+      "mean": -0.3048083333333333,
+      "ci95_half_width": 9.291393818519737,
+      "lower": -9.59620215185307,
+      "upper": 8.986585485186403,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -9.923491666666667,
+          "ci95_half_width": 15.967297256776286,
+          "lower": -25.890788923442955,
+          "upper": 6.043805590109619
+        },
+        {
+          "seed": 343,
+          "mean": -59.23341666666666,
+          "ci95_half_width": 17.687770134142696,
+          "lower": -76.92118680080935,
+          "upper": -41.54564653252397
+        },
+        {
+          "seed": 344,
+          "mean": 68.24248333333334,
+          "ci95_half_width": 14.071042075701225,
+          "lower": 54.17144125763211,
+          "upper": 82.31352540903457
+        }
+      ]
+    },
+    "mixed": {
+      "mean": 95.59196388888888,
+      "ci95_half_width": 18.186719615137342,
+      "lower": 77.40524427375155,
+      "upper": 113.77868350402622,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 157.37723333333332,
+          "ci95_half_width": 30.314930689250264,
+          "lower": 127.06230264408306,
+          "upper": 187.6921640225836
+        },
+        {
+          "seed": 343,
+          "mean": -1.4723666666666675,
+          "ci95_half_width": 30.37996931321971,
+          "lower": -31.852335979886377,
+          "upper": 28.907602646553045
+        },
+        {
+          "seed": 344,
+          "mean": 130.871025,
+          "ci95_half_width": 28.9758449632789,
+          "lower": 101.8951800367211,
+          "upper": 159.8468699632789
+        }
+      ]
+    },
+    "noregrets": {
+      "mean": 120.25791111111111,
+      "ci95_half_width": 28.44086529639638,
+      "lower": 91.81704581471473,
+      "upper": 148.6987764075075,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 262.64210833333334,
+          "ci95_half_width": 45.440414000492765,
+          "lower": 217.2016943328406,
+          "upper": 308.0825223338261
+        },
+        {
+          "seed": 343,
+          "mean": -69.43884166666668,
+          "ci95_half_width": 44.83391327968349,
+          "lower": -114.27275494635018,
+          "upper": -24.604928386983183
+        },
+        {
+          "seed": 344,
+          "mean": 167.57046666666668,
+          "ci95_half_width": 42.52109957094025,
+          "lower": 125.04936709572642,
+          "upper": 210.0915662376069
+        }
+      ]
+    }
+  },
+  "diagnostic_comparisons": {
+    "public/legacy_fewer_steps-minus-parent360": {
+      "mean": 9.606961111111112,
+      "ci95_half_width": 8.589211160805062,
+      "lower": 1.0177499503060492,
+      "upper": 18.196172271916176,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 76.1031,
+          "ci95_half_width": 17.774604713260306,
+          "lower": 58.328495286739695,
+          "upper": 93.8777047132603
+        },
+        {
+          "seed": 343,
+          "mean": -66.271,
+          "ci95_half_width": 17.079493299591164,
+          "lower": -83.35049329959116,
+          "upper": -49.19150670040884
+        },
+        {
+          "seed": 344,
+          "mean": 18.988783333333334,
+          "ci95_half_width": 11.699526060623372,
+          "lower": 7.289257272709962,
+          "upper": 30.688309393956708
+        }
+      ],
+      "simultaneous_lower": -1.9545433880836054,
+      "simultaneous_upper": 21.16846561030583,
+      "family_comparisons": 6
+    },
+    "mixed/legacy_fewer_steps-minus-parent360": {
+      "mean": 34.24006388888889,
+      "ci95_half_width": 13.269460145577531,
+      "lower": 20.970603743311358,
+      "upper": 47.50952403446642,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 22.75871666666667,
+          "ci95_half_width": 27.583636454975444,
+          "lower": -4.824919788308776,
+          "upper": 50.34235312164211
+        },
+        {
+          "seed": 343,
+          "mean": 112.000875,
+          "ci95_half_width": 24.060532363574374,
+          "lower": 87.94034263642561,
+          "upper": 136.06140736357438
+        },
+        {
+          "seed": 344,
+          "mean": -32.0394,
+          "ci95_half_width": 19.93366750179821,
+          "lower": -51.97306750179821,
+          "upper": -12.105732498201789
+        }
+      ],
+      "simultaneous_lower": 16.37871197859308,
+      "simultaneous_upper": 52.1014157991847,
+      "family_comparisons": 6
+    },
+    "noregrets/legacy_fewer_steps-minus-parent360": {
+      "mean": -31.411258333333333,
+      "ci95_half_width": 19.68170156005406,
+      "lower": -51.09295989338739,
+      "upper": -11.729556773279274,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 9.106366666666672,
+          "ci95_half_width": 37.07786543782311,
+          "lower": -27.971498771156433,
+          "upper": 46.18423210448978
+        },
+        {
+          "seed": 343,
+          "mean": 32.545,
+          "ci95_half_width": 30.548422050393942,
+          "lower": 1.9965779496060598,
+          "upper": 63.09342205039394
+        },
+        {
+          "seed": 344,
+          "mean": -135.88514166666667,
+          "ci95_half_width": 35.512950749895005,
+          "lower": -171.39809241656167,
+          "upper": -100.37219091677167
+        }
+      ],
+      "simultaneous_lower": -57.903805422726876,
+      "simultaneous_upper": -4.918711243939793,
+      "family_comparisons": 6
+    },
+    "public/legacy_fewer_steps-minus-legacy_control": {
+      "mean": -21.532594444444445,
+      "ci95_half_width": 8.645565214820456,
+      "lower": -30.1781596592649,
+      "upper": -12.88702922962399,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -10.278716666666666,
+          "ci95_half_width": 14.780605441567838,
+          "lower": -25.059322108234504,
+          "upper": 4.501888774901172
+        },
+        {
+          "seed": 343,
+          "mean": -48.650416666666665,
+          "ci95_half_width": 17.315139950425884,
+          "lower": -65.96555661709255,
+          "upper": -31.33527671624078
+        },
+        {
+          "seed": 344,
+          "mean": -5.66865,
+          "ci95_half_width": 11.818887315677502,
+          "lower": -17.487537315677503,
+          "upper": 6.150237315677502
+        }
+      ],
+      "simultaneous_lower": -33.16995429715753,
+      "simultaneous_upper": -9.895234591731356,
+      "family_comparisons": 6
+    },
+    "mixed/legacy_fewer_steps-minus-legacy_control": {
+      "mean": 5.486875,
+      "ci95_half_width": 14.880469412301792,
+      "lower": -9.393594412301791,
+      "upper": 20.367344412301794,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 120.209575,
+          "ci95_half_width": 25.568540781457624,
+          "lower": 94.64103421854237,
+          "upper": 145.77811578145761
+        },
+        {
+          "seed": 343,
+          "mean": -30.115891666666666,
+          "ci95_half_width": 27.005670452587022,
+          "lower": -57.12156211925369,
+          "upper": -3.110221214079644
+        },
+        {
+          "seed": 344,
+          "mean": -73.63305833333334,
+          "ci95_half_width": 22.240828541300854,
+          "lower": -95.8738868746342,
+          "upper": -51.39222979203248
+        }
+      ],
+      "simultaneous_lower": -14.542975336608936,
+      "simultaneous_upper": 25.51672533660894,
+      "family_comparisons": 6
+    },
+    "noregrets/legacy_fewer_steps-minus-legacy_control": {
+      "mean": -87.06361666666666,
+      "ci95_half_width": 23.690464436437978,
+      "lower": -110.75408110310464,
+      "upper": -63.37315223022868,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 183.85359166666666,
+          "ci95_half_width": 36.362905928504375,
+          "lower": 147.49068573816228,
+          "upper": 220.21649759517103
+        },
+        {
+          "seed": 343,
+          "mean": -229.292125,
+          "ci95_half_width": 39.22741183677346,
+          "lower": -268.51953683677345,
+          "upper": -190.06471316322654
+        },
+        {
+          "seed": 344,
+          "mean": -215.75231666666667,
+          "ci95_half_width": 38.643684414610405,
+          "lower": -254.39600108127706,
+          "upper": -177.10863225205628
+        }
+      ],
+      "simultaneous_lower": -118.95215753986808,
+      "simultaneous_upper": -55.17507579346524,
+      "family_comparisons": 6
+    }
+  },
+  "adoption_against_original120": {
+    "conditions": {
+      "public_lower_above_zero": false,
+      "at_least_two_public_seeds_improve": false,
+      "mixed_lower_above_minus_25": true,
+      "noregrets_lower_above_minus_50": true
+    },
+    "original_four_conditions_pass": false,
+    "deployment_authorized": false,
+    "scope": "Candidate minus originalcurrent120; adoption evidence only, not the fixed research budget"
+  },
+  "confirmation_pass": false,
+  "statistical_unit": "One fresh shared card block averaged over seats and three fixed training seeds",
+  "candidate_preselected": true,
+  "new_selfplay_iterations": 0,
+  "new_fitting_jobs": 0,
+  "model_promoted": false,
+  "limitation": "Fresh cards confirm only this fixed candidate and fixed seeds/opponents. No general-strength or new-selfplay claim; no automatic promotion or retry.",
+  "completed_utc": "2026-11-16T06:44:49.970129+00:00",
+  "result_files": {
+    "noregrets-seed-342-original120": "8c6492cc4510ef2ba175b6e8736cc32c5f532f79e4e170fc1cc91f7aa0423065",
+    "mixed-seed-342-original120": "6e7abc1233e8855333bb973c6b5f6126c237c24d1bf43c3ddf735d842a1120c3",
+    "public-seed-342-original120": "a12bf9cd7db0179691d0ed877465edc311e47b64d9214a9e38f73425b931866f",
+    "public-seed-343-original120": "5255c66a61206ce7f7c7872013d99de4c440558876c085b76e29e891d05546c2",
+    "noregrets-seed-343-original120": "f3cc74eecbf2cf9f58d3812ef0f139822eb070108f4b5b90b1d60b0e02a034e1",
+    "mixed-seed-343-original120": "5a205e6bfbb4af4968b85f8db1c773f811faa6a4e203e63e7018f1d665e22cdd",
+    "noregrets-seed-344-original120": "a6d78517f04453f1387654c527a92971a7246894d0157d476abf8842611fe44e",
+    "mixed-seed-344-original120": "a6990a127a1bb248af1fe28db9e776333efaf8622f627f06475dd7c80be909c5",
+    "public-seed-344-original120": "0df852d452d851d24c7ed4d4a4c9b229993ceec6a2c2efaa62682c231bcccf96",
+    "noregrets-seed-342-parent360": "7cb324fc31b47c80a9e32527c8feede785b97808daef2e18c2e3d79f83f59fc8",
+    "mixed-seed-342-parent360": "a5ac4bfdf398275f8c91715cc9a2e4f948ad5182978c4955c7efb588eda34bf4",
+    "public-seed-342-parent360": "d2014498c0fb21074354b341ef17596be0db34661f4a8820ecff2b5b24e97651",
+    "noregrets-seed-343-parent360": "5eb2431da109960cfc90897ad4b1c42c90f86dd81a850eaf659c4ffbb3d11f53",
+    "public-seed-343-parent360": "1747cfbaa8ec1d1cb42cb01ab0f3c4169e6a948bd2f5a28b7167e8e7b7a68555",
+    "mixed-seed-343-parent360": "71a3bd9e65ec01005aa100dc308292f5c6acd5835c7cb4f589e825b8237b0b97",
+    "noregrets-seed-344-parent360": "6ab72618c4b0d5ec2f2e3580b1555362ed8646dd771c030f640b0b8e06499e58",
+    "public-seed-344-parent360": "ace30044a84a63e167068f883c1e9051f570611ecad95547718521d10fc699ab",
+    "mixed-seed-344-parent360": "07f20b3adc5627c0121400df6daaf81009c5a7740e0c83a084e3d42d8ce8952a",
+    "noregrets-seed-342-legacy_control": "f797f22fe88f778f85c66d798b30f56b83bbe900750a12c25b9d910b655137f8",
+    "public-seed-342-legacy_control": "c6838f73dd86c512cbd2db9952b6c8b26c99b40fbbaab2fc26d29eb40d5b4cc0",
+    "mixed-seed-342-legacy_control": "558ba1a02d402056de4a022056ccc8fee75462d907c0d573f6561de967b85f76",
+    "noregrets-seed-343-legacy_control": "fc43409cb1bdca4a12e094c44c6c63414472b8d942583a651be7583386fd26bf",
+    "public-seed-343-legacy_control": "6d49c3f6b3dabb32a85e32c43ef99085b4353a565c525e04f19884d2c7cec90a",
+    "mixed-seed-343-legacy_control": "e10629d1f5364825f702ec6b3b4a98ad093e1674469dfd0762c96a2879f4e264",
+    "noregrets-seed-344-legacy_control": "40c20bf8be86c107c71cfc8d40d5032eb5d8c1f93b223d6c64c46a48c4e9a61b",
+    "public-seed-344-legacy_control": "8943a8951608eb998b2020cdb415fd83c8010aff034cafb833f69a255f9bc022",
+    "mixed-seed-344-legacy_control": "ac1845d14d2ff6e492ea3b2c45a7fc6c8e7892c1b054be921cfa5c8a48c9f5e4",
+    "noregrets-seed-342-legacy_fewer_steps": "868dbe111d621e6bcb5087cbb1e60e1de02e91fdd9fdc9bd026425cf112c0fd8",
+    "mixed-seed-342-legacy_fewer_steps": "42efa7dacedc6f86a8a2a458cb54fcef9435a20595faf103f9ee5fd0e1d245a7",
+    "public-seed-342-legacy_fewer_steps": "bb0c25d9b5c70c593190ff5c264a50c037808e54473f260f888762abb4e2c273",
+    "noregrets-seed-343-legacy_fewer_steps": "6dc3d7729d6b5f252ea1487ce7ef13df71bd3e4ed5cd90d2e8a404838527ceec",
+    "public-seed-343-legacy_fewer_steps": "72d6329ccc27b786b69450da610407959b368577b4b7aec0e231e53ffbb4b306",
+    "mixed-seed-343-legacy_fewer_steps": "80c7df775e3cb523137abe24ddd879335ceced671760390d99817eea6d5fbe30",
+    "noregrets-seed-344-legacy_fewer_steps": "5673e1ec5d63e41e55f0ac1dc1a293476c7d3dc384d910e85a150df377a1343e",
+    "mixed-seed-344-legacy_fewer_steps": "bef4611edf82e862b1e1027b45eb85ae9c8e3f4b091749f7d7c6e7f2ede8ec5e",
+    "public-seed-344-legacy_fewer_steps": "35e4cac765bcb08acbf2344eb61a318b788bc85792d0cf9e7199f62bea58ad33"
+  },
+  "raw_hands_verified": true,
+  "source_provenance_verified": true
+}

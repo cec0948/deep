@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-16T06:44:50.004281+00:00",
+  "run": "20261116T052535674094Z",
+  "completed_evaluations": 36,
+  "total_hands": 4320000,
+  "confirmation_pass": false,
+  "evaluation_summary_sha256": "c85482ec877483e3eb36f2574d9d0fd7f5ffb4ca22072cb7a9a94626f565a148",
+  "new_selfplay_iterations": 0,
+  "new_fitting_jobs": 0,
+  "model_promoted": false,
+  "stop_reason": "Predeclared independent confirmation completed; no automatic extension or model replacement",
+  "no_automatic_retry": true
+}

@@ -4,7 +4,7 @@
 
 ## 최신 실행 확인
 
-- 최신 실행은2026-11-16 개선 후보 독립 재검증 `20261116T052535674094Z`다.14:25 KST에 시작했으며 `docs/retraining-candidate-confirmation-20261116.md`, `reports/candidate-confirmation-status.json`, `artifacts/candidate-confirmation/current.json`을 먼저 읽는다. 감독은 `run_poker_candidate_confirmation.py`, 평가기는 `evaluate_rich_selfplay.py`다. PID·시작 토큰·명령행과 시각을 대조한다. 후보 가중치는 고정됐고 새 fitting·자기대전은0이다. 새20,000카드 묶음·36셀·432만 핸드의 독립 평가다. 주 판정은 후보−원본120회의 기존 네 조건이며 부모360회·1024steps 대비 진단과 구분한다.36셀 완료 전에 전체 완료·채택으로 표시하지 않으며 결과를 보고 후보·조건을 바꾸거나 자동 재시도·모델 교체·추가 학습하지 않는다. 이전90셀 통제 진단의 완료를 새 평가 완료로 혼동하지 않는다.
+- 최신 실행은2026-11-16 개선 후보 독립 재검증 `20261116T052535674094Z`다.15:44:50 KST에36셀·432만 핸드 평가를 완료했고, 공개 상대 변화−0.30bb/100(명목95%−9.60~+8.99), 개선seed1/3개로 기존 네 조건 중 공개 상대 조건2개에 미달했다. `docs/retraining-candidate-confirmation-20261116.md`, `reports/candidate-confirmation-status.json`, `artifacts/candidate-confirmation/current.json`을 먼저 읽는다. 감독은 `run_poker_candidate_confirmation.py`, 평가기는 `evaluate_rich_selfplay.py`다. 기록된 PID·시작 토큰·명령행과 현재 시각·실제 프로세스를 대조하며 완료된 감독의 zombie 상태를 실행 중으로 해석하지 않는다. 가중치 변경·새 fitting·자기대전은0이다. 통계 단위는20,000개 새 카드 묶음이다. 주 판정은 후보−원본120회의 기존 네 조건이며 부모360회·1024steps 대비 진단과 구분한다. 미달 뒤 자동 재시도·후보 변경·모델 교체·추가 학습하지 않으며, 같은 완료·백업 기록은 반복 알리지 않는다.
 
 - 이전 작업은2026-11-16 통제 fitting 진단이다.13:18 KST에21개 fitting과90개 평가를 모두 완료했고13:56 KST에 파생 정책 묶음의 비공개 백업·대체된 이전 파생본 정리를 마쳤다. `docs/retraining-controlled-refit-20261116.md`, `reports/controlled-refit-status.json`, `artifacts/controlled-refit/current.json`을 먼저 확인한다. 고정 replay에서 파생 후보를 비교하는 것으로 새 자기대전 회차·기본 모델 교체가 아니다. 감독 `run_controlled_poker_study.py`, fitting `controlled_poker_refit.py`, 평가 `evaluate_rich_selfplay.py`의 PID·시작 토큰·명령행을 확인한다.21개 fitting과90개 평가의 완료를 구분한다. 기존360회·rich96회 완료와 혼동하지 않으며 같은 완료·백업 기록은 반복 알리지 않는다.
 
