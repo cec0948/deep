@@ -1,7 +1,7 @@
 {
   "status": "running",
   "phase": "evaluating",
-  "observed_utc": "2026-11-16T02:45:22.909272+00:00",
+  "observed_utc": "2026-11-16T03:24:04.903395+00:00",
   "run": "20261116T004818765266Z",
   "supervisor_pid": 1386,
   "supervisor_start": "217211",
@@ -12,44 +12,22 @@
   "completed_fitting_jobs": 21,
   "planned_fitting_jobs": 21,
   "fitting_complete": true,
-  "completed_evaluations": 50,
+  "completed_evaluations": 67,
   "planned_evaluations": 90,
-  "verified_hands": 6000000,
+  "verified_hands": 8040000,
   "planned_hands": 10800000,
   "independent_card_blocks": 20000,
   "evaluation_complete": false,
   "study_complete": false,
   "running": {
-    "eval/mixed-seed-343-legacy_fewer_steps": {
-      "pid": 2260,
-      "process_start": "878920",
+    "eval/public-seed-343-legacy_raw_objective": {
+      "pid": 2535,
+      "process_start": "1105665",
       "command": [
         "/workspace/.venvs/fullhouse/bin/python",
         "/workspace/deep/scripts/evaluate_rich_selfplay.py",
         "--model",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/fitting/legacy_fewer_steps-seed-343/policy.npz",
-        "--source",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source",
-        "--field",
-        "mixed",
-        "--deals",
-        "20000",
-        "--deal-seed",
-        "2037000000",
-        "--timeout",
-        "2400",
-        "--output",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/mixed-seed-343-legacy_fewer_steps"
-      ]
-    },
-    "eval/public-seed-344-legacy_fewer_steps": {
-      "pid": 2283,
-      "process_start": "907119",
-      "command": [
-        "/workspace/.venvs/fullhouse/bin/python",
-        "/workspace/deep/scripts/evaluate_rich_selfplay.py",
-        "--model",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/fitting/legacy_fewer_steps-seed-344/policy.npz",
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/fitting/legacy_raw_objective-seed-343/policy.npz",
         "--source",
         "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source",
         "--field",
@@ -61,17 +39,17 @@
         "--timeout",
         "2400",
         "--output",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/public-seed-344-legacy_fewer_steps"
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/public-seed-343-legacy_raw_objective"
       ]
     },
-    "eval/mixed-seed-344-legacy_fewer_steps": {
-      "pid": 2300,
-      "process_start": "918646",
+    "eval/mixed-seed-343-legacy_raw_objective": {
+      "pid": 2545,
+      "process_start": "1114805",
       "command": [
         "/workspace/.venvs/fullhouse/bin/python",
         "/workspace/deep/scripts/evaluate_rich_selfplay.py",
         "--model",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/fitting/legacy_fewer_steps-seed-344/policy.npz",
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/fitting/legacy_raw_objective-seed-343/policy.npz",
         "--source",
         "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source",
         "--field",
@@ -83,14 +61,36 @@
         "--timeout",
         "2400",
         "--output",
-        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/mixed-seed-344-legacy_fewer_steps"
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/mixed-seed-343-legacy_raw_objective"
+      ]
+    },
+    "eval/public-seed-344-legacy_raw_objective": {
+      "pid": 2621,
+      "process_start": "1145136",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/evaluate_rich_selfplay.py",
+        "--model",
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/fitting/legacy_raw_objective-seed-344/policy.npz",
+        "--source",
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/source",
+        "--field",
+        "public",
+        "--deals",
+        "20000",
+        "--deal-seed",
+        "2037000000",
+        "--timeout",
+        "2400",
+        "--output",
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/public-seed-344-legacy_raw_objective"
       ]
     }
   },
   "error": null,
   "model_promoted": false,
   "automatic_retry": false,
-  "elapsed_seconds": 7022.970002458,
+  "elapsed_seconds": 9344.964468257,
   "max_seconds": 21600,
   "next_action": "Continue the existing fixed refit/evaluation plan"
 }
