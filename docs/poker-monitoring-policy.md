@@ -4,7 +4,7 @@
 
 ## 최신 실행 확인
 
-- 최신 작업은2026-11-16 통제 fitting 진단이다. `docs/retraining-controlled-refit-20261116.md`, `reports/controlled-refit-status.json`, `artifacts/controlled-refit/current.json`을 먼저 확인한다. 고정 replay에서 파생 후보를 비교하는 것으로 새 자기대전 회차·기본 모델 교체가 아니다. 감독 `run_controlled_poker_study.py`, fitting `controlled_poker_refit.py`, 평가 `evaluate_rich_selfplay.py`의 PID·시작 토큰·명령행을 확인한다.21개 fitting과90개 평가의 완료를 구분한다. 기존360회·rich96회 완료와 혼동하지 않는다.
+- 최신 작업은2026-11-16 통제 fitting 진단이다.13:18 KST에21개 fitting과90개 평가를 모두 완료했고13:56 KST에 파생 정책 묶음의 비공개 백업·대체된 이전 파생본 정리를 마쳤다. `docs/retraining-controlled-refit-20261116.md`, `reports/controlled-refit-status.json`, `artifacts/controlled-refit/current.json`을 먼저 확인한다. 고정 replay에서 파생 후보를 비교하는 것으로 새 자기대전 회차·기본 모델 교체가 아니다. 감독 `run_controlled_poker_study.py`, fitting `controlled_poker_refit.py`, 평가 `evaluate_rich_selfplay.py`의 PID·시작 토큰·명령행을 확인한다.21개 fitting과90개 평가의 완료를 구분한다. 기존360회·rich96회 완료와 혼동하지 않으며 같은 완료·백업 기록은 반복 알리지 않는다.
 
 - 저장소는 `cec0948/deep`, 브랜치는 `codex/poker-retrain-20261112`다. `docs/retraining-20261112.md`의 최신 실행 안내와 `reports/training-neural-status.json`을 먼저 읽는다. 공유 신경망 검증은 `artifacts/neural-information-gate/current.json`, 이후 새 입력 자기대전은 `artifacts/rich-selfplay/current.json`으로 구분한다. 실제 작성된 경로와 run 식별자를 확인한다.
 - 소스 환경 `/workspace/deep`에 접근할 수 있으면 해당 실행의 registry가 가리키는 폴더에서 상태·진단·검증·평가·요약을 읽는다. 기록 시각을 현재 시각과 대조하고, PID·시작 토큰·명령행이 모두 일치하며 zombie가 아닌 실제 프로세스인지 확인한다. 오래된 `running` 기록만으로 실행 중이라고 보고하지 않는다.
@@ -29,4 +29,4 @@
 - `scripts/plan_poker_backup_retention.py` 및 새 family를 구분하는 `scripts/plan_rich_backup_retention.py`와 최신 저장 문서에 따라 평가 자산, 첫 전체60회, 파생·연구에 필요한 전체120회, 최신 완료 checkpoint, 그 이후 최신 복구본 하나, 최근 파생2개, 최신 연구1개 및 모든 복원 의존성을 보존한다. 새 rich 회차를 원래360회와 같은 계열로 비교해 원래 복구본을 삭제하지 않는다. 목표 예산은2GiB이며 필수 복구본이 넘으면 알리고 삭제하지 않는다.
 - 새 백업의 모든 검증이 끝난 뒤 실제 소스 환경에서 보존 계획을 만든다. 최신 archive의 로컬 크기·SHA-256과 보존·정리 대상의 원격 크기·소유자 전용 권한을 다시 확인한다. 계획 이후 인덱스가 바뀌지 않았을 때만 명확히 대체된 파일을 정리한다.
 - 삭제 성공과 readback의 `NOT_FOUND`를 비공개 journal에 기록하고 해당 인덱스 항목을 `deleted_remote`로 표시한다. 이미 삭제된 항목을 현재 복구본으로 보고하지 않는다. 다른 종류·부분 업로드·알 수 없는 파일·복원 의존성은 임의 삭제하지 않는다.
-- 마지막 확인 기록(2026-11-13 17:26 KST): 검증 완료 복구본은 새 rich family96회122,723,204 bytes다. 대체된12회 백업3개 파일은 삭제·NOT_FOUND readback·deleted_remote 기록을 마쳤고 원래360회 부모 경량본90,022,512 bytes는 보존한다. 당시 관리량은8개 백업·24개 파일·1,189,313,922 bytes(약1.11GiB), 추가 정리 후보0개였다. 매 점검에 현재 인덱스로 재확인한다. 삭제된240회 전체 archive와 이전240회 경량본은 다시 업로드하지 않는다.
+- 마지막 확인 기록(2026-11-16 13:56 KST): 최신 통제 파생 묶음24,408,351 bytes의 실제 runtime 복원·로컬 해시·원격 크기·소유자 전용 권한 확인과 비공개 인덱스 기록을 마쳤다. 대체된 이전 파생 백업1개14,533,619 bytes만 삭제·NOT_FOUND readback·deleted_remote 처리했다. 원본360회 경량본90,022,512 bytes와rich96회122,723,204 bytes, 필수60/120회·최신 파생2개·최신 연구·평가 자산·모든 의존성을 보존한다. 관리량은8개 백업·24개 파일·1,199,188,654 bytes(약1.12GiB), 추가 정리 후보0개다. 원격 체크섬은 제공되지 않았다. 매 점검에 현재 인덱스로 재확인한다. 삭제된240회 전체 archive와 이전240회 경량본은 다시 업로드하지 않는다.

@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-16T04:18:00.713446+00:00",
+  "fixed_replay": true,
+  "new_selfplay_iterations": 0,
+  "completed_fitting_jobs": 21,
+  "completed_evaluations": 90,
+  "total_hands": 10800000,
+  "independent_card_blocks": 20000,
+  "evaluation_summary_sha256": "d194be0a68b2fe60142b04c60414ef8a799f39ac057a868fd472d10f3a643896",
+  "no_automatic_retry": true,
+  "no_model_promotion": true
+}
