@@ -1,0 +1,17 @@
+{
+  "purpose": "User-approved independent fresh-card confirmation of the preselected 256-step candidate",
+  "selection_study": "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z",
+  "candidate": "legacy_fewer_steps",
+  "labels": ["original120", "parent360", "legacy_control", "legacy_fewer_steps"],
+  "seeds": [342, 343, 344],
+  "fields": ["public", "mixed", "noregrets"],
+  "evaluation_deals": 20000,
+  "evaluation_deal_seed": 2037100000,
+  "max_evaluation_workers": 3,
+  "evaluation_seconds_per_cell": 2400,
+  "max_seconds": 14400,
+  "new_selfplay_iterations": 0,
+  "new_fitting_jobs": 0,
+  "automatic_retry": false,
+  "model_promotion": false
+}

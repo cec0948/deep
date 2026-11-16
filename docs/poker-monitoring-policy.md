@@ -4,7 +4,9 @@
 
 ## 최신 실행 확인
 
-- 최신 작업은2026-11-16 통제 fitting 진단이다.13:18 KST에21개 fitting과90개 평가를 모두 완료했고13:56 KST에 파생 정책 묶음의 비공개 백업·대체된 이전 파생본 정리를 마쳤다. `docs/retraining-controlled-refit-20261116.md`, `reports/controlled-refit-status.json`, `artifacts/controlled-refit/current.json`을 먼저 확인한다. 고정 replay에서 파생 후보를 비교하는 것으로 새 자기대전 회차·기본 모델 교체가 아니다. 감독 `run_controlled_poker_study.py`, fitting `controlled_poker_refit.py`, 평가 `evaluate_rich_selfplay.py`의 PID·시작 토큰·명령행을 확인한다.21개 fitting과90개 평가의 완료를 구분한다. 기존360회·rich96회 완료와 혼동하지 않으며 같은 완료·백업 기록은 반복 알리지 않는다.
+- 최신 실행은2026-11-16 개선 후보 독립 재검증 `20261116T052535674094Z`다.14:25 KST에 시작했으며 `docs/retraining-candidate-confirmation-20261116.md`, `reports/candidate-confirmation-status.json`, `artifacts/candidate-confirmation/current.json`을 먼저 읽는다. 감독은 `run_poker_candidate_confirmation.py`, 평가기는 `evaluate_rich_selfplay.py`다. PID·시작 토큰·명령행과 시각을 대조한다. 후보 가중치는 고정됐고 새 fitting·자기대전은0이다. 새20,000카드 묶음·36셀·432만 핸드의 독립 평가다. 주 판정은 후보−원본120회의 기존 네 조건이며 부모360회·1024steps 대비 진단과 구분한다.36셀 완료 전에 전체 완료·채택으로 표시하지 않으며 결과를 보고 후보·조건을 바꾸거나 자동 재시도·모델 교체·추가 학습하지 않는다. 이전90셀 통제 진단의 완료를 새 평가 완료로 혼동하지 않는다.
+
+- 이전 작업은2026-11-16 통제 fitting 진단이다.13:18 KST에21개 fitting과90개 평가를 모두 완료했고13:56 KST에 파생 정책 묶음의 비공개 백업·대체된 이전 파생본 정리를 마쳤다. `docs/retraining-controlled-refit-20261116.md`, `reports/controlled-refit-status.json`, `artifacts/controlled-refit/current.json`을 먼저 확인한다. 고정 replay에서 파생 후보를 비교하는 것으로 새 자기대전 회차·기본 모델 교체가 아니다. 감독 `run_controlled_poker_study.py`, fitting `controlled_poker_refit.py`, 평가 `evaluate_rich_selfplay.py`의 PID·시작 토큰·명령행을 확인한다.21개 fitting과90개 평가의 완료를 구분한다. 기존360회·rich96회 완료와 혼동하지 않으며 같은 완료·백업 기록은 반복 알리지 않는다.
 
 - 저장소는 `cec0948/deep`, 브랜치는 `codex/poker-retrain-20261112`다. `docs/retraining-20261112.md`의 최신 실행 안내와 `reports/training-neural-status.json`을 먼저 읽는다. 공유 신경망 검증은 `artifacts/neural-information-gate/current.json`, 이후 새 입력 자기대전은 `artifacts/rich-selfplay/current.json`으로 구분한다. 실제 작성된 경로와 run 식별자를 확인한다.
 - 소스 환경 `/workspace/deep`에 접근할 수 있으면 해당 실행의 registry가 가리키는 폴더에서 상태·진단·검증·평가·요약을 읽는다. 기록 시각을 현재 시각과 대조하고, PID·시작 토큰·명령행이 모두 일치하며 zombie가 아닌 실제 프로세스인지 확인한다. 오래된 `running` 기록만으로 실행 중이라고 보고하지 않는다.
@@ -14,6 +16,8 @@
 - 소스 환경에 접근할 수 없으면 GitHub 기록과 이미 확인된 Drive 백업까지만 보고한다. 실행 여부·파일 유실을 추측하거나 실행 파일이 없는 새 환경에서 처음부터 학습하지 않는다. 완료·중단 시 이유와 마지막 안전한 복구본을 알린다.
 
 ## 백업
+
+- 이번 독립 재검증은 기존21정책 백업의256steps 후보를 byte 동일하게 재사용한다. `backup-reference.json`과 비공개 인덱스의 동일 archive SHA를 확인하며, 가중치가 바뀌지 않았으므로 새 모델 archive를 중복 업로드하지 않는다. 완료된 후속 평가의 요약·통계·실패 기록은 새 공개 reports 경로로 별도 게시한다. 기존 archive에 이번 후속 평가가 들어 있다고 주장하지 않는다. 마지막 안전한 가중치 백업은24,408,351 bytes의 검증 완료 통제 파생 묶음이며, 원본360회·rich96회 등 기존 모든 필수 복구본을 유지한다.
 
 - 최신 통제 진단은 `backup-ready.json`의 완전 검증된 `controlled-refit-policy-bundle-v1` 하나만 `kind=derived-policy-probe`, `resumable_selfplay=false`, `new_selfplay_iterations=0`으로 기록한다. `export_controlled_poker_probe.verify_probe`로 실제 추론 runtime 복원을 확인한다. `prepare_upload`의 분할·재결합 검증과 모든 원격 크기·권한 확인 뒤에만 완료로 기록한다. replay를 중복 업로드하지 않으며, 기존360회 및rich96회 복구본 SHA를 `restore_dependencies`에 넣어 둘 다 보존한다.
 

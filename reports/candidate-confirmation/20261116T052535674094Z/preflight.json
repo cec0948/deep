@@ -1,0 +1,40 @@
+{
+  "unit_tests_passed": 16,
+  "real_evaluator": {
+    "passed": true,
+    "completed_utc": "2026-11-16T05:25:05.189902+00:00",
+    "checks": [
+      {
+        "field": "public",
+        "hands": 120,
+        "candidate_sha256": "7c636289e05a9980a8c9e0c136a041630873bcc5151bfd4afa0d2012d96d5687",
+        "trusted_action_replay_passed": true,
+        "result_sha256": "a4146cd69c80e72952dc3a046fb07b41b1a149977c3097512c397c0753a20382"
+      },
+      {
+        "field": "mixed",
+        "hands": 120,
+        "candidate_sha256": "7c636289e05a9980a8c9e0c136a041630873bcc5151bfd4afa0d2012d96d5687",
+        "trusted_action_replay_passed": true,
+        "result_sha256": "c8315b582cfc26a6c946b71fc8252c85da08b042c578c0ede6ec22596081d3a4"
+      },
+      {
+        "field": "noregrets",
+        "hands": 120,
+        "candidate_sha256": "7c636289e05a9980a8c9e0c136a041630873bcc5151bfd4afa0d2012d96d5687",
+        "trusted_action_replay_passed": true,
+        "result_sha256": "d416e144640ed722fc1a72d74f0523a30b832e89806bf0582d5d3d58ff070314"
+      }
+    ],
+    "total_hands": 360,
+    "new_fitting_jobs": 0,
+    "new_selfplay_iterations": 0,
+    "strength_claim": false,
+    "candidate_weights_unchanged": true,
+    "preflight_range": [
+      2037080000,
+      2037080020
+    ]
+  },
+  "strength_claim": false
+}
