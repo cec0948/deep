@@ -1,0 +1,133 @@
+{
+  "observed_utc": "2026-11-16T02:44:08.689594+00:00",
+  "run": "20261116T004818765266Z",
+  "complete": false,
+  "comparison_complete": true,
+  "comparison": "legacy_small_replay-minus-legacy_control",
+  "changed_setting": "Replay capacity100000to5000perseat; other fit settings unchanged",
+  "independently_rechecked_cells": 18,
+  "independently_rechecked_hands": 2160000,
+  "independent_card_blocks": 20000,
+  "fields": {
+    "public": {
+      "mean": -118.61125,
+      "ci95_half_width": 10.579495943781271,
+      "lower": -129.19074594378128,
+      "upper": -108.03175405621873,
+      "simultaneous_lower": -134.45458207911437,
+      "simultaneous_upper": -102.76791792088562,
+      "family_comparisons": 15,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -83.09125833333333,
+          "ci95_half_width": 18.173034410646636,
+          "lower": -101.26429274397996,
+          "upper": -64.91822392268669
+        },
+        {
+          "seed": 343,
+          "mean": -133.57501666666667,
+          "ci95_half_width": 16.556675385841096,
+          "lower": -150.13169205250776,
+          "upper": -117.01834128082558
+        },
+        {
+          "seed": 344,
+          "mean": -139.167475,
+          "ci95_half_width": 15.307107509458689,
+          "lower": -154.47458250945868,
+          "upper": -123.86036749054131
+        }
+      ]
+    },
+    "mixed": {
+      "mean": -199.12433611111112,
+      "ci95_half_width": 18.760102738521688,
+      "lower": -217.8844388496328,
+      "upper": -180.36423337258944,
+      "simultaneous_lower": -227.21854202641396,
+      "simultaneous_upper": -171.03013019580828,
+      "family_comparisons": 15,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -99.34840833333334,
+          "ci95_half_width": 30.38320904767989,
+          "lower": -129.73161738101322,
+          "upper": -68.96519928565345
+        },
+        {
+          "seed": 343,
+          "mean": -267.75483333333335,
+          "ci95_half_width": 30.614982180402745,
+          "lower": -298.3698155137361,
+          "upper": -237.13985115293062
+        },
+        {
+          "seed": 344,
+          "mean": -230.26976666666667,
+          "ci95_half_width": 30.05390538435007,
+          "lower": -260.32367205101673,
+          "upper": -200.2158612823166
+        }
+      ]
+    },
+    "noregrets": {
+      "mean": -409.10644444444443,
+      "ci95_half_width": 28.93193874132884,
+      "lower": -438.0383831857733,
+      "upper": -380.1745057031156,
+      "simultaneous_lower": -452.4334909887466,
+      "simultaneous_upper": -365.77939790014227,
+      "family_comparisons": 15,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -183.85376666666667,
+          "ci95_half_width": 43.492971797508204,
+          "lower": -227.34673846417488,
+          "upper": -140.36079486915847
+        },
+        {
+          "seed": 343,
+          "mean": -579.1304416666667,
+          "ci95_half_width": 46.63524005449922,
+          "lower": -625.765681721166,
+          "upper": -532.4952016121674
+        },
+        {
+          "seed": 344,
+          "mean": -464.335125,
+          "ci95_half_width": 46.15981624675835,
+          "lower": -510.49494124675834,
+          "upper": -418.17530875324167
+        }
+      ]
+    }
+  },
+  "new_selfplay_iterations": 0,
+  "model_promoted": false,
+  "adoption_decision_deferred": true,
+  "result_files": {
+    "public-seed-342-legacy_control": "c257ac65be5326d932dd275c4c4be7b5c1069802294855adac073832fcf0ae9a",
+    "mixed-seed-342-legacy_control": "94602843b64a61ed99c20bbe8f026d911e76c5ad819c8e0016ce42bf1db42ace",
+    "noregrets-seed-342-legacy_control": "94a425952c3a024f3b86838a1836d4324282f61d05a661722fcd0a18aed45429",
+    "public-seed-343-legacy_control": "480e1c88e8848c7251d418e73d97e86b88ce71c2467f30ee8f7eb812b85426f2",
+    "mixed-seed-343-legacy_control": "e8328a3f32153b703c2abea8d574bf36b8d0bce1db723baa25c37bf8928f6179",
+    "noregrets-seed-343-legacy_control": "ce845ad14336dbd706692110703bdb88bb853f069c5461e49dc8597df487d44a",
+    "public-seed-344-legacy_control": "0041b61f55132bd3c2ac3dd7f7c1402ee9efe8a3aeda94cba799ad0d6b27eecb",
+    "mixed-seed-344-legacy_control": "be4e0a73d2328bb536b7a1fcf395a7e9d65785c6b95bb57218b89dba38622677",
+    "noregrets-seed-344-legacy_control": "e71d615e264022f73eb4750caccc5a4d7bd2dc37dcc3276435d475ca9117198d",
+    "public-seed-342-legacy_small_replay": "4b6193a831cf117c58654708d2530dc7c871a66d7238975f1cf1f62b0d68176a",
+    "mixed-seed-342-legacy_small_replay": "4fb9182cd63a7f2fb2fe5397d22e67cca1e4b4af4817cd699e384bedc63e56f2",
+    "noregrets-seed-342-legacy_small_replay": "3f2efa339d7b3a2147cb17f0a9c2441da08497049b8e64e5c5f30d430309145c",
+    "public-seed-343-legacy_small_replay": "87e8dad9e327231f156906d167fa160f387a0a1a19b480f4b177755bc59b495e",
+    "mixed-seed-343-legacy_small_replay": "eabd380e5ea7076cc6004a4d5f2715b8349f4cb16d2d6f63f6b257cb3c90f889",
+    "noregrets-seed-343-legacy_small_replay": "b945fade43bd447833c4a5852c5193f2c6d6ddb60af30679ad9d1b7129547e71",
+    "public-seed-344-legacy_small_replay": "9d8de0c36b04121a7c803d5264101e5ad75fcf263a6e1b16ac69f687241d51c6",
+    "mixed-seed-344-legacy_small_replay": "f451c81fff340737051bc65b0d7275ac386cddffe8e9a9bbcf5a35795bee6de7",
+    "noregrets-seed-344-legacy_small_replay": "3a44c1889778963102b105bfd0d1faeac0b01e6bd52fee357bc4eb6275c3f149"
+  },
+  "scope": "One declared within-legacy-replay pair only; remaining90-cell study still running. Simultaneous intervals use the predeclared15-comparison correction."
+}
