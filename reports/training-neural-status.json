@@ -1,27 +1,27 @@
 {
   "status": "running",
   "phase": "evaluating",
-  "observed_utc": "2026-11-16T05:28:23.420665+00:00",
+  "observed_utc": "2026-11-16T05:47:51.140388+00:00",
   "run": "20261116T052535674094Z",
   "study_kind": "independent-frozen-candidate-confirmation",
   "candidate": "legacy_fewer_steps",
   "supervisor_pid": 3709,
   "supervisor_start": "1881044",
-  "completed_evaluations": 0,
+  "completed_evaluations": 9,
   "planned_evaluations": 36,
-  "verified_hands": 0,
+  "verified_hands": 1080000,
   "planned_hands": 4320000,
   "independent_card_blocks": 20000,
   "evaluation_deal_seed": 2037100000,
   "running": {
-    "public-seed-342-original120": {
-      "pid": 3710,
-      "process_start": "1881079",
+    "public-seed-342-parent360": {
+      "pid": 3909,
+      "process_start": "1995159",
       "command": [
         "/workspace/.venvs/fullhouse/bin/python",
         "/workspace/deep/scripts/evaluate_rich_selfplay.py",
         "--model",
-        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/policies/original120-seed-342.npz",
+        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/policies/parent360-seed-342.npz",
         "--source",
         "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/source",
         "--field",
@@ -33,17 +33,17 @@
         "--timeout",
         "2400",
         "--output",
-        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/evaluation/public-seed-342-original120"
+        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/evaluation/public-seed-342-parent360"
       ]
     },
-    "mixed-seed-342-original120": {
-      "pid": 3711,
-      "process_start": "1881079",
+    "mixed-seed-342-parent360": {
+      "pid": 3915,
+      "process_start": "1998016",
       "command": [
         "/workspace/.venvs/fullhouse/bin/python",
         "/workspace/deep/scripts/evaluate_rich_selfplay.py",
         "--model",
-        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/policies/original120-seed-342.npz",
+        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/policies/parent360-seed-342.npz",
         "--source",
         "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/source",
         "--field",
@@ -55,17 +55,17 @@
         "--timeout",
         "2400",
         "--output",
-        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/evaluation/mixed-seed-342-original120"
+        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/evaluation/mixed-seed-342-parent360"
       ]
     },
-    "noregrets-seed-342-original120": {
-      "pid": 3712,
-      "process_start": "1881079",
+    "noregrets-seed-342-parent360": {
+      "pid": 3921,
+      "process_start": "2001153",
       "command": [
         "/workspace/.venvs/fullhouse/bin/python",
         "/workspace/deep/scripts/evaluate_rich_selfplay.py",
         "--model",
-        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/policies/original120-seed-342.npz",
+        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/policies/parent360-seed-342.npz",
         "--source",
         "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/source",
         "--field",
@@ -77,7 +77,7 @@
         "--timeout",
         "2400",
         "--output",
-        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/evaluation/noregrets-seed-342-original120"
+        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/evaluation/noregrets-seed-342-parent360"
       ]
     }
   },
@@ -89,7 +89,7 @@
   "automatic_retry": false,
   "study_complete": false,
   "evaluation_complete": false,
-  "elapsed_seconds": 165.19083658899763,
+  "elapsed_seconds": 1332.9105627259996,
   "max_seconds": 14400,
   "existing_candidate_backup_sha256": "42ec75b328c31d568e971d2231a2f70c710c8eefa0ea8fe0d3b5453b952fcdca",
   "new_model_archive_required": false,
