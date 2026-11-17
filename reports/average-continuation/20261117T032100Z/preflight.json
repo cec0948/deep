@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "completed_utc": "2026-11-17T03:24:24.186396+00:00",
+  "plan_sha256": "6d66f31bb34e1aecf65ae459ee0e00456be20602c7e6024c04e9c02de96bbfe4",
+  "native_old_worker_sha256": "969a62df95054de733bc161b417d826d9aefd522e61f1587570243b46f71180c",
+  "full_native_one_update_parity": {
+    "net": true,
+    "buffers": true,
+    "root": true,
+    "rng": true
+  },
+  "legacy_fitting_steps": 1024,
+  "legacy_batch": 512,
+  "legacy_traversals": 256,
+  "strategy_collection": {
+    "hands": 512,
+    "decision_nodes": 5913,
+    "rows": 25993,
+    "total_seen": 25993
+  },
+  "diagnostic_policy_sha256": "f754f7cb28823a89b0dff35399678c9eabbb22dd95e6e114ec79d7a7d18dd0fa",
+  "actual_recovered_iteration": 366,
+  "protocol_cells": [
+    {
+      "field": "public",
+      "hands": 120,
+      "results_sha256": "fc79c361315bccb49e116833019082908c165b38e8314b8385fdf1670a28b677",
+      "terminal_payoffs_replayed": true
+    },
+    {
+      "field": "mixed",
+      "hands": 120,
+      "results_sha256": "42d427b0675291b13e040f42fe4b1f5f6432792c83cffb5de4fc7a492b5ae9b4",
+      "terminal_payoffs_replayed": true
+    },
+    {
+      "field": "noregrets",
+      "hands": 120,
+      "results_sha256": "1bace437a26feb54800f1c17aaa59a06cb725d8825d62e6cb595162f8e4c7530",
+      "terminal_payoffs_replayed": true
+    }
+  ],
+  "trusted_hands": 360,
+  "elapsed_seconds": 79.14349641300032,
+  "candidate_strength_verified": false,
+  "campaign_progress_from_preflight": 0,
+  "preflight_candidate_reused": false,
+  "original_parent_unchanged": true
+}

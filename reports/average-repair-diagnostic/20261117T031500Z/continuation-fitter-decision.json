@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-11-17T03:19:15.160076+00:00",
+  "diagnostic_summary_sha256": "5d94f92c25caed99c79c063e55174f542a794463eece6dfaabfb0d744d1217bf",
+  "comparisons": [
+    {
+      "width": 128,
+      "normalize": false,
+      "steps": 8192,
+      "training_tv_mean": 0.1490727538039646,
+      "heldout_tv_mean": 0.1835311927273479
+    },
+    {
+      "width": 128,
+      "normalize": false,
+      "steps": 16384,
+      "training_tv_mean": 0.12961806127095146,
+      "heldout_tv_mean": 0.18542392827615467
+    },
+    {
+      "width": 128,
+      "normalize": true,
+      "steps": 8192,
+      "training_tv_mean": 0.1060934734276679,
+      "heldout_tv_mean": 0.1884159014172709
+    },
+    {
+      "width": 128,
+      "normalize": true,
+      "steps": 16384,
+      "training_tv_mean": 0.0867216477140969,
+      "heldout_tv_mean": 0.19620555868454823
+    },
+    {
+      "width": 256,
+      "normalize": false,
+      "steps": 8192,
+      "training_tv_mean": 0.13487138446301394,
+      "heldout_tv_mean": 0.18891486108904068
+    },
+    {
+      "width": 256,
+      "normalize": false,
+      "steps": 16384,
+      "training_tv_mean": 0.10698293715366429,
+      "heldout_tv_mean": 0.18862548031325532
+    },
+    {
+      "width": 256,
+      "normalize": true,
+      "steps": 8192,
+      "training_tv_mean": 0.08168349006717567,
+      "heldout_tv_mean": 0.1891118548788302
+    },
+    {
+      "width": 256,
+      "normalize": true,
+      "steps": 16384,
+      "training_tv_mean": 0.0600762295716682,
+      "heldout_tv_mean": 0.2016674774748478
+    }
+  ],
+  "chosen": {
+    "width": 128,
+    "normalize": false,
+    "steps": 8192
+  },
+  "diagnostic_16384_winner_not_adopted": true,
+  "reason": "All tested larger/normalized/longer variants have higher average heldout TV than the original8192step fitter. Keep original fitting; record finite auxiliary TV rather than stopping the main-policy learning curve.",
+  "independent_poker_strength_claim": false,
+  "failed_study_remains_failed": true
+}

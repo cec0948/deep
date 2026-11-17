@@ -1,0 +1,538 @@
+{
+  "created_utc": "2026-11-17T03:22:54.068641+00:00",
+  "study_kind": "authorized-recovery-main-policy-fixed-horizon",
+  "config": {
+    "study_kind": "authorized-recovery-main-policy-fixed-horizon",
+    "seeds": [
+      342,
+      343,
+      344
+    ],
+    "initial_iteration": 360,
+    "iterations": 420,
+    "stages": [
+      372,
+      420
+    ],
+    "traversals": 256,
+    "buffer_capacity": 100000,
+    "main_steps": 1024,
+    "batch_size": 512,
+    "opening_steps": 2048,
+    "opening_max_steps": 8192,
+    "max_opening_tv": 0.1,
+    "root_repetitions": 4,
+    "learning_rate": 0.001,
+    "strategy_capacity": 100000,
+    "reference_hands": 512,
+    "average_fit_steps": 8192,
+    "average_batch": 512,
+    "average_max_replay_tv": 0.15,
+    "evaluation_deals": 20000,
+    "evaluation_deal_seed": 2037300000,
+    "evaluation_labels": [
+      "original120",
+      "parent360",
+      "current420",
+      "average361_420"
+    ],
+    "evaluation_fields": [
+      "public",
+      "mixed",
+      "noregrets"
+    ],
+    "max_training_workers": 3,
+    "max_evaluation_workers": 3,
+    "training_seconds_per_worker": 5400,
+    "evaluation_seconds_per_cell": 2400,
+    "max_seconds": 21600,
+    "automatic_retry": false,
+    "model_promotion": false,
+    "extend_after_420": false,
+    "historical_average_before_361_available": false,
+    "legacy_information_loss_unresolved": true,
+    "full_paper_reproduction": false,
+    "source_recovery_sha256": "65ec65f90cc1c0f73700ec4683d421baaaeb4bb82bb10c14fa2c9249fc504be8",
+    "resume_iterations": {
+      "342": 366,
+      "343": 366,
+      "344": 372
+    },
+    "auxiliary_quality_error_stops_main": false,
+    "primary_candidate": "current420",
+    "average_width": 128,
+    "average_normalize": false,
+    "diagnostic_summary": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/summary.json",
+    "diagnostic_summary_sha256": "5d94f92c25caed99c79c063e55174f542a794463eece6dfaabfb0d744d1217bf",
+    "fitter_decision": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/continuation-fitter-decision.json",
+    "fitter_decision_sha256": "66e3d9b22ba9591b5e2a1617237270b8d012586b582c79683dcc35063484bab7"
+  },
+  "campaign": "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign",
+  "campaign_config_sha256": "c96847ec2c21ac645ead13a7f701da591186ad5de348c6d637bd2c67d3f86843",
+  "frozen_files": {
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/LICENSE.upstream": "8a2daa759da5e2bc87dfdd8f3a02fee6f18b38ccced523022a31c36e1b0512c4",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/_hand_eval.py": "e97c081806e67f964ace1c6dd7bb62c8f49ea8cd0c2060d8643d6c58daeb3a96",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/traverse_numba.py": "03c17cd7b717005737cabafe7c4e7963dc6eb1fbd9f8e4295d3c8417127ec803",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/train.py": "844c8e6d3aea891e95d39f60b9e50906bcc854df20bc489d440558be945bb316",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/game_numba.py": "3d581b954fa028ea8c6e5b31457c95cbcfa8f9e09bc14dd939c59ae7457437dc",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/game.py": "df405d6d9efbeca3ecb778cfa70dd770fee5c34d04eb3f65ed1ab11261696381",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/worker.py": "282435f5e10770dce373b4579e14552af9f0e3beb6178046a8229a33acad9bea",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/traverse_fast.py": "b0d199732ddd46be242c90b382fe4e7c93add829ca8e493d6c59dce67af319a6",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/r1_support.py": "08b19999b38066c1848ca3e0a5a67b65a0b577250dce59c0dff084ae7683dfd0",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/buffer.py": "a513bf28f44992218053745e77faedd5a6a71c663cc642273ccaa01e0cd4f611",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/network.py": "e8c75e85722fa32e311316f06b93596f6610b934af5a8ab0ef6c99d72d2f2c49",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/__init__.py": "dd47ca434e58a3ba04952d871c3899db7b675eed0dd5e2e4dc23645f72f08d1f",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/_hand_eval_lut.py": "d57d29959b6441fbad16f1e65c35dab0e6d38e7fda29a1b8edbaf6271cea5e46",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/training/features.py": "b6f8b26df06b4147c87e1543242d5cf29af9366be7681af272bbc677bdc97946",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/bot/bot.py": "f721b16e0cab72d0c40fae2e94d1ec655a94025fc20addfc689c718fb8f10845",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/source/bot/features.py": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/controlled_poker_refit.py": "7eb61c8c41a476e5b5557e87f7583a67171b5dbbd8915fd3c23eafdeacbef5bd",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/fullhouse_v3_common.py": "ff6bb05e72464fc833b4040a6c51e5f40834c8667da813c8b8bff1cad0069e37",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/poker_average_inference.py": "d2c4071bc8befafdb1961eaf4f070584deb93d97bf3ed81fed940ad54a9456e3",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/train_poker_average_continuation.py": "e073deed770f18d3ec02491ab43b7a44afb9bd2c5e0ae4dafc63284d0ec25814",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/poker_strategy_average.py": "a711f99d2d6539d1e554adbc964c85480f4708cecb785f995737717b23ae9d7b",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/poker_average_diagnostics.py": "65783ea5ad845cc0ceaf1b7d60bfdd0af447f16afd08d4db5b78d999e1c472e8",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/train_poker_average_baseline.py": "db82a04d503f2353628eaab7aefa30eecb47ac3ba614f71988d3c373c74e949b",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/compact_lightweight_backup.py": "70110cc4be6b0dabde640194fa85a76599287099b0aee7cdcfdebe5abceb11ad",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/train_compact_bounded.py": "969a62df95054de733bc161b417d826d9aefd522e61f1587570243b46f71180c",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/compact_regret.py": "4cff184154657d6e1040536fd02a1cd25bb518e8a813a67b72851dd6f1882d60",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/root_regret_replay.py": "0078f0cde6631e3b8ba12dd134523521a5a6f7ffd0bc5e88b7c0bce8ee9c349d",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/train_compact_selfplay.py": "ced4b1817a837c83bd0f28ef640bfa0220fe1bd2bb5142a9ef0e04d48fd35b51",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/tools/bounded_poker_study_support.py": "b2df172b4a6d4db861815dc25320e1c05ba7861b3d37b71fbdd5a767fa6f47ec",
+    "/workspace/deep/scripts/train_poker_average_continuation.py": "e073deed770f18d3ec02491ab43b7a44afb9bd2c5e0ae4dafc63284d0ec25814",
+    "/workspace/deep/scripts/poker_average_diagnostics.py": "65783ea5ad845cc0ceaf1b7d60bfdd0af447f16afd08d4db5b78d999e1c472e8",
+    "/workspace/deep/scripts/run_poker_average_continuation.py": "8fd9a5991a6460c75124ab3ad1f822137099a085da8195dcaf7e20a513bf0a15",
+    "/workspace/deep/scripts/preflight_poker_average_continuation.py": "83bb6a2379671b0cb92593e9624fd01f6125af58f80627d68dd5e13a9eac6e3d",
+    "/workspace/deep/scripts/poker_strategy_average.py": "a711f99d2d6539d1e554adbc964c85480f4708cecb785f995737717b23ae9d7b",
+    "/workspace/deep/scripts/poker_average_runtime.py": "58c31e9191b0fa3410d7f5c3eeb32fd8fbdacb456f927649215f7576d2b79af3",
+    "/workspace/deep/scripts/poker_average_inference.py": "d2c4071bc8befafdb1961eaf4f070584deb93d97bf3ed81fed940ad54a9456e3",
+    "/workspace/deep/scripts/evaluate_average_baseline.py": "3fb7a5e59db895a24febd63163aa637074f29104159757f2c30b12bfea5bd4dc",
+    "/workspace/deep/scripts/snapshot_poker_average_continuation.py": "2341b28eb58732c3d4dfe527e710a133a8ad6053dbd02e77d36a39212afc85cb",
+    "/workspace/deep/scripts/plan_average_backup_retention.py": "fe47631b80c06d5e6160e0d165168d0069828911eb908e5524d0895df2cba702",
+    "/workspace/deep/scripts/train_poker_average_baseline.py": "db82a04d503f2353628eaab7aefa30eecb47ac3ba614f71988d3c373c74e949b",
+    "/workspace/deep/scripts/controlled_poker_refit.py": "7eb61c8c41a476e5b5557e87f7583a67171b5dbbd8915fd3c23eafdeacbef5bd",
+    "/workspace/deep/scripts/fullhouse_v3_common.py": "ff6bb05e72464fc833b4040a6c51e5f40834c8667da813c8b8bff1cad0069e37",
+    "/workspace/deep/scripts/compact_lightweight_backup.py": "70110cc4be6b0dabde640194fa85a76599287099b0aee7cdcfdebe5abceb11ad",
+    "/workspace/deep/configs/poker-average-continuation-20261117.json": "d1cba083c102ce5406d4a2dd73b88f4f14b475cad8299da68ac3734e9659f871",
+    "/workspace/deep/artifacts/strategy-average-gate/20261116T083645Z/report.json": "4ef2c8241ea366ebe44670e826f7dad6edd7c1f76689e7b3cfd9ee1fc3ff0d46",
+    "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/summary.json": "5d94f92c25caed99c79c063e55174f542a794463eece6dfaabfb0d744d1217bf",
+    "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/plan.json": "0134e8beef437ff5d3da6a238c89337f60b9b377398d9ff514e05aa0ad1a6299",
+    "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/continuation-fitter-decision.json": "66e3d9b22ba9591b5e2a1617237270b8d012586b582c79683dcc35063484bab7",
+    "/workspace/deep/scripts/validate_poker_strategy_average.py": "e6b380b5d2b37da66a15661afda2664e04b77229ad7b3a2a9bdd1e6df5a1aeb5",
+    "/workspace/deep/scripts/train_neural_information_gate.py": "7988b9edd781e262cfc6bcc6e21491b454efc1422243448dfca357ab35d55e3c",
+    "/workspace/deep/scripts/validate_strength_training.py": "de1dfa724a053ce9488bebb275e68a3074557266f8a6a0cc16ce7b2ac0f9245b",
+    "/workspace/deep/scripts/scaled_regret_fitting.py": "002f25df2100ddcbc3686ae52fc84cf9aafb3eca3d4ea73ad6d3076d70826e98",
+    "/workspace/deep/scripts/regret_fitting.py": "40b9563c4ab2b07a9da4c4342a12455dbc926b438fe078e808c29442afbdd471",
+    "/workspace/deep/artifacts/compact-v4/current.json": "efc03c574b9e3df7e066c743c9753733656d9ace474cb6cf214ad34fd28856f2",
+    "/workspace/deep/artifacts/bounded-continuation/current.json": "33af83607f95a9251b8016aacaa76b733c9c52e55eceeb6c45bbf43bca69eea0",
+    "/workspace/deep/artifacts/rich-selfplay/current.json": "2b33e600425e55ef0e75bac03c1fc68b553617a18026381f478af94a6a253af9",
+    "/workspace/deep/artifacts/controlled-refit/current.json": "8f62a4ce019005e76a6c253efedd66d257f0dd9e31cace95f2f84c6940323663",
+    "/workspace/deep/artifacts/candidate-confirmation/current.json": "ee39e3d0d0e9a8058609fe01489a106224add5da118fbee6d48105a70eed41be",
+    "/workspace/deep/artifacts/average-baseline/current.json": "d12bd7583658f3f99a40c6f893e005a095a7969a05de7024bfdf4565288171db",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/checkpoints/iter-00366/arrays.npz": "2b162551ac8301fbe8e2031821d4930ef27006d6dbc52ec94c08112f771bfb21",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/checkpoints/iter-00366/current.npz": "66a52009a0382d48f45968409ebc6d0fb67d25cd0d162f0fca5bade1fc54c1ad",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/checkpoints/iter-00366/state.json": "b0299158f801de16b5772769fe4a8dd9a26d0f5409ac491123b7d089a7f15e5a",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/current.json": "ca7e8ba7180045b1b2e4fe46b57a5be95f9d5d76684092a0a4541d989d72c038",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/original120.npz": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-342/original120.npz": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8",
+    "/workspace/deep/scripts/rich_poker_runtime.py": "2f6e87c4244e433a3029d897744a7fe63a060c827704c80db1d81ef18c6585d8",
+    "/workspace/deep/scripts/rich_poker_observation.py": "c68e9b5e8221966d28f5221b4c37c469d317ea3f4a34a8c13ab28fec5fe1de59",
+    "/workspace/deep/scripts/poker_public_state.py": "1e8931ee22217cbd1c2bce1ee91690990017bcae57dcaa23020edd4694c9036d",
+    "/workspace/deep/scripts/fullhouse_runtime.py": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+    "/workspace/deep/scripts/fullhouse_v4_runtime.py": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+    "/workspace/deep/scripts/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/.cache/noregrets/target/release/poker-bridge": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+    "/workspace/deep/configs/fullhouse-model.json": "24fdf60e5698c8baa6737eaa1dd9c41bab7c94f9c5f8b05f7292d2b9e346e9ae",
+    "/workspace/deep/.cache/fullhouse-bot/bot/features.py": "b43361365ed911f358b3588f0c487614029158bf1420c5ffec8260bd427475c8",
+    "/workspace/deep/.cache/fullhouse-bot/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/.cache/fullhouse-bot/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/parent360.npz": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-342/parent360.npz": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/checkpoints/iter-00366/arrays.npz": "ac2f6bbee65bf9b5d3c0bf18315e2155a85c1e83fc59c1eaaef4a8ec7bc0e316",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/checkpoints/iter-00366/current.npz": "7beac1e1f7ba59975ced1d5258a6d6470fffd52ee2d6615345efc2c5000dfc37",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/checkpoints/iter-00366/state.json": "caa6d30ba7dc626064376ac9f8c5ad9be1f808713c348c9cf557ba477621960d",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/current.json": "084514326e54358955f6358707ccd27ee62a7904120cbb0db240cedbf0a355b9",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/original120.npz": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-343/original120.npz": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/parent360.npz": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-343/parent360.npz": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/checkpoints/iter-00372/arrays.npz": "8d9c5d740642413258a6aef336ec3d6d4218a5c714efa59e7ecc35686969d582",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/checkpoints/iter-00372/current.npz": "e6e7a58e8162884a90d7681d5b682922769adb9530745ed08554f7f09fcf3fbd",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/checkpoints/iter-00372/average.npz": "f754f7cb28823a89b0dff35399678c9eabbb22dd95e6e114ec79d7a7d18dd0fa",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/checkpoints/iter-00372/state.json": "d0738959a5d8820219e0cfadd1d0ab9f531e7717e902e221ebc8ff0eeed4b4b0",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/current.json": "3cbbebef3aada06fce368972b77dafa8122aaca011fdc32fc0f7fe05daf3eb26",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/original120.npz": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-344/original120.npz": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/parent360.npz": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-344/parent360.npz": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7"
+  },
+  "parent_paths": {
+    "342": {
+      "checkpoint": "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/checkpoints/iter-00366",
+      "iteration": 366,
+      "files": {
+        "arrays.npz": "2b162551ac8301fbe8e2031821d4930ef27006d6dbc52ec94c08112f771bfb21",
+        "current.npz": "66a52009a0382d48f45968409ebc6d0fb67d25cd0d162f0fca5bade1fc54c1ad",
+        "state.json": "b0299158f801de16b5772769fe4a8dd9a26d0f5409ac491123b7d089a7f15e5a"
+      }
+    },
+    "343": {
+      "checkpoint": "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/checkpoints/iter-00366",
+      "iteration": 366,
+      "files": {
+        "arrays.npz": "ac2f6bbee65bf9b5d3c0bf18315e2155a85c1e83fc59c1eaaef4a8ec7bc0e316",
+        "current.npz": "7beac1e1f7ba59975ced1d5258a6d6470fffd52ee2d6615345efc2c5000dfc37",
+        "state.json": "caa6d30ba7dc626064376ac9f8c5ad9be1f808713c348c9cf557ba477621960d"
+      }
+    },
+    "344": {
+      "checkpoint": "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/checkpoints/iter-00372",
+      "iteration": 372,
+      "files": {
+        "arrays.npz": "8d9c5d740642413258a6aef336ec3d6d4218a5c714efa59e7ecc35686969d582",
+        "current.npz": "e6e7a58e8162884a90d7681d5b682922769adb9530745ed08554f7f09fcf3fbd",
+        "average.npz": "f754f7cb28823a89b0dff35399678c9eabbb22dd95e6e114ec79d7a7d18dd0fa",
+        "state.json": "d0738959a5d8820219e0cfadd1d0ab9f531e7717e902e221ebc8ff0eeed4b4b0"
+      }
+    }
+  },
+  "policies": {
+    "original120": {
+      "342": {
+        "path": "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-342/original120.npz",
+        "sha256": "d8aa0eb8208c508340b7cb8fb3fd5b2b9282c7e7c14b7acc6285b611427ab8f8"
+      },
+      "343": {
+        "path": "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-343/original120.npz",
+        "sha256": "dd8a495446085f7af66d1e86174b540c27f28e60df3e82a6d362662967ccfb9c"
+      },
+      "344": {
+        "path": "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-344/original120.npz",
+        "sha256": "883d0f31c07de6552fa0b46f83cca1cb1be3c0b65854b5ebfae3fc96c0fee7c3"
+      }
+    },
+    "parent360": {
+      "342": {
+        "path": "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-342/parent360.npz",
+        "sha256": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76"
+      },
+      "343": {
+        "path": "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-343/parent360.npz",
+        "sha256": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517"
+      },
+      "344": {
+        "path": "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-344/parent360.npz",
+        "sha256": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7"
+      }
+    }
+  },
+  "connection_verification": [
+    {
+      "seed": 342,
+      "iteration": 366,
+      "checks": {
+        "net": true,
+        "buffers": true,
+        "root_replay": true,
+        "rng": true,
+        "strategy_replay": true,
+        "reference_rng": true,
+        "average_state": true,
+        "averaging_window": true
+      },
+      "remaining_new_iterations": 54,
+      "current_policy_sha256": "66a52009a0382d48f45968409ebc6d0fb67d25cd0d162f0fca5bade1fc54c1ad"
+    },
+    {
+      "seed": 343,
+      "iteration": 366,
+      "checks": {
+        "net": true,
+        "buffers": true,
+        "root_replay": true,
+        "rng": true,
+        "strategy_replay": true,
+        "reference_rng": true,
+        "average_state": true,
+        "averaging_window": true
+      },
+      "remaining_new_iterations": 54,
+      "current_policy_sha256": "7beac1e1f7ba59975ced1d5258a6d6470fffd52ee2d6615345efc2c5000dfc37"
+    },
+    {
+      "seed": 344,
+      "iteration": 372,
+      "checks": {
+        "net": true,
+        "buffers": true,
+        "root_replay": true,
+        "rng": true,
+        "strategy_replay": true,
+        "reference_rng": true,
+        "average_state": true,
+        "averaging_window": true
+      },
+      "remaining_new_iterations": 48,
+      "current_policy_sha256": "e6e7a58e8162884a90d7681d5b682922769adb9530745ed08554f7f09fcf3fbd"
+    }
+  ],
+  "gate_report_sha256": "4ef2c8241ea366ebe44670e826f7dad6edd7c1f76689e7b3cfd9ee1fc3ff0d46",
+  "gate_report": "/workspace/deep/artifacts/strategy-average-gate/20261116T083645Z/report.json",
+  "diagnostic_summary_sha256": "5d94f92c25caed99c79c063e55174f542a794463eece6dfaabfb0d744d1217bf",
+  "original_regret_learner_unchanged": true,
+  "new_selfplay_iterations_per_seed": {
+    "342": 54,
+    "343": 54,
+    "344": 48
+  },
+  "total_continuation_window_iterations": 60,
+  "averaging_window": [
+    361,
+    420
+  ],
+  "average_before361_available": false,
+  "candidate_preselected": "current420",
+  "average_is_secondary_diagnostic": true,
+  "auxiliary_quality_threshold_reference": 0.15,
+  "auxiliary_quality_error_stops_main": false,
+  "planned_evaluations": 36,
+  "planned_hands": 4320000,
+  "independent_card_blocks": 20000,
+  "prior_card_ranges": {
+    "2026111201:2026113201": {
+      "range": [
+        2026111201,
+        2026113201
+      ],
+      "records": 80,
+      "examples": [
+        "/workspace/deep/artifacts/compact-v4/20261112T025126577365Z/config.json",
+        "/workspace/deep/artifacts/compact-v4/20261112T025126577365Z/evaluation/noregrets-seed-343-current-60/results.json",
+        "/workspace/deep/artifacts/compact-v4/20261112T025126577365Z/evaluation/noregrets-seed-343-mixture-30/results.json"
+      ]
+    },
+    "2026111203:2026113203": {
+      "range": [
+        2026111203,
+        2026113203
+      ],
+      "records": 80,
+      "examples": [
+        "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/config.json",
+        "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/evaluation/noregrets-seed-343-mixture-120/results.json",
+        "/workspace/deep/artifacts/compact-v4/20261112T032318825281Z/evaluation/noregrets-seed-343-current-60/results.json"
+      ]
+    },
+    "2026200000:2026220000": {
+      "range": [
+        2026200000,
+        2026220000
+      ],
+      "records": 40,
+      "examples": [
+        "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/config.json",
+        "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/config.json",
+        "/workspace/deep/artifacts/backup-audits/bounded-stage360-20261113/restored/frozen/config.json"
+      ]
+    },
+    "2026160000:2026180000": {
+      "range": [
+        2026160000,
+        2026180000
+      ],
+      "records": 63,
+      "examples": [
+        "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/parent-recovery/frozen/artifacts/continuation-study/20261112T070916841250Z/config.json",
+        "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/parent-recovery/frozen/artifacts/continuation-study/20261112T070916841250Z/campaign/20261112T070916841250Z/config.json",
+        "/workspace/deep/artifacts/backup-audits/bounded-recovery-20261113/restored/frozen/artifacts/continuation-study/20261112T070916841250Z/config.json"
+      ]
+    },
+    "2026140000:2026142000": {
+      "range": [
+        2026140000,
+        2026142000
+      ],
+      "records": 29,
+      "examples": [
+        "/workspace/deep/artifacts/foundation-study/20261112T053521994344Z/config.json",
+        "/workspace/deep/artifacts/foundation-study/20261112T053521994344Z/evaluation/pressure-seed-342-current120/results.json",
+        "/workspace/deep/artifacts/foundation-study/20261112T053521994344Z/evaluation/tight-value-seed-343-current60/results.json"
+      ]
+    },
+    "2037100000:2037120000": {
+      "range": [
+        2037100000,
+        2037120000
+      ],
+      "records": 37,
+      "examples": [
+        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/config.json",
+        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/evaluation/public-seed-342-original120/results.json",
+        "/workspace/deep/artifacts/candidate-confirmation/20261116T052535674094Z/evaluation/noregrets-seed-343-parent360/results.json"
+      ]
+    },
+    "220261112:220261114": {
+      "range": [
+        220261112,
+        220261114
+      ],
+      "records": 32,
+      "examples": [
+        "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/config.json",
+        "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/evaluation/noregrets-seed-42-mixture-6/results.json",
+        "/workspace/deep/artifacts/retraining-smoke/20261112T024445071933Z/evaluation/mixed-seed-42-mixture-12/results.json"
+      ]
+    },
+    "2035000000:2035020000": {
+      "range": [
+        2035000000,
+        2035020000
+      ],
+      "records": 47,
+      "examples": [
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/config.json",
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/campaign/config.json",
+        "/workspace/deep/artifacts/rich-selfplay/20261113T075620400993Z/evaluation/noregrets-seed-344-rich96/results.json"
+      ]
+    },
+    "2026130000:2026132000": {
+      "range": [
+        2026130000,
+        2026132000
+      ],
+      "records": 20,
+      "examples": [
+        "/workspace/deep/artifacts/refit-probe/20261112T050839072733Z/config.json",
+        "/workspace/deep/artifacts/refit-probe/20261112T050839072733Z/evaluation/noregrets-seed-342-current/results.json",
+        "/workspace/deep/artifacts/refit-probe/20261112T050839072733Z/evaluation/mixed-seed-344-anchored/results.json"
+      ]
+    },
+    "2026150000:2026152000": {
+      "range": [
+        2026150000,
+        2026152000
+      ],
+      "records": 56,
+      "examples": [
+        "/workspace/deep/artifacts/refit-probe/20261112T060737163350Z/config.json",
+        "/workspace/deep/artifacts/refit-probe/20261112T060737163350Z/evaluation/tight-value-seed-343-raw-objective/results.json",
+        "/workspace/deep/artifacts/refit-probe/20261112T060737163350Z/evaluation/calling-station-seed-342-raw-objective/results.json"
+      ]
+    },
+    "2026120000:2026122000": {
+      "range": [
+        2026120000,
+        2026122000
+      ],
+      "records": 29,
+      "examples": [
+        "/workspace/deep/artifacts/refit-probe/20261112T043945051666Z/config.json",
+        "/workspace/deep/artifacts/refit-probe/20261112T043945051666Z/evaluation/noregrets-seed-344-mixture/results.json",
+        "/workspace/deep/artifacts/refit-probe/20261112T043945051666Z/evaluation/noregrets-seed-342-current/results.json"
+      ]
+    },
+    "2037000000:2037020000": {
+      "range": [
+        2037000000,
+        2037020000
+      ],
+      "records": 91,
+      "examples": [
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/config.json",
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/noregrets-seed-342-legacy_smaller_batch/results.json",
+        "/workspace/deep/artifacts/controlled-refit/20261116T004818765266Z/evaluation/mixed-seed-344-previous_rich96/results.json"
+      ]
+    },
+    "2037200000:2037220000": {
+      "range": [
+        2037200000,
+        2037220000
+      ],
+      "records": 1,
+      "examples": [
+        "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/config.json"
+      ]
+    },
+    "2037080000:2037080020": {
+      "range": [
+        2037080000,
+        2037080020
+      ],
+      "records": 3,
+      "examples": [
+        "/workspace/deep/artifacts/candidate-confirmation-preflight/20261116T052438609275Z/mixed/results.json",
+        "/workspace/deep/artifacts/candidate-confirmation-preflight/20261116T052438609275Z/noregrets/results.json",
+        "/workspace/deep/artifacts/candidate-confirmation-preflight/20261116T052438609275Z/public/results.json"
+      ]
+    },
+    "2037180000:2037180020": {
+      "range": [
+        2037180000,
+        2037180020
+      ],
+      "records": 3,
+      "examples": [
+        "/workspace/deep/artifacts/average-baseline/20261116T084130Z/preflight/mixed/results.json",
+        "/workspace/deep/artifacts/average-baseline/20261116T084130Z/preflight/noregrets/results.json",
+        "/workspace/deep/artifacts/average-baseline/20261116T084130Z/preflight/public/results.json"
+      ]
+    },
+    "190261110:190263110": {
+      "range": [
+        190261110,
+        190263110
+      ],
+      "records": 1,
+      "examples": [
+        "/workspace/deep/reports/compact-v4/20261110T085438491435Z/config.json"
+      ]
+    },
+    "170261110:170263110": {
+      "range": [
+        170261110,
+        170263110
+      ],
+      "records": 37,
+      "examples": [
+        "/workspace/deep/reports/compact-v4/20261110T022413561323Z/config.json",
+        "/workspace/deep/reports/compact-v4/20261110T022413561323Z/evaluation/noregrets-seed-343-current-60/results.json",
+        "/workspace/deep/reports/compact-v4/20261110T022413561323Z/evaluation/noregrets-seed-343-mixture-30/results.json"
+      ]
+    },
+    "160261109:160263109": {
+      "range": [
+        160261109,
+        160263109
+      ],
+      "records": 25,
+      "examples": [
+        "/workspace/deep/reports/fullhouse-v3/20261109T034714104421Z/config.json",
+        "/workspace/deep/reports/fullhouse-v3/20261109T034714104421Z/noregrets-seed-42-advantage-120/results.json",
+        "/workspace/deep/reports/fullhouse-v3/20261109T034714104421Z/public-seed-44-average-120/results.json"
+      ]
+    },
+    "180261110:180261610": {
+      "range": [
+        180261110,
+        180261610
+      ],
+      "records": 4,
+      "examples": [
+        "/workspace/deep/reports/compact-v4/20261110T022413561323Z/fallback-probe/noregrets-uniform/results.json",
+        "/workspace/deep/reports/compact-v4/20261110T022413561323Z/fallback-probe/noregrets-argmax/results.json",
+        "/workspace/deep/reports/compact-v4/20261110T022413561323Z/fallback-probe/public-uniform/results.json"
+      ]
+    }
+  },
+  "model_promoted": false,
+  "automatic_retry": false,
+  "full_paper_reproduction": false,
+  "legacy_information_loss_unresolved": true,
+  "authorization": "User2026-11-17 asked to check carefully and proceed",
+  "rationale": "Finish the previously unobserved420 horizon; keep adoption independent of intermediate performance and finite auxiliary approximation error"
+}

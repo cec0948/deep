@@ -1,0 +1,66 @@
+{
+  "study_kind": "authorized-recovery-main-policy-fixed-horizon",
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "initial_iteration": 360,
+  "iterations": 420,
+  "stages": [
+    372,
+    420
+  ],
+  "traversals": 256,
+  "buffer_capacity": 100000,
+  "main_steps": 1024,
+  "batch_size": 512,
+  "opening_steps": 2048,
+  "opening_max_steps": 8192,
+  "max_opening_tv": 0.1,
+  "root_repetitions": 4,
+  "learning_rate": 0.001,
+  "strategy_capacity": 100000,
+  "reference_hands": 512,
+  "average_fit_steps": 8192,
+  "average_batch": 512,
+  "average_max_replay_tv": 0.15,
+  "evaluation_deals": 20000,
+  "evaluation_deal_seed": 2037300000,
+  "evaluation_labels": [
+    "original120",
+    "parent360",
+    "current420",
+    "average361_420"
+  ],
+  "evaluation_fields": [
+    "public",
+    "mixed",
+    "noregrets"
+  ],
+  "max_training_workers": 3,
+  "max_evaluation_workers": 3,
+  "training_seconds_per_worker": 5400,
+  "evaluation_seconds_per_cell": 2400,
+  "max_seconds": 21600,
+  "automatic_retry": false,
+  "model_promotion": false,
+  "extend_after_420": false,
+  "historical_average_before_361_available": false,
+  "legacy_information_loss_unresolved": true,
+  "full_paper_reproduction": false,
+  "source_recovery_sha256": "65ec65f90cc1c0f73700ec4683d421baaaeb4bb82bb10c14fa2c9249fc504be8",
+  "resume_iterations": {
+    "342": 366,
+    "343": 366,
+    "344": 372
+  },
+  "auxiliary_quality_error_stops_main": false,
+  "primary_candidate": "current420",
+  "average_width": 128,
+  "average_normalize": false,
+  "diagnostic_summary": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/summary.json",
+  "diagnostic_summary_sha256": "5d94f92c25caed99c79c063e55174f542a794463eece6dfaabfb0d744d1217bf",
+  "fitter_decision": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/continuation-fitter-decision.json",
+  "fitter_decision_sha256": "66e3d9b22ba9591b5e2a1617237270b8d012586b582c79683dcc35063484bab7"
+}

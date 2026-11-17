@@ -1,0 +1,279 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-17T03:18:23.171274+00:00",
+  "arms": [
+    {
+      "width": 128,
+      "normalize": false,
+      "steps": 16384,
+      "mean_heldout_tv": 0.18542392827615464,
+      "per_seed": [
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 10868,
+            "mass": 5694684.4568108525,
+            "weighted_tv": 0.12963030498728076,
+            "weighted_kl": 0.1409069909941312
+          },
+          "heldout": {
+            "distinct_inputs": 2716,
+            "mass": 1419607.5102261188,
+            "weighted_tv": 0.18109520864560183,
+            "weighted_kl": 0.31544782408652183
+          }
+        },
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 10582,
+            "mass": 5707185.977437352,
+            "weighted_tv": 0.12589631601902684,
+            "weighted_kl": 0.1405482570816762
+          },
+          "heldout": {
+            "distinct_inputs": 2645,
+            "mass": 1403125.9450486354,
+            "weighted_tv": 0.2007001461179012,
+            "weighted_kl": 0.38573739583183453
+          }
+        },
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 18101,
+            "mass": 11422894.21228101,
+            "weighted_tv": 0.1333275628065468,
+            "weighted_kl": 0.15723650397230512
+          },
+          "heldout": {
+            "distinct_inputs": 4525,
+            "mass": 2894789.0144131533,
+            "weighted_tv": 0.174476430064961,
+            "weighted_kl": 0.2728075218931674
+          }
+        }
+      ],
+      "all_train_tv_within_original_reference": true
+    },
+    {
+      "width": 128,
+      "normalize": true,
+      "steps": 16384,
+      "mean_heldout_tv": 0.19620555868454823,
+      "per_seed": [
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 10868,
+            "mass": 5694684.4568108525,
+            "weighted_tv": 0.07871318526377725,
+            "weighted_kl": 0.07007794233528047
+          },
+          "heldout": {
+            "distinct_inputs": 2716,
+            "mass": 1419607.5102261188,
+            "weighted_tv": 0.19081627220514324,
+            "weighted_kl": 0.47914494957123427
+          }
+        },
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 10582,
+            "mass": 5707185.977437352,
+            "weighted_tv": 0.07528323113777657,
+            "weighted_kl": 0.06951400957155553
+          },
+          "heldout": {
+            "distinct_inputs": 2645,
+            "mass": 1403125.9450486354,
+            "weighted_tv": 0.20909345809082475,
+            "weighted_kl": 0.5652271948526553
+          }
+        },
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 18101,
+            "mass": 11422894.21228101,
+            "weighted_tv": 0.10616852674073689,
+            "weighted_kl": 0.11228526377993046
+          },
+          "heldout": {
+            "distinct_inputs": 4525,
+            "mass": 2894789.0144131533,
+            "weighted_tv": 0.18870694575767666,
+            "weighted_kl": 0.3363735150771033
+          }
+        }
+      ],
+      "all_train_tv_within_original_reference": true
+    },
+    {
+      "width": 256,
+      "normalize": false,
+      "steps": 16384,
+      "mean_heldout_tv": 0.18862548031325532,
+      "per_seed": [
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 10868,
+            "mass": 5694684.4568108525,
+            "weighted_tv": 0.10850065123173441,
+            "weighted_kl": 0.10605003646200135
+          },
+          "heldout": {
+            "distinct_inputs": 2716,
+            "mass": 1419607.5102261188,
+            "weighted_tv": 0.18767951835905403,
+            "weighted_kl": 0.3887184069078026
+          }
+        },
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 10582,
+            "mass": 5707185.977437352,
+            "weighted_tv": 0.0949776925516861,
+            "weighted_kl": 0.097125879784962
+          },
+          "heldout": {
+            "distinct_inputs": 2645,
+            "mass": 1403125.9450486354,
+            "weighted_tv": 0.19709426995589482,
+            "weighted_kl": 0.46954035547046374
+          }
+        },
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 18101,
+            "mass": 11422894.21228101,
+            "weighted_tv": 0.11747046767757237,
+            "weighted_kl": 0.12812457897673304
+          },
+          "heldout": {
+            "distinct_inputs": 4525,
+            "mass": 2894789.0144131533,
+            "weighted_tv": 0.18110265262481712,
+            "weighted_kl": 0.313282485076757
+          }
+        }
+      ],
+      "all_train_tv_within_original_reference": true
+    },
+    {
+      "width": 256,
+      "normalize": true,
+      "steps": 16384,
+      "mean_heldout_tv": 0.2016674774748478,
+      "per_seed": [
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 10868,
+            "mass": 5694684.4568108525,
+            "weighted_tv": 0.05254703388170033,
+            "weighted_kl": 0.03668481608770835
+          },
+          "heldout": {
+            "distinct_inputs": 2716,
+            "mass": 1419607.5102261188,
+            "weighted_tv": 0.1942304406332918,
+            "weighted_kl": 0.6085330977033628
+          }
+        },
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 10582,
+            "mass": 5707185.977437352,
+            "weighted_tv": 0.046492405655702486,
+            "weighted_kl": 0.033525357769712265
+          },
+          "heldout": {
+            "distinct_inputs": 2645,
+            "mass": 1403125.9450486354,
+            "weighted_tv": 0.217234921122788,
+            "weighted_kl": 0.7382089384026524
+          }
+        },
+        {
+          "step": 16384,
+          "training": {
+            "distinct_inputs": 18101,
+            "mass": 11422894.21228101,
+            "weighted_tv": 0.08118924917760179,
+            "weighted_kl": 0.07199691105699384
+          },
+          "heldout": {
+            "distinct_inputs": 4525,
+            "mass": 2894789.0144131533,
+            "weighted_tv": 0.19353707066846362,
+            "weighted_kl": 0.45045439845974483
+          }
+        }
+      ],
+      "all_train_tv_within_original_reference": true
+    }
+  ],
+  "selected": {
+    "width": 128,
+    "normalize": false,
+    "steps": 16384,
+    "mean_heldout_tv": 0.18542392827615464,
+    "per_seed": [
+      {
+        "step": 16384,
+        "training": {
+          "distinct_inputs": 10868,
+          "mass": 5694684.4568108525,
+          "weighted_tv": 0.12963030498728076,
+          "weighted_kl": 0.1409069909941312
+        },
+        "heldout": {
+          "distinct_inputs": 2716,
+          "mass": 1419607.5102261188,
+          "weighted_tv": 0.18109520864560183,
+          "weighted_kl": 0.31544782408652183
+        }
+      },
+      {
+        "step": 16384,
+        "training": {
+          "distinct_inputs": 10582,
+          "mass": 5707185.977437352,
+          "weighted_tv": 0.12589631601902684,
+          "weighted_kl": 0.1405482570816762
+        },
+        "heldout": {
+          "distinct_inputs": 2645,
+          "mass": 1403125.9450486354,
+          "weighted_tv": 0.2007001461179012,
+          "weighted_kl": 0.38573739583183453
+        }
+      },
+      {
+        "step": 16384,
+        "training": {
+          "distinct_inputs": 18101,
+          "mass": 11422894.21228101,
+          "weighted_tv": 0.1333275628065468,
+          "weighted_kl": 0.15723650397230512
+        },
+        "heldout": {
+          "distinct_inputs": 4525,
+          "mass": 2894789.0144131533,
+          "weighted_tv": 0.174476430064961,
+          "weighted_kl": 0.2728075218931674
+        }
+      }
+    ],
+    "all_train_tv_within_original_reference": true
+  },
+  "new_selfplay_iterations": 0,
+  "poker_strength_evaluated": false,
+  "source_inputs_unchanged": true
+}

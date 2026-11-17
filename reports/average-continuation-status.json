@@ -1,0 +1,131 @@
+{
+  "status": "running",
+  "phase": "training",
+  "observed_utc": "2026-11-17T03:25:59.632802+00:00",
+  "run": "20261117T032100Z",
+  "study_kind": "authorized-recovery-main-policy-fixed-horizon",
+  "supervisor_pid": 2567,
+  "supervisor_start": "1234572",
+  "training_progress": {
+    "342": {
+      "status": "running",
+      "phase": "training",
+      "observed_utc": "2026-11-17T03:25:49.298065+00:00",
+      "pid": 2568,
+      "process_start": "1234697",
+      "seed": 342,
+      "iteration": 368,
+      "new_selfplay_iterations": 2,
+      "completed_since_parent360": 8,
+      "planned_new_selfplay_iterations": 54,
+      "elapsed_seconds": 64.64518895600122,
+      "opening_tv": 0.048784027741973685,
+      "strategy_rows": 29349,
+      "average_fit": null
+    },
+    "343": {
+      "status": "running",
+      "phase": "training",
+      "observed_utc": "2026-11-17T03:25:46.176636+00:00",
+      "pid": 2569,
+      "process_start": "1234697",
+      "seed": 343,
+      "iteration": 368,
+      "new_selfplay_iterations": 2,
+      "completed_since_parent360": 8,
+      "planned_new_selfplay_iterations": 54,
+      "elapsed_seconds": 61.48392414099908,
+      "opening_tv": 0.015352852375704275,
+      "strategy_rows": 28909,
+      "average_fit": null
+    },
+    "344": {
+      "status": "running",
+      "phase": "training",
+      "observed_utc": "2026-11-17T03:25:44.375789+00:00",
+      "pid": 2570,
+      "process_start": "1234697",
+      "seed": 344,
+      "iteration": 374,
+      "new_selfplay_iterations": 2,
+      "completed_since_parent360": 14,
+      "planned_new_selfplay_iterations": 48,
+      "elapsed_seconds": 59.96650472299916,
+      "opening_tv": 0.014796929934872841,
+      "strategy_rows": 49804,
+      "average_fit": null
+    }
+  },
+  "completed_training_workers": 0,
+  "planned_training_workers": 3,
+  "new_selfplay_iterations_per_seed": {
+    "342": 2,
+    "343": 2,
+    "344": 2
+  },
+  "planned_new_selfplay_iterations_per_seed": {
+    "342": 54,
+    "343": 54,
+    "344": 48
+  },
+  "training_complete": false,
+  "averaging_window": [
+    361,
+    420
+  ],
+  "historical_average_before361_available": false,
+  "completed_evaluations": 0,
+  "planned_evaluations": 36,
+  "verified_hands": 0,
+  "planned_hands": 4320000,
+  "independent_card_blocks": 20000,
+  "running": {
+    "train-342": {
+      "pid": 2568,
+      "process_start": "1234697",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_continuation.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign",
+        "--seed",
+        "342"
+      ]
+    },
+    "train-343": {
+      "pid": 2569,
+      "process_start": "1234697",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_continuation.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign",
+        "--seed",
+        "343"
+      ]
+    },
+    "train-344": {
+      "pid": 2570,
+      "process_start": "1234697",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_continuation.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign",
+        "--seed",
+        "344"
+      ]
+    }
+  },
+  "error": null,
+  "small_game_average_gate_passed": true,
+  "full_paper_reproduction": false,
+  "model_promoted": false,
+  "automatic_retry": false,
+  "study_complete": false,
+  "evaluation_complete": false,
+  "elapsed_seconds": 77.39822479100076,
+  "max_seconds": 21600,
+  "backup_ready": false,
+  "next_action": "Finish saved-state continuation through420 and36cell evaluation; average TV is diagnostic"
+}

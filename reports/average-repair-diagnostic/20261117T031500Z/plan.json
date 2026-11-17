@@ -1,0 +1,157 @@
+{
+  "created_utc": "2026-11-17T03:14:02.192537+00:00",
+  "authorization": "User2026-11-17:check carefully and proceed",
+  "purpose": "Fixed-data approximation diagnosis before authorized continuation",
+  "inputs": {
+    "342": {
+      "iteration": 366,
+      "rows": 21826,
+      "distinct_inputs": 13584,
+      "heldout_groups": 2716,
+      "input_sha256": "403f9d33dbbbe9fe85f6f82bcc6f794d67b1866442dcab39634e8016a5c07109",
+      "checkpoint": "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/checkpoints/iter-00366"
+    },
+    "343": {
+      "iteration": 366,
+      "rows": 21504,
+      "distinct_inputs": 13227,
+      "heldout_groups": 2645,
+      "input_sha256": "7353bba448e300488472ddb79610673ab2156b0d116a64b80992e566961c05a0",
+      "checkpoint": "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/checkpoints/iter-00366"
+    },
+    "344": {
+      "iteration": 372,
+      "rows": 42836,
+      "distinct_inputs": 22626,
+      "heldout_groups": 4525,
+      "input_sha256": "44094244415e30e1432a42e642416b4ee1f3d55d2ae8abf44877a3c18670494a",
+      "checkpoint": "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/checkpoints/iter-00372"
+    }
+  },
+  "jobs": [
+    {
+      "seed": 342,
+      "fit_seed": 34200366,
+      "width": 128,
+      "normalize": false,
+      "id": "342-w128-norm0",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-342.npz"
+    },
+    {
+      "seed": 342,
+      "fit_seed": 34200366,
+      "width": 128,
+      "normalize": true,
+      "id": "342-w128-norm1",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-342.npz"
+    },
+    {
+      "seed": 342,
+      "fit_seed": 34200366,
+      "width": 256,
+      "normalize": false,
+      "id": "342-w256-norm0",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-342.npz"
+    },
+    {
+      "seed": 342,
+      "fit_seed": 34200366,
+      "width": 256,
+      "normalize": true,
+      "id": "342-w256-norm1",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-342.npz"
+    },
+    {
+      "seed": 343,
+      "fit_seed": 34300366,
+      "width": 128,
+      "normalize": false,
+      "id": "343-w128-norm0",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-343.npz"
+    },
+    {
+      "seed": 343,
+      "fit_seed": 34300366,
+      "width": 128,
+      "normalize": true,
+      "id": "343-w128-norm1",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-343.npz"
+    },
+    {
+      "seed": 343,
+      "fit_seed": 34300366,
+      "width": 256,
+      "normalize": false,
+      "id": "343-w256-norm0",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-343.npz"
+    },
+    {
+      "seed": 343,
+      "fit_seed": 34300366,
+      "width": 256,
+      "normalize": true,
+      "id": "343-w256-norm1",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-343.npz"
+    },
+    {
+      "seed": 344,
+      "fit_seed": 34400372,
+      "width": 128,
+      "normalize": false,
+      "id": "344-w128-norm0",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-344.npz"
+    },
+    {
+      "seed": 344,
+      "fit_seed": 34400372,
+      "width": 128,
+      "normalize": true,
+      "id": "344-w128-norm1",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-344.npz"
+    },
+    {
+      "seed": 344,
+      "fit_seed": 34400372,
+      "width": 256,
+      "normalize": false,
+      "id": "344-w256-norm0",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-344.npz"
+    },
+    {
+      "seed": 344,
+      "fit_seed": 34400372,
+      "width": 256,
+      "normalize": true,
+      "id": "344-w256-norm1",
+      "input": "/workspace/deep/artifacts/average-repair-diagnostic/20261117T031500Z/inputs/seed-344.npz"
+    }
+  ],
+  "frozen_files": {
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/checkpoints/iter-00366/arrays.npz": "2b162551ac8301fbe8e2031821d4930ef27006d6dbc52ec94c08112f771bfb21",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/checkpoints/iter-00366/current.npz": "66a52009a0382d48f45968409ebc6d0fb67d25cd0d162f0fca5bade1fc54c1ad",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-342/checkpoints/iter-00366/state.json": "b0299158f801de16b5772769fe4a8dd9a26d0f5409ac491123b7d089a7f15e5a",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/checkpoints/iter-00366/arrays.npz": "ac2f6bbee65bf9b5d3c0bf18315e2155a85c1e83fc59c1eaaef4a8ec7bc0e316",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/checkpoints/iter-00366/current.npz": "7beac1e1f7ba59975ced1d5258a6d6470fffd52ee2d6615345efc2c5000dfc37",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-343/checkpoints/iter-00366/state.json": "caa6d30ba7dc626064376ac9f8c5ad9be1f808713c348c9cf557ba477621960d",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/checkpoints/iter-00372/arrays.npz": "8d9c5d740642413258a6aef336ec3d6d4218a5c714efa59e7ecc35686969d582",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/checkpoints/iter-00372/current.npz": "e6e7a58e8162884a90d7681d5b682922769adb9530745ed08554f7f09fcf3fbd",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/checkpoints/iter-00372/average.npz": "f754f7cb28823a89b0dff35399678c9eabbb22dd95e6e114ec79d7a7d18dd0fa",
+    "/workspace/deep/artifacts/average-baseline/20261116T084130Z/campaign/seed-344/checkpoints/iter-00372/state.json": "d0738959a5d8820219e0cfadd1d0ab9f531e7717e902e221ebc8ff0eeed4b4b0",
+    "/workspace/deep/scripts/poker_average_diagnostics.py": "65783ea5ad845cc0ceaf1b7d60bfdd0af447f16afd08d4db5b78d999e1c472e8",
+    "/workspace/deep/scripts/poker_strategy_average.py": "a711f99d2d6539d1e554adbc964c85480f4708cecb785f995737717b23ae9d7b",
+    "/workspace/deep/scripts/poker_average_inference.py": "d2c4071bc8befafdb1961eaf4f070584deb93d97bf3ed81fed940ad54a9456e3"
+  },
+  "steps": 16384,
+  "observations": [
+    8192,
+    16384
+  ],
+  "batch_size": 512,
+  "heldout": "20percent unique input groups; no identical feature group in both partitions; normalization fit on train only",
+  "selection": "At16384steps choose minimum mean heldout TV across3datasets; prefer smaller width then no normalization on exact tie. Report training TV<=0.15 and heldout regressions separately; no claim of poker improvement.",
+  "automatic_retry": false,
+  "new_selfplay_iterations": 0,
+  "max_parallel": 3,
+  "max_seconds_per_job": 900,
+  "max_total_seconds": 3600
+}
