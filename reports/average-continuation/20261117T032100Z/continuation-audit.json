@@ -1,0 +1,100 @@
+{
+  "observed_utc": "2026-11-17T03:29:39.688981+00:00",
+  "run": "20261117T032100Z",
+  "phases_separated": true,
+  "old_failure_preserved": true,
+  "frozen_inputs_unchanged": true,
+  "actual_processes": [
+    {
+      "pid": 2567,
+      "process_start": "1234572",
+      "expected_start": "1234572",
+      "alive": true,
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/run_poker_average_continuation.py",
+        "--output",
+        "/workspace/deep/artifacts/average-continuation/20261117T032100Z",
+        "--config",
+        "/workspace/deep/configs/poker-average-continuation-20261117.json",
+        "--gate",
+        "/workspace/deep/artifacts/strategy-average-gate/20261116T083645Z/report.json",
+        "--prepared"
+      ]
+    },
+    {
+      "pid": 2568,
+      "process_start": "1234697",
+      "expected_start": "1234697",
+      "alive": true,
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_continuation.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign",
+        "--seed",
+        "342"
+      ]
+    },
+    {
+      "pid": 2569,
+      "process_start": "1234697",
+      "expected_start": "1234697",
+      "alive": true,
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_continuation.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign",
+        "--seed",
+        "343"
+      ]
+    },
+    {
+      "pid": 2570,
+      "process_start": "1234697",
+      "expected_start": "1234697",
+      "alive": true,
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_continuation.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign",
+        "--seed",
+        "344"
+      ]
+    }
+  ],
+  "iterations": {
+    "342": 375,
+    "343": 375,
+    "344": 382
+  },
+  "same372approximation_results": [
+    {
+      "seed": 342,
+      "old_tv": 0.1594054167453858,
+      "new_tv": 0.1594054167453858,
+      "exactly_equal": true,
+      "within_original_quality_reference": false,
+      "continued_past372": true
+    },
+    {
+      "seed": 343,
+      "old_tv": 0.16985054683176384,
+      "new_tv": 0.16985054683176384,
+      "exactly_equal": true,
+      "within_original_quality_reference": false,
+      "continued_past372": true
+    }
+  ],
+  "training_complete": false,
+  "evaluation_complete": false,
+  "completed_evaluations": 0,
+  "automatic_retry": false,
+  "model_promoted": false,
+  "alarm_reenabled": false,
+  "new_backup_ready": false,
+  "tests_passed": 36,
+  "preflight_sha256": "f965444b4ed9096bca59a5601663886fe613059b39519115f4f145c029148bd9"
+}
