@@ -6,6 +6,8 @@
 
 - 2026-11-17 현재 자동 알림은 사용자 요청으로 비활성화돼 있다. 사용자가 점검이나 새 실행을 요청해도 알림 예약을 임의로 다시 켜지 않는다.
 
+- 가장 최근 승인 작업은420회 결과를 본 사용자의 추가 학습 요청에 따른 `20261117T063900Z`의420→480회 자기대전이다. `docs/retraining-average-extension-20261117.md`, `reports/average-extension-status.json`, `artifacts/average-extension/current.json`을 먼저 확인한다. 감독 `run_poker_average_extension.py`, 학습기 `train_poker_average_extension.py`, 평가기 `evaluate_average_baseline.py`의 실제PID·시작토큰·명령행과 최신 시각을 대조한다. 가중치·replay·첫 행동·모든 학습 및 평균 수집 난수 상태를 연결하며 새회차는3seed각60회다. 주 표본180만행·평균표본30만행 상한과 기존 학습 설정을 유지한다. 유한한 평균TV초과나 중간 성능만으로 학습을 중단하지 않는다. 실행 오류·비유한값·출처 불일치·주 fitting 실패는중단하며 자동 재시도하지 않는다.480회 학습 완료와36셀·432만 핸드 평가 완료를 구분하고, 새20,000카드 묶음 단위로480−420진도와 원본120회 대비 기존 네 채택 조건을 구분한다. 새480회 archive를 검증하기 전 기존420회 복구본을 지우지 않는다. 이번 승인에도 자동 알림은 꺼진 상태를 유지한다.
+
 - 최신 완료 확인(2026-11-17): 아래 `20261117T032100Z`는14:08 KST에420회 학습과36셀·432만 핸드 평가를 모두 끝냈다. 주 모델의360회 대비 공개+1.40·혼합−1.08·NoRegrets−18.68bb/100은 동시95%구간이0을 포함해 개선을 확인하지 못했다. 평균 모델은 주 모델보다 공개 상대에서−22.43bb/100(동시95%−36.05~−8.80) 낮았다. 원본120회 대비 주 모델의 공개 채택 조건2개는 미달했다. 중간 품질 중단이 아니라 고정 예산 완료이며 자동 연장·모델 교체는 없다. 감독zombie·worker종료를 확인했고 최종 원시 집계와 통계는 `final-audit.json`으로 재검산했다. 새420회 복구본99,711,994 bytes는 복원·원격크기·소유자전용권한 확인 후 인덱스에 완료로 기록했다. 원격 체크섬은 없고 학습archive에 후속평가가 포함되지는 않는다. 이 완료·백업 사실은 반복 알리지 않는다.
 
 - 최신 승인 실행은 `artifacts/average-continuation/current.json`의 `20261117T032100Z`다. `docs/retraining-average-continuation-20261117.md`와 `reports/average-continuation-status.json`을 우선 읽는다. 감독 `run_poker_average_continuation.py`, 학습기 `train_poker_average_continuation.py`, 평가기 `evaluate_average_baseline.py`의 실제PID·시작토큰·명령행을 확인한다. 기존 저장366/366/372에서420회까지 새54/54/48회이며 평균 구간은361~420이다. 유한한 보조 평균TV는이전0.15기준대비진단으로남기며그초과만으로주학습을중단하지않는다. 주모델예산과표본은그대로다. 비유한값·출처·실행·주fitting오류에는중단하고자동재시도하지않는다. 사전주후보는최신420회이며 평균은별도진단이다. 학습과36셀·432만핸드평가완료를구분하고모델교체·420회이후연장은하지않는다. 새backup-ready.json은 `snapshot_poker_average_continuation.py`로검증한420회하나만등록하고평균근사기준통과와복원성공을구분한다. 기존개인Drivefolder·64MiB분할·원격크기/소유자전용권한·2GiB보존정책을유지한다. 이전실패보고와registry는덮어쓰지않는다.
@@ -39,6 +41,8 @@
 - 자기대전 복구본은 `training-checkpoint`, 고정 replay 파생 후보는 `derived-policy-probe`, 연구 산출물은 `research-validation`으로 구분한다. 기존 compact 복구본의 `exact_legacy_resume=false`, `resumable_selfplay=false`는 옛 worker의 정확 재개 미지원 표시다. 새 rich family는 새 worker의 복구·다음 업데이트 동일성 검증이 통과할 때만 해당 family의 재개 지원을 기록하고, legacy 재개와 구분한다. `warm_start_state_verified=true`와 별개로 기록하며 모델·표본 보존 실패로 해석하지 않는다.
 
 ## 보존·정리
+
+- 420→480회 연장에서는 `scripts/plan_average_extension_backup_retention.py`로 최신480회 복구본과 그 안의420회 비교 가중치를 검증한 뒤 명시적으로 대체된420회 archive만 정리 후보로 다룬다. 다른 활성 백업의 복원 의존성이 있으면420회도 보존한다. 이 계획은 삭제를 직접 수행하지 않으며 기존 원격 재검증·인덱스 불변·privatejournal·NOT_FOUND·deleted_remote 절차를 그대로 따른다. 원본360회·rich96회·첫60/필수120회·최근파생2개·최신연구·평가자산·모든 의존성과2GiB목표는 유지한다.
 
 - 새 평균 기준 복구본을 보관할 때는 `scripts/plan_average_backup_retention.py`를 사용한다. 기존 통제 진단 보존 정책을 포함하며 최신 평균 복구본 하나와 원본360회·rich96회·첫60회·필수120회·최근 파생2개·최신 연구·평가 자산 및 모든 복원 의존성을 유지한다.2GiB목표를 넘는 필수 복구본은 알리고 임의 삭제하지 않는다. 매 회차 네트워크·표본을 누적 백업하지 않는다.
 
