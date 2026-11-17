@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "observed_utc": "2026-11-17T06:43:22.422308+00:00",
+  "run": "20261117T063900Z",
+  "actual_started_utc": "2026-11-17T06:41:25.889900+00:00",
+  "process_checks": [
+    {
+      "role": "supervisor",
+      "pid": 4270,
+      "process_start": "2415053",
+      "state": "S",
+      "start_token_and_command_match": true,
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/run_poker_average_extension.py",
+        "--output",
+        "/workspace/deep/artifacts/average-extension/20261117T063900Z",
+        "--config",
+        "/workspace/deep/configs/poker-average-extension-20261117.json",
+        "--gate",
+        "/workspace/deep/artifacts/strategy-average-gate/20261116T083645Z/report.json",
+        "--prepared"
+      ]
+    },
+    {
+      "role": "train-342",
+      "pid": 4272,
+      "process_start": "2415180",
+      "state": "R",
+      "start_token_and_command_match": true,
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_extension.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign",
+        "--seed",
+        "342"
+      ]
+    },
+    {
+      "role": "train-343",
+      "pid": 4273,
+      "process_start": "2415180",
+      "state": "R",
+      "start_token_and_command_match": true,
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_extension.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign",
+        "--seed",
+        "343"
+      ]
+    },
+    {
+      "role": "train-344",
+      "pid": 4274,
+      "process_start": "2415180",
+      "state": "R",
+      "start_token_and_command_match": true,
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_extension.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign",
+        "--seed",
+        "344"
+      ]
+    }
+  ],
+  "training_progress": {
+    "342": {
+      "iteration": 423,
+      "new_selfplay_iterations": 3,
+      "opening_tv": 0.03562536046746363,
+      "main_loss": 0.9013631512061693,
+      "buffer_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "committed_iteration": 420
+    },
+    "343": {
+      "iteration": 423,
+      "new_selfplay_iterations": 3,
+      "opening_tv": 0.0007959353953670008,
+      "main_loss": 0.8917821983341128,
+      "buffer_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "committed_iteration": 420
+    },
+    "344": {
+      "iteration": 423,
+      "new_selfplay_iterations": 3,
+      "opening_tv": 0.002762123348505625,
+      "main_loss": 0.9009034261689521,
+      "buffer_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "committed_iteration": 420
+    }
+  },
+  "all_parent_states_preserved": true,
+  "full_next_update_byte_parity": true,
+  "trusted_preflight_hands": 360,
+  "tests_passed": 25,
+  "frozen_dependencies_unchanged": true,
+  "planned_final_iteration": 480,
+  "planned_evaluations": 36,
+  "planned_hands": 4320000,
+  "independent_card_blocks": 20000,
+  "training_complete": false,
+  "evaluation_complete": false,
+  "model_promoted": false,
+  "automatic_retry": false,
+  "automatic_notifications_enabled": false,
+  "preflight_sha256": "950c889c242221674a1594669ba1877a2a4db2be0d4242d0e17bb5daf0927694",
+  "last_safe_recovery": {
+    "iteration": 420,
+    "bytes": 99711994,
+    "sha256": "13eaca0fbc9d23815005ef6ea993ed503991221ab141ec0aafa1f5aab1fbd0bd"
+  }
+}

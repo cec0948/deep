@@ -1,130 +1,131 @@
 {
-  "status": "complete",
-  "phase": "complete",
-  "observed_utc": "2026-11-17T05:08:12.308091+00:00",
-  "run": "20261117T032100Z",
-  "study_kind": "authorized-recovery-main-policy-fixed-horizon",
-  "supervisor_pid": 2567,
-  "supervisor_start": "1234572",
+  "status": "running",
+  "phase": "training",
+  "observed_utc": "2026-11-17T06:43:31.326246+00:00",
+  "run": "20261117T063900Z",
+  "study_kind": "authorized420-to480-same-settings-selfplay",
+  "supervisor_pid": 4270,
+  "supervisor_start": "2415053",
   "training_progress": {
     "342": {
-      "status": "complete",
-      "phase": "complete",
-      "observed_utc": "2026-11-17T03:51:27.946069+00:00",
-      "pid": 2568,
-      "process_start": "1234697",
+      "status": "running",
+      "phase": "training",
+      "observed_utc": "2026-11-17T06:43:01.502014+00:00",
+      "pid": 4272,
+      "process_start": "2415180",
       "seed": 342,
-      "iteration": 420,
-      "new_selfplay_iterations": 54,
-      "completed_since_parent360": 60,
-      "planned_new_selfplay_iterations": 54,
-      "elapsed_seconds": 1603.2932001789995,
-      "opening_tv": 0.008865596881242655,
+      "iteration": 423,
+      "new_selfplay_iterations": 3,
+      "completed_since_parent360": 63,
+      "planned_new_selfplay_iterations": 60,
+      "elapsed_seconds": 92.3130857110009,
+      "opening_tv": 0.03562536046746363,
       "strategy_rows": 100000,
-      "average_fit": {
-        "rows": 100000,
-        "total_seen": 224370,
-        "distinct_inputs": 45754,
-        "steps": 8192,
-        "batch_size": 512,
-        "weighted_replay_tv": 0.15976410883883532,
-        "weighted_replay_kl": 0.17930896523035197,
-        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
-        "scope": "Replay approximation consistency; not independent poker strength",
-        "parameters": 23813,
-        "within_original_quality_reference": false
-      }
+      "average_fit": null
     },
     "343": {
-      "status": "complete",
-      "phase": "complete",
-      "observed_utc": "2026-11-17T03:51:15.067422+00:00",
-      "pid": 2569,
-      "process_start": "1234697",
+      "status": "running",
+      "phase": "training",
+      "observed_utc": "2026-11-17T06:43:25.216717+00:00",
+      "pid": 4273,
+      "process_start": "2415180",
       "seed": 343,
-      "iteration": 420,
-      "new_selfplay_iterations": 54,
-      "completed_since_parent360": 60,
-      "planned_new_selfplay_iterations": 54,
-      "elapsed_seconds": 1590.3747199129994,
-      "opening_tv": 0.029564912420197556,
+      "iteration": 424,
+      "new_selfplay_iterations": 4,
+      "completed_since_parent360": 64,
+      "planned_new_selfplay_iterations": 60,
+      "elapsed_seconds": 115.94661031099895,
+      "opening_tv": 0.03196670368377533,
       "strategy_rows": 100000,
-      "average_fit": {
-        "rows": 100000,
-        "total_seen": 222571,
-        "distinct_inputs": 45277,
-        "steps": 8192,
-        "batch_size": 512,
-        "weighted_replay_tv": 0.15876398169830555,
-        "weighted_replay_kl": 0.17791912229197296,
-        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
-        "scope": "Replay approximation consistency; not independent poker strength",
-        "parameters": 23813,
-        "within_original_quality_reference": false
-      }
+      "average_fit": null
     },
     "344": {
-      "status": "complete",
-      "phase": "complete",
-      "observed_utc": "2026-11-17T03:47:59.156070+00:00",
-      "pid": 2570,
-      "process_start": "1234697",
+      "status": "running",
+      "phase": "training",
+      "observed_utc": "2026-11-17T06:43:29.220153+00:00",
+      "pid": 4274,
+      "process_start": "2415180",
       "seed": 344,
-      "iteration": 420,
-      "new_selfplay_iterations": 48,
-      "completed_since_parent360": 60,
-      "planned_new_selfplay_iterations": 48,
-      "elapsed_seconds": 1394.7467906500005,
-      "opening_tv": 0.005655407957488974,
+      "iteration": 424,
+      "new_selfplay_iterations": 4,
+      "completed_since_parent360": 64,
+      "planned_new_selfplay_iterations": 60,
+      "elapsed_seconds": 119.98081951700078,
+      "opening_tv": 0.0010998936834799885,
       "strategy_rows": 100000,
-      "average_fit": {
-        "rows": 100000,
-        "total_seen": 219057,
-        "distinct_inputs": 44539,
-        "steps": 8192,
-        "batch_size": 512,
-        "weighted_replay_tv": 0.15211318286581163,
-        "weighted_replay_kl": 0.18001047984332405,
-        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
-        "scope": "Replay approximation consistency; not independent poker strength",
-        "parameters": 23813,
-        "within_original_quality_reference": false
-      }
+      "average_fit": null
     }
   },
-  "completed_training_workers": 3,
+  "completed_training_workers": 0,
   "planned_training_workers": 3,
   "new_selfplay_iterations_per_seed": {
-    "342": 54,
-    "343": 54,
-    "344": 48
+    "342": 3,
+    "343": 4,
+    "344": 4
   },
   "planned_new_selfplay_iterations_per_seed": {
-    "342": 54,
-    "343": 54,
-    "344": 48
+    "342": 60,
+    "343": 60,
+    "344": 60
   },
-  "training_complete": true,
+  "training_complete": false,
   "averaging_window": [
     361,
-    420
+    480
   ],
   "historical_average_before361_available": false,
-  "completed_evaluations": 36,
+  "completed_evaluations": 0,
   "planned_evaluations": 36,
-  "verified_hands": 4320000,
+  "verified_hands": 0,
   "planned_hands": 4320000,
   "independent_card_blocks": 20000,
-  "running": {},
+  "running": {
+    "train-342": {
+      "pid": 4272,
+      "process_start": "2415180",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_extension.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign",
+        "--seed",
+        "342"
+      ]
+    },
+    "train-343": {
+      "pid": 4273,
+      "process_start": "2415180",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_extension.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign",
+        "--seed",
+        "343"
+      ]
+    },
+    "train-344": {
+      "pid": 4274,
+      "process_start": "2415180",
+      "command": [
+        "/workspace/.venvs/fullhouse/bin/python",
+        "/workspace/deep/scripts/train_poker_average_extension.py",
+        "--campaign",
+        "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign",
+        "--seed",
+        "344"
+      ]
+    }
+  },
   "error": null,
   "small_game_average_gate_passed": true,
   "full_paper_reproduction": false,
   "model_promoted": false,
   "automatic_retry": false,
-  "study_complete": true,
-  "evaluation_complete": true,
-  "elapsed_seconds": 6210.073521315002,
+  "study_complete": false,
+  "evaluation_complete": false,
+  "elapsed_seconds": 124.25944837399948,
   "max_seconds": 21600,
-  "backup_ready": true,
-  "next_action": "Analyze declared comparisons; no automatic extension or model replacement"
+  "backup_ready": false,
+  "next_action": "Finish saved-state continuation through480 and36cell evaluation; average TV is diagnostic"
 }
