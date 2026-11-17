@@ -1,0 +1,81 @@
+{
+  "complete": true,
+  "stage": 480,
+  "seeds": {
+    "343": {
+      "iteration": 480,
+      "checkpoint": "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-343/checkpoints/iter-00480",
+      "files": {
+        "arrays.npz": "f4f849d48b153c96805b0d10ddba4c77148e296d7e2728aa0df3294f69a2125d",
+        "current.npz": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757",
+        "average.npz": "eaf331e2707c1f1ffb783da466777c785dcab8cac331d65c41c87dd5754a5e69",
+        "state.json": "6f9969e8a90f38b325efa98b893a11ab44f08568e2bdecd7db36fdfa358d55db"
+      },
+      "average_fit": {
+        "rows": 100000,
+        "total_seen": 443591,
+        "distinct_inputs": 45034,
+        "steps": 8192,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.15785115078473277,
+        "weighted_replay_kl": 0.17641000455436923,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813,
+        "within_original_quality_reference": false
+      }
+    },
+    "344": {
+      "iteration": 480,
+      "checkpoint": "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-344/checkpoints/iter-00480",
+      "files": {
+        "arrays.npz": "5c76c1d50f016d0e2a3e937391bd343b30069dc8fcd77234446958613b20af98",
+        "current.npz": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431",
+        "average.npz": "96b5ff43802b2d171ba15b062ca8340437e44d0f8510c4a4253fd3d6980eeb38",
+        "state.json": "817e5622ffb327d12e7dcb4bf5e6aba7e633cae8e9d62b0a446936047b406413"
+      },
+      "average_fit": {
+        "rows": 100000,
+        "total_seen": 442956,
+        "distinct_inputs": 45217,
+        "steps": 8192,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.17002349072210496,
+        "weighted_replay_kl": 0.1936965366893016,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813,
+        "within_original_quality_reference": false
+      }
+    },
+    "342": {
+      "iteration": 480,
+      "checkpoint": "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-342/checkpoints/iter-00480",
+      "files": {
+        "arrays.npz": "ef45b405036417b6bc277fb0c150101e87016062c391efe8fa83003d8a4e13eb",
+        "current.npz": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+        "average.npz": "d0d939d11710f9de57b4fc06125dfcd124bf177069201e13a8b8ca2521c83abe",
+        "state.json": "a8fafef50f331d3d025ffc05ed4a40039c83731f8a2ac9fec8d7c8c9024a5787"
+      },
+      "average_fit": {
+        "rows": 100000,
+        "total_seen": 453891,
+        "distinct_inputs": 46485,
+        "steps": 8192,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.17221547907187612,
+        "weighted_replay_kl": 0.1885576407281011,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813,
+        "within_original_quality_reference": false
+      }
+    }
+  },
+  "averaging_window": [
+    361,
+    480
+  ],
+  "training_complete": true,
+  "evaluation_complete": false
+}
