@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-17T05:08:12.301814+00:00",
+  "run": "20261117T032100Z",
+  "training_complete": true,
+  "evaluation_complete": true,
+  "completed_evaluations": 36,
+  "total_hands": 4320000,
+  "new_selfplay_iterations_per_seed": {
+    "342": 54,
+    "343": 54,
+    "344": 48
+  },
+  "averaging_window": [
+    361,
+    420
+  ],
+  "original_four_conditions_pass": false,
+  "evaluation_summary_sha256": "fa42b034313c0d8de4112e5c41d461ae5f582963ca6ca443fdab609b6491d347",
+  "model_promoted": false,
+  "stop_reason": "Fixed420budget and all36evaluations complete; no automatic extension or model replacement"
+}

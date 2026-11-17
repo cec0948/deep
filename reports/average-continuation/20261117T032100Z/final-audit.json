@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "observed_utc": "2026-11-17T06:18:06.989166+00:00",
+  "run": "20261117T032100Z",
+  "completed_evaluations": 36,
+  "raw_hands_rechecked": 4320000,
+  "independent_card_blocks": 20000,
+  "paired_and_absolute_statistics_recomputed": 27,
+  "summary_match_tolerance": 1e-08,
+  "original_conditions": {
+    "public_lower_above_zero": false,
+    "at_least_two_public_seeds_improve": false,
+    "mixed_lower_above_minus_25": true,
+    "noregrets_lower_above_minus_50": true
+  },
+  "source_and_policy_dependencies_unchanged": true,
+  "raw_hashes_provenance_card_order_utility_aggregation_rechecked": true,
+  "trusted_action_replay_completed_by_each_evaluator": true,
+  "trusted_action_replay_repeated_in_this_audit": false,
+  "training_complete": true,
+  "evaluation_complete": true,
+  "model_promoted": false,
+  "automatic_retry": false,
+  "elapsed_seconds": 47.49772241499886,
+  "summary_sha256": "20eccf198ff3e2f27fa0538b078ced3d82859c5a18f420a934fee22f41ae6286",
+  "evaluation_summary_sha256": "fa42b034313c0d8de4112e5c41d461ae5f582963ca6ca443fdab609b6491d347",
+  "process_readback": [
+    {
+      "pid": 2567,
+      "exists": true,
+      "state": "Z",
+      "start_token": "1234572",
+      "matches": true,
+      "command": ""
+    },
+    {
+      "pid": 2568,
+      "exists": false
+    },
+    {
+      "pid": 2569,
+      "exists": false
+    },
+    {
+      "pid": 2570,
+      "exists": false
+    }
+  ],
+  "no_active_owned_processes": true
+}

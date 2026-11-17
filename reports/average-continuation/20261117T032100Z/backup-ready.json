@@ -1,0 +1,132 @@
+{
+  "kind": "training-checkpoint",
+  "checkpoint_mode": "compact-window-average-recovery-v1",
+  "training_family": "legacy-window-average",
+  "run": "20261117T032100Z",
+  "archive": "/workspace/deep/artifacts/exports/poker-average-20261117T032100Z-stage-00420.tar.gz",
+  "bytes": 99711994,
+  "sha256": "13eaca0fbc9d23815005ef6ea993ed503991221ab141ec0aafa1f5aab1fbd0bd",
+  "iterations": {
+    "342": 420,
+    "343": 420,
+    "344": 420
+  },
+  "averaging_window": [
+    361,
+    420
+  ],
+  "new_selfplay_iterations_per_seed": {
+    "342": 54,
+    "343": 54,
+    "344": 48
+  },
+  "resumable_selfplay": false,
+  "exact_legacy_resume": false,
+  "historical_mixture_available": false,
+  "average_policy_available": true,
+  "warm_start_state_verified": true,
+  "restoration_verified": true,
+  "training_stage_completed": true,
+  "archive_includes_final_evaluation": false,
+  "average_quality_is_diagnostic": true,
+  "average_approximation_reference_passed": false,
+  "verification": {
+    "passed": true,
+    "actual_extraction_verified": true,
+    "verified_files": 60,
+    "seeds": [
+      {
+        "seed": 342,
+        "iteration": 420,
+        "regret_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "strategy_rows": 100000,
+        "strategy_capacity": 100000,
+        "current_and_average_array_parity": true,
+        "strategy_reservoir_next_rng_parity": true,
+        "average_runtime_probes": 256,
+        "average_approximation_tv": 0.15976410883883532,
+        "average_within_original_quality_reference": false,
+        "all_four_legacy_rng_states_present": true,
+        "reference_rng_present": true,
+        "averaging_window": [
+          361,
+          420
+        ]
+      },
+      {
+        "seed": 343,
+        "iteration": 420,
+        "regret_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "strategy_rows": 100000,
+        "strategy_capacity": 100000,
+        "current_and_average_array_parity": true,
+        "strategy_reservoir_next_rng_parity": true,
+        "average_runtime_probes": 256,
+        "average_approximation_tv": 0.15876398169830555,
+        "average_within_original_quality_reference": false,
+        "all_four_legacy_rng_states_present": true,
+        "reference_rng_present": true,
+        "averaging_window": [
+          361,
+          420
+        ]
+      },
+      {
+        "seed": 344,
+        "iteration": 420,
+        "regret_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "strategy_rows": 100000,
+        "strategy_capacity": 100000,
+        "current_and_average_array_parity": true,
+        "strategy_reservoir_next_rng_parity": true,
+        "average_runtime_probes": 256,
+        "average_approximation_tv": 0.15211318286581163,
+        "average_within_original_quality_reference": false,
+        "all_four_legacy_rng_states_present": true,
+        "reference_rng_present": true,
+        "averaging_window": [
+          361,
+          420
+        ]
+      }
+    ],
+    "warm_start_state_verified": true,
+    "resumable_selfplay": false,
+    "exact_legacy_resume": false,
+    "historical_mixture_available": false,
+    "average_policy_available": true,
+    "averaging_window": [
+      361,
+      420
+    ]
+  },
+  "external_backup": false,
+  "remote_sha256_verified": false,
+  "restore_dependencies": [
+    {
+      "parent_checkpoint_sha256": "65ec65f90cc1c0f73700ec4683d421baaaeb4bb82bb10c14fa2c9249fc504be8",
+      "scope": "Preserve original360baseline and inherited pre-window history"
+    }
+  ]
+}
