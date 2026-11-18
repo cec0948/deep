@@ -1,12 +1,9 @@
-import copy
-import hashlib
 import io
 import json
 from pathlib import Path
 import sys
 import shutil
 import tarfile
-import tempfile
 
 import numpy as np
 import pytest
@@ -20,6 +17,8 @@ import run_controlled_poker_study as study
 from rich_regret_model import RichRegretModel
 from export_controlled_poker_probe import verify_probe, export_probe, MODE
 from plan_controlled_backup_retention import plan_retention
+from test_poker_backup_retention import backup
+from test_rich_backup import record as checkpoint_record
 
 
 def test_replay_subset_is_nested_reproducible_and_does_not_consume_fitting_rng():
@@ -120,10 +119,14 @@ def test_protocol_forbids_budget_changes_and_new_selfplay():
 
 def test_prepare_preserves_parents_and_freezes_real_source(tmp_path,monkeypatch):
     config=ROOT/'configs/poker-controlled-refit-20261116.json'
+    historical_plan = ROOT / 'reports/controlled-refit/20261116T004818765266Z/plan.json'
+    prior_card_ranges = json.loads(historical_plan.read_text())['prior_card_ranges']
     monkeypatch.setattr(study,'ROOT_FOLDER',tmp_path)
+    monkeypatch.setattr(study, 'previous_ranges', lambda _: prior_card_ranges)
     output=tmp_path/'20261116T010000000001Z'
     parent=ROOT/'artifacts/rich-selfplay/current.json';before=parent.read_bytes()
     plan=study.prepare(output,config)
+    assert plan['prior_card_ranges'] == prior_card_ranges
     assert parent.read_bytes()==before and plan['new_selfplay_iterations']==0
     assert plan['planned_fitting_jobs']==21 and plan['planned_evaluations']==90
     assert len(plan['parents']['legacy'])==3
@@ -173,32 +176,45 @@ def test_export_actually_restores_all_policies_and_rejects_corruption(tmp_path):
     with pytest.raises(ValueError,match='bytes differ'):verify_probe(corrupt)
 
 
-def make_new_probe(index,path):
-    record=dict(kind='derived-policy-probe',checkpoint_mode=MODE,run='20261116T010000000001Z',
-        status='complete',format='single-archive-v1',resumable_selfplay=False,
-        new_selfplay_iterations=0,restoration_verified=True,local_archive=str(path),
-        sha256=hashlib.sha256(path.read_bytes()).hexdigest(),bytes=path.stat().st_size,
-        file_id='controlled_probe_fixture',url='https://drive.google.com/file/d/controlled_probe_fixture/view',
-        recorded_at='2026-11-16T01:00:00+00:00',verified_remote_size=True,verified_owner_only=True,
-        remote_checksum_available=False,restore_dependencies=[dict(parent_checkpoint_sha256=index['backups'][n]['sha256']) for n in [12,14]])
-    return record
+@pytest.fixture
+def retention_index(tmp_path):
+    full60 = backup(tmp_path, 1, rounds=60)
+    full120 = backup(tmp_path, 2, rounds=120)
+    parent360 = checkpoint_record(tmp_path, 3, 360)
+    rich96 = checkpoint_record(tmp_path, 4, 96, rich=True)
+    older_probe = backup(tmp_path, 5, kind='derived-policy-probe', parent=full120['manifest_file_id'])
+    latest_legacy_probe = backup(tmp_path, 6, kind='derived-policy-probe', parent=full120['manifest_file_id'])
+    controlled_probe = backup(tmp_path, 7, kind='evaluation-assets')
+    controlled_probe.update(
+        kind='derived-policy-probe', checkpoint_mode=MODE, run='20261116T010000000001Z',
+        status='complete', format='single-archive-v1', resumable_selfplay=False,
+        recorded_at='2026-11-16T01:00:00+00:00', new_selfplay_iterations=0,
+        restoration_verified=True,
+        restore_dependencies=[
+            {'parent_checkpoint_sha256': parent['sha256']} for parent in (parent360, rich96)
+        ],
+    )
+    return {
+        'approved_destination': 'Private Google Drive',
+        'backups': [full60, full120, parent360, rich96, older_probe, latest_legacy_probe, controlled_probe],
+    }
 
 
-def test_retention_counts_latest_two_probes_across_families_and_preserves_both_parents():
-    idx=json.loads((ROOT/'artifacts/offsite-backups.json').read_text())
-    with tempfile.NamedTemporaryFile(prefix='controlled-refit-fixture-',suffix='.tar.gz',dir=ROOT/'artifacts/exports') as f:
-        path=Path(f.name);path.write_bytes(b'planner fixture');rec=make_new_probe(idx,path);idx['backups'].append(rec)
-        p=plan_retention(idx)
-        retained={x['backup_index'] for x in p['retained']};candidates={x['backup_index'] for x in p['candidates']}
-        assert {3,5,8,9,12,14,15}<=retained and candidates=={7}
-        assert p['within_budget']
-        rec['verified_owner_only']=False
-        with pytest.raises(ValueError):plan_retention(idx)
+def test_retention_counts_latest_two_probes_across_families_and_preserves_both_parents(retention_index, tmp_path):
+    plan = plan_retention(retention_index, tmp_path)
+    assert {row['backup_index'] for row in plan['retained']} == {0, 1, 2, 3, 5, 6}
+    assert {row['backup_index'] for row in plan['candidates']} == {4}
+    assert plan['within_budget']
 
 
-def test_retention_refuses_missing_restore_dependency():
-    idx=json.loads((ROOT/'artifacts/offsite-backups.json').read_text())
-    with tempfile.NamedTemporaryFile(prefix='controlled-refit-fixture-',suffix='.tar.gz',dir=ROOT/'artifacts/exports') as f:
-        path=Path(f.name);path.write_bytes(b'planner fixture');rec=make_new_probe(idx,path)
-        rec['restore_dependencies'][0]['parent_checkpoint_sha256']='0'*64;idx['backups'].append(rec)
-        with pytest.raises(ValueError,match='dependency|parent SHA'):plan_retention(idx)
+    retention_index['backups'][-1]['verified_owner_only'] = False
+    with pytest.raises(ValueError):
+        plan_retention(retention_index, tmp_path)
+
+
+@pytest.mark.parametrize('parent_index', [0, 1], ids=['parent360', 'rich96'])
+def test_retention_refuses_missing_restore_dependency(retention_index, tmp_path, parent_index):
+    dependencies = retention_index['backups'][-1]['restore_dependencies']
+    dependencies[parent_index]['parent_checkpoint_sha256'] = '0' * 64
+    with pytest.raises(ValueError, match='dependency|parent SHA'):
+        plan_retention(retention_index, tmp_path)

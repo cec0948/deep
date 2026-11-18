@@ -1,0 +1,43 @@
+{
+  "completed_utc": "2026-11-18T00:47:27.582949+00:00",
+  "smoke": true,
+  "completed_fits": 3,
+  "completed_cells": 36,
+  "verified_hands": 1728,
+  "independent_card_blocks": 8,
+  "eligible_for_independent_confirmation": null,
+  "new_selfplay_iterations": 0,
+  "model_promoted": false,
+  "implementation": {
+    "/workspace/deep/configs/poker-preflop-pilot-20261118.json": "b7b050cf88f869ca1d94d76d5ce4a858242e5dbf839fc36a3adc4b6bb625b619",
+    "/workspace/deep/scripts/run_poker_preflop_pilot.py": "7a7d4f429d117f84f44ff938dd2a5e1e36e4780d3c1cd4b5b6dc3ebe8484dd63",
+    "/workspace/deep/scripts/poker_preflop_specialist.py": "2e82de0aea77b750dbad7f005154f3122f4d202939764087ff3524a771cd4ba5"
+  },
+  "steps_per_seed": 4,
+  "parent_rows_used_per_seat": {
+    "342": [
+      14864,
+      13200,
+      14721,
+      14287,
+      14138,
+      14626
+    ],
+    "343": [
+      13111,
+      13458,
+      13545,
+      13860,
+      13961,
+      13533
+    ],
+    "344": [
+      11957,
+      13299,
+      13780,
+      13903,
+      13070,
+      12546
+    ]
+  }
+}

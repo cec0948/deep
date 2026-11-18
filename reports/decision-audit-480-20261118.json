@@ -1,0 +1,287 @@
+{
+  "run": "20261117T063900Z",
+  "evaluation_summary_sha256": "e4e316230cc8b508fffa47beb26c470c5ad382240810f466e3c3a1171f368374",
+  "card_start": 2037400000,
+  "independent_blocks": 20000,
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "paired_hands": 360000,
+  "raw_hand_rows": 720000,
+  "total_public_delta_bb100": -13.671191666666665,
+  "first_difference_street": {
+    "flop": {
+      "pairs": 22713,
+      "per_seed_bb100": [
+        -7.486291666666666,
+        20.594491666666666,
+        -4.21895
+      ],
+      "mean": 2.9630833333333335,
+      "ci95_half_width": 3.305438654784345,
+      "lower": -0.34235532145101155,
+      "upper": 6.268521988117678
+    },
+    "preflop": {
+      "pairs": 139207,
+      "per_seed_bb100": [
+        -38.27755,
+        33.470933333333335,
+        -42.617266666666666
+      ],
+      "mean": -15.80796111111111,
+      "ci95_half_width": 8.477785762362492,
+      "lower": -24.285746873473602,
+      "upper": -7.330175348748618
+    },
+    "river": {
+      "pairs": 1364,
+      "per_seed_bb100": [
+        -0.938275,
+        0.0004833333333333333,
+        -0.35775833333333334
+      ],
+      "mean": -0.43185,
+      "ci95_half_width": 0.5435599553684584,
+      "lower": -0.9754099553684583,
+      "upper": 0.11170995536845835
+    },
+    "same_trace": {
+      "pairs": 192845,
+      "per_seed_bb100": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "ci95_half_width": 0.0,
+      "lower": 0.0,
+      "upper": 0.0
+    },
+    "turn": {
+      "pairs": 3871,
+      "per_seed_bb100": [
+        -1.2249416666666666,
+        1.4415666666666667,
+        -1.4000166666666667
+      ],
+      "mean": -0.3944638888888889,
+      "ci95_half_width": 1.209196649995615,
+      "lower": -1.603660538884504,
+      "upper": 0.8147327611067261
+    }
+  },
+  "first_difference_preflop_node": {
+    "first_actor_unopened": {
+      "pairs": 7954,
+      "per_seed_bb100": [
+        -1.80865,
+        1.662075,
+        2.0699833333333335
+      ],
+      "mean": 0.6411361111111112,
+      "ci95_half_width": 1.9861454084280579,
+      "lower": -1.3450092973169467,
+      "upper": 2.627281519539169
+    },
+    "other_preflop": {
+      "pairs": 131253,
+      "per_seed_bb100": [
+        -36.4689,
+        31.808858333333333,
+        -44.68725
+      ],
+      "mean": -16.44909722222222,
+      "ci95_half_width": 8.232029216356771,
+      "lower": -24.681126438578993,
+      "upper": -8.21706800586545
+    }
+  },
+  "first_difference_action": {
+    "flop/call->fold": {
+      "pairs": 238,
+      "contribution_bb100": 0.6555416666666667
+    },
+    "flop/call->raise": {
+      "pairs": 1164,
+      "contribution_bb100": 0.6143361111111111
+    },
+    "flop/check->raise": {
+      "pairs": 7367,
+      "contribution_bb100": 1.067763888888889
+    },
+    "flop/fold->call": {
+      "pairs": 1044,
+      "contribution_bb100": -2.022072222222222
+    },
+    "flop/fold->raise": {
+      "pairs": 1049,
+      "contribution_bb100": -2.7945972222222224
+    },
+    "flop/raise->call": {
+      "pairs": 1206,
+      "contribution_bb100": 1.6101194444444444
+    },
+    "flop/raise->check": {
+      "pairs": 4739,
+      "contribution_bb100": 0.15758333333333333
+    },
+    "flop/raise->fold": {
+      "pairs": 470,
+      "contribution_bb100": 2.112511111111111
+    },
+    "flop/raise->raise_larger": {
+      "pairs": 1568,
+      "contribution_bb100": 0.17978055555555555
+    },
+    "flop/raise->raise_smaller": {
+      "pairs": 3868,
+      "contribution_bb100": 1.3821166666666667
+    },
+    "preflop/call->fold": {
+      "pairs": 11766,
+      "contribution_bb100": 8.655072222222222
+    },
+    "preflop/call->raise": {
+      "pairs": 15577,
+      "contribution_bb100": 14.450675
+    },
+    "preflop/check->raise": {
+      "pairs": 1261,
+      "contribution_bb100": 0.4106194444444444
+    },
+    "preflop/fold->call": {
+      "pairs": 40492,
+      "contribution_bb100": -28.680083333333332
+    },
+    "preflop/fold->raise": {
+      "pairs": 23055,
+      "contribution_bb100": -20.545325
+    },
+    "preflop/raise->call": {
+      "pairs": 23283,
+      "contribution_bb100": -0.33845833333333336
+    },
+    "preflop/raise->check": {
+      "pairs": 1837,
+      "contribution_bb100": 0.28126944444444446
+    },
+    "preflop/raise->fold": {
+      "pairs": 12631,
+      "contribution_bb100": 5.611941666666667
+    },
+    "preflop/raise->raise_larger": {
+      "pairs": 4227,
+      "contribution_bb100": 1.586225
+    },
+    "preflop/raise->raise_smaller": {
+      "pairs": 5078,
+      "contribution_bb100": 2.7601027777777776
+    },
+    "river/call->fold": {
+      "pairs": 18,
+      "contribution_bb100": 0.025
+    },
+    "river/call->raise": {
+      "pairs": 51,
+      "contribution_bb100": -0.17644166666666666
+    },
+    "river/check->raise": {
+      "pairs": 403,
+      "contribution_bb100": -0.061125
+    },
+    "river/fold->call": {
+      "pairs": 103,
+      "contribution_bb100": -0.26976666666666665
+    },
+    "river/fold->raise": {
+      "pairs": 120,
+      "contribution_bb100": 0.07639444444444445
+    },
+    "river/raise->call": {
+      "pairs": 72,
+      "contribution_bb100": 0.06841388888888889
+    },
+    "river/raise->check": {
+      "pairs": 289,
+      "contribution_bb100": -0.2074638888888889
+    },
+    "river/raise->fold": {
+      "pairs": 8,
+      "contribution_bb100": 0.036180555555555556
+    },
+    "river/raise->raise_larger": {
+      "pairs": 66,
+      "contribution_bb100": 0.025208333333333333
+    },
+    "river/raise->raise_smaller": {
+      "pairs": 234,
+      "contribution_bb100": 0.05175
+    },
+    "turn/call->fold": {
+      "pairs": 138,
+      "contribution_bb100": 0.019875
+    },
+    "turn/call->raise": {
+      "pairs": 150,
+      "contribution_bb100": -0.12714444444444445
+    },
+    "turn/check->raise": {
+      "pairs": 1233,
+      "contribution_bb100": 0.48025277777777775
+    },
+    "turn/fold->call": {
+      "pairs": 151,
+      "contribution_bb100": -0.10659444444444445
+    },
+    "turn/fold->raise": {
+      "pairs": 219,
+      "contribution_bb100": -0.9012833333333333
+    },
+    "turn/raise->call": {
+      "pairs": 159,
+      "contribution_bb100": 0.27631944444444445
+    },
+    "turn/raise->check": {
+      "pairs": 852,
+      "contribution_bb100": -0.25133055555555556
+    },
+    "turn/raise->fold": {
+      "pairs": 142,
+      "contribution_bb100": 0.3371388888888889
+    },
+    "turn/raise->raise_larger": {
+      "pairs": 342,
+      "contribution_bb100": 0.02083611111111111
+    },
+    "turn/raise->raise_smaller": {
+      "pairs": 485,
+      "contribution_bb100": -0.14253333333333335
+    }
+  },
+  "blueprint_fallback": {
+    "mixed/parent420": {
+      "fallback": 329802,
+      "blueprint_decisions": 1391205,
+      "rate": 0.23706211521666468
+    },
+    "mixed/current480": {
+      "fallback": 355393,
+      "blueprint_decisions": 1411973,
+      "rate": 0.2516995721589577
+    },
+    "noregrets/parent420": {
+      "fallback": 519594,
+      "blueprint_decisions": 2843236,
+      "rate": 0.18274740471772305
+    },
+    "noregrets/current480": {
+      "fallback": 538629,
+      "blueprint_decisions": 2847632,
+      "rate": 0.18914979182703384
+    }
+  },
+  "notes": "Exploratory additive contributions per 100 of ALL hands. Intervals use the original card blocks and fixed seeds, without subgroup multiplicity correction. All actions after first divergence contribute to the terminal payoff. No causal attribution."
+}
