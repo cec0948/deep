@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-11-18T04:53:28.514575+00:00",
+  "phase": "online",
+  "summary_sha256": "a9c0be44cedbe403f7cd943856a11c86413aa1e74dea3ee53068eb76d7e80a51",
+  "independently_recomputed": true,
+  "verified_cells": 36,
+  "verified_raw_hand_digests": 36,
+  "independent_card_blocks": 20000,
+  "verified_hands": 4320000,
+  "checked_comparisons": 5,
+  "decision_checks_verified": true,
+  "noregrets_fallback_rate": {
+    "original120/mixed": 0.24606172675806248,
+    "original120/noregrets": 0.18837746541415787,
+    "current480/mixed": 0.25214780309617585,
+    "current480/noregrets": 0.1909414081570926,
+    "control492/mixed": 0.2383219598190861,
+    "control492/noregrets": 0.18369170176986202,
+    "specialist492/mixed": 0.2403344263662852,
+    "specialist492/noregrets": 0.1825829265230877
+  }
+}
