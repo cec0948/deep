@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-11-18T02:52:37.370796+00:00",
+  "remote_parent_verified": true,
+  "existing_backups": [
+    {
+      "bytes": 107049296,
+      "sha256": "f01399198fd4c3eb5fc58be569d726fcab5298995c0123dc531b108961af7f59",
+      "verified_local_hash_and_size": true,
+      "restoration_previously_verified": true,
+      "verified_remote_size": true,
+      "verified_owner_only": true,
+      "remote_checksum_available": false,
+      "remote_files": 3
+    },
+    {
+      "bytes": 3280171,
+      "sha256": "424b8e76a31f359f21de47ec02c58fd3a902ab2639f9f7e9a8785ff253d63f2e",
+      "verified_local_hash_and_size": true,
+      "restoration_previously_verified": true,
+      "verified_remote_size": true,
+      "verified_owner_only": true,
+      "remote_checksum_available": false,
+      "remote_files": 1
+    }
+  ]
+}

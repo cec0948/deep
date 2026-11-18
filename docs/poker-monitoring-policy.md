@@ -4,6 +4,8 @@
 
 ## 최신 실행 확인
 
+- 프리플롭 독립 재검증은 2026-11-18 12:32 KST에 27셀·324만 핸드 평가를 마쳤다. 합격 뒤 `artifacts/preflop-followup/480-v1/online`에서 480→492회 두 방식의 비교를 시작했다. `training-status.json`과 `evaluation-status.json`의 실제 PID·시작 토큰·기록 시각을 대조한다. [후속 실험 기록](poker-preflop-followup-20261118.md)
+
 - 프리플롭 본 실험 `480-v1`은 2026-11-18 11:25 KST에 세 시드의 피팅과 36셀·432만 핸드 평가를 마쳤다. 두 기준 모델에 대한 사전 조건을 모두 통과했고, 검증한 파생 묶음 3,280,171바이트를 비공개 인덱스에 기록했다. `scripts/run_poker_preflop_pilot.py status`와 `result`로 확인한다. [프리플롭 평가와 복원 기록](poker-preflop-pilot-20261118.md)
 
 - 2026-11-17 현재 자동 알림은 사용자 요청으로 비활성화돼 있다. 사용자가 점검이나 새 실행을 요청해도 알림 예약을 임의로 다시 켜지 않는다.

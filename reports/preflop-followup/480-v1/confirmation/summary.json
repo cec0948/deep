@@ -1,0 +1,354 @@
+{
+  "completed_cells": 27,
+  "verified_hands": 3240000,
+  "independent_card_blocks": 20000,
+  "evaluation_deal_seed": 2037520000,
+  "absolute_scores": {
+    "original120": {
+      "public": {
+        "mean": -48.280852777777774,
+        "ci95_half_width": 7.072276078686067,
+        "lower": -55.35312885646384,
+        "upper": -41.20857669909171
+      },
+      "mixed": {
+        "mean": 173.21650555555556,
+        "ci95_half_width": 18.21394526086475,
+        "lower": 155.0025602946908,
+        "upper": 191.43045081642032
+      },
+      "noregrets": {
+        "mean": 203.6381888888889,
+        "ci95_half_width": 30.446494624248228,
+        "lower": 173.19169426464066,
+        "upper": 234.08468351313712
+      }
+    },
+    "current480": {
+      "public": {
+        "mean": -59.29965,
+        "ci95_half_width": 9.134948674808241,
+        "lower": -68.43459867480824,
+        "upper": -50.16470132519176
+      },
+      "mixed": {
+        "mean": 302.9057222222222,
+        "ci95_half_width": 18.225078946378453,
+        "lower": 284.68064327584375,
+        "upper": 321.13080116860067
+      },
+      "noregrets": {
+        "mean": 396.503475,
+        "ci95_half_width": 27.20280927539535,
+        "lower": 369.30066572460464,
+        "upper": 423.7062842753953
+      }
+    },
+    "specialist": {
+      "public": {
+        "mean": -29.913808333333332,
+        "ci95_half_width": 8.916208885785137,
+        "lower": -38.83001721911847,
+        "upper": -20.997599447548197
+      },
+      "mixed": {
+        "mean": 331.7979111111111,
+        "ci95_half_width": 17.298400767807568,
+        "lower": 314.49951034330354,
+        "upper": 349.09631187891864
+      },
+      "noregrets": {
+        "mean": 428.50101666666666,
+        "ci95_half_width": 27.163625705120356,
+        "lower": 401.3373909615463,
+        "upper": 455.664642371787
+      }
+    }
+  },
+  "result_sha256": {
+    "public-seed-342-original120": "99d05a4bc10d049f44c3c3fca2f4ee8e5b0865100031bd8f60e8a4cb007ae000",
+    "public-seed-343-original120": "d290d71f4a58264f419ae959793a5e34b429781b49937e1d8e5ae2b2d4101867",
+    "public-seed-344-original120": "fb465b17beb09ee6df1e4c255ed747348087d903c57f0c7db3b0fa34323d2fe6",
+    "mixed-seed-342-original120": "2bb15084831fefdf9c5d592540c42dab3e347abbd34ed0e8c9c18b4544f9a4a9",
+    "mixed-seed-343-original120": "d88193b2effe9f489d01d594e540e64d4e22f18f4df4fadd0c24e3ba2d50cdd5",
+    "mixed-seed-344-original120": "fabd43fb7c3eccff932777eb993ba28795cf3e1f828e2c7bfc9083996ead3a1b",
+    "noregrets-seed-342-original120": "69643c7acde0d495231aabccedcb49a9fbe0bc52d6a6e3a65a2881ec21ef39ce",
+    "noregrets-seed-343-original120": "08fb024fc3e9b8ad46c0639bfc6127b82d3821140ab8d00133ccfc5589623d0f",
+    "noregrets-seed-344-original120": "752019eb3c3a327814aeba38e13b1172f8e584ed1a724eb610e953b344f072ee",
+    "public-seed-342-current480": "564173558bfe6b7fdf997fae07e73cdf87c94b2ffc5311d78dedb40fe8884436",
+    "public-seed-343-current480": "219f0ea26efece72fbc23c89b69120e450950f6761af01f676aaba7459cb3544",
+    "public-seed-344-current480": "465342e59a4b60ff9504224ebebc61dc9dcaf0d35cb2a8e2de09a39d3acc2d66",
+    "mixed-seed-342-current480": "75ab761c9c77652f1127779c850c71c8cb8946acce57db883f9c53a855f7beb0",
+    "mixed-seed-343-current480": "cc61dfbb93908f563dfdd46f8271802087ba58d628986578453f3e4e6a06b7c9",
+    "mixed-seed-344-current480": "b66defb9820532a27143489a54ad5e39a2709d656df087459f41b4523ed412a9",
+    "noregrets-seed-342-current480": "ec17dde78108703a56bd0189001da62496ff01a10c0202616551c876f66529f0",
+    "noregrets-seed-343-current480": "2766c2d33db10402cd602bdd9c99da94321427e6bbc2cf6d79e7e93466b24aaf",
+    "noregrets-seed-344-current480": "db4a852dd760ad270a3f549378f290526dcb8d39852305da9a6f7ce877348ee6",
+    "public-seed-342-specialist": "801c8177186f9ca515729140f9ca52e098a637846ef97c997924658ef16f6f69",
+    "public-seed-343-specialist": "bc92c8aec8506e2b7e9957dc08eb65c49f478da7fa2f508585f048a330240587",
+    "public-seed-344-specialist": "cf97a79bd89fb8eb8a4f23bb3dace81d901f7ecfd996181a19c042051a4525e0",
+    "mixed-seed-342-specialist": "b89877626b60e27c53fb6e0300cc89c9a4701dc907fc818eab23cede3b0a4d2d",
+    "mixed-seed-343-specialist": "1633d27bb08636537ee86cc099fd85647ad504654ef1529c0c200b783a0c1561",
+    "mixed-seed-344-specialist": "fb8f377f3e41db8ea55d7566027ccd2506cf44bc6b0b9b3807bd3f0b699b0602",
+    "noregrets-seed-342-specialist": "e4df72cf9c901503d0905d39d404d40a6a1939d7882a2a6c153487e313b70baf",
+    "noregrets-seed-343-specialist": "219cd67670fb959c95a7cf756bdb96384a75739b1ef83ffac23c96241ee700be",
+    "noregrets-seed-344-specialist": "7017e1888f4bc53db45b6f09905fb187a2c604893f4e12d207ebc23ad628f858"
+  },
+  "evaluation_plan_sha256": "93e52525534577cf423e3bf12b412cdb8504aea9a413685093ecc59b50feb028",
+  "noregrets_fallback_and_decisions": {
+    "public-seed-342-original120": [
+      0,
+      0
+    ],
+    "public-seed-343-original120": [
+      0,
+      0
+    ],
+    "public-seed-344-original120": [
+      0,
+      0
+    ],
+    "mixed-seed-342-original120": [
+      122753,
+      468977
+    ],
+    "mixed-seed-343-original120": [
+      111491,
+      462892
+    ],
+    "mixed-seed-344-original120": [
+      108012,
+      455368
+    ],
+    "noregrets-seed-342-original120": [
+      185118,
+      948483
+    ],
+    "noregrets-seed-343-original120": [
+      175472,
+      946924
+    ],
+    "noregrets-seed-344-original120": [
+      172380,
+      937263
+    ],
+    "public-seed-342-current480": [
+      0,
+      0
+    ],
+    "public-seed-343-current480": [
+      0,
+      0
+    ],
+    "public-seed-344-current480": [
+      0,
+      0
+    ],
+    "mixed-seed-342-current480": [
+      120653,
+      474121
+    ],
+    "mixed-seed-343-current480": [
+      111437,
+      464470
+    ],
+    "mixed-seed-344-current480": [
+      124495,
+      474366
+    ],
+    "noregrets-seed-342-current480": [
+      180436,
+      950474
+    ],
+    "noregrets-seed-343-current480": [
+      176291,
+      948079
+    ],
+    "noregrets-seed-344-current480": [
+      186415,
+      950796
+    ],
+    "public-seed-342-specialist": [
+      0,
+      0
+    ],
+    "public-seed-343-specialist": [
+      0,
+      0
+    ],
+    "public-seed-344-specialist": [
+      0,
+      0
+    ],
+    "mixed-seed-342-specialist": [
+      112529,
+      462391
+    ],
+    "mixed-seed-343-specialist": [
+      118380,
+      468270
+    ],
+    "mixed-seed-344-specialist": [
+      114235,
+      465310
+    ],
+    "noregrets-seed-342-specialist": [
+      172084,
+      941513
+    ],
+    "noregrets-seed-343-specialist": [
+      178546,
+      945756
+    ],
+    "noregrets-seed-344-specialist": [
+      171333,
+      942419
+    ]
+  },
+  "completed_utc": "2026-11-18T03:32:09.723587+00:00",
+  "smoke": false,
+  "new_fitting_jobs": 0,
+  "new_selfplay_iterations": 0,
+  "model_promoted": false,
+  "specialist_minus": {
+    "original120": {
+      "public": {
+        "mean": 18.367044444444446,
+        "ci95_half_width": 9.0576858808164,
+        "lower": 9.309358563628045,
+        "upper": 27.424730325260846,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 21.883683333333334
+          },
+          {
+            "seed": 343,
+            "mean": 9.75965
+          },
+          {
+            "seed": 344,
+            "mean": 23.4578
+          }
+        ]
+      },
+      "mixed": {
+        "mean": 158.58140555555556,
+        "ci95_half_width": 18.53535806783413,
+        "lower": 140.04604748772144,
+        "upper": 177.1167636233897,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 89.82550833333333
+          },
+          {
+            "seed": 343,
+            "mean": 202.286725
+          },
+          {
+            "seed": 344,
+            "mean": 183.63198333333332
+          }
+        ]
+      },
+      "noregrets": {
+        "mean": 224.86282777777777,
+        "ci95_half_width": 29.08367622639858,
+        "lower": 195.7791515513792,
+        "upper": 253.94650400417635,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 215.14921666666666
+          },
+          {
+            "seed": 343,
+            "mean": 216.66414166666664
+          },
+          {
+            "seed": 344,
+            "mean": 242.77512499999995
+          }
+        ]
+      }
+    },
+    "current480": {
+      "public": {
+        "mean": 29.385841666666668,
+        "ci95_half_width": 8.397686568938758,
+        "lower": 20.988155097727912,
+        "upper": 37.783528235605424,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 66.88255833333334
+          },
+          {
+            "seed": 343,
+            "mean": -3.2212250000000013
+          },
+          {
+            "seed": 344,
+            "mean": 24.496191666666665
+          }
+        ]
+      },
+      "mixed": {
+        "mean": 28.89218888888889,
+        "ci95_half_width": 15.280493106959801,
+        "lower": 13.611695781929088,
+        "upper": 44.17268199584869,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 75.956975
+          },
+          {
+            "seed": 343,
+            "mean": 88.09224166666668
+          },
+          {
+            "seed": 344,
+            "mean": -77.37265
+          }
+        ]
+      },
+      "noregrets": {
+        "mean": 31.997541666666667,
+        "ci95_half_width": 21.136032682955303,
+        "lower": 10.861508983711364,
+        "upper": 53.133574349621966,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 47.37979166666667
+          },
+          {
+            "seed": 343,
+            "mean": 140.56965
+          },
+          {
+            "seed": 344,
+            "mean": -91.95681666666667
+          }
+        ]
+      }
+    }
+  },
+  "conditions": {
+    "original120": {
+      "public_lower_above_zero": true,
+      "at_least_two_public_seeds_improve": true,
+      "mixed_lower_above_minus_25": true,
+      "noregrets_lower_above_minus_50": true
+    },
+    "current480": {
+      "public_lower_above_zero": true,
+      "at_least_two_public_seeds_improve": true,
+      "mixed_lower_above_minus_25": true,
+      "noregrets_lower_above_minus_50": true
+    }
+  },
+  "independent_confirmation_pass": true
+}
