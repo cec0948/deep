@@ -1,0 +1,13 @@
+{
+  "pilot_summary_sha256": "a89adad41e472cc6f4578ed097869f62acfbc51d8b4e18e4fc34406ad8172de6",
+  "confirmation_deal_seed": 2037520000,
+  "online_deal_seed": 2037540000,
+  "evaluation_deals": 20000,
+  "evaluation_workers": 4,
+  "cell_timeout_seconds": 2400,
+  "initial_iteration": 480,
+  "final_iteration": 492,
+  "online_general_steps": 768,
+  "online_preflop_steps": 256,
+  "online_smoke_deal_seed": 2037560010
+}

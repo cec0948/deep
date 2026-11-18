@@ -16,6 +16,9 @@ from plan_rich_backup_retention import _dependencies, _remote_ids
 from train_poker_average_continuation import CHECKPOINT_FORMAT as MODE
 
 
+ONLINE_MODE='preflop-online-comparison-recovery-v1'
+
+
 def stage(record):
     values=record.get('iterations',{})
     if (set(values)!={'342','343','344'} or len(set(values.values()))!=1
@@ -63,20 +66,32 @@ def plan_retention(index,root=ROOT,budget_bytes=DEFAULT_BUDGET):
     root=Path(root);shadow=copy.deepcopy(index)
     active={n:r for n,r in enumerate(index['backups']) if not r.get('deleted_remote')}
     windows={n:r for n,r in active.items() if r.get('checkpoint_mode')==MODE}
+    online={n:r for n,r in active.items() if r.get('checkpoint_mode')==ONLINE_MODE}
+    for r in online.values():
+        if (r.get('kind')!='training-checkpoint' or r.get('status') not in COMPLETE
+                or r.get('iterations')!={'342':492,'343':492,'344':492}
+                or r.get('arms')!=['control492','specialist492']
+                or r.get('restoration_verified') is not True
+                or r.get('training_stage_completed') is not True):
+            raise ValueError('Incomplete two-arm 492 comparison recovery blocks cleanup')
     for n,r in windows.items():
         stage(r)
+    for n,r in {**windows, **online}.items():
         item=copy.deepcopy(r);item['kind']='evaluation-assets'
         validate_record(item,root);shadow['backups'][n]=item
     base=prior_plan(shadow,root,budget_bytes)
     removed=replacement_candidates(active);retained=[];candidates=[]
     for item in base['retained']+base['candidates']:
         n=item['backup_index']
-        if n in windows:
-            r=windows[n];path=Path(r['local_archive'])
+        if n in windows or n in online:
+            r=active[n];path=Path(r['local_archive'])
             if not path.is_file() or path.stat().st_size!=r['bytes'] or digest(path)!=r['sha256']:
-                raise ValueError('Window recovery local size/SHA mismatch')
-            item['kind']='training-checkpoint';item['checkpoint_mode']=MODE
-            item['reasons']=['explicitly_replaced420_with_verified_self_contained480'] if n in removed else ['retained_window_recovery_or_dependency']
+                raise ValueError('Retained recovery local size/SHA mismatch')
+            item['kind']='training-checkpoint';item['checkpoint_mode']=r['checkpoint_mode']
+            if n in online:
+                item['reasons']=['retained_fixed_492_comparison_recovery']
+            else:
+                item['reasons']=['explicitly_replaced420_with_verified_self_contained480'] if n in removed else ['retained_window_recovery_or_dependency']
             (candidates if n in removed else retained).append(item)
         elif item in base['retained']:retained.append(item)
         else:candidates.append(item)
