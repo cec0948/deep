@@ -1,4 +1,4 @@
-"""Archive and restore both fully evaluated 492-round arms in one bounded bundle."""
+"""Archive and restore both completed 492-round training arms in one bounded bundle."""
 import argparse
 import ast
 import json
@@ -106,11 +106,11 @@ def verify_archive(archive, stage):
 
 def create_archive():
     stage = read(OUTPUT/'stage-ready.json')
-    summary = read(OUTPUT/'summary.json')
     plan = read(OUTPUT/'plan.json')
-    if (not stage['training_complete'] or stage['iteration'] != 492 or not summary['completed']
-            or summary['completed_cells'] != 36 or not stage['first_collection_parity']):
-        raise ValueError('Only the fully verified two-arm 492 stage can be archived')
+    if (not stage['training_complete'] or stage['iteration'] != 492 or not stage['first_collection_parity']
+            or set(stage['arms']) != set(ARMS)
+            or any(set(records) != set(map(str, SEEDS)) for records in stage['arms'].values())):
+        raise ValueError('Verified checkpoints for all six learners must be complete')
     verify_files(plan['frozen_files'])
     with tempfile.TemporaryDirectory(prefix='poker-492-pack-') as temp:
         folder = Path(temp)
@@ -121,7 +121,7 @@ def create_archive():
         for name in ('run_poker_preflop_online.py', 'run_poker_preflop_confirmation.py',
                      'poker_preflop_specialist.py', 'snapshot_poker_preflop_online.py'):
             shutil.copyfile(ROOT/'scripts'/name, scripts/name)
-        for name in ('stage-ready.json', 'plan.json', 'summary.json', 'evaluation-plan.json'):
+        for name in ('stage-ready.json', 'plan.json'):
             shutil.copyfile(OUTPUT/name, folder/name)
         for arm in ARMS:
             for seed in SEEDS:
@@ -151,7 +151,7 @@ def create_archive():
                archive=str(ARCHIVE), bytes=ARCHIVE.stat().st_size, sha256=digest(ARCHIVE),
                run='20261118', iterations={str(s): 492 for s in SEEDS}, arms=ARMS,
                new_selfplay_iterations_per_arm_seed=12, training_stage_completed=True,
-               averaging_window=[361, 492], archive_includes_final_evaluation_summary=True,
+               averaging_window=[361, 492], archive_includes_final_evaluation_summary=False,
                restoration_verified=True, warm_start_state_verified=True, resumable_selfplay=False,
                exact_legacy_resume=False, historical_mixture_available=False, external_backup=False,
                restore_dependencies=[dict(parent_checkpoint_sha256=plan['parent_archive_sha256'],

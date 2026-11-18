@@ -1,0 +1,127 @@
+{
+  "training_complete": true,
+  "completed_utc": "2026-11-18T03:46:06.554053+00:00",
+  "iteration": 492,
+  "first_collection_parity": true,
+  "stage_record_sha256": "e3a0071d5f1a98c1a6232890653e9890027b9e7ffd7b152ff1e5a871a0e43b52",
+  "arms": {
+    "control492": {
+      "342": {
+        "new_rounds": 12,
+        "traversals": 3072,
+        "main_steps": 12288,
+        "preflop_steps": 0,
+        "opening_steps": 24576,
+        "opening_final_tv": 0.013631104815028296,
+        "buffer_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "strategy_rows": 100000,
+        "average_fit_tv": 0.16948285570035032,
+        "average_quality_is_diagnostic": true
+      },
+      "343": {
+        "new_rounds": 12,
+        "traversals": 3072,
+        "main_steps": 12288,
+        "preflop_steps": 0,
+        "opening_steps": 25600,
+        "opening_final_tv": 0.003396850100099893,
+        "buffer_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "strategy_rows": 100000,
+        "average_fit_tv": 0.15893751733868297,
+        "average_quality_is_diagnostic": true
+      },
+      "344": {
+        "new_rounds": 12,
+        "traversals": 3072,
+        "main_steps": 12288,
+        "preflop_steps": 0,
+        "opening_steps": 26624,
+        "opening_final_tv": 0.018429440648392154,
+        "buffer_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "strategy_rows": 100000,
+        "average_fit_tv": 0.1649998213945901,
+        "average_quality_is_diagnostic": true
+      }
+    },
+    "specialist492": {
+      "342": {
+        "new_rounds": 12,
+        "traversals": 3072,
+        "main_steps": 12288,
+        "preflop_steps": 3072,
+        "opening_steps": 24576,
+        "opening_final_tv": 0.0051097471542660795,
+        "buffer_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "strategy_rows": 100000,
+        "average_fit_tv": 0.1774929734097271,
+        "average_quality_is_diagnostic": true
+      },
+      "343": {
+        "new_rounds": 12,
+        "traversals": 3072,
+        "main_steps": 12288,
+        "preflop_steps": 3072,
+        "opening_steps": 24576,
+        "opening_final_tv": 0.006614156581525334,
+        "buffer_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "strategy_rows": 100000,
+        "average_fit_tv": 0.15872608123164564,
+        "average_quality_is_diagnostic": true
+      },
+      "344": {
+        "new_rounds": 12,
+        "traversals": 3072,
+        "main_steps": 12288,
+        "preflop_steps": 3072,
+        "opening_steps": 25600,
+        "opening_final_tv": 0.028322131327319092,
+        "buffer_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "strategy_rows": 100000,
+        "average_fit_tv": 0.1676956115061581,
+        "average_quality_is_diagnostic": true
+      }
+    }
+  }
+}

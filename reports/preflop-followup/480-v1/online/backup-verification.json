@@ -1,0 +1,18 @@
+{
+  "verified_utc": "2026-11-18T03:51:56.165044+00:00",
+  "kind": "training-checkpoint",
+  "checkpoint_mode": "preflop-online-comparison-recovery-v1",
+  "stage_iteration": 492,
+  "bytes": 207442873,
+  "sha256": "68478e154573d0c55c2e1eec93077eb33b034ff909f0e4a21472e92afb8d7245",
+  "local_recombination_verified": true,
+  "restored_both_arms": true,
+  "verified_remote_size": true,
+  "verified_owner_only": true,
+  "remote_sha256_verified": false,
+  "backup_files": 5,
+  "active_managed_bytes": 1516965189,
+  "within_2gib_target": true,
+  "indexed": true,
+  "archive_includes_final_evaluation_summary": false
+}
