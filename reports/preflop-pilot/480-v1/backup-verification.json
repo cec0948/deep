@@ -1,0 +1,35 @@
+{
+  "verified_utc": "2026-11-18T02:26:58.414261+00:00",
+  "bytes": 3280171,
+  "sha256": "424b8e76a31f359f21de47ec02c58fd3a902ab2639f9f7e9a8785ff253d63f2e",
+  "kind": "derived-policy-probe",
+  "checkpoint_mode": "preflop-specialist-policy-bundle-v1",
+  "restoration_verified": true,
+  "restored_decisions": {
+    "342": {
+      "preflop": 16,
+      "flop": 9,
+      "turn": 4,
+      "river": 4
+    },
+    "343": {
+      "preflop": 9,
+      "flop": 7,
+      "turn": 5,
+      "river": 3
+    },
+    "344": {
+      "preflop": 87,
+      "flop": 33,
+      "turn": 9,
+      "river": 3
+    }
+  },
+  "verified_remote_size": true,
+  "verified_owner_only": true,
+  "remote_checksum_available": false,
+  "remote_sha256_verified": false,
+  "active_managed_bytes": 1309520737,
+  "within_2gib_target": true,
+  "parent_480_size_and_owner_rechecked": true
+}

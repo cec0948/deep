@@ -1,0 +1,26 @@
+{
+  "summary_sha256": "a89adad41e472cc6f4578ed097869f62acfbc51d8b4e18e4fc34406ad8172de6",
+  "cells_digest_verified": 36,
+  "independently_recomputed": true,
+  "absolute_bb_per_100": {
+    "public": {
+      "original120": -47.70581666666668,
+      "current480": -68.35549722222221,
+      "preflop420": -38.49868888888889,
+      "specialist": -36.12563333333333
+    },
+    "mixed": {
+      "original120": 183.04710555555556,
+      "current480": 330.15829722222213,
+      "preflop420": 276.5795194444445,
+      "specialist": 353.99578611111104
+    },
+    "noregrets": {
+      "original120": 199.5964611111111,
+      "current480": 420.7623861111111,
+      "preflop420": 340.8912666666666,
+      "specialist": 454.9663694444444
+    }
+  },
+  "eligible_for_independent_confirmation": true
+}
