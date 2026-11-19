@@ -1,0 +1,20 @@
+{
+  "verified_utc": "2026-11-19T06:22:36.542883+00:00",
+  "kind": "derived-policy-probe",
+  "checkpoint_mode": "preflop-fitting-dose-policy-bundle-v1",
+  "bytes": 6582214,
+  "sha256": "47fe91ce13c7eca9c39665384cbd1d8e844b802dd2bc0d8ee477e2ad0a0e9bc6",
+  "restoration_verified": true,
+  "verified_remote_size": true,
+  "verified_owner_only": true,
+  "external_backup": true,
+  "remote_checksum_available": false,
+  "remote_sha256_verified": false,
+  "archive_includes_final_evaluation_summary": false,
+  "private_index_readback_verified": true,
+  "active_managed_bytes": 1630800717,
+  "within_2gib_target": true,
+  "retained_bytes": 1568482131,
+  "policy_candidate_remote_files": 2,
+  "remote_deletions_performed": 0
+}
