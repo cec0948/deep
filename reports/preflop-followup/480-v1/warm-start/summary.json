@@ -1,0 +1,225 @@
+{
+  "completed_cells": 18,
+  "verified_hands": 2160000,
+  "independent_card_blocks": 20000,
+  "evaluation_deal_seed": 2037600000,
+  "absolute_scores": {
+    "specialist480": {
+      "public": {
+        "mean": -29.552475,
+        "ci95_half_width": 8.767184649646952,
+        "lower": -38.31965964964695,
+        "upper": -20.78529035035305
+      },
+      "mixed": {
+        "mean": 347.71155,
+        "ci95_half_width": 17.491956784352528,
+        "lower": 330.2195932156475,
+        "upper": 365.2035067843525
+      },
+      "noregrets": {
+        "mean": 462.40505833333333,
+        "ci95_half_width": 27.565499538608417,
+        "lower": 434.8395587947249,
+        "upper": 489.97055787194176
+      }
+    },
+    "warm492": {
+      "public": {
+        "mean": -76.72540277777777,
+        "ci95_half_width": 8.055742064905875,
+        "lower": -84.78114484268364,
+        "upper": -68.6696607128719
+      },
+      "mixed": {
+        "mean": 170.75522222222222,
+        "ci95_half_width": 16.51292635310014,
+        "lower": 154.24229586912207,
+        "upper": 187.26814857532236
+      },
+      "noregrets": {
+        "mean": 234.21184444444444,
+        "ci95_half_width": 25.506770966622597,
+        "lower": 208.70507347782183,
+        "upper": 259.71861541106705
+      }
+    }
+  },
+  "result_sha256": {
+    "public-seed-342-specialist480": "2bf4b79457892f78d1e6ae42f2135eed942d1e80a42871f09a8b9fdb7343ab33",
+    "public-seed-343-specialist480": "0dfa5544c3b56a210a79a2847fd23053e1c95a63224d7caf5dd73edb6ff66c68",
+    "public-seed-344-specialist480": "551792fe665811910c9cc29abe020bbff8224815ed6f611e8167d92ad7d8d81a",
+    "mixed-seed-342-specialist480": "aa7b4ed2a93ffd586c6f7f6bac38eba979a4837fdbacfd36ad34e76f466cbe94",
+    "mixed-seed-343-specialist480": "5f93cb2997ad933478f28965775b470a9c14290f3182ee48450679b1c8ae907c",
+    "mixed-seed-344-specialist480": "ff357167bd2678c63fbb9cfd501c5679663e5ab4b392b507f149b31aa48cbbc9",
+    "noregrets-seed-342-specialist480": "61baf100a4ee13a789bb79fd6fab0df2b2dfcd4dfac482c99b48197aa1cf74d0",
+    "noregrets-seed-343-specialist480": "47788bc138ae6087d9ba38013de67538db3040aff745d3aec05e08d4998da4a5",
+    "noregrets-seed-344-specialist480": "f62359709d22883acde95ced70aa2cae8a5bc5e3ff8e80e4d78ac11942479232",
+    "public-seed-342-warm492": "c988062d55970d67a5bec575558f4422e87fa22dd4f20e4ca6058f33e2d14945",
+    "public-seed-343-warm492": "73dccd3e2e9b242afe108d5a32bc4d6522f85fa9e31d871d268bd3c4d65f0ec6",
+    "public-seed-344-warm492": "bad262e342af7d9cdc3b032fb7535815d78e293364089c9e215a8420d4e23fcd",
+    "mixed-seed-342-warm492": "bc1453a708cfa77d5cf85509aa82e7f2cbeea4e0313cde233086abf0c1519a6c",
+    "mixed-seed-343-warm492": "a8ac1f6102f74aa2b83f52a3c6e73ac91498ff8c19d13ff9635c662b5c6d5181",
+    "mixed-seed-344-warm492": "b00a0fa6567cf2870e4c15e68af7314429d15cd855493e4bdf5bfe1b766b6c13",
+    "noregrets-seed-342-warm492": "adf7f04dc66c7193adf9f148c4d85e1345f03098dc26f70cb3b229e1dc7bbd08",
+    "noregrets-seed-343-warm492": "1a022b5994c2837bdc7302fb700d9015fe475166448129c4393b399fca32c4b4",
+    "noregrets-seed-344-warm492": "71f4860df0185d6a5fa3136cfe92cf9ec2bd58bc56a6a0f13e8fa0f83f8806e9"
+  },
+  "evaluation_plan_sha256": "ff9bf107066817372f1529962d6743a69e056a98b35b97e6e87199f312be7399",
+  "noregrets_fallback_and_decisions": {
+    "public-seed-342-specialist480": [
+      0,
+      0
+    ],
+    "public-seed-343-specialist480": [
+      0,
+      0
+    ],
+    "public-seed-344-specialist480": [
+      0,
+      0
+    ],
+    "mixed-seed-342-specialist480": [
+      113354,
+      463722
+    ],
+    "mixed-seed-343-specialist480": [
+      119276,
+      469499
+    ],
+    "mixed-seed-344-specialist480": [
+      114364,
+      465859
+    ],
+    "noregrets-seed-342-specialist480": [
+      171104,
+      941874
+    ],
+    "noregrets-seed-343-specialist480": [
+      180402,
+      948684
+    ],
+    "noregrets-seed-344-specialist480": [
+      172805,
+      944971
+    ],
+    "public-seed-342-warm492": [
+      0,
+      0
+    ],
+    "public-seed-343-warm492": [
+      0,
+      0
+    ],
+    "public-seed-344-warm492": [
+      0,
+      0
+    ],
+    "mixed-seed-342-warm492": [
+      110470,
+      459101
+    ],
+    "mixed-seed-343-warm492": [
+      112882,
+      462891
+    ],
+    "mixed-seed-344-warm492": [
+      115165,
+      464695
+    ],
+    "noregrets-seed-342-warm492": [
+      178341,
+      946545
+    ],
+    "noregrets-seed-343-warm492": [
+      175475,
+      945109
+    ],
+    "noregrets-seed-344-warm492": [
+      176809,
+      948124
+    ]
+  },
+  "completed_utc": "2026-11-19T01:26:43.484851+00:00",
+  "completed": true,
+  "new_selfplay_iterations_per_seed": 12,
+  "warm_start_weight_chain_verified": true,
+  "trained_minus_frozen_parent": {
+    "public": {
+      "mean": -47.17292777777778,
+      "ci95_half_width": 9.107225170776996,
+      "lower": -56.28015294855477,
+      "upper": -38.06570260700079,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -54.15415
+        },
+        {
+          "seed": 343,
+          "mean": -76.20494166666666
+        },
+        {
+          "seed": 344,
+          "mean": -11.159691666666662
+        }
+      ]
+    },
+    "mixed": {
+      "mean": -176.95632777777777,
+      "ci95_half_width": 15.719584610163032,
+      "lower": -192.6759123879408,
+      "upper": -161.23674316761475,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -160.717225
+        },
+        {
+          "seed": 343,
+          "mean": -322.9841666666666
+        },
+        {
+          "seed": 344,
+          "mean": -47.16759166666666
+        }
+      ]
+    },
+    "noregrets": {
+      "mean": -228.1932138888889,
+      "ci95_half_width": 22.847367712479237,
+      "lower": -251.04058160136813,
+      "upper": -205.34584617640965,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -243.3146666666667
+        },
+        {
+          "seed": 343,
+          "mean": -392.2120416666667
+        },
+        {
+          "seed": 344,
+          "mean": -49.05293333333333
+        }
+      ]
+    }
+  },
+  "simultaneous_95_bonferroni": {
+    "public": {
+      "lower": -58.29665894677717,
+      "upper": -36.04919660877839
+    },
+    "mixed": {
+      "lower": -196.15651554220034,
+      "upper": -157.7561400133552
+    },
+    "noregrets": {
+      "lower": -256.0994061249608,
+      "upper": -200.28702165281697
+    }
+  },
+  "model_promoted": false,
+  "automatic_extension": false
+}

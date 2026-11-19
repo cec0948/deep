@@ -1,0 +1,268 @@
+{
+  "checked_utc": "2026-11-19T01:31:52.959035+00:00",
+  "summary_sha256": "b1f9a3bf1721d87c535955b1f4e038ee111a3f8589b8e4db7a6d2b0fb76b7c9c",
+  "new_cells": 18,
+  "reused_cells": 0,
+  "raw_hand_records_reaggregated": 2160000,
+  "matched_seat_card_pairs": 1080000,
+  "independent_card_blocks": 20000,
+  "fixed_training_seeds": [
+    342,
+    343,
+    344
+  ],
+  "seats_per_card": 6,
+  "common_opponents_engine_dependencies_and_action_rng_protocol": true,
+  "both_policy_routing_and_weights_sha256_verified": true,
+  "raw_records_and_provenance_sha256_verified": 18,
+  "each_source_result_has_terminal_action_replay": true,
+  "absolute_scores_paired_scores_per_seed_and_intervals_recomputed": true,
+  "interval": "Paired card-block intervals after averaging the six seats and three fixed training seeds",
+  "secondary_simultaneous_95_bonferroni_492_minus_480": {
+    "public": {
+      "lower": -58.29665894677717,
+      "upper": -36.049196608778374
+    },
+    "mixed": {
+      "lower": -196.1565155422003,
+      "upper": -157.75614001335518
+    },
+    "noregrets": {
+      "lower": -256.0994061249608,
+      "upper": -200.28702165281697
+    }
+  },
+  "first_action_divergence": {
+    "public": {
+      "opening": {
+        "paired_hands": 4108,
+        "nonzero_hero_payoff_changes": 3950,
+        "contribution_bb100": 0.03808611111111111
+      },
+      "other_preflop": {
+        "paired_hands": 142954,
+        "nonzero_hero_payoff_changes": 136413,
+        "contribution_bb100": -40.95888611111111
+      },
+      "postflop": {
+        "paired_hands": 29396,
+        "nonzero_hero_payoff_changes": 22005,
+        "contribution_bb100": -6.252127777777778
+      },
+      "same_trace": {
+        "paired_hands": 183542,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_after_hero_fold": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_other": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      }
+    },
+    "mixed": {
+      "opening": {
+        "paired_hands": 4108,
+        "nonzero_hero_payoff_changes": 3949,
+        "contribution_bb100": -2.2723805555555554
+      },
+      "other_preflop": {
+        "paired_hands": 131890,
+        "nonzero_hero_payoff_changes": 125902,
+        "contribution_bb100": -163.7967611111111
+      },
+      "postflop": {
+        "paired_hands": 10731,
+        "nonzero_hero_payoff_changes": 8534,
+        "contribution_bb100": -10.904547222222222
+      },
+      "same_trace": {
+        "paired_hands": 213215,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_after_hero_fold": {
+        "paired_hands": 54,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_other": {
+        "paired_hands": 2,
+        "nonzero_hero_payoff_changes": 1,
+        "contribution_bb100": 0.017361111111111112
+      }
+    },
+    "noregrets": {
+      "opening": {
+        "paired_hands": 4108,
+        "nonzero_hero_payoff_changes": 3830,
+        "contribution_bb100": -2.1576416666666667
+      },
+      "other_preflop": {
+        "paired_hands": 107411,
+        "nonzero_hero_payoff_changes": 102278,
+        "contribution_bb100": -218.31310833333333
+      },
+      "postflop": {
+        "paired_hands": 2706,
+        "nonzero_hero_payoff_changes": 2003,
+        "contribution_bb100": -7.658575000000001
+      },
+      "same_trace": {
+        "paired_hands": 245723,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_after_hero_fold": {
+        "paired_hands": 49,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_other": {
+        "paired_hands": 3,
+        "nonzero_hero_payoff_changes": 2,
+        "contribution_bb100": -0.06388888888888888
+      }
+    }
+  },
+  "nonopening_preflop_first_action_change": {
+    "public": {
+      "call_to_fold": {
+        "paired_hands": 25319,
+        "contribution_bb100": 6.647763888888889
+      },
+      "call_to_raise": {
+        "paired_hands": 19106,
+        "contribution_bb100": -5.757491666666667
+      },
+      "check_to_raise": {
+        "paired_hands": 1869,
+        "contribution_bb100": 0.21594722222222223
+      },
+      "fold_to_call": {
+        "paired_hands": 20740,
+        "contribution_bb100": -13.694583333333334
+      },
+      "fold_to_raise": {
+        "paired_hands": 26482,
+        "contribution_bb100": -23.199766666666665
+      },
+      "raise_larger": {
+        "paired_hands": 9416,
+        "contribution_bb100": -1.8781972222222223
+      },
+      "raise_smaller": {
+        "paired_hands": 6077,
+        "contribution_bb100": -1.2641777777777778
+      },
+      "raise_to_call": {
+        "paired_hands": 13531,
+        "contribution_bb100": -6.828111111111111
+      },
+      "raise_to_check": {
+        "paired_hands": 962,
+        "contribution_bb100": 0.25240277777777775
+      },
+      "raise_to_fold": {
+        "paired_hands": 19452,
+        "contribution_bb100": 4.547327777777777
+      }
+    },
+    "mixed": {
+      "call_to_fold": {
+        "paired_hands": 25171,
+        "contribution_bb100": -54.147130555555556
+      },
+      "call_to_raise": {
+        "paired_hands": 15619,
+        "contribution_bb100": -14.160886111111111
+      },
+      "check_to_raise": {
+        "paired_hands": 842,
+        "contribution_bb100": -0.186075
+      },
+      "fold_to_call": {
+        "paired_hands": 24279,
+        "contribution_bb100": -26.711458333333333
+      },
+      "fold_to_raise": {
+        "paired_hands": 24108,
+        "contribution_bb100": -21.353641666666668
+      },
+      "raise_larger": {
+        "paired_hands": 7201,
+        "contribution_bb100": -5.758036111111111
+      },
+      "raise_smaller": {
+        "paired_hands": 5476,
+        "contribution_bb100": -1.4367416666666666
+      },
+      "raise_to_call": {
+        "paired_hands": 11417,
+        "contribution_bb100": -9.126911111111111
+      },
+      "raise_to_check": {
+        "paired_hands": 423,
+        "contribution_bb100": 0.050944444444444445
+      },
+      "raise_to_fold": {
+        "paired_hands": 17354,
+        "contribution_bb100": -30.966825
+      }
+    },
+    "noregrets": {
+      "call_to_fold": {
+        "paired_hands": 22179,
+        "contribution_bb100": -87.16998055555555
+      },
+      "call_to_raise": {
+        "paired_hands": 10417,
+        "contribution_bb100": -11.902125
+      },
+      "check_to_raise": {
+        "paired_hands": 142,
+        "contribution_bb100": -0.1610611111111111
+      },
+      "fold_to_call": {
+        "paired_hands": 27732,
+        "contribution_bb100": -30.760827777777777
+      },
+      "fold_to_raise": {
+        "paired_hands": 18749,
+        "contribution_bb100": -35.00161111111111
+      },
+      "raise_larger": {
+        "paired_hands": 4501,
+        "contribution_bb100": -6.7742611111111115
+      },
+      "raise_smaller": {
+        "paired_hands": 3801,
+        "contribution_bb100": -9.408175
+      },
+      "raise_to_call": {
+        "paired_hands": 7300,
+        "contribution_bb100": -4.692163888888889
+      },
+      "raise_to_check": {
+        "paired_hands": 63,
+        "contribution_bb100": 0.09645833333333333
+      },
+      "raise_to_fold": {
+        "paired_hands": 12527,
+        "contribution_bb100": -32.53936111111111
+      }
+    }
+  },
+  "first_divergence_scope": "Exploratory terminal differences per 100 of ALL hands, grouped by the first differing action. Opponent-first pairs are included. All later decisions contribute to the payoff.",
+  "action_lookup_fallback_rate": {
+    "specialist480/mixed": 0.24801583897990107,
+    "warm492/mixed": 0.24411925690512712,
+    "specialist480/noregrets": 0.18490764862570616,
+    "warm492/noregrets": 0.18685439495622544
+  }
+}
