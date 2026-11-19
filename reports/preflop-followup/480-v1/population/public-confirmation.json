@@ -1,0 +1,56 @@
+{
+  "verified_utc": "2026-11-19T09:24:50.563650+00:00",
+  "cards": {
+    "deal_seed": 2038000000,
+    "deals": 20000,
+    "role": "replication",
+    "family": "public"
+  },
+  "independent_deals": 20000,
+  "planned_hands": 720000,
+  "completed_hands": 720000,
+  "unit": "bb/100",
+  "scores": {
+    "steps0": -28.67266666666667,
+    "steps256": -21.441847222222222
+  },
+  "difference": 7.230819444444445,
+  "paired_ci95": [
+    0.24108980069158026,
+    14.22054908819731
+  ],
+  "differences_by_seed": [
+    7.286166666666667,
+    2.062558333333333,
+    12.343733333333335
+  ],
+  "raw_checks": {
+    "public-seed-342-steps0": {
+      "result": "1d6e821d950b492479a9aa622c53e8fcc386187b106ce38b22c7c48d6a51de85",
+      "raw": "8613e3869ba3341a518d1c436ae49b6261cf57ee4b83b539c5e3069ada4a8c2d"
+    },
+    "public-seed-342-steps256": {
+      "result": "e0ee5715f4808621294f94f8d73695394498eb4f91ac7b433c85dab03a8ac056",
+      "raw": "e1f314b7342d559d52e01e99570d081bb73ffe3d1be4dab6af1be69b770afabc"
+    },
+    "public-seed-343-steps0": {
+      "result": "abe166c723d69ba1396820c3dcd0d0fcd19be0c4184fc97c7d12579160bf716f",
+      "raw": "2426db10e4b261d5c7bc61e17319f49705c29a9161fc6936932d91f92d0280a1"
+    },
+    "public-seed-343-steps256": {
+      "result": "1506e376e2f543f412bfc7a52ae2614dfc9beca1b076685edf277199576238d1",
+      "raw": "c8f30b351869f51eacb889737f3b9b8dc62985a88ea54a7c476e908f38efd742"
+    },
+    "public-seed-344-steps0": {
+      "result": "df1a881a6c12acc479ae4ff8b2a2ee2c244ecb4d942a44699a3dcbe0d210fd4f",
+      "raw": "384838e782a505d4b736148ede23d1776dc27496059d6b896547df6a2ae85c16"
+    },
+    "public-seed-344-steps256": {
+      "result": "f86c61988549a6774c86c9dbcaf775855980aeff1a97b5dd1fdcc8485ac14741",
+      "raw": "fbd50cb296ecb37b125cdef058bffa269169e1d8c3e313654c99f27dbcf047c9"
+    }
+  },
+  "new_selfplay": 0,
+  "new_fitting": 0,
+  "model_promoted": false
+}

@@ -17,5 +17,5 @@
   },
   "full_action_traces_and_terminal_payoffs_matched": true,
   "independent_new_strength_samples": 0,
-  "additional_check": "One additional verifier invocation under concurrent evaluation exceeded the engine response deadline."
+  "additional_check": "An additional verifier invocation exceeded the engine response deadline under contention. A normally scheduled repeat matched the initial successful 432-hand check exactly."
 }

@@ -1,0 +1,71 @@
+{
+  "first_batch_utc": "2026-11-19T09:13:37.400858+00:00",
+  "first_batch_state": "failed",
+  "first_batch_status_sha256": "7224107b13d2a7ecb17874839cce66f67058272a04b72a9db5b95397fd892876",
+  "complete_cells_preserved": 4,
+  "failed_cell": "noregrets-seed-342-steps0",
+  "failed_phase": "first reset, before first terminal hand",
+  "engine_response_timeout_seconds": 30,
+  "opponent_bytes": 368156347,
+  "normal_priority_single_engine_unscored_load_seconds": 13.792,
+  "unscored_preflight_deal_seed": 7,
+  "policy_or_card_range_changes": false,
+  "retained_cell_details": {
+    "noregrets-seed-342-steps0": {
+      "original": "/workspace/deep/artifacts/preflop-followup/480-v1/population/completion/with-engine/originals/noregrets-seed-342-steps0",
+      "source_sha256": {
+        "status.json": "2636403ef95990261a47aa13e0df96dfc193b17291dd64a39cc87e874e772ec5",
+        "provenance.json": "dcb2ffb8d85d9e7855ce4b3e9b15025e5c2cd4db62d8b5d4caf10c67ceab18a1",
+        "hands.jsonl.gz": "49c8752b1df24474215f4aeb3b2274662414b3b9e26a85d104fad76bbe7912a9"
+      },
+      "reused_card_blocks": 0,
+      "generated_card_blocks": 2000,
+      "partial_deal_full_rows_checked": 0,
+      "partial_row_bytes_checked": 0,
+      "source_gzip_complete": true,
+      "script_sha256": "6a722d8017902206c783a1f775118d87903aaa0eb03dc5e804a8b1a04146d5cd"
+    },
+    "noregrets-seed-342-steps256": {
+      "original": "/workspace/deep/artifacts/preflop-followup/480-v1/population/completion/with-engine/originals/noregrets-seed-342-steps256",
+      "source_sha256": {
+        "status.json": "8cdcc67adb8bca10a088ac0b3e87981d9c2a95341949b526b13426e72b20531a",
+        "provenance.json": "345d628e55a450223c7f691068d7a9f52c185bd80b569a9e1f8480cba17e90af",
+        "hands.jsonl.gz": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "reused_card_blocks": 0,
+      "generated_card_blocks": 2000,
+      "partial_deal_full_rows_checked": 0,
+      "partial_row_bytes_checked": 0,
+      "source_gzip_complete": false,
+      "script_sha256": "6a722d8017902206c783a1f775118d87903aaa0eb03dc5e804a8b1a04146d5cd"
+    },
+    "public-seed-344-steps0": {
+      "original": "/workspace/deep/artifacts/preflop-followup/480-v1/population/completion/with-engine/originals/public-seed-344-steps0",
+      "source_sha256": {
+        "status.json": "b0b7fce2486df7a7ee519fe235e0c2a1855a7e2928ca09ac139554d1a2cbf4f0",
+        "provenance.json": "c267c29a4101a79232111be265a2e952310914602e3ee840e5c3c645b9c968b9",
+        "hands.jsonl.gz": "1f7cba6361a08a8e234a33688027e2d92877fe9717f9c613e047755b7d4771c2"
+      },
+      "reused_card_blocks": 435,
+      "generated_card_blocks": 1565,
+      "partial_deal_full_rows_checked": 3,
+      "partial_row_bytes_checked": 214,
+      "source_gzip_complete": false,
+      "script_sha256": "6a722d8017902206c783a1f775118d87903aaa0eb03dc5e804a8b1a04146d5cd"
+    },
+    "public-seed-344-steps256": {
+      "original": "/workspace/deep/artifacts/preflop-followup/480-v1/population/completion/with-engine/originals/public-seed-344-steps256",
+      "source_sha256": {
+        "status.json": "73d7670df511fe6e7826cca114cf63cbef1b22eed5541e2628d516126a2a2b81",
+        "provenance.json": "b9293eb5c22631b9516a74540ec5b78a786b6cd0e735601ef0859a2a13a2ca56",
+        "hands.jsonl.gz": "eaba509729692b822e2d00fce9363970117afe06ffb31d5c6e20c812cf1afdeb"
+      },
+      "reused_card_blocks": 350,
+      "generated_card_blocks": 1650,
+      "partial_deal_full_rows_checked": 0,
+      "partial_row_bytes_checked": 8,
+      "source_gzip_complete": false,
+      "script_sha256": "6a722d8017902206c783a1f775118d87903aaa0eb03dc5e804a8b1a04146d5cd"
+    }
+  }
+}

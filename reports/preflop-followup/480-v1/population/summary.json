@@ -1,0 +1,476 @@
+{
+  "baseline": "steps0",
+  "candidate": "steps256",
+  "training_seeds": [
+    342,
+    343,
+    344
+  ],
+  "units": "bb/100",
+  "fields": {
+    "public": {
+      "family": "public",
+      "role": "primary",
+      "deal_seed": 2038100000,
+      "original_card_blocks": 2000,
+      "steps0": {
+        "mean": -18.323555555555558,
+        "lower": -60.85611007459002,
+        "upper": 24.208998963478905
+      },
+      "steps256": {
+        "mean": -3.6176111111111093,
+        "lower": -41.47219567082867,
+        "upper": 34.23697344860645
+      },
+      "paired_change": {
+        "mean": 14.705944444444443,
+        "lower": -18.476857628861097,
+        "upper": 47.88874651774998
+      }
+    },
+    "noregrets": {
+      "family": "noregrets",
+      "role": "primary",
+      "deal_seed": 2038100000,
+      "original_card_blocks": 2000,
+      "steps0": {
+        "mean": 446.4859444444444,
+        "lower": 311.90690348110826,
+        "upper": 581.0649854077806
+      },
+      "steps256": {
+        "mean": 385.78322222222226,
+        "lower": 268.37617180485006,
+        "upper": 503.19027263959447
+      },
+      "paired_change": {
+        "mean": -60.70272222222222,
+        "lower": -143.94590700326359,
+        "upper": 22.54046255881913
+      }
+    },
+    "rich96": {
+      "family": "historical-rich",
+      "role": "primary",
+      "deal_seed": 2038100000,
+      "original_card_blocks": 2000,
+      "steps0": {
+        "mean": 104.12169444444447,
+        "lower": 42.1211772193964,
+        "upper": 166.12221166949254
+      },
+      "steps256": {
+        "mean": 55.789027777777775,
+        "lower": 0.0046526922886585,
+        "upper": 111.57340286326689
+      },
+      "paired_change": {
+        "mean": -48.33266666666667,
+        "lower": -104.9453876220468,
+        "upper": 8.280054288713458
+      }
+    },
+    "calling-station": {
+      "family": "rules",
+      "role": "primary",
+      "deal_seed": 2038100000,
+      "original_card_blocks": 2000,
+      "steps0": {
+        "mean": 682.4229166666667,
+        "lower": 532.4267254714016,
+        "upper": 832.4191078619317
+      },
+      "steps256": {
+        "mean": 746.9847222222222,
+        "lower": 590.8485809007827,
+        "upper": 903.1208635436617
+      },
+      "paired_change": {
+        "mean": 64.56180555555554,
+        "lower": -22.255484182904155,
+        "upper": 151.37909529401523
+      }
+    },
+    "tight-value": {
+      "family": "rules",
+      "role": "primary",
+      "deal_seed": 2038100000,
+      "original_card_blocks": 2000,
+      "steps0": {
+        "mean": -40.516499999999986,
+        "lower": -90.24038281698836,
+        "upper": 9.207382816988385
+      },
+      "steps256": {
+        "mean": -31.044333333333327,
+        "lower": -76.13882867439256,
+        "upper": 14.050162007725902
+      },
+      "paired_change": {
+        "mean": 9.472166666666665,
+        "lower": -19.838858937799614,
+        "upper": 38.78319227113294
+      }
+    },
+    "pressure": {
+      "family": "rules",
+      "role": "primary",
+      "deal_seed": 2038100000,
+      "original_card_blocks": 2000,
+      "steps0": {
+        "mean": 742.71175,
+        "lower": 525.1288925064625,
+        "upper": 960.2946074935376
+      },
+      "steps256": {
+        "mean": 512.3643055555556,
+        "lower": 309.3496279892713,
+        "upper": 715.3789831218398
+      },
+      "paired_change": {
+        "mean": -230.34744444444448,
+        "lower": -370.5362950524444,
+        "upper": -90.15859383644454
+      }
+    },
+    "mixed": {
+      "family": "legacy-mixed",
+      "role": "diagnostic",
+      "deal_seed": 2038100000,
+      "original_card_blocks": 2000,
+      "steps0": {
+        "mean": 308.75502777777774,
+        "lower": 226.10789021421886,
+        "upper": 391.4021653413366
+      },
+      "steps256": {
+        "mean": 256.0813888888889,
+        "lower": 180.41145609725697,
+        "upper": 331.75132168052085
+      },
+      "paired_change": {
+        "mean": -52.67363888888889,
+        "lower": -110.22081507513259,
+        "upper": 4.873537297354815
+      }
+    },
+    "varied": {
+      "family": "heldout-lineup",
+      "role": "holdout",
+      "deal_seed": 2038200000,
+      "original_card_blocks": 2000,
+      "steps0": {
+        "mean": 477.33563888888887,
+        "lower": 367.42779874354557,
+        "upper": 587.2434790342321
+      },
+      "steps256": {
+        "mean": 383.81222222222226,
+        "lower": 283.9381606016359,
+        "upper": 483.6862838428086
+      },
+      "paired_change": {
+        "mean": -93.52341666666666,
+        "lower": -163.56770968786248,
+        "upper": -23.47912364547085
+      }
+    }
+  },
+  "roles": {
+    "primary": {
+      "field_weights": {
+        "public": 0.25,
+        "noregrets": 0.25,
+        "rich96": 0.25,
+        "calling-station": 0.08333333333333333,
+        "tight-value": 0.08333333333333333,
+        "pressure": 0.08333333333333333
+      },
+      "breadth": {
+        "steps0": {
+          "positive_fields": [
+            "noregrets",
+            "rich96",
+            "calling-station",
+            "pressure"
+          ],
+          "positive_fields_simultaneous_lower_above_zero": [
+            "noregrets",
+            "rich96",
+            "calling-station",
+            "pressure"
+          ],
+          "family_balanced_positive_share": 0.6666666666666666,
+          "family_balanced_confirmed_positive_share": 0.6666666666666666,
+          "weakest_field_by_point_estimate": "tight-value",
+          "minimum_field_mean_bb100": {
+            "mean": -40.516499999999986,
+            "lower": -90.24038281698836,
+            "upper": 9.207382816988385
+          }
+        },
+        "steps256": {
+          "positive_fields": [
+            "noregrets",
+            "rich96",
+            "calling-station",
+            "pressure"
+          ],
+          "positive_fields_simultaneous_lower_above_zero": [
+            "noregrets",
+            "rich96",
+            "calling-station",
+            "pressure"
+          ],
+          "family_balanced_positive_share": 0.6666666666666666,
+          "family_balanced_confirmed_positive_share": 0.6666666666666666,
+          "weakest_field_by_point_estimate": "tight-value",
+          "minimum_field_mean_bb100": {
+            "mean": -31.044333333333327,
+            "lower": -76.13882867439256,
+            "upper": 14.050162007725902
+          }
+        }
+      },
+      "uncapped_family_balanced_change_bb100": {
+        "mean": -36.6084837962963,
+        "lower": -101.22792457797188,
+        "upper": 28.010956985379277
+      },
+      "family_balanced_capped_bb100": {
+        "50": {
+          "steps0": 25.376069444444443,
+          "steps256": 29.84190277777778,
+          "paired_change": {
+            "mean": 4.465833333333333,
+            "lower": -18.771289478959744,
+            "upper": 17.173825013849473
+          }
+        },
+        "100": {
+          "steps0": 58.709402777777775,
+          "steps256": 52.12249305555555,
+          "paired_change": {
+            "mean": -6.586909722222223,
+            "lower": -31.271289478959744,
+            "upper": 17.27413289087694
+          }
+        },
+        "200": {
+          "steps0": 101.40649305555556,
+          "steps256": 93.78915972222222,
+          "paired_change": {
+            "mean": -7.617333333333341,
+            "lower": -32.50879955754361,
+            "upper": 17.27413289087694
+          }
+        }
+      }
+    },
+    "diagnostic": {
+      "field_weights": {
+        "mixed": 1.0
+      },
+      "breadth": {
+        "steps0": {
+          "positive_fields": [
+            "mixed"
+          ],
+          "positive_fields_simultaneous_lower_above_zero": [
+            "mixed"
+          ],
+          "family_balanced_positive_share": 1.0,
+          "family_balanced_confirmed_positive_share": 1.0,
+          "weakest_field_by_point_estimate": "mixed",
+          "minimum_field_mean_bb100": {
+            "mean": 308.75502777777774,
+            "lower": 226.10789021421886,
+            "upper": 391.4021653413366
+          }
+        },
+        "steps256": {
+          "positive_fields": [
+            "mixed"
+          ],
+          "positive_fields_simultaneous_lower_above_zero": [
+            "mixed"
+          ],
+          "family_balanced_positive_share": 1.0,
+          "family_balanced_confirmed_positive_share": 1.0,
+          "weakest_field_by_point_estimate": "mixed",
+          "minimum_field_mean_bb100": {
+            "mean": 256.0813888888889,
+            "lower": 180.41145609725697,
+            "upper": 331.75132168052085
+          }
+        }
+      },
+      "uncapped_family_balanced_change_bb100": {
+        "mean": -52.67363888888889,
+        "lower": -110.22081507513259,
+        "upper": 4.873537297354815
+      },
+      "family_balanced_capped_bb100": {
+        "50": {
+          "steps0": 50.0,
+          "steps256": 50.0,
+          "paired_change": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        },
+        "100": {
+          "steps0": 100.0,
+          "steps256": 100.0,
+          "paired_change": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        },
+        "200": {
+          "steps0": 200.0,
+          "steps256": 200.0,
+          "paired_change": {
+            "mean": 0.0,
+            "lower": -19.588543902743027,
+            "upper": 0.0
+          }
+        }
+      }
+    },
+    "holdout": {
+      "field_weights": {
+        "varied": 1.0
+      },
+      "breadth": {
+        "steps0": {
+          "positive_fields": [
+            "varied"
+          ],
+          "positive_fields_simultaneous_lower_above_zero": [
+            "varied"
+          ],
+          "family_balanced_positive_share": 1.0,
+          "family_balanced_confirmed_positive_share": 1.0,
+          "weakest_field_by_point_estimate": "varied",
+          "minimum_field_mean_bb100": {
+            "mean": 477.33563888888887,
+            "lower": 367.42779874354557,
+            "upper": 587.2434790342321
+          }
+        },
+        "steps256": {
+          "positive_fields": [
+            "varied"
+          ],
+          "positive_fields_simultaneous_lower_above_zero": [
+            "varied"
+          ],
+          "family_balanced_positive_share": 1.0,
+          "family_balanced_confirmed_positive_share": 1.0,
+          "weakest_field_by_point_estimate": "varied",
+          "minimum_field_mean_bb100": {
+            "mean": 383.81222222222226,
+            "lower": 283.9381606016359,
+            "upper": 483.6862838428086
+          }
+        }
+      },
+      "uncapped_family_balanced_change_bb100": {
+        "mean": -93.52341666666666,
+        "lower": -163.56770968786248,
+        "upper": -23.47912364547085
+      },
+      "family_balanced_capped_bb100": {
+        "50": {
+          "steps0": 50.0,
+          "steps256": 50.0,
+          "paired_change": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        },
+        "100": {
+          "steps0": 100.0,
+          "steps256": 100.0,
+          "paired_change": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        },
+        "200": {
+          "steps0": 200.0,
+          "steps256": 200.0,
+          "paired_change": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        }
+      }
+    }
+  },
+  "uncertainty": {
+    "confidence": 0.95,
+    "simultaneous_estimates": 24,
+    "critical_z": 3.0780880728421613,
+    "method": "Large-sample Bonferroni intervals for both absolute means and the paired change per field. Six seats and all fixed training seeds are averaged inside the original card. Group bounds propagate these simultaneous intervals and allow arbitrary field correlation."
+  },
+  "scope": "Conditional on the fixed policies, training seeds, and declared opponent lineups. Weights are equal across families and equal within family. Saturation applies to each lineup mean before weighting. The holdout has its own cards and separate summary.",
+  "evaluation_plan_sha256": "fc888555bc206810c02d4ff5abedf295ee6fb334f2ca5650b7b23a9073170e61",
+  "cell_result_hashes": {
+    "public-seed-342-steps0": "4df1ac380fafe39754ba9695ec4817e1186af235a845e415fb1dcb06b546e473",
+    "public-seed-343-steps0": "c2f23ae4968fd19163cb3182db55fef34d29a9308d3cbebda0cb389f5318f30a",
+    "public-seed-344-steps0": "faf4e71cb66d1b11513bf62cebedad31212fcd15505a6ba3b28c1a3ee0412af4",
+    "public-seed-342-steps256": "320df7388a8e900d76f7dcfe8a5de3660a82419ec2de90a450025d524d70edb4",
+    "public-seed-343-steps256": "8747c30008ddfee9a0775c61f0dac56fca466eb1f06aea0e6db6db3a9a557542",
+    "public-seed-344-steps256": "f9ab30db8368cfd1602badff3592439fc73792bd125e854d9b2048cf1abbac77",
+    "noregrets-seed-342-steps0": "652fe787ea6c9c1b453ed3c62058bb58ba0abc549f7eea9ed4ecd61b5fccb14e",
+    "noregrets-seed-343-steps0": "c20253320214c34a617cc9e6596d0da335c9152de05bbd74de53b1c6f3e326c5",
+    "noregrets-seed-344-steps0": "3a074f60dc09979b1b453faf94610f7e2c164f2e919ab660a8625aaba6f23072",
+    "noregrets-seed-342-steps256": "960c1ba6c186c21913c7b4580d994beb5c0dde4041a49dcc7ab488f981784c0d",
+    "noregrets-seed-343-steps256": "6e90a9251614b55e7eb4e6ba449e3f7113216f8ac94e2b292c239b9d917faa61",
+    "noregrets-seed-344-steps256": "57fdbe2176b935cf343e4c0449004e93326787bede8a6ce8e5e76a6e666a7b7a",
+    "rich96-seed-342-steps0": "f2e8bd5470366db365fced662283494e5498d7a34a2ad4f68685febee2136b3f",
+    "rich96-seed-343-steps0": "34721bfd896dd77a726964517da33f641047b3a1205397f8a98760a9d8997394",
+    "rich96-seed-344-steps0": "150d8a38a5a9196bd734bccd05db2b65ffad6e8651fd9a5fab42790efcd2ba44",
+    "rich96-seed-342-steps256": "042d4c55b3372518128a24d3c53eaa6add61ec2131aebe83fc05f458203a93a8",
+    "rich96-seed-343-steps256": "f0fb5ffaeaedacff409fd2839bbf642edef9bacf161f2c48bc3c1f6ca0aa17c7",
+    "rich96-seed-344-steps256": "12c7ed6460388b4d6ba054454ddf7c1a040f6f2e1a3d3accb776b4f97f1aa288",
+    "calling-station-seed-342-steps0": "ee033d68aff94a6d5b7428a2ee8b448dc4883b0eb34f60785ba344dd20930e5e",
+    "calling-station-seed-343-steps0": "88d4b26c3b734f5ce75f6c408acbe60f27e4cd4385289314c82b2820a05add6e",
+    "calling-station-seed-344-steps0": "66397ea315b40ebe27ab3e2dacdb101e3a3db8e39581b1b721bf89b2942e1df5",
+    "calling-station-seed-342-steps256": "c5f1e3db9871db8be674936c6bb5ca2df96ad793cfedfcfc227093e286256cc3",
+    "calling-station-seed-343-steps256": "3feda315c5eef77b50cec67cb2b4f78124468f39b249e4dfcf24a2018326c8ce",
+    "calling-station-seed-344-steps256": "0f9189808d266b624288e93b8fbe369c84e54030c7b51fb205448de856367602",
+    "tight-value-seed-342-steps0": "765524fc1de9c127df9210920fb557f9b85a0e16e8e3cb45275b2e4616637cca",
+    "tight-value-seed-343-steps0": "31157975f72c687b13e360b0b124399ae9cb26439c502cef93bcb233c11c3da6",
+    "tight-value-seed-344-steps0": "b918074ca16cffe678b669ace1a8d69a79ce2b81e38c4f06ec11d7556c4fbbc5",
+    "tight-value-seed-342-steps256": "4d82a0d29f536e057348e76389dca15f1d30537dc10177713ec10c0da4e500f0",
+    "tight-value-seed-343-steps256": "db51066a3910c8c101a89ee6fddff5588732dab9121f2d02cc18bd5a3f8a2f36",
+    "tight-value-seed-344-steps256": "baf5ced9c9230d59a8c401d13c84fb2acc28abffc96d053a2fe8f6c8f4d4049e",
+    "pressure-seed-342-steps0": "313468e788ea025461534beb862fff3148a88fcb1603d287b3e86791a28df642",
+    "pressure-seed-343-steps0": "2c2a6c35f91f68cd89fa80ad5948ebcdce305c8dd4d3f1a2b60d2a719575eafc",
+    "pressure-seed-344-steps0": "86bc0f8c2fef083b618f578827d4ae498688fb219d5eb4e57f33abce6d65f17d",
+    "pressure-seed-342-steps256": "5f23178a01862ca33bb5bc1ece22293c8e2bc8c9578ea878a866e603b963a485",
+    "pressure-seed-343-steps256": "52dff1f36ae51d310b59d8a968073b238663f11c3b46d002ff2c2ec2b1b53daf",
+    "pressure-seed-344-steps256": "7b2eadb46b3255e1eb45a061b00335026a2809aecf66ecd8b1579e2c5930653d",
+    "mixed-seed-342-steps0": "f8a1aa2314391e5e70c9b003c99f26a07a3558362c84944ab61c3ba4f9d4b173",
+    "mixed-seed-343-steps0": "5f9b494f09f709df54e6d6c4a672900d31eac50a517c14a93d78602f538433bb",
+    "mixed-seed-344-steps0": "a3e3cb5c57f67c8ce51a588ab2425b663f763a513f56540dc6b8d986f7afcca9",
+    "mixed-seed-342-steps256": "1f7c46b0599e7223cfcb2b80fd6cc613c54e9f9f768e0b23265669c0e8060514",
+    "mixed-seed-343-steps256": "b8f18ca76e2c9390f17a5c64db9fb8c6a4e0e2f7d80d886c9b3d483e94835e90",
+    "mixed-seed-344-steps256": "f38a2794b694c5752a1d1446e769a60a145f4915426acebbdd0d4b599cffc1ae",
+    "varied-seed-342-steps0": "f6e3900020b167527e6c5997ff23e9d9aa126d1061c4236a3209c925512bbffc",
+    "varied-seed-343-steps0": "de4812af97e3f80cc7e238e9d60bba8b5cb06d08a6ff13898b92834bb06b1028",
+    "varied-seed-344-steps0": "94efc1e7c1984b5c9214847472bbffe16dba2d59874a4a1b1b7ff05c716225ab",
+    "varied-seed-342-steps256": "5f1745bfa770390b3dad814fb1ecab4bd62eb62724bd8ffcba35c832999d096b",
+    "varied-seed-343-steps256": "8f00327d214c34e5dfc2d0d1d014a126edbff7d6d1ab62b03792c4ee208651ed",
+    "varied-seed-344-steps256": "4ba5ef29247961f5418ee7ce4f53a02375528c740a30d3f58bcd97859f48e64f"
+  }
+}

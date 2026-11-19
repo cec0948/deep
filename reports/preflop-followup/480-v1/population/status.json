@@ -1,0 +1,18 @@
+{
+  "state": "complete",
+  "verified_utc": "2026-11-19T09:38:30.426485+00:00",
+  "cells": 54,
+  "hands": 1296000,
+  "unique_original_card_blocks": 24000,
+  "full_terminal_replay": true,
+  "additional_policy_replay_hands": 4644,
+  "new_training_rounds": 0,
+  "new_fitting_steps": 0,
+  "new_weight_archives": 0,
+  "model_promoted": false,
+  "public_summary_sha256": "835bfed8372c06aab6b228f430bc9eac08f4834f205f63c677c65996150461ee",
+  "panel_summary_sha256": "1408c66ade5643165b10acaa639cf7e4b54f7a7cabc1326f172b68736db568ff",
+  "audit_sha256": "84bede93c207866f6dcdf72b0fe925d67cf0fe0b4451f73f21f0d2588609d59b",
+  "initial_timeout_receipt_sha256": "171dfb8d034e9eb2dec50b1a59b91e7fd66fdb3ded71040824b39c6276edaaee",
+  "related_tests_passed": 79
+}

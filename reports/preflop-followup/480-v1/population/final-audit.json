@@ -1,0 +1,677 @@
+{
+  "study": "frozen-480-population-v1",
+  "design_sha256": "a557cb1015412ec3f23b53b3ab8c90fafe5576b1042f0a6883b96ad316eb2448",
+  "sampled_card_stride": 313,
+  "unique_card_blocks": 24000,
+  "new_selfplay": 0,
+  "new_fitting": 0,
+  "panel": {
+    "summary_sha256": "1408c66ade5643165b10acaa639cf7e4b54f7a7cabc1326f172b68736db568ff",
+    "evaluation_plan_sha256": "fc888555bc206810c02d4ff5abedf295ee6fb334f2ca5650b7b23a9073170e61",
+    "cells": 48,
+    "totals": {
+      "hands": 576000,
+      "decisions": 7211539,
+      "policy_replay_hands": 2304,
+      "policy_replay_decisions": 28432
+    },
+    "statistics": {
+      "public": {
+        "steps0": -18.323555555555558,
+        "steps256": -3.617611111111112,
+        "delta": 14.705944444444444,
+        "paired_interval": [
+          -18.476857628861094,
+          47.88874651774998
+        ],
+        "by_training_seed": {
+          "342": {
+            "steps0": -19.184,
+            "steps256": -0.35283333333333394
+          },
+          "343": {
+            "steps0": 14.454833333333331,
+            "steps256": 14.571416666666666
+          },
+          "344": {
+            "steps0": -50.2415,
+            "steps256": -25.07141666666667
+          }
+        }
+      },
+      "noregrets": {
+        "steps0": 446.4859444444445,
+        "steps256": 385.78322222222215,
+        "delta": -60.70272222222222,
+        "paired_interval": [
+          -143.94590700326359,
+          22.54046255881913
+        ],
+        "by_training_seed": {
+          "342": {
+            "steps0": 356.759,
+            "steps256": 279.24175
+          },
+          "343": {
+            "steps0": 622.5228333333332,
+            "steps256": 490.0640833333334
+          },
+          "344": {
+            "steps0": 360.176,
+            "steps256": 388.04383333333334
+          }
+        }
+      },
+      "rich96": {
+        "steps0": 104.12169444444446,
+        "steps256": 55.78902777777777,
+        "delta": -48.33266666666666,
+        "paired_interval": [
+          -104.94538762204678,
+          8.280054288713465
+        ],
+        "by_training_seed": {
+          "342": {
+            "steps0": -78.30225,
+            "steps256": -115.1925
+          },
+          "343": {
+            "steps0": 346.11966666666666,
+            "steps256": 247.28091666666663
+          },
+          "344": {
+            "steps0": 44.54766666666668,
+            "steps256": 35.27866666666667
+          }
+        }
+      },
+      "calling-station": {
+        "steps0": 682.4229166666667,
+        "steps256": 746.9847222222223,
+        "delta": 64.56180555555557,
+        "paired_interval": [
+          -22.255484182904127,
+          151.37909529401526
+        ],
+        "by_training_seed": {
+          "342": {
+            "steps0": 933.0229166666667,
+            "steps256": 830.98125
+          },
+          "343": {
+            "steps0": 316.6166666666667,
+            "steps256": 436.59583333333336
+          },
+          "344": {
+            "steps0": 797.6291666666666,
+            "steps256": 973.3770833333334
+          }
+        }
+      },
+      "tight-value": {
+        "steps0": -40.51650000000001,
+        "steps256": -31.044333333333338,
+        "delta": 9.472166666666668,
+        "paired_interval": [
+          -19.838858937799607,
+          38.78319227113294
+        ],
+        "by_training_seed": {
+          "342": {
+            "steps0": -77.59875,
+            "steps256": -91.49475
+          },
+          "343": {
+            "steps0": -20.030416666666667,
+            "steps256": -3.451666666666662
+          },
+          "344": {
+            "steps0": -23.92033333333333,
+            "steps256": 1.8134166666666625
+          }
+        }
+      },
+      "pressure": {
+        "steps0": 742.71175,
+        "steps256": 512.3643055555557,
+        "delta": -230.34744444444448,
+        "paired_interval": [
+          -370.5362950524444,
+          -90.15859383644457
+        ],
+        "by_training_seed": {
+          "342": {
+            "steps0": 625.1194166666667,
+            "steps256": 274.1478333333333
+          },
+          "343": {
+            "steps0": 824.9095833333332,
+            "steps256": 635.6079166666666
+          },
+          "344": {
+            "steps0": 778.10625,
+            "steps256": 627.3371666666667
+          }
+        }
+      },
+      "mixed": {
+        "steps0": 308.75502777777774,
+        "steps256": 256.0813888888889,
+        "delta": -52.67363888888889,
+        "paired_interval": [
+          -110.22081507513259,
+          4.873537297354815
+        ],
+        "by_training_seed": {
+          "342": {
+            "steps0": 267.42158333333333,
+            "steps256": 209.04108333333335
+          },
+          "343": {
+            "steps0": 410.89583333333337,
+            "steps256": 264.1904166666667
+          },
+          "344": {
+            "steps0": 247.94766666666666,
+            "steps256": 295.01266666666663
+          }
+        }
+      },
+      "varied": {
+        "steps0": 477.3356388888889,
+        "steps256": 383.81222222222215,
+        "delta": -93.52341666666668,
+        "paired_interval": [
+          -163.56770968786248,
+          -23.479123645470864
+        ],
+        "by_training_seed": {
+          "342": {
+            "steps0": 381.2456666666667,
+            "steps256": 304.3328333333334
+          },
+          "343": {
+            "steps0": 669.0276666666666,
+            "steps256": 456.2125833333333
+          },
+          "344": {
+            "steps0": 381.7335833333333,
+            "steps256": 390.89125
+          }
+        }
+      }
+    },
+    "ledgers": {
+      "public-seed-342-steps0": {
+        "raw_sha256": "6731ce0152ef0b0a64eea15750ab01952012cbc8b10f59b35b20a85a59374f52",
+        "result_sha256": "4df1ac380fafe39754ba9695ec4817e1186af235a845e415fb1dcb06b546e473",
+        "hands": 12000,
+        "decisions": 123933,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 474
+      },
+      "public-seed-343-steps0": {
+        "raw_sha256": "c08674bafa8fb1622e6ccba757695d9b85cd2e5c44ad3a83737c32ebf515ab84",
+        "result_sha256": "c2f23ae4968fd19163cb3182db55fef34d29a9308d3cbebda0cb389f5318f30a",
+        "hands": 12000,
+        "decisions": 129927,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 509
+      },
+      "public-seed-344-steps0": {
+        "raw_sha256": "19d311e3bc405102940d3b6455fdd45f4aba1e3655b264935bf624f88685a44e",
+        "result_sha256": "faf4e71cb66d1b11513bf62cebedad31212fcd15505a6ba3b28c1a3ee0412af4",
+        "hands": 12000,
+        "decisions": 125770,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 448
+      },
+      "public-seed-342-steps256": {
+        "raw_sha256": "61f2f97f207d8760e2cdb267fd16960fced60a606df8be659a288754290bf4af",
+        "result_sha256": "320df7388a8e900d76f7dcfe8a5de3660a82419ec2de90a450025d524d70edb4",
+        "hands": 12000,
+        "decisions": 123764,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 456
+      },
+      "public-seed-343-steps256": {
+        "raw_sha256": "e324fd54dae436ee47c5f601570557cf8fa2a28d99a5471215369c917fff9075",
+        "result_sha256": "8747c30008ddfee9a0775c61f0dac56fca466eb1f06aea0e6db6db3a9a557542",
+        "hands": 12000,
+        "decisions": 124303,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 459
+      },
+      "public-seed-344-steps256": {
+        "raw_sha256": "dd98da05d369fd7903f1e6da966778d2f2b6b0040b30be454dc2c43f3d8d412e",
+        "result_sha256": "f9ab30db8368cfd1602badff3592439fc73792bd125e854d9b2048cf1abbac77",
+        "hands": 12000,
+        "decisions": 124699,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 467
+      },
+      "noregrets-seed-342-steps0": {
+        "raw_sha256": "16fe51c0285c9659303c8a6e7aa817bc24ad583b4ef198d0f6e3b967ab12894d",
+        "result_sha256": "652fe787ea6c9c1b453ed3c62058bb58ba0abc549f7eea9ed4ecd61b5fccb14e",
+        "hands": 12000,
+        "decisions": 109594,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 399
+      },
+      "noregrets-seed-343-steps0": {
+        "raw_sha256": "a349eef16b789c0f8f78336ea52693efd107e696929e9d30ef5c1c9e687e9d88",
+        "result_sha256": "c20253320214c34a617cc9e6596d0da335c9152de05bbd74de53b1c6f3e326c5",
+        "hands": 12000,
+        "decisions": 110891,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 399
+      },
+      "noregrets-seed-344-steps0": {
+        "raw_sha256": "29cb492abb350ac5682c6cfdb01ea855975bcb0c61bb8e50c32ce3f1df2b339d",
+        "result_sha256": "3a074f60dc09979b1b453faf94610f7e2c164f2e919ab660a8625aaba6f23072",
+        "hands": 12000,
+        "decisions": 110049,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 394
+      },
+      "noregrets-seed-342-steps256": {
+        "raw_sha256": "73665f76ccdc6c7c47cac88d80947881e23e70d5f8d2f35a6fcdcdb8d3969881",
+        "result_sha256": "960c1ba6c186c21913c7b4580d994beb5c0dde4041a49dcc7ab488f981784c0d",
+        "hands": 12000,
+        "decisions": 109925,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 406
+      },
+      "noregrets-seed-343-steps256": {
+        "raw_sha256": "dccd39065522a9260285843abd14a2e5aedd09f03cba34760227708613369381",
+        "result_sha256": "6e90a9251614b55e7eb4e6ba449e3f7113216f8ac94e2b292c239b9d917faa61",
+        "hands": 12000,
+        "decisions": 110037,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 401
+      },
+      "noregrets-seed-344-steps256": {
+        "raw_sha256": "1d9a04ad63bc17d0fc6b4951cfafa3f454af7c25bf08ef0e00533874bd577d74",
+        "result_sha256": "57fdbe2176b935cf343e4c0449004e93326787bede8a6ce8e5e76a6e666a7b7a",
+        "hands": 12000,
+        "decisions": 109173,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 397
+      },
+      "rich96-seed-342-steps0": {
+        "raw_sha256": "3b53bd1887cb9959b8b01dc5c478040236ddebe9f522fbe888bdd4e9581493a4",
+        "result_sha256": "f2e8bd5470366db365fced662283494e5498d7a34a2ad4f68685febee2136b3f",
+        "hands": 12000,
+        "decisions": 114135,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 441
+      },
+      "rich96-seed-343-steps0": {
+        "raw_sha256": "7583bc5b08513fb658809e990499bef957120fdf936576ca32a2cd56570c9526",
+        "result_sha256": "34721bfd896dd77a726964517da33f641047b3a1205397f8a98760a9d8997394",
+        "hands": 12000,
+        "decisions": 147298,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 599
+      },
+      "rich96-seed-344-steps0": {
+        "raw_sha256": "12522b65e07d18d275f3ff436c9380003cad1209931bd97f820e829c3f292ca1",
+        "result_sha256": "150d8a38a5a9196bd734bccd05db2b65ffad6e8651fd9a5fab42790efcd2ba44",
+        "hands": 12000,
+        "decisions": 122282,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 468
+      },
+      "rich96-seed-342-steps256": {
+        "raw_sha256": "d3a61e5c999bc4bad64bb032fc805e50657115243223dd600e5f9019586c67a6",
+        "result_sha256": "042d4c55b3372518128a24d3c53eaa6add61ec2131aebe83fc05f458203a93a8",
+        "hands": 12000,
+        "decisions": 114167,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 428
+      },
+      "rich96-seed-343-steps256": {
+        "raw_sha256": "e6a5c4e18fdf209868eb710cfbf633a33c1160a50b07ea0e9214160c50e61171",
+        "result_sha256": "f0fb5ffaeaedacff409fd2839bbf642edef9bacf161f2c48bc3c1f6ca0aa17c7",
+        "hands": 12000,
+        "decisions": 146267,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 589
+      },
+      "rich96-seed-344-steps256": {
+        "raw_sha256": "809487f043c2ee7b809aa4c4646686cbe7ff522536b622fe20e06fe2cc14ee71",
+        "result_sha256": "12c7ed6460388b4d6ba054454ddf7c1a040f6f2e1a3d3accb776b4f97f1aa288",
+        "hands": 12000,
+        "decisions": 121035,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 465
+      },
+      "calling-station-seed-342-steps0": {
+        "raw_sha256": "8710c4b0e105f1e6b30dddbeb4298a655519762aa5732ca7002becf4aa4648ac",
+        "result_sha256": "ee033d68aff94a6d5b7428a2ee8b448dc4883b0eb34f60785ba344dd20930e5e",
+        "hands": 12000,
+        "decisions": 306236,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 1253
+      },
+      "calling-station-seed-343-steps0": {
+        "raw_sha256": "e596e7d3f1aaeaa364ca6d0007905df3838af34728d1defd4f16a5d280cbcae2",
+        "result_sha256": "88d4b26c3b734f5ce75f6c408acbe60f27e4cd4385289314c82b2820a05add6e",
+        "hands": 12000,
+        "decisions": 291720,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 1137
+      },
+      "calling-station-seed-344-steps0": {
+        "raw_sha256": "1c21d89829b47a500c2315ed47b9b8cc302d3553eee1a6807147b41243b410bd",
+        "result_sha256": "66397ea315b40ebe27ab3e2dacdb101e3a3db8e39581b1b721bf89b2942e1df5",
+        "hands": 12000,
+        "decisions": 291751,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 1170
+      },
+      "calling-station-seed-342-steps256": {
+        "raw_sha256": "d1bd14c7c24ec42e3d0be4e540edf84ef4b809a6958e12ab223c806aad56a72a",
+        "result_sha256": "c5f1e3db9871db8be674936c6bb5ca2df96ad793cfedfcfc227093e286256cc3",
+        "hands": 12000,
+        "decisions": 306560,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 1247
+      },
+      "calling-station-seed-343-steps256": {
+        "raw_sha256": "2ae7b9d2bbc428c264d20f5669679b21b171fe4dd3f6c5f13ff92716b4d51420",
+        "result_sha256": "3feda315c5eef77b50cec67cb2b4f78124468f39b249e4dfcf24a2018326c8ce",
+        "hands": 12000,
+        "decisions": 291777,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 1145
+      },
+      "calling-station-seed-344-steps256": {
+        "raw_sha256": "9aefe0097e8669eb950192a7af856cb2f49f3d503754073506b5b834f2b4e64b",
+        "result_sha256": "0f9189808d266b624288e93b8fbe369c84e54030c7b51fb205448de856367602",
+        "hands": 12000,
+        "decisions": 301276,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 1198
+      },
+      "tight-value-seed-342-steps0": {
+        "raw_sha256": "e4162de7eff0366ea1bb9e58193758745b31e68b57eefd97239fc5498b863ac8",
+        "result_sha256": "765524fc1de9c127df9210920fb557f9b85a0e16e8e3cb45275b2e4616637cca",
+        "hands": 12000,
+        "decisions": 119555,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 461
+      },
+      "tight-value-seed-343-steps0": {
+        "raw_sha256": "7c7552a14dc6fc79eb0f8bded121f94036b045328d769b476f3671240e538fe3",
+        "result_sha256": "31157975f72c687b13e360b0b124399ae9cb26439c502cef93bcb233c11c3da6",
+        "hands": 12000,
+        "decisions": 125815,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 500
+      },
+      "tight-value-seed-344-steps0": {
+        "raw_sha256": "cf92a0dfea0a725b72fa69c9dc44f30f9772ba904a3619c73b318ecb8b7ce76f",
+        "result_sha256": "b918074ca16cffe678b669ace1a8d69a79ce2b81e38c4f06ec11d7556c4fbbc5",
+        "hands": 12000,
+        "decisions": 120481,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 492
+      },
+      "tight-value-seed-342-steps256": {
+        "raw_sha256": "c521104c908772e05dae626afc45713ddfefc59b83b47cd952902feeb0fc803f",
+        "result_sha256": "4d82a0d29f536e057348e76389dca15f1d30537dc10177713ec10c0da4e500f0",
+        "hands": 12000,
+        "decisions": 118738,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 493
+      },
+      "tight-value-seed-343-steps256": {
+        "raw_sha256": "0e462dce1dd22d1319f4f7a8922df3074edb3a5bc40a5fd5c0e8a627fb83abf4",
+        "result_sha256": "db51066a3910c8c101a89ee6fddff5588732dab9121f2d02cc18bd5a3f8a2f36",
+        "hands": 12000,
+        "decisions": 119983,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 477
+      },
+      "tight-value-seed-344-steps256": {
+        "raw_sha256": "239195330b2d1578db66fa64b978f1879fd802f043ce1e16715901a0e943b903",
+        "result_sha256": "baf5ced9c9230d59a8c401d13c84fb2acc28abffc96d053a2fe8f6c8f4d4049e",
+        "hands": 12000,
+        "decisions": 121547,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 495
+      },
+      "pressure-seed-342-steps0": {
+        "raw_sha256": "ea10ae9b109ef21748026cddd04661d9ce95afec74088b8b668e11d693749b9e",
+        "result_sha256": "313468e788ea025461534beb862fff3148a88fcb1603d287b3e86791a28df642",
+        "hands": 12000,
+        "decisions": 164271,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 661
+      },
+      "pressure-seed-343-steps0": {
+        "raw_sha256": "15bf0ad79ab138e5786a394e4abf0720d22315617f42821e14ee333ffaf75f82",
+        "result_sha256": "2c2a6c35f91f68cd89fa80ad5948ebcdce305c8dd4d3f1a2b60d2a719575eafc",
+        "hands": 12000,
+        "decisions": 166915,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 681
+      },
+      "pressure-seed-344-steps0": {
+        "raw_sha256": "ebfdd453fdc41d457a5d4076be8b4148a38a4dd70c12dfbf1d6f14f205ce8387",
+        "result_sha256": "86bc0f8c2fef083b618f578827d4ae498688fb219d5eb4e57f33abce6d65f17d",
+        "hands": 12000,
+        "decisions": 165783,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 673
+      },
+      "pressure-seed-342-steps256": {
+        "raw_sha256": "60e713e77d2b2600631ddd3014247ee1514800a397afc3463c6160778c60282f",
+        "result_sha256": "5f23178a01862ca33bb5bc1ece22293c8e2bc8c9578ea878a866e603b963a485",
+        "hands": 12000,
+        "decisions": 164431,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 649
+      },
+      "pressure-seed-343-steps256": {
+        "raw_sha256": "1accc0841a0f2e8750fad0a7b2108171603e4974212cf75c83b390d90758e46c",
+        "result_sha256": "52dff1f36ae51d310b59d8a968073b238663f11c3b46d002ff2c2ec2b1b53daf",
+        "hands": 12000,
+        "decisions": 166671,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 684
+      },
+      "pressure-seed-344-steps256": {
+        "raw_sha256": "46dfa31b7e79e468c6d9fe7f69f4b1d1e94c041d87b684162b9d16ae08e29446",
+        "result_sha256": "7b2eadb46b3255e1eb45a061b00335026a2809aecf66ecd8b1579e2c5930653d",
+        "hands": 12000,
+        "decisions": 164652,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 677
+      },
+      "mixed-seed-342-steps0": {
+        "raw_sha256": "f9b0443bfdcf8aecfb2d7aab85dbe0718b5f388c858e7cc7347b08fab6cccb53",
+        "result_sha256": "f8a1aa2314391e5e70c9b003c99f26a07a3558362c84944ab61c3ba4f9d4b173",
+        "hands": 12000,
+        "decisions": 113966,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 446
+      },
+      "mixed-seed-343-steps0": {
+        "raw_sha256": "54438d41dcd8ca813707974625e3f42a654bb9c6bb6db82579965b951bd1db4c",
+        "result_sha256": "5f9b494f09f709df54e6d6c4a672900d31eac50a517c14a93d78602f538433bb",
+        "hands": 12000,
+        "decisions": 117051,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 436
+      },
+      "mixed-seed-344-steps0": {
+        "raw_sha256": "b42aa19c1223ef70fd84eaf6e1d84497354853638f877e9869c4c73e72636407",
+        "result_sha256": "a3e3cb5c57f67c8ce51a588ab2425b663f763a513f56540dc6b8d986f7afcca9",
+        "hands": 12000,
+        "decisions": 114880,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 429
+      },
+      "mixed-seed-342-steps256": {
+        "raw_sha256": "0137afddd487aff0f016125d8c2210e98f2fd73a30a44f7c2a9d983897bf5342",
+        "result_sha256": "1f7c46b0599e7223cfcb2b80fd6cc613c54e9f9f768e0b23265669c0e8060514",
+        "hands": 12000,
+        "decisions": 113183,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 442
+      },
+      "mixed-seed-343-steps256": {
+        "raw_sha256": "08c3faa46e944f8d6df85eb8e3c528a99b477f6fc552e5096bcbf4542d6b0d8e",
+        "result_sha256": "b8f18ca76e2c9390f17a5c64db9fb8c6a4e0e2f7d80d886c9b3d483e94835e90",
+        "hands": 12000,
+        "decisions": 114091,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 449
+      },
+      "mixed-seed-344-steps256": {
+        "raw_sha256": "f329529537fdb6e785a3333e5d571a7c6f6d5f2a104036bf63b783ea59024ac8",
+        "result_sha256": "f38a2794b694c5752a1d1446e769a60a145f4915426acebbdd0d4b599cffc1ae",
+        "hands": 12000,
+        "decisions": 113740,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 428
+      },
+      "varied-seed-342-steps0": {
+        "raw_sha256": "c9a87d5248e8de5830eddb97703217d920952f7064c77437cc02e15683aeb90f",
+        "result_sha256": "f6e3900020b167527e6c5997ff23e9d9aa126d1061c4236a3209c925512bbffc",
+        "hands": 12000,
+        "decisions": 137209,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 571
+      },
+      "varied-seed-343-steps0": {
+        "raw_sha256": "636c4b1ba0d83d2aa3faa0c38afd520e223b7e40e194aabb829121209452fceb",
+        "result_sha256": "de4812af97e3f80cc7e238e9d60bba8b5cb06d08a6ff13898b92834bb06b1028",
+        "hands": 12000,
+        "decisions": 144593,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 618
+      },
+      "varied-seed-344-steps0": {
+        "raw_sha256": "c47c655c13172a3d0a1078b2397869269c24937fae6ce901f052e2064e655864",
+        "result_sha256": "94efc1e7c1984b5c9214847472bbffe16dba2d59874a4a1b1b7ff05c716225ab",
+        "hands": 12000,
+        "decisions": 139505,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 576
+      },
+      "varied-seed-342-steps256": {
+        "raw_sha256": "ef2fea0a71b61bf64920a0899a4d11f5767dbe1853c496614520b5fed3478a84",
+        "result_sha256": "5f1745bfa770390b3dad814fb1ecab4bd62eb62724bd8ffcba35c832999d096b",
+        "hands": 12000,
+        "decisions": 136194,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 579
+      },
+      "varied-seed-343-steps256": {
+        "raw_sha256": "b31583e9afb255c74be0047d334a5cabc20a50b67a8a7c85f867d1e79819eeaa",
+        "result_sha256": "8f00327d214c34e5dfc2d0d1d014a126edbff7d6d1ab62b03792c4ee208651ed",
+        "hands": 12000,
+        "decisions": 143008,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 595
+      },
+      "varied-seed-344-steps256": {
+        "raw_sha256": "8d3d426accb09e3b633dd10c4bec008558cfe969bdf306a99df21731f96561c3",
+        "result_sha256": "4ba5ef29247961f5418ee7ce4f53a02375528c740a30d3f58bcd97859f48e64f",
+        "hands": 12000,
+        "decisions": 138708,
+        "policy_replay_hands": 48,
+        "policy_replay_decisions": 571
+      }
+    }
+  },
+  "public": {
+    "summary_sha256": "835bfed8372c06aab6b228f430bc9eac08f4834f205f63c677c65996150461ee",
+    "evaluation_plan_sha256": "62996491a804a4ae9dbe646e71243eaf37e194313bafa1e0e962fe492019bbe7",
+    "cells": 6,
+    "totals": {
+      "hands": 720000,
+      "decisions": 7464550,
+      "policy_replay_hands": 2340,
+      "policy_replay_decisions": 24103
+    },
+    "statistics": {
+      "public": {
+        "steps0": -28.67266666666667,
+        "steps256": -21.441847222222222,
+        "delta": 7.230819444444445,
+        "paired_interval": [
+          0.24108980069158026,
+          14.22054908819731
+        ],
+        "by_training_seed": {
+          "342": {
+            "steps0": -34.443575,
+            "steps256": -27.157408333333333
+          },
+          "343": {
+            "steps0": -3.356883333333334,
+            "steps256": -1.294325000000002
+          },
+          "344": {
+            "steps0": -48.21754166666667,
+            "steps256": -35.873808333333336
+          }
+        }
+      }
+    },
+    "ledgers": {
+      "public-seed-342-steps0": {
+        "raw_sha256": "8613e3869ba3341a518d1c436ae49b6261cf57ee4b83b539c5e3069ada4a8c2d",
+        "result_sha256": "1d6e821d950b492479a9aa622c53e8fcc386187b106ce38b22c7c48d6a51de85",
+        "hands": 120000,
+        "decisions": 1226517,
+        "policy_replay_hands": 390,
+        "policy_replay_decisions": 3929
+      },
+      "public-seed-343-steps0": {
+        "raw_sha256": "2426db10e4b261d5c7bc61e17319f49705c29a9161fc6936932d91f92d0280a1",
+        "result_sha256": "abe166c723d69ba1396820c3dcd0d0fcd19be0c4184fc97c7d12579160bf716f",
+        "hands": 120000,
+        "decisions": 1289550,
+        "policy_replay_hands": 390,
+        "policy_replay_decisions": 4115
+      },
+      "public-seed-344-steps0": {
+        "raw_sha256": "384838e782a505d4b736148ede23d1776dc27496059d6b896547df6a2ae85c16",
+        "result_sha256": "df1a881a6c12acc479ae4ff8b2a2ee2c244ecb4d942a44699a3dcbe0d210fd4f",
+        "hands": 120000,
+        "decisions": 1250016,
+        "policy_replay_hands": 390,
+        "policy_replay_decisions": 4036
+      },
+      "public-seed-342-steps256": {
+        "raw_sha256": "e1f314b7342d559d52e01e99570d081bb73ffe3d1be4dab6af1be69b770afabc",
+        "result_sha256": "e0ee5715f4808621294f94f8d73695394498eb4f91ac7b433c85dab03a8ac056",
+        "hands": 120000,
+        "decisions": 1227387,
+        "policy_replay_hands": 390,
+        "policy_replay_decisions": 3974
+      },
+      "public-seed-343-steps256": {
+        "raw_sha256": "c8f30b351869f51eacb889737f3b9b8dc62985a88ea54a7c476e908f38efd742",
+        "result_sha256": "1506e376e2f543f412bfc7a52ae2614dfc9beca1b076685edf277199576238d1",
+        "hands": 120000,
+        "decisions": 1233051,
+        "policy_replay_hands": 390,
+        "policy_replay_decisions": 3998
+      },
+      "public-seed-344-steps256": {
+        "raw_sha256": "fbd50cb296ecb37b125cdef058bffa269169e1d8c3e313654c99f27dbcf047c9",
+        "result_sha256": "f86c61988549a6774c86c9dbcaf775855980aeff1a97b5dd1fdcc8485ac14741",
+        "hands": 120000,
+        "decisions": 1238029,
+        "policy_replay_hands": 390,
+        "policy_replay_decisions": 4051
+      }
+    }
+  }
+}
