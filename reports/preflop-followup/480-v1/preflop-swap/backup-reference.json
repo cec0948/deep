@@ -1,0 +1,74 @@
+{
+  "checked_utc": "2026-11-19T03:23:45.771377+00:00",
+  "policy": "hybrid492pre480post",
+  "weight_archives": {
+    "preflop": {
+      "iteration": 492,
+      "archive_sha256": "4a9b920c5f65694cc769395ce1688e0b888035c1bb3325a80e642955a6078920",
+      "archive_bytes": 107252269,
+      "local_archive_sha256_and_size_verified": true,
+      "source_restoration_verified": true,
+      "private_index_status": "complete",
+      "indexed_utc": "2026-11-19T00:56:38.887879+00:00",
+      "indexed_remote_size_verified": true,
+      "indexed_owner_only_verified": true,
+      "remote_sha256_verified": false
+    },
+    "postflop": {
+      "iteration": 480,
+      "archive_sha256": "f01399198fd4c3eb5fc58be569d726fcab5298995c0123dc531b108961af7f59",
+      "archive_bytes": 107049296,
+      "local_archive_sha256_and_size_verified": true,
+      "source_restoration_verified": true,
+      "private_index_status": "complete",
+      "indexed_utc": "2026-11-17T09:07:15.904375+00:00",
+      "indexed_remote_size_verified": true,
+      "indexed_owner_only_verified": true,
+      "remote_sha256_verified": false
+    }
+  },
+  "members_by_training_seed": {
+    "342": {
+      "preflop": {
+        "archive_member": "warm492/seed-342/preflop.npz",
+        "sha256": "70c64ff191213909a57c81659929cc567c5029b7c7b30db90f98de0cb36dbc15",
+        "bytes": 1183010
+      },
+      "postflop": {
+        "archive_member": "seed-342/current.npz",
+        "sha256": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+        "bytes": 1183010
+      }
+    },
+    "343": {
+      "preflop": {
+        "archive_member": "warm492/seed-343/preflop.npz",
+        "sha256": "bbbfdeb6de111fca0e704e12f73b32a77571c426e1057b0782984f683efa1ba8",
+        "bytes": 1183010
+      },
+      "postflop": {
+        "archive_member": "seed-343/current.npz",
+        "sha256": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757",
+        "bytes": 1183010
+      }
+    },
+    "344": {
+      "preflop": {
+        "archive_member": "warm492/seed-344/preflop.npz",
+        "sha256": "c10c7ef4a5411397f4145d1cce5266de2307f1560d3f73f0062651726e531713",
+        "bytes": 1183010
+      },
+      "postflop": {
+        "archive_member": "seed-344/current.npz",
+        "sha256": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431",
+        "bytes": 1183010
+      }
+    }
+  },
+  "byte_identical_weights_verified": 6,
+  "portable_routing_regenerated_and_checked": true,
+  "restore_method": "For each archive, obtain its indexed private split manifest, verify parts locally and concatenate in order. Check the complete archive size and SHA-256. Extract each listed member under a separate preflop or postflop directory. For each fixed seed, call poker_preflop_specialist.write_policy(output_json, restored_preflop_npz, restored_postflop_npz) and check the two weight SHA-256 values. Policy JSON paths are generated for the restored location.",
+  "scope": "References to previously verified and indexed private backups. Remote size and owner-only flags are historical index evidence. This check compared and restored local weight bytes; no new Drive query or upload.",
+  "new_weight_archives": 0,
+  "includes_swap_evaluation_results": false
+}

@@ -1,0 +1,462 @@
+{
+  "checked_utc": "2026-11-19T03:42:34.188649+00:00",
+  "summary_sha256": "263c20db53b9ef78a0ba1ac6081f58c323b8c3a2d3500a218ca8ab7bfd874dcf",
+  "source_summary_sha256": "b1f9a3bf1721d87c535955b1f4e038ee111a3f8589b8e4db7a6d2b0fb76b7c9c",
+  "source_audit_sha256": "78ef335bb0895535c0e67f38d621b6480148032325a04c63411ffe23579d044a",
+  "new_cells": 9,
+  "reused_cells": 18,
+  "raw_hand_records_reaggregated": 3240000,
+  "matched_card_seat_seed_field_triplets": 1080000,
+  "independent_card_blocks": 20000,
+  "first_card": 2037600000,
+  "last_card": 2037619999,
+  "fixed_training_seeds": [
+    342,
+    343,
+    344
+  ],
+  "per_seed_street_network_sha256": {
+    "342": {
+      "specialist480": {
+        "preflop": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+        "postflop": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78"
+      },
+      "hybrid492pre480post": {
+        "preflop": "70c64ff191213909a57c81659929cc567c5029b7c7b30db90f98de0cb36dbc15",
+        "postflop": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78"
+      },
+      "warm492": {
+        "preflop": "70c64ff191213909a57c81659929cc567c5029b7c7b30db90f98de0cb36dbc15",
+        "postflop": "9bb2adf708bfaa1b6663b3815a970a5cb54448cb8e51831aef53be03486e6a33"
+      }
+    },
+    "343": {
+      "specialist480": {
+        "preflop": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+        "postflop": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757"
+      },
+      "hybrid492pre480post": {
+        "preflop": "bbbfdeb6de111fca0e704e12f73b32a77571c426e1057b0782984f683efa1ba8",
+        "postflop": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757"
+      },
+      "warm492": {
+        "preflop": "bbbfdeb6de111fca0e704e12f73b32a77571c426e1057b0782984f683efa1ba8",
+        "postflop": "92a57ce7c08cbf86380b989ee7518f8ae174894486b17859d6509839438fd93d"
+      }
+    },
+    "344": {
+      "specialist480": {
+        "preflop": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+        "postflop": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431"
+      },
+      "hybrid492pre480post": {
+        "preflop": "c10c7ef4a5411397f4145d1cce5266de2307f1560d3f73f0062651726e531713",
+        "postflop": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431"
+      },
+      "warm492": {
+        "preflop": "c10c7ef4a5411397f4145d1cce5266de2307f1560d3f73f0062651726e531713",
+        "postflop": "a0fe827cd1d7ad515de0d5c2d2dbd5ad2341f72f03802d5306f91a7a571b6838"
+      }
+    }
+  },
+  "terminal_action_replay_verified_by_source_cells": true,
+  "raw_hand_and_provenance_hashes_verified": true,
+  "common_opponents_and_action_rng_protocol": true,
+  "absolute_and_paired_intervals_recomputed": true,
+  "per_card_per_seed_additivity_verified": true,
+  "simultaneous_interval_family": "Three opponent fields within each prespecified contrast",
+  "first_hero_difference_agrees_with_changed_street": true,
+  "first_action_divergence": {
+    "hybrid_minus_480": {
+      "public": {
+        "opening": {
+          "paired_hands": 4108,
+          "nonzero_hero_payoff_changes": 3939,
+          "contribution_bb100": 0.34704166666666664
+        },
+        "other_preflop": {
+          "paired_hands": 142954,
+          "nonzero_hero_payoff_changes": 135891,
+          "contribution_bb100": -24.723194444444445
+        },
+        "postflop": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "same_trace": {
+          "paired_hands": 212938,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_after_hero_fold": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_other": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        }
+      },
+      "mixed": {
+        "opening": {
+          "paired_hands": 4108,
+          "nonzero_hero_payoff_changes": 3945,
+          "contribution_bb100": -1.9206305555555556
+        },
+        "other_preflop": {
+          "paired_hands": 131890,
+          "nonzero_hero_payoff_changes": 125570,
+          "contribution_bb100": -131.56287777777777
+        },
+        "postflop": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "same_trace": {
+          "paired_hands": 223943,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_after_hero_fold": {
+          "paired_hands": 54,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_other": {
+          "paired_hands": 5,
+          "nonzero_hero_payoff_changes": 3,
+          "contribution_bb100": -0.02826388888888889
+        }
+      },
+      "noregrets": {
+        "opening": {
+          "paired_hands": 4108,
+          "nonzero_hero_payoff_changes": 3822,
+          "contribution_bb100": -1.6604527777777778
+        },
+        "other_preflop": {
+          "paired_hands": 107411,
+          "nonzero_hero_payoff_changes": 102068,
+          "contribution_bb100": -203.12203055555557
+        },
+        "postflop": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "same_trace": {
+          "paired_hands": 248428,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_after_hero_fold": {
+          "paired_hands": 49,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_other": {
+          "paired_hands": 4,
+          "nonzero_hero_payoff_changes": 3,
+          "contribution_bb100": -0.06635277777777777
+        }
+      }
+    },
+    "492_minus_hybrid": {
+      "public": {
+        "opening": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "other_preflop": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "postflop": {
+          "paired_hands": 78556,
+          "nonzero_hero_payoff_changes": 59730,
+          "contribution_bb100": -22.796775
+        },
+        "same_trace": {
+          "paired_hands": 281444,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_after_hero_fold": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_other": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        }
+      },
+      "mixed": {
+        "opening": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "other_preflop": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "postflop": {
+          "paired_hands": 34222,
+          "nonzero_hero_payoff_changes": 26846,
+          "contribution_bb100": -43.44455555555555
+        },
+        "same_trace": {
+          "paired_hands": 325778,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_after_hero_fold": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_other": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        }
+      },
+      "noregrets": {
+        "opening": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "other_preflop": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "postflop": {
+          "paired_hands": 9876,
+          "nonzero_hero_payoff_changes": 7097,
+          "contribution_bb100": -23.34437777777778
+        },
+        "same_trace": {
+          "paired_hands": 350124,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_after_hero_fold": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        },
+        "opponent_first_other": {
+          "paired_hands": 0,
+          "nonzero_hero_payoff_changes": 0,
+          "contribution_bb100": 0.0
+        }
+      }
+    }
+  },
+  "nonopening_preflop_first_action_change_hybrid_minus_480": {
+    "public": {
+      "call_to_fold": {
+        "paired_hands": 25319,
+        "contribution_bb100": 6.647763888888889
+      },
+      "call_to_raise": {
+        "paired_hands": 19106,
+        "contribution_bb100": -1.1770166666666666
+      },
+      "check_to_raise": {
+        "paired_hands": 1869,
+        "contribution_bb100": 0.7383305555555556
+      },
+      "fold_to_call": {
+        "paired_hands": 20740,
+        "contribution_bb100": -12.669594444444444
+      },
+      "fold_to_raise": {
+        "paired_hands": 26482,
+        "contribution_bb100": -18.799055555555555
+      },
+      "raise_larger": {
+        "paired_hands": 9416,
+        "contribution_bb100": 1.63725
+      },
+      "raise_smaller": {
+        "paired_hands": 6077,
+        "contribution_bb100": -0.6668694444444444
+      },
+      "raise_to_call": {
+        "paired_hands": 13531,
+        "contribution_bb100": -4.900772222222222
+      },
+      "raise_to_check": {
+        "paired_hands": 962,
+        "contribution_bb100": -0.08055833333333333
+      },
+      "raise_to_fold": {
+        "paired_hands": 19452,
+        "contribution_bb100": 4.547327777777777
+      }
+    },
+    "mixed": {
+      "call_to_fold": {
+        "paired_hands": 25171,
+        "contribution_bb100": -54.147130555555556
+      },
+      "call_to_raise": {
+        "paired_hands": 15619,
+        "contribution_bb100": -8.2915
+      },
+      "check_to_raise": {
+        "paired_hands": 842,
+        "contribution_bb100": -0.11605833333333333
+      },
+      "fold_to_call": {
+        "paired_hands": 24279,
+        "contribution_bb100": -19.309897222222222
+      },
+      "fold_to_raise": {
+        "paired_hands": 24108,
+        "contribution_bb100": -14.745691666666668
+      },
+      "raise_larger": {
+        "paired_hands": 7201,
+        "contribution_bb100": -2.5177027777777776
+      },
+      "raise_smaller": {
+        "paired_hands": 5476,
+        "contribution_bb100": 1.5887
+      },
+      "raise_to_call": {
+        "paired_hands": 11417,
+        "contribution_bb100": -3.4626888888888887
+      },
+      "raise_to_check": {
+        "paired_hands": 423,
+        "contribution_bb100": 0.40591666666666665
+      },
+      "raise_to_fold": {
+        "paired_hands": 17354,
+        "contribution_bb100": -30.966825
+      }
+    },
+    "noregrets": {
+      "call_to_fold": {
+        "paired_hands": 22179,
+        "contribution_bb100": -87.16998055555555
+      },
+      "call_to_raise": {
+        "paired_hands": 10417,
+        "contribution_bb100": -9.542908333333333
+      },
+      "check_to_raise": {
+        "paired_hands": 142,
+        "contribution_bb100": -0.17456666666666668
+      },
+      "fold_to_call": {
+        "paired_hands": 27732,
+        "contribution_bb100": -27.51218888888889
+      },
+      "fold_to_raise": {
+        "paired_hands": 18749,
+        "contribution_bb100": -31.232233333333333
+      },
+      "raise_larger": {
+        "paired_hands": 4501,
+        "contribution_bb100": -5.012377777777778
+      },
+      "raise_smaller": {
+        "paired_hands": 3801,
+        "contribution_bb100": -7.341436111111111
+      },
+      "raise_to_call": {
+        "paired_hands": 7300,
+        "contribution_bb100": -2.515311111111111
+      },
+      "raise_to_check": {
+        "paired_hands": 63,
+        "contribution_bb100": -0.08166666666666667
+      },
+      "raise_to_fold": {
+        "paired_hands": 12527,
+        "contribution_bb100": -32.53936111111111
+      }
+    }
+  },
+  "first_action_scope": "Terminal changes per 100 of all hands, grouped at the first differing action. Opponent-first pairs are included in all statistics.",
+  "paired_estimates": {
+    "hybrid_minus_480": {
+      "public": {
+        "mean": -24.37615277777778,
+        "seed_means": [
+          -42.12475833333333,
+          -26.761208333333332,
+          -4.242491666666669
+        ],
+        "simultaneous_lower": -34.6284159736939,
+        "simultaneous_upper": -14.12388958186166
+      },
+      "mixed": {
+        "mean": -133.5117722222222,
+        "seed_means": [
+          -138.28904166666666,
+          -267.43681666666663,
+          5.190541666666668
+        ],
+        "simultaneous_lower": -152.14505227980348,
+        "simultaneous_upper": -114.8784921646409
+      },
+      "noregrets": {
+        "mean": -204.8488361111111,
+        "seed_means": [
+          -222.59885,
+          -376.5154166666667,
+          -15.432241666666663
+        ],
+        "simultaneous_lower": -232.4129937946941,
+        "simultaneous_upper": -177.2846784275281
+      }
+    },
+    "492_minus_hybrid": {
+      "public": {
+        "mean": -22.796775,
+        "seed_means": [
+          -12.029391666666665,
+          -49.443733333333334,
+          -6.917200000000001
+        ],
+        "simultaneous_lower": -30.473985256998283,
+        "simultaneous_upper": -15.119564743001716
+      },
+      "mixed": {
+        "mean": -43.44455555555555,
+        "seed_means": [
+          -22.428183333333333,
+          -55.54735,
+          -52.358133333333335
+        ],
+        "simultaneous_lower": -51.28693542303773,
+        "simultaneous_upper": -35.60217568807337
+      },
+      "noregrets": {
+        "mean": -23.34437777777778,
+        "seed_means": [
+          -20.715816666666665,
+          -15.696625,
+          -33.620691666666666
+        ],
+        "simultaneous_lower": -29.541059561065172,
+        "simultaneous_upper": -17.147695994490388
+      }
+    }
+  }
+}

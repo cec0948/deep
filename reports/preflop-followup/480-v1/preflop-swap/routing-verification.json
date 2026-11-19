@@ -1,0 +1,56 @@
+{
+  "checked_utc": "2026-11-19T03:23:51.782097+00:00",
+  "probe_card_start": 2037630000,
+  "probe_card_count": 16,
+  "scope": "Seeded actions and complete distributions agree with the selected source street on check/call and opening-raise histories",
+  "seeds": {
+    "342": {
+      "matched": {
+        "opening": 16,
+        "preflop": 80,
+        "flop": 96,
+        "turn": 96,
+        "river": 96
+      },
+      "distinct_endpoint_distributions": {
+        "opening": 4,
+        "preflop": 71,
+        "flop": 91,
+        "turn": 81,
+        "river": 84
+      }
+    },
+    "343": {
+      "matched": {
+        "opening": 16,
+        "preflop": 80,
+        "flop": 96,
+        "turn": 96,
+        "river": 96
+      },
+      "distinct_endpoint_distributions": {
+        "opening": 6,
+        "preflop": 63,
+        "flop": 82,
+        "turn": 76,
+        "river": 73
+      }
+    },
+    "344": {
+      "matched": {
+        "opening": 16,
+        "preflop": 80,
+        "flop": 96,
+        "turn": 96,
+        "river": 96
+      },
+      "distinct_endpoint_distributions": {
+        "opening": 4,
+        "preflop": 65,
+        "flop": 78,
+        "turn": 76,
+        "river": 80
+      }
+    }
+  }
+}
