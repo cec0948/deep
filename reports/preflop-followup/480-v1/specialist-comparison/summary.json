@@ -1,0 +1,182 @@
+{
+  "completed_cells": 9,
+  "verified_hands": 1080000,
+  "independent_card_blocks": 20000,
+  "evaluation_deal_seed": 2037540000,
+  "absolute_scores": {
+    "specialist480": {
+      "public": {
+        "mean": -27.242886111111112,
+        "ci95_half_width": 8.922419967560735,
+        "lower": -36.16530607867185,
+        "upper": -18.320466143550377
+      },
+      "mixed": {
+        "mean": 342.9083277777778,
+        "ci95_half_width": 17.50685185101658,
+        "lower": 325.40147592676124,
+        "upper": 360.41517962879436
+      },
+      "noregrets": {
+        "mean": 439.07673611111113,
+        "ci95_half_width": 26.98448607367342,
+        "lower": 412.09225003743774,
+        "upper": 466.0612221847845
+      }
+    },
+    "specialist492": {
+      "public": {
+        "mean": -36.69851666666667,
+        "ci95_half_width": 9.037402303894531,
+        "lower": -45.7359189705612,
+        "upper": -27.66111436277214
+      },
+      "mixed": {
+        "mean": 241.9871611111111,
+        "ci95_half_width": 15.705632591081748,
+        "lower": 226.28152852002935,
+        "upper": 257.69279370219283
+      },
+      "noregrets": {
+        "mean": 357.5996833333333,
+        "ci95_half_width": 23.85289053268642,
+        "lower": 333.74679280064686,
+        "upper": 381.45257386601975
+      }
+    }
+  },
+  "result_sha256": {
+    "public-seed-342-specialist480": "eab83c80204d68a7c9cab48ea65f60d25ebb0c5a7c1332409c01b279d45a3f48",
+    "public-seed-343-specialist480": "ea909cb6ea28c11bcdc008feb25ede32fa9146a2a83daca6a1fff02d3ff4f21d",
+    "public-seed-344-specialist480": "f5d84759629e04a8e539e6d13df9a88482c81ed9da2b1d5dd462d2c59a6b6b82",
+    "mixed-seed-342-specialist480": "64865705ea38d5b7a7d8d13469a4751f27e823f524cb935b7d1437b6b16eee12",
+    "mixed-seed-343-specialist480": "0a6664417fd5b9edef8653a76b7ea30b1976a2e97ba29d77407bd95d031e02ff",
+    "mixed-seed-344-specialist480": "192471249f8e4c6dac0c1430207597c45a346402fb2f8306ecef8c3cfb95d12b",
+    "noregrets-seed-342-specialist480": "c21917ec4a380f021559790ff88cbbd019d1a11fee0d849bb23d8cc3364528f1",
+    "noregrets-seed-343-specialist480": "b9be4f0895d10578c572d285c6928baff73606ec71f071f54b1d1836f484374d",
+    "noregrets-seed-344-specialist480": "a99c68a4e35c1617596d40f35c95961e1250c15416ae56e2a61b34fc030ce36e"
+  },
+  "evaluation_plan_sha256": "0e4330a49474d9bda9f10bdc42e193db6e5e1cf21b5b726b2ce6183885fd994f",
+  "noregrets_fallback_and_decisions": {
+    "public-seed-342-specialist480": [
+      0,
+      0
+    ],
+    "public-seed-343-specialist480": [
+      0,
+      0
+    ],
+    "public-seed-344-specialist480": [
+      0,
+      0
+    ],
+    "mixed-seed-342-specialist480": [
+      112225,
+      462709
+    ],
+    "mixed-seed-343-specialist480": [
+      118157,
+      467988
+    ],
+    "mixed-seed-344-specialist480": [
+      113603,
+      464663
+    ],
+    "noregrets-seed-342-specialist480": [
+      170407,
+      940565
+    ],
+    "noregrets-seed-343-specialist480": [
+      179824,
+      947405
+    ],
+    "noregrets-seed-344-specialist480": [
+      172042,
+      943862
+    ]
+  },
+  "completed_utc": "2026-11-19T00:33:50.034965+00:00",
+  "new_cells": 9,
+  "new_hands": 1080000,
+  "reused_cells": 9,
+  "reused_hands": 1080000,
+  "reused_result_sha256": {
+    "public-seed-342-specialist492": "b64a127a7b7e33a28a5280e9f98a09eda64d2301499dca18f455d93c9558486c",
+    "mixed-seed-342-specialist492": "78a8127ed209d69e6ad26a56121aa1dd9940fbf67061fa47d9b9843a49d69f2f",
+    "noregrets-seed-342-specialist492": "2709419aeccde326d80ab376815dd342bac906fb53fb272ce950258b524f470e",
+    "public-seed-343-specialist492": "c53bb368cedc9cd581b3b8229d8d2a730855af47b13358e212fe86de0cc7b176",
+    "mixed-seed-343-specialist492": "3d1f16fce9ae6ee413ff2fcfdafd85a693451811d6d37c13f3c9489d26435d0e",
+    "noregrets-seed-343-specialist492": "5b7a08fb1e17b9224f6f96835f3dc23d6767a4c02a760c7afd252499a1507e22",
+    "public-seed-344-specialist492": "ca45d8ddb67031304ee5bae224f9fdc7aff5c6daa2de762a45cabec9a08a54a6",
+    "mixed-seed-344-specialist492": "c55e9f7fed5dbbd69b37d8609e69af2e14f92749dfdfbbfcb42af9c6d35e1b8c",
+    "noregrets-seed-344-specialist492": "511e13db3908aaeb276ca4d3a2f9026bc8dbf97fc78d34f025e7dc49a4dffc32"
+  },
+  "specialist492_minus_specialist480": {
+    "public": {
+      "mean": -9.455630555555556,
+      "ci95_half_width": 9.185933118044819,
+      "lower": -18.641563673600373,
+      "upper": -0.2696974375107377,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": 20.544908333333336
+        },
+        {
+          "seed": 343,
+          "mean": -56.89023333333333
+        },
+        {
+          "seed": 344,
+          "mean": 7.9784333333333315
+        }
+      ]
+    },
+    "mixed": {
+      "mean": -100.92116666666666,
+      "ci95_half_width": 14.423261882802693,
+      "lower": -115.34442854946936,
+      "upper": -86.49790478386397,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -93.93624999999999
+        },
+        {
+          "seed": 343,
+          "mean": -219.7157583333333
+        },
+        {
+          "seed": 344,
+          "mean": 10.88850833333333
+        }
+      ]
+    },
+    "noregrets": {
+      "mean": -81.47705277777779,
+      "ci95_half_width": 19.636331357337333,
+      "lower": -101.11338413511513,
+      "upper": -61.84072142044045,
+      "per_seed": [
+        {
+          "seed": 342,
+          "mean": -136.37359166666667
+        },
+        {
+          "seed": 343,
+          "mean": -235.2238333333333
+        },
+        {
+          "seed": 344,
+          "mean": 127.16626666666666
+        }
+      ]
+    }
+  },
+  "source_492_summary_sha256": "a9c0be44cedbe403f7cd943856a11c86413aa1e74dea3ee53068eb76d7e80a51",
+  "source_480_confirmation_sha256": "52d1a10ff493680189afd12fdef4408b4bd8dc980ce56786d7ad7dcba4dfdff1",
+  "assessment": "Paired comparison on the previously evaluated 492 card set",
+  "new_selfplay_iterations": 0,
+  "new_fitting_jobs": 0,
+  "model_promoted": false
+}

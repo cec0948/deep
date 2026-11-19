@@ -4,6 +4,8 @@
 
 ## 최신 실행 확인
 
+- 2026-11-19 프리플롭 후보 직접 비교의 완료 기록은 `artifacts/preflop-followup/480-v1/specialist-comparison/{summary,final-audit}.json`에 있다. 480회 후보 9개 조합을 새로 평가했고 492회 후보 9개 조합은 기존 기록을 사용했다. [같은 카드에서의 비교 결과](poker-preflop-followup-20261118.md#11월-19일-프리플롭-후보-직접-비교)
+
 - 프리플롭 후속 비교 `artifacts/preflop-followup/480-v1/online`은 2026-11-18 13:53 KST에 36셀·432만 핸드 평가를 마쳤다. 두 방식 모두 492회에 도달했고 연장 기준에는 미달했다. 492회 복구 상태는 하나의 `preflop-online-comparison-recovery-v1` 묶음으로 보존했다. `summary.json`, `final-audit.json`, `backup-verification.json`에 종료 근거와 검증 기록이 있다. [후속 실험 기록](poker-preflop-followup-20261118.md)
 
 - 프리플롭 본 실험 `480-v1`은 2026-11-18 11:25 KST에 세 시드의 피팅과 36셀·432만 핸드 평가를 마쳤다. 두 기준 모델에 대한 사전 조건을 모두 통과했고, 검증한 파생 묶음 3,280,171바이트를 비공개 인덱스에 기록했다. `scripts/run_poker_preflop_pilot.py status`와 `result`로 확인한다. [프리플롭 평가와 복원 기록](poker-preflop-pilot-20261118.md)

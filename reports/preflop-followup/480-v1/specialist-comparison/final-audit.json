@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-11-19T00:34:34.751299+00:00",
+  "summary_sha256": "d52a9e719b80108bc54230a001c991c136b4bf82c6f30131ea869e629d79975f",
+  "new_cells": 9,
+  "reused_cells": 9,
+  "raw_hand_records_reaggregated": 2160000,
+  "matched_seat_card_pairs": 1080000,
+  "independent_card_blocks": 20000,
+  "fixed_training_seeds": [
+    342,
+    343,
+    344
+  ],
+  "seats_per_card": 6,
+  "common_opponents_engine_dependencies_and_action_rng": true,
+  "both_policy_routing_and_weights_sha256_verified": true,
+  "raw_records_and_provenance_sha256_verified": 18,
+  "each_source_result_has_terminal_action_replay": true,
+  "absolute_scores_paired_scores_per_seed_and_intervals_recomputed": true,
+  "interval": "Nominal field-specific 95% intervals, paired across cards after averaging six seats and three fixed seeds",
+  "secondary_simultaneous_95_bonferroni_492_minus_480": {
+    "public": {
+      "lower": -20.675497048965333,
+      "upper": 1.7642359378542185
+    },
+    "mixed": {
+      "lower": -118.53800217427991,
+      "upper": -83.30433115905342
+    },
+    "noregrets": {
+      "lower": -105.46122655941473,
+      "upper": -57.492878996140874
+    }
+  },
+  "action_lookup_fallback_rate": {
+    "specialist480/mixed": 0.24652061116844398,
+    "specialist492/mixed": 0.2403344263662852,
+    "specialist480/noregrets": 0.18442937292890257,
+    "specialist492/noregrets": 0.1825829265230877
+  }
+}
