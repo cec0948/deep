@@ -1,0 +1,67 @@
+{
+  "completed_utc": "2026-11-19T09:10:43.850964+00:00",
+  "design": {
+    "first_deal": 2038300000,
+    "maximum_scanned": 12000,
+    "selected_cards": 18,
+    "seed": 342,
+    "button": 0,
+    "seconds_per_root": 5,
+    "action_rng_seed": 818255920,
+    "field": "public",
+    "hero": "scan position modulo six; first eligible decision per distinct deal",
+    "inclusion": "turn, acting hero, exactly two nonfolded players with chips behind",
+    "difference": "search-with-committed-continuation minus frozen steps0 whole-hand BB on selected spots",
+    "fallback": "single attempt per spot; use frozen blueprint to termination on fallback",
+    "opponent": "five fixed public Fullhouse copies; one surviving opponent at measured spot"
+  },
+  "scanned": 133,
+  "independent_eligible_deals": 18,
+  "completed_searches": 17,
+  "root_action_changes": 13,
+  "committed_followup_decisions": 11,
+  "solver_reasons": {
+    "search_complete": 17,
+    "insufficient_actual_bucket_worlds": 1
+  },
+  "baseline_mean_bb": -1.4722222222222223,
+  "search_mean_bb": 2.486111111111111,
+  "paired_change_bb_per_eligible_spot": 3.9583333333333335,
+  "paired_changes_bb": [
+    15.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.25,
+    0.0,
+    -37.5,
+    24.0,
+    0.0,
+    5.0,
+    38.25,
+    0.0,
+    -67.5,
+    95.25
+  ],
+  "conservative_95_hoeffding_bb": [
+    -380.17078319463496,
+    388.0874498613016
+  ],
+  "interval_scope": "Bound for independent bounded selected deals under this sampling protocol; no model-seed uncertainty.",
+  "measured_seconds": {
+    "median": 4.702390573498633,
+    "maximum": 4.744415952001873,
+    "exceeded_budget": 0
+  },
+  "scope": "Selected heads-up turn spots, fixed seed 342, public opponents",
+  "selected_sha256": "fe0ae0b4ec6cc55ca7c6f4ba261e2a7afd7e3c066259dc2f7057a401eec43f6c",
+  "raw_sha256": "1fd5808f4d2c0cd3feffdee7d23384f5b61661a5f1f2514d69aa0e3fa5f995c4",
+  "config_sha256": "1322dcb62c429b8b8f4ab6cdc48d766d8316570c358c6870128e613696059103",
+  "implementation_sha256": "a8bc707b5b554ac9a46ce7c6d8df6d4338964f716bd13891180028ff2f348e5d",
+  "all_branches_terminal_replayed": true,
+  "model_promoted": false
+}

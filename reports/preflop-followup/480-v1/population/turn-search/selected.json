@@ -1,0 +1,902 @@
+{
+  "utc": "2026-11-19T09:09:18.289964+00:00",
+  "scanned": 133,
+  "spots": [
+    {
+      "card": 2038300000,
+      "hero": 0,
+      "nonce": 14911778852178665018,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "raise",
+          "to": 225,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 500,
+          "seat": 0
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 750,
+          "seat": 2
+        }
+      ]
+    },
+    {
+      "card": 2038300011,
+      "hero": 5,
+      "nonce": 5617192448484443362,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "call",
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        },
+        {
+          "kind": "call",
+          "seat": 1
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 1
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 300,
+          "seat": 5
+        },
+        {
+          "kind": "call",
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 1
+        }
+      ]
+    },
+    {
+      "card": 2038300013,
+      "hero": 1,
+      "nonce": 11712475436291743544,
+      "history": [
+        {
+          "kind": "call",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 250,
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        },
+        {
+          "kind": "call",
+          "seat": 3
+        },
+        {
+          "kind": "raise",
+          "to": 300,
+          "seat": 1
+        },
+        {
+          "kind": "raise",
+          "to": 900,
+          "seat": 3
+        },
+        {
+          "kind": "raise",
+          "to": 3300,
+          "seat": 1
+        },
+        {
+          "kind": "call",
+          "seat": 3
+        }
+      ]
+    },
+    {
+      "card": 2038300017,
+      "hero": 5,
+      "nonce": 17595506052994328452,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "raise",
+          "to": 225,
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 525,
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        },
+        {
+          "kind": "call",
+          "seat": 4
+        },
+        {
+          "kind": "check",
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 1200,
+          "seat": 5
+        },
+        {
+          "kind": "call",
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 1800,
+          "seat": 4
+        }
+      ]
+    },
+    {
+      "card": 2038300024,
+      "hero": 0,
+      "nonce": 8895270684954640409,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "raise",
+          "to": 225,
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "raise",
+          "to": 525,
+          "seat": 0
+        },
+        {
+          "kind": "call",
+          "seat": 1
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "check",
+          "seat": 1
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 900,
+          "seat": 0
+        },
+        {
+          "kind": "call",
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 1
+        }
+      ]
+    },
+    {
+      "card": 2038300025,
+      "hero": 1,
+      "nonce": 15509354116167262889,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 225,
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 500,
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        },
+        {
+          "kind": "call",
+          "seat": 5
+        },
+        {
+          "kind": "check",
+          "seat": 1
+        },
+        {
+          "kind": "check",
+          "seat": 5
+        }
+      ]
+    },
+    {
+      "card": 2038300026,
+      "hero": 2,
+      "nonce": 2782737250872178652,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 225,
+          "seat": 5
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 725,
+          "seat": 2
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        }
+      ]
+    },
+    {
+      "card": 2038300042,
+      "hero": 0,
+      "nonce": 9259617467052456856,
+      "history": [
+        {
+          "kind": "call",
+          "seat": 3
+        },
+        {
+          "kind": "call",
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 3
+        },
+        {
+          "kind": "check",
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 450,
+          "seat": 0
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        },
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        }
+      ]
+    },
+    {
+      "card": 2038300069,
+      "hero": 3,
+      "nonce": 7690083936569566542,
+      "history": [
+        {
+          "kind": "call",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 3
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        }
+      ]
+    },
+    {
+      "card": 2038300079,
+      "hero": 1,
+      "nonce": 2674250511292167033,
+      "history": [
+        {
+          "kind": "call",
+          "seat": 3
+        },
+        {
+          "kind": "call",
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 300,
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        },
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "call",
+          "seat": 4
+        },
+        {
+          "kind": "check",
+          "seat": 1
+        },
+        {
+          "kind": "check",
+          "seat": 4
+        }
+      ]
+    },
+    {
+      "card": 2038300080,
+      "hero": 2,
+      "nonce": 9663565361091897757,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 350,
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 375,
+          "seat": 2
+        },
+        {
+          "kind": "call",
+          "seat": 5
+        }
+      ]
+    },
+    {
+      "card": 2038300082,
+      "hero": 4,
+      "nonce": 7740873998506695499,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "call",
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "call",
+          "seat": 1
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 1
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 400,
+          "seat": 4
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ]
+    },
+    {
+      "card": 2038300101,
+      "hero": 5,
+      "nonce": 2825105869058937643,
+      "history": [
+        {
+          "kind": "call",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 450,
+          "seat": 5
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        },
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "check",
+          "seat": 5
+        },
+        {
+          "kind": "check",
+          "seat": 0
+        }
+      ]
+    },
+    {
+      "card": 2038300104,
+      "hero": 2,
+      "nonce": 17807017388538395806,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 225,
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 250,
+          "seat": 5
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        }
+      ]
+    },
+    {
+      "card": 2038300111,
+      "hero": 3,
+      "nonce": 18207010264924680290,
+      "history": [
+        {
+          "kind": "raise",
+          "to": 350,
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 850,
+          "seat": 3
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        }
+      ]
+    },
+    {
+      "card": 2038300120,
+      "hero": 0,
+      "nonce": 4352052088668510037,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "call",
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 175,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        },
+        {
+          "kind": "call",
+          "seat": 4
+        },
+        {
+          "kind": "check",
+          "seat": 4
+        }
+      ]
+    },
+    {
+      "card": 2038300128,
+      "hero": 2,
+      "nonce": 1216693971482385746,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "raise",
+          "to": 350,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "raise",
+          "to": 725,
+          "seat": 2
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 1500,
+          "seat": 2
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        }
+      ]
+    },
+    {
+      "card": 2038300132,
+      "hero": 0,
+      "nonce": 3861381351477068263,
+      "history": [
+        {
+          "kind": "fold",
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        },
+        {
+          "kind": "raise",
+          "to": 225,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 0
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        }
+      ]
+    }
+  ]
+}

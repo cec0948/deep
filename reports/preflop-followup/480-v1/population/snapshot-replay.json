@@ -1,0 +1,21 @@
+{
+  "card_blocks": 8,
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "fields": [
+    "public",
+    "mixed",
+    "noregrets"
+  ],
+  "reverified_hands": 432,
+  "selected_endpoint_counts": {
+    "specialist480": 216,
+    "fixed504": 216
+  },
+  "full_action_traces_and_terminal_payoffs_matched": true,
+  "independent_new_strength_samples": 0,
+  "additional_check": "One additional verifier invocation under concurrent evaluation exceeded the engine response deadline."
+}

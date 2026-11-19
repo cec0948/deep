@@ -1,0 +1,1452 @@
+[
+  {
+    "card": 2038300000,
+    "hero": 0,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 3750,
+        "seat": 0
+      },
+      "utility_bb": 15.25,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 3750,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "call",
+        "seat": 0
+      },
+      "utility_bb": 30.25,
+      "suffix": [
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 1500,
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 7500,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 1,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          12,
+          20,
+          10
+        ],
+        "complete_worlds": 42,
+        "estimated_restricted_game_gap_bb": 0.20881148254321147,
+        "terminal_profile_rollouts": 3360,
+        "root_action_worlds": 210,
+        "hero_mode_changed_payoff": 25,
+        "opponent_mode_changed_payoff": 38,
+        "elapsed_seconds": 4.719559412002127,
+        "measured_seconds": 4.719605301001138
+      }
+    },
+    "difference_bb": 15.0
+  },
+  {
+    "card": 2038300011,
+    "hero": 5,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 450,
+        "seat": 5
+      },
+      "utility_bb": 5.0,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 450,
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "check",
+        "seat": 5
+      },
+      "utility_bb": 5.0,
+      "suffix": [
+        {
+          "kind": "check",
+          "seat": 5
+        },
+        {
+          "kind": "check",
+          "seat": 1
+        },
+        {
+          "kind": "raise",
+          "to": 450,
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        }
+      ],
+      "followup_continuation_decisions": 1,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          12,
+          9,
+          4
+        ],
+        "complete_worlds": 25,
+        "estimated_restricted_game_gap_bb": 0.3339550820009407,
+        "terminal_profile_rollouts": 1600,
+        "root_action_worlds": 100,
+        "hero_mode_changed_payoff": 46,
+        "opponent_mode_changed_payoff": 54,
+        "elapsed_seconds": 4.716576377002639,
+        "measured_seconds": 4.716622706997441
+      }
+    },
+    "difference_bb": 0.0
+  },
+  {
+    "card": 2038300013,
+    "hero": 1,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 6450,
+        "seat": 1
+      },
+      "utility_bb": -100.0,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 6450,
+          "seat": 1
+        },
+        {
+          "kind": "call",
+          "seat": 3
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "raise",
+        "to": 6450,
+        "seat": 1
+      },
+      "utility_bb": -100.0,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 6450,
+          "seat": 1
+        },
+        {
+          "kind": "call",
+          "seat": 3
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          16,
+          31,
+          2
+        ],
+        "complete_worlds": 49,
+        "estimated_restricted_game_gap_bb": 1.011706606555009,
+        "terminal_profile_rollouts": 2352,
+        "root_action_worlds": 147,
+        "hero_mode_changed_payoff": 32,
+        "opponent_mode_changed_payoff": 83,
+        "elapsed_seconds": 4.669598571999813,
+        "measured_seconds": 4.669643670997175
+      }
+    },
+    "difference_bb": 0.0
+  },
+  {
+    "card": 2038300017,
+    "hero": 5,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 8275,
+        "seat": 5
+      },
+      "utility_bb": 36.75,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 8275,
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "call",
+        "seat": 5
+      },
+      "utility_bb": 36.75,
+      "suffix": [
+        {
+          "kind": "call",
+          "seat": 5
+        },
+        {
+          "kind": "check",
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 6475,
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        }
+      ],
+      "followup_continuation_decisions": 1,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          33,
+          15,
+          0
+        ],
+        "complete_worlds": 48,
+        "estimated_restricted_game_gap_bb": 0.2819966986831197,
+        "terminal_profile_rollouts": 3072,
+        "root_action_worlds": 192,
+        "hero_mode_changed_payoff": 25,
+        "opponent_mode_changed_payoff": 57,
+        "elapsed_seconds": 4.698468649999995,
+        "measured_seconds": 4.698520877998817
+      }
+    },
+    "difference_bb": 0.0
+  },
+  {
+    "card": 2038300024,
+    "hero": 0,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 3600,
+        "seat": 0
+      },
+      "utility_bb": 21.75,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 3600,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "raise",
+        "to": 3600,
+        "seat": 0
+      },
+      "utility_bb": 21.75,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 3600,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 1
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          0,
+          20,
+          7
+        ],
+        "complete_worlds": 27,
+        "estimated_restricted_game_gap_bb": 0.3905410809797596,
+        "terminal_profile_rollouts": 1728,
+        "root_action_worlds": 108,
+        "hero_mode_changed_payoff": 33,
+        "opponent_mode_changed_payoff": 45,
+        "elapsed_seconds": 4.713977542000066,
+        "measured_seconds": 4.714024994002102
+      }
+    },
+    "difference_bb": 0.0
+  },
+  {
+    "card": 2038300025,
+    "hero": 1,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 1100,
+        "seat": 1
+      },
+      "utility_bb": 6.0,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 1100,
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "raise",
+        "to": 1100,
+        "seat": 1
+      },
+      "utility_bb": 6.0,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 1100,
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": {
+        "used": false,
+        "reason": "insufficient_actual_bucket_worlds",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          2,
+          40,
+          2
+        ],
+        "complete_worlds": 44,
+        "estimated_restricted_game_gap_bb": 0.04474991147312757,
+        "terminal_profile_rollouts": 2816,
+        "root_action_worlds": 176,
+        "hero_mode_changed_payoff": 46,
+        "opponent_mode_changed_payoff": 43,
+        "elapsed_seconds": 4.74039170299875,
+        "measured_seconds": 4.740434167000785
+      }
+    },
+    "difference_bb": 0.0
+  },
+  {
+    "card": 2038300026,
+    "hero": 2,
+    "baseline": {
+      "root_action": {
+        "kind": "check",
+        "seat": 2
+      },
+      "utility_bb": -9.5,
+      "suffix": [
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 1088,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "check",
+        "seat": 2
+      },
+      "utility_bb": -9.5,
+      "suffix": [
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 1088,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 1,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          3,
+          24,
+          10
+        ],
+        "complete_worlds": 37,
+        "estimated_restricted_game_gap_bb": 0.21265750088039148,
+        "terminal_profile_rollouts": 2368,
+        "root_action_worlds": 148,
+        "hero_mode_changed_payoff": 28,
+        "opponent_mode_changed_payoff": 44,
+        "elapsed_seconds": 4.701281221001409,
+        "measured_seconds": 4.701327409999067
+      }
+    },
+    "difference_bb": 0.0
+  },
+  {
+    "card": 2038300042,
+    "hero": 0,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 675,
+        "seat": 0
+      },
+      "utility_bb": 8.0,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 675,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "check",
+        "seat": 0
+      },
+      "utility_bb": 8.0,
+      "suffix": [
+        {
+          "kind": "check",
+          "seat": 0
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 675,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 1,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          0,
+          11,
+          14
+        ],
+        "complete_worlds": 25,
+        "estimated_restricted_game_gap_bb": 0.19206008464185498,
+        "terminal_profile_rollouts": 1600,
+        "root_action_worlds": 100,
+        "hero_mode_changed_payoff": 18,
+        "opponent_mode_changed_payoff": 39,
+        "elapsed_seconds": 4.701797919002274,
+        "measured_seconds": 4.701865200000611
+      }
+    },
+    "difference_bb": 0.0
+  },
+  {
+    "card": 2038300069,
+    "hero": 3,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 125,
+        "seat": 3
+      },
+      "utility_bb": 2.75,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 125,
+          "seat": 3
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 500,
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "raise",
+        "to": 9900,
+        "seat": 3
+      },
+      "utility_bb": 1.5,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 9900,
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          0,
+          31,
+          8
+        ],
+        "complete_worlds": 39,
+        "estimated_restricted_game_gap_bb": 0.048721889076069225,
+        "terminal_profile_rollouts": 2496,
+        "root_action_worlds": 156,
+        "hero_mode_changed_payoff": 18,
+        "opponent_mode_changed_payoff": 32,
+        "elapsed_seconds": 4.700485436998861,
+        "measured_seconds": 4.70053237799948
+      }
+    },
+    "difference_bb": -1.25
+  },
+  {
+    "card": 2038300079,
+    "hero": 1,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 800,
+        "seat": 1
+      },
+      "utility_bb": 5.0,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 800,
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "raise",
+        "to": 400,
+        "seat": 1
+      },
+      "utility_bb": 5.0,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 400,
+          "seat": 1
+        },
+        {
+          "kind": "fold",
+          "seat": 4
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          0,
+          30,
+          6
+        ],
+        "complete_worlds": 36,
+        "estimated_restricted_game_gap_bb": 0.3251137801743136,
+        "terminal_profile_rollouts": 2304,
+        "root_action_worlds": 144,
+        "hero_mode_changed_payoff": 34,
+        "opponent_mode_changed_payoff": 62,
+        "elapsed_seconds": 4.675471221999032,
+        "measured_seconds": 4.675575830999151
+      }
+    },
+    "difference_bb": 0.0
+  },
+  {
+    "card": 2038300080,
+    "hero": 2,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 1500,
+        "seat": 2
+      },
+      "utility_bb": 22.75,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 1500,
+          "seat": 2
+        },
+        {
+          "kind": "call",
+          "seat": 5
+        },
+        {
+          "kind": "raise",
+          "to": 2250,
+          "seat": 2
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "raise",
+        "to": 750,
+        "seat": 2
+      },
+      "utility_bb": -14.75,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 750,
+          "seat": 2
+        },
+        {
+          "kind": "call",
+          "seat": 5
+        },
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "check",
+          "seat": 5
+        }
+      ],
+      "followup_continuation_decisions": 1,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          0,
+          33,
+          6
+        ],
+        "complete_worlds": 39,
+        "estimated_restricted_game_gap_bb": 0.25170737001972476,
+        "terminal_profile_rollouts": 2496,
+        "root_action_worlds": 156,
+        "hero_mode_changed_payoff": 40,
+        "opponent_mode_changed_payoff": 73,
+        "elapsed_seconds": 4.722834344000148,
+        "measured_seconds": 4.722872631999053
+      }
+    },
+    "difference_bb": -37.5
+  },
+  {
+    "card": 2038300082,
+    "hero": 4,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 1200,
+        "seat": 4
+      },
+      "utility_bb": -35.0,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 1200,
+          "seat": 4
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 1800,
+          "seat": 4
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "check",
+        "seat": 4
+      },
+      "utility_bb": -11.0,
+      "suffix": [
+        {
+          "kind": "check",
+          "seat": 4
+        },
+        {
+          "kind": "check",
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 600,
+          "seat": 4
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        }
+      ],
+      "followup_continuation_decisions": 1,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          0,
+          39,
+          8
+        ],
+        "complete_worlds": 47,
+        "estimated_restricted_game_gap_bb": 0.3097479680634567,
+        "terminal_profile_rollouts": 3008,
+        "root_action_worlds": 188,
+        "hero_mode_changed_payoff": 45,
+        "opponent_mode_changed_payoff": 57,
+        "elapsed_seconds": 4.744108028000483,
+        "measured_seconds": 4.744415952001873
+      }
+    },
+    "difference_bb": 24.0
+  },
+  {
+    "card": 2038300101,
+    "hero": 5,
+    "baseline": {
+      "root_action": {
+        "kind": "check",
+        "seat": 5
+      },
+      "utility_bb": -4.5,
+      "suffix": [
+        {
+          "kind": "check",
+          "seat": 5
+        },
+        {
+          "kind": "raise",
+          "to": 575,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "check",
+        "seat": 5
+      },
+      "utility_bb": -4.5,
+      "suffix": [
+        {
+          "kind": "check",
+          "seat": 5
+        },
+        {
+          "kind": "raise",
+          "to": 575,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 5
+        }
+      ],
+      "followup_continuation_decisions": 1,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          29,
+          10,
+          0
+        ],
+        "complete_worlds": 39,
+        "estimated_restricted_game_gap_bb": 0.14397071495226843,
+        "terminal_profile_rollouts": 2496,
+        "root_action_worlds": 156,
+        "hero_mode_changed_payoff": 38,
+        "opponent_mode_changed_payoff": 51,
+        "elapsed_seconds": 4.70287424399794,
+        "measured_seconds": 4.702915946996654
+      }
+    },
+    "difference_bb": 0.0
+  },
+  {
+    "card": 2038300104,
+    "hero": 2,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 500,
+        "seat": 2
+      },
+      "utility_bb": -9.75,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 500,
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 1500,
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "check",
+        "seat": 2
+      },
+      "utility_bb": -4.75,
+      "suffix": [
+        {
+          "kind": "check",
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 500,
+          "seat": 5
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 1,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          0,
+          19,
+          13
+        ],
+        "complete_worlds": 32,
+        "estimated_restricted_game_gap_bb": 0.3387567875526688,
+        "terminal_profile_rollouts": 2048,
+        "root_action_worlds": 128,
+        "hero_mode_changed_payoff": 31,
+        "opponent_mode_changed_payoff": 63,
+        "elapsed_seconds": 4.712464937001641,
+        "measured_seconds": 4.712660422999761
+      }
+    },
+    "difference_bb": 5.0
+  },
+  {
+    "card": 2038300111,
+    "hero": 3,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 8800,
+        "seat": 3
+      },
+      "utility_bb": 13.5,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 8800,
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "raise",
+        "to": 1275,
+        "seat": 3
+      },
+      "utility_bb": 51.75,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 1275,
+          "seat": 3
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        },
+        {
+          "kind": "check",
+          "seat": 3
+        },
+        {
+          "kind": "raise",
+          "to": 2550,
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 7525,
+          "seat": 3
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        }
+      ],
+      "followup_continuation_decisions": 2,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          9,
+          35,
+          10
+        ],
+        "complete_worlds": 54,
+        "estimated_restricted_game_gap_bb": 0.47436292554728965,
+        "terminal_profile_rollouts": 3456,
+        "root_action_worlds": 216,
+        "hero_mode_changed_payoff": 39,
+        "opponent_mode_changed_payoff": 92,
+        "elapsed_seconds": 4.667015723000077,
+        "measured_seconds": 4.667061091000505
+      }
+    },
+    "difference_bb": 38.25
+  },
+  {
+    "card": 2038300120,
+    "hero": 0,
+    "baseline": {
+      "root_action": {
+        "kind": "check",
+        "seat": 0
+      },
+      "utility_bb": -100.0,
+      "suffix": [
+        {
+          "kind": "check",
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 350,
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 1050,
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 3850,
+          "seat": 4
+        },
+        {
+          "kind": "raise",
+          "to": 8050,
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 9725,
+          "seat": 4
+        },
+        {
+          "kind": "call",
+          "seat": 0
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "raise",
+        "to": 9725,
+        "seat": 0
+      },
+      "utility_bb": -100.0,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 9725,
+          "seat": 0
+        },
+        {
+          "kind": "call",
+          "seat": 4
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          15,
+          21,
+          0
+        ],
+        "complete_worlds": 36,
+        "estimated_restricted_game_gap_bb": 0.2999823458416646,
+        "terminal_profile_rollouts": 2304,
+        "root_action_worlds": 144,
+        "hero_mode_changed_payoff": 19,
+        "opponent_mode_changed_payoff": 51,
+        "elapsed_seconds": 4.688134158997855,
+        "measured_seconds": 4.688396494999324
+      }
+    },
+    "difference_bb": 0.0
+  },
+  {
+    "card": 2038300128,
+    "hero": 2,
+    "baseline": {
+      "root_action": {
+        "kind": "raise",
+        "to": 2250,
+        "seat": 2
+      },
+      "utility_bb": 90.25,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 2250,
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 6750,
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 7775,
+          "seat": 2
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "raise",
+        "to": 7775,
+        "seat": 2
+      },
+      "utility_bb": 22.75,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 7775,
+          "seat": 2
+        },
+        {
+          "kind": "fold",
+          "seat": 0
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          14,
+          28,
+          4
+        ],
+        "complete_worlds": 46,
+        "estimated_restricted_game_gap_bb": 0.19814823027231654,
+        "terminal_profile_rollouts": 2944,
+        "root_action_worlds": 184,
+        "hero_mode_changed_payoff": 24,
+        "opponent_mode_changed_payoff": 61,
+        "elapsed_seconds": 4.680777393998142,
+        "measured_seconds": 4.680939557998499
+      }
+    },
+    "difference_bb": -67.5
+  },
+  {
+    "card": 2038300132,
+    "hero": 0,
+    "baseline": {
+      "root_action": {
+        "kind": "check",
+        "seat": 0
+      },
+      "utility_bb": 5.25,
+      "suffix": [
+        {
+          "kind": "check",
+          "seat": 0
+        },
+        {
+          "kind": "raise",
+          "to": 250,
+          "seat": 2
+        },
+        {
+          "kind": "raise",
+          "to": 1250,
+          "seat": 0
+        },
+        {
+          "kind": "fold",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": null
+    },
+    "proposed": {
+      "root_action": {
+        "kind": "raise",
+        "to": 9775,
+        "seat": 0
+      },
+      "utility_bb": 100.5,
+      "suffix": [
+        {
+          "kind": "raise",
+          "to": 9775,
+          "seat": 0
+        },
+        {
+          "kind": "call",
+          "seat": 2
+        }
+      ],
+      "followup_continuation_decisions": 0,
+      "search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          56,
+          26,
+          0
+        ],
+        "complete_worlds": 82,
+        "estimated_restricted_game_gap_bb": 0.26937934133411456,
+        "terminal_profile_rollouts": 5248,
+        "root_action_worlds": 328,
+        "hero_mode_changed_payoff": 54,
+        "opponent_mode_changed_payoff": 91,
+        "elapsed_seconds": 4.707816078000178,
+        "measured_seconds": 4.70792578200053
+      }
+    },
+    "difference_bb": 95.25
+  }
+]

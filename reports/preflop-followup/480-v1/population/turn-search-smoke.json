@@ -1,0 +1,214 @@
+{
+  "protocol": "one public fixture at both decision budgets; no measured strength outcome",
+  "code_sha256": "a8bc707b5b554ac9a46ce7c6d8df6d4338964f716bd13891180028ff2f348e5d",
+  "request": {
+    "hero": 2,
+    "button": 0,
+    "hole": [
+      "As",
+      "Kd"
+    ],
+    "board": [
+      "2c",
+      "7d",
+      "Jh",
+      "9c"
+    ],
+    "actions": [
+      {
+        "seat": 3,
+        "kind": "call"
+      },
+      {
+        "seat": 4,
+        "kind": "fold"
+      },
+      {
+        "seat": 5,
+        "kind": "fold"
+      },
+      {
+        "seat": 0,
+        "kind": "fold"
+      },
+      {
+        "seat": 1,
+        "kind": "fold"
+      },
+      {
+        "seat": 2,
+        "kind": "check"
+      },
+      {
+        "seat": 2,
+        "kind": "check"
+      },
+      {
+        "seat": 3,
+        "kind": "check"
+      }
+    ],
+    "seed": 19,
+    "hand_id": "smoke-turn-seed342"
+  },
+  "model": {
+    "path": "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-342/specialist.json",
+    "sha256": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6"
+  },
+  "results": {
+    "5": {
+      "ok": true,
+      "action": {
+        "kind": "raise",
+        "to": 250
+      },
+      "distribution": [
+        {
+          "action": {
+            "kind": "check"
+          },
+          "probability": 0.0018714850509517402
+        },
+        {
+          "action": {
+            "kind": "raise",
+            "to": 125
+          },
+          "probability": 0.0020733693039800037
+        },
+        {
+          "action": {
+            "kind": "raise",
+            "to": 250
+          },
+          "probability": 0.9944926456450683
+        },
+        {
+          "action": {
+            "kind": "raise",
+            "to": 9900
+          },
+          "probability": 0.0015625
+        }
+      ],
+      "policy_source": "experimental_multivalued_turn",
+      "backend": "fullhouse",
+      "model_type": "compact_advantage",
+      "model_sha256": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+      "model_iterations": null,
+      "strength_verified": false,
+      "players": 6,
+      "starting_stack_bb": 100,
+      "pot": 250,
+      "to_call": 0,
+      "raise_bounds": [
+        100,
+        9900
+      ],
+      "street": "Turn",
+      "turn_search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 5,
+        "root_bucket_counts": [
+          69,
+          23,
+          0
+        ],
+        "complete_worlds": 92,
+        "estimated_restricted_game_gap_bb": 0.05114829320484404,
+        "terminal_profile_rollouts": 5888,
+        "root_action_worlds": 368,
+        "hero_mode_changed_payoff": 99,
+        "opponent_mode_changed_payoff": 129,
+        "elapsed_seconds": 4.700456657999894,
+        "protocol_elapsed_seconds": 4.701797832000011
+      }
+    },
+    "10": {
+      "ok": true,
+      "action": {
+        "kind": "raise",
+        "to": 250
+      },
+      "distribution": [
+        {
+          "action": {
+            "kind": "check"
+          },
+          "probability": 0.002982483252013756
+        },
+        {
+          "action": {
+            "kind": "raise",
+            "to": 125
+          },
+          "probability": 0.004633515219595009
+        },
+        {
+          "action": {
+            "kind": "raise",
+            "to": 250
+          },
+          "probability": 0.9908215015283911
+        },
+        {
+          "action": {
+            "kind": "raise",
+            "to": 9900
+          },
+          "probability": 0.0015625
+        }
+      ],
+      "policy_source": "experimental_multivalued_turn",
+      "backend": "fullhouse",
+      "model_type": "compact_advantage",
+      "model_sha256": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+      "model_iterations": null,
+      "strength_verified": false,
+      "players": 6,
+      "starting_stack_bb": 100,
+      "pot": 250,
+      "to_call": 0,
+      "raise_bounds": [
+        100,
+        9900
+      ],
+      "street": "Turn",
+      "turn_search": {
+        "used": true,
+        "reason": "search_complete",
+        "strength_verified": false,
+        "horizon": "one_root_action",
+        "continuation_modes": [
+          "blueprint",
+          "fold",
+          "check_call",
+          "raise"
+        ],
+        "requested_seconds": 10,
+        "root_bucket_counts": [
+          72,
+          24,
+          0
+        ],
+        "complete_worlds": 96,
+        "estimated_restricted_game_gap_bb": 0.06122670802062102,
+        "terminal_profile_rollouts": 6144,
+        "root_action_worlds": 384,
+        "hero_mode_changed_payoff": 107,
+        "opponent_mode_changed_payoff": 137,
+        "elapsed_seconds": 3.5479816289989685,
+        "protocol_elapsed_seconds": 3.5483177559981414
+      }
+    }
+  }
+}

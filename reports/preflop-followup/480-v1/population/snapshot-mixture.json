@@ -1,0 +1,41 @@
+{
+  "endpoint_weights": {
+    "480": 0.5,
+    "504": 0.5
+  },
+  "independent_card_blocks": 20000,
+  "first_card": 2037800000,
+  "last_card": 2037819999,
+  "reused_terminal_hands": 2160000,
+  "new_hands": 0,
+  "new_fitting_steps": 0,
+  "new_selfplay_rounds": 0,
+  "source_summary_sha256": "6cc8d7759a091ce14ed417088e82917a9fc05792e20d51d2456ca8305df08d9c",
+  "scope": "Retrospective on the fixed 504 study opponents, marginal over the private hand coin",
+  "fields": {
+    "public": {
+      "mixture_bb100": -58.45045,
+      "change_vs_480_bb100": -24.848266666666667,
+      "change_simultaneous_95": [
+        -29.006018738045693,
+        -20.69051459528764
+      ]
+    },
+    "mixed": {
+      "mixture_bb100": 321.8593375,
+      "change_vs_480_bb100": -30.569268055555558,
+      "change_simultaneous_95": [
+        -34.753074077443564,
+        -26.38546203366755
+      ]
+    },
+    "noregrets": {
+      "mixture_bb100": 442.1743736111111,
+      "change_vs_480_bb100": -12.5852375,
+      "change_simultaneous_95": [
+        -15.831231626528798,
+        -9.339243373471202
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "registered": "2026-11-19T09:09:10.501080+00:00",
+  "design": {
+    "first_deal": 2038300000,
+    "maximum_scanned": 12000,
+    "selected_cards": 18,
+    "seed": 342,
+    "button": 0,
+    "seconds_per_root": 5,
+    "action_rng_seed": 818255920,
+    "field": "public",
+    "hero": "scan position modulo six; first eligible decision per distinct deal",
+    "inclusion": "turn, acting hero, exactly two nonfolded players with chips behind",
+    "difference": "search-with-committed-continuation minus frozen steps0 whole-hand BB on selected spots",
+    "fallback": "single attempt per spot; use frozen blueprint to termination on fallback",
+    "opponent": "five fixed public Fullhouse copies; one surviving opponent at measured spot"
+  },
+  "model": {
+    "path": "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-342/specialist.json",
+    "sha256": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6"
+  },
+  "source": "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/source",
+  "evaluation_deal_seed": 2038300000,
+  "evaluation_deals": 12000,
+  "dependencies": {
+    "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-342/specialist.npz": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/source/bot/features.py": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-342/checkpoints/iter-00480/current.npz": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+    "/workspace/deep/scripts/poker_preflop_specialist.py": "2e82de0aea77b750dbad7f005154f3122f4d202939764087ff3524a771cd4ba5",
+    "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-342/specialist.json": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6",
+    "/workspace/deep/scripts/evaluate_average_baseline.py": "3fb7a5e59db895a24febd63163aa637074f29104159757f2c30b12bfea5bd4dc",
+    "/workspace/deep/scripts/poker_average_runtime.py": "58c31e9191b0fa3410d7f5c3eeb32fd8fbdacb456f927649215f7576d2b79af3",
+    "/workspace/deep/scripts/poker_average_inference.py": "d2c4071bc8befafdb1961eaf4f070584deb93d97bf3ed81fed940ad54a9456e3",
+    "/workspace/deep/scripts/rich_poker_runtime.py": "2f6e87c4244e433a3029d897744a7fe63a060c827704c80db1d81ef18c6585d8",
+    "/workspace/deep/scripts/rich_poker_observation.py": "c68e9b5e8221966d28f5221b4c37c469d317ea3f4a34a8c13ab28fec5fe1de59",
+    "/workspace/deep/scripts/poker_public_state.py": "1e8931ee22217cbd1c2bce1ee91690990017bcae57dcaa23020edd4694c9036d",
+    "/workspace/deep/scripts/fullhouse_runtime.py": "6185db012943aaaf1957fe9ce8fa2b6549430fdf4cba206f18754a5abb1b492f",
+    "/workspace/deep/scripts/fullhouse_v4_runtime.py": "97c8008a201e45d700aa6e99460cd49ad392f42725d0e22a9c99a5cf35fe0e21",
+    "/workspace/deep/scripts/regret_partition.py": "b794d8dfcf14b0bff74311fac175c978c4d7fa088851febc8d53be8c6d8beacc",
+    "/workspace/deep/.cache/noregrets/target/release/poker-bridge": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+    "/workspace/deep/configs/fullhouse-model.json": "24fdf60e5698c8baa6737eaa1dd9c41bab7c94f9c5f8b05f7292d2b9e346e9ae",
+    "/workspace/deep/.cache/fullhouse-bot/bot/features.py": "b43361365ed911f358b3588f0c487614029158bf1420c5ffec8260bd427475c8",
+    "/workspace/deep/.cache/fullhouse-bot/bot/deep_cfr_lookup.py": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20",
+    "/workspace/deep/.cache/fullhouse-bot/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/preflop-dose/evaluation-plan.json": "642491686308caeaef39f80e90277f8e77d437a6f80b37cae1fa4b47a8a6c4d6",
+    "/workspace/deep/.cache/fullhouse-bot/data/deep_cfr_model.npz": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+    "/workspace/deep/scripts/compare_poker_multivalued_turn.py": "2eb13665674d038a7431519c0ac11723921fc4559aefb07227c631acd5993dbc",
+    "/workspace/deep/scripts/poker_multivalued_turn.py": "a8bc707b5b554ac9a46ce7c6d8df6d4338964f716bd13891180028ff2f348e5d",
+    "/workspace/deep/scripts/poker_river_runtime.py": "0b5b48b3b285598f2f9acd26a621f17643673e5e8605a46e105c10ebe0877eb1",
+    "/workspace/deep/.cache/noregrets/target/release/poker-rules": "e93c7056991605304234d48bc92b1fbcbb66320beb9b06a7fea8e9b48eb19901"
+  }
+}
