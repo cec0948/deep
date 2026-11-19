@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-11-19T03:22:25.158993+00:00",
+  "first_card": 2037600000,
+  "deals": 20000,
+  "source_summary_sha256": "b1f9a3bf1721d87c535955b1f4e038ee111a3f8589b8e4db7a6d2b0fb76b7c9c",
+  "source_audit_sha256": "78ef335bb0895535c0e67f38d621b6480148032325a04c63411ffe23579d044a",
+  "preflop_from": "warm492",
+  "postflop_from": "specialist480",
+  "new_selfplay_iterations": 0,
+  "new_fitting_jobs": 0,
+  "independent_new_cards": false,
+  "new_cells": 9,
+  "reused_cells": 18,
+  "model_promotion": false,
+  "contrast_order": [
+    "hybrid_minus_480",
+    "492_minus_hybrid"
+  ],
+  "inference": "Paired original card blocks, average seats and fixed seeds; simultaneous 95% across three fields per contrast"
+}
