@@ -1,0 +1,573 @@
+{
+  "completed_utc": "2026-11-19T07:51:39.513420+00:00",
+  "completed": true,
+  "plan_sha256": "ac9e2c345ecbddbf14ffc4577246b165ad8b27a50e259602891a2214a9fc0ac6",
+  "source_summary_sha256": "6298d5e5a89f3212bed1f706376e41b298ec06d60f70e0f32d474358946e9610",
+  "source_audit_sha256": "5f502fe9459f7f985166ba5b138ce35c9460161042e49c2847d4004170aa50c3",
+  "prior_discovery": {
+    "public": {
+      "call_to_fold_pairs": 25702,
+      "contribution_bb100_all_hands": 9.048744444444445
+    },
+    "mixed": {
+      "call_to_fold_pairs": 26656,
+      "contribution_bb100_all_hands": -49.40797222222222
+    },
+    "noregrets": {
+      "call_to_fold_pairs": 24425,
+      "contribution_bb100_all_hands": -80.67345277777778
+    }
+  },
+  "training_replay": {
+    "342": {
+      "selected_training_rows": 85836,
+      "facing_call_rows": 85285,
+      "by_position_cost_odds": {
+        "BB|(1,3]bb|(20,33.333%]": 915,
+        "BB|(1,3]bb|<=20%": 380,
+        "BB|(3,10]bb|(20,33.333%]": 1158,
+        "BB|(3,10]bb|<=20%": 253,
+        "BB|(3,10]bb|>33.333%": 235,
+        "BB|<=1bb|(20,33.333%]": 68,
+        "BB|<=1bb|<=20%": 6,
+        "BB|>10bb|(20,33.333%]": 3134,
+        "BB|>10bb|<=20%": 1616,
+        "BB|>10bb|>33.333%": 1287,
+        "BTN|(1,3]bb|(20,33.333%]": 439,
+        "BTN|(1,3]bb|<=20%": 138,
+        "BTN|(1,3]bb|>33.333%": 639,
+        "BTN|(3,10]bb|(20,33.333%]": 1351,
+        "BTN|(3,10]bb|<=20%": 446,
+        "BTN|(3,10]bb|>33.333%": 850,
+        "BTN|<=1bb|(20,33.333%]": 836,
+        "BTN|<=1bb|<=20%": 30,
+        "BTN|<=1bb|>33.333%": 445,
+        "BTN|>10bb|(20,33.333%]": 4446,
+        "BTN|>10bb|<=20%": 2122,
+        "BTN|>10bb|>33.333%": 1545,
+        "CO|(1,3]bb|(20,33.333%]": 527,
+        "CO|(1,3]bb|<=20%": 278,
+        "CO|(1,3]bb|>33.333%": 554,
+        "CO|(3,10]bb|(20,33.333%]": 1755,
+        "CO|(3,10]bb|<=20%": 578,
+        "CO|(3,10]bb|>33.333%": 763,
+        "CO|<=1bb|(20,33.333%]": 695,
+        "CO|<=1bb|<=20%": 18,
+        "CO|<=1bb|>33.333%": 1027,
+        "CO|>10bb|(20,33.333%]": 5029,
+        "CO|>10bb|<=20%": 2608,
+        "CO|>10bb|>33.333%": 1962,
+        "HJ|(1,3]bb|(20,33.333%]": 796,
+        "HJ|(1,3]bb|<=20%": 385,
+        "HJ|(1,3]bb|>33.333%": 298,
+        "HJ|(3,10]bb|(20,33.333%]": 2398,
+        "HJ|(3,10]bb|<=20%": 665,
+        "HJ|(3,10]bb|>33.333%": 363,
+        "HJ|<=1bb|(20,33.333%]": 379,
+        "HJ|<=1bb|<=20%": 34,
+        "HJ|<=1bb|>33.333%": 1909,
+        "HJ|>10bb|(20,33.333%]": 5686,
+        "HJ|>10bb|<=20%": 3071,
+        "HJ|>10bb|>33.333%": 2471,
+        "SB|(1,3]bb|(20,33.333%]": 1114,
+        "SB|(1,3]bb|<=20%": 170,
+        "SB|(1,3]bb|>33.333%": 322,
+        "SB|(3,10]bb|(20,33.333%]": 921,
+        "SB|(3,10]bb|<=20%": 276,
+        "SB|(3,10]bb|>33.333%": 555,
+        "SB|<=1bb|(20,33.333%]": 283,
+        "SB|<=1bb|<=20%": 630,
+        "SB|>10bb|(20,33.333%]": 3610,
+        "SB|>10bb|<=20%": 1978,
+        "SB|>10bb|>33.333%": 1558,
+        "UTG|(1,3]bb|(20,33.333%]": 914,
+        "UTG|(1,3]bb|<=20%": 563,
+        "UTG|(3,10]bb|(20,33.333%]": 2624,
+        "UTG|(3,10]bb|<=20%": 814,
+        "UTG|(3,10]bb|>33.333%": 143,
+        "UTG|<=1bb|<=20%": 39,
+        "UTG|>10bb|(20,33.333%]": 6164,
+        "UTG|>10bb|<=20%": 3305,
+        "UTG|>10bb|>33.333%": 2714
+      }
+    },
+    "343": {
+      "selected_training_rows": 81468,
+      "facing_call_rows": 80995,
+      "by_position_cost_odds": {
+        "BB|(1,3]bb|(20,33.333%]": 1032,
+        "BB|(1,3]bb|<=20%": 261,
+        "BB|(3,10]bb|(20,33.333%]": 1034,
+        "BB|(3,10]bb|<=20%": 225,
+        "BB|(3,10]bb|>33.333%": 203,
+        "BB|<=1bb|(20,33.333%]": 107,
+        "BB|<=1bb|<=20%": 6,
+        "BB|>10bb|(20,33.333%]": 2780,
+        "BB|>10bb|<=20%": 1295,
+        "BB|>10bb|>33.333%": 1098,
+        "BTN|(1,3]bb|(20,33.333%]": 736,
+        "BTN|(1,3]bb|<=20%": 169,
+        "BTN|(1,3]bb|>33.333%": 503,
+        "BTN|(3,10]bb|(20,33.333%]": 1406,
+        "BTN|(3,10]bb|<=20%": 412,
+        "BTN|(3,10]bb|>33.333%": 856,
+        "BTN|<=1bb|(20,33.333%]": 578,
+        "BTN|<=1bb|<=20%": 28,
+        "BTN|<=1bb|>33.333%": 677,
+        "BTN|>10bb|(20,33.333%]": 4193,
+        "BTN|>10bb|<=20%": 1962,
+        "BTN|>10bb|>33.333%": 1374,
+        "CO|(1,3]bb|(20,33.333%]": 784,
+        "CO|(1,3]bb|<=20%": 221,
+        "CO|(1,3]bb|>33.333%": 488,
+        "CO|(3,10]bb|(20,33.333%]": 1887,
+        "CO|(3,10]bb|<=20%": 522,
+        "CO|(3,10]bb|>33.333%": 621,
+        "CO|<=1bb|(20,33.333%]": 560,
+        "CO|<=1bb|<=20%": 11,
+        "CO|<=1bb|>33.333%": 1153,
+        "CO|>10bb|(20,33.333%]": 4846,
+        "CO|>10bb|<=20%": 2367,
+        "CO|>10bb|>33.333%": 1744,
+        "HJ|(1,3]bb|(20,33.333%]": 895,
+        "HJ|(1,3]bb|<=20%": 284,
+        "HJ|(1,3]bb|>33.333%": 292,
+        "HJ|(3,10]bb|(20,33.333%]": 2166,
+        "HJ|(3,10]bb|<=20%": 709,
+        "HJ|(3,10]bb|>33.333%": 424,
+        "HJ|<=1bb|(20,33.333%]": 327,
+        "HJ|<=1bb|<=20%": 17,
+        "HJ|<=1bb|>33.333%": 1866,
+        "HJ|>10bb|(20,33.333%]": 5369,
+        "HJ|>10bb|<=20%": 2801,
+        "HJ|>10bb|>33.333%": 2135,
+        "SB|(1,3]bb|(20,33.333%]": 1050,
+        "SB|(1,3]bb|<=20%": 229,
+        "SB|(1,3]bb|>33.333%": 423,
+        "SB|(3,10]bb|(20,33.333%]": 922,
+        "SB|(3,10]bb|<=20%": 232,
+        "SB|(3,10]bb|>33.333%": 414,
+        "SB|<=1bb|(20,33.333%]": 455,
+        "SB|<=1bb|<=20%": 633,
+        "SB|>10bb|(20,33.333%]": 3362,
+        "SB|>10bb|<=20%": 1607,
+        "SB|>10bb|>33.333%": 1344,
+        "UTG|(1,3]bb|(20,33.333%]": 1112,
+        "UTG|(1,3]bb|<=20%": 455,
+        "UTG|(3,10]bb|(20,33.333%]": 2653,
+        "UTG|(3,10]bb|<=20%": 775,
+        "UTG|(3,10]bb|>33.333%": 161,
+        "UTG|<=1bb|<=20%": 31,
+        "UTG|>10bb|(20,33.333%]": 5959,
+        "UTG|>10bb|<=20%": 3193,
+        "UTG|>10bb|>33.333%": 2561
+      }
+    },
+    "344": {
+      "selected_training_rows": 78555,
+      "facing_call_rows": 78000,
+      "by_position_cost_odds": {
+        "BB|(1,3]bb|(20,33.333%]": 998,
+        "BB|(1,3]bb|<=20%": 306,
+        "BB|(3,10]bb|(20,33.333%]": 913,
+        "BB|(3,10]bb|<=20%": 171,
+        "BB|(3,10]bb|>33.333%": 159,
+        "BB|<=1bb|(20,33.333%]": 49,
+        "BB|<=1bb|<=20%": 4,
+        "BB|>10bb|(20,33.333%]": 2587,
+        "BB|>10bb|<=20%": 1379,
+        "BB|>10bb|>33.333%": 1009,
+        "BTN|(1,3]bb|(20,33.333%]": 635,
+        "BTN|(1,3]bb|<=20%": 129,
+        "BTN|(1,3]bb|>33.333%": 552,
+        "BTN|(3,10]bb|(20,33.333%]": 1266,
+        "BTN|(3,10]bb|<=20%": 378,
+        "BTN|(3,10]bb|>33.333%": 777,
+        "BTN|<=1bb|(20,33.333%]": 625,
+        "BTN|<=1bb|<=20%": 44,
+        "BTN|<=1bb|>33.333%": 687,
+        "BTN|>10bb|(20,33.333%]": 3991,
+        "BTN|>10bb|<=20%": 1871,
+        "BTN|>10bb|>33.333%": 1443,
+        "CO|(1,3]bb|(20,33.333%]": 827,
+        "CO|(1,3]bb|<=20%": 227,
+        "CO|(1,3]bb|>33.333%": 451,
+        "CO|(3,10]bb|(20,33.333%]": 1567,
+        "CO|(3,10]bb|<=20%": 461,
+        "CO|(3,10]bb|>33.333%": 650,
+        "CO|<=1bb|(20,33.333%]": 638,
+        "CO|<=1bb|<=20%": 37,
+        "CO|<=1bb|>33.333%": 1233,
+        "CO|>10bb|(20,33.333%]": 4286,
+        "CO|>10bb|<=20%": 2291,
+        "CO|>10bb|>33.333%": 1753,
+        "HJ|(1,3]bb|(20,33.333%]": 907,
+        "HJ|(1,3]bb|<=20%": 314,
+        "HJ|(1,3]bb|>33.333%": 381,
+        "HJ|(3,10]bb|(20,33.333%]": 1943,
+        "HJ|(3,10]bb|<=20%": 584,
+        "HJ|(3,10]bb|>33.333%": 442,
+        "HJ|<=1bb|(20,33.333%]": 392,
+        "HJ|<=1bb|<=20%": 28,
+        "HJ|<=1bb|>33.333%": 1907,
+        "HJ|>10bb|(20,33.333%]": 5070,
+        "HJ|>10bb|<=20%": 2772,
+        "HJ|>10bb|>33.333%": 2209,
+        "SB|(1,3]bb|(20,33.333%]": 1101,
+        "SB|(1,3]bb|<=20%": 227,
+        "SB|(1,3]bb|>33.333%": 386,
+        "SB|(3,10]bb|(20,33.333%]": 874,
+        "SB|(3,10]bb|<=20%": 221,
+        "SB|(3,10]bb|>33.333%": 408,
+        "SB|<=1bb|(20,33.333%]": 576,
+        "SB|<=1bb|<=20%": 635,
+        "SB|>10bb|(20,33.333%]": 3226,
+        "SB|>10bb|<=20%": 1602,
+        "SB|>10bb|>33.333%": 1299,
+        "UTG|(1,3]bb|(20,33.333%]": 1070,
+        "UTG|(1,3]bb|<=20%": 532,
+        "UTG|(3,10]bb|(20,33.333%]": 2291,
+        "UTG|(3,10]bb|<=20%": 690,
+        "UTG|(3,10]bb|>33.333%": 149,
+        "UTG|<=1bb|<=20%": 29,
+        "UTG|>10bb|(20,33.333%]": 5537,
+        "UTG|>10bb|<=20%": 3214,
+        "UTG|>10bb|>33.333%": 2590
+      }
+    }
+  },
+  "first_card": 2037900000,
+  "last_card": 2037901999,
+  "independent_card_blocks": 2000,
+  "common_prefix_traces": 108000,
+  "matched_decisions": 7782,
+  "paired_terminal_rollouts": 15564,
+  "all_terminal_actions_independently_replayed": true,
+  "raw_decisions_sha256": "167d726df8593888374d3c104ab03fcca3c962e19c7b406227a1a4dcfb8cfd45",
+  "fields": {
+    "public": {
+      "events": 2595,
+      "represented_card_blocks": 1508,
+      "call_minus_fold_bb": -2.256512524084778,
+      "cluster_se": 0.6620126862369627,
+      "simultaneous_95_bb": [
+        -3.8413575221596563,
+        -0.6716675260098997
+      ],
+      "planned_traces": 36000,
+      "by_training_seed": {
+        "342": {
+          "events": 518,
+          "represented_card_blocks": 466,
+          "call_minus_fold_bb": -4.070057915057915
+        },
+        "343": {
+          "events": 1496,
+          "represented_card_blocks": 1129,
+          "call_minus_fold_bb": -1.1410494652406418
+        },
+        "344": {
+          "events": 581,
+          "represented_card_blocks": 510,
+          "call_minus_fold_bb": -3.5117900172117036
+        }
+      },
+      "descriptive_groups": {
+        "position": {
+          "BB": {
+            "events": 714,
+            "represented_card_blocks": 653,
+            "call_minus_fold_bb": -3.133529411764706
+          },
+          "BTN": {
+            "events": 420,
+            "represented_card_blocks": 405,
+            "call_minus_fold_bb": -2.887714285714286
+          },
+          "CO": {
+            "events": 499,
+            "represented_card_blocks": 482,
+            "call_minus_fold_bb": -0.8340881763527055
+          },
+          "HJ": {
+            "events": 428,
+            "represented_card_blocks": 394,
+            "call_minus_fold_bb": -2.428971962616822
+          },
+          "SB": {
+            "events": 439,
+            "represented_card_blocks": 396,
+            "call_minus_fold_bb": -0.8585649202733484
+          },
+          "UTG": {
+            "events": 95,
+            "represented_card_blocks": 81,
+            "call_minus_fold_bb": -6.028947368421052
+          }
+        },
+        "cost_bin": {
+          "(1,3]bb": {
+            "events": 1235,
+            "represented_card_blocks": 920,
+            "call_minus_fold_bb": -1.8622510121457492
+          },
+          "(3,10]bb": {
+            "events": 442,
+            "represented_card_blocks": 376,
+            "call_minus_fold_bb": -6.398778280542987
+          },
+          "<=1bb": {
+            "events": 853,
+            "represented_card_blocks": 715,
+            "call_minus_fold_bb": -1.138065650644783
+          },
+          ">10bb": {
+            "events": 65,
+            "represented_card_blocks": 61,
+            "call_minus_fold_bb": 3.7424615384615385
+          }
+        },
+        "odds_bin": {
+          "(20,33.333%]": {
+            "events": 1406,
+            "represented_card_blocks": 1027,
+            "call_minus_fold_bb": -2.0084352773826457
+          },
+          "<=20%": {
+            "events": 97,
+            "represented_card_blocks": 85,
+            "call_minus_fold_bb": -7.401649484536083
+          },
+          ">33.333%": {
+            "events": 1092,
+            "represented_card_blocks": 867,
+            "call_minus_fold_bb": -2.1188919413919414
+          }
+        }
+      },
+      "training_rows_in_same_position_cost_odds_bucket": {
+        "minimum": 28,
+        "median": 1027.0,
+        "events_in_buckets_under_100": 15,
+        "events_in_buckets_with_zero_rows": 0
+      }
+    },
+    "mixed": {
+      "events": 2796,
+      "represented_card_blocks": 1549,
+      "call_minus_fold_bb": 9.784434907010015,
+      "cluster_se": 1.5155938190509857,
+      "simultaneous_95_bb": [
+        6.156133919472165,
+        13.412735894547865
+      ],
+      "planned_traces": 36000,
+      "by_training_seed": {
+        "342": {
+          "events": 604,
+          "represented_card_blocks": 539,
+          "call_minus_fold_bb": 14.388377483443708
+        },
+        "343": {
+          "events": 1508,
+          "represented_card_blocks": 1113,
+          "call_minus_fold_bb": 8.884058355437666
+        },
+        "344": {
+          "events": 684,
+          "represented_card_blocks": 585,
+          "call_minus_fold_bb": 7.704005847953215
+        }
+      },
+      "descriptive_groups": {
+        "position": {
+          "BB": {
+            "events": 549,
+            "represented_card_blocks": 505,
+            "call_minus_fold_bb": 8.012768670309654
+          },
+          "BTN": {
+            "events": 490,
+            "represented_card_blocks": 458,
+            "call_minus_fold_bb": 10.187428571428573
+          },
+          "CO": {
+            "events": 583,
+            "represented_card_blocks": 545,
+            "call_minus_fold_bb": 4.2900686106346475
+          },
+          "HJ": {
+            "events": 522,
+            "represented_card_blocks": 469,
+            "call_minus_fold_bb": 12.726494252873563
+          },
+          "SB": {
+            "events": 415,
+            "represented_card_blocks": 360,
+            "call_minus_fold_bb": 14.851012048192771
+          },
+          "UTG": {
+            "events": 237,
+            "represented_card_blocks": 202,
+            "call_minus_fold_bb": 11.219071729957806
+          }
+        },
+        "cost_bin": {
+          "(1,3]bb": {
+            "events": 891,
+            "represented_card_blocks": 694,
+            "call_minus_fold_bb": 5.53398428731762
+          },
+          "(3,10]bb": {
+            "events": 505,
+            "represented_card_blocks": 437,
+            "call_minus_fold_bb": 9.73239603960396
+          },
+          "<=1bb": {
+            "events": 673,
+            "represented_card_blocks": 584,
+            "call_minus_fold_bb": 5.421738484398217
+          },
+          ">10bb": {
+            "events": 727,
+            "represented_card_blocks": 564,
+            "call_minus_fold_bb": 19.068514442916097
+          }
+        },
+        "odds_bin": {
+          "(20,33.333%]": {
+            "events": 1016,
+            "represented_card_blocks": 784,
+            "call_minus_fold_bb": 7.8781200787401575
+          },
+          "<=20%": {
+            "events": 97,
+            "represented_card_blocks": 94,
+            "call_minus_fold_bb": 16.014329896907217
+          },
+          ">33.333%": {
+            "events": 1683,
+            "represented_card_blocks": 1146,
+            "call_minus_fold_bb": 10.576185383244207
+          }
+        }
+      },
+      "training_rows_in_same_position_cost_odds_bucket": {
+        "minimum": 4,
+        "median": 1032.0,
+        "events_in_buckets_under_100": 44,
+        "events_in_buckets_with_zero_rows": 0
+      }
+    },
+    "noregrets": {
+      "events": 2391,
+      "represented_card_blocks": 1414,
+      "call_minus_fold_bb": 11.15664157256378,
+      "cluster_se": 2.7260859124458148,
+      "simultaneous_95_bb": [
+        4.630446965598687,
+        17.682836179528874
+      ],
+      "planned_traces": 36000,
+      "by_training_seed": {
+        "342": {
+          "events": 719,
+          "represented_card_blocks": 618,
+          "call_minus_fold_bb": 12.515646731571627
+        },
+        "343": {
+          "events": 1112,
+          "represented_card_blocks": 903,
+          "call_minus_fold_bb": 11.488291366906475
+        },
+        "344": {
+          "events": 560,
+          "represented_card_blocks": 505,
+          "call_minus_fold_bb": 8.753214285714288
+        }
+      },
+      "descriptive_groups": {
+        "position": {
+          "BB": {
+            "events": 380,
+            "represented_card_blocks": 346,
+            "call_minus_fold_bb": 3.762526315789475
+          },
+          "BTN": {
+            "events": 420,
+            "represented_card_blocks": 382,
+            "call_minus_fold_bb": 20.83995238095238
+          },
+          "CO": {
+            "events": 435,
+            "represented_card_blocks": 400,
+            "call_minus_fold_bb": 3.469103448275863
+          },
+          "HJ": {
+            "events": 535,
+            "represented_card_blocks": 460,
+            "call_minus_fold_bb": 14.737140186915887
+          },
+          "SB": {
+            "events": 380,
+            "represented_card_blocks": 327,
+            "call_minus_fold_bb": 7.578473684210527
+          },
+          "UTG": {
+            "events": 241,
+            "represented_card_blocks": 193,
+            "call_minus_fold_bb": 17.509294605809128
+          }
+        },
+        "cost_bin": {
+          "(1,3]bb": {
+            "events": 509,
+            "represented_card_blocks": 419,
+            "call_minus_fold_bb": 4.35385068762279
+          },
+          "(3,10]bb": {
+            "events": 297,
+            "represented_card_blocks": 265,
+            "call_minus_fold_bb": 6.046127946127947
+          },
+          "<=1bb": {
+            "events": 317,
+            "represented_card_blocks": 301,
+            "call_minus_fold_bb": 6.359211356466877
+          },
+          ">10bb": {
+            "events": 1268,
+            "represented_card_blocks": 887,
+            "call_minus_fold_bb": 16.28379337539432
+          }
+        },
+        "odds_bin": {
+          "(20,33.333%]": {
+            "events": 832,
+            "represented_card_blocks": 665,
+            "call_minus_fold_bb": 16.024362980769233
+          },
+          "<=20%": {
+            "events": 98,
+            "represented_card_blocks": 92,
+            "call_minus_fold_bb": 9.951428571428572
+          },
+          ">33.333%": {
+            "events": 1461,
+            "represented_card_blocks": 1038,
+            "call_minus_fold_bb": 8.465448323066393
+          }
+        }
+      },
+      "training_rows_in_same_position_cost_odds_bucket": {
+        "minimum": 4,
+        "median": 1351.0,
+        "events_in_buckets_under_100": 8,
+        "events_in_buckets_with_zero_rows": 0
+      }
+    }
+  },
+  "new_model_fits": 0,
+  "estimand": "Mean call minus fold payoff in big blinds per selected decision, averaged over reached states and sampled future outcomes.",
+  "statistical_scope": "Fresh card blocks, three fixed training seeds, fixed opponent policies. Exploratory finer strata; no EV claim for individual hands."
+}
