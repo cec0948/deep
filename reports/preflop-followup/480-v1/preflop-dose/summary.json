@@ -1,0 +1,450 @@
+{
+  "completed_cells": 27,
+  "verified_hands": 3240000,
+  "independent_card_blocks": 20000,
+  "evaluation_deal_seed": 2037700000,
+  "absolute_scores": {
+    "steps0": {
+      "public": {
+        "mean": -34.36560277777778,
+        "ci95_half_width": 8.957426340967936,
+        "lower": -43.323029118745715,
+        "upper": -25.408176436809846
+      },
+      "mixed": {
+        "mean": 342.9642972222222,
+        "ci95_half_width": 17.478143487346898,
+        "lower": 325.4861537348753,
+        "upper": 360.44244070956915
+      },
+      "noregrets": {
+        "mean": 459.23926666666665,
+        "ci95_half_width": 27.38883158829435,
+        "lower": 431.8504350783723,
+        "upper": 486.628098254961
+      }
+    },
+    "steps64": {
+      "public": {
+        "mean": -35.880361111111114,
+        "ci95_half_width": 9.114682998618727,
+        "lower": -44.99504410972984,
+        "upper": -26.765678112492388
+      },
+      "mixed": {
+        "mean": 339.2943722222222,
+        "ci95_half_width": 18.417220337079364,
+        "lower": 320.87715188514284,
+        "upper": 357.71159255930155
+      },
+      "noregrets": {
+        "mean": 467.28995555555554,
+        "ci95_half_width": 29.430811028875297,
+        "lower": 437.8591445266802,
+        "upper": 496.72076658443086
+      }
+    },
+    "steps256": {
+      "public": {
+        "mean": -25.83291388888889,
+        "ci95_half_width": 7.902101208141377,
+        "lower": -33.735015097030264,
+        "upper": -17.93081268074751
+      },
+      "mixed": {
+        "mean": 272.78696388888886,
+        "ci95_half_width": 15.341649512506107,
+        "lower": 257.4453143763828,
+        "upper": 288.12861340139494
+      },
+      "noregrets": {
+        "mean": 347.05219166666666,
+        "ci95_half_width": 24.047772319077442,
+        "lower": 323.0044193475892,
+        "upper": 371.0999639857441
+      }
+    }
+  },
+  "result_sha256": {
+    "public-seed-342-steps0": "87e536f4717e8a078431b48817c66cffd303db8c11a4470a6d18243f9661727c",
+    "public-seed-343-steps0": "75c75d19f1b07572434c0851a77f614f1b26f395ab61b3fbfd11d82b2042140a",
+    "public-seed-344-steps0": "01db7c239297cee62a25f2f95340e9303407f5508d56b6990764a3c20dd14fb1",
+    "mixed-seed-342-steps0": "b10624b8f6dd22712c5ef9c3679639bb8abf36f4b7d788b09e3aaad1de83c9c2",
+    "mixed-seed-343-steps0": "a7c4f3539ff03c153f9e7c136531b6ac39824e739da14b9704c77f1cc635b3c1",
+    "mixed-seed-344-steps0": "1a04b4777510b697f3dd6bd40d9495a0a46c5b1040af358c7cfde86d82e1a85f",
+    "noregrets-seed-342-steps0": "b0313e0fd2b92d212f15a75f968eaa01aa545d9f7b017a8cdd6288581eeb0f39",
+    "noregrets-seed-343-steps0": "a7b7e7e33b18aa4d3564f962ead2c052d692f28fc8bf573cab171d26d0f20802",
+    "noregrets-seed-344-steps0": "53ab338c5742ae9a4ddf1a8c09abd49deaaff1df1751ef17ea14d874c60e5159",
+    "public-seed-342-steps64": "fc0541cd3c68d0f3c7c3d038cb88584c644dccda31e522cf09f6189d1b58fc43",
+    "public-seed-343-steps64": "536bfa07080ec325e2c86dfacb759ab37b39ce503e918e076f1ce32d19dfd74a",
+    "public-seed-344-steps64": "864b08b882c29dc14575d4008f6354f4f772e592fa2dfc53bdbf834deebc5c26",
+    "mixed-seed-342-steps64": "d41a4867aef62cdcbb8ec04532f6648a7dcb977ecc3adbec5a98ad40f2b310d2",
+    "mixed-seed-343-steps64": "6df0e7fe927a8d6d55f055843941256cc531db100ea683c2e96ba419ac226682",
+    "mixed-seed-344-steps64": "8b26eac8d918cc70632f76d2cce24d440f0f542185d1e1833609c7f2b067bba8",
+    "noregrets-seed-342-steps64": "0c8e09aa2baef6153de6f5b68408d3b9c452a5f90a1394f04c9de36036fe09de",
+    "noregrets-seed-343-steps64": "02e6a3023cd941bf8b4881715efb72775de0cc10f00348664fc317718deecbe9",
+    "noregrets-seed-344-steps64": "7f4017f821d133246e8c1e13db06794cc9b300ba735cef5f8586661ec30ef2ca",
+    "public-seed-342-steps256": "1ecfafadc3bfb3c814b079ed11d875669e5a43fb859c1f703f53164934f61721",
+    "public-seed-343-steps256": "4a36ea5169ae4d69410f2ec89afa22fc07703d4c66799b5c641e5ff8ec9e46a5",
+    "public-seed-344-steps256": "877125cfd80e2ac4f8b67ee30c84f5de60c94a71b1242a38979ab31e25ef5496",
+    "mixed-seed-342-steps256": "fccf0ebbfd8bf9ca69753894d1bd02585b36add62145a2d690a000b7d7bff46f",
+    "mixed-seed-343-steps256": "bd9222ff2ef8ba609e2bd9381371a589d6793faa9d3dc0f017c3fa539e72f986",
+    "mixed-seed-344-steps256": "391745260287f9fce2b7115785498244947265541e21d3b1015365aeef4e75cb",
+    "noregrets-seed-342-steps256": "5dfb41bb2b8de852b107447caafc2e45331199a2063f2e8b23099689ccd32561",
+    "noregrets-seed-343-steps256": "3d55e052419127958f6a7b906f2d32ab186637492d6b98ddcca2b6e775cf41da",
+    "noregrets-seed-344-steps256": "f14bf3de226268a2ef7f8a8ddef23b76c42fca0cc5f1fb31e8dc1880be28cbbc"
+  },
+  "evaluation_plan_sha256": "642491686308caeaef39f80e90277f8e77d437a6f80b37cae1fa4b47a8a6c4d6",
+  "noregrets_fallback_and_decisions": {
+    "public-seed-342-steps0": [
+      0,
+      0
+    ],
+    "public-seed-343-steps0": [
+      0,
+      0
+    ],
+    "public-seed-344-steps0": [
+      0,
+      0
+    ],
+    "mixed-seed-342-steps0": [
+      111461,
+      461628
+    ],
+    "mixed-seed-343-steps0": [
+      117757,
+      467980
+    ],
+    "mixed-seed-344-steps0": [
+      113657,
+      464947
+    ],
+    "noregrets-seed-342-steps0": [
+      172406,
+      942648
+    ],
+    "noregrets-seed-343-steps0": [
+      179441,
+      946933
+    ],
+    "noregrets-seed-344-steps0": [
+      173351,
+      944808
+    ],
+    "public-seed-342-steps64": [
+      0,
+      0
+    ],
+    "public-seed-343-steps64": [
+      0,
+      0
+    ],
+    "public-seed-344-steps64": [
+      0,
+      0
+    ],
+    "mixed-seed-342-steps64": [
+      109542,
+      460299
+    ],
+    "mixed-seed-343-steps64": [
+      118718,
+      468504
+    ],
+    "mixed-seed-344-steps64": [
+      113476,
+      466212
+    ],
+    "noregrets-seed-342-steps64": [
+      172255,
+      942841
+    ],
+    "noregrets-seed-343-steps64": [
+      179724,
+      943995
+    ],
+    "noregrets-seed-344-steps64": [
+      172696,
+      944748
+    ],
+    "public-seed-342-steps256": [
+      0,
+      0
+    ],
+    "public-seed-343-steps256": [
+      0,
+      0
+    ],
+    "public-seed-344-steps256": [
+      0,
+      0
+    ],
+    "mixed-seed-342-steps256": [
+      109646,
+      461600
+    ],
+    "mixed-seed-343-steps256": [
+      109529,
+      459922
+    ],
+    "mixed-seed-344-steps256": [
+      109098,
+      460770
+    ],
+    "noregrets-seed-342-steps256": [
+      172998,
+      943945
+    ],
+    "noregrets-seed-343-steps256": [
+      176826,
+      946916
+    ],
+    "noregrets-seed-344-steps256": [
+      169175,
+      942039
+    ]
+  },
+  "completed": true,
+  "completed_utc": "2026-11-19T07:13:12.001392+00:00",
+  "new_cells": 27,
+  "reused_cells": 0,
+  "new_hands": 3240000,
+  "source_summary_sha256": "263c20db53b9ef78a0ba1ac6081f58c323b8c3a2d3500a218ca8ab7bfd874dcf",
+  "source_audit_sha256": "7c476c13e5b91f377a896716762a03269ec2045eb083b44efd642fe12edb1a0a",
+  "fit_ready_sha256": "e5d955b6d6e89fbdb9fb075db92c59cea39dc39507da5801c4404efe2da8cfa3",
+  "comparisons": {
+    "64_minus_0": {
+      "public": {
+        "mean": -1.5147583333333339,
+        "ci95_half_width": 6.677390388735161,
+        "lower": -8.192148722068495,
+        "upper": 5.1626320554018275,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -6.113541666666667
+          },
+          {
+            "seed": 343,
+            "mean": -14.418650000000003
+          },
+          {
+            "seed": 344,
+            "mean": 15.987916666666665
+          }
+        ]
+      },
+      "mixed": {
+        "mean": -3.6699250000000005,
+        "ci95_half_width": 12.434802809294736,
+        "lower": -16.104727809294737,
+        "upper": 8.764877809294735,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -21.18308333333334
+          },
+          {
+            "seed": 343,
+            "mean": -61.07315
+          },
+          {
+            "seed": 344,
+            "mean": 71.24645833333334
+          }
+        ]
+      },
+      "noregrets": {
+        "mean": 8.050688888888889,
+        "ci95_half_width": 17.947130090185603,
+        "lower": -9.896441201296714,
+        "upper": 25.99781897907449,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -35.443900000000006
+          },
+          {
+            "seed": 343,
+            "mean": -110.31285
+          },
+          {
+            "seed": 344,
+            "mean": 169.90881666666667
+          }
+        ]
+      }
+    },
+    "256_minus_0": {
+      "public": {
+        "mean": 8.532688888888888,
+        "ci95_half_width": 6.972859678703149,
+        "lower": 1.5598292101857387,
+        "upper": 15.505548567592037,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -2.3821916666666656
+          },
+          {
+            "seed": 343,
+            "mean": 6.456833333333334
+          },
+          {
+            "seed": 344,
+            "mean": 21.523424999999996
+          }
+        ]
+      },
+      "mixed": {
+        "mean": -70.17733333333334,
+        "ci95_half_width": 11.95035300316111,
+        "lower": -82.12768633649445,
+        "upper": -58.226980330172225,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -81.11675
+          },
+          {
+            "seed": 343,
+            "mean": -120.51725833333333
+          },
+          {
+            "seed": 344,
+            "mean": -8.897991666666668
+          }
+        ]
+      },
+      "noregrets": {
+        "mean": -112.187075,
+        "ci95_half_width": 17.314740374400017,
+        "lower": -129.5018153744,
+        "upper": -94.87233462559998,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -152.81229999999996
+          },
+          {
+            "seed": 343,
+            "mean": -189.284925
+          },
+          {
+            "seed": 344,
+            "mean": 5.536000000000003
+          }
+        ]
+      }
+    },
+    "256_minus_64": {
+      "public": {
+        "mean": 10.047447222222223,
+        "ci95_half_width": 6.814052758350634,
+        "lower": 3.233394463871589,
+        "upper": 16.86149998057286,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": 3.7313500000000013
+          },
+          {
+            "seed": 343,
+            "mean": 20.875483333333328
+          },
+          {
+            "seed": 344,
+            "mean": 5.535508333333332
+          }
+        ]
+      },
+      "mixed": {
+        "mean": -66.50740833333333,
+        "ci95_half_width": 13.287969141753075,
+        "lower": -79.79537747508641,
+        "upper": -53.21943919158026,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -59.93366666666666
+          },
+          {
+            "seed": 343,
+            "mean": -59.44410833333334
+          },
+          {
+            "seed": 344,
+            "mean": -80.14445
+          }
+        ]
+      },
+      "noregrets": {
+        "mean": -120.23776388888889,
+        "ci95_half_width": 20.231047104820803,
+        "lower": -140.4688109937097,
+        "upper": -100.00671678406809,
+        "per_seed": [
+          {
+            "seed": 342,
+            "mean": -117.3684
+          },
+          {
+            "seed": 343,
+            "mean": -78.972075
+          },
+          {
+            "seed": 344,
+            "mean": -164.37281666666667
+          }
+        ]
+      }
+    }
+  },
+  "simultaneous_95": {
+    "64_minus_0": {
+      "public": {
+        "lower": -10.96163486462871,
+        "upper": 7.932118197962043
+      },
+      "mixed": {
+        "lower": -21.2621339306903,
+        "upper": 13.9222839306903
+      },
+      "noregrets": {
+        "lower": -17.340116827533326,
+        "upper": 33.44149460531111
+      }
+    },
+    "256_minus_0": {
+      "public": {
+        "lower": -1.3322045230468653,
+        "upper": 18.39758230082464
+      },
+      "mixed": {
+        "lower": -87.08416410912723,
+        "upper": -53.270502557539444
+      },
+      "noregrets": {
+        "lower": -136.68320372183376,
+        "upper": -87.69094627816624
+      }
+    },
+    "256_minus_64": {
+      "public": {
+        "lower": 0.40722681598887256,
+        "upper": 19.68766762845557
+      },
+      "mixed": {
+        "lower": -85.30663924928736,
+        "upper": -47.708177417379304
+      },
+      "noregrets": {
+        "lower": -148.85975436296468,
+        "upper": -91.6157734148131
+      }
+    }
+  },
+  "new_selfplay_iterations": 0,
+  "model_promoted": false
+}

@@ -4,7 +4,7 @@
 
 ## 최신 실행 확인
 
-- 2026-11-19 15:20 KST에 세 시드의 프리플롭 피팅을 마치고 새 평가를 시작했다. 실행 폴더는 `artifacts/preflop-followup/480-v1/preflop-dose`다. `fit-ready.json`은 가중치 검증, `evaluation-status.json`은 평가 진도, `summary.json`은 27개 평가 종료를 기록한다. [고정한 비교 설계](poker-preflop-dose-20261119.md)
+- 2026-11-19 16:13 KST에 개선된 480회 프리플롭 후보에서 0·64·256회 추가 업데이트를 비교한 27개 평가가 끝났다. 실행 폴더는 `artifacts/preflop-followup/480-v1/preflop-dose`다. `summary.json`은 전체 성적, `final-audit.json`은 독립 검산, `backup-verification.json`은 파생 가중치 백업 검증이다. [결과와 다음 판단](poker-preflop-dose-20261119.md)
 
 - 2026-11-19 12:41 KST에 `artifacts/preflop-followup/480-v1/preflop-swap`의 9개 조합·108만 핸드 평가를 완료했다. 기존 480회·492회의 평가 18개를 같은 카드에서 재사용했다. 학습과 추가 가중치 백업은 0개다. `summary.json`에 조건별 점수, `final-audit.json`에 원시 기록 검산, `backup-reference.json`에 기존 두 복구본의 가중치 연결이 있다. [진단 결과](poker-preflop-swap-20261119.md)
 
