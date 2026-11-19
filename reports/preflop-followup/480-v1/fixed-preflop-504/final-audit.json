@@ -1,0 +1,354 @@
+{
+  "checked_utc": "2026-11-19T08:32:49.662307+00:00",
+  "summary_sha256": "6cc8d7759a091ce14ed417088e82917a9fc05792e20d51d2456ca8305df08d9c",
+  "plan_sha256": "6a2729917cf4ca7fe8416e209c2ffbf2564f4bc8c691664e7a68a575d038b02b",
+  "stage_sha256": "4eaf2e344657ca5f01b22cddde8c90d6ee3ea08eaeb147c32671adeaa26fff86",
+  "evaluation_plan_sha256": "fc6d7ef96c866e10cebb70f9c42b90a84140e5049db92fcaeb18d897643a86a4",
+  "training": [
+    {
+      "seed": 342,
+      "initial_iteration": 480,
+      "final_iteration": 504,
+      "distinct_trained_rounds": 24,
+      "fresh_traversals": 6144,
+      "new_regret_rows_by_traverser": [
+        30655,
+        30123,
+        31318,
+        31332,
+        32247,
+        30723
+      ],
+      "opening_observations": 16224,
+      "final_sample_pool_by_street": [
+        129329,
+        175507,
+        205582
+      ],
+      "fit_draws_by_street": [
+        3144119,
+        3145122,
+        3147943
+      ],
+      "preflop_probability_probes_per_round": 265,
+      "postflop_steps": 18432,
+      "source_preflop_sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+      "source_postflop_sha256": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+      "endpoint_preflop_sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+      "endpoint_postflop_sha256": "cb8461b87c70da591b5818bc8fa00bd276b84afcbf1de4ddf2373a32e6eb22d8"
+    },
+    {
+      "seed": 343,
+      "initial_iteration": 480,
+      "final_iteration": 504,
+      "distinct_trained_rounds": 24,
+      "fresh_traversals": 6144,
+      "new_regret_rows_by_traverser": [
+        34160,
+        31610,
+        32386,
+        30225,
+        32303,
+        32342
+      ],
+      "opening_observations": 16224,
+      "final_sample_pool_by_street": [
+        125996,
+        178028,
+        211437
+      ],
+      "fit_draws_by_street": [
+        3147708,
+        3145215,
+        3144261
+      ],
+      "preflop_probability_probes_per_round": 265,
+      "postflop_steps": 18432,
+      "source_preflop_sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+      "source_postflop_sha256": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757",
+      "endpoint_preflop_sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+      "endpoint_postflop_sha256": "65bc222ef393cec3c1ac91180a0f187782f2073bd16a70ed323323357d5aac83"
+    },
+    {
+      "seed": 344,
+      "initial_iteration": 480,
+      "final_iteration": 504,
+      "distinct_trained_rounds": 24,
+      "fresh_traversals": 6144,
+      "new_regret_rows_by_traverser": [
+        34589,
+        34086,
+        33059,
+        32504,
+        35299,
+        32068
+      ],
+      "opening_observations": 16224,
+      "final_sample_pool_by_street": [
+        119180,
+        180887,
+        217165
+      ],
+      "fit_draws_by_street": [
+        3145537,
+        3145708,
+        3145939
+      ],
+      "preflop_probability_probes_per_round": 265,
+      "postflop_steps": 18432,
+      "source_preflop_sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+      "source_postflop_sha256": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431",
+      "endpoint_preflop_sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+      "endpoint_postflop_sha256": "eef2eb5662a4d11ba7967e40fb4be6e295e1a5b1347da88f17885f77b080d48e"
+    }
+  ],
+  "new_selfplay_iterations_per_seed": 24,
+  "new_cells": 18,
+  "reused_cells": 0,
+  "raw_hand_records_reaggregated": 2160000,
+  "matched_card_seat_seed_field_pairs": 1080000,
+  "independent_card_blocks": 20000,
+  "first_card": 2037800000,
+  "last_card": 2037819999,
+  "fixed_training_seeds": [
+    342,
+    343,
+    344
+  ],
+  "seats_per_card": 6,
+  "paired_estimates": {
+    "public": {
+      "mean": -49.696533333333335,
+      "per_seed_mean": [
+        -12.978691666666666,
+        -96.81461666666668,
+        -39.29629166666666
+      ],
+      "nominal_95": [
+        -56.504605866377005,
+        -42.888460800289664
+      ],
+      "simultaneous_95": [
+        -58.012037476091386,
+        -41.38102919057528
+      ]
+    },
+    "mixed": {
+      "mean": -61.138536111111115,
+      "per_seed_mean": [
+        -45.88421666666667,
+        -68.04285000000002,
+        -69.48854166666666
+      ],
+      "nominal_95": [
+        -67.989270443558,
+        -54.28780177866423
+      ],
+      "simultaneous_95": [
+        -69.50614815488713,
+        -52.7709240673351
+      ]
+    },
+    "noregrets": {
+      "mean": -25.170475000000003,
+      "per_seed_mean": [
+        -24.980325000000004,
+        -27.11155833333333,
+        -23.419541666666664
+      ],
+      "nominal_95": [
+        -30.485597950058946,
+        -19.85535204994106
+      ],
+      "simultaneous_95": [
+        -31.662463253057595,
+        -18.67848674694241
+      ]
+    }
+  },
+  "nominal_95_by_field_and_simultaneous_95_bonferroni_3_verified": true,
+  "raw_payoffs_and_chip_conservation_recomputed": true,
+  "terminal_payoffs_replayed_by_all_source_cells": true,
+  "terminal_hands_independently_replayed": 8640,
+  "terminal_spot_replay_card_stride": 250,
+  "first_action_divergence": {
+    "public": {
+      "opening": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "other_preflop": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "postflop": {
+        "paired_hands": 87498,
+        "nonzero_hero_payoff_changes": 67300,
+        "contribution_bb100": -49.696533333333335
+      },
+      "same_trace": {
+        "paired_hands": 272502,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_after_hero_fold": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_other": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      }
+    },
+    "mixed": {
+      "opening": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "other_preflop": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "postflop": {
+        "paired_hands": 38341,
+        "nonzero_hero_payoff_changes": 30916,
+        "contribution_bb100": -61.13853611111111
+      },
+      "same_trace": {
+        "paired_hands": 321659,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_after_hero_fold": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_other": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      }
+    },
+    "noregrets": {
+      "opening": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "other_preflop": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "postflop": {
+        "paired_hands": 10042,
+        "nonzero_hero_payoff_changes": 7356,
+        "contribution_bb100": -25.170475
+      },
+      "same_trace": {
+        "paired_hands": 349958,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_after_hero_fold": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_other": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      }
+    }
+  },
+  "noregrets_lookup_fallback_hits_and_decisions": {
+    "public-seed-342-specialist480": [
+      0,
+      0
+    ],
+    "public-seed-342-fixed504": [
+      0,
+      0
+    ],
+    "public-seed-343-specialist480": [
+      0,
+      0
+    ],
+    "public-seed-343-fixed504": [
+      0,
+      0
+    ],
+    "public-seed-344-specialist480": [
+      0,
+      0
+    ],
+    "public-seed-344-fixed504": [
+      0,
+      0
+    ],
+    "mixed-seed-342-specialist480": [
+      112610,
+      462663
+    ],
+    "mixed-seed-342-fixed504": [
+      112231,
+      461967
+    ],
+    "mixed-seed-343-specialist480": [
+      118594,
+      468281
+    ],
+    "mixed-seed-343-fixed504": [
+      118241,
+      468195
+    ],
+    "mixed-seed-344-specialist480": [
+      113692,
+      464979
+    ],
+    "mixed-seed-344-fixed504": [
+      112774,
+      463984
+    ],
+    "noregrets-seed-342-specialist480": [
+      171211,
+      941546
+    ],
+    "noregrets-seed-342-fixed504": [
+      171979,
+      942248
+    ],
+    "noregrets-seed-343-specialist480": [
+      179050,
+      947040
+    ],
+    "noregrets-seed-343-fixed504": [
+      179547,
+      947597
+    ],
+    "noregrets-seed-344-specialist480": [
+      172675,
+      944632
+    ],
+    "noregrets-seed-344-fixed504": [
+      171924,
+      943914
+    ]
+  },
+  "selection_conditions": {
+    "public_lower_above_zero": false,
+    "at_least_two_public_seeds_improve": false,
+    "mixed_lower_above_minus_25": false,
+    "noregrets_lower_above_minus_50": true
+  },
+  "candidate_recommended": false,
+  "model_promoted": false
+}

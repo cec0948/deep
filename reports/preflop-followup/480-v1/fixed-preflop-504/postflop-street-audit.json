@@ -1,0 +1,107 @@
+{
+  "checked_utc": "2026-11-19T08:32:55.314605+00:00",
+  "summary_sha256": "6cc8d7759a091ce14ed417088e82917a9fc05792e20d51d2456ca8305df08d9c",
+  "final_audit_sha256": "23f7f524a8d9f78460228005ea1da37b5ed96b51cad74b5ff2dfa99a1007a9b3",
+  "independent_card_blocks": 20000,
+  "raw_hand_records": 2160000,
+  "paired_hands_per_field": 360000,
+  "endpoint_minus_parent_by_first_divergence": {
+    "public": {
+      "flop": {
+        "paired_hands": 70801,
+        "nonzero_hero_payoff_changes": 54749,
+        "contribution_bb100": -45.287058333333334
+      },
+      "turn": {
+        "paired_hands": 13436,
+        "nonzero_hero_payoff_changes": 10170,
+        "contribution_bb100": -3.9946916666666663
+      },
+      "river": {
+        "paired_hands": 3261,
+        "nonzero_hero_payoff_changes": 2381,
+        "contribution_bb100": -0.41478333333333334
+      },
+      "same_trace": {
+        "paired_hands": 272502,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_after_hero_fold": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_other": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      }
+    },
+    "mixed": {
+      "flop": {
+        "paired_hands": 31502,
+        "nonzero_hero_payoff_changes": 25360,
+        "contribution_bb100": -55.1802
+      },
+      "turn": {
+        "paired_hands": 5169,
+        "nonzero_hero_payoff_changes": 4030,
+        "contribution_bb100": -4.858219444444445
+      },
+      "river": {
+        "paired_hands": 1670,
+        "nonzero_hero_payoff_changes": 1526,
+        "contribution_bb100": -1.1001166666666666
+      },
+      "same_trace": {
+        "paired_hands": 321659,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_after_hero_fold": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_other": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      }
+    },
+    "noregrets": {
+      "flop": {
+        "paired_hands": 8385,
+        "nonzero_hero_payoff_changes": 6048,
+        "contribution_bb100": -23.874305555555555
+      },
+      "turn": {
+        "paired_hands": 1182,
+        "nonzero_hero_payoff_changes": 838,
+        "contribution_bb100": -0.3112027777777778
+      },
+      "river": {
+        "paired_hands": 475,
+        "nonzero_hero_payoff_changes": 470,
+        "contribution_bb100": -0.9849666666666665
+      },
+      "same_trace": {
+        "paired_hands": 349958,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_after_hero_fold": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      },
+      "opponent_first_other": {
+        "paired_hands": 0,
+        "nonzero_hero_payoff_changes": 0,
+        "contribution_bb100": 0.0
+      }
+    }
+  },
+  "scope": "Exploratory changes in terminal payoff per 100 of all hands; street is the first differing hero action in a common public betting history. Opponent-first pairs are included separately."
+}
