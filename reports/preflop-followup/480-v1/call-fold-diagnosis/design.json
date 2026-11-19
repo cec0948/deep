@@ -1,0 +1,155 @@
+{
+  "evaluation_deal_seed": 2037900000,
+  "evaluation_deals": 2000,
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "fields": [
+    "public",
+    "mixed",
+    "noregrets"
+  ],
+  "hero_seats": 6,
+  "candidate": "confirmed480 versus steps256 at the first sampled action disagreement",
+  "selection": "All common-prefix nonopening preflop 480-call/256-fold decisions before any payoff; stop on any earlier concrete action difference.",
+  "worlds": "New independent uniform card blocks played from the start. Reaching the common decision conditions on previous actions under the actual fixed opponents and matched hero policy draws.",
+  "branches": "Force call and fold in the same reached world, use the original 480 hero for all subsequent decisions, same opponent models and semantic action RNG protocol.",
+  "estimand": "Mean call minus fold payoff in big blinds per selected decision, averaged over reached states and sampled future outcomes.",
+  "uncertainty": "Ratio of total paired differences to count. Cluster influence by original card block, including zero-event blocks. Simultaneous 95% Bonferroni across three fields. Other breakdowns descriptive.",
+  "coverage": "Count nonopening 480 replay rows by position, payable call cost and pot odds. Counts are coarse sample support, not hand-value estimates.",
+  "cost_bounds_bb": [
+    1,
+    3,
+    10
+  ],
+  "pot_odds_bounds": [
+    0.2,
+    0.3333333333333333
+  ],
+  "new_selfplay_training_iterations": 0,
+  "source_summary_sha256": "6298d5e5a89f3212bed1f706376e41b298ec06d60f70e0f32d474358946e9610",
+  "source_final_audit_sha256": "5f502fe9459f7f985166ba5b138ce35c9460161042e49c2847d4004170aa50c3",
+  "source_evaluation_plan_sha256": "642491686308caeaef39f80e90277f8e77d437a6f80b37cae1fa4b47a8a6c4d6",
+  "created_utc": "2026-11-19T07:47:23.159448+00:00",
+  "prior_card_ranges": [
+    [
+      160261109,
+      160263109
+    ],
+    [
+      170261110,
+      170263110
+    ],
+    [
+      180261110,
+      180261610
+    ],
+    [
+      190261110,
+      190263110
+    ],
+    [
+      220261112,
+      220261114
+    ],
+    [
+      2026111201,
+      2026113201
+    ],
+    [
+      2026111203,
+      2026113203
+    ],
+    [
+      2026120000,
+      2026122000
+    ],
+    [
+      2026130000,
+      2026132000
+    ],
+    [
+      2026140000,
+      2026142000
+    ],
+    [
+      2026150000,
+      2026152000
+    ],
+    [
+      2026160000,
+      2026180000
+    ],
+    [
+      2026200000,
+      2026220000
+    ],
+    [
+      2035000000,
+      2035020000
+    ],
+    [
+      2037000000,
+      2037020000
+    ],
+    [
+      2037080000,
+      2037080020
+    ],
+    [
+      2037100000,
+      2037120000
+    ],
+    [
+      2037180000,
+      2037180020
+    ],
+    [
+      2037200000,
+      2037220000
+    ],
+    [
+      2037280000,
+      2037280020
+    ],
+    [
+      2037300000,
+      2037320000
+    ],
+    [
+      2037380000,
+      2037380020
+    ],
+    [
+      2037400000,
+      2037420000
+    ],
+    [
+      2037500000,
+      2037520000
+    ],
+    [
+      2037520000,
+      2037540000
+    ],
+    [
+      2037540000,
+      2037560000
+    ],
+    [
+      2037600000,
+      2037620000
+    ],
+    [
+      2037700000,
+      2037720000
+    ],
+    [
+      2037800000,
+      2037820000
+    ]
+  ],
+  "implementation_sha256": "a7618d343505c4ca3c7c0ad55e23391d2ca87e2504ef6fcc6c43c681ee750bcc"
+}
