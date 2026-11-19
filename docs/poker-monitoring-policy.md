@@ -4,6 +4,8 @@
 
 ## 최신 실행 확인
 
+- 2026-11-19에 선택한 480회 프리플롭 후보에서 시작한 자기대전의 실행 폴더는 `artifacts/preflop-followup/480-v1/warm-start`다. 세 시드의 492회 학습과 복구본 검증은 `training-verification.json`과 `backup-verification.json`으로 확인한다. 출발 후보와 새 후보의 18개 평가 조합이 끝나면 `summary.json`에 기록된다. [실행 기록](poker-warm-preflop-20261119.md)
+
 - 2026-11-19 프리플롭 후보 직접 비교의 완료 기록은 `artifacts/preflop-followup/480-v1/specialist-comparison/{summary,final-audit}.json`에 있다. 480회 후보 9개 조합을 새로 평가했고 492회 후보 9개 조합은 기존 기록을 사용했다. [같은 카드에서의 비교 결과](poker-preflop-followup-20261118.md#11월-19일-프리플롭-후보-직접-비교)
 
 - 프리플롭 후속 비교 `artifacts/preflop-followup/480-v1/online`은 2026-11-18 13:53 KST에 36셀·432만 핸드 평가를 마쳤다. 두 방식 모두 492회에 도달했고 연장 기준에는 미달했다. 492회 복구 상태는 하나의 `preflop-online-comparison-recovery-v1` 묶음으로 보존했다. `summary.json`, `final-audit.json`, `backup-verification.json`에 종료 근거와 검증 기록이 있다. [후속 실험 기록](poker-preflop-followup-20261118.md)

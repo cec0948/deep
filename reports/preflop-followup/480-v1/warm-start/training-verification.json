@@ -1,0 +1,151 @@
+{
+  "verified_utc": "2026-11-19T00:53:32.832390+00:00",
+  "training_completed_utc": "2026-11-19T00:52:01.469205+00:00",
+  "stage_sha256": "5666beed532cf8c06aba31d328acd94e3d0c819d58f835b96dfcce971959f202",
+  "study": "20261119 warm-start of the selected 480 preflop specialist",
+  "initial": 480,
+  "final": 492,
+  "new_selfplay_iterations_per_seed": 12,
+  "input_and_output_chain_checked": true,
+  "training_restore_and_initial_policy_matched": true,
+  "seeds": {
+    "342": {
+      "initial_probability_probes": {
+        "opening": 16,
+        "preflop": 80,
+        "flop": 96,
+        "turn": 96,
+        "river": 96
+      },
+      "initial_max_probability_error": 0.0,
+      "distinct_nonopening_initial_decisions": 66,
+      "start_replay_root_and_rng_verified": true,
+      "weight_chain_verified_iterations": 12,
+      "main_parameters": {
+        "preflop": {
+          "changed_main_parameter_tensors": 16,
+          "main_parameter_tensors": 16,
+          "start_sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+          "final_sha256": "70c64ff191213909a57c81659929cc567c5029b7c7b30db90f98de0cb36dbc15"
+        },
+        "postflop": {
+          "changed_main_parameter_tensors": 16,
+          "main_parameter_tensors": 16,
+          "start_sha256": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+          "final_sha256": "9bb2adf708bfaa1b6663b3815a970a5cb54448cb8e51831aef53be03486e6a33"
+        }
+      },
+      "new_rows_by_traverser": [
+        18350,
+        12743,
+        13147,
+        14140,
+        15435,
+        13256
+      ],
+      "new_regret_rows": 87071,
+      "retained_regret_rows": 600000,
+      "new_opening_observations": 8112,
+      "new_reference_rows": 48118,
+      "retained_reference_rows": 100000,
+      "reference_hands": 6144,
+      "traversals": 3072,
+      "general_steps": 9216,
+      "preflop_steps": 3072,
+      "maximum_opening_tv": 0.04021501166000952,
+      "auxiliary_average_tv": 0.1764618785271178
+    },
+    "343": {
+      "initial_probability_probes": {
+        "opening": 16,
+        "preflop": 80,
+        "flop": 96,
+        "turn": 96,
+        "river": 96
+      },
+      "initial_max_probability_error": 0.0,
+      "distinct_nonopening_initial_decisions": 63,
+      "start_replay_root_and_rng_verified": true,
+      "weight_chain_verified_iterations": 12,
+      "main_parameters": {
+        "preflop": {
+          "changed_main_parameter_tensors": 16,
+          "main_parameter_tensors": 16,
+          "start_sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+          "final_sha256": "bbbfdeb6de111fca0e704e12f73b32a77571c426e1057b0782984f683efa1ba8"
+        },
+        "postflop": {
+          "changed_main_parameter_tensors": 16,
+          "main_parameter_tensors": 16,
+          "start_sha256": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757",
+          "final_sha256": "92a57ce7c08cbf86380b989ee7518f8ae174894486b17859d6509839438fd93d"
+        }
+      },
+      "new_rows_by_traverser": [
+        18589,
+        15353,
+        13321,
+        11377,
+        14203,
+        13908
+      ],
+      "new_regret_rows": 86751,
+      "retained_regret_rows": 600000,
+      "new_opening_observations": 8112,
+      "new_reference_rows": 47222,
+      "retained_reference_rows": 100000,
+      "reference_hands": 6144,
+      "traversals": 3072,
+      "general_steps": 9216,
+      "preflop_steps": 3072,
+      "maximum_opening_tv": 0.013151562200018344,
+      "auxiliary_average_tv": 0.1642066626019631
+    },
+    "344": {
+      "initial_probability_probes": {
+        "opening": 16,
+        "preflop": 80,
+        "flop": 96,
+        "turn": 96,
+        "river": 96
+      },
+      "initial_max_probability_error": 0.0,
+      "distinct_nonopening_initial_decisions": 68,
+      "start_replay_root_and_rng_verified": true,
+      "weight_chain_verified_iterations": 12,
+      "main_parameters": {
+        "preflop": {
+          "changed_main_parameter_tensors": 16,
+          "main_parameter_tensors": 16,
+          "start_sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+          "final_sha256": "c10c7ef4a5411397f4145d1cce5266de2307f1560d3f73f0062651726e531713"
+        },
+        "postflop": {
+          "changed_main_parameter_tensors": 16,
+          "main_parameter_tensors": 16,
+          "start_sha256": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431",
+          "final_sha256": "a0fe827cd1d7ad515de0d5c2d2dbd5ad2341f72f03802d5306f91a7a571b6838"
+        }
+      },
+      "new_rows_by_traverser": [
+        17740,
+        15106,
+        10690,
+        16923,
+        15653,
+        15649
+      ],
+      "new_regret_rows": 91761,
+      "retained_regret_rows": 600000,
+      "new_opening_observations": 8112,
+      "new_reference_rows": 47256,
+      "retained_reference_rows": 100000,
+      "reference_hands": 6144,
+      "traversals": 3072,
+      "general_steps": 9216,
+      "preflop_steps": 3072,
+      "maximum_opening_tv": 0.030139079676558038,
+      "auxiliary_average_tv": 0.1698323488183736
+    }
+  }
+}

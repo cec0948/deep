@@ -1,0 +1,21 @@
+{
+  "verified_utc": "2026-11-19T00:56:39.862770+00:00",
+  "kind": "training-checkpoint",
+  "checkpoint_mode": "preflop-warm-start-recovery-v1",
+  "stage_iteration": 492,
+  "bytes": 107252269,
+  "sha256": "4a9b920c5f65694cc769395ce1688e0b888035c1bb3325a80e642955a6078920",
+  "restored_all_three_seeds": true,
+  "restored_both_street_networks": true,
+  "format": "split-checkpoint-v1",
+  "verified_remote_size": true,
+  "verified_owner_only": true,
+  "remote_sha256_verified": false,
+  "backup_files": 3,
+  "active_managed_bytes": 1624218503,
+  "within_2gib_target": true,
+  "indexed": true,
+  "cleanup_candidates": 1,
+  "archive_includes_final_evaluation_summary": false,
+  "local_recombination_verified": true
+}

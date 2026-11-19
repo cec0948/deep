@@ -17,6 +17,7 @@ from train_poker_average_continuation import CHECKPOINT_FORMAT as MODE
 
 
 ONLINE_MODE='preflop-online-comparison-recovery-v1'
+WARM_MODE='preflop-warm-start-recovery-v1'
 
 
 def stage(record):
@@ -66,14 +67,29 @@ def plan_retention(index,root=ROOT,budget_bytes=DEFAULT_BUDGET):
     root=Path(root);shadow=copy.deepcopy(index)
     active={n:r for n,r in enumerate(index['backups']) if not r.get('deleted_remote')}
     windows={n:r for n,r in active.items() if r.get('checkpoint_mode')==MODE}
-    online={n:r for n,r in active.items() if r.get('checkpoint_mode')==ONLINE_MODE}
+    online={n:r for n,r in active.items() if r.get('checkpoint_mode') in (ONLINE_MODE,WARM_MODE)}
     for r in online.values():
+        warm=r['checkpoint_mode']==WARM_MODE
+        expected_arms=['warm492'] if warm else ['control492','specialist492']
         if (r.get('kind')!='training-checkpoint' or r.get('status') not in COMPLETE
                 or r.get('iterations')!={'342':492,'343':492,'344':492}
-                or r.get('arms')!=['control492','specialist492']
+                or r.get('arms')!=expected_arms
                 or r.get('restoration_verified') is not True
                 or r.get('training_stage_completed') is not True):
-            raise ValueError('Incomplete two-arm 492 comparison recovery blocks cleanup')
+            raise ValueError('Incomplete 492-round preflop recovery blocks cleanup')
+        if warm:
+            deps=r.get('restore_dependencies',[])
+            parent_ids,shas=_dependencies({'restore_dependencies':deps})
+            training_parents={rec['sha256'] for rec in windows.values() if stage(rec)==480}
+            specialist_parents={rec['sha256'] for rec in active.values()
+                                if rec.get('checkpoint_mode')=='preflop-specialist-policy-bundle-v1'
+                                and rec.get('kind')=='derived-policy-probe' and rec.get('status') in COMPLETE}
+            if (parent_ids or len(shas)!=2
+                    or not any(dep.get('parent_checkpoint_sha256') in training_parents for dep in deps)
+                    or not any(dep.get('parent_backup_sha256') in specialist_parents for dep in deps)
+                    or r.get('warm_start_state_verified') is not True
+                    or r.get('verification',{}).get('both_street_weights_verified') is not True):
+                raise ValueError('Unverified warm-start weights or missing source recoveries')
     for n,r in windows.items():
         stage(r)
     for n,r in {**windows, **online}.items():
@@ -89,7 +105,8 @@ def plan_retention(index,root=ROOT,budget_bytes=DEFAULT_BUDGET):
                 raise ValueError('Retained recovery local size/SHA mismatch')
             item['kind']='training-checkpoint';item['checkpoint_mode']=r['checkpoint_mode']
             if n in online:
-                item['reasons']=['retained_fixed_492_comparison_recovery']
+                item['reasons']=['retained_warm_preflop_recovery' if r['checkpoint_mode']==WARM_MODE
+                                 else 'retained_fixed_492_comparison_recovery']
             else:
                 item['reasons']=['explicitly_replaced420_with_verified_self_contained480'] if n in removed else ['retained_window_recovery_or_dependency']
             (candidates if n in removed else retained).append(item)
