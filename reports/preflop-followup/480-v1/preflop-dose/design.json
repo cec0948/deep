@@ -1,0 +1,149 @@
+{
+  "created_utc": "2026-11-19T06:19:53.005318+00:00",
+  "evaluation_deal_seed": 2037700000,
+  "evaluation_deals": 20000,
+  "prior_card_ranges": [
+    [
+      160261109,
+      160263109
+    ],
+    [
+      170261110,
+      170263110
+    ],
+    [
+      180261110,
+      180261610
+    ],
+    [
+      190261110,
+      190263110
+    ],
+    [
+      220261112,
+      220261114
+    ],
+    [
+      2026111201,
+      2026113201
+    ],
+    [
+      2026111203,
+      2026113203
+    ],
+    [
+      2026120000,
+      2026122000
+    ],
+    [
+      2026130000,
+      2026132000
+    ],
+    [
+      2026140000,
+      2026142000
+    ],
+    [
+      2026150000,
+      2026152000
+    ],
+    [
+      2026160000,
+      2026180000
+    ],
+    [
+      2026200000,
+      2026220000
+    ],
+    [
+      2035000000,
+      2035020000
+    ],
+    [
+      2037000000,
+      2037020000
+    ],
+    [
+      2037080000,
+      2037080020
+    ],
+    [
+      2037100000,
+      2037120000
+    ],
+    [
+      2037180000,
+      2037180020
+    ],
+    [
+      2037200000,
+      2037220000
+    ],
+    [
+      2037280000,
+      2037280020
+    ],
+    [
+      2037300000,
+      2037320000
+    ],
+    [
+      2037380000,
+      2037380020
+    ],
+    [
+      2037400000,
+      2037420000
+    ],
+    [
+      2037500000,
+      2037520000
+    ],
+    [
+      2037520000,
+      2037540000
+    ],
+    [
+      2037540000,
+      2037560000
+    ],
+    [
+      2037600000,
+      2037620000
+    ]
+  ],
+  "steps": [
+    0,
+    64,
+    256
+  ],
+  "batch": 512,
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "fields": [
+    "public",
+    "mixed",
+    "noregrets"
+  ],
+  "frozen_parent": "480-round confirmed preflop specialist",
+  "source_summary_sha256": "263c20db53b9ef78a0ba1ac6081f58c323b8c3a2d3500a218ca8ab7bfd874dcf",
+  "source_audit_sha256": "7c476c13e5b91f377a896716762a03269ec2045eb083b44efd642fe12edb1a0a",
+  "fixed_replay_iteration": 480,
+  "new_selfplay_iterations": 0,
+  "sample_rng": "MT19937, seed 20261119 + training seed",
+  "optimizer": "continuous Adam at 0.001",
+  "shared_prefix": true,
+  "freeze_opening_and_postflop": true,
+  "model_promotion": false,
+  "contrasts": [
+    "64_minus_0",
+    "256_minus_0",
+    "256_minus_64"
+  ],
+  "planned_evaluation_cells": 27,
+  "planned_hands": 3240000,
+  "intervals": "Paired by original card block after averaging 6 seats and 3 fixed seeds; Bonferroni across all 9 estimates"
+}
