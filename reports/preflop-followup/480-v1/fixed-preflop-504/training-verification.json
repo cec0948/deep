@@ -1,0 +1,224 @@
+{
+  "training_complete": true,
+  "iteration": 504,
+  "completed_utc": "2026-11-19T07:56:48.213357+00:00",
+  "warm_start_weight_chain_verified": true,
+  "seed_verification": {
+    "342": {
+      "start": {
+        "seed": 342,
+        "iteration": 480,
+        "weights": {
+          "general": "fd8751fa80ffe87557340eae23e816ed4811040b49985b4827f8ed3d0c7c317d",
+          "preflop": "d3bfa1e0f1c4805a1839a3d15b911ff4f3a9a9c3ffccd42ee927c5bdfc1e8de7"
+        },
+        "deployed_policy_sha256": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6",
+        "street_weight_sha256": {
+          "preflop": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+          "postflop": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78"
+        },
+        "action_probability_probes": {
+          "opening": 16,
+          "preflop": 80,
+          "flop": 96,
+          "turn": 96,
+          "river": 96
+        },
+        "changed_nonopening_preflop_vs_general": 66,
+        "max_probability_error": 0.0,
+        "checkpoint_files": {
+          "arrays.npz": "ef45b405036417b6bc277fb0c150101e87016062c391efe8fa83003d8a4e13eb",
+          "current.npz": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+          "average.npz": "d0d939d11710f9de57b4fc06125dfcd124bf177069201e13a8b8ca2521c83abe",
+          "state.json": "a8fafef50f331d3d025ffc05ed4a40039c83731f8a2ac9fec8d7c8c9024a5787"
+        },
+        "replay_root_reference_and_rng_verified": true,
+        "frozen_preflop_probes": 265
+      },
+      "iteration": 504,
+      "updates": 24,
+      "final_weights": {
+        "general": "162623651768cd001e91eb4eba67924e32ec14da64a25797da83901d2a0b6291",
+        "preflop": "d3bfa1e0f1c4805a1839a3d15b911ff4f3a9a9c3ffccd42ee927c5bdfc1e8de7"
+      },
+      "general_steps": 18432,
+      "preflop_steps": 0,
+      "opening_steps": 0,
+      "traversals": 6144,
+      "new_regret_rows": 186398,
+      "opening_samples": 16224,
+      "reference_hands": 12288,
+      "fit_draws_by_street": [
+        3144119,
+        3145122,
+        3147943
+      ],
+      "checkpoints": [
+        486,
+        492,
+        498,
+        504
+      ],
+      "final_average": {
+        "rows": 100000,
+        "total_seen": 546638,
+        "distinct_inputs": 46733,
+        "steps": 8192,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.17887604024245493,
+        "weighted_replay_kl": 0.19845661653957747,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813,
+        "within_original_quality_reference": false
+      },
+      "all_preflop_unchanged": true
+    },
+    "343": {
+      "start": {
+        "seed": 343,
+        "iteration": 480,
+        "weights": {
+          "general": "52e05f3859e18a2546abbf963646f113d9a605c3a8ae27b4b0cd7467431925f8",
+          "preflop": "6686db401eb8f11f6598cb657f36f4c08e2d239b4a4dc4993965347a3ed87e1d"
+        },
+        "deployed_policy_sha256": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f",
+        "street_weight_sha256": {
+          "preflop": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+          "postflop": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757"
+        },
+        "action_probability_probes": {
+          "opening": 16,
+          "preflop": 80,
+          "flop": 96,
+          "turn": 96,
+          "river": 96
+        },
+        "changed_nonopening_preflop_vs_general": 63,
+        "max_probability_error": 0.0,
+        "checkpoint_files": {
+          "arrays.npz": "f4f849d48b153c96805b0d10ddba4c77148e296d7e2728aa0df3294f69a2125d",
+          "current.npz": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757",
+          "average.npz": "eaf331e2707c1f1ffb783da466777c785dcab8cac331d65c41c87dd5754a5e69",
+          "state.json": "6f9969e8a90f38b325efa98b893a11ab44f08568e2bdecd7db36fdfa358d55db"
+        },
+        "replay_root_reference_and_rng_verified": true,
+        "frozen_preflop_probes": 265
+      },
+      "iteration": 504,
+      "updates": 24,
+      "final_weights": {
+        "general": "2bc3e309f5101a5dcd628b2f6b6e6e8964dbdfeb44c66638a7cdbea450d2d189",
+        "preflop": "6686db401eb8f11f6598cb657f36f4c08e2d239b4a4dc4993965347a3ed87e1d"
+      },
+      "general_steps": 18432,
+      "preflop_steps": 0,
+      "opening_steps": 0,
+      "traversals": 6144,
+      "new_regret_rows": 193026,
+      "opening_samples": 16224,
+      "reference_hands": 12288,
+      "fit_draws_by_street": [
+        3147708,
+        3145215,
+        3144261
+      ],
+      "checkpoints": [
+        486,
+        492,
+        498,
+        504
+      ],
+      "final_average": {
+        "rows": 100000,
+        "total_seen": 535133,
+        "distinct_inputs": 45400,
+        "steps": 8192,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.16187121948618244,
+        "weighted_replay_kl": 0.1860892127609929,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813,
+        "within_original_quality_reference": false
+      },
+      "all_preflop_unchanged": true
+    },
+    "344": {
+      "start": {
+        "seed": 344,
+        "iteration": 480,
+        "weights": {
+          "general": "e3076819234ef0955c0af969eb8a22e91e2016183032002c975fbc1e02ae449c",
+          "preflop": "9de6a9220e08176ed36b3b30e53412fc420134f8fb72d0b89da549c1ff0341da"
+        },
+        "deployed_policy_sha256": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d",
+        "street_weight_sha256": {
+          "preflop": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+          "postflop": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431"
+        },
+        "action_probability_probes": {
+          "opening": 16,
+          "preflop": 80,
+          "flop": 96,
+          "turn": 96,
+          "river": 96
+        },
+        "changed_nonopening_preflop_vs_general": 68,
+        "max_probability_error": 0.0,
+        "checkpoint_files": {
+          "arrays.npz": "5c76c1d50f016d0e2a3e937391bd343b30069dc8fcd77234446958613b20af98",
+          "current.npz": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431",
+          "average.npz": "96b5ff43802b2d171ba15b062ca8340437e44d0f8510c4a4253fd3d6980eeb38",
+          "state.json": "817e5622ffb327d12e7dcb4bf5e6aba7e633cae8e9d62b0a446936047b406413"
+        },
+        "replay_root_reference_and_rng_verified": true,
+        "frozen_preflop_probes": 265
+      },
+      "iteration": 504,
+      "updates": 24,
+      "final_weights": {
+        "general": "10774cd6fa35a9ab88d33ecee5d4a8ad20367673a8fed47e30d0ec521da51220",
+        "preflop": "9de6a9220e08176ed36b3b30e53412fc420134f8fb72d0b89da549c1ff0341da"
+      },
+      "general_steps": 18432,
+      "preflop_steps": 0,
+      "opening_steps": 0,
+      "traversals": 6144,
+      "new_regret_rows": 201605,
+      "opening_samples": 16224,
+      "reference_hands": 12288,
+      "fit_draws_by_street": [
+        3145537,
+        3145708,
+        3145939
+      ],
+      "checkpoints": [
+        486,
+        492,
+        498,
+        504
+      ],
+      "final_average": {
+        "rows": 100000,
+        "total_seen": 531057,
+        "distinct_inputs": 45099,
+        "steps": 8192,
+        "batch_size": 512,
+        "weighted_replay_tv": 0.16432265784917488,
+        "weighted_replay_kl": 0.18919051083964442,
+        "objective": "Retained replay mass times soft-label cross-entropy; no stratum rebalance",
+        "scope": "Replay approximation consistency; not independent poker strength",
+        "parameters": 23813,
+        "within_original_quality_reference": false
+      },
+      "all_preflop_unchanged": true
+    }
+  },
+  "stage_ready_sha256": "4eaf2e344657ca5f01b22cddde8c90d6ee3ea08eaeb147c32671adeaa26fff86",
+  "final_policy_sha256": {
+    "342": "da7fb279e04478247bac999c30881afc6a4d25ad8ed988cd0be95edb0f6abb91",
+    "343": "04c62675b63827a09450e5b001c4e41d6c44a173523499136dcdfb2ea4d59e4c",
+    "344": "496e3131cf3368441ead28e6922b1025745c4fec40c62a045bbe1ea08eb8632b"
+  }
+}
