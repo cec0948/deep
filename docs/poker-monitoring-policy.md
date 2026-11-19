@@ -2,6 +2,10 @@
 
 예약 작업은 최신 실행의 진도·평가·실패·완료와 백업을 확인한다. 학습은 별도의 클라우드 프로그램이 수행한다. 새 변화가 있을 때만 한국어로 짧게 알리고, 이미 보고한 완료 결과를 반복 알리지 않는다. 소스에 접근할 수 있으면 비공개 `artifacts/poker-monitoring/last-notified.json`과 run·상태·fitting 수·평가 수·요약 해시·백업 해시를 비교해 이미 알린 완료 결과를 반복하지 않는다.
 
+## 여러 상대에 대한 성능 판단
+
+이번 이후의 일반화 비교는 상대별 절대 bb/100, 흑자 테이블 수, 가장 어려운 상대, 계열별 비중을 맞춘 종합 점수, 별도로 보류한 조합의 성적을 함께 기록한다. 약한 상대에게 큰 흑자를 유지하면서 수익 폭이 줄었다는 이유만으로 후보를 탈락시키지 않는다. 평가 상대의 전략이나 보류 카드로 기본 정책을 학습하지 않는다. 새 후보를 보고 지표·상대·통과선을 변경하지 않도록 평가 설계는 결과를 열기 전에 기록한다. 이전 실험의 사전 판정은 해당 기록에서 확인한다. [새 평가 설계](poker-population-20261119.md)
+
 ## 최신 실행 확인
 
 - 2026-11-19 17:32 KST에 `artifacts/preflop-followup/480-v1/fixed-preflop-504`의 세 시드가 24회 자기대전과 18개 조합 평가를 모두 마쳤다. 504회는 세 상대군 모두 하락했고 480회 후보를 유지한다. `summary.json`은 성능, `final-audit.json`은 검산, `backup-verification.json`은 비공개 복구본 검증이며 `/workspace/.venvs/fullhouse/bin/python scripts/run_poker_fixed_preflop_window.py status`는 읽기 전용 명령이다. [완료 기록](poker-fixed-preflop-504-20261119.md)

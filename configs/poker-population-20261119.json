@@ -1,0 +1,30 @@
+{
+  "study": "frozen-480-population-v1",
+  "parent_plan_sha256": "642491686308caeaef39f80e90277f8e77d437a6f80b37cae1fa4b47a8a6c4d6",
+  "parent_summary_sha256": "6298d5e5a89f3212bed1f706376e41b298ec06d60f70e0f32d474358946e9610",
+  "parent_audit_sha256": "5f502fe9459f7f985166ba5b138ce35c9460161042e49c2847d4004170aa50c3",
+  "seeds": [342,343,344],
+  "labels": ["steps0","steps256"],
+  "public_confirmation": {"deal_seed": 2038000000, "deals": 20000},
+  "panel_cards": {"deal_seed": 2038100000, "deals": 2000},
+  "holdout_cards": {"deal_seed": 2038200000, "deals": 2000},
+  "fields": {
+    "public": {"family": "public", "role": "primary"},
+    "noregrets": {"family": "noregrets", "role": "primary"},
+    "rich96": {"family": "historical-rich", "role": "primary"},
+    "calling-station": {"family": "rules", "role": "primary"},
+    "tight-value": {"family": "rules", "role": "primary"},
+    "pressure": {"family": "rules", "role": "primary"},
+    "mixed": {"family": "legacy-mixed", "role": "diagnostic"},
+    "varied": {"family": "heldout-lineup", "role": "holdout"}
+  },
+  "main_questions": [
+    "Replicate the previously selected steps256 minus steps0 public difference on disjoint cards; use a paired two-sided 95% interval.",
+    "Compare family-equal scores with per-table aggregate winnings capped at +100 bb/100, and sensitivity at +50 and +200, plus uncapped scores and absolute profitable-table counts.",
+    "Report a separate paired result on the preregistered heterogeneous table and disjoint cards. No table is used to fit or select further variants."
+  ],
+  "workers": 4,
+  "timeout_seconds": 3600,
+  "model_promotion": false,
+  "new_training": false
+}
