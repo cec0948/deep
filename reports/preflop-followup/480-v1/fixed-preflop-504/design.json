@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-11-19T07:47:18.094018+00:00",
+  "initial_iteration": 480,
+  "final_iteration": 504,
+  "arms": [
+    "fixed504"
+  ],
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "fields": [
+    "public",
+    "mixed",
+    "noregrets"
+  ],
+  "parent_archive_sha256": "f01399198fd4c3eb5fc58be569d726fcab5298995c0123dc531b108961af7f59",
+  "parent_policy_bundle_sha256": "424b8e76a31f359f21de47ec02c58fd3a902ab2639f9f7e9a8785ff253d63f2e",
+  "source_dose_summary_sha256": "6298d5e5a89f3212bed1f706376e41b298ec06d60f70e0f32d474358946e9610",
+  "source_dose_audit_sha256": "5f502fe9459f7f985166ba5b138ce35c9460161042e49c2847d4004170aa50c3",
+  "source_confirmation_summary_sha256": "52d1a10ff493680189afd12fdef4408b4bd8dc980ce56786d7ad7dcba4dfdff1",
+  "source_confirmation_audit_sha256": "b847f113a1965302619517d2395706f0d2070915c5447de417b453b0ef720930",
+  "general_steps": 768,
+  "preflop_steps": 0,
+  "opening_steps": 0,
+  "main_batch": 512,
+  "checkpoint_every": 6,
+  "training": "Fixed full preflop specialist, online traversal, postflop-only replay fitting",
+  "statistical_unit": "Original card block, average over its six seats and three fixed seeds",
+  "evaluation_deal_seed": 2037800000,
+  "evaluation_deals": 20000,
+  "planned_evaluation_cells": 18,
+  "planned_hands": 2160000,
+  "recommendation_criteria": "504 minus specialist480: nominal public lower > 0, at least two positive public seeds, nominal mixed lower >= -25, nominal NoRegrets lower >= -50 bb/100",
+  "interval": "Nominal 95% intervals by field and Bonferroni simultaneous 95% across three fields",
+  "decision": "Passing qualifies for an independent evaluation. No automatic promotion or extension.",
+  "automatic_retry": false,
+  "automatic_extension": false,
+  "model_promotion": false,
+  "parent_policy_sha256": {
+    "342": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6",
+    "343": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f",
+    "344": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d"
+  },
+  "frozen_inputs": 102,
+  "source_plan_sha256": "6a2729917cf4ca7fe8416e209c2ffbf2564f4bc8c691664e7a68a575d038b02b"
+}
