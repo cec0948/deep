@@ -1,0 +1,82 @@
+{
+  "utc": "2026-11-20T00:53:55.053713+00:00",
+  "design_sha256": "f9c6fac78071540ca7c5942c5ff1ef548db647f5cfbf92b02bd1668576e58d01",
+  "independent_card_blocks": 4000,
+  "additional_unique_card_blocks": 0,
+  "additional_evaluated_hands": 72000,
+  "scores_bb100": {
+    "fixed504": -70.30670833333335,
+    "slow504": -62.398555555555554,
+    "specialist480": -22.234041666666666
+  },
+  "slow_minus_prior_fixed504_bb100": 7.908152777777779,
+  "nominal_paired_ci95_bb100": [
+    -6.399707360963204,
+    22.216012916518764
+  ],
+  "differences_by_training_seed": {
+    "342": -12.673916666666663,
+    "343": 1.8032083333333357,
+    "344": 34.595166666666664
+  },
+  "checked_prefix_rows": 216000,
+  "independent_policy_and_terminal_replay_hands": 756,
+  "result_proofs": {
+    "public-seed-342-fixed504": {
+      "result_sha256": "cddd69eb3a702b8b72a6e2e97796c5bceeef64fc1692f2b18838cdc84dfe6805",
+      "raw_sha256": "43a999321af909a598d1c34434b4de13a6ecdc823213071210dc9ea3b18ef991",
+      "verified_hands": 24000,
+      "policy_replayed_hands": 84
+    },
+    "public-seed-343-fixed504": {
+      "result_sha256": "c2311dc21421ee57cd67f05a837bfdad09810fed14e2d8a8a9e764cfeda644f2",
+      "raw_sha256": "e0f8cfcdd622c222eaf8a7ca34bea35ba105307ce354263e935ab8751552455d",
+      "verified_hands": 24000,
+      "policy_replayed_hands": 84
+    },
+    "public-seed-344-fixed504": {
+      "result_sha256": "a962a11556d2e15dbda8ec7f03fb64fc1772da932276db64713f38b0c5b8cd44",
+      "raw_sha256": "1468775ae6fbbaf07bce8f8d77aacfe8c3e36bcd96ff08f55fa45403a9dadfde",
+      "verified_hands": 24000,
+      "policy_replayed_hands": 84
+    },
+    "public-seed-342-slow504": {
+      "result_sha256": "f60b1f67da254247cce44ac41be522f564083a7a5ac8d6cb2b3fcf056b71f663",
+      "raw_sha256": "ddb4fa94641fc25f131369e67d86066fe36195ef63f8625efb57047b850a3884",
+      "verified_hands": 24000,
+      "policy_replayed_hands": 84
+    },
+    "public-seed-343-slow504": {
+      "result_sha256": "513cc7ae83a6f786e3837c1cda57ef5a899cde2427c3f452e520319bf9a5a1b7",
+      "raw_sha256": "4962de0b4c3dd4adf9547750d30cf1462dd2d1c613518bc68e3dc6fd2d863210",
+      "verified_hands": 24000,
+      "policy_replayed_hands": 84
+    },
+    "public-seed-344-slow504": {
+      "result_sha256": "e8554ec2d3453beb23d8c459f6c1ce18140b518861b499c95fd6d0b266e32055",
+      "raw_sha256": "89c75ba59b6dc2afb5aa437b598e6ec9428700d481de56c1d228b8dca84c9d27",
+      "verified_hands": 24000,
+      "policy_replayed_hands": 84
+    },
+    "public-seed-342-specialist480": {
+      "result_sha256": "1dea6f51140966a2b11fc515aca919c57ca755928cd4211ebdb32ef2674a4048",
+      "raw_sha256": "c65d7153045aeb418a0374b93595e194d4e43f76660efa08877fcc3481fca380",
+      "verified_hands": 24000,
+      "policy_replayed_hands": 84
+    },
+    "public-seed-343-specialist480": {
+      "result_sha256": "2db63ae0458a2f64240ded641bbce7ec8590fff8a08875a9d5c6bc55d2da1eee",
+      "raw_sha256": "d37b58ef4ca57cc825dbb65ecc6448e395826190735d69b46812fc49fe085c97",
+      "verified_hands": 24000,
+      "policy_replayed_hands": 84
+    },
+    "public-seed-344-specialist480": {
+      "result_sha256": "0d1bd98a63f6e2ec285fbd38be13e9d35a66425b67463e1576c4882630882dce",
+      "raw_sha256": "fd56c8ddc80f8fee55672865bd6614a5ecd62ae3ec8a3bea2eaf1daa983c318e",
+      "verified_hands": 24000,
+      "policy_replayed_hands": 84
+    }
+  },
+  "generated_trajectories_can_diverge_after_first_fit": true,
+  "scope": "Matched fixed-budget endpoint public-table diagnostic on a subset of the main evaluation; one table, three fixed training seeds."
+}

@@ -1,0 +1,83 @@
+{
+  "verified_utc": "2026-11-20T00:54:06.742272+00:00",
+  "design_sha256": "47d64d029bbbad2ee115dd64f235237145d24e5ebfed0522d12b59d80b8aa370",
+  "population_plan_sha256": "87927530b0cfbd8e049769fef29dcdc8a02640869ef189799c1e91e676c6ae07",
+  "script_sha256": "59cc5cc53fa00ec39fc8fa1f404c0f8c4e9e091efb0d1180b1f7a44a62091ce9",
+  "public_only": true,
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "original_card_blocks": 20000,
+  "extra_card_blocks": 0,
+  "extra_hands": 0,
+  "endpoint_traces_and_payoffs_identical": 89172,
+  "primary_mixture_change_reconstructed": -35.110644444444446,
+  "results": {
+    "486": {
+      "assigned_hands_across_seeds": 90774,
+      "assigned_card_seats": 30258,
+      "card_blocks_with_assignment": 16508,
+      "matched_base_bb100": -5.946669751250358,
+      "snapshot_bb100": -29.4149426047106,
+      "paired_change_bb100": -23.468272853460242,
+      "card_cluster_se": 6.426255929752017,
+      "simultaneous_95": [
+        -39.519167469176836,
+        -7.417378237743652
+      ]
+    },
+    "492": {
+      "assigned_hands_across_seeds": 89943,
+      "assigned_card_seats": 29981,
+      "card_blocks_with_assignment": 16517,
+      "matched_base_bb100": -38.67895222529825,
+      "snapshot_bb100": -73.661129826668,
+      "paired_change_bb100": -34.982177601369756,
+      "card_cluster_se": 6.6234548502227995,
+      "simultaneous_95": [
+        -51.525617040294435,
+        -18.43873816244508
+      ]
+    },
+    "498": {
+      "assigned_hands_across_seeds": 90111,
+      "assigned_card_seats": 30037,
+      "card_blocks_with_assignment": 16488,
+      "matched_base_bb100": -26.20863157661107,
+      "snapshot_bb100": -70.45109919987571,
+      "paired_change_bb100": -44.24246762326464,
+      "card_cluster_se": 6.701208401877262,
+      "simultaneous_95": [
+        -60.98011253381167,
+        -27.504822712717605
+      ]
+    },
+    "504": {
+      "assigned_hands_across_seeds": 89172,
+      "assigned_card_seats": 29724,
+      "card_blocks_with_assignment": 16414,
+      "matched_base_bb100": -12.58475754721213,
+      "snapshot_bb100": -50.44852644327816,
+      "paired_change_bb100": -37.86376889606603,
+      "card_cluster_se": 6.867523307109115,
+      "simultaneous_95": [
+        -55.01681945588703,
+        -20.71071833624502
+      ]
+    }
+  },
+  "cell_results_sha256": {
+    "public-seed-342-specialist480": "1dea6f51140966a2b11fc515aca919c57ca755928cd4211ebdb32ef2674a4048",
+    "public-seed-342-mixture504": "b5a369f65c8f475967153d1988d6d45a9f69cd2de8895d0f8bf71d5c89d1b367",
+    "public-seed-342-slow504": "f60b1f67da254247cce44ac41be522f564083a7a5ac8d6cb2b3fcf056b71f663",
+    "public-seed-343-specialist480": "2db63ae0458a2f64240ded641bbce7ec8590fff8a08875a9d5c6bc55d2da1eee",
+    "public-seed-343-mixture504": "dabc188040356299c34d1688fc97eae61cdc0db13b15c7a7396d37e6135dc005",
+    "public-seed-343-slow504": "513cc7ae83a6f786e3837c1cda57ef5a899cde2427c3f452e520319bf9a5a1b7",
+    "public-seed-344-specialist480": "0d1bd98a63f6e2ec285fbd38be13e9d35a66425b67463e1576c4882630882dce",
+    "public-seed-344-mixture504": "de6168747d631497649cd93595ec1a5aa5257ce24a2b0c752bf828e87019c126",
+    "public-seed-344-slow504": "e8554ec2d3453beb23d8c459f6c1ce18140b518861b499c95fd6d0b266e32055"
+  },
+  "scope": "Secondary matched subset description on the same public cards; four snapshot intervals jointly 95% by normal approximation; no policy selection."
+}
