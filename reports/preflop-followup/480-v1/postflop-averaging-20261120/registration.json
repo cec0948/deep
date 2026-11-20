@@ -1,0 +1,30 @@
+{
+  "verified_utc": "2026-11-20T00:20:35.528996+00:00",
+  "state": "training",
+  "training_registered_utc": "2026-11-20T00:19:22.501083+00:00",
+  "training_plan_sha256": "533a88378fe0a4b27cd98ece6d493ca62600c66ee48265fcdbc57cac379b594c",
+  "evaluation_design_sha256": "32364b5cb013d692b62fbc975c7cb261d70b878712bc7bbe0a58681ac546874b",
+  "verified_workers": {
+    "slow504-seed-342": true,
+    "slow504-seed-343": true,
+    "slow504-seed-344": true
+  },
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "initial_iteration": 480,
+  "final_iteration": 504,
+  "postflop_learning_rate": 0.00025,
+  "captures": [
+    486,
+    492,
+    498,
+    504
+  ],
+  "main_evaluation_cells": 75,
+  "main_hands": 2196000,
+  "additional_public_rate_check_hands": 72000,
+  "automatic_model_promotion": false
+}
