@@ -8,6 +8,8 @@
 
 ## 최신 실행 확인
 
+- 2026-11-20 10:10 KST에 504회 학습, 여덟 상대 구성의 주 평가 75개 셀과 학습률 보조 비교 3개 셀, 복구본 검증을 완료했다. 최신 판정은 480회 비교 기준 유지다. [최종 상태](../reports/preflop-followup/480-v1/postflop-averaging-20261120/status.json) · [학습과 상대별 성능](poker-postflop-averaging-20261120.md)
+
 - 2026-11-19 18:38 KST에 480회 기준과 256스텝 후보의 54개 조합 평가·검산을 완료했다. 최신 상태는 `artifacts/preflop-followup/480-v1/population/status.json`에 있다. 같은 폴더의 `evaluation-status.json`은 NoRegrets 초기화가 지연된 첫 작업의 보존 기록이다. [최종 성적](poker-population-20261119.md) · [검산 상태](../reports/preflop-followup/480-v1/population/status.json)
 
 - 2026-11-19 17:32 KST에 `artifacts/preflop-followup/480-v1/fixed-preflop-504`의 세 시드가 24회 자기대전과 18개 조합 평가를 모두 마쳤다. 504회는 세 상대군 모두 하락했고 480회 후보를 유지한다. `summary.json`은 성능, `final-audit.json`은 검산, `backup-verification.json`은 비공개 복구본 검증이며 `/workspace/.venvs/fullhouse/bin/python scripts/run_poker_fixed_preflop_window.py status`는 읽기 전용 명령이다. [완료 기록](poker-fixed-preflop-504-20261119.md)

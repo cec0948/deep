@@ -1,0 +1,1735 @@
+{
+  "verified_utc": "2026-11-20T01:09:28.817515+00:00",
+  "study": "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120",
+  "summary_sha256": "52a98ce8ba93ac612c48b679a6cd473685a96730db1c1c0bcd4f83c90bb89448",
+  "training": {
+    "verified_utc": "2026-11-20T01:08:27.290057+00:00",
+    "stage_sha256": "288ec2d5f9068221b5922cfeac29301f226e030734e67b15a4399748224d071e",
+    "training_plan_sha256": "533a88378fe0a4b27cd98ece6d493ca62600c66ee48265fcdbc57cac379b594c",
+    "seeds": {
+      "342": {
+        "seed": 342,
+        "verified_model_sha256": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6",
+        "rounds": 24,
+        "traversals": 6144,
+        "new_regret_rows_by_seat": [
+          32575,
+          32784,
+          32453,
+          30256,
+          31224,
+          29605
+        ],
+        "new_regret_rows": 188897,
+        "postflop_updates": 18432,
+        "preflop_probes_per_round": 265,
+        "preflop_sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+        "checkpoint_sha256": {
+          "486": "9746c437bc532d64275eb67d9c3ae2e92298688e307ed3e9ab9f0c69bafd208d",
+          "492": "33b1f6f41a6ba5faccb22dc8f153dcc973abaa3820637818c1e8dcdc7496f9cd",
+          "498": "2a4d2dde6fb0fabaed0af967ea3194800d4f8641d7d9173bb32c08c61074bcb9",
+          "504": "424480eb3797b6936912e02f6e88b89db65046376b0c1e5b68e93c16e764eaf4"
+        },
+        "retained_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "next_actions_reference_rows": 100000,
+        "matched_first_round_fields": [
+          "input_weights",
+          "traverser",
+          "traversals",
+          "new_regret_rows",
+          "root_rows",
+          "fit_rows_by_street",
+          "fit_draws_by_street",
+          "reference_collection"
+        ],
+        "first_round_weights_then_diverged": true,
+        "historical_first_round_sample_arrays_individually_compared": false
+      },
+      "343": {
+        "seed": 343,
+        "verified_model_sha256": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f",
+        "rounds": 24,
+        "traversals": 6144,
+        "new_regret_rows_by_seat": [
+          34943,
+          33207,
+          31421,
+          34111,
+          36731,
+          32500
+        ],
+        "new_regret_rows": 202913,
+        "postflop_updates": 18432,
+        "preflop_probes_per_round": 265,
+        "preflop_sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+        "checkpoint_sha256": {
+          "486": "e67c374f520037a247d8bd54f323fc2bdd28053f431d9a0ff3f47de9721bc0f4",
+          "492": "fbb4cb5ff0c1ad820e1f513676130e1fdc81ce1f7f351401883f88e68c25e2ba",
+          "498": "0316e6a82ccd5085ff89a9c4415f171b4c0e5738bc262e1dcd04052cc82b8522",
+          "504": "a671f9ecd29d9a722f3dd16d25c4347479548236938e45c6d72336a7c9296d8a"
+        },
+        "retained_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "next_actions_reference_rows": 100000,
+        "matched_first_round_fields": [
+          "input_weights",
+          "traverser",
+          "traversals",
+          "new_regret_rows",
+          "root_rows",
+          "fit_rows_by_street",
+          "fit_draws_by_street",
+          "reference_collection"
+        ],
+        "first_round_weights_then_diverged": true,
+        "historical_first_round_sample_arrays_individually_compared": false
+      },
+      "344": {
+        "seed": 344,
+        "verified_model_sha256": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d",
+        "rounds": 24,
+        "traversals": 6144,
+        "new_regret_rows_by_seat": [
+          36367,
+          33581,
+          32997,
+          34598,
+          32811,
+          32976
+        ],
+        "new_regret_rows": 203330,
+        "postflop_updates": 18432,
+        "preflop_probes_per_round": 265,
+        "preflop_sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+        "checkpoint_sha256": {
+          "486": "cb5ffab6556ec35e95a60ebe6664db45d1c823c2f6373b12e841d868c2a14a3c",
+          "492": "c431473bf8ec3f9822ab96dc6d151a8408fa8c4d7d031ed96cf8d56cb0c34ec0",
+          "498": "2e61f9c0f36b64676d24d2dac7f590501e326414a89bd05a00aa9d87c7c6d53b",
+          "504": "0b8628aed8981339088320241242245dc9b7ac5e12e345d42585fc30c8cc458c"
+        },
+        "retained_rows": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "next_actions_reference_rows": 100000,
+        "matched_first_round_fields": [
+          "input_weights",
+          "traverser",
+          "traversals",
+          "new_regret_rows",
+          "root_rows",
+          "fit_rows_by_street",
+          "fit_draws_by_street",
+          "reference_collection"
+        ],
+        "first_round_weights_then_diverged": true,
+        "historical_first_round_sample_arrays_individually_compared": false
+      }
+    },
+    "new_selfplay_iterations_per_seed": 24,
+    "total_new_regret_rows": 595140
+  },
+  "evaluation_plan_sha256": "87927530b0cfbd8e049769fef29dcdc8a02640869ef189799c1e91e676c6ae07",
+  "cells": 75,
+  "hands": 2196000,
+  "distinct_original_cards": 24000,
+  "cells_verified_from_raw": {
+    "public-seed-342-specialist480": {
+      "hands": 120000,
+      "decisions": 1228422,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4131,
+      "selected_hand_counts": {},
+      "raw_sha256": "c65d7153045aeb418a0374b93595e194d4e43f76660efa08877fcc3481fca380",
+      "result_sha256": "1dea6f51140966a2b11fc515aca919c57ca755928cd4211ebdb32ef2674a4048"
+    },
+    "public-seed-342-mixture504": {
+      "hands": 120000,
+      "decisions": 1232468,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4165,
+      "selected_hand_counts": {
+        "492": 29981,
+        "504": 29724,
+        "486": 30258,
+        "498": 30037
+      },
+      "raw_sha256": "1383153d1e03c485c938d0a25a9a0abc2b8c9c39b016c85be023982f8c4a74f0",
+      "result_sha256": "b5a369f65c8f475967153d1988d6d45a9f69cd2de8895d0f8bf71d5c89d1b367"
+    },
+    "public-seed-342-slow504": {
+      "hands": 120000,
+      "decisions": 1231097,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4156,
+      "selected_hand_counts": {},
+      "raw_sha256": "ddb4fa94641fc25f131369e67d86066fe36195ef63f8625efb57047b850a3884",
+      "result_sha256": "f60b1f67da254247cce44ac41be522f564083a7a5ac8d6cb2b3fcf056b71f663"
+    },
+    "public-seed-342-steps256": {
+      "hands": 120000,
+      "decisions": 1228681,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4037,
+      "selected_hand_counts": {},
+      "raw_sha256": "4da0eec92857c7e8508e98f784fc177a218ac9e7c57eecbd00ede7e6ef59f037",
+      "result_sha256": "b550acd00d44c06b94d27339b952ee19d2937471f0fca6a4a8f91611136fd578"
+    },
+    "public-seed-343-specialist480": {
+      "hands": 120000,
+      "decisions": 1292557,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4306,
+      "selected_hand_counts": {},
+      "raw_sha256": "d37b58ef4ca57cc825dbb65ecc6448e395826190735d69b46812fc49fe085c97",
+      "result_sha256": "2db63ae0458a2f64240ded641bbce7ec8590fff8a08875a9d5c6bc55d2da1eee"
+    },
+    "public-seed-343-mixture504": {
+      "hands": 120000,
+      "decisions": 1275291,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4258,
+      "selected_hand_counts": {
+        "492": 29981,
+        "504": 29724,
+        "486": 30258,
+        "498": 30037
+      },
+      "raw_sha256": "2d8c1ee0f201ee867669d5e76161dbf0732f131ec140a7db6a126322bd4087b4",
+      "result_sha256": "dabc188040356299c34d1688fc97eae61cdc0db13b15c7a7396d37e6135dc005"
+    },
+    "public-seed-343-slow504": {
+      "hands": 120000,
+      "decisions": 1271595,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4279,
+      "selected_hand_counts": {},
+      "raw_sha256": "4962de0b4c3dd4adf9547750d30cf1462dd2d1c613518bc68e3dc6fd2d863210",
+      "result_sha256": "513cc7ae83a6f786e3837c1cda57ef5a899cde2427c3f452e520319bf9a5a1b7"
+    },
+    "public-seed-343-steps256": {
+      "hands": 120000,
+      "decisions": 1237267,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4208,
+      "selected_hand_counts": {},
+      "raw_sha256": "b9639b2f55c4d977b6cec5334c6efd2241bb66a20120b9bb5abeb11aaa70da65",
+      "result_sha256": "1d63adec5aff7c84b216028399e2ad1ed1adcc8de22a455ac548cca8db183d01"
+    },
+    "public-seed-344-specialist480": {
+      "hands": 120000,
+      "decisions": 1251700,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4181,
+      "selected_hand_counts": {},
+      "raw_sha256": "fd56c8ddc80f8fee55672865bd6614a5ecd62ae3ec8a3bea2eaf1daa983c318e",
+      "result_sha256": "0d1bd98a63f6e2ec285fbd38be13e9d35a66425b67463e1576c4882630882dce"
+    },
+    "public-seed-344-mixture504": {
+      "hands": 120000,
+      "decisions": 1240364,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4166,
+      "selected_hand_counts": {
+        "492": 29981,
+        "504": 29724,
+        "486": 30258,
+        "498": 30037
+      },
+      "raw_sha256": "e0d4e986002a944df33fd6fc1c6f9b021246ac18ac7f3fb5d34874a8da59c2d6",
+      "result_sha256": "de6168747d631497649cd93595ec1a5aa5257ce24a2b0c752bf828e87019c126"
+    },
+    "public-seed-344-slow504": {
+      "hands": 120000,
+      "decisions": 1236772,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4151,
+      "selected_hand_counts": {},
+      "raw_sha256": "89c75ba59b6dc2afb5aa437b598e6ec9428700d481de56c1d228b8dca84c9d27",
+      "result_sha256": "e8554ec2d3453beb23d8c459f6c1ce18140b518861b499c95fd6d0b266e32055"
+    },
+    "public-seed-344-steps256": {
+      "hands": 120000,
+      "decisions": 1238286,
+      "policy_replayed_hands": 396,
+      "policy_replayed_decisions": 4098,
+      "selected_hand_counts": {},
+      "raw_sha256": "88569335a5be2ecacbbaa8e94578b59a4588dc31f1b8d01665067767737e3b00",
+      "result_sha256": "e2ffd36afb8a3de439e551710602b7f80bb954de9e64aecaeb64e121d3a75e8c"
+    },
+    "noregrets-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 109501,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 436,
+      "selected_hand_counts": {},
+      "raw_sha256": "440eb3e2fb28671e9779031d8df8fe595c171656547a5c0a2d768381ae50b35a",
+      "result_sha256": "a1aff4b554e82c3f98fac696ab4ca22e0147009ccb7c8bec6aff246287b42fc1"
+    },
+    "noregrets-seed-342-mixture504": {
+      "hands": 12000,
+      "decisions": 109711,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 435,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "75370ca4534aaeef559b653e72e8fb2cf07aa8258d62806eadd1f07dd06d4688",
+      "result_sha256": "e2965fdf1e3df1befaf6d8becc646065f2052a31075cb0fd60e48480120494b7"
+    },
+    "noregrets-seed-342-slow504": {
+      "hands": 12000,
+      "decisions": 109925,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 435,
+      "selected_hand_counts": {},
+      "raw_sha256": "a08c100e0dc76473901b5b0ada4b860e3c710f3012b2a958f118cdae6d12f05a",
+      "result_sha256": "13459a65c28e92354b34c074d71b3d38e5abe0164cd34b3a13b5c41c2c144e49"
+    },
+    "noregrets-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 111024,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 448,
+      "selected_hand_counts": {},
+      "raw_sha256": "dafd868dafef7790b323909939d2a7f573116c95ec5e8e6434cff270c3caa1f2",
+      "result_sha256": "1cd34d7554119b91030561f5ae33b03edefbe6a6aeccfe522dc0568d4f5a4348"
+    },
+    "noregrets-seed-343-mixture504": {
+      "hands": 12000,
+      "decisions": 110872,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 447,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "1f99d68d0d9d0d8c2c2ed3f81e6e674d9031fce6cf195fe4e2b3adec8f45eb02",
+      "result_sha256": "dbd5578856314ce2b5d78a83a4c36a3cf6a1a69542e0253b323f378a6881fb4e"
+    },
+    "noregrets-seed-343-slow504": {
+      "hands": 12000,
+      "decisions": 110892,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 447,
+      "selected_hand_counts": {},
+      "raw_sha256": "fe3e9affaf86139fa54e18787ed26f07821fbee7df44dcb742c657a83ea38831",
+      "result_sha256": "37a609fbae3548ac1809883da32cd643bc6e5da7f6b618addd15673cfb180244"
+    },
+    "noregrets-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 109718,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 450,
+      "selected_hand_counts": {},
+      "raw_sha256": "64ced19371c1861c62a04e9e95f3b4d9c608b38df55731904cc1e49979b96da4",
+      "result_sha256": "b7b656f6292720f4620b148adba3c427871a52d0e0da91905720add70ba61306"
+    },
+    "noregrets-seed-344-mixture504": {
+      "hands": 12000,
+      "decisions": 109476,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 448,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "098688116c398d9384c041435a53d8ad117d4c00869cc782aeb890374e58f36d",
+      "result_sha256": "d41051588cc5951f8eccb4085290abec5d20387d9ec19dc61852763554a3bf82"
+    },
+    "noregrets-seed-344-slow504": {
+      "hands": 12000,
+      "decisions": 109410,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 446,
+      "selected_hand_counts": {},
+      "raw_sha256": "064af3228ef94c75aeb685fac44376597f2a6560b948faa008c354396915c287",
+      "result_sha256": "3e33da7140677f11e87f96cc6fa0d2ff5d2da264003d3b2b9e6bec9048c1fc91"
+    },
+    "rich96-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 113535,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 532,
+      "selected_hand_counts": {},
+      "raw_sha256": "57a6c0792e49c31e5a29ff0a2a9761c34945b5b9b77d870c870abdb1aa749afb",
+      "result_sha256": "1505a34f86b51102399256e3c1d636d417a84554b6a5e820f19db1d373464b04"
+    },
+    "rich96-seed-342-mixture504": {
+      "hands": 12000,
+      "decisions": 113192,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 543,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "8fe01fbe395990fea60dfbe7035dc23a4f1678152bab878cc6ec4dbc1667aeb4",
+      "result_sha256": "35f2d07d6b74023ab9cca82dbefb93b2e6e1af4128e83eafa991cab3ec1c52b9"
+    },
+    "rich96-seed-342-slow504": {
+      "hands": 12000,
+      "decisions": 113309,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 546,
+      "selected_hand_counts": {},
+      "raw_sha256": "727f7420df587ccfb8c3e7e24999542308be8c65515d1a08bd217ff7e5e5af20",
+      "result_sha256": "7317c0740bf8b3ccf92098bda6690a0de86075bb1c314e1d798b594727ce7e3e"
+    },
+    "rich96-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 146950,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 613,
+      "selected_hand_counts": {},
+      "raw_sha256": "5e24a049f9d9fbf70df7df1928ce1f7f47a5401fa64c2cdbbaea75e5e381f97f",
+      "result_sha256": "e79b9bfef6ad960714c829fed909c9b7e9fd003ad132ea0756bc5074e6d44727"
+    },
+    "rich96-seed-343-mixture504": {
+      "hands": 12000,
+      "decisions": 146146,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 604,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "33ea6e4fde45c0018fb220ee84eaa44efa70c291d53f75089318dbcccb5c3ba8",
+      "result_sha256": "afb44ee595214959a1b9183d4d3a0c368439a981d80006c4437ba5e8b830ca07"
+    },
+    "rich96-seed-343-slow504": {
+      "hands": 12000,
+      "decisions": 146303,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 604,
+      "selected_hand_counts": {},
+      "raw_sha256": "f5d0c471bb27c8c8d141cb313d87328f62d87331a9fc24dc0b4e44d3b9a13b47",
+      "result_sha256": "0774135b8e2beffb25375431cbd18ea9c9e15437d81ffb91d1c1320ad920490d"
+    },
+    "rich96-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 122311,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 483,
+      "selected_hand_counts": {},
+      "raw_sha256": "19fbe073f3acc261f292fb208a8d15f6ca72b5d93b4aabf043eae80e8def22e9",
+      "result_sha256": "41e741e8c5088524763d98bb9a829c00aa36c7fd4ba08255212a56329b19c774"
+    },
+    "rich96-seed-344-mixture504": {
+      "hands": 12000,
+      "decisions": 121666,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 481,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "84fcf9469e0fab87dab60cd96c2445dd7b6589b8584f4a5d36143813bcf8fe7d",
+      "result_sha256": "9e2cfe55c8b322984489e72d55268d83113b6c796d992d0d392eedf9d50acd5b"
+    },
+    "rich96-seed-344-slow504": {
+      "hands": 12000,
+      "decisions": 121642,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 473,
+      "selected_hand_counts": {},
+      "raw_sha256": "a4fbcb014243e2b6db046ad62131b556071a9588ecf3ca15f40c739214ba07a3",
+      "result_sha256": "93c93bb7adc89ca02362cc5df0cc79bf845982a83bb46e6df611d244cc92e8ee"
+    },
+    "calling-station-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 307141,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 1216,
+      "selected_hand_counts": {},
+      "raw_sha256": "5b57a7cc2603688b3768515ff20af7eb9f91292142924bde89ce9123e77b4296",
+      "result_sha256": "0d1bbd198076b5b9270c2a3dbf605af024c726c1a5ae12a01b2754b5b5770c1c"
+    },
+    "calling-station-seed-342-mixture504": {
+      "hands": 12000,
+      "decisions": 306131,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 1222,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "fa7b0407001cca6eb8eee54b24a620fee81dad095bbad62697aca09baf348902",
+      "result_sha256": "1fa9c3a1113b413031900e187efbabfe29615bfc289f7200237f472449b9e600"
+    },
+    "calling-station-seed-342-slow504": {
+      "hands": 12000,
+      "decisions": 308839,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 1223,
+      "selected_hand_counts": {},
+      "raw_sha256": "d83ec574d198d3666ef47d09818ecbd89eed6113edf1d9c956d74da10ca482c9",
+      "result_sha256": "b3c77c468ae56a2029d56bb1c0b3b5c4fc3cd7c0a40efc8811ab9c142f2c5702"
+    },
+    "calling-station-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 292217,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 1136,
+      "selected_hand_counts": {},
+      "raw_sha256": "4bd62beb5b6dc117decc4b3b706d165749eacd13ffc5c5a7d782dcb9d13cdc11",
+      "result_sha256": "36ebea28e25ad3baa76d93bb267499c4a5eb74fd8d6df7cf8df2133346f89f7c"
+    },
+    "calling-station-seed-343-mixture504": {
+      "hands": 12000,
+      "decisions": 292572,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 1142,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "20e3a5af167c414ea0314514a2b0db6d012863c882a00ef68713e15a79bd22b3",
+      "result_sha256": "b62713ca7a9ff934b8b7f94431dba9e144b44cc6152fed1d5df9cf24c622a379"
+    },
+    "calling-station-seed-343-slow504": {
+      "hands": 12000,
+      "decisions": 292584,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 1160,
+      "selected_hand_counts": {},
+      "raw_sha256": "4a19fb424d7a53e7c6d362dfadd48c6ab2c2c50e47218a0ba94737ff0e69763e",
+      "result_sha256": "8293373aefbd91a0872604cf910a29038e2bace48f60804437ed51ad98328710"
+    },
+    "calling-station-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 292221,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 1161,
+      "selected_hand_counts": {},
+      "raw_sha256": "0245cdc052355f005a116c963c6f7cc950a1d25af98ee0525c10db01374122a6",
+      "result_sha256": "b2c5754888b24bccef182c8b0684b8c17200d18aa2da07490c57067550bdc427"
+    },
+    "calling-station-seed-344-mixture504": {
+      "hands": 12000,
+      "decisions": 298454,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 1184,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "75bba4264b23bb336956964a9566255fa551a222cddb6e9bd4cb728ddd63b190",
+      "result_sha256": "50bd26240aab44ee4f16e349b9296f2351f850ca3ff27a4267be1d3bbd89d849"
+    },
+    "calling-station-seed-344-slow504": {
+      "hands": 12000,
+      "decisions": 300419,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 1188,
+      "selected_hand_counts": {},
+      "raw_sha256": "cdd63ed9f20b91c55759c855080a47bdd5a9d014219929de52bc4d80a03cf517",
+      "result_sha256": "4949b1890a5e188a415db9144658b86597178a11de76cc2f2520f5b37f09145b"
+    },
+    "tight-value-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 119037,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 465,
+      "selected_hand_counts": {},
+      "raw_sha256": "f29d14a0b571d4013b5f9d37e278870a768aa743895d315fd65fd1593d5443e8",
+      "result_sha256": "7d6aca699d00f2bf7c50d7b9606b12be9703eaa09b77a670387782bfd7ced47c"
+    },
+    "tight-value-seed-342-mixture504": {
+      "hands": 12000,
+      "decisions": 119174,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 457,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "17d9a0c26450cf9b9d8cbb6bb4413fd083c1c267a674fb4db5f87a1fac4912a9",
+      "result_sha256": "cef6eaf478b91062d377a1f45cd570421ecf117ddad17e251597111710b99620"
+    },
+    "tight-value-seed-342-slow504": {
+      "hands": 12000,
+      "decisions": 119103,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 455,
+      "selected_hand_counts": {},
+      "raw_sha256": "931db4c04c2eadaecc6e73e09913b1f27aa4561c7075c1249044d0038504add2",
+      "result_sha256": "04a5f27b39f7dc88f4ffd827fe312821c6990d251252b5bbd2542a9b7ccb6024"
+    },
+    "tight-value-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 124893,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 513,
+      "selected_hand_counts": {},
+      "raw_sha256": "1ac213879e485fb7f3905346d6e09287a56debcef1b2764b103ef45830abcd1a",
+      "result_sha256": "43470ca4b925c281c2ade33ecd779dfa3ca92eec16adb6871eb5ab8343ffeedc"
+    },
+    "tight-value-seed-343-mixture504": {
+      "hands": 12000,
+      "decisions": 123451,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 513,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "f2890d6e02a26cb29450122d2e0bbd511dbb1effd180833c891f2945964337bd",
+      "result_sha256": "9013ffffd0f11ec275b58e9371d40c029b3c5a5c77e6475447f86b208fd12fb4"
+    },
+    "tight-value-seed-343-slow504": {
+      "hands": 12000,
+      "decisions": 123067,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 504,
+      "selected_hand_counts": {},
+      "raw_sha256": "7ce489aadad9b308f34e334420e98a1006b1fc73bc58dc9ed3f76313d1a9f69d",
+      "result_sha256": "99962d8ee5e06eaaa72305e5d17effe490974d16188fae244a8ed809aa19f3d1"
+    },
+    "tight-value-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 120075,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 491,
+      "selected_hand_counts": {},
+      "raw_sha256": "43dd3135fab0b52ddcb3b5f5c83f9ee71c385f9d468a0c36fde3923d742bd869",
+      "result_sha256": "0d14cf40f68a9eec3e81b402ef26a40fdd7949a82f1ffa3198fe903fdf701930"
+    },
+    "tight-value-seed-344-mixture504": {
+      "hands": 12000,
+      "decisions": 119481,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 491,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "392c256893350d6d9746c9ff3a2e9ee20baa3ab85fe71714d0425cd8174e06ec",
+      "result_sha256": "db9034221766cc790fe1a636dd9c86901280cd5b97ac19b1f87137b4817c0408"
+    },
+    "tight-value-seed-344-slow504": {
+      "hands": 12000,
+      "decisions": 119261,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 479,
+      "selected_hand_counts": {},
+      "raw_sha256": "3e28d86933a07dc101ac63074cc3c474ff8dde99e317dc42efd40c44dccab5ac",
+      "result_sha256": "b0dd6f1e47ccd3c4951ef1c599e26874bc4ae33d1bbec234f68c896026a7c9ff"
+    },
+    "pressure-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 164249,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 662,
+      "selected_hand_counts": {},
+      "raw_sha256": "2effcd72df286b00e37439b299f58169625674e4335a4cc930d7bc8ad58b8cbc",
+      "result_sha256": "86756fdf03cf6aa8f0ef44d2c3654ab558c41912ac514e288b7dd54c11f63abe"
+    },
+    "pressure-seed-342-mixture504": {
+      "hands": 12000,
+      "decisions": 164298,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 669,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "a60786b88132f4ca59a16682e062a75521d0abb673465a0f716fe74ee41294da",
+      "result_sha256": "0d46c5d3b7ac30062a806dbcfcac1f646aaf2bd8aaababfe5e9a91eb0d889c87"
+    },
+    "pressure-seed-342-slow504": {
+      "hands": 12000,
+      "decisions": 164277,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 669,
+      "selected_hand_counts": {},
+      "raw_sha256": "bcdf573c2f8e9e301472b512db07984917fbcde9a26f4ce379dc9e8e231b4c68",
+      "result_sha256": "2d28c4bc6cbb5ef35ece7b881b825ea2d715093a6f8f5ce5301fdfbdfa12cd85"
+    },
+    "pressure-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 166588,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 640,
+      "selected_hand_counts": {},
+      "raw_sha256": "c45d32d24184b6356ad8fab0571805d65f5c944dfa2405be8b6304c07bc3f332",
+      "result_sha256": "e759cfb419c6166ebeed3242b6007fffc7855d8bc1965ccb23c249416aefdaea"
+    },
+    "pressure-seed-343-mixture504": {
+      "hands": 12000,
+      "decisions": 166476,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 642,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "54e3a52ce4d0b6c346a0413b4be1a97b3a93ee5d8b67df9689f1a0a5f2a4cf03",
+      "result_sha256": "610fbbfb7649366ed165e18575a922d37c701c44f6632143db74c1903c543683"
+    },
+    "pressure-seed-343-slow504": {
+      "hands": 12000,
+      "decisions": 166351,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 640,
+      "selected_hand_counts": {},
+      "raw_sha256": "28d4c6bb1a37f18d3ad75b0d351dbe32975388b9014e32d5b7f67e825b3bb8e5",
+      "result_sha256": "7e273d0ef2c303fd7291a1883956aec9fd285a3875c20b78149c06fe752aaca0"
+    },
+    "pressure-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 165469,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 658,
+      "selected_hand_counts": {},
+      "raw_sha256": "3214046076dd3f03aac71c738c2372b7e94be58af8cdad081957837cf7bdf76d",
+      "result_sha256": "43bded0661363d347cf8cfcf81690b3a3a1b3b22964b054c8be916ec3ad06e77"
+    },
+    "pressure-seed-344-mixture504": {
+      "hands": 12000,
+      "decisions": 165317,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 656,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "3b49ab3120a628c76676dba4b8b35498db9c6375d12012668915d595adb3ccd8",
+      "result_sha256": "0b5cb940d49ab536f3eb470493759b378f42a753ea58a21b44bff4e33c066a10"
+    },
+    "pressure-seed-344-slow504": {
+      "hands": 12000,
+      "decisions": 165269,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 656,
+      "selected_hand_counts": {},
+      "raw_sha256": "f6f5a70cc23d98b976b09fbf5c6b894c73475a3a9d16e4794644f80a0bdd01bc",
+      "result_sha256": "3a0b9ecd8a49bdb7ef324cff4ca78f07cc68418681646bbbef2a7e361c762b90"
+    },
+    "mixed-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 112691,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 436,
+      "selected_hand_counts": {},
+      "raw_sha256": "aee8cbb4c041537c78500c4625b138bfb42b381b4f19218a2154ec204aa64913",
+      "result_sha256": "04ea9447846c0635c69abacbf37e570a7842aa5eb245cdf50daade2de7b4f38b"
+    },
+    "mixed-seed-342-mixture504": {
+      "hands": 12000,
+      "decisions": 112561,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 436,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "13cfc9e029c666a69bf63983bbd184f3e7315bbe96c766954e92a196377bfe0a",
+      "result_sha256": "50d178cb7783e1d7a7e4de2154bcd2e514ba20be7614815fc27c72d00bcb6d03"
+    },
+    "mixed-seed-342-slow504": {
+      "hands": 12000,
+      "decisions": 112585,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 438,
+      "selected_hand_counts": {},
+      "raw_sha256": "4daee628e1c79f5802717327c738196cb4c7694c1988eeb4d5b88752d0ea0c48",
+      "result_sha256": "2c3dd75881f6c181fe848496fda1ae0252acda3de3244c0e07c30583f939bb99"
+    },
+    "mixed-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 115969,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 454,
+      "selected_hand_counts": {},
+      "raw_sha256": "4663df0e45b7ee4cb83f046c1ffc8f5299d9de47fe565470bff9088387d58302",
+      "result_sha256": "5a6a44a282d7aeeb8644aeecd2aad0a07776e373fbfbee35cfcce71266d9a028"
+    },
+    "mixed-seed-343-mixture504": {
+      "hands": 12000,
+      "decisions": 115467,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 447,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "fcebfe363b108adb358e3093f85ef4a360f9a53406f42048e56515159a5894f3",
+      "result_sha256": "7ff5875bf45d4079b10f1b10a7e82752f0ac300b15078f44e35e1899ba5ebb07"
+    },
+    "mixed-seed-343-slow504": {
+      "hands": 12000,
+      "decisions": 115489,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 446,
+      "selected_hand_counts": {},
+      "raw_sha256": "1a01920e67fb35ce83c710ff15db7308396e354f39a8a7b0f546ee979d53a093",
+      "result_sha256": "9da690e6a3546e2466f928bcc1e471e55e6aec33ef13b58ddea15bf013fbe644"
+    },
+    "mixed-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 113829,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 472,
+      "selected_hand_counts": {},
+      "raw_sha256": "5547d8a9203576e639a7912a9d002ca759d1bd5671d5d26e5c2116cb78250971",
+      "result_sha256": "c9ec7005f1f82c1b4d385af063c3e57f0c87229236140186c036b9b7f84ce621"
+    },
+    "mixed-seed-344-mixture504": {
+      "hands": 12000,
+      "decisions": 113213,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 478,
+      "selected_hand_counts": {
+        "504": 3023,
+        "492": 3117,
+        "486": 2824,
+        "498": 3036
+      },
+      "raw_sha256": "365a62018f22c21d8afd12318f8d975355ef79023bb26c26531448d573ed9cdd",
+      "result_sha256": "bd747ed3352d6500a6fed5c1f4bb3e19e6b223760069013a3e824ffed2ddb2ff"
+    },
+    "mixed-seed-344-slow504": {
+      "hands": 12000,
+      "decisions": 113127,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 475,
+      "selected_hand_counts": {},
+      "raw_sha256": "3db88c3f5aaa6994fa151b699a4e54fb3e1ad8c90f7835db7df293ce9a66f8ba",
+      "result_sha256": "a38e4543758bb2d53c282d5af20467db8c61cd9c81a835a98e616be25a2b1cb5"
+    },
+    "varied-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 136907,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 546,
+      "selected_hand_counts": {},
+      "raw_sha256": "ca3d868da779a4341075b2f22f95301ebf2da64b93dfc44b2ca1291dfa3bc5ce",
+      "result_sha256": "8a6cca503920c17d971a6c1d369804ee1e145c70f7d02dd926c2792d20e88f86"
+    },
+    "varied-seed-342-mixture504": {
+      "hands": 12000,
+      "decisions": 136764,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 543,
+      "selected_hand_counts": {
+        "486": 3023,
+        "504": 2943,
+        "498": 2985,
+        "492": 3049
+      },
+      "raw_sha256": "6c3962ec97df3e1b0ea3d1b8e94310bfca630a41407c577067c35d7f514dcde4",
+      "result_sha256": "04c029f616c3c79c612a11359593b0893880ad9c30102d61a3665d6033839c8f"
+    },
+    "varied-seed-342-slow504": {
+      "hands": 12000,
+      "decisions": 136923,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 551,
+      "selected_hand_counts": {},
+      "raw_sha256": "5bb234e9456d3feaadb9dfbbe783e2daf35ad3abecf7202ceea03de235e4774b",
+      "result_sha256": "4a0fda6b3f7b271457295366e84dc5604d7bcf3433fcae738594cd4a5e50d6c4"
+    },
+    "varied-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 144447,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 592,
+      "selected_hand_counts": {},
+      "raw_sha256": "87f00aba49e0205b2e1e42f49c2aaa51758ba3ccbac6f4460e151b4c100f26a0",
+      "result_sha256": "27af47f35f33d13890cc4396825ed3dece6f8cab4cfb50965e4e116ec449a206"
+    },
+    "varied-seed-343-mixture504": {
+      "hands": 12000,
+      "decisions": 143819,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 599,
+      "selected_hand_counts": {
+        "486": 3023,
+        "504": 2943,
+        "498": 2985,
+        "492": 3049
+      },
+      "raw_sha256": "f0f7b0ba02bc828264a611700ab0efea8cdc17fc268553c3c62e0c287a18843b",
+      "result_sha256": "cad7f44543f65ab89c7d4385cfef823126729de948b53b95a95668293ba1e7dc"
+    },
+    "varied-seed-343-slow504": {
+      "hands": 12000,
+      "decisions": 143982,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 590,
+      "selected_hand_counts": {},
+      "raw_sha256": "042bcf980ee3aab044b27071f2dbed134eb3c8c60b93386fe515077d7a238766",
+      "result_sha256": "446b88eafbd7d2d1ca52aaa44dab59fe33ebb2e2ed94a411aa8c7d3914d6e6aa"
+    },
+    "varied-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 139655,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 539,
+      "selected_hand_counts": {},
+      "raw_sha256": "1ff7863af303449fd95b49c3e1602e6025969de8edd14c8748e7c5eb62961808",
+      "result_sha256": "b1547d43c4e642925054d86ed7e70deacb04fc87d83c963f9f9c321ed6016f41"
+    },
+    "varied-seed-344-mixture504": {
+      "hands": 12000,
+      "decisions": 139151,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 534,
+      "selected_hand_counts": {
+        "486": 3023,
+        "504": 2943,
+        "498": 2985,
+        "492": 3049
+      },
+      "raw_sha256": "fc9bdbb62f6fe9f444ce0aeba6528c4ae8cd804ce330a527c8bcd5c6b628987e",
+      "result_sha256": "92bc58edd8ca766d3e5b1a7fed52f2ea7d230813514def7ea818d1597c938525"
+    },
+    "varied-seed-344-slow504": {
+      "hands": 12000,
+      "decisions": 138961,
+      "policy_replayed_hands": 48,
+      "policy_replayed_decisions": 539,
+      "selected_hand_counts": {},
+      "raw_sha256": "647a476fe55f8421732cfce475887043bb9011a6972dc9234c02505a3d74b196",
+      "result_sha256": "15a9979d098399133dfbad7b666ccdf875860b5cfecfb2426701f79736f7dbfe"
+    }
+  },
+  "independent_rules_terminal_replay_hands": 2196000,
+  "terminal_auditor_binary_sha256": "3698626ec1cf4b318f3f7b429ec4ec0ed7b5fd35ec812233d78d0de3520494f8",
+  "terminal_auditor_source_sha256": "39eceeb0ffafeaecae250cf09b7e0bb11a9f0df0535615bceba877f8e4006f80",
+  "independent_policy_and_terminal_replay_stride": 311,
+  "independent_policy_and_terminal_replay_hands": 7776,
+  "independent_policy_replay_decisions": 89014,
+  "primary_and_diagnostic_results": {
+    "primary": {
+      "public": {
+        "absolute": {
+          "specialist480": -20.84055,
+          "mixture504": -55.95119444444444
+        },
+        "change": {
+          "mean": -35.110644444444446,
+          "interval": [
+            -45.298722321599,
+            -24.92256656728989
+          ],
+          "fixed_seed_changes": [
+            -18.31285,
+            -61.51943333333334,
+            -25.499649999999995
+          ]
+        }
+      },
+      "noregrets": {
+        "absolute": {
+          "specialist480": 539.7494444444444,
+          "mixture504": 515.6686111111112
+        },
+        "change": {
+          "mean": -24.080833333333327,
+          "interval": [
+            -50.48382119825713,
+            2.3221545315904777
+          ],
+          "fixed_seed_changes": [
+            -42.575499999999984,
+            -13.460499999999996,
+            -16.2065
+          ]
+        }
+      },
+      "rich96": {
+        "absolute": {
+          "specialist480": 89.90552777777779,
+          "mixture504": 88.70086111111111
+        },
+        "change": {
+          "mean": -1.2046666666666679,
+          "interval": [
+            -35.60829569782268,
+            33.19896236448935
+          ],
+          "fixed_seed_changes": [
+            17.54125,
+            -12.284666666666661,
+            -8.870583333333336
+          ]
+        }
+      },
+      "calling-station": {
+        "absolute": {
+          "specialist480": 685.9263888888888,
+          "mixture504": 1222.2631944444443
+        },
+        "change": {
+          "mean": 536.3368055555555,
+          "interval": [
+            391.13124162334503,
+            681.5423694877661
+          ],
+          "fixed_seed_changes": [
+            453.625,
+            706.8833333333332,
+            448.50208333333336
+          ]
+        }
+      },
+      "tight-value": {
+        "absolute": {
+          "specialist480": -29.853833333333338,
+          "mixture504": -69.23363888888889
+        },
+        "change": {
+          "mean": -39.379805555555556,
+          "interval": [
+            -71.92893086362555,
+            -6.83068024748556
+          ],
+          "fixed_seed_changes": [
+            2.3120833333333377,
+            -33.88258333333333,
+            -86.56891666666665
+          ]
+        }
+      },
+      "pressure": {
+        "absolute": {
+          "specialist480": 769.718638888889,
+          "mixture504": 647.9332222222222
+        },
+        "change": {
+          "mean": -121.78541666666668,
+          "interval": [
+            -184.12789229035843,
+            -59.44294104297491
+          ],
+          "fixed_seed_changes": [
+            -122.12391666666666,
+            -125.27716666666666,
+            -117.95516666666666
+          ]
+        }
+      },
+      "mixed": {
+        "absolute": {
+          "specialist480": 353.80619444444443,
+          "mixture504": 331.7080555555556
+        },
+        "change": {
+          "mean": -22.098138888888894,
+          "interval": [
+            -53.41581565931034,
+            9.219537881532553
+          ],
+          "fixed_seed_changes": [
+            -10.24016666666667,
+            -8.14833333333333,
+            -47.90591666666666
+          ]
+        }
+      },
+      "varied": {
+        "absolute": {
+          "specialist480": 510.65225,
+          "mixture504": 416.65772222222216
+        },
+        "change": {
+          "mean": -93.99452777777778,
+          "interval": [
+            -142.20196765345315,
+            -45.78708790210239
+          ],
+          "fixed_seed_changes": [
+            -107.26416666666665,
+            -58.614416666666656,
+            -116.105
+          ]
+        }
+      }
+    },
+    "endpoint_vs_parent": {
+      "public": {
+        "absolute": {
+          "specialist480": -20.84055,
+          "slow504": -62.142880555555564
+        },
+        "change": {
+          "mean": -41.302330555555564,
+          "interval": [
+            -51.76541875000099,
+            -30.839242361110138
+          ],
+          "fixed_seed_changes": [
+            -30.526441666666663,
+            -67.00965,
+            -26.3709
+          ]
+        }
+      },
+      "noregrets": {
+        "absolute": {
+          "specialist480": 539.7494444444444,
+          "slow504": 506.0971111111111
+        },
+        "change": {
+          "mean": -33.65233333333333,
+          "interval": [
+            -60.49579336692954,
+            -6.808873299737122
+          ],
+          "fixed_seed_changes": [
+            -48.19233333333333,
+            -19.689833333333333,
+            -33.07483333333333
+          ]
+        }
+      },
+      "rich96": {
+        "absolute": {
+          "specialist480": 89.90552777777779,
+          "slow504": 54.501416666666664
+        },
+        "change": {
+          "mean": -35.404111111111106,
+          "interval": [
+            -70.8188203574945,
+            0.010598135272289255
+          ],
+          "fixed_seed_changes": [
+            21.6515,
+            -69.54008333333333,
+            -58.32375
+          ]
+        }
+      },
+      "calling-station": {
+        "absolute": {
+          "specialist480": 685.9263888888888,
+          "slow504": 1170.0958333333333
+        },
+        "change": {
+          "mean": 484.1694444444445,
+          "interval": [
+            340.38266957048523,
+            627.9562193184038
+          ],
+          "fixed_seed_changes": [
+            345.675,
+            929.0145833333332,
+            177.81875
+          ]
+        }
+      },
+      "tight-value": {
+        "absolute": {
+          "specialist480": -29.853833333333338,
+          "slow504": -89.53322222222224
+        },
+        "change": {
+          "mean": -59.67938888888887,
+          "interval": [
+            -92.41769369798865,
+            -26.941084079789086
+          ],
+          "fixed_seed_changes": [
+            -9.969916666666657,
+            -70.43783333333334,
+            -98.63041666666666
+          ]
+        }
+      },
+      "pressure": {
+        "absolute": {
+          "specialist480": 769.718638888889,
+          "slow504": 661.6523333333333
+        },
+        "change": {
+          "mean": -108.06630555555556,
+          "interval": [
+            -171.35100562955353,
+            -44.78160548155758
+          ],
+          "fixed_seed_changes": [
+            -113.2395,
+            -105.48233333333334,
+            -105.47708333333333
+          ]
+        }
+      },
+      "mixed": {
+        "absolute": {
+          "specialist480": 353.80619444444443,
+          "slow504": 312.2739722222222
+        },
+        "change": {
+          "mean": -41.532222222222224,
+          "interval": [
+            -74.29861083632795,
+            -8.765833608116495
+          ],
+          "fixed_seed_changes": [
+            -23.90433333333333,
+            -21.92,
+            -78.77233333333332
+          ]
+        }
+      },
+      "varied": {
+        "absolute": {
+          "specialist480": 510.65225,
+          "slow504": 378.96733333333333
+        },
+        "change": {
+          "mean": -131.68491666666665,
+          "interval": [
+            -182.2644129270621,
+            -81.10542040627121
+          ],
+          "fixed_seed_changes": [
+            -153.94983333333332,
+            -92.2415,
+            -148.86341666666667
+          ]
+        }
+      }
+    },
+    "mixture_vs_endpoint": {
+      "public": {
+        "absolute": {
+          "slow504": -62.142880555555564,
+          "mixture504": -55.95119444444444
+        },
+        "change": {
+          "mean": 6.191686111111111,
+          "interval": [
+            -1.45424523683847,
+            13.837617459060692
+          ],
+          "fixed_seed_changes": [
+            12.213591666666668,
+            5.490216666666667,
+            0.8712500000000002
+          ]
+        }
+      },
+      "noregrets": {
+        "absolute": {
+          "slow504": 506.0971111111111,
+          "mixture504": 515.6686111111112
+        },
+        "change": {
+          "mean": 9.5715,
+          "interval": [
+            -9.44616748166828,
+            28.58916748166828
+          ],
+          "fixed_seed_changes": [
+            5.616833333333336,
+            6.229333333333337,
+            16.868333333333336
+          ]
+        }
+      },
+      "rich96": {
+        "absolute": {
+          "slow504": 54.501416666666664,
+          "mixture504": 88.70086111111111
+        },
+        "change": {
+          "mean": 34.199444444444445,
+          "interval": [
+            8.956918343263908,
+            59.44197054562498
+          ],
+          "fixed_seed_changes": [
+            -4.110249999999995,
+            57.25541666666667,
+            49.45316666666666
+          ]
+        }
+      },
+      "calling-station": {
+        "absolute": {
+          "slow504": 1170.0958333333333,
+          "mixture504": 1222.2631944444443
+        },
+        "change": {
+          "mean": 52.16736111111111,
+          "interval": [
+            -38.09591954141096,
+            142.4306417636332
+          ],
+          "fixed_seed_changes": [
+            107.95,
+            -222.13125,
+            270.6833333333334
+          ]
+        }
+      },
+      "tight-value": {
+        "absolute": {
+          "slow504": -89.53322222222224,
+          "mixture504": -69.23363888888889
+        },
+        "change": {
+          "mean": 20.299583333333334,
+          "interval": [
+            -4.412344132805067,
+            45.011510799471736
+          ],
+          "fixed_seed_changes": [
+            12.282,
+            36.55525,
+            12.0615
+          ]
+        }
+      },
+      "pressure": {
+        "absolute": {
+          "slow504": 661.6523333333333,
+          "mixture504": 647.9332222222222
+        },
+        "change": {
+          "mean": -13.71911111111111,
+          "interval": [
+            -59.36013156574136,
+            31.92190934351914
+          ],
+          "fixed_seed_changes": [
+            -8.884416666666665,
+            -19.794833333333337,
+            -12.478083333333329
+          ]
+        }
+      },
+      "mixed": {
+        "absolute": {
+          "slow504": 312.2739722222222,
+          "mixture504": 331.7080555555556
+        },
+        "change": {
+          "mean": 19.434083333333334,
+          "interval": [
+            -3.422544975552171,
+            42.29071164221884
+          ],
+          "fixed_seed_changes": [
+            13.66416666666667,
+            13.771666666666667,
+            30.866416666666666
+          ]
+        }
+      },
+      "varied": {
+        "absolute": {
+          "slow504": 378.96733333333333,
+          "mixture504": 416.65772222222216
+        },
+        "change": {
+          "mean": 37.69038888888888,
+          "interval": [
+            1.1345944892730984,
+            74.24618328850467
+          ],
+          "fixed_seed_changes": [
+            46.68566666666666,
+            33.62708333333334,
+            32.75841666666666
+          ]
+        }
+      }
+    }
+  },
+  "public_nominal_comparisons": {
+    "mixture504_minus_specialist480": {
+      "mean": -35.110644444444446,
+      "interval": [
+        -41.597874581584236,
+        -28.623414307304653
+      ],
+      "fixed_seed_changes": [
+        -18.31285,
+        -61.51943333333334,
+        -25.499649999999995
+      ]
+    },
+    "slow504_minus_specialist480": {
+      "mean": -41.302330555555564,
+      "interval": [
+        -47.96467274423888,
+        -34.639988366872245
+      ],
+      "fixed_seed_changes": [
+        -30.526441666666663,
+        -67.00965,
+        -26.3709
+      ]
+    },
+    "mixture504_minus_slow504": {
+      "mean": 6.191686111111111,
+      "interval": [
+        1.3231606772661246,
+        11.060211544956097
+      ],
+      "fixed_seed_changes": [
+        12.213591666666668,
+        5.490216666666667,
+        0.8712500000000002
+      ]
+    },
+    "mixture504_minus_steps256": {
+      "mean": -36.30006944444444,
+      "interval": [
+        -44.61245640172126,
+        -27.98768248716762
+      ],
+      "fixed_seed_changes": [
+        -11.919525,
+        -62.82315,
+        -34.15753333333334
+      ]
+    },
+    "steps256_minus_specialist480": {
+      "mean": 1.1894249999999997,
+      "interval": [
+        -5.75910146622886,
+        8.13795146622886
+      ],
+      "fixed_seed_changes": [
+        -6.393324999999998,
+        1.3037166666666657,
+        8.65788333333333
+      ]
+    }
+  },
+  "paired_sample_first_different_action_by_street": {
+    "public": {
+      "mixture504": {
+        "flop": {
+          "hands": 232,
+          "delta_chips": -1821
+        },
+        "turn": {
+          "hands": 51,
+          "delta_chips": 13871
+        },
+        "river": {
+          "hands": 13,
+          "delta_chips": -9923
+        },
+        "same_trace": {
+          "hands": 892,
+          "delta_chips": 0
+        }
+      },
+      "slow504": {
+        "flop": {
+          "hands": 232,
+          "delta_chips": -1850
+        },
+        "turn": {
+          "hands": 46,
+          "delta_chips": -14037
+        },
+        "river": {
+          "hands": 9,
+          "delta_chips": -8773
+        },
+        "same_trace": {
+          "hands": 901,
+          "delta_chips": 0
+        }
+      }
+    },
+    "noregrets": {
+      "mixture504": {
+        "flop": {
+          "hands": 4,
+          "delta_chips": -31555
+        },
+        "turn": {},
+        "river": {},
+        "same_trace": {
+          "hands": 140,
+          "delta_chips": 0
+        }
+      },
+      "slow504": {
+        "flop": {
+          "hands": 4,
+          "delta_chips": -9315
+        },
+        "turn": {},
+        "river": {
+          "hands": 1,
+          "delta_chips": -3754
+        },
+        "same_trace": {
+          "hands": 139,
+          "delta_chips": 0
+        }
+      }
+    },
+    "rich96": {
+      "mixture504": {
+        "flop": {
+          "hands": 18,
+          "delta_chips": -20036
+        },
+        "turn": {
+          "hands": 4,
+          "delta_chips": 11025
+        },
+        "river": {
+          "hands": 1,
+          "delta_chips": 3000
+        },
+        "same_trace": {
+          "hands": 121,
+          "delta_chips": 0
+        }
+      },
+      "slow504": {
+        "flop": {
+          "hands": 19,
+          "delta_chips": -24686
+        },
+        "turn": {
+          "hands": 2,
+          "delta_chips": -7650
+        },
+        "river": {
+          "hands": 1,
+          "delta_chips": 3000
+        },
+        "same_trace": {
+          "hands": 122,
+          "delta_chips": 0
+        }
+      }
+    },
+    "calling-station": {
+      "mixture504": {
+        "flop": {
+          "hands": 34,
+          "delta_chips": -27400
+        },
+        "turn": {
+          "hands": 14,
+          "delta_chips": -21650
+        },
+        "river": {
+          "hands": 9,
+          "delta_chips": 2850
+        },
+        "same_trace": {
+          "hands": 87,
+          "delta_chips": 0
+        }
+      },
+      "slow504": {
+        "flop": {
+          "hands": 35,
+          "delta_chips": 47825
+        },
+        "turn": {
+          "hands": 20,
+          "delta_chips": -111750
+        },
+        "river": {
+          "hands": 7,
+          "delta_chips": 1950
+        },
+        "same_trace": {
+          "hands": 82,
+          "delta_chips": 0
+        }
+      }
+    },
+    "tight-value": {
+      "mixture504": {
+        "flop": {
+          "hands": 29,
+          "delta_chips": -7874
+        },
+        "turn": {
+          "hands": 6,
+          "delta_chips": -187
+        },
+        "river": {
+          "hands": 4,
+          "delta_chips": -150
+        },
+        "same_trace": {
+          "hands": 105,
+          "delta_chips": 0
+        }
+      },
+      "slow504": {
+        "flop": {
+          "hands": 32,
+          "delta_chips": 3703
+        },
+        "turn": {
+          "hands": 9,
+          "delta_chips": 1263
+        },
+        "river": {
+          "hands": 2,
+          "delta_chips": -231
+        },
+        "same_trace": {
+          "hands": 101,
+          "delta_chips": 0
+        }
+      }
+    },
+    "pressure": {
+      "mixture504": {
+        "flop": {
+          "hands": 6,
+          "delta_chips": -37625
+        },
+        "turn": {},
+        "river": {},
+        "same_trace": {
+          "hands": 138,
+          "delta_chips": 0
+        }
+      },
+      "slow504": {
+        "flop": {
+          "hands": 5,
+          "delta_chips": -64575
+        },
+        "turn": {},
+        "river": {},
+        "same_trace": {
+          "hands": 139,
+          "delta_chips": 0
+        }
+      }
+    },
+    "mixed": {
+      "mixture504": {
+        "flop": {
+          "hands": 4,
+          "delta_chips": 115
+        },
+        "turn": {
+          "hands": 2,
+          "delta_chips": 0
+        },
+        "river": {},
+        "same_trace": {
+          "hands": 138,
+          "delta_chips": 0
+        }
+      },
+      "slow504": {
+        "flop": {
+          "hands": 9,
+          "delta_chips": -18648
+        },
+        "turn": {},
+        "river": {},
+        "same_trace": {
+          "hands": 135,
+          "delta_chips": 0
+        }
+      }
+    },
+    "varied": {
+      "mixture504": {
+        "flop": {
+          "hands": 13,
+          "delta_chips": -3123
+        },
+        "turn": {
+          "hands": 1,
+          "delta_chips": 0
+        },
+        "river": {
+          "hands": 1,
+          "delta_chips": -3175
+        },
+        "same_trace": {
+          "hands": 129,
+          "delta_chips": 0
+        }
+      },
+      "slow504": {
+        "flop": {
+          "hands": 14,
+          "delta_chips": -14406
+        },
+        "turn": {
+          "hands": 4,
+          "delta_chips": -21926
+        },
+        "river": {
+          "hands": 1,
+          "delta_chips": -3175
+        },
+        "same_trace": {
+          "hands": 125,
+          "delta_chips": 0
+        }
+      }
+    }
+  },
+  "statistical_unit": "original card block after averaging six seats and three fixed model seeds"
+}

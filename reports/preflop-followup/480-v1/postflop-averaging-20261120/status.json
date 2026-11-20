@@ -1,6 +1,6 @@
 {
-  "state": "evaluating",
-  "observed_utc": "2026-11-20T00:29:33.443144+00:00",
+  "state": "complete",
+  "observed_utc": "2026-11-20T01:10:02.330209+00:00",
   "training_complete": true,
   "stage_sha256": "288ec2d5f9068221b5922cfeac29301f226e030734e67b15a4399748224d071e",
   "training_audit_sha256": "ec2530846374a8486ac3f46dbbe324e359da350fea89474abb35d312b055e9c2",
@@ -8,8 +8,19 @@
   "final_iteration_per_seed": 504,
   "new_regret_samples": 595140,
   "verified_policy_snapshots": 12,
-  "evaluation_complete": false,
+  "evaluation_complete": true,
   "planned_main_hands": 2196000,
   "planned_supplementary_hands": 72000,
-  "model_promoted": false
+  "model_promoted": false,
+  "completed_main_cells": 75,
+  "completed_main_hands": 2196000,
+  "completed_supplementary_cells": 3,
+  "completed_supplementary_hands": 72000,
+  "additional_snapshot_path_hands": 0,
+  "unique_original_card_blocks": 24000,
+  "final_audit_sha256": "d61d646045489488d2a9ceaf9040de1747c49a810981311f3dcc7b04deef8935",
+  "panel_summary_sha256": "52a98ce8ba93ac612c48b679a6cd473685a96730db1c1c0bcd4f83c90bb89448",
+  "rate_contrast_sha256": "672ed80859a92f9a9420d0a4cba4ddf521823cd39f3c5d56e8b83662af45cef3",
+  "snapshot_path_sha256": "767a3acc859d0ef09a27797acee13c01663e3755f09582a567564d50089733d5",
+  "backup_verification_sha256": "d9faefe930df931e7d044d6841371c7114af3af19bfa22a1c659d6b2d5b17244"
 }

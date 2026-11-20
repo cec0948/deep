@@ -1,0 +1,1589 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-20T01:07:52.758011+00:00",
+  "completed_cells": 75,
+  "completed_hands": 2196000,
+  "unique_original_card_blocks": 24000,
+  "primary": {
+    "baseline": "specialist480",
+    "candidate": "mixture504",
+    "training_seeds": [
+      342,
+      343,
+      344
+    ],
+    "units": "bb/100",
+    "fields": {
+      "public": {
+        "family": "public",
+        "role": "primary",
+        "deal_seed": 2038400000,
+        "original_card_blocks": 20000,
+        "specialist480": {
+          "mean": -20.840550000000004,
+          "lower": -35.03864915544034,
+          "upper": -6.642450844559669
+        },
+        "mixture504": {
+          "mean": -55.95119444444445,
+          "lower": -69.65178667554271,
+          "upper": -42.250602213346184
+        },
+        "paired_change": {
+          "mean": -35.11064444444444,
+          "lower": -45.298722321598994,
+          "upper": -24.922566567289884
+        }
+      },
+      "noregrets": {
+        "family": "noregrets",
+        "role": "primary",
+        "deal_seed": 2038500000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 539.7494444444445,
+          "lower": 402.870041067544,
+          "upper": 676.6288478213451
+        },
+        "mixture504": {
+          "mean": 515.6686111111111,
+          "lower": 379.51232330663794,
+          "upper": 651.8248989155843
+        },
+        "paired_change": {
+          "mean": -24.080833333333334,
+          "lower": -50.48382119825714,
+          "upper": 2.3221545315904706
+        }
+      },
+      "rich96": {
+        "family": "historical-rich",
+        "role": "primary",
+        "deal_seed": 2038500000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 89.90552777777778,
+          "lower": 26.578114123557327,
+          "upper": 153.23294143199823
+        },
+        "mixture504": {
+          "mean": 88.70086111111111,
+          "lower": 26.312524177177778,
+          "upper": 151.08919804504444
+        },
+        "paired_change": {
+          "mean": -1.2046666666666643,
+          "lower": -35.608295697822676,
+          "upper": 33.198962364489354
+        }
+      },
+      "calling-station": {
+        "family": "rules",
+        "role": "primary",
+        "deal_seed": 2038500000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 685.9263888888888,
+          "lower": 534.2833722609355,
+          "upper": 837.5694055168422
+        },
+        "mixture504": {
+          "mean": 1222.2631944444443,
+          "lower": 1046.0890240858325,
+          "upper": 1398.437364803056
+        },
+        "paired_change": {
+          "mean": 536.3368055555555,
+          "lower": 391.13124162334503,
+          "upper": 681.5423694877661
+        }
+      },
+      "tight-value": {
+        "family": "rules",
+        "role": "primary",
+        "deal_seed": 2038500000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": -29.853833333333327,
+          "lower": -79.0217129725425,
+          "upper": 19.314046305875856
+        },
+        "mixture504": {
+          "mean": -69.23363888888889,
+          "lower": -119.71564041600013,
+          "upper": -18.75163736177766
+        },
+        "paired_change": {
+          "mean": -39.37980555555556,
+          "lower": -71.92893086362557,
+          "upper": -6.830680247485567
+        }
+      },
+      "pressure": {
+        "family": "rules",
+        "role": "primary",
+        "deal_seed": 2038500000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 769.7186388888889,
+          "lower": 553.2966001484419,
+          "upper": 986.1406776293359
+        },
+        "mixture504": {
+          "mean": 647.9332222222223,
+          "lower": 436.63758945673237,
+          "upper": 859.2288549877122
+        },
+        "paired_change": {
+          "mean": -121.78541666666668,
+          "lower": -184.12789229035843,
+          "upper": -59.44294104297491
+        }
+      },
+      "mixed": {
+        "family": "legacy-mixed",
+        "role": "diagnostic",
+        "deal_seed": 2038500000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 353.80619444444443,
+          "lower": 268.744428003365,
+          "upper": 438.86796088552387
+        },
+        "mixture504": {
+          "mean": 331.7080555555555,
+          "lower": 245.93996937102622,
+          "upper": 417.4761417400848
+        },
+        "paired_change": {
+          "mean": -22.09813888888889,
+          "lower": -53.41581565931034,
+          "upper": 9.219537881532556
+        }
+      },
+      "varied": {
+        "family": "heldout-lineup",
+        "role": "holdout",
+        "deal_seed": 2038600000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 510.65225,
+          "lower": 398.1893622106139,
+          "upper": 623.115137789386
+        },
+        "mixture504": {
+          "mean": 416.6577222222223,
+          "lower": 307.1553018260304,
+          "upper": 526.1601426184142
+        },
+        "paired_change": {
+          "mean": -93.99452777777778,
+          "lower": -142.20196765345315,
+          "upper": -45.78708790210239
+        }
+      }
+    },
+    "roles": {
+      "primary": {
+        "field_weights": {
+          "public": 0.25,
+          "noregrets": 0.25,
+          "rich96": 0.25,
+          "calling-station": 0.08333333333333333,
+          "tight-value": 0.08333333333333333,
+          "pressure": 0.08333333333333333
+        },
+        "breadth": {
+          "specialist480": {
+            "positive_fields": [
+              "noregrets",
+              "rich96",
+              "calling-station",
+              "pressure"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "noregrets",
+              "rich96",
+              "calling-station",
+              "pressure"
+            ],
+            "family_balanced_positive_share": 0.6666666666666666,
+            "family_balanced_confirmed_positive_share": 0.6666666666666666,
+            "weakest_field_by_point_estimate": "tight-value",
+            "minimum_field_mean_bb100": {
+              "mean": -29.853833333333327,
+              "lower": -79.0217129725425,
+              "upper": -6.642450844559669
+            }
+          },
+          "mixture504": {
+            "positive_fields": [
+              "noregrets",
+              "rich96",
+              "calling-station",
+              "pressure"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "noregrets",
+              "rich96",
+              "calling-station",
+              "pressure"
+            ],
+            "family_balanced_positive_share": 0.6666666666666666,
+            "family_balanced_confirmed_positive_share": 0.6666666666666666,
+            "weakest_field_by_point_estimate": "tight-value",
+            "minimum_field_mean_bb100": {
+              "mean": -69.23363888888889,
+              "lower": -119.71564041600013,
+              "upper": -42.250602213346184
+            }
+          }
+        },
+        "uncapped_family_balanced_change_bb100": {
+          "mean": 16.165262499999994,
+          "lower": -21.591508265306288,
+          "upper": 53.92203326530628
+        },
+        "family_balanced_capped_bb100": {
+          "50": {
+            "specialist480": 25.635376388888886,
+            "mixture504": 13.576064814814814,
+            "paired_change": {
+              "mean": -12.059311574074075,
+              "lower": -23.2406271080741,
+              "upper": 4.052483204634207
+            }
+          },
+          "100": {
+            "specialist480": 56.44509166666666,
+            "mixture504": 44.08461342592592,
+            "paired_change": {
+              "mean": -12.360478240740742,
+              "lower": -26.220832076824216,
+              "upper": 6.496752326645877
+            }
+          },
+          "200": {
+            "specialist480": 98.11175833333333,
+            "mixture504": 85.7512800925926,
+            "paired_change": {
+              "mean": -12.360478240740742,
+              "lower": -26.220832076824216,
+              "upper": 6.496752326645877
+            }
+          }
+        }
+      },
+      "diagnostic": {
+        "field_weights": {
+          "mixed": 1.0
+        },
+        "breadth": {
+          "specialist480": {
+            "positive_fields": [
+              "mixed"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "mixed"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 1.0,
+            "weakest_field_by_point_estimate": "mixed",
+            "minimum_field_mean_bb100": {
+              "mean": 353.80619444444443,
+              "lower": 268.744428003365,
+              "upper": 438.86796088552387
+            }
+          },
+          "mixture504": {
+            "positive_fields": [
+              "mixed"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "mixed"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 1.0,
+            "weakest_field_by_point_estimate": "mixed",
+            "minimum_field_mean_bb100": {
+              "mean": 331.7080555555555,
+              "lower": 245.93996937102622,
+              "upper": 417.4761417400848
+            }
+          }
+        },
+        "uncapped_family_balanced_change_bb100": {
+          "mean": -22.09813888888889,
+          "lower": -53.41581565931034,
+          "upper": 9.219537881532556
+        },
+        "family_balanced_capped_bb100": {
+          "50": {
+            "specialist480": 50.0,
+            "mixture504": 50.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          },
+          "100": {
+            "specialist480": 100.0,
+            "mixture504": 100.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          },
+          "200": {
+            "specialist480": 200.0,
+            "mixture504": 200.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          }
+        }
+      },
+      "holdout": {
+        "field_weights": {
+          "varied": 1.0
+        },
+        "breadth": {
+          "specialist480": {
+            "positive_fields": [
+              "varied"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "varied"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 1.0,
+            "weakest_field_by_point_estimate": "varied",
+            "minimum_field_mean_bb100": {
+              "mean": 510.65225,
+              "lower": 398.1893622106139,
+              "upper": 623.115137789386
+            }
+          },
+          "mixture504": {
+            "positive_fields": [
+              "varied"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "varied"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 1.0,
+            "weakest_field_by_point_estimate": "varied",
+            "minimum_field_mean_bb100": {
+              "mean": 416.6577222222223,
+              "lower": 307.1553018260304,
+              "upper": 526.1601426184142
+            }
+          }
+        },
+        "uncapped_family_balanced_change_bb100": {
+          "mean": -93.99452777777778,
+          "lower": -142.20196765345315,
+          "upper": -45.78708790210239
+        },
+        "family_balanced_capped_bb100": {
+          "50": {
+            "specialist480": 50.0,
+            "mixture504": 50.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          },
+          "100": {
+            "specialist480": 100.0,
+            "mixture504": 100.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          },
+          "200": {
+            "specialist480": 200.0,
+            "mixture504": 200.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          }
+        }
+      }
+    },
+    "uncertainty": {
+      "confidence": 0.95,
+      "simultaneous_estimates": 24,
+      "critical_z": 3.0780880728421613,
+      "method": "Large-sample Bonferroni intervals for both absolute means and the paired change per field. Six seats and all fixed training seeds are averaged inside the original card. Group bounds propagate these simultaneous intervals and allow arbitrary field correlation."
+    },
+    "scope": "Conditional on the fixed policies, training seeds, and declared opponent lineups. Weights are equal across families and equal within family. Saturation applies to each lineup mean before weighting. The holdout has its own cards and separate summary."
+  },
+  "diagnostics": {
+    "current_vs_480": {
+      "baseline": "specialist480",
+      "candidate": "slow504",
+      "training_seeds": [
+        342,
+        343,
+        344
+      ],
+      "units": "bb/100",
+      "fields": {
+        "public": {
+          "family": "public",
+          "role": "primary",
+          "deal_seed": 2038400000,
+          "original_card_blocks": 20000,
+          "specialist480": {
+            "mean": -20.840550000000004,
+            "lower": -35.03864915544034,
+            "upper": -6.642450844559669
+          },
+          "slow504": {
+            "mean": -62.14288055555555,
+            "lower": -75.883497523414,
+            "upper": -48.4022635876971
+          },
+          "paired_change": {
+            "mean": -41.302330555555564,
+            "lower": -51.76541875000099,
+            "upper": -30.839242361110138
+          }
+        },
+        "noregrets": {
+          "family": "noregrets",
+          "role": "primary",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "specialist480": {
+            "mean": 539.7494444444445,
+            "lower": 402.870041067544,
+            "upper": 676.6288478213451
+          },
+          "slow504": {
+            "mean": 506.09711111111113,
+            "lower": 369.71327100230314,
+            "upper": 642.4809512199191
+          },
+          "paired_change": {
+            "mean": -33.65233333333334,
+            "lower": -60.49579336692955,
+            "upper": -6.808873299737133
+          }
+        },
+        "rich96": {
+          "family": "historical-rich",
+          "role": "primary",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "specialist480": {
+            "mean": 89.90552777777778,
+            "lower": 26.578114123557327,
+            "upper": 153.23294143199823
+          },
+          "slow504": {
+            "mean": 54.50141666666667,
+            "lower": -7.961336108879728,
+            "upper": 116.96416944221306
+          },
+          "paired_change": {
+            "mean": -35.404111111111106,
+            "lower": -70.8188203574945,
+            "upper": 0.010598135272289255
+          }
+        },
+        "calling-station": {
+          "family": "rules",
+          "role": "primary",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "specialist480": {
+            "mean": 685.9263888888888,
+            "lower": 534.2833722609355,
+            "upper": 837.5694055168422
+          },
+          "slow504": {
+            "mean": 1170.0958333333333,
+            "lower": 993.5046035312938,
+            "upper": 1346.687063135373
+          },
+          "paired_change": {
+            "mean": 484.1694444444444,
+            "lower": 340.3826695704852,
+            "upper": 627.9562193184037
+          }
+        },
+        "tight-value": {
+          "family": "rules",
+          "role": "primary",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "specialist480": {
+            "mean": -29.853833333333327,
+            "lower": -79.0217129725425,
+            "upper": 19.314046305875856
+          },
+          "slow504": {
+            "mean": -89.53322222222222,
+            "lower": -139.80049925131073,
+            "upper": -39.26594519313372
+          },
+          "paired_change": {
+            "mean": -59.67938888888889,
+            "lower": -92.41769369798868,
+            "upper": -26.9410840797891
+          }
+        },
+        "pressure": {
+          "family": "rules",
+          "role": "primary",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "specialist480": {
+            "mean": 769.7186388888889,
+            "lower": 553.2966001484419,
+            "upper": 986.1406776293359
+          },
+          "slow504": {
+            "mean": 661.6523333333333,
+            "lower": 449.415999050487,
+            "upper": 873.8886676161796
+          },
+          "paired_change": {
+            "mean": -108.06630555555556,
+            "lower": -171.35100562955353,
+            "upper": -44.78160548155758
+          }
+        },
+        "mixed": {
+          "family": "legacy-mixed",
+          "role": "diagnostic",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "specialist480": {
+            "mean": 353.80619444444443,
+            "lower": 268.744428003365,
+            "upper": 438.86796088552387
+          },
+          "slow504": {
+            "mean": 312.27397222222226,
+            "lower": 227.53271704650817,
+            "upper": 397.0152273979363
+          },
+          "paired_change": {
+            "mean": -41.53222222222222,
+            "lower": -74.29861083632795,
+            "upper": -8.765833608116488
+          }
+        },
+        "varied": {
+          "family": "heldout-lineup",
+          "role": "holdout",
+          "deal_seed": 2038600000,
+          "original_card_blocks": 2000,
+          "specialist480": {
+            "mean": 510.65225,
+            "lower": 398.1893622106139,
+            "upper": 623.115137789386
+          },
+          "slow504": {
+            "mean": 378.9673333333334,
+            "lower": 268.75674197297803,
+            "upper": 489.17792469368874
+          },
+          "paired_change": {
+            "mean": -131.68491666666668,
+            "lower": -182.26441292706212,
+            "upper": -81.10542040627124
+          }
+        }
+      },
+      "roles": {
+        "primary": {
+          "field_weights": {
+            "public": 0.25,
+            "noregrets": 0.25,
+            "rich96": 0.25,
+            "calling-station": 0.08333333333333333,
+            "tight-value": 0.08333333333333333,
+            "pressure": 0.08333333333333333
+          },
+          "breadth": {
+            "specialist480": {
+              "positive_fields": [
+                "noregrets",
+                "rich96",
+                "calling-station",
+                "pressure"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "noregrets",
+                "rich96",
+                "calling-station",
+                "pressure"
+              ],
+              "family_balanced_positive_share": 0.6666666666666666,
+              "family_balanced_confirmed_positive_share": 0.6666666666666666,
+              "weakest_field_by_point_estimate": "tight-value",
+              "minimum_field_mean_bb100": {
+                "mean": -29.853833333333327,
+                "lower": -79.0217129725425,
+                "upper": -6.642450844559669
+              }
+            },
+            "slow504": {
+              "positive_fields": [
+                "noregrets",
+                "rich96",
+                "calling-station",
+                "pressure"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "noregrets",
+                "calling-station",
+                "pressure"
+              ],
+              "family_balanced_positive_share": 0.6666666666666666,
+              "family_balanced_confirmed_positive_share": 0.41666666666666663,
+              "weakest_field_by_point_estimate": "tight-value",
+              "minimum_field_mean_bb100": {
+                "mean": -89.53322222222222,
+                "lower": -139.80049925131073,
+                "upper": -48.4022635876971
+              }
+            }
+          },
+          "uncapped_family_balanced_change_bb100": {
+            "mean": -1.221047916666672,
+            "lower": -39.38551059836101,
+            "upper": 36.94341476502767
+          },
+          "family_balanced_capped_bb100": {
+            "50": {
+              "specialist480": 25.635376388888886,
+              "slow504": 10.336511342592594,
+              "paired_change": {
+                "mean": -15.298865046296292,
+                "lower": -35.13316318955257,
+                "upper": -3.3382540742461178
+              }
+            },
+            "100": {
+              "specialist480": 56.44509166666666,
+              "slow504": 32.29519884259259,
+              "paired_change": {
+                "mean": -24.14989282407407,
+                "lower": -38.347534251706264,
+                "upper": -3.3382540742461178
+              }
+            },
+            "200": {
+              "specialist480": 98.11175833333333,
+              "slow504": 73.96186550925925,
+              "paired_change": {
+                "mean": -24.14989282407407,
+                "lower": -38.347534251706264,
+                "upper": -3.3382540742461178
+              }
+            }
+          }
+        },
+        "diagnostic": {
+          "field_weights": {
+            "mixed": 1.0
+          },
+          "breadth": {
+            "specialist480": {
+              "positive_fields": [
+                "mixed"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "mixed"
+              ],
+              "family_balanced_positive_share": 1.0,
+              "family_balanced_confirmed_positive_share": 1.0,
+              "weakest_field_by_point_estimate": "mixed",
+              "minimum_field_mean_bb100": {
+                "mean": 353.80619444444443,
+                "lower": 268.744428003365,
+                "upper": 438.86796088552387
+              }
+            },
+            "slow504": {
+              "positive_fields": [
+                "mixed"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "mixed"
+              ],
+              "family_balanced_positive_share": 1.0,
+              "family_balanced_confirmed_positive_share": 1.0,
+              "weakest_field_by_point_estimate": "mixed",
+              "minimum_field_mean_bb100": {
+                "mean": 312.27397222222226,
+                "lower": 227.53271704650817,
+                "upper": 397.0152273979363
+              }
+            }
+          },
+          "uncapped_family_balanced_change_bb100": {
+            "mean": -41.53222222222222,
+            "lower": -74.29861083632795,
+            "upper": -8.765833608116488
+          },
+          "family_balanced_capped_bb100": {
+            "50": {
+              "specialist480": 50.0,
+              "slow504": 50.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            },
+            "100": {
+              "specialist480": 100.0,
+              "slow504": 100.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            },
+            "200": {
+              "specialist480": 200.0,
+              "slow504": 200.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            }
+          }
+        },
+        "holdout": {
+          "field_weights": {
+            "varied": 1.0
+          },
+          "breadth": {
+            "specialist480": {
+              "positive_fields": [
+                "varied"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "varied"
+              ],
+              "family_balanced_positive_share": 1.0,
+              "family_balanced_confirmed_positive_share": 1.0,
+              "weakest_field_by_point_estimate": "varied",
+              "minimum_field_mean_bb100": {
+                "mean": 510.65225,
+                "lower": 398.1893622106139,
+                "upper": 623.115137789386
+              }
+            },
+            "slow504": {
+              "positive_fields": [
+                "varied"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "varied"
+              ],
+              "family_balanced_positive_share": 1.0,
+              "family_balanced_confirmed_positive_share": 1.0,
+              "weakest_field_by_point_estimate": "varied",
+              "minimum_field_mean_bb100": {
+                "mean": 378.9673333333334,
+                "lower": 268.75674197297803,
+                "upper": 489.17792469368874
+              }
+            }
+          },
+          "uncapped_family_balanced_change_bb100": {
+            "mean": -131.68491666666668,
+            "lower": -182.26441292706212,
+            "upper": -81.10542040627124
+          },
+          "family_balanced_capped_bb100": {
+            "50": {
+              "specialist480": 50.0,
+              "slow504": 50.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            },
+            "100": {
+              "specialist480": 100.0,
+              "slow504": 100.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            },
+            "200": {
+              "specialist480": 200.0,
+              "slow504": 200.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            }
+          }
+        }
+      },
+      "uncertainty": {
+        "confidence": 0.95,
+        "simultaneous_estimates": 24,
+        "critical_z": 3.0780880728421613,
+        "method": "Large-sample Bonferroni intervals for both absolute means and the paired change per field. Six seats and all fixed training seeds are averaged inside the original card. Group bounds propagate these simultaneous intervals and allow arbitrary field correlation."
+      },
+      "scope": "Conditional on the fixed policies, training seeds, and declared opponent lineups. Weights are equal across families and equal within family. Saturation applies to each lineup mean before weighting. The holdout has its own cards and separate summary."
+    },
+    "mixture_vs_current": {
+      "baseline": "slow504",
+      "candidate": "mixture504",
+      "training_seeds": [
+        342,
+        343,
+        344
+      ],
+      "units": "bb/100",
+      "fields": {
+        "public": {
+          "family": "public",
+          "role": "primary",
+          "deal_seed": 2038400000,
+          "original_card_blocks": 20000,
+          "slow504": {
+            "mean": -62.14288055555555,
+            "lower": -75.883497523414,
+            "upper": -48.4022635876971
+          },
+          "mixture504": {
+            "mean": -55.95119444444445,
+            "lower": -69.65178667554271,
+            "upper": -42.250602213346184
+          },
+          "paired_change": {
+            "mean": 6.191686111111111,
+            "lower": -1.4542452368384682,
+            "upper": 13.837617459060692
+          }
+        },
+        "noregrets": {
+          "family": "noregrets",
+          "role": "primary",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "slow504": {
+            "mean": 506.09711111111113,
+            "lower": 369.71327100230314,
+            "upper": 642.4809512199191
+          },
+          "mixture504": {
+            "mean": 515.6686111111111,
+            "lower": 379.51232330663794,
+            "upper": 651.8248989155843
+          },
+          "paired_change": {
+            "mean": 9.5715,
+            "lower": -9.44616748166828,
+            "upper": 28.58916748166828
+          }
+        },
+        "rich96": {
+          "family": "historical-rich",
+          "role": "primary",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "slow504": {
+            "mean": 54.50141666666667,
+            "lower": -7.961336108879728,
+            "upper": 116.96416944221306
+          },
+          "mixture504": {
+            "mean": 88.70086111111111,
+            "lower": 26.312524177177778,
+            "upper": 151.08919804504444
+          },
+          "paired_change": {
+            "mean": 34.19944444444444,
+            "lower": 8.9569183432639,
+            "upper": 59.441970545624976
+          }
+        },
+        "calling-station": {
+          "family": "rules",
+          "role": "primary",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "slow504": {
+            "mean": 1170.0958333333333,
+            "lower": 993.5046035312938,
+            "upper": 1346.687063135373
+          },
+          "mixture504": {
+            "mean": 1222.2631944444443,
+            "lower": 1046.0890240858325,
+            "upper": 1398.437364803056
+          },
+          "paired_change": {
+            "mean": 52.16736111111112,
+            "lower": -38.09591954141095,
+            "upper": 142.4306417636332
+          }
+        },
+        "tight-value": {
+          "family": "rules",
+          "role": "primary",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "slow504": {
+            "mean": -89.53322222222222,
+            "lower": -139.80049925131073,
+            "upper": -39.26594519313372
+          },
+          "mixture504": {
+            "mean": -69.23363888888889,
+            "lower": -119.71564041600013,
+            "upper": -18.75163736177766
+          },
+          "paired_change": {
+            "mean": 20.299583333333327,
+            "lower": -4.412344132805082,
+            "upper": 45.011510799471736
+          }
+        },
+        "pressure": {
+          "family": "rules",
+          "role": "primary",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "slow504": {
+            "mean": 661.6523333333333,
+            "lower": 449.415999050487,
+            "upper": 873.8886676161796
+          },
+          "mixture504": {
+            "mean": 647.9332222222223,
+            "lower": 436.63758945673237,
+            "upper": 859.2288549877122
+          },
+          "paired_change": {
+            "mean": -13.719111111111102,
+            "lower": -59.360131565741355,
+            "upper": 31.921909343519147
+          }
+        },
+        "mixed": {
+          "family": "legacy-mixed",
+          "role": "diagnostic",
+          "deal_seed": 2038500000,
+          "original_card_blocks": 2000,
+          "slow504": {
+            "mean": 312.27397222222226,
+            "lower": 227.53271704650817,
+            "upper": 397.0152273979363
+          },
+          "mixture504": {
+            "mean": 331.7080555555555,
+            "lower": 245.93996937102622,
+            "upper": 417.4761417400848
+          },
+          "paired_change": {
+            "mean": 19.434083333333334,
+            "lower": -3.422544975552171,
+            "upper": 42.29071164221884
+          }
+        },
+        "varied": {
+          "family": "heldout-lineup",
+          "role": "holdout",
+          "deal_seed": 2038600000,
+          "original_card_blocks": 2000,
+          "slow504": {
+            "mean": 378.9673333333334,
+            "lower": 268.75674197297803,
+            "upper": 489.17792469368874
+          },
+          "mixture504": {
+            "mean": 416.6577222222223,
+            "lower": 307.1553018260304,
+            "upper": 526.1601426184142
+          },
+          "paired_change": {
+            "mean": 37.69038888888888,
+            "lower": 1.1345944892730984,
+            "upper": 74.24618328850467
+          }
+        }
+      },
+      "roles": {
+        "primary": {
+          "field_weights": {
+            "public": 0.25,
+            "noregrets": 0.25,
+            "rich96": 0.25,
+            "calling-station": 0.08333333333333333,
+            "tight-value": 0.08333333333333333,
+            "pressure": 0.08333333333333333
+          },
+          "breadth": {
+            "slow504": {
+              "positive_fields": [
+                "noregrets",
+                "rich96",
+                "calling-station",
+                "pressure"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "noregrets",
+                "calling-station",
+                "pressure"
+              ],
+              "family_balanced_positive_share": 0.6666666666666666,
+              "family_balanced_confirmed_positive_share": 0.41666666666666663,
+              "weakest_field_by_point_estimate": "tight-value",
+              "minimum_field_mean_bb100": {
+                "mean": -89.53322222222222,
+                "lower": -139.80049925131073,
+                "upper": -48.4022635876971
+              }
+            },
+            "mixture504": {
+              "positive_fields": [
+                "noregrets",
+                "rich96",
+                "calling-station",
+                "pressure"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "noregrets",
+                "rich96",
+                "calling-station",
+                "pressure"
+              ],
+              "family_balanced_positive_share": 0.6666666666666666,
+              "family_balanced_confirmed_positive_share": 0.6666666666666666,
+              "weakest_field_by_point_estimate": "tight-value",
+              "minimum_field_mean_bb100": {
+                "mean": -69.23363888888889,
+                "lower": -119.71564041600013,
+                "upper": -42.250602213346184
+              }
+            }
+          },
+          "uncapped_family_balanced_change_bb100": {
+            "mean": 17.386310416666667,
+            "lower": -8.974906530473827,
+            "upper": 43.74752736380716
+          },
+          "family_balanced_capped_bb100": {
+            "50": {
+              "slow504": 10.336511342592594,
+              "mixture504": 13.576064814814814,
+              "paired_change": {
+                "mean": 3.23955347222222,
+                "lower": -0.7312566536100404,
+                "upper": 21.700697625274415
+              }
+            },
+            "100": {
+              "slow504": 32.29519884259259,
+              "mixture504": 44.08461342592592,
+              "paired_change": {
+                "mean": 11.789414583333329,
+                "lower": -0.7312566536100404,
+                "upper": 22.070856234460727
+              }
+            },
+            "200": {
+              "slow504": 73.96186550925925,
+              "mixture504": 85.7512800925926,
+              "paired_change": {
+                "mean": 11.789414583333329,
+                "lower": -0.7312566536100404,
+                "upper": 22.070856234460727
+              }
+            }
+          }
+        },
+        "diagnostic": {
+          "field_weights": {
+            "mixed": 1.0
+          },
+          "breadth": {
+            "slow504": {
+              "positive_fields": [
+                "mixed"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "mixed"
+              ],
+              "family_balanced_positive_share": 1.0,
+              "family_balanced_confirmed_positive_share": 1.0,
+              "weakest_field_by_point_estimate": "mixed",
+              "minimum_field_mean_bb100": {
+                "mean": 312.27397222222226,
+                "lower": 227.53271704650817,
+                "upper": 397.0152273979363
+              }
+            },
+            "mixture504": {
+              "positive_fields": [
+                "mixed"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "mixed"
+              ],
+              "family_balanced_positive_share": 1.0,
+              "family_balanced_confirmed_positive_share": 1.0,
+              "weakest_field_by_point_estimate": "mixed",
+              "minimum_field_mean_bb100": {
+                "mean": 331.7080555555555,
+                "lower": 245.93996937102622,
+                "upper": 417.4761417400848
+              }
+            }
+          },
+          "uncapped_family_balanced_change_bb100": {
+            "mean": 19.434083333333334,
+            "lower": -3.422544975552171,
+            "upper": 42.29071164221884
+          },
+          "family_balanced_capped_bb100": {
+            "50": {
+              "slow504": 50.0,
+              "mixture504": 50.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            },
+            "100": {
+              "slow504": 100.0,
+              "mixture504": 100.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            },
+            "200": {
+              "slow504": 200.0,
+              "mixture504": 200.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            }
+          }
+        },
+        "holdout": {
+          "field_weights": {
+            "varied": 1.0
+          },
+          "breadth": {
+            "slow504": {
+              "positive_fields": [
+                "varied"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "varied"
+              ],
+              "family_balanced_positive_share": 1.0,
+              "family_balanced_confirmed_positive_share": 1.0,
+              "weakest_field_by_point_estimate": "varied",
+              "minimum_field_mean_bb100": {
+                "mean": 378.9673333333334,
+                "lower": 268.75674197297803,
+                "upper": 489.17792469368874
+              }
+            },
+            "mixture504": {
+              "positive_fields": [
+                "varied"
+              ],
+              "positive_fields_simultaneous_lower_above_zero": [
+                "varied"
+              ],
+              "family_balanced_positive_share": 1.0,
+              "family_balanced_confirmed_positive_share": 1.0,
+              "weakest_field_by_point_estimate": "varied",
+              "minimum_field_mean_bb100": {
+                "mean": 416.6577222222223,
+                "lower": 307.1553018260304,
+                "upper": 526.1601426184142
+              }
+            }
+          },
+          "uncapped_family_balanced_change_bb100": {
+            "mean": 37.69038888888888,
+            "lower": 1.1345944892730984,
+            "upper": 74.24618328850467
+          },
+          "family_balanced_capped_bb100": {
+            "50": {
+              "slow504": 50.0,
+              "mixture504": 50.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            },
+            "100": {
+              "slow504": 100.0,
+              "mixture504": 100.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            },
+            "200": {
+              "slow504": 200.0,
+              "mixture504": 200.0,
+              "paired_change": {
+                "mean": 0.0,
+                "lower": 0.0,
+                "upper": 0.0
+              }
+            }
+          }
+        }
+      },
+      "uncertainty": {
+        "confidence": 0.95,
+        "simultaneous_estimates": 24,
+        "critical_z": 3.0780880728421613,
+        "method": "Large-sample Bonferroni intervals for both absolute means and the paired change per field. Six seats and all fixed training seeds are averaged inside the original card. Group bounds propagate these simultaneous intervals and allow arbitrary field correlation."
+      },
+      "scope": "Conditional on the fixed policies, training seeds, and declared opponent lineups. Weights are equal across families and equal within family. Saturation applies to each lineup mean before weighting. The holdout has its own cards and separate summary."
+    }
+  },
+  "public_comparisons": {
+    "mixture504_minus_specialist480": {
+      "baseline": "specialist480",
+      "candidate": "mixture504",
+      "baseline_bb100": -20.84055,
+      "candidate_bb100": -55.95119444444444,
+      "by_seed": [
+        -18.31285,
+        -61.51943333333334,
+        -25.499649999999995
+      ],
+      "mean": -35.110644444444446,
+      "paired_ci95": [
+        -41.597874581584236,
+        -28.623414307304653
+      ]
+    },
+    "slow504_minus_specialist480": {
+      "baseline": "specialist480",
+      "candidate": "slow504",
+      "baseline_bb100": -20.84055,
+      "candidate_bb100": -62.142880555555564,
+      "by_seed": [
+        -30.526441666666663,
+        -67.00965,
+        -26.3709
+      ],
+      "mean": -41.302330555555564,
+      "paired_ci95": [
+        -47.96467274423888,
+        -34.639988366872245
+      ]
+    },
+    "mixture504_minus_slow504": {
+      "baseline": "slow504",
+      "candidate": "mixture504",
+      "baseline_bb100": -62.142880555555564,
+      "candidate_bb100": -55.95119444444444,
+      "by_seed": [
+        12.213591666666668,
+        5.490216666666667,
+        0.8712500000000002
+      ],
+      "mean": 6.191686111111111,
+      "paired_ci95": [
+        1.3231606772661246,
+        11.060211544956097
+      ]
+    },
+    "mixture504_minus_steps256": {
+      "baseline": "steps256",
+      "candidate": "mixture504",
+      "baseline_bb100": -19.651125,
+      "candidate_bb100": -55.95119444444444,
+      "by_seed": [
+        -11.919525,
+        -62.82315,
+        -34.15753333333334
+      ],
+      "mean": -36.30006944444444,
+      "paired_ci95": [
+        -44.61245640172126,
+        -27.98768248716762
+      ]
+    },
+    "steps256_minus_specialist480": {
+      "baseline": "specialist480",
+      "candidate": "steps256",
+      "baseline_bb100": -20.84055,
+      "candidate_bb100": -19.651125,
+      "by_seed": [
+        -6.393324999999998,
+        1.3037166666666657,
+        8.65788333333333
+      ],
+      "mean": 1.1894249999999997,
+      "paired_ci95": [
+        -5.75910146622886,
+        8.13795146622886
+      ]
+    }
+  },
+  "cell_result_sha256": {
+    "public-seed-342-specialist480": "1dea6f51140966a2b11fc515aca919c57ca755928cd4211ebdb32ef2674a4048",
+    "public-seed-342-mixture504": "b5a369f65c8f475967153d1988d6d45a9f69cd2de8895d0f8bf71d5c89d1b367",
+    "public-seed-342-slow504": "f60b1f67da254247cce44ac41be522f564083a7a5ac8d6cb2b3fcf056b71f663",
+    "public-seed-342-steps256": "b550acd00d44c06b94d27339b952ee19d2937471f0fca6a4a8f91611136fd578",
+    "public-seed-343-specialist480": "2db63ae0458a2f64240ded641bbce7ec8590fff8a08875a9d5c6bc55d2da1eee",
+    "public-seed-343-mixture504": "dabc188040356299c34d1688fc97eae61cdc0db13b15c7a7396d37e6135dc005",
+    "public-seed-343-slow504": "513cc7ae83a6f786e3837c1cda57ef5a899cde2427c3f452e520319bf9a5a1b7",
+    "public-seed-343-steps256": "1d63adec5aff7c84b216028399e2ad1ed1adcc8de22a455ac548cca8db183d01",
+    "public-seed-344-specialist480": "0d1bd98a63f6e2ec285fbd38be13e9d35a66425b67463e1576c4882630882dce",
+    "public-seed-344-mixture504": "de6168747d631497649cd93595ec1a5aa5257ce24a2b0c752bf828e87019c126",
+    "public-seed-344-slow504": "e8554ec2d3453beb23d8c459f6c1ce18140b518861b499c95fd6d0b266e32055",
+    "public-seed-344-steps256": "e2ffd36afb8a3de439e551710602b7f80bb954de9e64aecaeb64e121d3a75e8c",
+    "noregrets-seed-342-specialist480": "a1aff4b554e82c3f98fac696ab4ca22e0147009ccb7c8bec6aff246287b42fc1",
+    "noregrets-seed-342-mixture504": "e2965fdf1e3df1befaf6d8becc646065f2052a31075cb0fd60e48480120494b7",
+    "noregrets-seed-342-slow504": "13459a65c28e92354b34c074d71b3d38e5abe0164cd34b3a13b5c41c2c144e49",
+    "noregrets-seed-343-specialist480": "1cd34d7554119b91030561f5ae33b03edefbe6a6aeccfe522dc0568d4f5a4348",
+    "noregrets-seed-343-mixture504": "dbd5578856314ce2b5d78a83a4c36a3cf6a1a69542e0253b323f378a6881fb4e",
+    "noregrets-seed-343-slow504": "37a609fbae3548ac1809883da32cd643bc6e5da7f6b618addd15673cfb180244",
+    "noregrets-seed-344-specialist480": "b7b656f6292720f4620b148adba3c427871a52d0e0da91905720add70ba61306",
+    "noregrets-seed-344-mixture504": "d41051588cc5951f8eccb4085290abec5d20387d9ec19dc61852763554a3bf82",
+    "noregrets-seed-344-slow504": "3e33da7140677f11e87f96cc6fa0d2ff5d2da264003d3b2b9e6bec9048c1fc91",
+    "rich96-seed-342-specialist480": "1505a34f86b51102399256e3c1d636d417a84554b6a5e820f19db1d373464b04",
+    "rich96-seed-342-mixture504": "35f2d07d6b74023ab9cca82dbefb93b2e6e1af4128e83eafa991cab3ec1c52b9",
+    "rich96-seed-342-slow504": "7317c0740bf8b3ccf92098bda6690a0de86075bb1c314e1d798b594727ce7e3e",
+    "rich96-seed-343-specialist480": "e79b9bfef6ad960714c829fed909c9b7e9fd003ad132ea0756bc5074e6d44727",
+    "rich96-seed-343-mixture504": "afb44ee595214959a1b9183d4d3a0c368439a981d80006c4437ba5e8b830ca07",
+    "rich96-seed-343-slow504": "0774135b8e2beffb25375431cbd18ea9c9e15437d81ffb91d1c1320ad920490d",
+    "rich96-seed-344-specialist480": "41e741e8c5088524763d98bb9a829c00aa36c7fd4ba08255212a56329b19c774",
+    "rich96-seed-344-mixture504": "9e2cfe55c8b322984489e72d55268d83113b6c796d992d0d392eedf9d50acd5b",
+    "rich96-seed-344-slow504": "93c93bb7adc89ca02362cc5df0cc79bf845982a83bb46e6df611d244cc92e8ee",
+    "calling-station-seed-342-specialist480": "0d1bbd198076b5b9270c2a3dbf605af024c726c1a5ae12a01b2754b5b5770c1c",
+    "calling-station-seed-342-mixture504": "1fa9c3a1113b413031900e187efbabfe29615bfc289f7200237f472449b9e600",
+    "calling-station-seed-342-slow504": "b3c77c468ae56a2029d56bb1c0b3b5c4fc3cd7c0a40efc8811ab9c142f2c5702",
+    "calling-station-seed-343-specialist480": "36ebea28e25ad3baa76d93bb267499c4a5eb74fd8d6df7cf8df2133346f89f7c",
+    "calling-station-seed-343-mixture504": "b62713ca7a9ff934b8b7f94431dba9e144b44cc6152fed1d5df9cf24c622a379",
+    "calling-station-seed-343-slow504": "8293373aefbd91a0872604cf910a29038e2bace48f60804437ed51ad98328710",
+    "calling-station-seed-344-specialist480": "b2c5754888b24bccef182c8b0684b8c17200d18aa2da07490c57067550bdc427",
+    "calling-station-seed-344-mixture504": "50bd26240aab44ee4f16e349b9296f2351f850ca3ff27a4267be1d3bbd89d849",
+    "calling-station-seed-344-slow504": "4949b1890a5e188a415db9144658b86597178a11de76cc2f2520f5b37f09145b",
+    "tight-value-seed-342-specialist480": "7d6aca699d00f2bf7c50d7b9606b12be9703eaa09b77a670387782bfd7ced47c",
+    "tight-value-seed-342-mixture504": "cef6eaf478b91062d377a1f45cd570421ecf117ddad17e251597111710b99620",
+    "tight-value-seed-342-slow504": "04a5f27b39f7dc88f4ffd827fe312821c6990d251252b5bbd2542a9b7ccb6024",
+    "tight-value-seed-343-specialist480": "43470ca4b925c281c2ade33ecd779dfa3ca92eec16adb6871eb5ab8343ffeedc",
+    "tight-value-seed-343-mixture504": "9013ffffd0f11ec275b58e9371d40c029b3c5a5c77e6475447f86b208fd12fb4",
+    "tight-value-seed-343-slow504": "99962d8ee5e06eaaa72305e5d17effe490974d16188fae244a8ed809aa19f3d1",
+    "tight-value-seed-344-specialist480": "0d14cf40f68a9eec3e81b402ef26a40fdd7949a82f1ffa3198fe903fdf701930",
+    "tight-value-seed-344-mixture504": "db9034221766cc790fe1a636dd9c86901280cd5b97ac19b1f87137b4817c0408",
+    "tight-value-seed-344-slow504": "b0dd6f1e47ccd3c4951ef1c599e26874bc4ae33d1bbec234f68c896026a7c9ff",
+    "pressure-seed-342-specialist480": "86756fdf03cf6aa8f0ef44d2c3654ab558c41912ac514e288b7dd54c11f63abe",
+    "pressure-seed-342-mixture504": "0d46c5d3b7ac30062a806dbcfcac1f646aaf2bd8aaababfe5e9a91eb0d889c87",
+    "pressure-seed-342-slow504": "2d28c4bc6cbb5ef35ece7b881b825ea2d715093a6f8f5ce5301fdfbdfa12cd85",
+    "pressure-seed-343-specialist480": "e759cfb419c6166ebeed3242b6007fffc7855d8bc1965ccb23c249416aefdaea",
+    "pressure-seed-343-mixture504": "610fbbfb7649366ed165e18575a922d37c701c44f6632143db74c1903c543683",
+    "pressure-seed-343-slow504": "7e273d0ef2c303fd7291a1883956aec9fd285a3875c20b78149c06fe752aaca0",
+    "pressure-seed-344-specialist480": "43bded0661363d347cf8cfcf81690b3a3a1b3b22964b054c8be916ec3ad06e77",
+    "pressure-seed-344-mixture504": "0b5cb940d49ab536f3eb470493759b378f42a753ea58a21b44bff4e33c066a10",
+    "pressure-seed-344-slow504": "3a0b9ecd8a49bdb7ef324cff4ca78f07cc68418681646bbbef2a7e361c762b90",
+    "mixed-seed-342-specialist480": "04ea9447846c0635c69abacbf37e570a7842aa5eb245cdf50daade2de7b4f38b",
+    "mixed-seed-342-mixture504": "50d178cb7783e1d7a7e4de2154bcd2e514ba20be7614815fc27c72d00bcb6d03",
+    "mixed-seed-342-slow504": "2c3dd75881f6c181fe848496fda1ae0252acda3de3244c0e07c30583f939bb99",
+    "mixed-seed-343-specialist480": "5a6a44a282d7aeeb8644aeecd2aad0a07776e373fbfbee35cfcce71266d9a028",
+    "mixed-seed-343-mixture504": "7ff5875bf45d4079b10f1b10a7e82752f0ac300b15078f44e35e1899ba5ebb07",
+    "mixed-seed-343-slow504": "9da690e6a3546e2466f928bcc1e471e55e6aec33ef13b58ddea15bf013fbe644",
+    "mixed-seed-344-specialist480": "c9ec7005f1f82c1b4d385af063c3e57f0c87229236140186c036b9b7f84ce621",
+    "mixed-seed-344-mixture504": "bd747ed3352d6500a6fed5c1f4bb3e19e6b223760069013a3e824ffed2ddb2ff",
+    "mixed-seed-344-slow504": "a38e4543758bb2d53c282d5af20467db8c61cd9c81a835a98e616be25a2b1cb5",
+    "varied-seed-342-specialist480": "8a6cca503920c17d971a6c1d369804ee1e145c70f7d02dd926c2792d20e88f86",
+    "varied-seed-342-mixture504": "04c029f616c3c79c612a11359593b0893880ad9c30102d61a3665d6033839c8f",
+    "varied-seed-342-slow504": "4a0fda6b3f7b271457295366e84dc5604d7bcf3433fcae738594cd4a5e50d6c4",
+    "varied-seed-343-specialist480": "27af47f35f33d13890cc4396825ed3dece6f8cab4cfb50965e4e116ec449a206",
+    "varied-seed-343-mixture504": "cad7f44543f65ab89c7d4385cfef823126729de948b53b95a95668293ba1e7dc",
+    "varied-seed-343-slow504": "446b88eafbd7d2d1ca52aaa44dab59fe33ebb2e2ed94a411aa8c7d3914d6e6aa",
+    "varied-seed-344-specialist480": "b1547d43c4e642925054d86ed7e70deacb04fc87d83c963f9f9c321ed6016f41",
+    "varied-seed-344-mixture504": "92bc58edd8ca766d3e5b1a7fed52f2ea7d230813514def7ea818d1597c938525",
+    "varied-seed-344-slow504": "15a9979d098399133dfbad7b666ccdf875860b5cfecfb2426701f79736f7dbfe"
+  },
+  "snapshot_hand_counts": {
+    "public-seed-342-mixture504": {
+      "492": 29981,
+      "504": 29724,
+      "486": 30258,
+      "498": 30037
+    },
+    "public-seed-343-mixture504": {
+      "492": 29981,
+      "504": 29724,
+      "486": 30258,
+      "498": 30037
+    },
+    "public-seed-344-mixture504": {
+      "492": 29981,
+      "504": 29724,
+      "486": 30258,
+      "498": 30037
+    },
+    "noregrets-seed-342-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "noregrets-seed-343-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "noregrets-seed-344-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "rich96-seed-342-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "rich96-seed-343-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "rich96-seed-344-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "calling-station-seed-342-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "calling-station-seed-343-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "calling-station-seed-344-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "tight-value-seed-342-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "tight-value-seed-343-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "tight-value-seed-344-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "pressure-seed-342-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "pressure-seed-343-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "pressure-seed-344-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "mixed-seed-342-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "mixed-seed-343-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "mixed-seed-344-mixture504": {
+      "504": 3023,
+      "492": 3117,
+      "486": 2824,
+      "498": 3036
+    },
+    "varied-seed-342-mixture504": {
+      "486": 3023,
+      "504": 2943,
+      "498": 2985,
+      "492": 3049
+    },
+    "varied-seed-343-mixture504": {
+      "486": 3023,
+      "504": 2943,
+      "498": 2985,
+      "492": 3049
+    },
+    "varied-seed-344-mixture504": {
+      "486": 3023,
+      "504": 2943,
+      "498": 2985,
+      "492": 3049
+    }
+  },
+  "plan_sha256": "87927530b0cfbd8e049769fef29dcdc8a02640869ef189799c1e91e676c6ae07",
+  "model_promoted": false
+}
