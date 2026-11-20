@@ -1,0 +1,15 @@
+{
+  "state": "evaluating",
+  "observed_utc": "2026-11-20T00:29:33.443144+00:00",
+  "training_complete": true,
+  "stage_sha256": "288ec2d5f9068221b5922cfeac29301f226e030734e67b15a4399748224d071e",
+  "training_audit_sha256": "ec2530846374a8486ac3f46dbbe324e359da350fea89474abb35d312b055e9c2",
+  "new_selfplay_iterations_per_seed": 24,
+  "final_iteration_per_seed": 504,
+  "new_regret_samples": 595140,
+  "verified_policy_snapshots": 12,
+  "evaluation_complete": false,
+  "planned_main_hands": 2196000,
+  "planned_supplementary_hands": 72000,
+  "model_promoted": false
+}

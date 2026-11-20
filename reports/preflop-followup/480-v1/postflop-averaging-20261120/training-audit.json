@@ -1,0 +1,144 @@
+{
+  "verified_utc": "2026-11-20T00:28:48.712530+00:00",
+  "stage_sha256": "288ec2d5f9068221b5922cfeac29301f226e030734e67b15a4399748224d071e",
+  "training_plan_sha256": "533a88378fe0a4b27cd98ece6d493ca62600c66ee48265fcdbc57cac379b594c",
+  "seeds": {
+    "342": {
+      "seed": 342,
+      "verified_model_sha256": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6",
+      "rounds": 24,
+      "traversals": 6144,
+      "new_regret_rows_by_seat": [
+        32575,
+        32784,
+        32453,
+        30256,
+        31224,
+        29605
+      ],
+      "new_regret_rows": 188897,
+      "postflop_updates": 18432,
+      "preflop_probes_per_round": 265,
+      "preflop_sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+      "checkpoint_sha256": {
+        "486": "9746c437bc532d64275eb67d9c3ae2e92298688e307ed3e9ab9f0c69bafd208d",
+        "492": "33b1f6f41a6ba5faccb22dc8f153dcc973abaa3820637818c1e8dcdc7496f9cd",
+        "498": "2a4d2dde6fb0fabaed0af967ea3194800d4f8641d7d9173bb32c08c61074bcb9",
+        "504": "424480eb3797b6936912e02f6e88b89db65046376b0c1e5b68e93c16e764eaf4"
+      },
+      "retained_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "next_actions_reference_rows": 100000,
+      "matched_first_round_fields": [
+        "input_weights",
+        "traverser",
+        "traversals",
+        "new_regret_rows",
+        "root_rows",
+        "fit_rows_by_street",
+        "fit_draws_by_street",
+        "reference_collection"
+      ],
+      "first_round_weights_then_diverged": true,
+      "historical_first_round_sample_arrays_individually_compared": false
+    },
+    "343": {
+      "seed": 343,
+      "verified_model_sha256": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f",
+      "rounds": 24,
+      "traversals": 6144,
+      "new_regret_rows_by_seat": [
+        34943,
+        33207,
+        31421,
+        34111,
+        36731,
+        32500
+      ],
+      "new_regret_rows": 202913,
+      "postflop_updates": 18432,
+      "preflop_probes_per_round": 265,
+      "preflop_sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+      "checkpoint_sha256": {
+        "486": "e67c374f520037a247d8bd54f323fc2bdd28053f431d9a0ff3f47de9721bc0f4",
+        "492": "fbb4cb5ff0c1ad820e1f513676130e1fdc81ce1f7f351401883f88e68c25e2ba",
+        "498": "0316e6a82ccd5085ff89a9c4415f171b4c0e5738bc262e1dcd04052cc82b8522",
+        "504": "a671f9ecd29d9a722f3dd16d25c4347479548236938e45c6d72336a7c9296d8a"
+      },
+      "retained_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "next_actions_reference_rows": 100000,
+      "matched_first_round_fields": [
+        "input_weights",
+        "traverser",
+        "traversals",
+        "new_regret_rows",
+        "root_rows",
+        "fit_rows_by_street",
+        "fit_draws_by_street",
+        "reference_collection"
+      ],
+      "first_round_weights_then_diverged": true,
+      "historical_first_round_sample_arrays_individually_compared": false
+    },
+    "344": {
+      "seed": 344,
+      "verified_model_sha256": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d",
+      "rounds": 24,
+      "traversals": 6144,
+      "new_regret_rows_by_seat": [
+        36367,
+        33581,
+        32997,
+        34598,
+        32811,
+        32976
+      ],
+      "new_regret_rows": 203330,
+      "postflop_updates": 18432,
+      "preflop_probes_per_round": 265,
+      "preflop_sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+      "checkpoint_sha256": {
+        "486": "cb5ffab6556ec35e95a60ebe6664db45d1c823c2f6373b12e841d868c2a14a3c",
+        "492": "c431473bf8ec3f9822ab96dc6d151a8408fa8c4d7d031ed96cf8d56cb0c34ec0",
+        "498": "2e61f9c0f36b64676d24d2dac7f590501e326414a89bd05a00aa9d87c7c6d53b",
+        "504": "0b8628aed8981339088320241242245dc9b7ac5e12e345d42585fc30c8cc458c"
+      },
+      "retained_rows": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "next_actions_reference_rows": 100000,
+      "matched_first_round_fields": [
+        "input_weights",
+        "traverser",
+        "traversals",
+        "new_regret_rows",
+        "root_rows",
+        "fit_rows_by_street",
+        "fit_draws_by_street",
+        "reference_collection"
+      ],
+      "first_round_weights_then_diverged": true,
+      "historical_first_round_sample_arrays_individually_compared": false
+    }
+  },
+  "new_selfplay_iterations_per_seed": 24,
+  "total_new_regret_rows": 595140
+}
