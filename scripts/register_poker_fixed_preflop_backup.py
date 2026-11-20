@@ -1,6 +1,7 @@
 """Prepare the fixed-preflop 504 recovery and register verified private Drive receipts."""
 import argparse
 import copy
+from dataclasses import dataclass
 from datetime import datetime
 import fcntl
 import hashlib
@@ -21,6 +22,16 @@ from snapshot_rich_selfplay import prepare_upload
 
 INDEX = ROOT / 'artifacts/offsite-backups.json'
 FILE_LIMIT = 100 * 1024**2
+
+
+@dataclass(frozen=True)
+class BackupTarget:
+    output: Path
+    archive: Path
+    mode: str
+
+
+FIXED_WINDOW = BackupTarget(OUTPUT, ARCHIVE, MODE)
 
 
 def local_file(path):
@@ -46,17 +57,17 @@ def load_ready():
     return ready
 
 
-def prepare_objects():
-    if ARCHIVE.stat().st_size <= FILE_LIMIT:
-        return prepare_upload(ARCHIVE)
+def prepare_objects(target=FIXED_WINDOW):
+    if target.archive.stat().st_size <= FILE_LIMIT:
+        return prepare_upload(target.archive)
     # Existing matching parts can be reused after an interruption. The splitter
     # itself expects a clean directory and produces a preliminary local manifest.
-    with tempfile.TemporaryDirectory(dir=ARCHIVE.parent) as temporary:
-        staged = Path(temporary)/ARCHIVE.name
-        os.link(ARCHIVE, staged)
+    with tempfile.TemporaryDirectory(dir=target.archive.parent) as temporary:
+        staged = Path(temporary)/target.archive.name
+        os.link(target.archive, staged)
         layout = prepare_upload(staged)
         for item in layout['parts']:
-            src, dst = Path(item['path']), ARCHIVE.parent/item['name']
+            src, dst = Path(item['path']), target.archive.parent/item['name']
             try:
                 os.link(src, dst)
             except FileExistsError:
@@ -64,26 +75,26 @@ def prepare_objects():
                     raise ValueError('Previously prepared part differs from this archive')
             item['path'] = str(dst)
         layout.pop('manifest_path')
-        layout.update(format='split-checkpoint-v1', checkpoint_mode=MODE, archive=str(ARCHIVE))
+        layout.update(format='split-checkpoint-v1', checkpoint_mode=target.mode, archive=str(target.archive))
     return layout
 
 
-def expected_objects(layout, ready):
+def expected_objects(layout, ready, target=FIXED_WINDOW):
     split = ready['bytes'] > FILE_LIMIT
-    if (layout['archive'] != str(ARCHIVE) or layout['bytes'] != ready['bytes']
+    if (layout['archive'] != str(target.archive) or layout['bytes'] != ready['bytes']
             or layout['sha256'] != ready['sha256'] or split != ('parts' in layout)
             or layout['format'] != ('split-checkpoint-v1' if split else 'single-archive-v1')
-            or (split and layout.get('checkpoint_mode') != MODE)
-            or layout['ready_sha256'] != digest(OUTPUT/'backup-ready.json')):
+            or (split and layout.get('checkpoint_mode') != target.mode)
+            or layout['ready_sha256'] != digest(target.output/'backup-ready.json')):
         raise ValueError('Upload layout differs from the verified source')
     if not split:
-        if layout['files'] != [local_file(ARCHIVE)]:
+        if layout['files'] != [local_file(target.archive)]:
             raise ValueError('Single-file upload layout changed')
         return layout['files']
     joined = hashlib.sha256()
     total = 0
     for order, item in enumerate(layout['parts'], 1):
-        path = ARCHIVE.with_name(ARCHIVE.name + f'.part-{order:03d}')
+        path = target.archive.with_name(target.archive.name + f'.part-{order:03d}')
         if (item['order'] != order or item['name'] != path.name or item['path'] != str(path)
                 or not 0 < item['bytes'] <= MAX_PART or path.stat().st_size != item['bytes']):
             raise ValueError('Invalid part size, path or sequence')
@@ -101,8 +112,8 @@ def expected_objects(layout, ready):
     return layout['parts']
 
 
-def prepare():
-    ready = load_ready()
+def prepare(target=FIXED_WINDOW, verify_ready=load_ready):
+    ready = verify_ready()
     index_sha = digest(INDEX)
     index = read(INDEX)
     if index['approved_destination'] != 'Private Google Drive' or not index['folder_id']:
@@ -110,14 +121,14 @@ def prepare():
     if any(r.get('sha256') == ready['sha256'] for r in index['backups']):
         raise ValueError('Archive already appears in the private index; use check to verify the existing record')
     source_archives(index)
-    layout_path = OUTPUT/'upload-layout.json'
+    layout_path = target.output/'upload-layout.json'
     if layout_path.is_file():
         layout = read(layout_path)
     else:
-        layout = prepare_objects()
+        layout = prepare_objects(target)
         layout.update(folder_id=index['folder_id'], index_sha256=index_sha,
-                      ready_sha256=digest(OUTPUT/'backup-ready.json'))
-    items = expected_objects(layout, ready)
+                      ready_sha256=digest(target.output/'backup-ready.json'))
+    items = expected_objects(layout, ready, target)
     if (index_sha != digest(INDEX) or layout['index_sha256'] != index_sha
             or layout['folder_id'] != index['folder_id']):
         raise ValueError('Private backup index changed during or since upload preparation')
@@ -149,8 +160,8 @@ def verified_file(item, meta, folder, owner):
                 remote_sha256_verified=remote_sha is not None)
 
 
-def read_receipts(layout, items, owner):
-    receipt = read(OUTPUT/'drive-receipt.json')
+def read_receipts(layout, items, owner, target=FIXED_WINDOW):
+    receipt = read(target.output/'drive-receipt.json')
     folder = receipt['folder']
     verify_owner(folder, owner)
     if (not owner or receipt['account'] != owner or folder['id'] != layout['folder_id']
@@ -162,11 +173,11 @@ def read_receipts(layout, items, owner):
     return receipt, files
 
 
-def restore_manifest(layout, files):
+def restore_manifest(layout, files, target=FIXED_WINDOW):
     if 'parts' not in layout:
         raise ValueError('The archive fits directly in one Drive file')
-    path = ARCHIVE.with_name(ARCHIVE.name[:-7]+'.manifest.json')
-    data = dict(format='split-checkpoint-v1', checkpoint_mode=MODE, archive_name=ARCHIVE.name,
+    path = target.archive.with_name(target.archive.name[:-7]+'.manifest.json')
+    data = dict(format='split-checkpoint-v1', checkpoint_mode=target.mode, archive_name=target.archive.name,
                 bytes=layout['bytes'], sha256=layout['sha256'], recombined_local_sha256=layout['recombined_local_sha256'],
                 restoration='Verify downloaded sizes and local hashes; join parts in order and verify the archive hash.',
                 parts=[{k:f[k] for k in ('order','name','bytes','sha256','file_id')} for f in files])
@@ -176,7 +187,7 @@ def restore_manifest(layout, files):
     else:
         atomic_json(path, data)
     ref = local_file(path)
-    atomic_json(OUTPUT/'restore-manifest-local.json', ref)
+    atomic_json(target.output/'restore-manifest-local.json', ref)
     return ref
 
 
@@ -225,14 +236,14 @@ def plan_retention(index, root=ROOT):
     return plan
 
 
-def register(action, owner):
-    ready = load_ready()
-    layout = read(OUTPUT/'upload-layout.json')
-    receipt, files = read_receipts(layout, expected_objects(layout, ready), owner)
-    record = dict(ready, local_archive=str(ARCHIVE), recorded_at=utc(), format=layout['format'],
+def register(action, owner, target=FIXED_WINDOW, verify_ready=load_ready, retention=plan_retention):
+    ready = verify_ready()
+    layout = read(target.output/'upload-layout.json')
+    receipt, files = read_receipts(layout, expected_objects(layout, ready, target), owner, target)
+    record = dict(ready, local_archive=str(target.archive), recorded_at=utc(), format=layout['format'],
                   status='complete', verified_remote_size=True, verified_owner_only=True, external_backup=True)
     if 'parts' in layout:
-        manifest = restore_manifest(layout, files)
+        manifest = restore_manifest(layout, files, target)
         if action == 'manifest':
             return dict(manifest_bytes=manifest['bytes'], path=manifest['path'], sha256=manifest['sha256'])
         remote = verified_file(manifest, receipt['manifest'], layout['folder_id'], owner)
@@ -265,7 +276,7 @@ def register(action, owner):
                 raise ValueError('Private index or Drive ID changed since preparation')
             revised = copy.deepcopy(index)
             revised['backups'].append(record)
-        plan = plan_retention(revised)
+        plan = retention(revised)
         if action == 'check':
             return dict(receipts_verified=True, within_planned_budget=plan['within_budget'])
         if not matches:
@@ -275,7 +286,7 @@ def register(action, owner):
         if read(INDEX) != revised:
             raise ValueError('The private index does not match the expected readback')
         active_size = sum(r['bytes']+r.get('manifest_bytes',0) for r in revised['backups'] if not r.get('deleted_remote'))
-        proof = dict(verified_utc=utc(), kind=record['kind'], checkpoint_mode=MODE, stage_iteration=504,
+        proof = dict(verified_utc=utc(), kind=record['kind'], checkpoint_mode=target.mode, stage_iteration=504,
                      bytes=record['bytes'], sha256=record['sha256'], restored_all_three_seeds=True,
                      restored_both_street_networks=True, backup_files=len(files), format=layout['format'],
                      restoration_verified=True, external_backup=True, verified_remote_size=True, verified_owner_only=True,
@@ -284,8 +295,12 @@ def register(action, owner):
                      private_index_readback_verified=True, active_managed_bytes=active_size,
                      within_2gib_target=active_size <= DEFAULT_BUDGET, retained_bytes=plan['planned_retained_bytes'],
                      policy_candidate_remote_files=plan['candidate_remote_files'], remote_deletions_performed=0)
-        atomic_json(OUTPUT/'backup-retention-plan.json', plan)
-        atomic_json(OUTPUT/'backup-verification.json', proof)
+        if 'scheduled_snapshot_iterations' in ready:
+            proof.update(scheduled_snapshot_iterations=ready['scheduled_snapshot_iterations'],
+                         mixture_restore_decisions={seed:row['mixture_decisions']
+                                                    for seed,row in ready['verification']['seeds'].items()})
+        atomic_json(target.output/'backup-retention-plan.json', plan)
+        atomic_json(target.output/'backup-verification.json', proof)
     return proof
 
 
