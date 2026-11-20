@@ -1,0 +1,36 @@
+{
+  "registered_utc": "2026-11-20T00:22:07.825518+00:00",
+  "training_plan_sha256": "533a88378fe0a4b27cd98ece6d493ca62600c66ee48265fcdbc57cac379b594c",
+  "population_design_sha256": "a330f2a85182410f82183ad89116c757a52c8edb25f9c20496220f4bf618690b",
+  "role": "secondary diagnostic only; no selection or promotion",
+  "field": "public",
+  "deal_seed": 2038400000,
+  "deals": 20000,
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "seats": 6,
+  "captures": [
+    486,
+    492,
+    498,
+    504
+  ],
+  "labels": [
+    "specialist480",
+    "mixture504",
+    "slow504"
+  ],
+  "assignment": "private uniform choice in mixture504 once per dealt hand (card,seat), common across fixed training seeds",
+  "estimand": "per-snapshot mean paired chip profit over hands assigned to that snapshot, same hand/seed/seat fixed 480 payoff subtracted. 100 chips per big blind, chip mean equals bb/100.",
+  "statistics": "Hajek ratio sum of paired gains divided by sum of assignment counts for each snapshot; keep all 20,000 original cards as clusters. Standard error is sample SD of card (gain sum minus ratio times assigned count), divided by square root of card count and mean assigned count per card. Two-sided simultaneous 95% normal Bonferroni interval across the four preregistered comparisons.",
+  "checks": [
+    "Recompute snapshot draw from hand seed and domain separator; verify same choice across training seeds.",
+    "For every hand assigned 504 verify whole actions, terminal six-player utilities and hero payoff equal sole 504 on same cards.",
+    "Weighted subgroup gains must reconstruct the full mixture minus 480 difference."
+  ],
+  "extra_hands": 0,
+  "extra_card_blocks": 0
+}

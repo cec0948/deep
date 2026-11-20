@@ -1,0 +1,35 @@
+{
+  "registered_utc": "2026-11-20T00:20:54.561100+00:00",
+  "field": "public",
+  "deal_seed": 2038400000,
+  "deals": 4000,
+  "training_seeds": [
+    342,
+    343,
+    344
+  ],
+  "seats": 6,
+  "contrast": "slow504 minus fixed504",
+  "learning_rates": {
+    "slow504": 0.00025,
+    "fixed504": 0.001
+  },
+  "training_rounds_per_seed": 24,
+  "additional_cells": 3,
+  "additional_hands": 72000,
+  "additional_unique_card_blocks": 0,
+  "subset": "First 4,000 of the same 20,000 public card blocks; diagnostic overlapping the main study",
+  "interval": "One prespecified two-sided nominal 95% normal paired interval over original cards; average seats and fixed seeds first",
+  "baseline": "specialist480 on identical cards, descriptive",
+  "recorded_policy_replay_card_stride": 313,
+  "frozen_public_design_sha256": "32364b5cb013d692b62fbc975c7cb261d70b878712bc7bbe0a58681ac546874b",
+  "previous_eval_plan_sha256": "fc6d7ef96c866e10cebb70f9c42b90a84140e5049db92fcaeb18d897643a86a4",
+  "previous_audit_sha256": "23f7f524a8d9f78460228005ea1da37b5ed96b51cad74b5ff2dfa99a1007a9b3",
+  "new_training_plan_sha256": "533a88378fe0a4b27cd98ece6d493ca62600c66ee48265fcdbc57cac379b594c",
+  "implementation_sha256": "e418f004b46a98566e1f71e117dbacca3d02eafdc58e2a4649c0267d7b79d864",
+  "previous_weights_sha256": {
+    "342": "da7fb279e04478247bac999c30881afc6a4d25ad8ed988cd0be95edb0f6abb91",
+    "343": "04c62675b63827a09450e5b001c4e41d6c44a173523499136dcdfb2ea4d59e4c",
+    "344": "496e3131cf3368441ead28e6922b1025745c4fec40c62a045bbe1ea08eb8632b"
+  }
+}
