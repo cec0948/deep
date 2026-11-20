@@ -196,8 +196,23 @@ def plan_retention(index, root=ROOT):
     # this validated fixed-window family as required assets for its traversal.
     shadow = copy.deepcopy(index)
     fixed = {}
+    scheduled = {}
     for number, record in enumerate(index['backups']):
-        if record.get('checkpoint_mode') != MODE or record.get('deleted_remote'):
+        if record.get('deleted_remote'):
+            continue
+        if (record.get('checkpoint_mode') == 'scheduled-postflop-window-recovery-v1'
+                and record.get('kind') == 'training-checkpoint'):
+            from snapshot_poker_scheduled_window import validate_profile
+
+            validate_profile(record)
+            if record.get('status') != 'complete' or record.get('local_archive') != record['archive']:
+                raise ValueError('Incomplete scheduled postflop recovery blocks retention planning')
+            item = shadow['backups'][number]
+            item['kind'] = 'evaluation-assets'
+            validate_record(item, root)
+            scheduled[number] = record
+            continue
+        if record.get('checkpoint_mode') != MODE:
             continue
         if (record['status'] != 'complete' or record['kind'] != 'training-checkpoint'
                 or record['iterations'] != {s:504 for s in ('342','343','344')}
@@ -218,13 +233,17 @@ def plan_retention(index, root=ROOT):
         record = fixed.get(item['backup_index'])
         if record:
             item.update(kind=record['kind'], checkpoint_mode=MODE, reasons=['completed_fixed_preflop_window'])
+        record = scheduled.get(item['backup_index'])
+        if record:
+            item.update(kind=record['kind'], checkpoint_mode=record['checkpoint_mode'],
+                        reasons=['completed_scheduled_postflop_window'])
     parents = source_archives(index)
     active = {n:r for n,r in enumerate(index['backups']) if not r.get('deleted_remote')}
     sha_owner = {r.get('sha256'):n for n,r in active.items()}
     id_owner = {fid:n for n,r in active.items() for fid in _remote_ids(r)}
     latest_probes = sorted((n for n,r in active.items() if r.get('kind') == 'derived-policy-probe'),
                            key=lambda n:datetime.fromisoformat(active[n]['recorded_at']), reverse=True)[:2]
-    required = set(fixed) | {sha_owner[h] for h in parents} | set(latest_probes)
+    required = set(fixed) | set(scheduled) | {sha_owner[h] for h in parents} | set(latest_probes)
     for n in retained:
         ids, hashes = _dependencies(active[n])
         required.update(id_owner[fid] for fid in ids)
