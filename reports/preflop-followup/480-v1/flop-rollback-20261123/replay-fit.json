@@ -1,0 +1,323 @@
+{
+  "source_stage_sha256": "8a59fdc2480bde76d882f134e76501df7e2feb0b6eefad797c87a7754adc4cf9",
+  "audit_script_sha256": "ad059b1a7397fa2817440cef1b86b4611c0fa008f1e917d16fc41cfd703809ba",
+  "scope": "Descriptive in-sample regret prediction. No new hands, fitting or strength estimate.",
+  "policies": "Single postflop endpoints at 480 and 504. Four-snapshot deployed mixture excluded.",
+  "sampling": "With replacement from the final 504 fitting CDF; identical row indices for both endpoints.",
+  "pseudorandom_generator": "NumPy default_rng([rng_seed, training_seed])",
+  "rng_seed": 20261123,
+  "draws_per_seed": 32768,
+  "items": "Zero illegal errors; mean over five outputs, then over rows.",
+  "units": "Raw BB squared using each export scale, and common final-stratum normalized squared error.",
+  "realized_training_draws_by_generation_logged": false,
+  "seeds": [
+    {
+      "seed": 342,
+      "replay_sha256": "d12295be257e266ac22ccb78753fd3a0a53e0cb53fd4df51a3f46c7a2f4c4f8e",
+      "model_sha256": {
+        "endpoint480": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+        "endpoint504": "188d61309477b1acfbe340089ee0b0427a85551534928af504449b56fab416e9"
+      },
+      "postflop_rows": 510794,
+      "postflop_rows_after_480": 22175,
+      "exact_draw_probability_after_480": 0.07086069571570838,
+      "index_sha256": "e0a9483e1666bc8388d3393c0b90466f66b9a17f4486a7358e08a00578eea4e3",
+      "comparisons": {
+        "all": {
+          "draws": 32768,
+          "endpoint480": {
+            "mse_bb2": 1008.3502005428267,
+            "mse_final_normalization": 0.8349910499016437
+          },
+          "endpoint504": {
+            "mse_bb2": 742.0275222193869,
+            "mse_final_normalization": 0.5993479839713411
+          }
+        },
+        "up_to_480": {
+          "draws": 30350,
+          "endpoint480": {
+            "mse_bb2": 1009.4244606933437,
+            "mse_final_normalization": 0.8384992661809926
+          },
+          "endpoint504": {
+            "mse_bb2": 735.3544313437037,
+            "mse_final_normalization": 0.5944995134435479
+          }
+        },
+        "481_to_504": {
+          "draws": 2418,
+          "endpoint480": {
+            "mse_bb2": 994.8664141209103,
+            "mse_final_normalization": 0.7909569870074185
+          },
+          "endpoint504": {
+            "mse_bb2": 825.7861277102804,
+            "mse_final_normalization": 0.6602045102403762
+          }
+        },
+        "flop": {
+          "draws": 10829,
+          "endpoint480": {
+            "mse_bb2": 1296.8739164811159,
+            "mse_final_normalization": 0.8634745459595837
+          },
+          "endpoint504": {
+            "mse_bb2": 1007.1077105667418,
+            "mse_final_normalization": 0.688921990254152
+          }
+        },
+        "turn": {
+          "draws": 10943,
+          "endpoint480": {
+            "mse_bb2": 989.2443693998085,
+            "mse_final_normalization": 0.826065790780032
+          },
+          "endpoint504": {
+            "mse_bb2": 710.0317235689176,
+            "mse_final_normalization": 0.5796372076157712
+          }
+        },
+        "river": {
+          "draws": 10996,
+          "endpoint480": {
+            "mse_bb2": 743.2221349100796,
+            "mse_final_normalization": 0.8158223823640267
+          },
+          "endpoint504": {
+            "mse_bb2": 512.8147780413747,
+            "mse_final_normalization": 0.5307501403575218
+          }
+        }
+      }
+    },
+    {
+      "seed": 343,
+      "replay_sha256": "28078ea299e2569f42f24a0b259181fc2457122b540233a8aecba2a48f325fad",
+      "model_sha256": {
+        "endpoint480": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757",
+        "endpoint504": "b42ac903c4ce486bfdf112f05ae53ee50164639a6661917fe76d4601a7b1335a"
+      },
+      "postflop_rows": 515968,
+      "postflop_rows_after_480": 24771,
+      "exact_draw_probability_after_480": 0.08829032312804441,
+      "index_sha256": "ef2a0d2e785d4869c1c365a550d3e02a347adde550976597bde87a0794e4b4d9",
+      "comparisons": {
+        "all": {
+          "draws": 32768,
+          "endpoint480": {
+            "mse_bb2": 1002.9976535319424,
+            "mse_final_normalization": 0.8450767459078095
+          },
+          "endpoint504": {
+            "mse_bb2": 711.5608144430764,
+            "mse_final_normalization": 0.5925406808198539
+          }
+        },
+        "up_to_480": {
+          "draws": 29883,
+          "endpoint480": {
+            "mse_bb2": 993.6141924193129,
+            "mse_final_normalization": 0.8459181483830065
+          },
+          "endpoint504": {
+            "mse_bb2": 706.4619753955316,
+            "mse_final_normalization": 0.5912953018739703
+          }
+        },
+        "481_to_504": {
+          "draws": 2885,
+          "endpoint480": {
+            "mse_bb2": 1100.1920966614762,
+            "mse_final_normalization": 0.8363614494896782
+          },
+          "endpoint504": {
+            "mse_bb2": 764.3748897490666,
+            "mse_final_normalization": 0.6054403893258637
+          }
+        },
+        "flop": {
+          "draws": 10957,
+          "endpoint480": {
+            "mse_bb2": 1259.4261582019494,
+            "mse_final_normalization": 0.8650644421810239
+          },
+          "endpoint504": {
+            "mse_bb2": 932.5040102996693,
+            "mse_final_normalization": 0.6786373718396275
+          }
+        },
+        "turn": {
+          "draws": 10993,
+          "endpoint480": {
+            "mse_bb2": 989.0516242224047,
+            "mse_final_normalization": 0.8586312921466447
+          },
+          "endpoint504": {
+            "mse_bb2": 676.7572123318854,
+            "mse_final_normalization": 0.58466250362406
+          }
+        },
+        "river": {
+          "draws": 10818,
+          "endpoint480": {
+            "mse_bb2": 757.4459410648019,
+            "mse_final_normalization": 0.811058413973152
+          },
+          "endpoint504": {
+            "mse_bb2": 523.1453403265701,
+            "mse_final_normalization": 0.513343357692631
+          }
+        }
+      }
+    },
+    {
+      "seed": 344,
+      "replay_sha256": "67e864ed909b8cf61625d8c91a1b83c536045cf825492df9788c9be137c1a5c0",
+      "model_sha256": {
+        "endpoint480": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431",
+        "endpoint504": "0ad600b939572f6d8d0be5415accfb1b7701788c7f1f44e62f9d4e8fbf38bb7c"
+      },
+      "postflop_rows": 517278,
+      "postflop_rows_after_480": 24066,
+      "exact_draw_probability_after_480": 0.07684688223678364,
+      "index_sha256": "e590c3e253d5aca4c4f13577f4b75c18dc682f21949f6c020a309d371e1ec6e9",
+      "comparisons": {
+        "all": {
+          "draws": 32768,
+          "endpoint480": {
+            "mse_bb2": 963.4355114963319,
+            "mse_final_normalization": 0.8284265537612072
+          },
+          "endpoint504": {
+            "mse_bb2": 683.4885804996892,
+            "mse_final_normalization": 0.6048753812756757
+          }
+        },
+        "up_to_480": {
+          "draws": 30313,
+          "endpoint480": {
+            "mse_bb2": 961.5451102616875,
+            "mse_final_normalization": 0.82691026712147
+          },
+          "endpoint504": {
+            "mse_bb2": 677.0458506143303,
+            "mse_final_normalization": 0.6000797629958294
+          }
+        },
+        "481_to_504": {
+          "draws": 2455,
+          "endpoint480": {
+            "mse_bb2": 986.7771541137544,
+            "mse_final_normalization": 0.8471488335617597
+          },
+          "endpoint504": {
+            "mse_bb2": 763.0398925220452,
+            "mse_final_normalization": 0.6640890582276022
+          }
+        },
+        "flop": {
+          "draws": 10928,
+          "endpoint480": {
+            "mse_bb2": 1290.942561326391,
+            "mse_final_normalization": 0.8880490749885285
+          },
+          "endpoint504": {
+            "mse_bb2": 931.6278160294103,
+            "mse_final_normalization": 0.680685408934992
+          }
+        },
+        "turn": {
+          "draws": 11023,
+          "endpoint480": {
+            "mse_bb2": 909.5805098925701,
+            "mse_final_normalization": 0.8266195883346109
+          },
+          "endpoint504": {
+            "mse_bb2": 645.317214292843,
+            "mse_final_normalization": 0.5908056081213381
+          }
+        },
+        "river": {
+          "draws": 10817,
+          "endpoint480": {
+            "mse_bb2": 687.4483285560875,
+            "mse_final_normalization": 0.7700335860183213
+          },
+          "endpoint504": {
+            "mse_bb2": 471.70133854991343,
+            "mse_final_normalization": 0.54262513880727
+          }
+        }
+      }
+    }
+  ],
+  "pooled": {
+    "all": {
+      "draws": 98304,
+      "endpoint480": {
+        "mse_bb2": 991.5944551903671,
+        "mse_final_normalization": 0.83616478319022
+      },
+      "endpoint504": {
+        "mse_bb2": 712.3589723873843,
+        "mse_final_normalization": 0.598921348688957
+      }
+    },
+    "up_to_480": {
+      "draws": 90546,
+      "endpoint480": {
+        "mse_bb2": 988.1775254729292,
+        "mse_final_normalization": 0.8370679619638154
+      },
+      "endpoint504": {
+        "mse_bb2": 706.2984678693513,
+        "mse_final_normalization": 0.5953101804011675
+      }
+    },
+    "481_to_504": {
+      "draws": 7758,
+      "endpoint480": {
+        "mse_bb2": 1031.4744910494958,
+        "mse_final_normalization": 0.8256235064134801
+      },
+      "endpoint504": {
+        "mse_bb2": 783.0929814219046,
+        "mse_final_normalization": 0.641068402541262
+      }
+    },
+    "flop": {
+      "draws": 32714,
+      "endpoint480": {
+        "mse_bb2": 1282.350075416261,
+        "mse_final_normalization": 0.8722160922739026
+      },
+      "endpoint504": {
+        "mse_bb2": 956.906664185062,
+        "mse_final_normalization": 0.6827259297105399
+      }
+    },
+    "turn": {
+      "draws": 32959,
+      "endpoint480": {
+        "mse_bb2": 962.536836674802,
+        "mse_final_normalization": 0.837112760256269
+      },
+      "endpoint504": {
+        "mse_bb2": 677.289991787648,
+        "mse_final_normalization": 0.5850485476986614
+      }
+    },
+    "river": {
+      "draws": 32631,
+      "endpoint480": {
+        "mse_bb2": 729.4489704851663,
+        "mse_final_normalization": 0.7990642682969133
+      },
+      "endpoint504": {
+        "mse_bb2": 502.6107373384269,
+        "mse_final_normalization": 0.5289158503683132
+      }
+    }
+  }
+}
