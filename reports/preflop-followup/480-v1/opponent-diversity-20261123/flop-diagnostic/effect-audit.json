@@ -1,0 +1,56 @@
+{
+  "verified_utc": "2026-11-23T07:31:58.829188+00:00",
+  "effect_sha256": "ea7c444e8cdf89046cfa61c7f382d23616d22ff7b0c47b8df8e52c23958d3c50",
+  "added_tape_sha256": "6b43275f1ab43326280ba466e7e58913142da45ae58931208f797bcce7809371",
+  "original_cards": 3072,
+  "new_independent_cards": 0,
+  "rows_by_lineup": 3072,
+  "added_state_lineup_actions": 1503,
+  "added_conditional_terminal_branches": 12024,
+  "independently_replayed_terminals": 152,
+  "independently_replayed_policy_decisions": 600,
+  "fixed_seed_replay_checks": {
+    "342": {
+      "seed": 342,
+      "terminals": 48,
+      "policy_decisions": 192
+    },
+    "343": {
+      "seed": 343,
+      "terminals": 56,
+      "policy_decisions": 235
+    },
+    "344": {
+      "seed": 344,
+      "terminals": 48,
+      "policy_decisions": 173
+    }
+  },
+  "checked_policy_values": {
+    "self480": {
+      "diversity_minus_control_bb": 0.2493804104846365,
+      "simultaneous_95_bb": [
+        -0.03621726563214467,
+        0.5349780866014177
+      ],
+      "diversity_minus_480_bb": 0.4061465369431011
+    },
+    "public": {
+      "diversity_minus_control_bb": -0.028403325245817877,
+      "simultaneous_95_bb": [
+        -0.3159792066279025,
+        0.2591725561362667
+      ],
+      "diversity_minus_480_bb": -0.5718108990103697
+    },
+    "tight-value": {
+      "diversity_minus_control_bb": 0.19553863325091267,
+      "simultaneous_95_bb": [
+        -0.07296245305413332,
+        0.4640397195559587
+      ],
+      "diversity_minus_480_bb": 0.3270636110759508
+    }
+  },
+  "units": "BB per first hero flop decision conditional on archived 480-reached states"
+}
