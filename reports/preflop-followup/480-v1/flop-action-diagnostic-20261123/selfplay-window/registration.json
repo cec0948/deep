@@ -1,0 +1,159 @@
+{
+  "registered_utc": "2026-11-23T06:49:22.727804+00:00",
+  "primary_diagnostic_already_scored": true,
+  "design": "follow-up control, designed after primary results",
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "states_per_seed": 1024,
+  "repeats": 8,
+  "unique_deals": 3072,
+  "additional_deals": 0,
+  "prefix_and_hero_continuation": "frozen specialist480; all five opponents replaced after the same forced first flop action",
+  "fields_new": [
+    "self486",
+    "self492",
+    "self498"
+  ],
+  "fields_reused": [
+    "self480",
+    "public"
+  ],
+  "four_opponent_policy_iterations": [
+    480,
+    486,
+    492,
+    498
+  ],
+  "per_state_window_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "root_probability_difference": "mean(486,492,498,504) minus 480",
+  "contrasts": [
+    "mixture_minus_480_on_window",
+    "public_minus_window_on_mixture_change"
+  ],
+  "inference": "equal fixed seed means; original deal clusters; two Bonferroni simultaneous normal 95% intervals and nominal paired intervals",
+  "frozen_cycles_by_seed": {
+    "342": {
+      "480": {
+        "start_round": 481,
+        "last_round": 486,
+        "postflop_export_sha256": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+        "round_input_weight_fingerprint": "fd8751fa80ffe87557340eae23e816ed4811040b49985b4827f8ed3d0c7c317d"
+      },
+      "486": {
+        "start_round": 487,
+        "last_round": 492,
+        "postflop_export_sha256": "9746c437bc532d64275eb67d9c3ae2e92298688e307ed3e9ab9f0c69bafd208d",
+        "round_input_weight_fingerprint": "e6205f1d34bbe3493bd27445b9d7c1423bc0984b0e377705f52f84ac5b6bbc05"
+      },
+      "492": {
+        "start_round": 493,
+        "last_round": 498,
+        "postflop_export_sha256": "33b1f6f41a6ba5faccb22dc8f153dcc973abaa3820637818c1e8dcdc7496f9cd",
+        "round_input_weight_fingerprint": "fd0e590346e82eff804b8646dac1c63608886d361dc288167fb5b325a4e1b227"
+      },
+      "498": {
+        "start_round": 499,
+        "last_round": 504,
+        "postflop_export_sha256": "2a4d2dde6fb0fabaed0af967ea3194800d4f8641d7d9173bb32c08c61074bcb9",
+        "round_input_weight_fingerprint": "30b1f85de9b1197050fe1360861ef21aef91a236e7464f0c575adddab7ae91de"
+      }
+    },
+    "343": {
+      "480": {
+        "start_round": 481,
+        "last_round": 486,
+        "postflop_export_sha256": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757",
+        "round_input_weight_fingerprint": "52e05f3859e18a2546abbf963646f113d9a605c3a8ae27b4b0cd7467431925f8"
+      },
+      "486": {
+        "start_round": 487,
+        "last_round": 492,
+        "postflop_export_sha256": "e67c374f520037a247d8bd54f323fc2bdd28053f431d9a0ff3f47de9721bc0f4",
+        "round_input_weight_fingerprint": "ff0bb1adc114547443c6482d291eb1ae7c8701c56b7c88653522c1bf973b4898"
+      },
+      "492": {
+        "start_round": 493,
+        "last_round": 498,
+        "postflop_export_sha256": "fbb4cb5ff0c1ad820e1f513676130e1fdc81ce1f7f351401883f88e68c25e2ba",
+        "round_input_weight_fingerprint": "016ea004492ce5f5b78f5c7960f0d550ee84f4a72e257d81d79c2333eaa59a59"
+      },
+      "498": {
+        "start_round": 499,
+        "last_round": 504,
+        "postflop_export_sha256": "0316e6a82ccd5085ff89a9c4415f171b4c0e5738bc262e1dcd04052cc82b8522",
+        "round_input_weight_fingerprint": "5634c1a6c33895a2f063ff1820fbf08a704cc3ec10f3c395f23c01918d371869"
+      }
+    },
+    "344": {
+      "480": {
+        "start_round": 481,
+        "last_round": 486,
+        "postflop_export_sha256": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431",
+        "round_input_weight_fingerprint": "e3076819234ef0955c0af969eb8a22e91e2016183032002c975fbc1e02ae449c"
+      },
+      "486": {
+        "start_round": 487,
+        "last_round": 492,
+        "postflop_export_sha256": "cb5ffab6556ec35e95a60ebe6664db45d1c823c2f6373b12e841d868c2a14a3c",
+        "round_input_weight_fingerprint": "6f87bbd09ec68940360549982e68d7aed694d7a78be507282d9d16a49c61f233"
+      },
+      "492": {
+        "start_round": 493,
+        "last_round": 498,
+        "postflop_export_sha256": "c431473bf8ec3f9822ab96dc6d151a8408fa8c4d7d031ed96cf8d56cb0c34ec0",
+        "round_input_weight_fingerprint": "916b3f60ef45ecd25d053a23f20fbc8059fa127558149b333b99b9b830b87904"
+      },
+      "498": {
+        "start_round": 499,
+        "last_round": 504,
+        "postflop_export_sha256": "2e61f9c0f36b64676d24d2dac7f590501e326414a89bd05a00aa9d87c7c6d53b",
+        "round_input_weight_fingerprint": "6f6896e18419fe6eb09e8c4cf2cadd36d1215ce18f5a5ef349e4ee326a587898"
+      }
+    }
+  },
+  "trace": "original source deal and runouts, action RNG, forced concrete actions and replicate-0 audit traces from the primary protocol",
+  "units": "big blinds per sampled first hero flop",
+  "limitation": "four cycle-entry weights approximate training opponents; beta value targets, other 20 policies and reach distributions not reproduced",
+  "fit_or_policy_update": false,
+  "frozen_files": {
+    "/workspace/deep/scripts/compare_poker_flop_selfplay_windows.py": "5650ade5b42497ffdf1bbac9359aaf4a15d85de94f79f9e9ecade90430be9a5d",
+    "/workspace/deep/scripts/poker_flop_action_values.py": "b00687ae04995fc3bd6c46bc69491849d666d27b0bbf541879d002588ea9b66b",
+    "/workspace/deep/scripts/sample_poker_flop_diagnostic.py": "3bfd52f828b4d58539744210168cbb1e2494d129d4a7f54faeef91bb1da0fcdf",
+    "/workspace/deep/scripts/score_poker_flop_diagnostic.py": "96299da0ad35157136299c9f8146155e7ac7e59bd716ebbafafb0a5b17c42522",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/training-audit.json": "ec2530846374a8486ac3f46dbbe324e359da350fea89474abb35d312b055e9c2",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/tools/compact_regret.py": "4cff184154657d6e1040536fd02a1cd25bb518e8a813a67b72851dd6f1882d60",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/registration.json": "1def7d117f3bd5416b796d5f6703ce490779fcfcd6fcc332f7bc4554ef8d627c",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/summary.json": "11e82ac96c9d05701b40440a296c76c0f6c782aebac1f361076a93ba7f06c056",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/final-audit.json": "d4a715b2d32655a84a4ec2351dc6bdc09b60ecf261d203c5f707d8d19662931b",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/population/evaluation-plan.json": "87927530b0cfbd8e049769fef29dcdc8a02640869ef189799c1e91e676c6ae07",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-342/states.jsonl": "3fe030044ee0b594b156d24fa7dfc1e2da54547f8a50e8742dc8feaff9054080",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-342/values.jsonl.gz": "7940071a649c235f35f1dbd79838b46f604097932f08a12c049241216c5fd38d",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-342/checkpoints/iter-00480/current.npz": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-342/iter-00486/current.npz": "9746c437bc532d64275eb67d9c3ae2e92298688e307ed3e9ab9f0c69bafd208d",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-342/iter-00492/current.npz": "33b1f6f41a6ba5faccb22dc8f153dcc973abaa3820637818c1e8dcdc7496f9cd",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-342/iter-00498/current.npz": "2a4d2dde6fb0fabaed0af967ea3194800d4f8641d7d9173bb32c08c61074bcb9",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/slow504/seed-342/diagnostics.jsonl": "8c9399c1adb5b184bfff1b19251c0fba0c19c89d7694a27c255a9480f62549dc",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-343/states.jsonl": "2883e8e303bfe556c98243656e6566633f31593e7ec0165b864962eeef2eccbf",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-343/values.jsonl.gz": "22ce83d364c3b46740ffcd16c46b81cf4f4adcc56d7b5da1bbd102ff50cbb55a",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-343/checkpoints/iter-00480/current.npz": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-343/iter-00486/current.npz": "e67c374f520037a247d8bd54f323fc2bdd28053f431d9a0ff3f47de9721bc0f4",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-343/iter-00492/current.npz": "fbb4cb5ff0c1ad820e1f513676130e1fdc81ce1f7f351401883f88e68c25e2ba",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-343/iter-00498/current.npz": "0316e6a82ccd5085ff89a9c4415f171b4c0e5738bc262e1dcd04052cc82b8522",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/slow504/seed-343/diagnostics.jsonl": "3983c826ca8f07a9ba85a1e51199443a858402902542491cff8d3c065c45fab5",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-344/states.jsonl": "76d0853afcb27aa1c585d618ff3587d3683d31e5a1577c7dda05a12bef3f2372",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-344/values.jsonl.gz": "270f3704ab666158d3c2ad6f85e967645a51cbb6d9a9f5ee311af01efe0eaa69",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-344/checkpoints/iter-00480/current.npz": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-344/iter-00486/current.npz": "cb5ffab6556ec35e95a60ebe6664db45d1c823c2f6373b12e841d868c2a14a3c",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-344/iter-00492/current.npz": "c431473bf8ec3f9822ab96dc6d151a8408fa8c4d7d031ed96cf8d56cb0c34ec0",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-344/iter-00498/current.npz": "2e61f9c0f36b64676d24d2dac7f590501e326414a89bd05a00aa9d87c7c6d53b",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/slow504/seed-344/diagnostics.jsonl": "c3439be4c6b6d5eece9462bf8ef6a21c42c5db41e8f7d10cd6dabf58645382f2"
+  }
+}
