@@ -1,0 +1,69 @@
+{
+  "verified_utc": "2026-11-23T06:45:59.814721+00:00",
+  "registration_sha256": "aefcdb0121496aa2287fbe6fb7e395f340cdb4d1a4c82e49566f74d8b0dad3f7",
+  "script_sha256": "73568f86115c1416365312bddffec07915f9de3c3ed17e28f6f9d909ee01bab5",
+  "source_summary_sha256": "11e82ac96c9d05701b40440a296c76c0f6c782aebac1f361076a93ba7f06c056",
+  "input_sha256": {
+    "seed-342/states.jsonl": "3fe030044ee0b594b156d24fa7dfc1e2da54547f8a50e8742dc8feaff9054080",
+    "seed-342/values.jsonl.gz": "7940071a649c235f35f1dbd79838b46f604097932f08a12c049241216c5fd38d",
+    "seed-343/states.jsonl": "2883e8e303bfe556c98243656e6566633f31593e7ec0165b864962eeef2eccbf",
+    "seed-343/values.jsonl.gz": "22ce83d364c3b46740ffcd16c46b81cf4f4adcc56d7b5da1bbd102ff50cbb55a",
+    "seed-344/states.jsonl": "76d0853afcb27aa1c585d618ff3587d3683d31e5a1577c7dda05a12bef3f2372",
+    "seed-344/values.jsonl.gz": "270f3704ab666158d3c2ad6f85e967645a51cbb6d9a9f5ee311af01efe0eaa69"
+  },
+  "original_eligible_deals": 3072,
+  "fixed_training_seeds": [
+    342,
+    343,
+    344
+  ],
+  "repeats_per_action": 8,
+  "primary_mixture_action_mass": {
+    "fold": {
+      "baseline_pct": 12.424994987714435,
+      "mixture_pct": 14.94041636795688,
+      "difference_percentage_points": 2.5154213802424454
+    },
+    "check": {
+      "baseline_pct": 30.130724462487084,
+      "mixture_pct": 26.48793903839571,
+      "difference_percentage_points": -3.6427854240913753
+    },
+    "call": {
+      "baseline_pct": 9.988285083892729,
+      "mixture_pct": 7.6694747815266044,
+      "difference_percentage_points": -2.318810302366124
+    },
+    "raise": {
+      "baseline_pct": 47.45599546590577,
+      "mixture_pct": 50.90216981212083,
+      "difference_percentage_points": 3.4461743462150594
+    }
+  },
+  "contribution_bb_per_first_flop_decision": {
+    "self480": {
+      "fold": 0.6638334766560526,
+      "check": -0.022864755811120487,
+      "call": -0.07704940836468188,
+      "raise": -0.40715318602178546
+    },
+    "public": {
+      "fold": -0.07622268873767901,
+      "check": -0.1340850629242813,
+      "call": -0.10091350786761843,
+      "raise": -0.23218631423497327
+    },
+    "tight-value": {
+      "fold": 0.3938585722009324,
+      "check": -0.0018501787429783811,
+      "call": -0.05224729713464021,
+      "raise": -0.2082361184982758
+    }
+  },
+  "reconciled_primary_mean_bb": {
+    "self480": 0.15676612645846483,
+    "public": -0.5434075737645517,
+    "tight-value": 0.13152497782503836
+  },
+  "interpretation": "Signed accounting centered on the same-state 480 continuation value; components depend on that reference and are not independent causal effects."
+}

@@ -1,0 +1,463 @@
+{
+  "units": "big blinds per sampled first hero flop decision",
+  "big_blind_chips": 100,
+  "states": 3072,
+  "distinct_original_deals": 3072,
+  "states_per_training_seed": {
+    "342": 1024,
+    "343": 1024,
+    "344": 1024
+  },
+  "repeats_per_action_per_lineup": 8,
+  "evaluated_terminal_branches": 231480,
+  "registered_lineups": [
+    "self480",
+    "public",
+    "tight-value"
+  ],
+  "absolute_480_bb": {
+    "self480": -1.2128609212771206,
+    "public": 1.034151134592168,
+    "tight-value": 0.2771308573717939
+  },
+  "primary_mixture_minus_480": {
+    "contrasts": {
+      "self480": {
+        "mean_bb": 0.15676612645846483,
+        "cluster_se_bb": 0.21069211512367889,
+        "paired_95_bb": [
+          -0.25618283101051254,
+          0.5697150839274422
+        ],
+        "simultaneous_95_bb": [
+          -0.38594079770380557,
+          0.6994730506207352
+        ],
+        "mean_bb_by_seed": {
+          "342": 0.7142842119918389,
+          "343": -0.596555660923019,
+          "344": 0.35256982830657463
+        }
+      },
+      "public": {
+        "mean_bb": -0.5434075737645517,
+        "cluster_se_bb": 0.20186297847553322,
+        "paired_95_bb": [
+          -0.9390517413885808,
+          -0.14776340614052258
+        ],
+        "simultaneous_95_bb": [
+          -1.063372149023491,
+          -0.023442998505612378
+        ],
+        "mean_bb_by_seed": {
+          "342": -0.5809692737679274,
+          "343": -0.7840904373720352,
+          "344": -0.2651630101536928
+        }
+      },
+      "tight-value": {
+        "mean_bb": 0.13152497782503836,
+        "cluster_se_bb": 0.19114994329937507,
+        "paired_95_bb": [
+          -0.2431220266886101,
+          0.5061719823386868
+        ],
+        "simultaneous_95_bb": [
+          -0.36084464749720263,
+          0.6238946031472794
+        ],
+        "mean_bb_by_seed": {
+          "342": 0.1051424817294862,
+          "343": -0.03855391285952833,
+          "344": 0.3279863646051572
+        }
+      },
+      "public_minus_self480": {
+        "mean_bb": -0.7001737002230165,
+        "cluster_se_bb": 0.21540881398879608,
+        "paired_95_bb": [
+          -1.1223672175935446,
+          -0.2779801828524885
+        ],
+        "simultaneous_95_bb": [
+          -1.2550300355380717,
+          -0.14531736490796132
+        ],
+        "mean_bb_by_seed": {
+          "342": -1.2952534857597675,
+          "343": -0.18753477644901542,
+          "344": -0.6177328384602669
+        }
+      },
+      "tight-value_minus_self480": {
+        "mean_bb": -0.02524114863342705,
+        "cluster_se_bb": 0.1808534555494985,
+        "paired_95_bb": [
+          -0.3797074079900596,
+          0.32922511072320554
+        ],
+        "simultaneous_95_bb": [
+          -0.49108877908590365,
+          0.4406064818190496
+        ],
+        "mean_bb_by_seed": {
+          "342": -0.6091417302623543,
+          "343": 0.5580017480634909,
+          "344": -0.02458346370141774
+        }
+      }
+    },
+    "states_with_probability_change": 2895,
+    "observed_signs_on_changed_states_self480_by_external": {
+      "public": {
+        "positive": {
+          "positive": 867,
+          "negative": 513,
+          "tie": 20
+        },
+        "negative": {
+          "positive": 469,
+          "negative": 867,
+          "tie": 15
+        },
+        "tie": {
+          "positive": 60,
+          "negative": 48,
+          "tie": 36
+        }
+      },
+      "tight-value": {
+        "positive": {
+          "positive": 915,
+          "negative": 441,
+          "tie": 44
+        },
+        "negative": {
+          "positive": 424,
+          "negative": 890,
+          "tie": 37
+        },
+        "tie": {
+          "positive": 48,
+          "negative": 56,
+          "tie": 40
+        }
+      }
+    }
+  },
+  "secondary_minus_480": {
+    "486": {
+      "contrasts": {
+        "self480": {
+          "mean_bb": 0.6575288916805706,
+          "cluster_se_bb": 0.23087947410775925,
+          "paired_95_bb": [
+            0.20501343765981467,
+            1.1100443457013265
+          ],
+          "simultaneous_95_bb": [
+            0.0628227766858448,
+            1.2522350066752965
+          ],
+          "mean_bb_by_seed": {
+            "342": 1.4028804088250761,
+            "343": -0.45019468671384616,
+            "344": 1.0199009529304819
+          }
+        },
+        "public": {
+          "mean_bb": -0.30302637143745154,
+          "cluster_se_bb": 0.2246042604655598,
+          "paired_95_bb": [
+            -0.7432426327242021,
+            0.13718988984929908
+          ],
+          "simultaneous_95_bb": [
+            -0.8815686072465703,
+            0.27551586437166714
+          ],
+          "mean_bb_by_seed": {
+            "342": -0.548063490109991,
+            "343": -0.6724267037856325,
+            "344": 0.31141107958326886
+          }
+        },
+        "tight-value": {
+          "mean_bb": 0.26184339554756303,
+          "cluster_se_bb": 0.2062442887897383,
+          "paired_95_bb": [
+            -0.14238798249740198,
+            0.6660747735925281
+          ],
+          "simultaneous_95_bb": [
+            -0.2694066872066468,
+            0.7930934783017729
+          ],
+          "mean_bb_by_seed": {
+            "342": 0.28529717458089465,
+            "343": -0.12767978639866895,
+            "344": 0.6279127984604633
+          }
+        },
+        "public_minus_self480": {
+          "mean_bb": -0.9605552631180224,
+          "cluster_se_bb": 0.24225065410478933,
+          "paired_95_bb": [
+            -1.4353578203946795,
+            -0.48575270584136526
+          ],
+          "simultaneous_95_bb": [
+            -1.5845515967650274,
+            -0.3365589294710175
+          ],
+          "mean_bb_by_seed": {
+            "342": -1.9509438989350685,
+            "343": -0.2222320170717867,
+            "344": -0.7084898733472119
+          }
+        },
+        "tight-value_minus_self480": {
+          "mean_bb": -0.3956854961330068,
+          "cluster_se_bb": 0.2055509760491411,
+          "paired_95_bb": [
+            -0.7985580061763785,
+            0.0071870139103649144
+          ],
+          "simultaneous_95_bb": [
+            -0.9251497236134625,
+            0.13377873134744894
+          ],
+          "mean_bb_by_seed": {
+            "342": -1.1175832342441794,
+            "343": 0.3225149003151772,
+            "344": -0.3919881544700184
+          }
+        }
+      },
+      "states_with_probability_change": 2380,
+      "observed_signs_on_changed_states_self480_by_external": {
+        "public": {
+          "positive": {
+            "positive": 694,
+            "negative": 423,
+            "tie": 29
+          },
+          "negative": {
+            "positive": 369,
+            "negative": 669,
+            "tie": 22
+          },
+          "tie": {
+            "positive": 66,
+            "negative": 61,
+            "tie": 47
+          }
+        },
+        "tight-value": {
+          "positive": {
+            "positive": 726,
+            "negative": 368,
+            "tie": 52
+          },
+          "negative": {
+            "positive": 336,
+            "negative": 670,
+            "tie": 54
+          },
+          "tie": {
+            "positive": 49,
+            "negative": 61,
+            "tie": 64
+          }
+        }
+      }
+    },
+    "504": {
+      "contrasts": {
+        "self480": {
+          "mean_bb": -0.10681687368718355,
+          "cluster_se_bb": 0.2523138165205953,
+          "paired_95_bb": [
+            -0.6013428668693975,
+            0.38770911949503045
+          ],
+          "simultaneous_95_bb": [
+            -0.7567341959711935,
+            0.5431004485968265
+          ],
+          "mean_bb_by_seed": {
+            "342": 0.6200620394024302,
+            "343": -0.7294572623198403,
+            "344": -0.2110553981441405
+          }
+        },
+        "public": {
+          "mean_bb": -0.6218143382467075,
+          "cluster_se_bb": 0.24367284822417476,
+          "paired_95_bb": [
+            -1.0994043447763848,
+            -0.1442243317170302
+          ],
+          "simultaneous_95_bb": [
+            -1.2494740011817602,
+            0.00584532468834531
+          ],
+          "mean_bb_by_seed": {
+            "342": -0.5104092227786217,
+            "343": -0.8485377876110705,
+            "344": -0.5064960043504305
+          }
+        },
+        "tight-value": {
+          "mean_bb": 0.024142615822931823,
+          "cluster_se_bb": 0.23387086195997542,
+          "paired_95_bb": [
+            -0.43423585065195847,
+            0.4825210822978221
+          ],
+          "simultaneous_95_bb": [
+            -0.5782688036598125,
+            0.6265540353056762
+          ],
+          "mean_bb_by_seed": {
+            "342": 0.1650116896205125,
+            "343": -0.15930602585922238,
+            "344": 0.06672218370750535
+          }
+        },
+        "public_minus_self480": {
+          "mean_bb": -0.5149974645595234,
+          "cluster_se_bb": 0.24773163007446575,
+          "paired_95_bb": [
+            -1.000542537336876,
+            -0.02945239178217096
+          ],
+          "simultaneous_95_bb": [
+            -1.1531118567212681,
+            0.12311692760222137
+          ],
+          "mean_bb_by_seed": {
+            "342": -1.1304712621810509,
+            "343": -0.11908052529122937,
+            "344": -0.2954406062062902
+          }
+        },
+        "tight-value_minus_self480": {
+          "mean_bb": 0.1309594895101156,
+          "cluster_se_bb": 0.20937886330260536,
+          "paired_95_bb": [
+            -0.279415541686926,
+            0.5413345207071572
+          ],
+          "simultaneous_95_bb": [
+            -0.40836472212849473,
+            0.6702837011487259
+          ],
+          "mean_bb_by_seed": {
+            "342": -0.45505034978191744,
+            "343": 0.570151236460618,
+            "344": 0.2777775818516462
+          }
+        }
+      },
+      "states_with_probability_change": 2578,
+      "observed_signs_on_changed_states_self480_by_external": {
+        "public": {
+          "positive": {
+            "positive": 755,
+            "negative": 426,
+            "tie": 25
+          },
+          "negative": {
+            "positive": 418,
+            "negative": 764,
+            "tie": 22
+          },
+          "tie": {
+            "positive": 79,
+            "negative": 50,
+            "tie": 39
+          }
+        },
+        "tight-value": {
+          "positive": {
+            "positive": 779,
+            "negative": 375,
+            "tie": 52
+          },
+          "negative": {
+            "positive": 394,
+            "negative": 761,
+            "tie": 49
+          },
+          "tie": {
+            "positive": 63,
+            "negative": 45,
+            "tie": 60
+          }
+        }
+      }
+    }
+  },
+  "different_most_likely_root_actions": {
+    "scope": "Only states where 480 and the mixture have different, unique most-probable root actions. Force each of those two actions and compare their Q. Descriptive subset; a win over a specific continuation does not establish optimal play.",
+    "most_likely_tie_tolerance": 1e-10,
+    "eligible_unique_tops": 2308,
+    "ties_excluded": 764,
+    "different_top": 1146,
+    "same_unique_top": 1162,
+    "share_of_all_sampled_states": 0.373046875,
+    "changed_states_by_seed": {
+      "342": 390,
+      "343": 393,
+      "344": 363
+    },
+    "by_lineup": {
+      "self480": {
+        "new_top_minus_old_top_bb": -0.5557585855620207,
+        "mean_bb_by_seed": {
+          "342": -1.2741089743589744,
+          "343": -0.19218193384223928,
+          "344": -0.20098484848484863
+        },
+        "positive": 480,
+        "negative": 511,
+        "tied": 155
+      },
+      "public": {
+        "new_top_minus_old_top_bb": -0.12063026281876038,
+        "mean_bb_by_seed": {
+          "342": 1.0336634615384614,
+          "343": -0.9305852417302798,
+          "344": -0.4649690082644628
+        },
+        "positive": 522,
+        "negative": 528,
+        "tied": 96
+      },
+      "tight-value": {
+        "new_top_minus_old_top_bb": 0.26573576756730816,
+        "mean_bb_by_seed": {
+          "342": -1.1581987179487176,
+          "343": 1.0782538167938929,
+          "344": 0.8771522038567493
+        },
+        "positive": 488,
+        "negative": 481,
+        "tied": 177
+      }
+    }
+  },
+  "estimand": "Conditional mean utility difference from replacing only the root action distribution at the first reached hero flop decision; hero follows 480 after the forced root. The mixture equally weights the four frozen root policies.",
+  "uncertainty": "Action branches and repeated continuations share their original deal. Their payoffs are averaged inside that deal. Fixed policy seeds receive equal weight. Paired normal intervals cluster by original deal. Five primary contrasts have simultaneous 95% Bonferroni intervals. Each secondary policy has its own five-contrast family; those intervals do not jointly cover primary and secondary results.",
+  "descriptive_signs": "Signs use a 1e-10 BB numerical tie tolerance. A per-state sign is a noisy estimate from finite continuations; sign counts are descriptive.",
+  "input_sha256": {
+    "seed-342/states.jsonl": "3fe030044ee0b594b156d24fa7dfc1e2da54547f8a50e8742dc8feaff9054080",
+    "seed-343/states.jsonl": "2883e8e303bfe556c98243656e6566633f31593e7ec0165b864962eeef2eccbf",
+    "seed-344/states.jsonl": "76d0853afcb27aa1c585d618ff3587d3683d31e5a1577c7dda05a12bef3f2372",
+    "seed-342/values.jsonl.gz": "7940071a649c235f35f1dbd79838b46f604097932f08a12c049241216c5fd38d",
+    "seed-343/values.jsonl.gz": "22ce83d364c3b46740ffcd16c46b81cf4f4adcc56d7b5da1bbd102ff50cbb55a",
+    "seed-344/values.jsonl.gz": "270f3704ab666158d3c2ad6f85e967645a51cbb6d9a9f5ee311af01efe0eaa69"
+  }
+}
