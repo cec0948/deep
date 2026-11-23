@@ -1,0 +1,2723 @@
+{
+  "config_sha256": "75027475d933dd7020e610c78c17a92abfbbf001feae5521cea25051e825d8af",
+  "plan_sha256": "c359bdd8a4b8c0d18b905262dd1a4c41d9bda69e563a90241dc13a8efba0db48",
+  "audited_reference_sha256": "e792012f135f80a212ad1b1f876992307f878a6bfd98bcbd3e0537a16ad12e88",
+  "verified_new_cells": 27,
+  "verified_archived_cells": 54,
+  "new_terminal_replay_hands": 648000,
+  "archived_terminal_replay_hands": 1296000,
+  "original_deals": 26000,
+  "terminal_replay_decisions_by_policy": {
+    "specialist480": 7310524,
+    "diverse504": 7300481,
+    "flop480late504": 7313961
+  },
+  "policy_sample_hands_per_arm": 2340,
+  "sampled_decisions_by_policy": {
+    "specialist480": 26217,
+    "diverse504": 26111,
+    "flop480late504": 26178
+  },
+  "sample_card_stride": 311,
+  "sampled_hybrid_hero_decisions_by_street_and_seed": {
+    "342": {
+      "preflop": 877,
+      "flop": 215,
+      "turn": 133,
+      "river": 89
+    },
+    "343": {
+      "preflop": 912,
+      "flop": 276,
+      "turn": 169,
+      "river": 98
+    },
+    "344": {
+      "preflop": 908,
+      "flop": 210,
+      "turn": 130,
+      "river": 82
+    }
+  },
+  "terminal_binary_sha256": "855ac187ca242ad1aafee47d4c9fb9dea46e67dccbb5d8ed80b001380491199e",
+  "result_sha256": {
+    "public-seed-342-specialist480": "8f92a48418e06821e74ff38cc3a6cc11ee634cb0dc3478b6c29490e2c3fb21d5",
+    "public-seed-342-diverse504": "084c41ca9febf2b87131b1e57a813f51d3996a3fb945162e19b3526ba297f31b",
+    "public-seed-342-flop480late504": "eb2b1474c6e67b547ab40c6bd7cf878f34a43b97971235a97a7ae42c88c9c3aa",
+    "public-seed-343-specialist480": "0d22f2c7f0a5997d6d23a3112a9ac5a4eb6f043b327d46e615051ce942b5601a",
+    "public-seed-343-diverse504": "52831b4f24e26e75f6d0bd4a155179f4986fad6dea8a9c4783fdd7a621e1868e",
+    "public-seed-343-flop480late504": "9b5a40cb15106f70c3772504db68eae5b08522ff2598c9f7c49407be59052821",
+    "public-seed-344-specialist480": "9959970aff0739a85ed6df89501682bbcb5b6a2dc0803f27aaed66767a8f9ed8",
+    "public-seed-344-diverse504": "3ce049c389470c40d5c0911597d69b57985972c1fc898fedf1717be9ff3f59ee",
+    "public-seed-344-flop480late504": "4a9772eab72e4335ebfcc1ab1d5a60e56ef820b3e934fb70669317d847e5c02b",
+    "noregrets-seed-342-specialist480": "b9b459690b936431f6db639f4de2667fcff7190296e4fdfb56557962523541c5",
+    "noregrets-seed-342-diverse504": "ee7c147784faa973ca1672a000e1b3a70373c30fe639e2070bfeb5705fe6e127",
+    "noregrets-seed-342-flop480late504": "8e50634169ee7bc159994a53fa3e2dd1e314378c9a6cb28e047daf8e31ad5e53",
+    "noregrets-seed-343-specialist480": "22a16f3886a756ef944173319603c33e5dd8ee790dd9d2246975ceb0fd11ef8f",
+    "noregrets-seed-343-diverse504": "7c9df195cba0529008a2797c460386c90f911c441dad384b9a4e1083bf66bbbc",
+    "noregrets-seed-343-flop480late504": "6e01143ebd76a714ac502603c4d408c7d30ed41264acedf57d067599ecc1efe2",
+    "noregrets-seed-344-specialist480": "bcad65c333f174a0e443ddf3e256e4c1e32855054459f2d4d1b043cda5726ee7",
+    "noregrets-seed-344-diverse504": "64ab635b76686156ae34f22b245483bdf9c1c55557bb9521b6704ca3eca0d22e",
+    "noregrets-seed-344-flop480late504": "c9256a4bb0fc9fc6b266e656afc292289b8f431940f2fdb8059d58a70579539a",
+    "rich96-seed-342-specialist480": "b7697e5b94e8f8c88c2be7fc47375b2a452766e50aa71c25bc9193a9e7913bc0",
+    "rich96-seed-342-diverse504": "4aa237d1f4766f1e09f6e60277adb64cab2dbab7bd75eee6b103bcd3480a733c",
+    "rich96-seed-342-flop480late504": "0765b13fce9eb675166a6a13023868813d3e88b125c2d8108bde90ce9971d5fc",
+    "rich96-seed-343-specialist480": "64ade2cfd178505e8aec4dfb1d5692717c18465a7a2217187bdcaa779eb9dd04",
+    "rich96-seed-343-diverse504": "f461341c404980fa92ce1a0f443c47e97d8e753a731f0c00e51659a4ca98984d",
+    "rich96-seed-343-flop480late504": "9ee0a3ce8b1e990503ebea0d580b495598a436bda49d3fe1079ad766217278a2",
+    "rich96-seed-344-specialist480": "22ade04a885b3a9182a44a80244184108d07bff27b17ee4ae86152db968a7951",
+    "rich96-seed-344-diverse504": "4b4c6ec8317d30e00b671817b5a28decb86dbb3d7a47f372b2b2c42564f60227",
+    "rich96-seed-344-flop480late504": "38f22718eb2b996c07b9716c8bd6dcdcc43983a688313337803e0d9cc28d0a16",
+    "calling-station-seed-342-specialist480": "839308d55e4d38f5550a587bf74c6e8b7c0b185c1b6db2a6d182409943f12cff",
+    "calling-station-seed-342-diverse504": "f2eb0703af071d1df4dea4e45660dfa7130f3f43736f9cfcd0d192374b57cea8",
+    "calling-station-seed-342-flop480late504": "7215b78e00a93de82d58be498678fe6a235ac461eb60c0adc89de72b272be469",
+    "calling-station-seed-343-specialist480": "1c3768cf3303d9381f534664b0b65516cfb290f44427536ca906ecbc86eac0f7",
+    "calling-station-seed-343-diverse504": "0111a31dabab3240cb2279c7606436726077f2bd7517bcc46cd5a56e0572d821",
+    "calling-station-seed-343-flop480late504": "04a8a339de801e6fa66b677db4ac0993e097f8f81ecb14369a71ef69fbf35af8",
+    "calling-station-seed-344-specialist480": "d06acc36d6938a6036bea00ab82fc0e3b970b1da190db877cb35ce53271c5763",
+    "calling-station-seed-344-diverse504": "31b078a9d861632b9936b7f4e9bde62df1c3c97e40ec78f886a436b90ed360b3",
+    "calling-station-seed-344-flop480late504": "4583da4d6882020e08b771b0e4ad69de6c15863deb0fa335834598d36cd34bf8",
+    "tight-value-seed-342-specialist480": "042904dacd2dd36dcd2de96a3c33e1abdae6eb5cd9f742e570f7eaa3e3db523d",
+    "tight-value-seed-342-diverse504": "69e10c53c7adcc26bb01b65810cee5392e0ba1387273bcfb4cbdccacec536641",
+    "tight-value-seed-342-flop480late504": "7c9f86a2369f1212c6252b10d30aa4e428e951971ba430a2e8eb9c1dfd1b15f7",
+    "tight-value-seed-343-specialist480": "31b606beace71bd857f7a2ef7b0b20a955b100efec014c150910badca8b4405c",
+    "tight-value-seed-343-diverse504": "55df8959467a62eea5c13acc90afa96ba51716b9f93dd458100d13376b92739c",
+    "tight-value-seed-343-flop480late504": "7ffd9499bc75ec00b42ba00b9c08a313d54488fd27705718aa290b51b2a12cad",
+    "tight-value-seed-344-specialist480": "8b8a435dde439ec28aab52ffe361847284cac38bdf7e846aea29a8198677d487",
+    "tight-value-seed-344-diverse504": "bad45d87b6ca8a7a5f0148fa2a8ce4dd007601c4808dd67937f57fd562ec40a7",
+    "tight-value-seed-344-flop480late504": "4b78f5b40d67e766008c82b1295010c12505254dd7306fd9489980e60544bc7a",
+    "pressure-seed-342-specialist480": "be0f9c43687b9dbf4debcd7b858af66b29f68846a8039970b447dff73b988f1f",
+    "pressure-seed-342-diverse504": "e4982c2bf801479e384fed3aef07f3c8bf6e5e1afd3610c6397b83706d990a95",
+    "pressure-seed-342-flop480late504": "4db835a79dcef6eae47672b35871a817e89126b522fcc8597b4223f1b4d7a3f0",
+    "pressure-seed-343-specialist480": "e38639d843f4b1b08bf49e7d264119ee5aca527dcc9b217e95e861202d685c6d",
+    "pressure-seed-343-diverse504": "ed0c9905d1e3395e7e5f4bcf9bb20129a4cb267da2ab53d63752f650d4ee39ec",
+    "pressure-seed-343-flop480late504": "d1c6e145186b59838c78d55cce216fc87a77210120916d93bef2315005beffc2",
+    "pressure-seed-344-specialist480": "86d838203176871383440349ed3867783966a602e80f33514a9a68daa6dbcba5",
+    "pressure-seed-344-diverse504": "427fd7512db2337c0844ef0cfcd95912b4a813756f698b0f1fbb285ca8a56231",
+    "pressure-seed-344-flop480late504": "858a153a5b94f1a594547ca0b78d03b6d43385d3c82e6142cd93bdf697826591",
+    "mixed-seed-342-specialist480": "31f0d395c859ed5ad9ce9f66a6cb5e12c0734a7fbb359aef8c69d0f51a64a9fe",
+    "mixed-seed-342-diverse504": "852bb35756587fd5c3bb349f6e6728e35a5f9d977950f334b7a8225aca1090c6",
+    "mixed-seed-342-flop480late504": "579869dd4b85bf0a92557672833315c77cf12e6f9c232ac199ab9309dc2d1bb2",
+    "mixed-seed-343-specialist480": "af4baac90de80416460eac1077f3bdc3f09160979c5621307f94c691cb9374fb",
+    "mixed-seed-343-diverse504": "874498a50e806d04db3a94132d0cdf6afa5554ccc7644f4455eef98e581fb47b",
+    "mixed-seed-343-flop480late504": "4a6ef33dc4bf47c8f991a246e201c08c2634c63e34cdeecf487a615be7faa9bd",
+    "mixed-seed-344-specialist480": "eb3ee360233495426bb097d1e0b08ab79337ad6fdb3c1e2e243f5f9c9200268a",
+    "mixed-seed-344-diverse504": "6f6f3f28732bd36965955ec919c08422c05a82ba53d712be5194d17497d5814d",
+    "mixed-seed-344-flop480late504": "8e41260486fdda7ca1bb8de9ca5a3967d989e42bdba24f983ca402ce60cf2333",
+    "varied-seed-342-specialist480": "b33e7b1d9b85dc377f4634260232733affc269925ad8816bea51642f17ce2f38",
+    "varied-seed-342-diverse504": "d063764dd613461a8d75fe18d490e741dd5e652042797c1caa7d44688608d89d",
+    "varied-seed-342-flop480late504": "4b31b4e6e83eb3ac35c6428aadfbb610c11466f087335a4dce7e15ba1ebfe268",
+    "varied-seed-343-specialist480": "0f265b42548e639c5e4f87b957c4d9be8f03a95b442fe312ae289aab5ada7950",
+    "varied-seed-343-diverse504": "8e7c8ce47efee7f54669299ad58a4a096a0e9176c3b607a1f735b087e63c54eb",
+    "varied-seed-343-flop480late504": "88ef6d41d3af9bc74ab6edda11a31f3ebbc8874662aa73923a20ee65da69a57b",
+    "varied-seed-344-specialist480": "98bde4b852d905379b79b7605bd0f6438bd7273760143b4433d51edd033a5a6d",
+    "varied-seed-344-diverse504": "1d00b09644a6148be8b6adba4027b00ff0b7fe090e6f1f716e80bd6f23cbc3f9",
+    "varied-seed-344-flop480late504": "c7e005ab8807fe2cdad8f13e5049cc443128f038bb14e59c30fe9cc79bc0816c",
+    "solverlike-seed-342-specialist480": "eefbc21489ec2c99e4653c497c2cfcfac2ff9c6076ed0c3635e0e3049a0cef34",
+    "solverlike-seed-342-diverse504": "d2ef031cfde43aab4f49a121ba6e0ccd0948080b25d8bd5c3a26fa8f305febc6",
+    "solverlike-seed-342-flop480late504": "77bc42ebfacc24da3717754647d849681765618c5b4e52238dbe9575e8cae3ec",
+    "solverlike-seed-343-specialist480": "393017f6b7ab3c9d8f126020bd59d15f6b9b9e8d0289595ff974b920825b6321",
+    "solverlike-seed-343-diverse504": "88c3b9b25d99a15c120a9b3193edd810e812e46bb0eef586d352e2adcece490b",
+    "solverlike-seed-343-flop480late504": "87dfdb8e31b2ec08c2121187bbbaa43adfc55e564986de7def39de79d1485163",
+    "solverlike-seed-344-specialist480": "c20b1f8609632ac53340244c14b82aec37420aa4a66c71d131da5ad54eb14ac5",
+    "solverlike-seed-344-diverse504": "cfc6a2a24ff234df8c58d5efae881ed2232d077c0ac3fab4ccf8f238dc705657",
+    "solverlike-seed-344-flop480late504": "e64b64cf22a9b06b11b04f128fbb66cf035ed4faeb31ff7856f67bbb7e8f1975"
+  },
+  "cell_audits": {
+    "public/seed-342": {
+      "hands_per_policy": 120000,
+      "decisions": {
+        "specialist480": 1229889,
+        "diverse504": 1238353,
+        "flop480late504": 1233638
+      },
+      "sampled_hands_per_policy": 396,
+      "sampled_actions": {
+        "specialist480": 3995,
+        "diverse504": 4033,
+        "flop480late504": 4015
+      },
+      "private_snapshot_counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "private_slot_order_sha256": "5b48ff3c41405aca2f89a3ab948d91059fdb8cb8861eeb050a9f50010a3e4df9",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 8685,
+            "river": 2015,
+            "opponent_first": 0,
+            "identical": 109300
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -303538,
+            "river": -144446,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 19194,
+            "turn": 3567,
+            "river": 960,
+            "opponent_first": 0,
+            "identical": 96279
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -1031597,
+            "turn": -199135,
+            "river": -140717,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 19194,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 100806
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 923465,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "669f227ed5fa58fbe61940a107291a2aa753b840b313602cbb2056ae5ea2d878",
+        "diverse504": "d4ec13d486485587878862407c990cffe61475e9b6fd16c89bd497c1e3660711",
+        "flop480late504": "86384ecfbbc9834420a1f204d646254237167a16332aa1392e89ef4f59f5294e"
+      }
+    },
+    "public/seed-343": {
+      "hands_per_policy": 120000,
+      "decisions": {
+        "specialist480": 1291148,
+        "diverse504": 1277968,
+        "flop480late504": 1285391
+      },
+      "sampled_hands_per_policy": 396,
+      "sampled_actions": {
+        "specialist480": 4163,
+        "diverse504": 4099,
+        "flop480late504": 4125
+      },
+      "private_snapshot_counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "private_slot_order_sha256": "5b48ff3c41405aca2f89a3ab948d91059fdb8cb8861eeb050a9f50010a3e4df9",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 17160,
+            "river": 4225,
+            "opponent_first": 0,
+            "identical": 98615
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -3472716,
+            "river": -154244,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 25991,
+            "turn": 6936,
+            "river": 2186,
+            "opponent_first": 0,
+            "identical": 84887
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -7918996,
+            "turn": -1165513,
+            "river": -165491,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 25991,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 94009
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 5623040,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "66e0d14cd3bfa457682374057d1a83b82b5046f7dca356b0f0419b75bebf1227",
+        "diverse504": "6e0e668029bf9969c060b4e7a99dbb21ad888fa7a0b61b8c8eb022dde537d152",
+        "flop480late504": "2c25d5a40edcbf41161ed19f0724141172c18785c8858a7b883d1dc229c69b70"
+      }
+    },
+    "public/seed-344": {
+      "hands_per_policy": 120000,
+      "decisions": {
+        "specialist480": 1252301,
+        "diverse504": 1242292,
+        "flop480late504": 1249815
+      },
+      "sampled_hands_per_policy": 396,
+      "sampled_actions": {
+        "specialist480": 4029,
+        "diverse504": 3983,
+        "flop480late504": 4004
+      },
+      "private_snapshot_counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "private_slot_order_sha256": "5b48ff3c41405aca2f89a3ab948d91059fdb8cb8861eeb050a9f50010a3e4df9",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 11235,
+            "river": 2520,
+            "opponent_first": 0,
+            "identical": 106245
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -858556,
+            "river": 38595,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 21059,
+            "turn": 4597,
+            "river": 1104,
+            "opponent_first": 0,
+            "identical": 93240
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -3005002,
+            "turn": -22072,
+            "river": -1825,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 21059,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 98941
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 2208938,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "cf573c07f5102825a630947c01d8bc31ab59840f10a1e0685cf8464ab6e3497c",
+        "diverse504": "4ac7c09d811b032df606204ab3815c7bdfdc2cd24caa75ebe7aa1d75ee21cd78",
+        "flop480late504": "21d6cab37504fbbbb567659bef1ca1869aa381cbb98b5747de0b7ec156cfcce5"
+      }
+    },
+    "noregrets/seed-342": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 109800,
+        "diverse504": 109981,
+        "flop480late504": 109800
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 437,
+        "diverse504": 437,
+        "flop480late504": 437
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 77,
+            "river": 31,
+            "opponent_first": 0,
+            "identical": 11892
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -47201,
+            "river": 28802,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 263,
+            "turn": 35,
+            "river": 15,
+            "opponent_first": 0,
+            "identical": 11687
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -322166,
+            "turn": -44403,
+            "river": 7088,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 263,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11737
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 341082,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "32dd973d1d46cb2d9d621839656e883845458353e0259b426ea5cdc6e68e88aa",
+        "diverse504": "3cb6a3924513005f2b67ec37b7236adde310054c249105b238e8a1313937064d",
+        "flop480late504": "54f425e28e93a2e068e527f490a14a36a29acbee316e7fd75804e9825e58354e"
+      }
+    },
+    "noregrets/seed-343": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 110787,
+        "diverse504": 110848,
+        "flop480late504": 110859
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 468,
+        "diverse504": 467,
+        "flop480late504": 470
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 121,
+            "river": 41,
+            "opponent_first": 0,
+            "identical": 11838
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 39184,
+            "river": -6607,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 288,
+            "turn": 55,
+            "river": 16,
+            "opponent_first": 0,
+            "identical": 11641
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -319621,
+            "turn": -8372,
+            "river": 2011,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 288,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11712
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 358559,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "02ad42856f37c68822fa74118c1ec2c5a4c7883295e73ea8b7efe4a6bbd18572",
+        "diverse504": "3484cd2f47358755e222706901e4c6342512ed1d26107574c7edbfa603fe6a18",
+        "flop480late504": "c56a6fd62ffdaec4c5a218b4344277b57500cd80844d49749944c4de2bb6f8b1"
+      }
+    },
+    "noregrets/seed-344": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 109991,
+        "diverse504": 109812,
+        "flop480late504": 109965
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 454,
+        "diverse504": 457,
+        "flop480late504": 454
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 100,
+            "river": 30,
+            "opponent_first": 0,
+            "identical": 11870
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 8435,
+            "river": -67334,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 240,
+            "turn": 39,
+            "river": 11,
+            "opponent_first": 0,
+            "identical": 11710
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -467852,
+            "turn": -14989,
+            "river": -25782,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 240,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11760
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 449724,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "647862e2d77137fd40aaf28786a9004ffc66c13a697c007485239e7f41e3db82",
+        "diverse504": "1e991ca8a746287ecc4ccc5378c876811630449929b7fb726c9ac50d10bedaaf",
+        "flop480late504": "eda3dba9b47a4b7ec735ee20b229b7539623ce8208e8ff0e8eba108de6cfd18a"
+      }
+    },
+    "rich96/seed-342": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 114451,
+        "diverse504": 114353,
+        "flop480late504": 114596
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 411,
+        "diverse504": 410,
+        "flop480late504": 414
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 700,
+            "river": 164,
+            "opponent_first": 0,
+            "identical": 11136
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -102648,
+            "river": 47600,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1641,
+            "turn": 244,
+            "river": 75,
+            "opponent_first": 0,
+            "identical": 10040
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 429666,
+            "turn": -125325,
+            "river": 9850,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1641,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 10359
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -369239,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "4db611b48164adb32af0ce18ca03d39a7745fa5915e36a5d6d571c7f8bb641a4",
+        "diverse504": "f2205ddac8f6c378baacf98535fdac29c32d1b74227c01484523bd130251964a",
+        "flop480late504": "3b9f8d78872657b3011f130b91e1501b15c871fbfda6cb0a306db5e02c9050dc"
+      }
+    },
+    "rich96/seed-343": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 148040,
+        "diverse504": 147144,
+        "flop480late504": 147702
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 593,
+        "diverse504": 598,
+        "flop480late504": 594
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 564,
+            "river": 88,
+            "opponent_first": 0,
+            "identical": 11348
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -292741,
+            "river": -113254,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1322,
+            "turn": 205,
+            "river": 36,
+            "opponent_first": 0,
+            "identical": 10437
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -1178290,
+            "turn": -126835,
+            "river": -39435,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1322,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 10678
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 938565,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "1df75bee46935cf18ff1a4c9aebcd1ec6387906acac064a855e7e921138cb955",
+        "diverse504": "bcb40c137e38cfc281d49f8a6346bc3b5e4021cbb3a70f410a836abf18b257d9",
+        "flop480late504": "250c8b7ddd31b7e81f0839ea417d2d360e4f889121f7383ed3d703096f46c356"
+      }
+    },
+    "rich96/seed-344": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 122336,
+        "diverse504": 121683,
+        "flop480late504": 122197
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 464,
+        "diverse504": 464,
+        "flop480late504": 462
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 468,
+            "river": 39,
+            "opponent_first": 0,
+            "identical": 11493
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -194144,
+            "river": 21737,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1426,
+            "turn": 180,
+            "river": 19,
+            "opponent_first": 0,
+            "identical": 10375
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -579744,
+            "turn": -52418,
+            "river": 502,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1426,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 10574
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 459253,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "75a660ed31498ae7e0f477871b202b35e644fb051ffeec6d56a8036b748b5232",
+        "diverse504": "f78c4bd53a7c96441049c1f36442c8b4dddb69d02157e9cf1c8d8fb723e58b80",
+        "flop480late504": "ff5b1cb20810ba616b5f625eaa691d0754c4722e9a2b52c1fe5ae35e2cd26f71"
+      }
+    },
+    "calling-station/seed-342": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 306425,
+        "diverse504": 306627,
+        "flop480late504": 306892
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 1278,
+        "diverse504": 1239,
+        "flop480late504": 1269
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 3090,
+            "river": 2147,
+            "opponent_first": 0,
+            "identical": 6763
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -441575,
+            "river": 1936200,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 3673,
+            "turn": 1618,
+            "river": 1296,
+            "opponent_first": 0,
+            "identical": 5413
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 719150,
+            "turn": -603825,
+            "river": 1293200,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 3673,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 8327
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 86100,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "6ca459a972c617f399baddcb9bb03f77f11f204605d1894d228ed7e5e56eb7ec",
+        "diverse504": "ed1fb852c6fea2fceeb269aed5c20b354a71e545678f2ac91fb72cbde79bc7f2",
+        "flop480late504": "ed811787992540ad5b4178d87fced6c54e06ddeb5b2da40841dd0b5505b41ae0"
+      }
+    },
+    "calling-station/seed-343": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 292108,
+        "diverse504": 299205,
+        "flop480late504": 297099
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 1136,
+        "diverse504": 1141,
+        "flop480late504": 1139
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 3609,
+            "river": 1182,
+            "opponent_first": 0,
+            "identical": 7209
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 2817925,
+            "river": -605150,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 4080,
+            "turn": 1202,
+            "river": 532,
+            "opponent_first": 0,
+            "identical": 6186
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 4561750,
+            "turn": 633600,
+            "river": -504050,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 4080,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 7920
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -2478525,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "b48cd1b16ace90b3c0ea2cb62322a05a6878fec77e0f48bedb6a402200589033",
+        "diverse504": "e81f2cde6d1c5438ae0ebf382c8ed8255e1d2d51761c53546ec2e8b1422ca7fb",
+        "flop480late504": "aa78f5273c40b6cf1a0fbfdf93939648189e9bbc47756f8679898b95ba634d28"
+      }
+    },
+    "calling-station/seed-344": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 291878,
+        "diverse504": 296184,
+        "flop480late504": 296425
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 1142,
+        "diverse504": 1152,
+        "flop480late504": 1142
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 2798,
+            "river": 1085,
+            "opponent_first": 0,
+            "identical": 8117
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 1840550,
+            "river": -567350,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 2755,
+            "turn": 1314,
+            "river": 611,
+            "opponent_first": 0,
+            "identical": 7320
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 3584250,
+            "turn": 28900,
+            "river": -254725,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 2755,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 9245
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -2085225,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "6590fde19424313c193a39e776907814499498ef71abf4a0546a8fa2c658c66b",
+        "diverse504": "ca2ca4d03457c51218583ed4fe8cb17df02eedf7621f7a64a12d3c2349f4b37c",
+        "flop480late504": "63851ddbdd1ec840cb260b7ef3a2969ecb0f4b64eb1e77c9a92e9ce1b09ab79d"
+      }
+    },
+    "tight-value/seed-342": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 119266,
+        "diverse504": 120169,
+        "flop480late504": 119122
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 379,
+        "diverse504": 373,
+        "flop480late504": 376
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 1299,
+            "river": 462,
+            "opponent_first": 0,
+            "identical": 10239
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 233540,
+            "river": 149821,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 2064,
+            "turn": 627,
+            "river": 249,
+            "opponent_first": 0,
+            "identical": 9060
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 257436,
+            "turn": 109950,
+            "river": 96958,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 2064,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 9936
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -80983,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "add870a659d957d75ee5f768600d4f2970831b2e45b06fdbeb67421676b0877d",
+        "diverse504": "edafaab22581be6c7c786aef8a98e2aa4e7fc95c1ce0dbbf5cef8ca485f79351",
+        "flop480late504": "449db7e9be6daee64184924474f60c10dcd74371ae5329552fd83bbff33887ff"
+      }
+    },
+    "tight-value/seed-343": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 125269,
+        "diverse504": 124331,
+        "flop480late504": 125080
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 434,
+        "diverse504": 426,
+        "flop480late504": 432
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 2025,
+            "river": 736,
+            "opponent_first": 0,
+            "identical": 9239
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -888127,
+            "river": -246522,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 2490,
+            "turn": 983,
+            "river": 384,
+            "opponent_first": 0,
+            "identical": 8143
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -357865,
+            "turn": -412612,
+            "river": -76782,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 2490,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 9510
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -287390,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "1d8f4c5e413b2f1c0c9bf3f4e173491da2567934905d7c055c57bdba5dd436f9",
+        "diverse504": "55abb4fb88d0306555d8e5b181cccd6a0cfe75cbe6c8df9afe03557cbb27495e",
+        "flop480late504": "5b70f9161ba81b00d937c42ee9dea57d7506a2b569f677e6fd1868e485969f55"
+      }
+    },
+    "tight-value/seed-344": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 120830,
+        "diverse504": 120687,
+        "flop480late504": 120687
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 409,
+        "diverse504": 407,
+        "flop480late504": 407
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 1405,
+            "river": 497,
+            "opponent_first": 0,
+            "identical": 10098
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -397488,
+            "river": -165510,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 2056,
+            "turn": 643,
+            "river": 250,
+            "opponent_first": 0,
+            "identical": 9051
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -445892,
+            "turn": -94727,
+            "river": -65934,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 2056,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 9944
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 43555,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "e306ffd953721a8d17c7a65e35a6d33c68ac6471f8af2cbfef5705f2d6f25eb0",
+        "diverse504": "e7461529790d007ac38bb3054b63fb00fd03fecb88bf894459cefdaa0f5fd04b",
+        "flop480late504": "ac34fb75756085a12e7ee91c008386e9ea0fa26e6b17830f7c9aa88339644ab4"
+      }
+    },
+    "pressure/seed-342": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 164621,
+        "diverse504": 164722,
+        "flop480late504": 164616
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 690,
+        "diverse504": 691,
+        "flop480late504": 690
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 23,
+            "river": 1,
+            "opponent_first": 0,
+            "identical": 11976
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -102550,
+            "river": -300,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 433,
+            "turn": 13,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11554
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -1011832,
+            "turn": -25100,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 433,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11567
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 934082,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "33539b11b549b9354df1824806fefaa41b9655c219e34228c6e11da3dab1483e",
+        "diverse504": "4e619b70285fcce40343f7e5b12b737ebb6470527ff98a19e7033759c8b56b7a",
+        "flop480late504": "17c1fd90708216cf367e855637d014a03ddf91ce8995aff3e3bd96eeb626f18c"
+      }
+    },
+    "pressure/seed-343": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 166838,
+        "diverse504": 166654,
+        "flop480late504": 166808
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 690,
+        "diverse504": 690,
+        "flop480late504": 690
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 50,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11950
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -48045,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 459,
+            "turn": 11,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11530
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -1285782,
+            "turn": 41980,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 459,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11541
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 1195757,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "f3064ce3057425fbd23201cea4f969e59af27495d054486bf3456ed6ac1bab99",
+        "diverse504": "56c8edd174272ad37daeb006c2d4e20e7050a9178dfcc578047f1ebe6393d5e9",
+        "flop480late504": "10b8f62180bd6e39eadfb6b152c203bdf153162e77b8ff4f8c0d630ad4431241"
+      }
+    },
+    "pressure/seed-344": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 165704,
+        "diverse504": 165621,
+        "flop480late504": 165694
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 679,
+        "diverse504": 685,
+        "flop480late504": 679
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 24,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11976
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 13650,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 248,
+            "turn": 10,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11742
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -697849,
+            "turn": 20750,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 248,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11752
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 690749,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "c91d0e4b0a1e5af1f4229b5e22489b8414656923816b986dbf8c3255e3c5134a",
+        "diverse504": "c85600ad6ddda180fbedc8acaff4a5fb67f35cb906adfc81dee336652606f22f",
+        "flop480late504": "d94105f261d30b7594cd274ef0c4280cd2b47ebe59388f542e8a188e791d86b3"
+      }
+    },
+    "mixed/seed-342": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 113602,
+        "diverse504": 113684,
+        "flop480late504": 113658
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 424,
+        "diverse504": 425,
+        "flop480late504": 424
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 330,
+            "river": 97,
+            "opponent_first": 0,
+            "identical": 11573
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 63943,
+            "river": -23793,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 850,
+            "turn": 131,
+            "river": 44,
+            "opponent_first": 0,
+            "identical": 10975
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -202796,
+            "turn": 5366,
+            "river": -47705,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 850,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11150
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 285285,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "73977bba3707200e4a0ce871b7d8011a4fa3ca935f1473cfcbbbee77ef993584",
+        "diverse504": "441d8fc438189c21589e9ab9f3d64189217752a408ec971acb7be9e68e968e8b",
+        "flop480late504": "8e249d5a1f19a1ac69cddf773ac55cac17a8f8ec9125f8c3a433631294fa7860"
+      }
+    },
+    "mixed/seed-343": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 115979,
+        "diverse504": 115632,
+        "flop480late504": 115821
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 436,
+        "diverse504": 438,
+        "flop480late504": 435
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 545,
+            "river": 155,
+            "opponent_first": 0,
+            "identical": 11300
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -16148,
+            "river": -15551,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1146,
+            "turn": 204,
+            "river": 65,
+            "opponent_first": 0,
+            "identical": 10585
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -328536,
+            "turn": -95400,
+            "river": -17007,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1146,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 10854
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 409244,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "79f0538473c4ee4a5111425bf2795a3eb339231c9560a835a700d154e04ebc32",
+        "diverse504": "bddadb1bd52aab6919754217cf867a216dcd095a94d1b12689216510e14c66da",
+        "flop480late504": "e17cccd20ca279eb70a921fd5ea052308f104354e6cf9bdac5f10022f843c1ed"
+      }
+    },
+    "mixed/seed-344": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 114620,
+        "diverse504": 114109,
+        "flop480late504": 114575
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 448,
+        "diverse504": 446,
+        "flop480late504": 447
+      },
+      "private_snapshot_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "private_slot_order_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 410,
+            "river": 149,
+            "opponent_first": 0,
+            "identical": 11441
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -303607,
+            "river": 38708,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 974,
+            "turn": 162,
+            "river": 70,
+            "opponent_first": 0,
+            "identical": 10794
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -392813,
+            "turn": -95116,
+            "river": 41137,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 974,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 11026
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 181893,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "b35ccd1b5d7b52b8c5784a37bca4d1b7a44ac7266be55d2123d3d075d55defaf",
+        "diverse504": "84aa7ebe9f92f9d8df4d2507ba63454b5f77c5c8300460ea7cb6b1ba7c141c69",
+        "flop480late504": "34ac27752aaf1b7d9cedb366e0d02048040f5f24d6d0a82f1b5d9aac7d4c96bd"
+      }
+    },
+    "varied/seed-342": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 136975,
+        "diverse504": 136885,
+        "flop480late504": 136990
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 571,
+        "diverse504": 568,
+        "flop480late504": 572
+      },
+      "private_snapshot_counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "private_slot_order_sha256": "03766a2a7604e1ed3aaa5d0ea4de1fb47a6d941a4dffc0dc9f016e9c1c4d60fd",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 545,
+            "river": 126,
+            "opponent_first": 0,
+            "identical": 11329
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -188063,
+            "river": -95174,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1242,
+            "turn": 244,
+            "river": 58,
+            "opponent_first": 0,
+            "identical": 10456
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -1017932,
+            "turn": -90768,
+            "river": 3504,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1242,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 10758
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 821959,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "24e402f1b53388e11e679c8adf189290e6fdf5c47ef027a2584655f7a48af746",
+        "diverse504": "c38cda622da580da08fc5c3757d3bcbfaa5c8fd93152b50c60df20038734bb34",
+        "flop480late504": "452e0a27c7226d908ea4f606f39a18c4b2e4e1911a7fefda8a5b0ba993ff804f"
+      }
+    },
+    "varied/seed-343": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 144182,
+        "diverse504": 143377,
+        "flop480late504": 144023
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 553,
+        "diverse504": 559,
+        "flop480late504": 555
+      },
+      "private_snapshot_counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "private_slot_order_sha256": "03766a2a7604e1ed3aaa5d0ea4de1fb47a6d941a4dffc0dc9f016e9c1c4d60fd",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 617,
+            "river": 128,
+            "opponent_first": 0,
+            "identical": 11255
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -672882,
+            "river": 7264,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1252,
+            "turn": 232,
+            "river": 53,
+            "opponent_first": 0,
+            "identical": 10463
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -1384947,
+            "turn": -330837,
+            "river": 9985,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1252,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 10748
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 1040181,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "68b9f1133f44dbc18e10846e5061e0014e942120c68657e9013a27e6908cff70",
+        "diverse504": "e31dfb9271c32a125d02fdf89c1604fc8d737e5bc7f4e1d7698611df7353259c",
+        "flop480late504": "804f54ab725e92736e041f633859567cdf2c4ce062d2f60fe9e7536f0b1952a1"
+      }
+    },
+    "varied/seed-344": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 140207,
+        "diverse504": 139477,
+        "flop480late504": 140130
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 562,
+        "diverse504": 553,
+        "flop480late504": 561
+      },
+      "private_snapshot_counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "private_slot_order_sha256": "03766a2a7604e1ed3aaa5d0ea4de1fb47a6d941a4dffc0dc9f016e9c1c4d60fd",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 504,
+            "river": 114,
+            "opponent_first": 0,
+            "identical": 11382
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -721970,
+            "river": -184390,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1089,
+            "turn": 193,
+            "river": 52,
+            "opponent_first": 0,
+            "identical": 10666
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -525685,
+            "turn": -445116,
+            "river": -135921,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1089,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 10911
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 200362,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "863e835f174cc6c1fb6fa9b19f7a01504fb31e88f716c608e7b45b47c5fea301",
+        "diverse504": "fe06931864b04db134a45c1484f44d453598c853f1300576cd8507997cba57ac",
+        "flop480late504": "a354058604981977e20f3bf72ca8bbed71bb8b826e99aa912090db9fc37b876e"
+      }
+    },
+    "solverlike/seed-342": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 97199,
+        "diverse504": 97588,
+        "flop480late504": 97358
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 445,
+        "diverse504": 458,
+        "flop480late504": 447
+      },
+      "private_snapshot_counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "private_slot_order_sha256": "f184231159940a02e0f256d2a5d0e2f668e35b2999ef51088401380079961b4e",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 616,
+            "river": 143,
+            "opponent_first": 0,
+            "identical": 11241
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -199347,
+            "river": -41418,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1356,
+            "turn": 229,
+            "river": 59,
+            "opponent_first": 0,
+            "identical": 10356
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -58895,
+            "turn": -63861,
+            "river": 6445,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1356,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 10644
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -124454,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "b777a3a02adefb3165faf27a7ab232e928797f0aac734b151b716bbc92e2fdc3",
+        "diverse504": "cc10bec9ab8f14bd9a04c592ef14c672177ced731ff1e0dba4858ab7c5358ea6",
+        "flop480late504": "552d05f049cac4c884d1802215ea99e8b860d8e89c94026afe3ebcbd129a8848"
+      }
+    },
+    "solverlike/seed-343": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 105980,
+        "diverse504": 103949,
+        "flop480late504": 105153
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 469,
+        "diverse504": 440,
+        "flop480late504": 471
+      },
+      "private_snapshot_counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "private_slot_order_sha256": "f184231159940a02e0f256d2a5d0e2f668e35b2999ef51088401380079961b4e",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 1311,
+            "river": 399,
+            "opponent_first": 0,
+            "identical": 10290
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": -637986,
+            "river": -48329,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 2188,
+            "turn": 491,
+            "river": 175,
+            "opponent_first": 0,
+            "identical": 9146
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -1048842,
+            "turn": -167514,
+            "river": -27993,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 2188,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 9812
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 558034,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "3c81687f931ab3f78e27492fc2b037a346a5b4b514d261ac591689f14cf85824",
+        "diverse504": "dbf92df74a3ca3deb4027bcb068d54b9a27f3bc444e5160a9e980027efddaf8e",
+        "flop480late504": "9d70d3d761e07e898e6ce8b550fbc7f6db2746d263fa498714802db28130a9d9"
+      }
+    },
+    "solverlike/seed-344": {
+      "hands_per_policy": 12000,
+      "decisions": {
+        "specialist480": 100098,
+        "diverse504": 99146,
+        "flop480late504": 99867
+      },
+      "sampled_hands_per_policy": 48,
+      "sampled_actions": {
+        "specialist480": 458,
+        "diverse504": 472,
+        "flop480late504": 467
+      },
+      "private_snapshot_counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "private_slot_order_sha256": "f184231159940a02e0f256d2a5d0e2f668e35b2999ef51088401380079961b4e",
+      "paired_first_difference": {
+        "flop480late504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 813,
+            "river": 248,
+            "opponent_first": 0,
+            "identical": 10939
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 0,
+            "turn": 194439,
+            "river": 3064,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "diverse504_minus_specialist480": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1568,
+            "turn": 312,
+            "river": 108,
+            "opponent_first": 0,
+            "identical": 10012
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": -100600,
+            "turn": -837,
+            "river": -16819,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        },
+        "flop480late504_minus_diverse504": {
+          "hands": {
+            "preflop": 0,
+            "flop": 1568,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 10432
+          },
+          "chip_difference": {
+            "preflop": 0,
+            "flop": 315759,
+            "turn": 0,
+            "river": 0,
+            "opponent_first": 0,
+            "identical": 0
+          }
+        }
+      },
+      "raw_sha256": {
+        "specialist480": "23415d109aa0cf4b53bd4b16c729790baa41ae7982e24dd011b87a526fd1bf3c",
+        "diverse504": "9adee73bb94bb85bacbd4ba22e5e5a377ba525d4ec3849a1e0fbf564e2ab1dcd",
+        "flop480late504": "c685b209dc5b1164c3ee9ddfe195043706e09aa805aee7e13eabde6ca59f40d3"
+      }
+    }
+  },
+  "verified_utc": "2026-11-23T08:45:31.465334+00:00",
+  "summary_sha256": "4c4c72cd745d3f13df49306f886fc10fbb3e3c3d177e36081a2a7da5b966dc09",
+  "audit_source_sha256": "79a6f1d771ed7d3aad4ebf5f5ac4ddfed7450d64abad1d0884c192a64d2394aa",
+  "independently_recomputed_public": {
+    "flop480late504_minus_diverse504": {
+      "mean": 24.320675,
+      "interval": [
+        18.340013295959537,
+        30.301336704040466
+      ],
+      "fixed_seed_changes": [
+        7.695541666666665,
+        46.858666666666664,
+        18.40781666666667
+      ]
+    },
+    "flop480late504_minus_specialist480": {
+      "mean": -13.596958333333337,
+      "interval": [
+        -17.875511827724623,
+        -9.31840483894205
+      ],
+      "fixed_seed_changes": [
+        -3.7332,
+        -30.224666666666664,
+        -6.833008333333335
+      ]
+    },
+    "diverse504_minus_specialist480": {
+      "mean": -37.917633333333335,
+      "interval": [
+        -44.416478673186994,
+        -31.41878799347968
+      ],
+      "fixed_seed_changes": [
+        -11.428741666666665,
+        -77.08333333333333,
+        -25.240825
+      ]
+    }
+  },
+  "independently_recomputed_tables": {
+    "diverse504": {
+      "public": {
+        "absolute": {
+          "diverse504": -72.93474166666667,
+          "flop480late504": -48.614066666666666
+        },
+        "change": {
+          "mean": 24.320675,
+          "interval": [
+            14.821570282698643,
+            33.81977971730136
+          ],
+          "fixed_seed_changes": [
+            7.695541666666665,
+            46.858666666666664,
+            18.40781666666667
+          ]
+        }
+      },
+      "noregrets": {
+        "absolute": {
+          "diverse504": 468.3438055555555,
+          "flop480late504": 500.2706111111112
+        },
+        "change": {
+          "mean": 31.926805555555553,
+          "interval": [
+            6.435126094177768,
+            57.41848501693334
+          ],
+          "fixed_seed_changes": [
+            28.4235,
+            29.879916666666666,
+            37.477
+          ]
+        }
+      },
+      "rich96": {
+        "absolute": {
+          "diverse504": 26.663888888888877,
+          "flop480late504": 55.23552777777779
+        },
+        "change": {
+          "mean": 28.57163888888889,
+          "interval": [
+            -4.752357685110844,
+            61.89563546288863
+          ],
+          "fixed_seed_changes": [
+            -30.769916666666667,
+            78.21375,
+            38.27108333333334
+          ]
+        }
+      },
+      "calling-station": {
+        "absolute": {
+          "diverse504": 1023.7368055555555,
+          "flop480late504": 899.357638888889
+        },
+        "change": {
+          "mean": -124.37916666666666,
+          "interval": [
+            -225.20300137220457,
+            -23.555331961128758
+          ],
+          "fixed_seed_changes": [
+            7.175000000000015,
+            -206.54375,
+            -173.76875
+          ]
+        }
+      },
+      "tight-value": {
+        "absolute": {
+          "diverse504": -78.31866666666666,
+          "flop480late504": -87.3413888888889
+        },
+        "change": {
+          "mean": -9.022722222222221,
+          "interval": [
+            -35.59067442162785,
+            17.54522997718341
+          ],
+          "fixed_seed_changes": [
+            -6.7485833333333325,
+            -23.949166666666663,
+            3.6295833333333314
+          ]
+        }
+      },
+      "pressure": {
+        "absolute": {
+          "diverse504": 596.6622222222222,
+          "flop480late504": 675.011888888889
+        },
+        "change": {
+          "mean": 78.34966666666668,
+          "interval": [
+            17.875033890956935,
+            138.82429944237643
+          ],
+          "fixed_seed_changes": [
+            77.84016666666668,
+            99.64641666666667,
+            57.56241666666666
+          ]
+        }
+      },
+      "mixed": {
+        "absolute": {
+          "diverse504": 301.9395555555555,
+          "flop480late504": 326.2846111111111
+        },
+        "change": {
+          "mean": 24.345055555555554,
+          "interval": [
+            -6.567628147783868,
+            55.25773925889497
+          ],
+          "fixed_seed_changes": [
+            23.773749999999996,
+            34.103666666666655,
+            15.157749999999995
+          ]
+        }
+      },
+      "varied": {
+        "absolute": {
+          "diverse504": 325.06430555555556,
+          "flop480late504": 382.35602777777785
+        },
+        "change": {
+          "mean": 57.291722222222226,
+          "interval": [
+            14.313433330905212,
+            100.27001111353924
+          ],
+          "fixed_seed_changes": [
+            68.49658333333333,
+            86.68175,
+            16.696833333333327
+          ]
+        }
+      },
+      "solverlike": {
+        "absolute": {
+          "diverse504": -5.688194444444448,
+          "flop480late504": 15.126777777777777
+        },
+        "change": {
+          "mean": 20.814972222222224,
+          "interval": [
+            -5.145089146791683,
+            46.77503359123613
+          ],
+          "fixed_seed_changes": [
+            -10.371166666666666,
+            46.50283333333333,
+            26.31325
+          ]
+        }
+      }
+    },
+    "specialist480": {
+      "public": {
+        "absolute": {
+          "specialist480": -35.01710833333333,
+          "flop480late504": -48.614066666666666
+        },
+        "change": {
+          "mean": -13.596958333333337,
+          "interval": [
+            -20.392598965262238,
+            -6.801317701404438
+          ],
+          "fixed_seed_changes": [
+            -3.7332,
+            -30.224666666666664,
+            -6.833008333333335
+          ]
+        }
+      },
+      "noregrets": {
+        "absolute": {
+          "specialist480": 501.51286111111114,
+          "flop480late504": 500.2706111111112
+        },
+        "change": {
+          "mean": -1.2422500000000003,
+          "interval": [
+            -15.504962412465074,
+            13.020462412465074
+          ],
+          "fixed_seed_changes": [
+            -1.5332499999999978,
+            2.714749999999999,
+            -4.90825
+          ]
+        }
+      },
+      "rich96": {
+        "absolute": {
+          "specialist480": 72.83136111111111,
+          "flop480late504": 55.23552777777779
+        },
+        "change": {
+          "mean": -17.595833333333335,
+          "interval": [
+            -37.0091122862483,
+            1.8174456195816333
+          ],
+          "fixed_seed_changes": [
+            -4.587333333333338,
+            -33.83291666666666,
+            -14.367249999999999
+          ]
+        }
+      },
+      "calling-station": {
+        "absolute": {
+          "specialist480": 761.0076388888889,
+          "flop480late504": 899.357638888889
+        },
+        "change": {
+          "mean": 138.35,
+          "interval": [
+            24.67430251612562,
+            252.02569748387435
+          ],
+          "fixed_seed_changes": [
+            124.55208333333334,
+            184.39791666666665,
+            106.1
+          ]
+        }
+      },
+      "tight-value": {
+        "absolute": {
+          "specialist480": -50.83344444444444,
+          "flop480late504": -87.3413888888889
+        },
+        "change": {
+          "mean": -36.50794444444445,
+          "interval": [
+            -62.75601091543617,
+            -10.259877973452724
+          ],
+          "fixed_seed_changes": [
+            31.94675,
+            -94.55408333333332,
+            -46.9165
+          ]
+        }
+      },
+      "pressure": {
+        "absolute": {
+          "specialist480": 678.8242500000001,
+          "flop480late504": 675.011888888889
+        },
+        "change": {
+          "mean": -3.812361111111112,
+          "interval": [
+            -19.790782636015784,
+            12.166060413793561
+          ],
+          "fixed_seed_changes": [
+            -8.570833333333335,
+            -4.003749999999999,
+            1.1375000000000008
+          ]
+        }
+      },
+      "mixed": {
+        "absolute": {
+          "specialist480": 333.40816666666666,
+          "flop480late504": 326.2846111111111
+        },
+        "change": {
+          "mean": -7.123555555555556,
+          "interval": [
+            -25.726045299083165,
+            11.478934187972055
+          ],
+          "fixed_seed_changes": [
+            3.3458333333333328,
+            -2.641583333333331,
+            -22.074916666666663
+          ]
+        }
+      },
+      "varied": {
+        "absolute": {
+          "specialist480": 433.88977777777774,
+          "flop480late504": 382.35602777777785
+        },
+        "change": {
+          "mean": -51.53375,
+          "interval": [
+            -78.72403458269442,
+            -24.343465417305577
+          ],
+          "fixed_seed_changes": [
+            -23.603083333333327,
+            -55.46816666666666,
+            -75.53
+          ]
+        }
+      },
+      "solverlike": {
+        "absolute": {
+          "specialist480": 35.392805555555555,
+          "flop480late504": 15.126777777777777
+        },
+        "change": {
+          "mean": -20.266027777777776,
+          "interval": [
+            -42.01605123819583,
+            1.483995682640277
+          ],
+          "fixed_seed_changes": [
+            -20.063749999999995,
+            -57.19291666666666,
+            16.458583333333337
+          ]
+        }
+      }
+    }
+  },
+  "public_gap_recovery": {
+    "fraction": 0.6414080432235134,
+    "paired_fieller_ci95": [
+      0.5362430636749351,
+      0.7426192338346917
+    ],
+    "gap_bb100": 37.917633333333335,
+    "gain_bb100": 24.320675
+  },
+  "scope": "Previously observed cards motivated the rollback. A terminal return includes all later actions."
+}

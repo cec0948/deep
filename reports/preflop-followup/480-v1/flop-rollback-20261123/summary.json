@@ -1,0 +1,1305 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-23T08:45:30.705474+00:00",
+  "model_promoted": false,
+  "new_cells": 27,
+  "reference_cells": 54,
+  "completed_cells": 81,
+  "new_hands": 648000,
+  "reference_hands": 1296000,
+  "completed_hands": 1944000,
+  "unique_original_card_blocks": 26000,
+  "primary_public_comparison": "flop480late504_minus_diverse504",
+  "public_comparisons": {
+    "flop480late504_minus_diverse504": {
+      "baseline": "diverse504",
+      "candidate": "flop480late504",
+      "baseline_bb100": -72.93474166666667,
+      "candidate_bb100": -48.614066666666666,
+      "by_seed": {
+        "342": 7.695541666666665,
+        "343": 46.858666666666664,
+        "344": 18.40781666666667
+      },
+      "mean": 24.320675,
+      "paired_ci95": [
+        18.340013295959537,
+        30.301336704040466
+      ]
+    },
+    "flop480late504_minus_specialist480": {
+      "baseline": "specialist480",
+      "candidate": "flop480late504",
+      "baseline_bb100": -35.01710833333333,
+      "candidate_bb100": -48.614066666666666,
+      "by_seed": {
+        "342": -3.7332,
+        "343": -30.224666666666664,
+        "344": -6.833008333333335
+      },
+      "mean": -13.596958333333337,
+      "paired_ci95": [
+        -17.875511827724623,
+        -9.31840483894205
+      ]
+    },
+    "diverse504_minus_specialist480": {
+      "baseline": "specialist480",
+      "candidate": "diverse504",
+      "baseline_bb100": -35.01710833333333,
+      "candidate_bb100": -72.93474166666667,
+      "by_seed": {
+        "342": -11.428741666666665,
+        "343": -77.08333333333333,
+        "344": -25.240825
+      },
+      "mean": -37.917633333333335,
+      "paired_ci95": [
+        -44.416478673186994,
+        -31.41878799347968
+      ]
+    }
+  },
+  "public_gap_recovery": {
+    "numerator_bb100": 24.320675,
+    "denominator_bb100": 37.917633333333335,
+    "denominator_ci95": [
+      31.41878799347968,
+      44.41647867318699
+    ],
+    "fraction": 0.6414080432235134,
+    "paired_fieller_ci95": [
+      0.5362430636749351,
+      0.7426192338346917
+    ],
+    "interval_status": "bounded",
+    "method": "Diagnostic ratio of paired public means, (hybrid minus diverse504) / (specialist480 minus diverse504). Nominal Fieller interval with uncertainty in both means and their covariance, conditional on the selected cards."
+  },
+  "treatment_vs_diverse504": {
+    "baseline": "diverse504",
+    "candidate": "flop480late504",
+    "training_seeds": [
+      342,
+      343,
+      344
+    ],
+    "units": "bb/100",
+    "fields": {
+      "public": {
+        "family": "public",
+        "role": "primary",
+        "deal_seed": 2040100000,
+        "original_card_blocks": 20000,
+        "diverse504": {
+          "mean": -72.93474166666667,
+          "lower": -86.53077189297268,
+          "upper": -59.338711440360655
+        },
+        "flop480late504": {
+          "mean": -48.614066666666666,
+          "lower": -62.76038060463154,
+          "upper": -34.46775272870179
+        },
+        "paired_change": {
+          "mean": 24.320675,
+          "lower": 14.821570282698643,
+          "upper": 33.81977971730136
+        }
+      },
+      "noregrets": {
+        "family": "noregrets",
+        "role": "primary",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "diverse504": {
+          "mean": 468.3438055555555,
+          "lower": 329.35686041978244,
+          "upper": 607.3307506913286
+        },
+        "flop480late504": {
+          "mean": 500.2706111111111,
+          "lower": 359.48002315785664,
+          "upper": 641.0611990643656
+        },
+        "paired_change": {
+          "mean": 31.926805555555553,
+          "lower": 6.435126094177768,
+          "upper": 57.41848501693334
+        }
+      },
+      "rich96": {
+        "family": "historical-rich",
+        "role": "primary",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "diverse504": {
+          "mean": 26.663888888888888,
+          "lower": -37.727357899276214,
+          "upper": 91.055135677054
+        },
+        "flop480late504": {
+          "mean": 55.23552777777778,
+          "lower": -8.766969282974834,
+          "upper": 119.23802483853041
+        },
+        "paired_change": {
+          "mean": 28.571638888888895,
+          "lower": -4.752357685110841,
+          "upper": 61.895635462888634
+        }
+      },
+      "calling-station": {
+        "family": "rules",
+        "role": "primary",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "diverse504": {
+          "mean": 1023.7368055555555,
+          "lower": 852.8109241190159,
+          "upper": 1194.6626869920951
+        },
+        "flop480late504": {
+          "mean": 899.3576388888889,
+          "lower": 742.2489620956418,
+          "upper": 1056.4663156821362
+        },
+        "paired_change": {
+          "mean": -124.37916666666666,
+          "lower": -225.20300137220457,
+          "upper": -23.555331961128758
+        }
+      },
+      "tight-value": {
+        "family": "rules",
+        "role": "primary",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "diverse504": {
+          "mean": -78.31866666666666,
+          "lower": -127.65985565795538,
+          "upper": -28.977477675377934
+        },
+        "flop480late504": {
+          "mean": -87.34138888888889,
+          "lower": -137.76768533458315,
+          "upper": -36.91509244319463
+        },
+        "paired_change": {
+          "mean": -9.022722222222221,
+          "lower": -35.59067442162785,
+          "upper": 17.54522997718341
+        }
+      },
+      "pressure": {
+        "family": "rules",
+        "role": "primary",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "diverse504": {
+          "mean": 596.6622222222222,
+          "lower": 383.17442345127296,
+          "upper": 810.1500209931714
+        },
+        "flop480late504": {
+          "mean": 675.011888888889,
+          "lower": 457.9273040661095,
+          "upper": 892.0964737116684
+        },
+        "paired_change": {
+          "mean": 78.34966666666668,
+          "lower": 17.875033890956935,
+          "upper": 138.82429944237643
+        }
+      },
+      "mixed": {
+        "family": "legacy-mixed",
+        "role": "diagnostic",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "diverse504": {
+          "mean": 301.93955555555556,
+          "lower": 214.27010131275028,
+          "upper": 389.60900979836083
+        },
+        "flop480late504": {
+          "mean": 326.28461111111113,
+          "lower": 236.92180497008022,
+          "upper": 415.6474172521421
+        },
+        "paired_change": {
+          "mean": 24.345055555555554,
+          "lower": -6.567628147783868,
+          "upper": 55.25773925889497
+        }
+      },
+      "varied": {
+        "family": "heldout-lineup",
+        "role": "holdout",
+        "deal_seed": 2040300000,
+        "original_card_blocks": 2000,
+        "diverse504": {
+          "mean": 325.06430555555556,
+          "lower": 213.7832129201579,
+          "upper": 436.34539819095323
+        },
+        "flop480late504": {
+          "mean": 382.3560277777778,
+          "lower": 269.0574803429575,
+          "upper": 495.6545752125981
+        },
+        "paired_change": {
+          "mean": 57.29172222222222,
+          "lower": 14.313433330905205,
+          "upper": 100.27001111353923
+        }
+      },
+      "solverlike": {
+        "family": "upstream-solverlike-rules",
+        "role": "holdout",
+        "deal_seed": 2040400000,
+        "original_card_blocks": 2000,
+        "diverse504": {
+          "mean": -5.688194444444443,
+          "lower": -47.39854893343506,
+          "upper": 36.022160044546176
+        },
+        "flop480late504": {
+          "mean": 15.126777777777779,
+          "lower": -28.729602571309233,
+          "upper": 58.983158126864794
+        },
+        "paired_change": {
+          "mean": 20.814972222222224,
+          "lower": -5.145089146791683,
+          "upper": 46.77503359123613
+        }
+      }
+    },
+    "roles": {
+      "primary": {
+        "field_weights": {
+          "public": 0.25,
+          "noregrets": 0.25,
+          "rich96": 0.25,
+          "calling-station": 0.08333333333333333,
+          "tight-value": 0.08333333333333333,
+          "pressure": 0.08333333333333333
+        },
+        "breadth": {
+          "diverse504": {
+            "positive_fields": [
+              "noregrets",
+              "rich96",
+              "calling-station",
+              "pressure"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "noregrets",
+              "calling-station",
+              "pressure"
+            ],
+            "family_balanced_positive_share": 0.6666666666666666,
+            "family_balanced_confirmed_positive_share": 0.41666666666666663,
+            "weakest_field_by_point_estimate": "tight-value",
+            "minimum_field_mean_bb100": {
+              "mean": -78.31866666666666,
+              "lower": -127.65985565795538,
+              "upper": -59.338711440360655
+            }
+          },
+          "flop480late504": {
+            "positive_fields": [
+              "noregrets",
+              "rich96",
+              "calling-station",
+              "pressure"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "noregrets",
+              "calling-station",
+              "pressure"
+            ],
+            "family_balanced_positive_share": 0.6666666666666666,
+            "family_balanced_confirmed_positive_share": 0.41666666666666663,
+            "weakest_field_by_point_estimate": "tight-value",
+            "minimum_field_mean_bb100": {
+              "mean": -87.34138888888889,
+              "lower": -137.76768533458315,
+              "upper": -36.91509244319463
+            }
+          }
+        },
+        "uncapped_family_balanced_change_bb100": {
+          "mean": 16.61709467592593,
+          "lower": -16.11713548563156,
+          "upper": 49.351324837483425
+        },
+        "family_balanced_capped_bb100": {
+          "50": {
+            "diverse504": 2.7390645833333327,
+            "flop480late504": 13.901367592592592,
+            "paired_change": {
+              "mean": 11.16230300925926,
+              "lower": -4.153978956413365,
+              "upper": 25.390956293146115
+            }
+          },
+          "100": {
+            "diverse504": 23.572397916666667,
+            "flop480late504": 36.04358287037037,
+            "paired_change": {
+              "mean": 12.471184953703705,
+              "lower": -4.153978956413365,
+              "upper": 25.390956293146115
+            }
+          },
+          "200": {
+            "diverse504": 65.23906458333333,
+            "flop480late504": 77.71024953703703,
+            "paired_change": {
+              "mean": 12.471184953703705,
+              "lower": -4.153978956413365,
+              "upper": 25.390956293146115
+            }
+          }
+        }
+      },
+      "diagnostic": {
+        "field_weights": {
+          "mixed": 1.0
+        },
+        "breadth": {
+          "diverse504": {
+            "positive_fields": [
+              "mixed"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "mixed"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 1.0,
+            "weakest_field_by_point_estimate": "mixed",
+            "minimum_field_mean_bb100": {
+              "mean": 301.93955555555556,
+              "lower": 214.27010131275028,
+              "upper": 389.60900979836083
+            }
+          },
+          "flop480late504": {
+            "positive_fields": [
+              "mixed"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "mixed"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 1.0,
+            "weakest_field_by_point_estimate": "mixed",
+            "minimum_field_mean_bb100": {
+              "mean": 326.28461111111113,
+              "lower": 236.92180497008022,
+              "upper": 415.6474172521421
+            }
+          }
+        },
+        "uncapped_family_balanced_change_bb100": {
+          "mean": 24.345055555555554,
+          "lower": -6.567628147783868,
+          "upper": 55.25773925889497
+        },
+        "family_balanced_capped_bb100": {
+          "50": {
+            "diverse504": 50.0,
+            "flop480late504": 50.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          },
+          "100": {
+            "diverse504": 100.0,
+            "flop480late504": 100.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          },
+          "200": {
+            "diverse504": 200.0,
+            "flop480late504": 200.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          }
+        }
+      },
+      "holdout": {
+        "field_weights": {
+          "varied": 0.5,
+          "solverlike": 0.5
+        },
+        "breadth": {
+          "diverse504": {
+            "positive_fields": [
+              "varied"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "varied"
+            ],
+            "family_balanced_positive_share": 0.5,
+            "family_balanced_confirmed_positive_share": 0.5,
+            "weakest_field_by_point_estimate": "solverlike",
+            "minimum_field_mean_bb100": {
+              "mean": -5.688194444444443,
+              "lower": -47.39854893343506,
+              "upper": 36.022160044546176
+            }
+          },
+          "flop480late504": {
+            "positive_fields": [
+              "varied",
+              "solverlike"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "varied"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 0.5,
+            "weakest_field_by_point_estimate": "solverlike",
+            "minimum_field_mean_bb100": {
+              "mean": 15.126777777777779,
+              "lower": -28.729602571309233,
+              "upper": 58.983158126864794
+            }
+          }
+        },
+        "uncapped_family_balanced_change_bb100": {
+          "mean": 39.05334722222222,
+          "lower": 4.584172092056761,
+          "upper": 73.52252235238768
+        },
+        "family_balanced_capped_bb100": {
+          "50": {
+            "diverse504": 22.15590277777778,
+            "flop480late504": 32.56338888888889,
+            "paired_change": {
+              "mean": 10.407486111111112,
+              "lower": -2.5725445733958416,
+              "upper": 23.387516795618065
+            }
+          },
+          "100": {
+            "diverse504": 47.155902777777776,
+            "flop480late504": 57.56338888888889,
+            "paired_change": {
+              "mean": 10.407486111111112,
+              "lower": -2.5725445733958416,
+              "upper": 23.387516795618065
+            }
+          },
+          "200": {
+            "diverse504": 97.15590277777778,
+            "flop480late504": 107.5633888888889,
+            "paired_change": {
+              "mean": 10.407486111111112,
+              "lower": -2.5725445733958416,
+              "upper": 23.387516795618065
+            }
+          }
+        }
+      }
+    },
+    "uncertainty": {
+      "confidence": 0.95,
+      "simultaneous_estimates": 27,
+      "critical_z": 3.1130172634086897,
+      "method": "Large-sample Bonferroni intervals for both absolute means and the paired change per field. Six seats and all fixed training seeds are averaged inside the original card. Group bounds propagate these simultaneous intervals and allow arbitrary field correlation."
+    },
+    "scope": "Conditional on the fixed policies, training seeds, and declared opponent lineups. Weights are equal across families and equal within family. Saturation applies to each lineup mean before weighting. The holdout has its own cards and separate summary."
+  },
+  "treatment_vs_specialist480": {
+    "baseline": "specialist480",
+    "candidate": "flop480late504",
+    "training_seeds": [
+      342,
+      343,
+      344
+    ],
+    "units": "bb/100",
+    "fields": {
+      "public": {
+        "family": "public",
+        "role": "primary",
+        "deal_seed": 2040100000,
+        "original_card_blocks": 20000,
+        "specialist480": {
+          "mean": -35.01710833333333,
+          "lower": -49.14505974303656,
+          "upper": -20.889156923630104
+        },
+        "flop480late504": {
+          "mean": -48.614066666666666,
+          "lower": -62.76038060463154,
+          "upper": -34.46775272870179
+        },
+        "paired_change": {
+          "mean": -13.596958333333331,
+          "lower": -20.39259896526223,
+          "upper": -6.801317701404432
+        }
+      },
+      "noregrets": {
+        "family": "noregrets",
+        "role": "primary",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 501.51286111111114,
+          "lower": 361.1016339267626,
+          "upper": 641.9240882954597
+        },
+        "flop480late504": {
+          "mean": 500.2706111111111,
+          "lower": 359.48002315785664,
+          "upper": 641.0611990643656
+        },
+        "paired_change": {
+          "mean": -1.2422500000000007,
+          "lower": -15.504962412465074,
+          "upper": 13.020462412465074
+        }
+      },
+      "rich96": {
+        "family": "historical-rich",
+        "role": "primary",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 72.83136111111111,
+          "lower": 8.27151693304613,
+          "upper": 137.39120528917607
+        },
+        "flop480late504": {
+          "mean": 55.23552777777778,
+          "lower": -8.766969282974834,
+          "upper": 119.23802483853041
+        },
+        "paired_change": {
+          "mean": -17.59583333333333,
+          "lower": -37.009112286248296,
+          "upper": 1.8174456195816369
+        }
+      },
+      "calling-station": {
+        "family": "rules",
+        "role": "primary",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 761.007638888889,
+          "lower": 611.2657838854625,
+          "upper": 910.7494938923155
+        },
+        "flop480late504": {
+          "mean": 899.3576388888889,
+          "lower": 742.2489620956418,
+          "upper": 1056.4663156821362
+        },
+        "paired_change": {
+          "mean": 138.35,
+          "lower": 24.67430251612562,
+          "upper": 252.02569748387435
+        }
+      },
+      "tight-value": {
+        "family": "rules",
+        "role": "primary",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": -50.833444444444446,
+          "lower": -101.15293661161539,
+          "upper": -0.5139522772735035
+        },
+        "flop480late504": {
+          "mean": -87.34138888888889,
+          "lower": -137.76768533458315,
+          "upper": -36.91509244319463
+        },
+        "paired_change": {
+          "mean": -36.50794444444445,
+          "lower": -62.756010915436164,
+          "upper": -10.259877973452735
+        }
+      },
+      "pressure": {
+        "family": "rules",
+        "role": "primary",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 678.82425,
+          "lower": 461.9350511390807,
+          "upper": 895.7134488609192
+        },
+        "flop480late504": {
+          "mean": 675.011888888889,
+          "lower": 457.9273040661095,
+          "upper": 892.0964737116684
+        },
+        "paired_change": {
+          "mean": -3.81236111111111,
+          "lower": -19.79078263601578,
+          "upper": 12.16606041379356
+        }
+      },
+      "mixed": {
+        "family": "legacy-mixed",
+        "role": "diagnostic",
+        "deal_seed": 2040200000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 333.40816666666666,
+          "lower": 244.3563371918575,
+          "upper": 422.4599961414758
+        },
+        "flop480late504": {
+          "mean": 326.28461111111113,
+          "lower": 236.92180497008022,
+          "upper": 415.6474172521421
+        },
+        "paired_change": {
+          "mean": -7.123555555555557,
+          "lower": -25.726045299083168,
+          "upper": 11.478934187972053
+        }
+      },
+      "varied": {
+        "family": "heldout-lineup",
+        "role": "holdout",
+        "deal_seed": 2040300000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 433.8897777777778,
+          "lower": 318.3953826556411,
+          "upper": 549.3841728999146
+        },
+        "flop480late504": {
+          "mean": 382.3560277777778,
+          "lower": 269.0574803429575,
+          "upper": 495.6545752125981
+        },
+        "paired_change": {
+          "mean": -51.53374999999999,
+          "lower": -78.72403458269442,
+          "upper": -24.34346541730557
+        }
+      },
+      "solverlike": {
+        "family": "upstream-solverlike-rules",
+        "role": "holdout",
+        "deal_seed": 2040400000,
+        "original_card_blocks": 2000,
+        "specialist480": {
+          "mean": 35.39280555555555,
+          "lower": -9.550351311784517,
+          "upper": 80.33596242289562
+        },
+        "flop480late504": {
+          "mean": 15.126777777777779,
+          "lower": -28.729602571309233,
+          "upper": 58.983158126864794
+        },
+        "paired_change": {
+          "mean": -20.266027777777772,
+          "lower": -42.01605123819583,
+          "upper": 1.4839956826402805
+        }
+      }
+    },
+    "roles": {
+      "primary": {
+        "field_weights": {
+          "public": 0.25,
+          "noregrets": 0.25,
+          "rich96": 0.25,
+          "calling-station": 0.08333333333333333,
+          "tight-value": 0.08333333333333333,
+          "pressure": 0.08333333333333333
+        },
+        "breadth": {
+          "specialist480": {
+            "positive_fields": [
+              "noregrets",
+              "rich96",
+              "calling-station",
+              "pressure"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "noregrets",
+              "rich96",
+              "calling-station",
+              "pressure"
+            ],
+            "family_balanced_positive_share": 0.6666666666666666,
+            "family_balanced_confirmed_positive_share": 0.6666666666666666,
+            "weakest_field_by_point_estimate": "tight-value",
+            "minimum_field_mean_bb100": {
+              "mean": -50.833444444444446,
+              "lower": -101.15293661161539,
+              "upper": -20.889156923630104
+            }
+          },
+          "flop480late504": {
+            "positive_fields": [
+              "noregrets",
+              "rich96",
+              "calling-station",
+              "pressure"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "noregrets",
+              "calling-station",
+              "pressure"
+            ],
+            "family_balanced_positive_share": 0.6666666666666666,
+            "family_balanced_confirmed_positive_share": 0.41666666666666663,
+            "weakest_field_by_point_estimate": "tight-value",
+            "minimum_field_mean_bb100": {
+              "mean": -87.34138888888889,
+              "lower": -137.76768533458315,
+              "upper": -36.91509244319463
+            }
+          }
+        },
+        "uncapped_family_balanced_change_bb100": {
+          "mean": 0.060380787037036254,
+          "lower": -23.049376002271092,
+          "upper": 23.170137576345166
+        },
+        "family_balanced_capped_bb100": {
+          "50": {
+            "specialist480": 20.34293587962963,
+            "flop480late504": 13.901367592592592,
+            "paired_change": {
+              "mean": -6.441568287037036,
+              "lower": -19.58009538916398,
+              "upper": 0.4543614048954092
+            }
+          },
+          "100": {
+            "specialist480": 46.88410949074074,
+            "flop480late504": 36.04358287037037,
+            "paired_change": {
+              "mean": -10.840526620370367,
+              "lower": -19.58009538916398,
+              "upper": 0.4543614048954092
+            }
+          },
+          "200": {
+            "specialist480": 88.5507761574074,
+            "flop480late504": 77.71024953703703,
+            "paired_change": {
+              "mean": -10.840526620370367,
+              "lower": -19.58009538916398,
+              "upper": 0.4543614048954092
+            }
+          }
+        }
+      },
+      "diagnostic": {
+        "field_weights": {
+          "mixed": 1.0
+        },
+        "breadth": {
+          "specialist480": {
+            "positive_fields": [
+              "mixed"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "mixed"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 1.0,
+            "weakest_field_by_point_estimate": "mixed",
+            "minimum_field_mean_bb100": {
+              "mean": 333.40816666666666,
+              "lower": 244.3563371918575,
+              "upper": 422.4599961414758
+            }
+          },
+          "flop480late504": {
+            "positive_fields": [
+              "mixed"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "mixed"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 1.0,
+            "weakest_field_by_point_estimate": "mixed",
+            "minimum_field_mean_bb100": {
+              "mean": 326.28461111111113,
+              "lower": 236.92180497008022,
+              "upper": 415.6474172521421
+            }
+          }
+        },
+        "uncapped_family_balanced_change_bb100": {
+          "mean": -7.123555555555557,
+          "lower": -25.726045299083168,
+          "upper": 11.478934187972053
+        },
+        "family_balanced_capped_bb100": {
+          "50": {
+            "specialist480": 50.0,
+            "flop480late504": 50.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          },
+          "100": {
+            "specialist480": 100.0,
+            "flop480late504": 100.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          },
+          "200": {
+            "specialist480": 200.0,
+            "flop480late504": 200.0,
+            "paired_change": {
+              "mean": 0.0,
+              "lower": 0.0,
+              "upper": 0.0
+            }
+          }
+        }
+      },
+      "holdout": {
+        "field_weights": {
+          "varied": 0.5,
+          "solverlike": 0.5
+        },
+        "breadth": {
+          "specialist480": {
+            "positive_fields": [
+              "varied",
+              "solverlike"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "varied"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 0.5,
+            "weakest_field_by_point_estimate": "solverlike",
+            "minimum_field_mean_bb100": {
+              "mean": 35.39280555555555,
+              "lower": -9.550351311784517,
+              "upper": 80.33596242289562
+            }
+          },
+          "flop480late504": {
+            "positive_fields": [
+              "varied",
+              "solverlike"
+            ],
+            "positive_fields_simultaneous_lower_above_zero": [
+              "varied"
+            ],
+            "family_balanced_positive_share": 1.0,
+            "family_balanced_confirmed_positive_share": 0.5,
+            "weakest_field_by_point_estimate": "solverlike",
+            "minimum_field_mean_bb100": {
+              "mean": 15.126777777777779,
+              "lower": -28.729602571309233,
+              "upper": 58.983158126864794
+            }
+          }
+        },
+        "uncapped_family_balanced_change_bb100": {
+          "mean": -35.89988888888888,
+          "lower": -60.37004291044512,
+          "upper": -11.429734867332645
+        },
+        "family_balanced_capped_bb100": {
+          "50": {
+            "specialist480": 42.69640277777778,
+            "flop480late504": 32.56338888888889,
+            "paired_change": {
+              "mean": -10.133013888888884,
+              "lower": -21.008025619097914,
+              "upper": 0.7419978413201402
+            }
+          },
+          "100": {
+            "specialist480": 67.69640277777778,
+            "flop480late504": 57.56338888888889,
+            "paired_change": {
+              "mean": -10.133013888888884,
+              "lower": -21.008025619097914,
+              "upper": 0.7419978413201402
+            }
+          },
+          "200": {
+            "specialist480": 117.69640277777778,
+            "flop480late504": 107.5633888888889,
+            "paired_change": {
+              "mean": -10.133013888888884,
+              "lower": -21.008025619097914,
+              "upper": 0.7419978413201402
+            }
+          }
+        }
+      }
+    },
+    "uncertainty": {
+      "confidence": 0.95,
+      "simultaneous_estimates": 27,
+      "critical_z": 3.1130172634086897,
+      "method": "Large-sample Bonferroni intervals for both absolute means and the paired change per field. Six seats and all fixed training seeds are averaged inside the original card. Group bounds propagate these simultaneous intervals and allow arbitrary field correlation."
+    },
+    "scope": "Conditional on the fixed policies, training seeds, and declared opponent lineups. Weights are equal across families and equal within family. Saturation applies to each lineup mean before weighting. The holdout has its own cards and separate summary."
+  },
+  "scope": "Street rollback diagnostic on the previously observed opponent-diversity cards. These data motivated selection; all interval estimates are descriptive. Six seats and three fixed seeds repeat each original card. The nine field labels and original field roles are retained. No fitting or new self-play.",
+  "plan_sha256": "c359bdd8a4b8c0d18b905262dd1a4c41d9bda69e563a90241dc13a8efba0db48",
+  "previous_plan_sha256": "a851844aee89e4032992840e40b2bf41ac765cc132dd5be9f94fee09e9540b43",
+  "previous_reference_plan_sha256": "691897dda94b12155ed6cf4141e866a02d3604b633e6a00186d768b41d5ab2d8",
+  "previous_summary_sha256": "070c481106dd77ba6bbc9dcd20b6d9969cc0e6d7b1291c3e5d91ae074348e515",
+  "cell_result_sha256": {
+    "public-seed-342-specialist480": "8f92a48418e06821e74ff38cc3a6cc11ee634cb0dc3478b6c29490e2c3fb21d5",
+    "public-seed-342-diverse504": "084c41ca9febf2b87131b1e57a813f51d3996a3fb945162e19b3526ba297f31b",
+    "public-seed-343-specialist480": "0d22f2c7f0a5997d6d23a3112a9ac5a4eb6f043b327d46e615051ce942b5601a",
+    "public-seed-343-diverse504": "52831b4f24e26e75f6d0bd4a155179f4986fad6dea8a9c4783fdd7a621e1868e",
+    "public-seed-344-specialist480": "9959970aff0739a85ed6df89501682bbcb5b6a2dc0803f27aaed66767a8f9ed8",
+    "public-seed-344-diverse504": "3ce049c389470c40d5c0911597d69b57985972c1fc898fedf1717be9ff3f59ee",
+    "noregrets-seed-342-specialist480": "b9b459690b936431f6db639f4de2667fcff7190296e4fdfb56557962523541c5",
+    "noregrets-seed-342-diverse504": "ee7c147784faa973ca1672a000e1b3a70373c30fe639e2070bfeb5705fe6e127",
+    "noregrets-seed-343-specialist480": "22a16f3886a756ef944173319603c33e5dd8ee790dd9d2246975ceb0fd11ef8f",
+    "noregrets-seed-343-diverse504": "7c9df195cba0529008a2797c460386c90f911c441dad384b9a4e1083bf66bbbc",
+    "noregrets-seed-344-specialist480": "bcad65c333f174a0e443ddf3e256e4c1e32855054459f2d4d1b043cda5726ee7",
+    "noregrets-seed-344-diverse504": "64ab635b76686156ae34f22b245483bdf9c1c55557bb9521b6704ca3eca0d22e",
+    "rich96-seed-342-specialist480": "b7697e5b94e8f8c88c2be7fc47375b2a452766e50aa71c25bc9193a9e7913bc0",
+    "rich96-seed-342-diverse504": "4aa237d1f4766f1e09f6e60277adb64cab2dbab7bd75eee6b103bcd3480a733c",
+    "rich96-seed-343-specialist480": "64ade2cfd178505e8aec4dfb1d5692717c18465a7a2217187bdcaa779eb9dd04",
+    "rich96-seed-343-diverse504": "f461341c404980fa92ce1a0f443c47e97d8e753a731f0c00e51659a4ca98984d",
+    "rich96-seed-344-specialist480": "22ade04a885b3a9182a44a80244184108d07bff27b17ee4ae86152db968a7951",
+    "rich96-seed-344-diverse504": "4b4c6ec8317d30e00b671817b5a28decb86dbb3d7a47f372b2b2c42564f60227",
+    "calling-station-seed-342-specialist480": "839308d55e4d38f5550a587bf74c6e8b7c0b185c1b6db2a6d182409943f12cff",
+    "calling-station-seed-342-diverse504": "f2eb0703af071d1df4dea4e45660dfa7130f3f43736f9cfcd0d192374b57cea8",
+    "calling-station-seed-343-specialist480": "1c3768cf3303d9381f534664b0b65516cfb290f44427536ca906ecbc86eac0f7",
+    "calling-station-seed-343-diverse504": "0111a31dabab3240cb2279c7606436726077f2bd7517bcc46cd5a56e0572d821",
+    "calling-station-seed-344-specialist480": "d06acc36d6938a6036bea00ab82fc0e3b970b1da190db877cb35ce53271c5763",
+    "calling-station-seed-344-diverse504": "31b078a9d861632b9936b7f4e9bde62df1c3c97e40ec78f886a436b90ed360b3",
+    "tight-value-seed-342-specialist480": "042904dacd2dd36dcd2de96a3c33e1abdae6eb5cd9f742e570f7eaa3e3db523d",
+    "tight-value-seed-342-diverse504": "69e10c53c7adcc26bb01b65810cee5392e0ba1387273bcfb4cbdccacec536641",
+    "tight-value-seed-343-specialist480": "31b606beace71bd857f7a2ef7b0b20a955b100efec014c150910badca8b4405c",
+    "tight-value-seed-343-diverse504": "55df8959467a62eea5c13acc90afa96ba51716b9f93dd458100d13376b92739c",
+    "tight-value-seed-344-specialist480": "8b8a435dde439ec28aab52ffe361847284cac38bdf7e846aea29a8198677d487",
+    "tight-value-seed-344-diverse504": "bad45d87b6ca8a7a5f0148fa2a8ce4dd007601c4808dd67937f57fd562ec40a7",
+    "pressure-seed-342-specialist480": "be0f9c43687b9dbf4debcd7b858af66b29f68846a8039970b447dff73b988f1f",
+    "pressure-seed-342-diverse504": "e4982c2bf801479e384fed3aef07f3c8bf6e5e1afd3610c6397b83706d990a95",
+    "pressure-seed-343-specialist480": "e38639d843f4b1b08bf49e7d264119ee5aca527dcc9b217e95e861202d685c6d",
+    "pressure-seed-343-diverse504": "ed0c9905d1e3395e7e5f4bcf9bb20129a4cb267da2ab53d63752f650d4ee39ec",
+    "pressure-seed-344-specialist480": "86d838203176871383440349ed3867783966a602e80f33514a9a68daa6dbcba5",
+    "pressure-seed-344-diverse504": "427fd7512db2337c0844ef0cfcd95912b4a813756f698b0f1fbb285ca8a56231",
+    "mixed-seed-342-specialist480": "31f0d395c859ed5ad9ce9f66a6cb5e12c0734a7fbb359aef8c69d0f51a64a9fe",
+    "mixed-seed-342-diverse504": "852bb35756587fd5c3bb349f6e6728e35a5f9d977950f334b7a8225aca1090c6",
+    "mixed-seed-343-specialist480": "af4baac90de80416460eac1077f3bdc3f09160979c5621307f94c691cb9374fb",
+    "mixed-seed-343-diverse504": "874498a50e806d04db3a94132d0cdf6afa5554ccc7644f4455eef98e581fb47b",
+    "mixed-seed-344-specialist480": "eb3ee360233495426bb097d1e0b08ab79337ad6fdb3c1e2e243f5f9c9200268a",
+    "mixed-seed-344-diverse504": "6f6f3f28732bd36965955ec919c08422c05a82ba53d712be5194d17497d5814d",
+    "varied-seed-342-specialist480": "b33e7b1d9b85dc377f4634260232733affc269925ad8816bea51642f17ce2f38",
+    "varied-seed-342-diverse504": "d063764dd613461a8d75fe18d490e741dd5e652042797c1caa7d44688608d89d",
+    "varied-seed-343-specialist480": "0f265b42548e639c5e4f87b957c4d9be8f03a95b442fe312ae289aab5ada7950",
+    "varied-seed-343-diverse504": "8e7c8ce47efee7f54669299ad58a4a096a0e9176c3b607a1f735b087e63c54eb",
+    "varied-seed-344-specialist480": "98bde4b852d905379b79b7605bd0f6438bd7273760143b4433d51edd033a5a6d",
+    "varied-seed-344-diverse504": "1d00b09644a6148be8b6adba4027b00ff0b7fe090e6f1f716e80bd6f23cbc3f9",
+    "solverlike-seed-342-specialist480": "eefbc21489ec2c99e4653c497c2cfcfac2ff9c6076ed0c3635e0e3049a0cef34",
+    "solverlike-seed-342-diverse504": "d2ef031cfde43aab4f49a121ba6e0ccd0948080b25d8bd5c3a26fa8f305febc6",
+    "solverlike-seed-343-specialist480": "393017f6b7ab3c9d8f126020bd59d15f6b9b9e8d0289595ff974b920825b6321",
+    "solverlike-seed-343-diverse504": "88c3b9b25d99a15c120a9b3193edd810e812e46bb0eef586d352e2adcece490b",
+    "solverlike-seed-344-specialist480": "c20b1f8609632ac53340244c14b82aec37420aa4a66c71d131da5ad54eb14ac5",
+    "solverlike-seed-344-diverse504": "cfc6a2a24ff234df8c58d5efae881ed2232d077c0ac3fab4ccf8f238dc705657",
+    "public-seed-342-flop480late504": "eb2b1474c6e67b547ab40c6bd7cf878f34a43b97971235a97a7ae42c88c9c3aa",
+    "public-seed-343-flop480late504": "9b5a40cb15106f70c3772504db68eae5b08522ff2598c9f7c49407be59052821",
+    "public-seed-344-flop480late504": "4a9772eab72e4335ebfcc1ab1d5a60e56ef820b3e934fb70669317d847e5c02b",
+    "noregrets-seed-342-flop480late504": "8e50634169ee7bc159994a53fa3e2dd1e314378c9a6cb28e047daf8e31ad5e53",
+    "noregrets-seed-343-flop480late504": "6e01143ebd76a714ac502603c4d408c7d30ed41264acedf57d067599ecc1efe2",
+    "noregrets-seed-344-flop480late504": "c9256a4bb0fc9fc6b266e656afc292289b8f431940f2fdb8059d58a70579539a",
+    "rich96-seed-342-flop480late504": "0765b13fce9eb675166a6a13023868813d3e88b125c2d8108bde90ce9971d5fc",
+    "rich96-seed-343-flop480late504": "9ee0a3ce8b1e990503ebea0d580b495598a436bda49d3fe1079ad766217278a2",
+    "rich96-seed-344-flop480late504": "38f22718eb2b996c07b9716c8bd6dcdcc43983a688313337803e0d9cc28d0a16",
+    "calling-station-seed-342-flop480late504": "7215b78e00a93de82d58be498678fe6a235ac461eb60c0adc89de72b272be469",
+    "calling-station-seed-343-flop480late504": "04a8a339de801e6fa66b677db4ac0993e097f8f81ecb14369a71ef69fbf35af8",
+    "calling-station-seed-344-flop480late504": "4583da4d6882020e08b771b0e4ad69de6c15863deb0fa335834598d36cd34bf8",
+    "tight-value-seed-342-flop480late504": "7c9f86a2369f1212c6252b10d30aa4e428e951971ba430a2e8eb9c1dfd1b15f7",
+    "tight-value-seed-343-flop480late504": "7ffd9499bc75ec00b42ba00b9c08a313d54488fd27705718aa290b51b2a12cad",
+    "tight-value-seed-344-flop480late504": "4b78f5b40d67e766008c82b1295010c12505254dd7306fd9489980e60544bc7a",
+    "pressure-seed-342-flop480late504": "4db835a79dcef6eae47672b35871a817e89126b522fcc8597b4223f1b4d7a3f0",
+    "pressure-seed-343-flop480late504": "d1c6e145186b59838c78d55cce216fc87a77210120916d93bef2315005beffc2",
+    "pressure-seed-344-flop480late504": "858a153a5b94f1a594547ca0b78d03b6d43385d3c82e6142cd93bdf697826591",
+    "mixed-seed-342-flop480late504": "579869dd4b85bf0a92557672833315c77cf12e6f9c232ac199ab9309dc2d1bb2",
+    "mixed-seed-343-flop480late504": "4a6ef33dc4bf47c8f991a246e201c08c2634c63e34cdeecf487a615be7faa9bd",
+    "mixed-seed-344-flop480late504": "8e41260486fdda7ca1bb8de9ca5a3967d989e42bdba24f983ca402ce60cf2333",
+    "varied-seed-342-flop480late504": "4b31b4e6e83eb3ac35c6428aadfbb610c11466f087335a4dce7e15ba1ebfe268",
+    "varied-seed-343-flop480late504": "88ef6d41d3af9bc74ab6edda11a31f3ebbc8874662aa73923a20ee65da69a57b",
+    "varied-seed-344-flop480late504": "c7e005ab8807fe2cdad8f13e5049cc443128f038bb14e59c30fe9cc79bc0816c",
+    "solverlike-seed-342-flop480late504": "77bc42ebfacc24da3717754647d849681765618c5b4e52238dbe9575e8cae3ec",
+    "solverlike-seed-343-flop480late504": "87dfdb8e31b2ec08c2121187bbbaa43adfc55e564986de7def39de79d1485163",
+    "solverlike-seed-344-flop480late504": "e64b64cf22a9b06b11b04f128fbb66cf035ed4faeb31ff7856f67bbb7e8f1975"
+  },
+  "snapshot_hand_assignments": {
+    "public/342": {
+      "counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "hand_choice_sha256": "5b48ff3c41405aca2f89a3ab948d91059fdb8cb8861eeb050a9f50010a3e4df9"
+    },
+    "public/343": {
+      "counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "hand_choice_sha256": "5b48ff3c41405aca2f89a3ab948d91059fdb8cb8861eeb050a9f50010a3e4df9"
+    },
+    "public/344": {
+      "counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "hand_choice_sha256": "5b48ff3c41405aca2f89a3ab948d91059fdb8cb8861eeb050a9f50010a3e4df9"
+    },
+    "noregrets/342": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "noregrets/343": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "noregrets/344": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "rich96/342": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "rich96/343": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "rich96/344": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "calling-station/342": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "calling-station/343": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "calling-station/344": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "tight-value/342": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "tight-value/343": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "tight-value/344": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "pressure/342": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "pressure/343": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "pressure/344": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "mixed/342": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "mixed/343": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "mixed/344": {
+      "counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "hand_choice_sha256": "f84e35d5b3fd1022a09ecf10a6095bc1cb18ef8bf5d3fff10799210e2f1b5f51"
+    },
+    "varied/342": {
+      "counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "hand_choice_sha256": "03766a2a7604e1ed3aaa5d0ea4de1fb47a6d941a4dffc0dc9f016e9c1c4d60fd"
+    },
+    "varied/343": {
+      "counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "hand_choice_sha256": "03766a2a7604e1ed3aaa5d0ea4de1fb47a6d941a4dffc0dc9f016e9c1c4d60fd"
+    },
+    "varied/344": {
+      "counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "hand_choice_sha256": "03766a2a7604e1ed3aaa5d0ea4de1fb47a6d941a4dffc0dc9f016e9c1c4d60fd"
+    },
+    "solverlike/342": {
+      "counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "hand_choice_sha256": "f184231159940a02e0f256d2a5d0e2f668e35b2999ef51088401380079961b4e"
+    },
+    "solverlike/343": {
+      "counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "hand_choice_sha256": "f184231159940a02e0f256d2a5d0e2f668e35b2999ef51088401380079961b4e"
+    },
+    "solverlike/344": {
+      "counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "hand_choice_sha256": "f184231159940a02e0f256d2a5d0e2f668e35b2999ef51088401380079961b4e"
+    }
+  }
+}

@@ -1,13 +1,15 @@
 {
-  "state": "evaluating",
-  "observed_utc": "2026-11-23T08:35:33.809235+00:00",
+  "state": "fresh_public_evaluation",
+  "observed_utc": "2026-11-23T08:45:31.465334+00:00",
   "primary_plan_sha256": "c359bdd8a4b8c0d18b905262dd1a4c41d9bda69e563a90241dc13a8efba0db48",
   "fresh_plan_sha256": "c2a2bb4b49143e5fe5cd12f1c9c3645af1ed71f17dd28eb4a86a0e9ad8d3e6a1",
-  "new_primary_cells_completed": 3,
+  "new_primary_cells_completed": 27,
   "new_primary_cells_planned": 27,
   "prior_reference_cells": 54,
   "fresh_public_cells_planned": 9,
   "training_updates": 0,
   "model_promoted": false,
-  "complete": false
+  "complete": false,
+  "main_audit_complete": true,
+  "main_summary_sha256": "4c4c72cd745d3f13df49306f886fc10fbb3e3c3d177e36081a2a7da5b966dc09"
 }
