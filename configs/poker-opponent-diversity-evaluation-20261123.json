@@ -1,0 +1,39 @@
+{
+  "study": "opponent-diversity-20261123",
+  "seeds": [342, 343, 344],
+  "labels": ["specialist480", "control504", "diverse504"],
+  "previous_evaluation_plan_sha256": "87927530b0cfbd8e049769fef29dcdc8a02640869ef189799c1e91e676c6ae07",
+  "previous_stage_sha256": "288ec2d5f9068221b5922cfeac29301f226e030734e67b15a4399748224d071e",
+  "upstream_solverlike_commit": "e504793d480b1b975f25258d25939b45c6dbd5a4",
+  "upstream_solverlike_sha256": "76ef638a9a7e9762316ba34d54eca435bd37086afd9bb30433423346282a5240",
+  "ranges": {
+    "public": {"deal_seed": 2040100000, "deals": 20000},
+    "panel": {"deal_seed": 2040200000, "deals": 2000},
+    "varied": {"deal_seed": 2040300000, "deals": 2000},
+    "solverlike": {"deal_seed": 2040400000, "deals": 2000}
+  },
+  "fields": {
+    "public": {"role": "primary", "family": "public", "cards": "public"},
+    "noregrets": {"role": "primary", "family": "noregrets", "cards": "panel"},
+    "rich96": {"role": "primary", "family": "historical-rich", "cards": "panel"},
+    "calling-station": {"role": "primary", "family": "rules", "cards": "panel"},
+    "tight-value": {"role": "primary", "family": "rules", "cards": "panel"},
+    "pressure": {"role": "primary", "family": "rules", "cards": "panel"},
+    "mixed": {"role": "diagnostic", "family": "legacy-mixed", "cards": "panel"},
+    "varied": {"role": "holdout", "family": "heldout-lineup", "cards": "varied"},
+    "solverlike": {"role": "holdout", "family": "upstream-solverlike-rules", "cards": "solverlike"}
+  },
+  "primary": "diverse504 minus archived matched same-budget control504 on equal-family capped +100 bb/100; same 480 start, three fixed seeds, frozen 480 preflop, 486/492/498/504 postflop mixture once per hand for both candidates",
+  "diagnostics": ["diverse504 minus specialist480", "control504 minus specialist480", "per-lineup absolute bb/100", "paired public difference", "six primary tables profitable", "capped +50 and +200, and uncapped", "known varied and previously unplayed solverlike tables on separate fresh card sets"],
+  "intervals": "Per named comparison, simultaneous 95 percent for 27 absolute and paired table estimates; isolated nominal paired 95 percent differences on public are reported separately.",
+  "statistical_unit": "One original deal, after averaging the six rotated hero seats and the three fixed training seeds.",
+  "hand_protocol": "At each new deal-seat hand draw one private scheduled mixture slot using the common hand seed and reuse it to the river; semantic action randomness as in the audited prior study.",
+  "early_reference_jobs": ["public-seed-342-specialist480", "public-seed-342-control504"],
+  "cells": 81,
+  "hands": 1944000,
+  "unique_original_card_blocks": 26000,
+  "cell_timeout_seconds": 7200,
+  "workers": 4,
+  "fitting_against_evaluation_assets": false,
+  "model_promotion": false
+}

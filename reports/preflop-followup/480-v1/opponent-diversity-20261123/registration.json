@@ -1,0 +1,113 @@
+{
+  "created_utc": "2026-11-23T07:15:59.078510+00:00",
+  "config_sha256": "e808a19f69945dfbf3f1d13b2b9080b3941fefaf23415ea95c51bc94c053550c",
+  "control_training_plan_sha256": "533a88378fe0a4b27cd98ece6d493ca62600c66ee48265fcdbc57cac379b594c",
+  "checked_prior_card_ranges": 41,
+  "fresh_evaluation_cards": {
+    "public": [
+      2040100000,
+      20000
+    ],
+    "known_panel": [
+      2040200000,
+      2000
+    ],
+    "varied": [
+      2040300000,
+      2000
+    ],
+    "solver-like": [
+      2040400000,
+      2000
+    ]
+  },
+  "historical_policies": {
+    "342": {
+      "300": {
+        "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/checkpoints/iter-00300/current.npz",
+        "sha256": "bf5f6c05aa43bc692024be31a2b6b8fdb540a8db65dd78223949af4435ba70a1"
+      },
+      "360": {
+        "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/checkpoints/iter-00360/current.npz",
+        "sha256": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76"
+      },
+      "420": {
+        "path": "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-342/checkpoints/iter-00420/current.npz",
+        "sha256": "f23e592981774d6b99da6910513dc83c91cd5474b9a22b34bec72e1463951607"
+      },
+      "480": {
+        "path": "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-342/checkpoints/iter-00480/current.npz",
+        "sha256": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78"
+      }
+    },
+    "343": {
+      "300": {
+        "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/checkpoints/iter-00300/current.npz",
+        "sha256": "c7565aef0df6313122c16f57012f3209a0a984a1c09136dd550e5b6f27e07e80"
+      },
+      "360": {
+        "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/checkpoints/iter-00360/current.npz",
+        "sha256": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517"
+      },
+      "420": {
+        "path": "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-343/checkpoints/iter-00420/current.npz",
+        "sha256": "7fdcbe9ef679de27099bf76a184c8849979b76941072bdfa8f9d600722f4005c"
+      },
+      "480": {
+        "path": "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-343/checkpoints/iter-00480/current.npz",
+        "sha256": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757"
+      }
+    },
+    "344": {
+      "300": {
+        "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/checkpoints/iter-00300/current.npz",
+        "sha256": "c6963d30938a59c8073a86e84dab29dd633c3b7aecf69c4655225af2bc852c2e"
+      },
+      "360": {
+        "path": "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/checkpoints/iter-00360/current.npz",
+        "sha256": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7"
+      },
+      "420": {
+        "path": "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-344/checkpoints/iter-00420/current.npz",
+        "sha256": "0a6700790cc5bd19d6756c45c397c5cf7340f21a79c72b9d8d3855de94c84784"
+      },
+      "480": {
+        "path": "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-344/checkpoints/iter-00480/current.npz",
+        "sha256": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431"
+      }
+    }
+  },
+  "frozen_files": {
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/stage-ready.json": "288ec2d5f9068221b5922cfeac29301f226e030734e67b15a4399748224d071e",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/population/summary.json": "52a98ce8ba93ac612c48b679a6cd473685a96730db1c1c0bcd4f83c90bb89448",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/population/evaluation-plan.json": "87927530b0cfbd8e049769fef29dcdc8a02640869ef189799c1e91e676c6ae07",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/stage-ready.json": "f8a85f6f947658ac075e73a8aaff1235ebab7f136c7d6892750b2239a50f6a2a",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/stage-ready.json": "3a8563fccf7acf7518c1899b8c89ce47412a83021a054764dcf26a781861ea65",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/stage-ready.json": "b4a01a4633d0a94fea9d3e5818c5be7ff95f054faef708177141640fc5d79f39",
+    "/workspace/deep/.cache/fullhouse-bot/bots/adversarial/solver_like.py": "76ef638a9a7e9762316ba34d54eca435bd37086afd9bb30433423346282a5240",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/checkpoints/iter-00300/current.npz": "bf5f6c05aa43bc692024be31a2b6b8fdb540a8db65dd78223949af4435ba70a1",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-342/checkpoints/iter-00360/current.npz": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-342/checkpoints/iter-00420/current.npz": "f23e592981774d6b99da6910513dc83c91cd5474b9a22b34bec72e1463951607",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-342/checkpoints/iter-00480/current.npz": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-342/parent360.npz": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-342/parent420.npz": "f23e592981774d6b99da6910513dc83c91cd5474b9a22b34bec72e1463951607",
+    "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-342/specialist.json": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-342/mixture.json": "6a7ff6f5536f05f94edd9a1c4667a547d3ce50e3ccdbeb7f193ceb5f9dddf92a",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/checkpoints/iter-00300/current.npz": "c7565aef0df6313122c16f57012f3209a0a984a1c09136dd550e5b6f27e07e80",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-343/checkpoints/iter-00360/current.npz": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-343/checkpoints/iter-00420/current.npz": "7fdcbe9ef679de27099bf76a184c8849979b76941072bdfa8f9d600722f4005c",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-343/checkpoints/iter-00480/current.npz": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-343/parent360.npz": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-343/parent420.npz": "7fdcbe9ef679de27099bf76a184c8849979b76941072bdfa8f9d600722f4005c",
+    "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-343/specialist.json": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-343/mixture.json": "6af226d40919e8ffb2e7a4e4b45162e30c89af4b36d44809b05b9bfe60d0e6de",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/checkpoints/iter-00300/current.npz": "c6963d30938a59c8073a86e84dab29dd633c3b7aecf69c4655225af2bc852c2e",
+    "/workspace/deep/artifacts/bounded-continuation/20261113T014811152621Z/campaign/seed-344/checkpoints/iter-00360/current.npz": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-344/checkpoints/iter-00420/current.npz": "0a6700790cc5bd19d6756c45c397c5cf7340f21a79c72b9d8d3855de94c84784",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-344/checkpoints/iter-00480/current.npz": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431",
+    "/workspace/deep/artifacts/average-continuation/20261117T032100Z/campaign/seed-344/parent360.npz": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+    "/workspace/deep/artifacts/average-extension/20261117T063900Z/campaign/seed-344/parent420.npz": "0a6700790cc5bd19d6756c45c397c5cf7340f21a79c72b9d8d3855de94c84784",
+    "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-344/specialist.json": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/snapshots/seed-344/mixture.json": "031056286cbfa9617da937e8f84bf9a4fab17d81d227b6bd30670ab4d9121901"
+  }
+}
