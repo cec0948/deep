@@ -1,0 +1,89 @@
+{
+  "source_stage_sha256": "8a59fdc2480bde76d882f134e76501df7e2feb0b6eefad797c87a7754adc4cf9",
+  "checkpoint_iteration": 504,
+  "new_collection_iterations": [
+    481,
+    504
+  ],
+  "scope": "Final fitting distribution; actual draw counts by collection iteration were not logged.",
+  "by_seed": {
+    "342": {
+      "postflop": {
+        "rows": 510794,
+        "recent_rows": 22175,
+        "recent_fraction": 0.04341280437906475,
+        "recent_draw_probability": 0.07086069571570838
+      },
+      "flop": {
+        "rows": 129196,
+        "recent_rows": 6123,
+        "recent_fraction": 0.04739310814576303,
+        "recent_draw_probability": 0.08159083104559146
+      },
+      "turn": {
+        "rows": 175595,
+        "recent_rows": 7501,
+        "recent_fraction": 0.04271761724422677,
+        "recent_draw_probability": 0.06998031680501501
+      },
+      "river": {
+        "rows": 206003,
+        "recent_rows": 8551,
+        "recent_fraction": 0.04150910423634607,
+        "recent_draw_probability": 0.06101093929651866
+      }
+    },
+    "343": {
+      "postflop": {
+        "rows": 515968,
+        "recent_rows": 24771,
+        "recent_fraction": 0.04800879124286778,
+        "recent_draw_probability": 0.08829032312804441
+      },
+      "flop": {
+        "rows": 125773,
+        "recent_rows": 6639,
+        "recent_fraction": 0.05278557401032018,
+        "recent_draw_probability": 0.09637218803433281
+      },
+      "turn": {
+        "rows": 178682,
+        "recent_rows": 8699,
+        "recent_fraction": 0.048684254709483885,
+        "recent_draw_probability": 0.09286279308469027
+      },
+      "river": {
+        "rows": 211513,
+        "recent_rows": 9433,
+        "recent_fraction": 0.044597731581510355,
+        "recent_draw_probability": 0.07563598826511012
+      }
+    },
+    "344": {
+      "postflop": {
+        "rows": 517278,
+        "recent_rows": 24066,
+        "recent_fraction": 0.0465243060791296,
+        "recent_draw_probability": 0.07684688223678367
+      },
+      "flop": {
+        "rows": 118818,
+        "recent_rows": 5600,
+        "recent_fraction": 0.04713090609166961,
+        "recent_draw_probability": 0.07707682297661357
+      },
+      "turn": {
+        "rows": 180993,
+        "recent_rows": 8575,
+        "recent_fraction": 0.047377522887625485,
+        "recent_draw_probability": 0.0792560430525727
+      },
+      "river": {
+        "rows": 217467,
+        "recent_rows": 9891,
+        "recent_fraction": 0.04548276290195754,
+        "recent_draw_probability": 0.07420778068116467
+      }
+    }
+  }
+}

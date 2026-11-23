@@ -1,0 +1,397 @@
+{
+  "study": "flop-rollback-20261123",
+  "checked_utc": "2026-11-23T08:33:49.395185+00:00",
+  "kind": "evaluation-restore-reference",
+  "new_weight_archives": 0,
+  "remote_queries_this_check": 0,
+  "evaluation_results_in_source_archives": false,
+  "source_stage_sha256": "8a59fdc2480bde76d882f134e76501df7e2feb0b6eefad797c87a7754adc4cf9",
+  "source_archives": {
+    "specialist480_preflop": {
+      "bytes": 3280171,
+      "sha256": "424b8e76a31f359f21de47ec02c58fd3a902ab2639f9f7e9a8785ff253d63f2e",
+      "local_archive_size_and_sha256_verified": true,
+      "indexed_remote_size_and_owner_only_verified": true,
+      "indexed_remote_sha256_verified": false,
+      "indexed_at_utc": "2026-11-18T02:26:58.414261+00:00",
+      "retained_dependencies": [
+        "full480"
+      ],
+      "source_verification_utc": "2026-11-18T02:26:58.414261+00:00"
+    },
+    "full480": {
+      "bytes": 107049296,
+      "sha256": "f01399198fd4c3eb5fc58be569d726fcab5298995c0123dc531b108961af7f59",
+      "local_archive_size_and_sha256_verified": true,
+      "indexed_remote_size_and_owner_only_verified": true,
+      "indexed_remote_sha256_verified": false,
+      "indexed_at_utc": "2026-11-17T09:07:15.904375+00:00",
+      "retained_dependencies": [
+        "original360"
+      ],
+      "source_verification_utc": "2026-11-17T09:11:22.053861+00:00"
+    },
+    "diverse504": {
+      "bytes": 133718867,
+      "sha256": "129ca3bc40648d81f6ae59f60ff9eec73fd7e29906cdf92ef162aaaaec7c7352",
+      "local_archive_size_and_sha256_verified": true,
+      "indexed_remote_size_and_owner_only_verified": true,
+      "indexed_remote_sha256_verified": false,
+      "indexed_at_utc": "2026-11-23T07:32:52.751145+00:00",
+      "retained_dependencies": [
+        "full480",
+        "specialist480_preflop"
+      ],
+      "source_verification_utc": "2026-11-23T07:32:53.685443+00:00"
+    },
+    "original360": {
+      "bytes": 90022512,
+      "sha256": "65ec65f90cc1c0f73700ec4683d421baaaeb4bb82bb10c14fa2c9249fc504be8",
+      "local_archive_size_and_sha256_verified": true,
+      "indexed_remote_size_and_owner_only_verified": true,
+      "indexed_remote_sha256_verified": false,
+      "indexed_at_utc": "2026-11-13T02:56:33.776489+00:00",
+      "retained_dependencies": []
+    }
+  },
+  "members_by_seed": {
+    "342": {
+      "shared_preflop": {
+        "archive": "specialist480_preflop",
+        "member": "seed-342/specialist.npz",
+        "bytes": 1183010,
+        "sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12"
+      },
+      "postflop480": {
+        "archive": "full480",
+        "member": "seed-342/current.npz",
+        "bytes": 1183010,
+        "sha256": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78"
+      },
+      "postflop504": {
+        "archive": "diverse504",
+        "member": "pool504/seed-342/checkpoints/iter-00504/current.npz",
+        "bytes": 1183010,
+        "sha256": "188d61309477b1acfbe340089ee0b0427a85551534928af504449b56fab416e9"
+      }
+    },
+    "343": {
+      "shared_preflop": {
+        "archive": "specialist480_preflop",
+        "member": "seed-343/specialist.npz",
+        "bytes": 1183010,
+        "sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa"
+      },
+      "postflop480": {
+        "archive": "full480",
+        "member": "seed-343/current.npz",
+        "bytes": 1183010,
+        "sha256": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757"
+      },
+      "postflop504": {
+        "archive": "diverse504",
+        "member": "pool504/seed-343/checkpoints/iter-00504/current.npz",
+        "bytes": 1183010,
+        "sha256": "b42ac903c4ce486bfdf112f05ae53ee50164639a6661917fe76d4601a7b1335a"
+      }
+    },
+    "344": {
+      "shared_preflop": {
+        "archive": "specialist480_preflop",
+        "member": "seed-344/specialist.npz",
+        "bytes": 1183010,
+        "sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4"
+      },
+      "postflop480": {
+        "archive": "full480",
+        "member": "seed-344/current.npz",
+        "bytes": 1183010,
+        "sha256": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431"
+      },
+      "postflop504": {
+        "archive": "diverse504",
+        "member": "pool504/seed-344/checkpoints/iter-00504/current.npz",
+        "bytes": 1183010,
+        "sha256": "0ad600b939572f6d8d0be5415accfb1b7701788c7f1f44e62f9d4e8fbf38bb7c"
+      }
+    }
+  },
+  "registered_evaluation_plan_sha256": "c359bdd8a4b8c0d18b905262dd1a4c41d9bda69e563a90241dc13a8efba0db48",
+  "registered_wrapper_code": {
+    "path": "scripts/poker_flop_rollback.py",
+    "sha256": "f5a19bea33f000ea15918664ce24d8286a9c012f216785fc5ac7254330f615be"
+  },
+  "mixture_by_seed": {
+    "342": {
+      "registered_wrapper_sha256": "e70717c2c8e1a8ee1f8ea1395198dbc6c54cfe7788fdf85e123a24c1e99fed39",
+      "registered_parent_policy_sha256": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6",
+      "archive": "diverse504",
+      "captured_preflop": {
+        "member": "snapshots/seed-342/preflop.npz",
+        "bytes": 1183010,
+        "sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12"
+      },
+      "mixture_manifest": {
+        "member": "snapshots/seed-342/mixture.json",
+        "bytes": 1160,
+        "sha256": "bb219f6fd9c7828a7e6406230f42c178503f64a967ef6d7a4b7fee94b3f6349a"
+      },
+      "capture_plan": {
+        "member": "snapshots/seed-342/plan.json",
+        "bytes": 543,
+        "sha256": "4f6773327d55ac538304f4d92f85ca3d1d90dbdceb3c92f9b270b739a9929eeb"
+      },
+      "postflop": [
+        {
+          "iteration": 486,
+          "weight": {
+            "member": "snapshots/seed-342/iter-00486/current.npz",
+            "bytes": 1183010,
+            "sha256": "46b7d5ef5b9c2b4488921ee587a944712a2f56549d45c47fe0e667629c812980"
+          },
+          "receipt": {
+            "member": "snapshots/seed-342/iter-00486/receipt.json",
+            "bytes": 561,
+            "sha256": "4eb8d4c749a7ddddfbe098de18afc0471bd3dd9c45606a5a6cac988c8de10c3e"
+          }
+        },
+        {
+          "iteration": 492,
+          "weight": {
+            "member": "snapshots/seed-342/iter-00492/current.npz",
+            "bytes": 1183010,
+            "sha256": "f740373c64ce3bbb2175f588c051c6b51db87bb8631c76a91cf902d6f9eabc98"
+          },
+          "receipt": {
+            "member": "snapshots/seed-342/iter-00492/receipt.json",
+            "bytes": 561,
+            "sha256": "70f90b022e58aa62b9e585dc3f56a882fc8104ecd175574f8aa94ff2369a69eb"
+          }
+        },
+        {
+          "iteration": 498,
+          "weight": {
+            "member": "snapshots/seed-342/iter-00498/current.npz",
+            "bytes": 1183010,
+            "sha256": "e0659bf02655b05d630864f9472b9e6e2f288d01ca5b9640ddb0d955f98b20bd"
+          },
+          "receipt": {
+            "member": "snapshots/seed-342/iter-00498/receipt.json",
+            "bytes": 561,
+            "sha256": "df079beb8b95bfdcbf439cdf7b83137ec01bc9b86a27af873f8fe0192d7923b6"
+          }
+        },
+        {
+          "iteration": 504,
+          "weight": {
+            "member": "snapshots/seed-342/iter-00504/current.npz",
+            "bytes": 1183010,
+            "sha256": "188d61309477b1acfbe340089ee0b0427a85551534928af504449b56fab416e9"
+          },
+          "receipt": {
+            "member": "snapshots/seed-342/iter-00504/receipt.json",
+            "bytes": 561,
+            "sha256": "c9c89efe9d0b6cca1ae8fcf1909b9ef7ecec1dcd5034d5ab1418fac70c8d3939"
+          }
+        }
+      ],
+      "hand_selector_slots_exercised": [
+        486,
+        492,
+        498,
+        504
+      ]
+    },
+    "343": {
+      "registered_wrapper_sha256": "98435f4847466041a0bdf43e1f44cf834112bc902f814e9caf71dede662912cf",
+      "registered_parent_policy_sha256": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f",
+      "archive": "diverse504",
+      "captured_preflop": {
+        "member": "snapshots/seed-343/preflop.npz",
+        "bytes": 1183010,
+        "sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa"
+      },
+      "mixture_manifest": {
+        "member": "snapshots/seed-343/mixture.json",
+        "bytes": 1160,
+        "sha256": "858f000e59a1a2e0508b89ae959e122cbc074ab24dcd960d6bcc274ee060671c"
+      },
+      "capture_plan": {
+        "member": "snapshots/seed-343/plan.json",
+        "bytes": 543,
+        "sha256": "5df30904c46320ffe49567a56d0d31ea37f710771ed2dd6a8fd1a88baa29ad1e"
+      },
+      "postflop": [
+        {
+          "iteration": 486,
+          "weight": {
+            "member": "snapshots/seed-343/iter-00486/current.npz",
+            "bytes": 1183010,
+            "sha256": "6b7a68766bd813e3ed0e8e26b334998ae1a4fd976ecd630ddc5c049128782777"
+          },
+          "receipt": {
+            "member": "snapshots/seed-343/iter-00486/receipt.json",
+            "bytes": 561,
+            "sha256": "33162ec7de9e967ad66eee13efe89185af18513b86caa9959f10dcd1d5702cb2"
+          }
+        },
+        {
+          "iteration": 492,
+          "weight": {
+            "member": "snapshots/seed-343/iter-00492/current.npz",
+            "bytes": 1183010,
+            "sha256": "16b06472bc8e98cf0421cfc078bbbf08dd63261966ac393c7947d0d64fb40bfb"
+          },
+          "receipt": {
+            "member": "snapshots/seed-343/iter-00492/receipt.json",
+            "bytes": 561,
+            "sha256": "79f7f011693e5f32aaf72c24f950efcfd1e85493091c26f74de122cbace6d543"
+          }
+        },
+        {
+          "iteration": 498,
+          "weight": {
+            "member": "snapshots/seed-343/iter-00498/current.npz",
+            "bytes": 1183010,
+            "sha256": "1ce6b54f1af4ee242773026b5b7d0a77c29a6e5b6f286f8f8ad01690bd1fe267"
+          },
+          "receipt": {
+            "member": "snapshots/seed-343/iter-00498/receipt.json",
+            "bytes": 561,
+            "sha256": "1fb2f0d1fdb2fb311367204632731a799b8b24912d51709348393552d48788d8"
+          }
+        },
+        {
+          "iteration": 504,
+          "weight": {
+            "member": "snapshots/seed-343/iter-00504/current.npz",
+            "bytes": 1183010,
+            "sha256": "b42ac903c4ce486bfdf112f05ae53ee50164639a6661917fe76d4601a7b1335a"
+          },
+          "receipt": {
+            "member": "snapshots/seed-343/iter-00504/receipt.json",
+            "bytes": 561,
+            "sha256": "9e7b42c69fc707517c560b68f7d16749feaae13e93e7116aabe1d399046a90ad"
+          }
+        }
+      ],
+      "hand_selector_slots_exercised": [
+        486,
+        492,
+        498,
+        504
+      ]
+    },
+    "344": {
+      "registered_wrapper_sha256": "c6b69109cd57ba0604096eb9ec4d9279ff62a7b8ac8f8606e343fe74edd0067f",
+      "registered_parent_policy_sha256": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d",
+      "archive": "diverse504",
+      "captured_preflop": {
+        "member": "snapshots/seed-344/preflop.npz",
+        "bytes": 1183010,
+        "sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4"
+      },
+      "mixture_manifest": {
+        "member": "snapshots/seed-344/mixture.json",
+        "bytes": 1160,
+        "sha256": "9e65fdb3aad3aecfd984e8519121656b2c7774dec6410dfe27725659a4fe791e"
+      },
+      "capture_plan": {
+        "member": "snapshots/seed-344/plan.json",
+        "bytes": 543,
+        "sha256": "a73d7ed336c08b31bdb8d991c4c216f792ead2f038908ee44b3408daf3150cd1"
+      },
+      "postflop": [
+        {
+          "iteration": 486,
+          "weight": {
+            "member": "snapshots/seed-344/iter-00486/current.npz",
+            "bytes": 1183010,
+            "sha256": "07c25acd94d66be4831649b13e7e156c5091c71dece942c9e6c6c5475b8ef7ba"
+          },
+          "receipt": {
+            "member": "snapshots/seed-344/iter-00486/receipt.json",
+            "bytes": 561,
+            "sha256": "cb3dbb3db0ff9e3f9069fad7026d5c00f40851d1e77035df2ec2bf9c5d3b7468"
+          }
+        },
+        {
+          "iteration": 492,
+          "weight": {
+            "member": "snapshots/seed-344/iter-00492/current.npz",
+            "bytes": 1183010,
+            "sha256": "94c2412d54cc4ead549b08c0e640f4c5a869913ef1039f41ef1047145b843b5e"
+          },
+          "receipt": {
+            "member": "snapshots/seed-344/iter-00492/receipt.json",
+            "bytes": 561,
+            "sha256": "54840578358453071dce058d327c716b04d7d29100a7c8ad2f7a7f941da94116"
+          }
+        },
+        {
+          "iteration": 498,
+          "weight": {
+            "member": "snapshots/seed-344/iter-00498/current.npz",
+            "bytes": 1183010,
+            "sha256": "052a6b05e5ef9f19cef8789fe5d381e5a2adfa6daab6bba494321dcefed995b3"
+          },
+          "receipt": {
+            "member": "snapshots/seed-344/iter-00498/receipt.json",
+            "bytes": 561,
+            "sha256": "3b21395258f9c7293296aa4c265769e89e041fc7c6c78ec9fd8d619452a69952"
+          }
+        },
+        {
+          "iteration": 504,
+          "weight": {
+            "member": "snapshots/seed-344/iter-00504/current.npz",
+            "bytes": 1183010,
+            "sha256": "0ad600b939572f6d8d0be5415accfb1b7701788c7f1f44e62f9d4e8fbf38bb7c"
+          },
+          "receipt": {
+            "member": "snapshots/seed-344/iter-00504/receipt.json",
+            "bytes": 561,
+            "sha256": "0af4d064ad182c6911a3c74a8be3baa77933e124e6d618f78624682ed29a8d8a"
+          }
+        }
+      ],
+      "hand_selector_slots_exercised": [
+        486,
+        492,
+        498,
+        504
+      ]
+    }
+  },
+  "mixture_source_members": {
+    "source/bot/features.py": {
+      "member": "source/bot/features.py",
+      "bytes": 22137,
+      "sha256": "84bcbceeb95d853f74b860693abe8ca4d26ffe7578fd639633aa99e6f033def1"
+    },
+    "source/bot/deep_cfr_lookup.py": {
+      "member": "source/bot/deep_cfr_lookup.py",
+      "bytes": 6312,
+      "sha256": "9d288877f90d8c7962d7041e9cc2e6fb908009c8884a3d7863c4de1a5e9a4f20"
+    },
+    "source/data/preflop_equity.npz": {
+      "member": "source/data/preflop_equity.npz",
+      "bytes": 2160,
+      "sha256": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3"
+    },
+    "scripts/poker_capture_postflop_snapshots.py": {
+      "member": "scripts/poker_capture_postflop_snapshots.py",
+      "bytes": 12583,
+      "sha256": "10e92946537a9c1f1e1fd89520eb8bb96e19507331c0067415b38f8bbfa0ae68"
+    },
+    "scripts/poker_preflop_specialist.py": {
+      "member": "scripts/poker_preflop_specialist.py",
+      "bytes": 5550,
+      "sha256": "2e82de0aea77b750dbad7f005154f3122f4d202939764087ff3524a771cd4ba5"
+    }
+  },
+  "mixture_weight_members_verified": 12,
+  "archive_members_verified": 50,
+  "scope": "Local archive and member bytes were checked against current source weights, embedded manifests and the completed pool504 stage. Remote sizes and owner-only permissions describe prior backup verification. The 360 archive is a retained lineage dependency of full480; no 360 weights are routed by this evaluation.",
+  "restore": "Resolve each archive from the private index by its SHA-256. For split archives use the indexed restoration manifest. Verify the joined archive size/hash, extract the listed members per seed, then apply the registered per-street routing. For each seed, restore the 480 specialist exports under their registered source paths and regenerate its street-policy JSON. Match its registered SHA-256. Preserve the complete archived snapshot directory structure and original capture plan and receipts; the hybrid wrapper checks the 480 parent policy SHA-256 in that plan. Use the pinned wrapper code with that 480 policy and mixture.json. It routes preflop and flop to specialist480 and turn and river to the same single private uniform 486/492/498/504 draw for the whole hand. The final 504 NPZ alone cannot reproduce this mixture."
+}
