@@ -1,0 +1,177 @@
+{
+  "created_utc": "2026-11-23T06:41:33.266515+00:00",
+  "config_sha256": "0a5f900cef6f91da990a9305f071fa754f52fea746eb2d7f3bab91c17d432ecd",
+  "historical_ranges_checked": 38,
+  "previous_ranges": [
+    [
+      2026111201,
+      2026113201
+    ],
+    [
+      2026111203,
+      2026113203
+    ],
+    [
+      2037300000,
+      2037320000
+    ],
+    [
+      2026200000,
+      2026220000
+    ],
+    [
+      2026160000,
+      2026180000
+    ],
+    [
+      2026140000,
+      2026142000
+    ],
+    [
+      2037500000,
+      2037520000
+    ],
+    [
+      2037100000,
+      2037120000
+    ],
+    [
+      220261112,
+      220261114
+    ],
+    [
+      2037400000,
+      2037420000
+    ],
+    [
+      2035000000,
+      2035020000
+    ],
+    [
+      2026130000,
+      2026132000
+    ],
+    [
+      2026150000,
+      2026152000
+    ],
+    [
+      2026120000,
+      2026122000
+    ],
+    [
+      2037600000,
+      2037620000
+    ],
+    [
+      2037700000,
+      2037720000
+    ],
+    [
+      2037900000,
+      2037902000
+    ],
+    [
+      2037540000,
+      2037560000
+    ],
+    [
+      2037800000,
+      2037820000
+    ],
+    [
+      2037520000,
+      2037540000
+    ],
+    [
+      2038300000,
+      2038312000
+    ],
+    [
+      2038600000,
+      2038602000
+    ],
+    [
+      2038500000,
+      2038502000
+    ],
+    [
+      2038400000,
+      2038420000
+    ],
+    [
+      2037000000,
+      2037020000
+    ],
+    [
+      2037200000,
+      2037220000
+    ],
+    [
+      2037280000,
+      2037280020
+    ],
+    [
+      2037380000,
+      2037380020
+    ],
+    [
+      2037080000,
+      2037080020
+    ],
+    [
+      2038000000,
+      2038020000
+    ],
+    [
+      2038100000,
+      2038102000
+    ],
+    [
+      2038200000,
+      2038202000
+    ],
+    [
+      2038400000,
+      2038404000
+    ],
+    [
+      2037180000,
+      2037180020
+    ],
+    [
+      190261110,
+      190263110
+    ],
+    [
+      170261110,
+      170263110
+    ],
+    [
+      160261109,
+      160263109
+    ],
+    [
+      180261110,
+      180261610
+    ]
+  ],
+  "parent_bound_files": 87,
+  "frozen_files": {
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/stage-ready.json": "288ec2d5f9068221b5922cfeac29301f226e030734e67b15a4399748224d071e",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/population/summary.json": "52a98ce8ba93ac612c48b679a6cd473685a96730db1c1c0bcd4f83c90bb89448",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/population/evaluation-plan.json": "87927530b0cfbd8e049769fef29dcdc8a02640869ef189799c1e91e676c6ae07",
+    "/workspace/deep/.cache/fullhouse-bot/data/deep_cfr_model.npz": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+    "/workspace/deep/.cache/fullhouse-bot/data/preflop_equity.npz": "6b3b74778854fcebcd3179753c0252392e5f4118e6b623375c98fafa372863b3",
+    "/workspace/deep/.cache/noregrets/target/release/poker-bridge": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+    "/workspace/deep/.cache/noregrets/target/release/poker-rules": "e93c7056991605304234d48bc92b1fbcbb66320beb9b06a7fea8e9b48eb19901",
+    "/workspace/deep/configs/fullhouse-model.json": "24fdf60e5698c8baa6737eaa1dd9c41bab7c94f9c5f8b05f7292d2b9e346e9ae",
+    "/workspace/deep/scripts/poker_reference_opponents.py": "b3a90569d56667366a93428f897b9d98df0585012794d442e027df010896350f"
+  },
+  "first_deal_by_seed": {
+    "342": 2039100000,
+    "343": 2039200000,
+    "344": 2039300000
+  },
+  "reserved_length": 32768
+}
