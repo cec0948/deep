@@ -8,6 +8,8 @@
 
 ## 최신 실행 확인
 
+- 2026-11-23 17:51 KST에 플롭 복원 후보의 기존 아홉 테이블 및 새 공개 카드 평가, 원시 재생 검산을 완료했다. 새 평가량은 918,000핸드, 학습과 새 가중치 백업은 0건이다. 기준 모델은 480회다. [최종 상태](../reports/preflop-followup/480-v1/flop-rollback-20261123/status.json) · [독립 확인 결과](poker-flop-rollback-20261123.md)
+
 - 2026-11-23 17:10 KST에 상대 다양화 자기대전(480→504회), 아홉 테이블 81셀의 194만 4천 핸드 평가, 원시 손익 검산, 학습 복구본 검증을 모두 마쳤다. 다음 비교 기준은 480회다. 비공개 학습 복구본과 후속 평가 보고서는 별도다. [최종 상태](../reports/preflop-followup/480-v1/opponent-diversity-20261123/status.json) · [결과와 근거](poker-opponent-diversity-20261123.md)
 
 - 2026-11-23의 앞선 첫 플롭 선택 진단은 원래 카드 3,072묶음에서 주 분석과 학습 시점 상대 대조를 끝냈다. [결과](poker-flop-action-diagnostic-20261123.md) · [검산 상태](../reports/preflop-followup/480-v1/flop-action-diagnostic-20261123/status.json)

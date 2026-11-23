@@ -1,15 +1,20 @@
 {
-  "state": "fresh_public_evaluation",
-  "observed_utc": "2026-11-23T08:45:31.465334+00:00",
+  "state": "complete",
+  "observed_utc": "2026-11-23T08:51:16.862301+00:00",
+  "complete": true,
   "primary_plan_sha256": "c359bdd8a4b8c0d18b905262dd1a4c41d9bda69e563a90241dc13a8efba0db48",
   "fresh_plan_sha256": "c2a2bb4b49143e5fe5cd12f1c9c3645af1ed71f17dd28eb4a86a0e9ad8d3e6a1",
+  "main_summary_sha256": "4c4c72cd745d3f13df49306f886fc10fbb3e3c3d177e36081a2a7da5b966dc09",
+  "main_audit_sha256": "b6a154407847ef009ad5881a687e16a5a5f3c5fb6c2d5a525925acb0b196337f",
+  "fresh_summary_sha256": "4542eddafb42272bd659e06a38c1ee3708517fe937f2cc3abaa5c0f06a1260f9",
   "new_primary_cells_completed": 27,
-  "new_primary_cells_planned": 27,
   "prior_reference_cells": 54,
-  "fresh_public_cells_planned": 9,
+  "fresh_public_cells_completed": 9,
+  "original_main_card_blocks": 26000,
+  "original_fresh_public_card_blocks": 5000,
+  "new_evaluation_hands": 918000,
+  "reused_reference_hands": 1296000,
   "training_updates": 0,
-  "model_promoted": false,
-  "complete": false,
-  "main_audit_complete": true,
-  "main_summary_sha256": "4c4c72cd745d3f13df49306f886fc10fbb3e3c3d177e36081a2a7da5b966dc09"
+  "new_weight_archives": 0,
+  "model_promoted": false
 }

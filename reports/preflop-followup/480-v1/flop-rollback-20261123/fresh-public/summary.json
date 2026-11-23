@@ -1,0 +1,186 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-23T08:51:16.862301+00:00",
+  "plan_sha256": "c2a2bb4b49143e5fe5cd12f1c9c3645af1ed71f17dd28eb4a86a0e9ad8d3e6a1",
+  "design_sha256": "2a08221765644288d5c17a066c8b083af04808db485a91dc322fa3ec28dcd044",
+  "field": "public",
+  "card_start_inclusive": 2050100000,
+  "card_end_inclusive": 2050104999,
+  "independent_card_blocks": 5000,
+  "fixed_model_seeds": [
+    342,
+    343,
+    344
+  ],
+  "seat_rotations": 6,
+  "recorded_hands": 270000,
+  "complete_cells": 9,
+  "policy_scores_bb_per_100": {
+    "specialist480": {
+      "mean_bb_per_100": -29.210455555555555,
+      "paired_card_se": 9.11378762252607,
+      "nominal_95_bb_per_100": [
+        -47.073151058453576,
+        -11.347760052657538
+      ]
+    },
+    "diverse504": {
+      "mean_bb_per_100": -63.456022222222224,
+      "paired_card_se": 8.841652186412771,
+      "nominal_95_bb_per_100": [
+        -80.78534207142107,
+        -46.12670237302337
+      ]
+    },
+    "flop480late504": {
+      "mean_bb_per_100": -38.533344444444445,
+      "paired_card_se": 9.0043638362913,
+      "nominal_95_bb_per_100": [
+        -56.18157326727031,
+        -20.885115621618585
+      ]
+    }
+  },
+  "paired_comparisons": {
+    "flop480late504 minus diverse504": {
+      "mean_bb_per_100": 24.92267777777778,
+      "paired_card_se": 5.944869489249724,
+      "nominal_95_bb_per_100": [
+        13.270947686057296,
+        36.57440786949826
+      ],
+      "fixed_seed_deltas_bb_per_100": {
+        "342": 18.177366666666668,
+        "343": 48.1938,
+        "344": 8.396866666666666
+      }
+    },
+    "flop480late504 minus specialist480": {
+      "mean_bb_per_100": -9.322888888888889,
+      "paired_card_se": 4.235134319803027,
+      "nominal_95_bb_per_100": [
+        -17.62359962539236,
+        -1.0221781523854183
+      ],
+      "fixed_seed_deltas_bb_per_100": {
+        "342": -6.231566666666667,
+        "343": -20.2144,
+        "344": -1.5227
+      }
+    },
+    "diverse504 minus specialist480": {
+      "mean_bb_per_100": -34.24556666666667,
+      "paired_card_se": 6.599092169049437,
+      "nominal_95_bb_per_100": [
+        -47.179549648663865,
+        -21.31158368466947
+      ],
+      "fixed_seed_deltas_bb_per_100": {
+        "342": -24.408933333333334,
+        "343": -68.4082,
+        "344": -9.919566666666666
+      }
+    }
+  },
+  "inference": "Mean paired payoff per card after averaging the 18 fixed seed and seat repeats, two-sided nominal 95% intervals.",
+  "terminal_chip_replayed_hands": 270000,
+  "terminal_actions": 2823565,
+  "independently_policy_replayed_hands": 594,
+  "independently_policy_replayed_actions": 6450,
+  "independent_street_divergence_counts": {
+    "342:flop480late504 minus specialist480": [
+      0,
+      0,
+      2155,
+      511,
+      0,
+      27334
+    ],
+    "342:diverse504 minus specialist480": [
+      0,
+      4837,
+      873,
+      234,
+      0,
+      24056
+    ],
+    "342:flop480late504 minus diverse504": [
+      0,
+      4837,
+      0,
+      0,
+      0,
+      25163
+    ],
+    "343:flop480late504 minus specialist480": [
+      0,
+      0,
+      4250,
+      1059,
+      0,
+      24691
+    ],
+    "343:diverse504 minus specialist480": [
+      0,
+      6665,
+      1655,
+      502,
+      0,
+      21178
+    ],
+    "343:flop480late504 minus diverse504": [
+      0,
+      6665,
+      0,
+      0,
+      0,
+      23335
+    ],
+    "344:flop480late504 minus specialist480": [
+      0,
+      0,
+      2753,
+      595,
+      0,
+      26652
+    ],
+    "344:diverse504 minus specialist480": [
+      0,
+      5287,
+      1118,
+      250,
+      0,
+      23345
+    ],
+    "344:flop480late504 minus diverse504": [
+      0,
+      5287,
+      0,
+      0,
+      0,
+      24713
+    ]
+  },
+  "ordered_street_groups": [
+    "preflop",
+    "flop",
+    "turn",
+    "river",
+    "opponent_first",
+    "identical"
+  ],
+  "result_sha256": {
+    "public-seed-342-specialist480": "97524acc52346c26a40fbfc119ad486e8a6179297cc70ffd8a6d9fb7bcea9599",
+    "public-seed-342-diverse504": "8eb3ee956acdc2131b6230350cf8801ed8ca612e680b90b2aea9c2914215ff2b",
+    "public-seed-342-flop480late504": "2118b3e4f457d351dc1339a72d147c753055c44f23dbf3ef11246a66ea394acb",
+    "public-seed-343-specialist480": "325f03210de6e1ec5cd36b57f03092768984afc12694f23c17d188adb1a74bf0",
+    "public-seed-343-diverse504": "ae4b72a531554ccdb9b52a73d378714e02d1b308b48f546ac91f136e10d1f1cd",
+    "public-seed-343-flop480late504": "e0e61e5b55da2ed7314d965dc8032085aed44168eb41cfd3e1d7a18ab5859043",
+    "public-seed-344-specialist480": "a44451ea8892811313ac59a223ff5325a84dccb3e238429010697d22604b75ba",
+    "public-seed-344-diverse504": "c35aedb39cd0027eb49998f8045c2aa59401e9489d6f1e0242ee0b52bd375057",
+    "public-seed-344-flop480late504": "87c5a3478de3c1e81965a59b5e6ed1fd4673a7c66f8af843e288430f945b4aab"
+  },
+  "new_fitting": 0,
+  "new_selfplay": 0,
+  "model_promoted": false
+}
