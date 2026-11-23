@@ -1,0 +1,38 @@
+{
+  "study": "flop-rollback-20261123",
+  "policies": {
+    "start": "specialist480",
+    "reference": "diverse504",
+    "candidate": "flop480late504"
+  },
+  "candidate_preflop_flop": "specialist480",
+  "candidate_turn_river": "diverse504",
+  "late_policy_draw": "Same hand-private draw among iterations 486, 492, 498 and 504 as diverse504. Draw once before play, independently of its trajectory.",
+  "fixed_training_seeds": [342, 343, 344],
+  "source_plan_sha256": "a851844aee89e4032992840e40b2bf41ac765cc132dd5be9f94fee09e9540b43",
+  "source_summary_sha256": "070c481106dd77ba6bbc9dcd20b6d9969cc0e6d7b1291c3e5d91ae074348e515",
+  "source_final_audit_sha256": "e792012f135f80a212ad1b1f876992307f878a6bfd98bcbd3e0537a16ad12e88",
+  "main": {
+    "fields_and_cards": "All nine lineups with the exact card IDs, seat rotations, fixed seeds and reference hands in the source plan",
+    "new_cells": 27,
+    "new_hands": 648000,
+    "reference_cells_reused": 54,
+    "reference_hands_reused": 1296000,
+    "distinct_original_card_blocks": 26000,
+    "primary": "Paired public Fullhouse hybrid minus diverse504 mean bb/100 on the original 20000 public card blocks, with 95% interval",
+    "remaining_gap": "Paired public hybrid minus specialist480 on the same cards, and original diverse504 minus specialist480",
+    "secondary": "Each reference comparison across nine registered lineups; six primary tables with the same four family weights and +100 cap; descriptive share of the earlier public loss recovered",
+    "selection": "The original public loss on this panel informed the choice of flop rollback"
+  },
+  "fresh_public_check": {
+    "field": "public",
+    "first_deal_seed": 2050100000,
+    "original_card_blocks": 5000,
+    "new_cells": 9,
+    "new_hands": 270000,
+    "contrasts": ["flop480late504 minus diverse504", "flop480late504 minus specialist480", "diverse504 minus specialist480"],
+    "method": "Report separately on unseen cards. Average all six seats and the three fixed seeds within each original card before paired confidence intervals."
+  },
+  "training_updates": 0,
+  "model_promotion": false
+}

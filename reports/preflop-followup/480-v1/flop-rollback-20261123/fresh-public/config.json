@@ -1,0 +1,288 @@
+{
+  "registered_utc": "2026-11-23T08:29:43.657861+00:00",
+  "evaluation_deal_seed": 2050100000,
+  "evaluation_deals": 5000,
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "labels": [
+    "specialist480",
+    "diverse504",
+    "flop480late504"
+  ],
+  "field": "public",
+  "lineup": [
+    "public",
+    "public",
+    "public",
+    "public",
+    "public"
+  ],
+  "seat_rotations": 6,
+  "total_cells": 9,
+  "total_hands": 270000,
+  "unit": "one originally dealt card block shared by all fixed seeds, policies, hero seats",
+  "predetermined_contrasts": [
+    "flop480late504 minus diverse504",
+    "flop480late504 minus specialist480",
+    "diverse504 minus specialist480"
+  ],
+  "intervals": "Two-sided nominal normal 95% paired over the 5000 original cards after averaging all 18 seat-and-seed repeats per policy, all three comparisons reported.",
+  "secondary_independent_confirmation": true,
+  "second_stage_selection": false,
+  "automatic_retry": false,
+  "automatic_promotion": false,
+  "new_training_steps": 0,
+  "frozen_policy_design": "Unchanged original specialist480 vs four-snapshot postflop diverse504 vs fixed 480 on preflop and flop, same four-snapshot hand-private choice on turn/river.",
+  "historical_evaluation_ranges": {
+    "2026111201:2026113201": [
+      2026111201,
+      2026113201
+    ],
+    "2026111203:2026113203": [
+      2026111203,
+      2026113203
+    ],
+    "2037300000:2037320000": [
+      2037300000,
+      2037320000
+    ],
+    "2026200000:2026220000": [
+      2026200000,
+      2026220000
+    ],
+    "2026160000:2026180000": [
+      2026160000,
+      2026180000
+    ],
+    "2026140000:2026142000": [
+      2026140000,
+      2026142000
+    ],
+    "2037500000:2037520000": [
+      2037500000,
+      2037520000
+    ],
+    "2037100000:2037120000": [
+      2037100000,
+      2037120000
+    ],
+    "220261112:220261114": [
+      220261112,
+      220261114
+    ],
+    "2037400000:2037420000": [
+      2037400000,
+      2037420000
+    ],
+    "2035000000:2035020000": [
+      2035000000,
+      2035020000
+    ],
+    "2026130000:2026132000": [
+      2026130000,
+      2026132000
+    ],
+    "2026150000:2026152000": [
+      2026150000,
+      2026152000
+    ],
+    "2026120000:2026122000": [
+      2026120000,
+      2026122000
+    ],
+    "2037600000:2037620000": [
+      2037600000,
+      2037620000
+    ],
+    "2037700000:2037720000": [
+      2037700000,
+      2037720000
+    ],
+    "2037900000:2037902000": [
+      2037900000,
+      2037902000
+    ],
+    "2037540000:2037560000": [
+      2037540000,
+      2037560000
+    ],
+    "2037800000:2037820000": [
+      2037800000,
+      2037820000
+    ],
+    "2037520000:2037540000": [
+      2037520000,
+      2037540000
+    ],
+    "2038300000:2038312000": [
+      2038300000,
+      2038312000
+    ],
+    "2040300000:2040302000": [
+      2040300000,
+      2040302000
+    ],
+    "2040400000:2040402000": [
+      2040400000,
+      2040402000
+    ],
+    "2040100000:2040120000": [
+      2040100000,
+      2040120000
+    ],
+    "2040200000:2040202000": [
+      2040200000,
+      2040202000
+    ],
+    "2038600000:2038602000": [
+      2038600000,
+      2038602000
+    ],
+    "2038500000:2038502000": [
+      2038500000,
+      2038502000
+    ],
+    "2038400000:2038420000": [
+      2038400000,
+      2038420000
+    ],
+    "2039100000:2039132768": [
+      2039100000,
+      2039132768
+    ],
+    "2039200000:2039232768": [
+      2039200000,
+      2039232768
+    ],
+    "2039300000:2039332768": [
+      2039300000,
+      2039332768
+    ],
+    "2037000000:2037020000": [
+      2037000000,
+      2037020000
+    ],
+    "2037200000:2037220000": [
+      2037200000,
+      2037220000
+    ],
+    "2037280000:2037280020": [
+      2037280000,
+      2037280020
+    ],
+    "2037380000:2037380020": [
+      2037380000,
+      2037380020
+    ],
+    "2037080000:2037080020": [
+      2037080000,
+      2037080020
+    ],
+    "2038000000:2038020000": [
+      2038000000,
+      2038020000
+    ],
+    "2038100000:2038102000": [
+      2038100000,
+      2038102000
+    ],
+    "2038200000:2038202000": [
+      2038200000,
+      2038202000
+    ],
+    "2038400000:2038404000": [
+      2038400000,
+      2038404000
+    ],
+    "2037180000:2037180020": [
+      2037180000,
+      2037180020
+    ],
+    "190261110:190263110": [
+      190261110,
+      190263110
+    ],
+    "170261110:170263110": [
+      170261110,
+      170263110
+    ],
+    "160261109:160263109": [
+      160261109,
+      160263109
+    ],
+    "180261110:180261610": [
+      180261110,
+      180261610
+    ]
+  },
+  "historical_config_and_result_records_checked": 1170,
+  "source_stage_and_policy_sha256": {
+    "/workspace/deep/artifacts/preflop-followup/480-v1/opponent-diversity-20261123/stage-ready.json": "8a59fdc2480bde76d882f134e76501df7e2feb0b6eefad797c87a7754adc4cf9",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/opponent-diversity-20261123/population/evaluation-plan.json": "a851844aee89e4032992840e40b2bf41ac765cc132dd5be9f94fee09e9540b43",
+    "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-342/specialist.json": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6",
+    "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-343/specialist.json": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f",
+    "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-344/specialist.json": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/opponent-diversity-20261123/snapshots/seed-342/mixture.json": "bb219f6fd9c7828a7e6406230f42c178503f64a967ef6d7a4b7fee94b3f6349a",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/opponent-diversity-20261123/snapshots/seed-343/mixture.json": "858f000e59a1a2e0508b89ae959e122cbc074ab24dcd960d6bcc274ee060671c",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/opponent-diversity-20261123/snapshots/seed-344/mixture.json": "9e65fdb3aad3aecfd984e8519121656b2c7774dec6410dfe27725659a4fe791e"
+  },
+  "prior_diversity_main_registered_ranges": {
+    "public": {
+      "role": "primary",
+      "family": "public",
+      "deal_seed": 2040100000,
+      "deals": 20000
+    },
+    "noregrets": {
+      "role": "primary",
+      "family": "noregrets",
+      "deal_seed": 2040200000,
+      "deals": 2000
+    },
+    "rich96": {
+      "role": "primary",
+      "family": "historical-rich",
+      "deal_seed": 2040200000,
+      "deals": 2000
+    },
+    "calling-station": {
+      "role": "primary",
+      "family": "rules",
+      "deal_seed": 2040200000,
+      "deals": 2000
+    },
+    "tight-value": {
+      "role": "primary",
+      "family": "rules",
+      "deal_seed": 2040200000,
+      "deals": 2000
+    },
+    "pressure": {
+      "role": "primary",
+      "family": "rules",
+      "deal_seed": 2040200000,
+      "deals": 2000
+    },
+    "mixed": {
+      "role": "diagnostic",
+      "family": "legacy-mixed",
+      "deal_seed": 2040200000,
+      "deals": 2000
+    },
+    "varied": {
+      "role": "holdout",
+      "family": "heldout-lineup",
+      "deal_seed": 2040300000,
+      "deals": 2000
+    },
+    "solverlike": {
+      "role": "holdout",
+      "family": "upstream-solverlike-rules",
+      "deal_seed": 2040400000,
+      "deals": 2000
+    }
+  }
+}
