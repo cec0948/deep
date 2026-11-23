@@ -1,0 +1,28 @@
+{
+  "registered_utc": "2026-11-23T07:18:03.746935+00:00",
+  "source_hashes": {
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-342/states.jsonl": "3fe030044ee0b594b156d24fa7dfc1e2da54547f8a50e8742dc8feaff9054080",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-343/states.jsonl": "2883e8e303bfe556c98243656e6566633f31593e7ec0165b864962eeef2eccbf",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-344/states.jsonl": "76d0853afcb27aa1c585d618ff3587d3683d31e5a1577c7dda05a12bef3f2372",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-342/values.jsonl.gz": "7940071a649c235f35f1dbd79838b46f604097932f08a12c049241216c5fd38d",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-343/values.jsonl.gz": "22ce83d364c3b46740ffcd16c46b81cf4f4adcc56d7b5da1bbd102ff50cbb55a",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/seed-344/values.jsonl.gz": "270f3704ab666158d3c2ad6f85e967645a51cbb6d9a9f5ee311af01efe0eaa69",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/flop-action-diagnostic-20261123/summary.json": "11e82ac96c9d05701b40440a296c76c0f6c782aebac1f361076a93ba7f06c056",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/opponent-diversity-20261123/registration.json": "88057c004c827b808a5c90093333d0e1e05e9b02293f132b8b5312e4e5035eec",
+    "/workspace/deep/artifacts/preflop-followup/480-v1/postflop-averaging-20261120/population/evaluation-plan.json": "87927530b0cfbd8e049769fef29dcdc8a02640869ef189799c1e91e676c6ae07",
+    "/workspace/deep/scripts/poker_flop_action_values.py": "b00687ae04995fc3bd6c46bc69491849d666d27b0bbf541879d002588ea9b66b",
+    "/workspace/deep/scripts/score_poker_flop_diagnostic.py": "96299da0ad35157136299c9f8146155e7ac7e59bd716ebbafafb0a5b17c42522",
+    "/workspace/deep/scripts/diagnose_poker_opponent_diversity.py": "d82a365314ee18e82ffe302ec7ab46a51a7dec2dc3a403ff277dec6b3cd17b5d"
+  },
+  "source_deals": 3072,
+  "pool_check": "Mean concrete-action total variation over all pairs of 300,360,420,480 on the same observed flops.",
+  "effect": "Replace only the first hero flop action of the archived control mixture with the new treatment mixture. Same conditioned 480-reached states and unchanged 480 hero continuation from the prior audit.",
+  "environments": [
+    "self480",
+    "public",
+    "tight-value"
+  ],
+  "conditional_repeats": 8,
+  "missing_outcomes": "Replay every newly supported action on the original eight paired decks and action tapes.",
+  "inference": "Three contrast Bonferroni intervals on the 3072 original deals, equal weight by fixed training seed; historically known states, explanatory only, independent of the fresh 81-cell full-game panel."
+}
