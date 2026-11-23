@@ -1,0 +1,14 @@
+{
+  "state": "training",
+  "observed_utc": "2026-11-23T07:22:39.734954+00:00",
+  "last_saved_iteration_by_seed": {
+    "seed-342": 486,
+    "seed-344": 486,
+    "seed-343": 486
+  },
+  "planned_end": 504,
+  "evaluation_complete": false,
+  "planned_evaluation_cells": 81,
+  "planned_evaluation_hands": 1944000,
+  "model_promoted": false
+}

@@ -1,0 +1,109 @@
+{
+  "verified_utc": "2026-11-23T07:18:15.633896+00:00",
+  "seeds": {
+    "342": {
+      "seed": 342,
+      "round": 481,
+      "weights": {
+        "general": "844ca109e00f8e424f32db4a1ad353ac0d36c38f6893331c70760c1796a2c5c8",
+        "preflop": "d3bfa1e0f1c4805a1839a3d15b911ff4f3a9a9c3ffccd42ee927c5bdfc1e8de7"
+      },
+      "input_weights": {
+        "general": "fd8751fa80ffe87557340eae23e816ed4811040b49985b4827f8ed3d0c7c317d",
+        "preflop": "d3bfa1e0f1c4805a1839a3d15b911ff4f3a9a9c3ffccd42ee927c5bdfc1e8de7"
+      },
+      "verified_fields": [
+        "new_regret_rows",
+        "root_rows",
+        "traverser",
+        "traversals",
+        "fit_rows_by_street",
+        "fit_draws_by_street",
+        "general_steps",
+        "fit_draws",
+        "main_loss",
+        "opening_steps",
+        "preflop_steps"
+      ],
+      "validated_reference": {
+        "hands": 512,
+        "decision_nodes": 5877,
+        "rows": 100000,
+        "total_seen": 457804
+      },
+      "new_regret_rows": 9840,
+      "identical_main_loss": 0.8266720674776783,
+      "postflop_gradient_steps": 768
+    },
+    "343": {
+      "seed": 343,
+      "round": 481,
+      "weights": {
+        "general": "17e85a4e87fd0004f2219ceabdc3eb522cf040662e4b49a4535698ad7e109f62",
+        "preflop": "6686db401eb8f11f6598cb657f36f4c08e2d239b4a4dc4993965347a3ed87e1d"
+      },
+      "input_weights": {
+        "general": "52e05f3859e18a2546abbf963646f113d9a605c3a8ae27b4b0cd7467431925f8",
+        "preflop": "6686db401eb8f11f6598cb657f36f4c08e2d239b4a4dc4993965347a3ed87e1d"
+      },
+      "verified_fields": [
+        "new_regret_rows",
+        "root_rows",
+        "traverser",
+        "traversals",
+        "fit_rows_by_street",
+        "fit_draws_by_street",
+        "general_steps",
+        "fit_draws",
+        "main_loss",
+        "opening_steps",
+        "preflop_steps"
+      ],
+      "validated_reference": {
+        "hands": 512,
+        "decision_nodes": 5887,
+        "rows": 100000,
+        "total_seen": 447414
+      },
+      "new_regret_rows": 10264,
+      "identical_main_loss": 0.8314452382425467,
+      "postflop_gradient_steps": 768
+    },
+    "344": {
+      "seed": 344,
+      "round": 481,
+      "weights": {
+        "general": "9bac416491147bb2270536ae4e254607247970e14d3e5081ef003dcffb4106d4",
+        "preflop": "9de6a9220e08176ed36b3b30e53412fc420134f8fb72d0b89da549c1ff0341da"
+      },
+      "input_weights": {
+        "general": "e3076819234ef0955c0af969eb8a22e91e2016183032002c975fbc1e02ae449c",
+        "preflop": "9de6a9220e08176ed36b3b30e53412fc420134f8fb72d0b89da549c1ff0341da"
+      },
+      "verified_fields": [
+        "new_regret_rows",
+        "root_rows",
+        "traverser",
+        "traversals",
+        "fit_rows_by_street",
+        "fit_draws_by_street",
+        "general_steps",
+        "fit_draws",
+        "main_loss",
+        "opening_steps",
+        "preflop_steps"
+      ],
+      "validated_reference": {
+        "hands": 512,
+        "decision_nodes": 5961,
+        "rows": 100000,
+        "total_seen": 446620
+      },
+      "new_regret_rows": 10452,
+      "identical_main_loss": 0.834324665600434,
+      "postflop_gradient_steps": 768
+    }
+  },
+  "retained_new_models": 0,
+  "scope": "One in-memory no-diversity control validation round per seed; models discarded."
+}

@@ -1,0 +1,80 @@
+{
+  "verified_utc": "2026-11-23T07:18:51.412978+00:00",
+  "seeds": {
+    "342": {
+      "seed": 342,
+      "traverser": 0,
+      "fixture_trees": 48,
+      "observed_actions": 4909,
+      "dealer_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "verified_postflop_dispatches": {
+        "-1": 1085,
+        "0": 835,
+        "300": 550,
+        "360": 711,
+        "420": 184
+      },
+      "verified_preflop_dispatches": 1544,
+      "reference_assignment_sha256": "870ba98775f96e8cc5cc2dfcb1b2618cc7d274a70e9fe86512cf2f1ffde6ddf5",
+      "inactive_pool_identical_sampled_regrets_features_and_rng": true,
+      "exact_inactive_fixture_rows": 1826
+    },
+    "343": {
+      "seed": 343,
+      "traverser": 1,
+      "fixture_trees": 48,
+      "observed_actions": 5765,
+      "dealer_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "verified_postflop_dispatches": {
+        "-1": 1266,
+        "0": 1584,
+        "300": 506,
+        "360": 485,
+        "420": 492
+      },
+      "verified_preflop_dispatches": 1432,
+      "reference_assignment_sha256": "64b68f84072bc882221dba7a196f51a2f73f7e5b0b11d2fad61bef7ba06ef2e5",
+      "inactive_pool_identical_sampled_regrets_features_and_rng": true,
+      "exact_inactive_fixture_rows": 1243
+    },
+    "344": {
+      "seed": 344,
+      "traverser": 2,
+      "fixture_trees": 48,
+      "observed_actions": 6327,
+      "dealer_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "verified_postflop_dispatches": {
+        "-1": 1385,
+        "0": 1454,
+        "300": 376,
+        "360": 891,
+        "420": 564
+      },
+      "verified_preflop_dispatches": 1657,
+      "reference_assignment_sha256": "0044a884b202a0ec00fdd12ed688a991a9af1548e808a39d9da492cb5ccfe1f8",
+      "inactive_pool_identical_sampled_regrets_features_and_rng": true,
+      "exact_inactive_fixture_rows": 2168
+    }
+  }
+}

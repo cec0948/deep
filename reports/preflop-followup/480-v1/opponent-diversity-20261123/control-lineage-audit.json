@@ -1,0 +1,38 @@
+{
+  "verified_utc": "2026-11-23T07:17:37.598128+00:00",
+  "control_stage_sha256": "288ec2d5f9068221b5922cfeac29301f226e030734e67b15a4399748224d071e",
+  "control_plan_sha256": "533a88378fe0a4b27cd98ece6d493ca62600c66ee48265fcdbc57cac379b594c",
+  "reproduced_control_training_sha256": "ec2530846374a8486ac3f46dbbe324e359da350fea89474abb35d312b055e9c2",
+  "historical_postflop_sha256": {
+    "342": {
+      "300": "bf5f6c05aa43bc692024be31a2b6b8fdb540a8db65dd78223949af4435ba70a1",
+      "360": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+      "420": "f23e592981774d6b99da6910513dc83c91cd5474b9a22b34bec72e1463951607"
+    },
+    "343": {
+      "300": "c7565aef0df6313122c16f57012f3209a0a984a1c09136dd550e5b6f27e07e80",
+      "360": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+      "420": "7fdcbe9ef679de27099bf76a184c8849979b76941072bdfa8f9d600722f4005c"
+    },
+    "344": {
+      "300": "c6963d30938a59c8073a86e84dab29dd633c3b7aecf69c4655225af2bc852c2e",
+      "360": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+      "420": "0a6700790cc5bd19d6756c45c397c5cf7340f21a79c72b9d8d3855de94c84784"
+    }
+  },
+  "control_total_regret_rows": 595140,
+  "common_parent": {
+    "342": {
+      "path": "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-342/specialist.json",
+      "sha256": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6"
+    },
+    "343": {
+      "path": "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-343/specialist.json",
+      "sha256": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f"
+    },
+    "344": {
+      "path": "/workspace/deep/artifacts/preflop-pilot/480-v1/seed-344/specialist.json",
+      "sha256": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d"
+    }
+  }
+}
