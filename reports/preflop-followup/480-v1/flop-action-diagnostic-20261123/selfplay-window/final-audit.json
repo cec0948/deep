@@ -1,0 +1,114 @@
+{
+  "verified_utc": "2026-11-23T06:52:31.834549+00:00",
+  "primary_audit_sha256": "d4a715b2d32655a84a4ec2351dc6bdc09b60ecf261d203c5f707d8d19662931b",
+  "registration_sha256": "457bae247120561ef88526a42c0b9cd93f9530d6cca406214fa38d40d5cb1208",
+  "summary_sha256": "01f6917ef22c5587ce857233d9272e6a44f0736437f669bc662cf9ce721b7508",
+  "script_sha256": "8fb4816b4e5baf13948a219629ac9d40f3ea7d9affbc83d3128734d26a43a6bc",
+  "unique_original_deals": 3072,
+  "added_terminal_branches_reaggregated": 231480,
+  "python_replayed_first_repeats": 28935,
+  "eight_repeat_policy_replays": 3744,
+  "independently_recomputed": {
+    "mixture_minus_480_on_window": {
+      "mean_bb": 0.15343021565807113,
+      "cluster_se_bb": 0.1823111249317733
+    },
+    "public_minus_window_on_mixture_change": {
+      "mean_bb": -0.696837789422623,
+      "cluster_se_bb": 0.18764143467274216
+    }
+  },
+  "by_seed": {
+    "342": {
+      "training_opponents": {
+        "480": {
+          "preflop_sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+          "postflop_sha256": "b2a38377bc02503122509e4be7ac5a6ad3f28f0473c5536940bfef8a1947ed78",
+          "verified_input_used_at": 481
+        },
+        "486": {
+          "preflop_sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+          "postflop_sha256": "9746c437bc532d64275eb67d9c3ae2e92298688e307ed3e9ab9f0c69bafd208d",
+          "verified_input_used_at": 487
+        },
+        "492": {
+          "preflop_sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+          "postflop_sha256": "33b1f6f41a6ba5faccb22dc8f153dcc973abaa3820637818c1e8dcdc7496f9cd",
+          "verified_input_used_at": 493
+        },
+        "498": {
+          "preflop_sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+          "postflop_sha256": "2a4d2dde6fb0fabaed0af967ea3194800d4f8641d7d9173bb32c08c61074bcb9",
+          "verified_input_used_at": 499
+        }
+      },
+      "python_training_engine_rep0_branches": 9888,
+      "reproduced_added_policy_branches": 1272,
+      "all_added_branches": 79104,
+      "states_sha256": "3fe030044ee0b594b156d24fa7dfc1e2da54547f8a50e8742dc8feaff9054080",
+      "values_sha256": "b2895aa947f2cb01beb8bc86b76dc21c7edf28b93266d741cbc144e01d96754d",
+      "traces_sha256": "3b62cfd96f9c1eac5a6ac89d57b50abf420d647490fadb2ec03c0fabd0db2ad4"
+    },
+    "343": {
+      "training_opponents": {
+        "480": {
+          "preflop_sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+          "postflop_sha256": "c63369b49f4d1ce9e3c1957d05a1a330bfb270ad8f757e6a7f4ec7b7ee710757",
+          "verified_input_used_at": 481
+        },
+        "486": {
+          "preflop_sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+          "postflop_sha256": "e67c374f520037a247d8bd54f323fc2bdd28053f431d9a0ff3f47de9721bc0f4",
+          "verified_input_used_at": 487
+        },
+        "492": {
+          "preflop_sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+          "postflop_sha256": "fbb4cb5ff0c1ad820e1f513676130e1fdc81ce1f7f351401883f88e68c25e2ba",
+          "verified_input_used_at": 493
+        },
+        "498": {
+          "preflop_sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+          "postflop_sha256": "0316e6a82ccd5085ff89a9c4415f171b4c0e5738bc262e1dcd04052cc82b8522",
+          "verified_input_used_at": 499
+        }
+      },
+      "python_training_engine_rep0_branches": 9297,
+      "reproduced_added_policy_branches": 1248,
+      "all_added_branches": 74376,
+      "states_sha256": "2883e8e303bfe556c98243656e6566633f31593e7ec0165b864962eeef2eccbf",
+      "values_sha256": "2cff0d3117cab4528516b5331e77ac61d30236eef69fa901bd4d1b94454cf19e",
+      "traces_sha256": "27293ea5f474174d0dcb01ce668cfce35fcc973c7bcc3976e82aa693ed0657df"
+    },
+    "344": {
+      "training_opponents": {
+        "480": {
+          "preflop_sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+          "postflop_sha256": "c66b7ea69ae49bd46b2f4bba0277b398f04197210b9ef8745901f34bf6e08431",
+          "verified_input_used_at": 481
+        },
+        "486": {
+          "preflop_sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+          "postflop_sha256": "cb5ffab6556ec35e95a60ebe6664db45d1c823c2f6373b12e841d868c2a14a3c",
+          "verified_input_used_at": 487
+        },
+        "492": {
+          "preflop_sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+          "postflop_sha256": "c431473bf8ec3f9822ab96dc6d151a8408fa8c4d7d031ed96cf8d56cb0c34ec0",
+          "verified_input_used_at": 493
+        },
+        "498": {
+          "preflop_sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+          "postflop_sha256": "2e61f9c0f36b64676d24d2dac7f590501e326414a89bd05a00aa9d87c7c6d53b",
+          "verified_input_used_at": 499
+        }
+      },
+      "python_training_engine_rep0_branches": 9750,
+      "reproduced_added_policy_branches": 1224,
+      "all_added_branches": 78000,
+      "states_sha256": "76d0853afcb27aa1c585d618ff3587d3683d31e5a1577c7dda05a12bef3f2372",
+      "values_sha256": "580b030172e5d315d5b8dfa7f1320c16f9c99c36b3b88feae6da98c54bd4608d",
+      "traces_sha256": "fd6054cd9967b7fd075e535f4dfb1696a78ac2063ed5901edfb92cdb37cfb98a"
+    }
+  },
+  "scope": "Four directly observed training-window opponents at 480/486/492/498; the forced single flop action always has a common frozen hero continuation."
+}

@@ -1,0 +1,75 @@
+{
+  "utc": "2026-11-23T06:52:15.265679+00:00",
+  "registration_sha256": "457bae247120561ef88526a42c0b9cd93f9530d6cca406214fa38d40d5cb1208",
+  "primary_results_known": true,
+  "unique_original_deals": 3072,
+  "additional_terminal_branches": 231480,
+  "additional_action_fits": 0,
+  "additional_selfplay_rounds": 0,
+  "units": "big blinds per sampled first hero flop",
+  "receipts": {
+    "342": {
+      "utc": "2026-11-23T06:52:00.447429+00:00",
+      "states": 1024,
+      "terminal_branches": 79104,
+      "trace_count": 9888,
+      "states_sha256": "3fe030044ee0b594b156d24fa7dfc1e2da54547f8a50e8742dc8feaff9054080",
+      "values_sha256": "b2895aa947f2cb01beb8bc86b76dc21c7edf28b93266d741cbc144e01d96754d",
+      "traces_sha256": "3b62cfd96f9c1eac5a6ac89d57b50abf420d647490fadb2ec03c0fabd0db2ad4"
+    },
+    "343": {
+      "utc": "2026-11-23T06:52:12.290004+00:00",
+      "states": 1024,
+      "terminal_branches": 74376,
+      "trace_count": 9297,
+      "states_sha256": "2883e8e303bfe556c98243656e6566633f31593e7ec0165b864962eeef2eccbf",
+      "values_sha256": "2cff0d3117cab4528516b5331e77ac61d30236eef69fa901bd4d1b94454cf19e",
+      "traces_sha256": "27293ea5f474174d0dcb01ce668cfce35fcc973c7bcc3976e82aa693ed0657df"
+    },
+    "344": {
+      "utc": "2026-11-23T06:52:06.118179+00:00",
+      "states": 1024,
+      "terminal_branches": 78000,
+      "trace_count": 9750,
+      "states_sha256": "76d0853afcb27aa1c585d618ff3587d3683d31e5a1577c7dda05a12bef3f2372",
+      "values_sha256": "580b030172e5d315d5b8dfa7f1320c16f9c99c36b3b88feae6da98c54bd4608d",
+      "traces_sha256": "fd6054cd9967b7fd075e535f4dfb1696a78ac2063ed5901edfb92cdb37cfb98a"
+    }
+  },
+  "contrasts": {
+    "mixture_minus_480_on_window": {
+      "mean_bb": 0.153430215658071,
+      "cluster_se_bb": 0.18231112493177348,
+      "paired_95_bb": [
+        -0.20389302318918726,
+        0.5107534545053293
+      ],
+      "simultaneous_95_bb": [
+        -0.2552024370367323,
+        0.5620628683528742
+      ],
+      "mean_bb_by_seed": {
+        "342": 0.823950566670423,
+        "343": -0.8390848076557444,
+        "344": 0.4754248879595344
+      }
+    },
+    "public_minus_window_on_mixture_change": {
+      "mean_bb": -0.6968377894226224,
+      "cluster_se_bb": 0.1876414346727422,
+      "paired_95_bb": [
+        -1.0646082433886224,
+        -0.3290673354566225
+      ],
+      "simultaneous_95_bb": [
+        -1.117417812909812,
+        -0.2762577659354327
+      ],
+      "mean_bb_by_seed": {
+        "342": -1.4049198404383496,
+        "343": 0.05499437028370936,
+        "344": -0.7405878981132273
+      }
+    }
+  }
+}

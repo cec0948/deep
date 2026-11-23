@@ -1,0 +1,21 @@
+{
+  "state": "complete",
+  "verified_utc": "2026-11-23T06:53:18.818769+00:00",
+  "new_training_rounds": 0,
+  "new_weight_backups": 0,
+  "model_promoted": false,
+  "comparison_baseline": "specialist480",
+  "original_deals_scanned": 16083,
+  "distinct_selected_deals": 3072,
+  "primary_terminal_branches": 231480,
+  "followup_terminal_branches": 231480,
+  "additional_followup_deals": 0,
+  "followup_registered_after_primary_results": true,
+  "hashes": {
+    "summary.json": "11e82ac96c9d05701b40440a296c76c0f6c782aebac1f361076a93ba7f06c056",
+    "final-audit.json": "d4a715b2d32655a84a4ec2351dc6bdc09b60ecf261d203c5f707d8d19662931b",
+    "action-attribution.json": "652a40e774829d126c3c3cbed4b77800027587f67080be52031bcf7d60121ae8",
+    "selfplay-window/summary.json": "01f6917ef22c5587ce857233d9272e6a44f0736437f669bc662cf9ce721b7508",
+    "selfplay-window/final-audit.json": "9f4bf1823ec89241037f9ff308aad9ca4c0f13034d05f7221fc5b99622c292d9"
+  }
+}
