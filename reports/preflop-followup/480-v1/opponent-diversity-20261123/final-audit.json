@@ -1,0 +1,2006 @@
+{
+  "verified_utc": "2026-11-23T08:10:37.582985+00:00",
+  "audit_source_sha256": "51c8687ebb038a8090910adc26199adda916ec20be0f812777b4d925ee43a7d4",
+  "summary_sha256": "070c481106dd77ba6bbc9dcd20b6d9969cc0e6d7b1291c3e5d91ae074348e515",
+  "plan_sha256": "a851844aee89e4032992840e40b2bf41ac765cc132dd5be9f94fee09e9540b43",
+  "reference_plan_sha256": "691897dda94b12155ed6cf4141e866a02d3604b633e6a00186d768b41d5ab2d8",
+  "stage_sha256": "8a59fdc2480bde76d882f134e76501df7e2feb0b6eefad797c87a7754adc4cf9",
+  "original_card_blocks": 26000,
+  "completed_cells": 81,
+  "terminal_replay_hands": 1944000,
+  "terminal_replay_actions": 21892884,
+  "terminal_auditor_binary_sha256": "3698626ec1cf4b318f3f7b429ec4ec0ed7b5fd35ec812233d78d0de3520494f8",
+  "terminal_auditor_source_sha256": "39eceeb0ffafeaecae250cf09b7e0bb11a9f0df0535615bceba877f8e4006f80",
+  "model_action_replay_hands": 7020,
+  "model_action_replay_actions": 78328,
+  "action_sample_card_stride": 311,
+  "paired_original_card_scores": {
+    "primary": {
+      "public": {
+        "absolute": {
+          "control504": -71.66855555555557,
+          "diverse504": -72.93474166666667
+        },
+        "change": {
+          "mean": -1.266186111111111,
+          "interval": [
+            -10.369106506802272,
+            7.83673428458005
+          ],
+          "fixed_seed_changes": [
+            -0.7450249999999979,
+            -6.410166666666666,
+            3.3566333333333316
+          ]
+        }
+      },
+      "noregrets": {
+        "absolute": {
+          "control504": 478.38738888888884,
+          "diverse504": 468.3438055555555
+        },
+        "change": {
+          "mean": -10.04358333333333,
+          "interval": [
+            -34.46421462463002,
+            14.37704795796336
+          ],
+          "fixed_seed_changes": [
+            9.492,
+            -29.006916666666665,
+            -10.615833333333336
+          ]
+        }
+      },
+      "rich96": {
+        "absolute": {
+          "control504": 42.3153611111111,
+          "diverse504": 26.663888888888877
+        },
+        "change": {
+          "mean": -15.651472222222223,
+          "interval": [
+            -47.99519499485197,
+            16.692250550407522
+          ],
+          "fixed_seed_changes": [
+            23.460416666666667,
+            -42.66333333333333,
+            -27.7515
+          ]
+        }
+      },
+      "calling-station": {
+        "absolute": {
+          "control504": 1142.76875,
+          "diverse504": 1023.7368055555555
+        },
+        "change": {
+          "mean": -119.03194444444446,
+          "interval": [
+            -233.11773959852167,
+            -4.946149290367259
+          ],
+          "fixed_seed_changes": [
+            -128.99166666666667,
+            -239.325,
+            11.220833333333344
+          ]
+        }
+      },
+      "tight-value": {
+        "absolute": {
+          "control504": -92.95480555555557,
+          "diverse504": -78.31866666666666
+        },
+        "change": {
+          "mean": 14.63613888888889,
+          "interval": [
+            -16.2219800937984,
+            45.49425787157618
+          ],
+          "fixed_seed_changes": [
+            35.088,
+            12.656583333333334,
+            -3.8361666666666654
+          ]
+        }
+      },
+      "pressure": {
+        "absolute": {
+          "control504": 608.4029722222222,
+          "diverse504": 596.6622222222222
+        },
+        "change": {
+          "mean": -11.740749999999995,
+          "interval": [
+            -63.930412509737835,
+            40.44891250973785
+          ],
+          "fixed_seed_changes": [
+            7.683333333333334,
+            -56.435916666666664,
+            13.530333333333335
+          ]
+        }
+      },
+      "mixed": {
+        "absolute": {
+          "control504": 301.6715,
+          "diverse504": 301.9395555555555
+        },
+        "change": {
+          "mean": 0.2680555555555575,
+          "interval": [
+            -29.704220675280617,
+            30.240331786391728
+          ],
+          "fixed_seed_changes": [
+            12.002749999999999,
+            -15.955749999999998,
+            4.75716666666667
+          ]
+        }
+      },
+      "varied": {
+        "absolute": {
+          "control504": 338.04266666666666,
+          "diverse504": 325.06430555555556
+        },
+        "change": {
+          "mean": -12.978361111111115,
+          "interval": [
+            -55.23948855813677,
+            29.282766335914545
+          ],
+          "fixed_seed_changes": [
+            -4.96125,
+            -39.56099999999999,
+            5.587166666666672
+          ]
+        }
+      },
+      "solverlike": {
+        "absolute": {
+          "control504": -8.817222222222219,
+          "diverse504": -5.688194444444448
+        },
+        "change": {
+          "mean": 3.1290277777777775,
+          "interval": [
+            -21.713552772531248,
+            27.971608328086806
+          ],
+          "fixed_seed_changes": [
+            -8.074416666666668,
+            9.343666666666666,
+            8.117833333333332
+          ]
+        }
+      }
+    },
+    "treatment_vs_parent": {
+      "public": {
+        "absolute": {
+          "specialist480": -35.01710833333333,
+          "diverse504": -72.93474166666667
+        },
+        "change": {
+          "mean": -37.917633333333335,
+          "interval": [
+            -48.23977082910736,
+            -27.595495837559312
+          ],
+          "fixed_seed_changes": [
+            -11.428741666666665,
+            -77.08333333333333,
+            -25.240825
+          ]
+        }
+      },
+      "noregrets": {
+        "absolute": {
+          "specialist480": 501.51286111111114,
+          "diverse504": 468.3438055555555
+        },
+        "change": {
+          "mean": -33.16905555555555,
+          "interval": [
+            -61.05528575665389,
+            -5.28282535445722
+          ],
+          "fixed_seed_changes": [
+            -29.95675,
+            -27.165166666666664,
+            -42.38525
+          ]
+        }
+      },
+      "rich96": {
+        "absolute": {
+          "specialist480": 72.83136111111111,
+          "diverse504": 26.663888888888877
+        },
+        "change": {
+          "mean": -46.167472222222216,
+          "interval": [
+            -81.69747770287404,
+            -10.637466741570393
+          ],
+          "fixed_seed_changes": [
+            26.182583333333337,
+            -112.04666666666667,
+            -52.638333333333335
+          ]
+        }
+      },
+      "calling-station": {
+        "absolute": {
+          "specialist480": 761.0076388888889,
+          "diverse504": 1023.7368055555555
+        },
+        "change": {
+          "mean": 262.72916666666663,
+          "interval": [
+            120.92332215454013,
+            404.5350111787931
+          ],
+          "fixed_seed_changes": [
+            117.37708333333333,
+            390.94166666666666,
+            279.86875
+          ]
+        }
+      },
+      "tight-value": {
+        "absolute": {
+          "specialist480": -50.83344444444444,
+          "diverse504": -78.31866666666666
+        },
+        "change": {
+          "mean": -27.485222222222223,
+          "interval": [
+            -60.19797978398451,
+            5.227535339540058
+          ],
+          "fixed_seed_changes": [
+            38.69533333333334,
+            -70.60491666666667,
+            -50.546083333333335
+          ]
+        }
+      },
+      "pressure": {
+        "absolute": {
+          "specialist480": 678.8242500000001,
+          "diverse504": 596.6622222222222
+        },
+        "change": {
+          "mean": -82.16202777777778,
+          "interval": [
+            -143.88918735343142,
+            -20.434868202124143
+          ],
+          "fixed_seed_changes": [
+            -86.411,
+            -103.65016666666669,
+            -56.42491666666666
+          ]
+        }
+      },
+      "mixed": {
+        "absolute": {
+          "specialist480": 333.40816666666666,
+          "diverse504": 301.9395555555555
+        },
+        "change": {
+          "mean": -31.46861111111111,
+          "interval": [
+            -64.57938046832072,
+            1.6421582460985107
+          ],
+          "fixed_seed_changes": [
+            -20.427916666666672,
+            -36.745249999999984,
+            -37.23266666666667
+          ]
+        }
+      },
+      "varied": {
+        "absolute": {
+          "specialist480": 433.88977777777774,
+          "diverse504": 325.06430555555556
+        },
+        "change": {
+          "mean": -108.82547222222222,
+          "interval": [
+            -154.95398595817758,
+            -62.696958486266844
+          ],
+          "fixed_seed_changes": [
+            -92.09966666666668,
+            -142.14991666666668,
+            -92.22683333333335
+          ]
+        }
+      },
+      "solverlike": {
+        "absolute": {
+          "specialist480": 35.392805555555555,
+          "diverse504": -5.688194444444448
+        },
+        "change": {
+          "mean": -41.081,
+          "interval": [
+            -70.94157723708125,
+            -11.220422762918762
+          ],
+          "fixed_seed_changes": [
+            -9.692583333333333,
+            -103.69575,
+            -9.854666666666665
+          ]
+        }
+      }
+    },
+    "control_vs_parent": {
+      "public": {
+        "absolute": {
+          "specialist480": -35.01710833333333,
+          "control504": -71.66855555555557
+        },
+        "change": {
+          "mean": -36.651447222222224,
+          "interval": [
+            -46.99364280899444,
+            -26.309251635450007
+          ],
+          "fixed_seed_changes": [
+            -10.683716666666669,
+            -70.67316666666666,
+            -28.597458333333332
+          ]
+        }
+      },
+      "noregrets": {
+        "absolute": {
+          "specialist480": 501.51286111111114,
+          "control504": 478.38738888888884
+        },
+        "change": {
+          "mean": -23.125472222222225,
+          "interval": [
+            -52.370914188123294,
+            6.119969743678848
+          ],
+          "fixed_seed_changes": [
+            -39.448750000000004,
+            1.841749999999991,
+            -31.76941666666667
+          ]
+        }
+      },
+      "rich96": {
+        "absolute": {
+          "specialist480": 72.83136111111111,
+          "control504": 42.3153611111111
+        },
+        "change": {
+          "mean": -30.516000000000005,
+          "interval": [
+            -66.23975707810472,
+            5.207757078104706
+          ],
+          "fixed_seed_changes": [
+            2.722166666666664,
+            -69.38333333333334,
+            -24.886833333333332
+          ]
+        }
+      },
+      "calling-station": {
+        "absolute": {
+          "specialist480": 761.0076388888889,
+          "control504": 1142.76875
+        },
+        "change": {
+          "mean": 381.7611111111111,
+          "interval": [
+            238.3387922170565,
+            525.1834300051657
+          ],
+          "fixed_seed_changes": [
+            246.36875,
+            630.2666666666668,
+            268.6479166666667
+          ]
+        }
+      },
+      "tight-value": {
+        "absolute": {
+          "specialist480": -50.83344444444444,
+          "control504": -92.95480555555557
+        },
+        "change": {
+          "mean": -42.121361111111106,
+          "interval": [
+            -75.6149388756082,
+            -8.627783346614002
+          ],
+          "fixed_seed_changes": [
+            3.607333333333334,
+            -83.2615,
+            -46.709916666666665
+          ]
+        }
+      },
+      "pressure": {
+        "absolute": {
+          "specialist480": 678.8242500000001,
+          "control504": 608.4029722222222
+        },
+        "change": {
+          "mean": -70.42127777777777,
+          "interval": [
+            -133.17896941195008,
+            -7.663586143605478
+          ],
+          "fixed_seed_changes": [
+            -94.09433333333334,
+            -47.214250000000014,
+            -69.95525
+          ]
+        }
+      },
+      "mixed": {
+        "absolute": {
+          "specialist480": 333.40816666666666,
+          "control504": 301.6715
+        },
+        "change": {
+          "mean": -31.73666666666667,
+          "interval": [
+            -64.48116536331351,
+            1.0078320299801646
+          ],
+          "fixed_seed_changes": [
+            -32.43066666666667,
+            -20.789499999999997,
+            -41.989833333333344
+          ]
+        }
+      },
+      "varied": {
+        "absolute": {
+          "specialist480": 433.88977777777774,
+          "control504": 338.04266666666666
+        },
+        "change": {
+          "mean": -95.84711111111109,
+          "interval": [
+            -142.64368961104498,
+            -49.05053261117719
+          ],
+          "fixed_seed_changes": [
+            -87.13841666666666,
+            -102.58891666666668,
+            -97.814
+          ]
+        }
+      },
+      "solverlike": {
+        "absolute": {
+          "specialist480": 35.392805555555555,
+          "control504": -8.817222222222219
+        },
+        "change": {
+          "mean": -44.21002777777778,
+          "interval": [
+            -74.76772780753214,
+            -13.652327748023428
+          ],
+          "fixed_seed_changes": [
+            -1.6181666666666634,
+            -113.03941666666665,
+            -17.9725
+          ]
+        }
+      }
+    }
+  },
+  "public_nominal_contrasts": {
+    "diverse504_minus_control504": {
+      "mean": -1.266186111111111,
+      "interval": [
+        -6.99740910797744,
+        4.465036885755218
+      ],
+      "fixed_seed_changes": [
+        -0.7450249999999979,
+        -6.410166666666666,
+        3.3566333333333316
+      ]
+    },
+    "diverse504_minus_specialist480": {
+      "mean": -37.917633333333335,
+      "interval": [
+        -44.416478673186994,
+        -31.41878799347968
+      ],
+      "fixed_seed_changes": [
+        -11.428741666666665,
+        -77.08333333333333,
+        -25.240825
+      ]
+    },
+    "control504_minus_specialist480": {
+      "mean": -36.651447222222224,
+      "interval": [
+        -43.16292118974756,
+        -30.13997325469689
+      ],
+      "fixed_seed_changes": [
+        -10.683716666666669,
+        -70.67316666666666,
+        -28.597458333333332
+      ]
+    }
+  },
+  "matched_private_snapshot_counts": {
+    "public/342": {
+      "498": 30126,
+      "486": 30159,
+      "492": 29579,
+      "504": 30136
+    },
+    "public/343": {
+      "498": 30126,
+      "486": 30159,
+      "492": 29579,
+      "504": 30136
+    },
+    "public/344": {
+      "498": 30126,
+      "486": 30159,
+      "492": 29579,
+      "504": 30136
+    },
+    "noregrets/342": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "noregrets/343": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "noregrets/344": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "rich96/342": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "rich96/343": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "rich96/344": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "calling-station/342": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "calling-station/343": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "calling-station/344": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "tight-value/342": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "tight-value/343": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "tight-value/344": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "pressure/342": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "pressure/343": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "pressure/344": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "mixed/342": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "mixed/343": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "mixed/344": {
+      "486": 3020,
+      "492": 2961,
+      "498": 2977,
+      "504": 3042
+    },
+    "varied/342": {
+      "498": 2938,
+      "486": 3002,
+      "504": 3064,
+      "492": 2996
+    },
+    "varied/343": {
+      "498": 2938,
+      "486": 3002,
+      "504": 3064,
+      "492": 2996
+    },
+    "varied/344": {
+      "498": 2938,
+      "486": 3002,
+      "504": 3064,
+      "492": 2996
+    },
+    "solverlike/342": {
+      "492": 3013,
+      "498": 2978,
+      "504": 2980,
+      "486": 3029
+    },
+    "solverlike/343": {
+      "492": 3013,
+      "498": 2978,
+      "504": 2980,
+      "486": 3029
+    },
+    "solverlike/344": {
+      "492": 3013,
+      "498": 2978,
+      "504": 2980,
+      "486": 3029
+    }
+  },
+  "cells": {
+    "public-seed-342-specialist480": {
+      "hands": 120000,
+      "decisions": 1229889,
+      "replayed_model_hands": 396,
+      "replayed_model_actions": 3995,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "8f92a48418e06821e74ff38cc3a6cc11ee634cb0dc3478b6c29490e2c3fb21d5",
+      "raw_sha256": "669f227ed5fa58fbe61940a107291a2aa753b840b313602cbb2056ae5ea2d878"
+    },
+    "public-seed-342-control504": {
+      "hands": 120000,
+      "decisions": 1234189,
+      "replayed_model_hands": 396,
+      "replayed_model_actions": 3968,
+      "sampled_first_different_action": {
+        "flop": 52,
+        "same_trace": 331,
+        "turn": 9,
+        "river": 4
+      },
+      "snapshot_hand_counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "result_sha256": "f3e487a3cf8fb4ddcb8b7793520ce00029dbdcd20addc1a5fc14b293f525b053",
+      "raw_sha256": "bbf74d71acdb7056400945d7b48ee5bb278e0f08fc39584abf84d4153bc36bb1"
+    },
+    "public-seed-342-diverse504": {
+      "hands": 120000,
+      "decisions": 1238353,
+      "replayed_model_hands": 396,
+      "replayed_model_actions": 4033,
+      "sampled_first_different_action": {
+        "flop": 61,
+        "same_trace": 317,
+        "turn": 15,
+        "river": 3
+      },
+      "snapshot_hand_counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "result_sha256": "084c41ca9febf2b87131b1e57a813f51d3996a3fb945162e19b3526ba297f31b",
+      "raw_sha256": "d4ec13d486485587878862407c990cffe61475e9b6fd16c89bd497c1e3660711"
+    },
+    "public-seed-343-specialist480": {
+      "hands": 120000,
+      "decisions": 1291148,
+      "replayed_model_hands": 396,
+      "replayed_model_actions": 4163,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "0d22f2c7f0a5997d6d23a3112a9ac5a4eb6f043b327d46e615051ce942b5601a",
+      "raw_sha256": "66e0d14cd3bfa457682374057d1a83b82b5046f7dca356b0f0419b75bebf1227"
+    },
+    "public-seed-343-control504": {
+      "hands": 120000,
+      "decisions": 1273932,
+      "replayed_model_hands": 396,
+      "replayed_model_actions": 4055,
+      "sampled_first_different_action": {
+        "flop": 86,
+        "same_trace": 284,
+        "turn": 23,
+        "river": 3
+      },
+      "snapshot_hand_counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "result_sha256": "d2ca43a06576b2d9b31bc4b9a1d85cc1c84189174b78cf063f1d60c90b0a6d57",
+      "raw_sha256": "64f51a87cd2b84da755c80683c1b34f2f7eb5772fd4a3c5bfa2d17d1b88bf386"
+    },
+    "public-seed-343-diverse504": {
+      "hands": 120000,
+      "decisions": 1277968,
+      "replayed_model_hands": 396,
+      "replayed_model_actions": 4099,
+      "sampled_first_different_action": {
+        "flop": 81,
+        "same_trace": 286,
+        "turn": 24,
+        "river": 5
+      },
+      "snapshot_hand_counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "result_sha256": "52831b4f24e26e75f6d0bd4a155179f4986fad6dea8a9c4783fdd7a621e1868e",
+      "raw_sha256": "6e0e668029bf9969c060b4e7a99dbb21ad888fa7a0b61b8c8eb022dde537d152"
+    },
+    "public-seed-344-specialist480": {
+      "hands": 120000,
+      "decisions": 1252301,
+      "replayed_model_hands": 396,
+      "replayed_model_actions": 4029,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "9959970aff0739a85ed6df89501682bbcb5b6a2dc0803f27aaed66767a8f9ed8",
+      "raw_sha256": "cf573c07f5102825a630947c01d8bc31ab59840f10a1e0685cf8464ab6e3497c"
+    },
+    "public-seed-344-control504": {
+      "hands": 120000,
+      "decisions": 1239981,
+      "replayed_model_hands": 396,
+      "replayed_model_actions": 3986,
+      "sampled_first_different_action": {
+        "flop": 63,
+        "same_trace": 311,
+        "river": 5,
+        "turn": 17
+      },
+      "snapshot_hand_counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "result_sha256": "dd432f9336324bbc80cec1a8220d4dacc9dd27b8cd05ad76ed2b671444366d7f",
+      "raw_sha256": "91064550d6b7ec899281a9dd1b4dc902f4952d22c206a09f66a17f1b59ff8c5d"
+    },
+    "public-seed-344-diverse504": {
+      "hands": 120000,
+      "decisions": 1242292,
+      "replayed_model_hands": 396,
+      "replayed_model_actions": 3983,
+      "sampled_first_different_action": {
+        "flop": 61,
+        "same_trace": 313,
+        "turn": 16,
+        "river": 6
+      },
+      "snapshot_hand_counts": {
+        "498": 30126,
+        "486": 30159,
+        "492": 29579,
+        "504": 30136
+      },
+      "result_sha256": "3ce049c389470c40d5c0911597d69b57985972c1fc898fedf1717be9ff3f59ee",
+      "raw_sha256": "4ac7c09d811b032df606204ab3815c7bdfdc2cd24caa75ebe7aa1d75ee21cd78"
+    },
+    "noregrets-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 109800,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 437,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "b9b459690b936431f6db639f4de2667fcff7190296e4fdfb56557962523541c5",
+      "raw_sha256": "32dd973d1d46cb2d9d621839656e883845458353e0259b426ea5cdc6e68e88aa"
+    },
+    "noregrets-seed-342-control504": {
+      "hands": 12000,
+      "decisions": 110004,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 437,
+      "sampled_first_different_action": {
+        "same_trace": 48
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "80b7541040dc5848b3d059a2c6a585bae2437d6f6f3eb1550521e1a13a7a0618",
+      "raw_sha256": "e0670a0ba61a03f5735f68b1cc285862326b42058735616b58af77052ada2664"
+    },
+    "noregrets-seed-342-diverse504": {
+      "hands": 12000,
+      "decisions": 109981,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 437,
+      "sampled_first_different_action": {
+        "same_trace": 48
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "ee7c147784faa973ca1672a000e1b3a70373c30fe639e2070bfeb5705fe6e127",
+      "raw_sha256": "3cb6a3924513005f2b67ec37b7236adde310054c249105b238e8a1313937064d"
+    },
+    "noregrets-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 110787,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 468,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "22a16f3886a756ef944173319603c33e5dd8ee790dd9d2246975ceb0fd11ef8f",
+      "raw_sha256": "02ad42856f37c68822fa74118c1ec2c5a4c7883295e73ea8b7efe4a6bbd18572"
+    },
+    "noregrets-seed-343-control504": {
+      "hands": 12000,
+      "decisions": 110745,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 469,
+      "sampled_first_different_action": {
+        "same_trace": 47,
+        "flop": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "d18a8b6b0226de6216f8483c6e1494b8578ebf35cec41512b54fb2a1e0025218",
+      "raw_sha256": "6eb9b2bfbdee9a3f460ca462197c3c7574cb3c1ee193d6924c332c43dc12bbe0"
+    },
+    "noregrets-seed-343-diverse504": {
+      "hands": 12000,
+      "decisions": 110848,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 467,
+      "sampled_first_different_action": {
+        "same_trace": 47,
+        "flop": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "7c9df195cba0529008a2797c460386c90f911c441dad384b9a4e1083bf66bbbc",
+      "raw_sha256": "3484cd2f47358755e222706901e4c6342512ed1d26107574c7edbfa603fe6a18"
+    },
+    "noregrets-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 109991,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 454,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "bcad65c333f174a0e443ddf3e256e4c1e32855054459f2d4d1b043cda5726ee7",
+      "raw_sha256": "647862e2d77137fd40aaf28786a9004ffc66c13a697c007485239e7f41e3db82"
+    },
+    "noregrets-seed-344-control504": {
+      "hands": 12000,
+      "decisions": 109821,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 457,
+      "sampled_first_different_action": {
+        "same_trace": 46,
+        "flop": 2
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "affc48a1f598cff23c67a031e7a9b2542c06b228f87e2a358dd6a8756fde72ae",
+      "raw_sha256": "70319123a409c8196a8e8827fd465888a2df0e4f9b410265dfa23a2d4d182abd"
+    },
+    "noregrets-seed-344-diverse504": {
+      "hands": 12000,
+      "decisions": 109812,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 457,
+      "sampled_first_different_action": {
+        "same_trace": 47,
+        "flop": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "64ab635b76686156ae34f22b245483bdf9c1c55557bb9521b6704ca3eca0d22e",
+      "raw_sha256": "1e991ca8a746287ecc4ccc5378c876811630449929b7fb726c9ac50d10bedaaf"
+    },
+    "rich96-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 114451,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 411,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "b7697e5b94e8f8c88c2be7fc47375b2a452766e50aa71c25bc9193a9e7913bc0",
+      "raw_sha256": "4db611b48164adb32af0ce18ca03d39a7745fa5915e36a5d6d571c7f8bb641a4"
+    },
+    "rich96-seed-342-control504": {
+      "hands": 12000,
+      "decisions": 114144,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 409,
+      "sampled_first_different_action": {
+        "same_trace": 42,
+        "flop": 5,
+        "turn": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "cbb997edc97bdffc8f6cfb3ebd4acb27314b92c5015be7c5291587fa3c6cfd50",
+      "raw_sha256": "0faf43c18ec54e10943e9f700795e60f635798a3babb57382efd6556bc245c46"
+    },
+    "rich96-seed-342-diverse504": {
+      "hands": 12000,
+      "decisions": 114353,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 410,
+      "sampled_first_different_action": {
+        "same_trace": 41,
+        "flop": 5,
+        "turn": 1,
+        "river": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "4aa237d1f4766f1e09f6e60277adb64cab2dbab7bd75eee6b103bcd3480a733c",
+      "raw_sha256": "f2205ddac8f6c378baacf98535fdac29c32d1b74227c01484523bd130251964a"
+    },
+    "rich96-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 148040,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 593,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "64ade2cfd178505e8aec4dfb1d5692717c18465a7a2217187bdcaa779eb9dd04",
+      "raw_sha256": "1df75bee46935cf18ff1a4c9aebcd1ec6387906acac064a855e7e921138cb955"
+    },
+    "rich96-seed-343-control504": {
+      "hands": 12000,
+      "decisions": 147094,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 594,
+      "sampled_first_different_action": {
+        "same_trace": 45,
+        "turn": 1,
+        "flop": 2
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "9f7ecadbb83ff219c228c0b9a97572381b8875c68fecb01d418141ebb59d3aba",
+      "raw_sha256": "eba22527e7659e6521ec4dd830d67c8a82b56a015c0428616e33b45734394101"
+    },
+    "rich96-seed-343-diverse504": {
+      "hands": 12000,
+      "decisions": 147144,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 598,
+      "sampled_first_different_action": {
+        "same_trace": 44,
+        "river": 1,
+        "flop": 3
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "f461341c404980fa92ce1a0f443c47e97d8e753a731f0c00e51659a4ca98984d",
+      "raw_sha256": "bcb40c137e38cfc281d49f8a6346bc3b5e4021cbb3a70f410a836abf18b257d9"
+    },
+    "rich96-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 122336,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 464,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "22ade04a885b3a9182a44a80244184108d07bff27b17ee4ae86152db968a7951",
+      "raw_sha256": "75a660ed31498ae7e0f477871b202b35e644fb051ffeec6d56a8036b748b5232"
+    },
+    "rich96-seed-344-control504": {
+      "hands": 12000,
+      "decisions": 121537,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 461,
+      "sampled_first_different_action": {
+        "same_trace": 43,
+        "flop": 4,
+        "turn": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "2b8c343796fc61d3fb1e9cf5d5058083200b688253c5bce732d9bb8422655cb3",
+      "raw_sha256": "d63f06fc9fd056c53efb4586afceae5803d0dda857f5c8d2a964a55dddc73555"
+    },
+    "rich96-seed-344-diverse504": {
+      "hands": 12000,
+      "decisions": 121683,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 464,
+      "sampled_first_different_action": {
+        "same_trace": 45,
+        "flop": 3
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "4b4c6ec8317d30e00b671817b5a28decb86dbb3d7a47f372b2b2c42564f60227",
+      "raw_sha256": "f78c4bd53a7c96441049c1f36442c8b4dddb69d02157e9cf1c8d8fb723e58b80"
+    },
+    "calling-station-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 306425,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 1278,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "839308d55e4d38f5550a587bf74c6e8b7c0b185c1b6db2a6d182409943f12cff",
+      "raw_sha256": "6ca459a972c617f399baddcb9bb03f77f11f204605d1894d228ed7e5e56eb7ec"
+    },
+    "calling-station-seed-342-control504": {
+      "hands": 12000,
+      "decisions": 305872,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 1255,
+      "sampled_first_different_action": {
+        "flop": 14,
+        "turn": 14,
+        "same_trace": 17,
+        "river": 3
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "4afb2975e81cdb5ac1da21e6c26ff0e451aaba44e694ef833a4bddf948ef0323",
+      "raw_sha256": "70145a6b791643a002eebc2cd97729bf980be7ddcf1ba73977523dc6238166b5"
+    },
+    "calling-station-seed-342-diverse504": {
+      "hands": 12000,
+      "decisions": 306627,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 1239,
+      "sampled_first_different_action": {
+        "flop": 16,
+        "turn": 11,
+        "same_trace": 16,
+        "river": 5
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "f2eb0703af071d1df4dea4e45660dfa7130f3f43736f9cfcd0d192374b57cea8",
+      "raw_sha256": "ed1fb852c6fea2fceeb269aed5c20b354a71e545678f2ac91fb72cbde79bc7f2"
+    },
+    "calling-station-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 292108,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 1136,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "1c3768cf3303d9381f534664b0b65516cfb290f44427536ca906ecbc86eac0f7",
+      "raw_sha256": "b48cd1b16ace90b3c0ea2cb62322a05a6878fec77e0f48bedb6a402200589033"
+    },
+    "calling-station-seed-343-control504": {
+      "hands": 12000,
+      "decisions": 292444,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 1125,
+      "sampled_first_different_action": {
+        "same_trace": 34,
+        "flop": 10,
+        "turn": 2,
+        "river": 2
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "a490f40121b63f1295ef6d85f1eb87a19923e75a58074bd797f25826356d71bd",
+      "raw_sha256": "4e26b2bbecd17614a9a4f7c2614ed3399286e81e8793a3b0640a8593d640cddd"
+    },
+    "calling-station-seed-343-diverse504": {
+      "hands": 12000,
+      "decisions": 299205,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 1141,
+      "sampled_first_different_action": {
+        "same_trace": 29,
+        "flop": 13,
+        "turn": 3,
+        "river": 3
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "0111a31dabab3240cb2279c7606436726077f2bd7517bcc46cd5a56e0572d821",
+      "raw_sha256": "e81f2cde6d1c5438ae0ebf382c8ed8255e1d2d51761c53546ec2e8b1422ca7fb"
+    },
+    "calling-station-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 291878,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 1142,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "d06acc36d6938a6036bea00ab82fc0e3b970b1da190db877cb35ce53271c5763",
+      "raw_sha256": "6590fde19424313c193a39e776907814499498ef71abf4a0546a8fa2c658c66b"
+    },
+    "calling-station-seed-344-control504": {
+      "hands": 12000,
+      "decisions": 298277,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 1159,
+      "sampled_first_different_action": {
+        "same_trace": 31,
+        "turn": 7,
+        "flop": 9,
+        "river": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "cc502436741a4bf57a016d15743e140feb1573779024a309883eccdf6c9178ea",
+      "raw_sha256": "1e6fedb8bf83eec7830f72e0e39d522337e0993e42e7d101fce23233f5a3035b"
+    },
+    "calling-station-seed-344-diverse504": {
+      "hands": 12000,
+      "decisions": 296184,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 1152,
+      "sampled_first_different_action": {
+        "same_trace": 34,
+        "turn": 7,
+        "flop": 6,
+        "river": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "31b078a9d861632b9936b7f4e9bde62df1c3c97e40ec78f886a436b90ed360b3",
+      "raw_sha256": "ca2ca4d03457c51218583ed4fe8cb17df02eedf7621f7a64a12d3c2349f4b37c"
+    },
+    "tight-value-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 119266,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 379,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "042904dacd2dd36dcd2de96a3c33e1abdae6eb5cd9f742e570f7eaa3e3db523d",
+      "raw_sha256": "add870a659d957d75ee5f768600d4f2970831b2e45b06fdbeb67421676b0877d"
+    },
+    "tight-value-seed-342-control504": {
+      "hands": 12000,
+      "decisions": 119604,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 374,
+      "sampled_first_different_action": {
+        "same_trace": 41,
+        "flop": 2,
+        "turn": 2,
+        "river": 3
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "7f30731026e1766e4350e9c2267c5a12012a2e42740ecdaf596e67f0da4a717c",
+      "raw_sha256": "dd6b8f6aac79c1f5166ebea15e27177ce23052a9287f65f7dfa8d741ba321da1"
+    },
+    "tight-value-seed-342-diverse504": {
+      "hands": 12000,
+      "decisions": 120169,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 373,
+      "sampled_first_different_action": {
+        "same_trace": 40,
+        "flop": 4,
+        "river": 3,
+        "turn": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "69e10c53c7adcc26bb01b65810cee5392e0ba1387273bcfb4cbdccacec536641",
+      "raw_sha256": "edafaab22581be6c7c786aef8a98e2aa4e7fc95c1ce0dbbf5cef8ca485f79351"
+    },
+    "tight-value-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 125269,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 434,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "31b606beace71bd857f7a2ef7b0b20a955b100efec014c150910badca8b4405c",
+      "raw_sha256": "1d8f4c5e413b2f1c0c9bf3f4e173491da2567934905d7c055c57bdba5dd436f9"
+    },
+    "tight-value-seed-343-control504": {
+      "hands": 12000,
+      "decisions": 123601,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 431,
+      "sampled_first_different_action": {
+        "same_trace": 35,
+        "turn": 3,
+        "flop": 8,
+        "river": 2
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "51839f01123aa7aa2f2063143cd8960b77b2fb75bfe7be6356bb2b04ea3a2696",
+      "raw_sha256": "09d91ce572eb62e5a354658c185ac8a091b0c4fa45ac14762285a9ae9354bc58"
+    },
+    "tight-value-seed-343-diverse504": {
+      "hands": 12000,
+      "decisions": 124331,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 426,
+      "sampled_first_different_action": {
+        "same_trace": 35,
+        "flop": 7,
+        "turn": 6
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "55df8959467a62eea5c13acc90afa96ba51716b9f93dd458100d13376b92739c",
+      "raw_sha256": "55abb4fb88d0306555d8e5b181cccd6a0cfe75cbe6c8df9afe03557cbb27495e"
+    },
+    "tight-value-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 120830,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 409,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "8b8a435dde439ec28aab52ffe361847284cac38bdf7e846aea29a8198677d487",
+      "raw_sha256": "e306ffd953721a8d17c7a65e35a6d33c68ac6471f8af2cbfef5705f2d6f25eb0"
+    },
+    "tight-value-seed-344-control504": {
+      "hands": 12000,
+      "decisions": 120431,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 400,
+      "sampled_first_different_action": {
+        "same_trace": 39,
+        "flop": 6,
+        "river": 1,
+        "turn": 2
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "38b36965e5e9fc67d5352751bb78f5930cc7c73107e2ab5856a12d549357eee5",
+      "raw_sha256": "c8c9e6c1bd337c9f6ad04123c7e1581b4c424a1cd0e41fa97c985336267b55bc"
+    },
+    "tight-value-seed-344-diverse504": {
+      "hands": 12000,
+      "decisions": 120687,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 407,
+      "sampled_first_different_action": {
+        "same_trace": 37,
+        "flop": 5,
+        "river": 1,
+        "turn": 5
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "bad45d87b6ca8a7a5f0148fa2a8ce4dd007601c4808dd67937f57fd562ec40a7",
+      "raw_sha256": "e7461529790d007ac38bb3054b63fb00fd03fecb88bf894459cefdaa0f5fd04b"
+    },
+    "pressure-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 164621,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 690,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "be0f9c43687b9dbf4debcd7b858af66b29f68846a8039970b447dff73b988f1f",
+      "raw_sha256": "33539b11b549b9354df1824806fefaa41b9655c219e34228c6e11da3dab1483e"
+    },
+    "pressure-seed-342-control504": {
+      "hands": 12000,
+      "decisions": 164710,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 691,
+      "sampled_first_different_action": {
+        "same_trace": 46,
+        "flop": 2
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "ba206f6b3f05068c0b91c0e9ef5f5e2effae1e805a12007b546d14d714b3e0ef",
+      "raw_sha256": "27217984206f8537945ef3b16d9387018fdf756d33d6fe71c0f7efcd0efe625a"
+    },
+    "pressure-seed-342-diverse504": {
+      "hands": 12000,
+      "decisions": 164722,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 691,
+      "sampled_first_different_action": {
+        "same_trace": 47,
+        "flop": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "e4982c2bf801479e384fed3aef07f3c8bf6e5e1afd3610c6397b83706d990a95",
+      "raw_sha256": "4e619b70285fcce40343f7e5b12b737ebb6470527ff98a19e7033759c8b56b7a"
+    },
+    "pressure-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 166838,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 690,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "e38639d843f4b1b08bf49e7d264119ee5aca527dcc9b217e95e861202d685c6d",
+      "raw_sha256": "f3064ce3057425fbd23201cea4f969e59af27495d054486bf3456ed6ac1bab99"
+    },
+    "pressure-seed-343-control504": {
+      "hands": 12000,
+      "decisions": 166641,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 690,
+      "sampled_first_different_action": {
+        "same_trace": 48
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "376ba7e23c032d70fd6c7d0f836e01c3695a6f5d58dc81d509a7719a81709ac1",
+      "raw_sha256": "097aedb5ba31d1affd5732315879f30b9703b4de3b4ef50cb7c4931168e41cf9"
+    },
+    "pressure-seed-343-diverse504": {
+      "hands": 12000,
+      "decisions": 166654,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 690,
+      "sampled_first_different_action": {
+        "same_trace": 48
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "ed0c9905d1e3395e7e5f4bcf9bb20129a4cb267da2ab53d63752f650d4ee39ec",
+      "raw_sha256": "56c8edd174272ad37daeb006c2d4e20e7050a9178dfcc578047f1ebe6393d5e9"
+    },
+    "pressure-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 165704,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 679,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "86d838203176871383440349ed3867783966a602e80f33514a9a68daa6dbcba5",
+      "raw_sha256": "c91d0e4b0a1e5af1f4229b5e22489b8414656923816b986dbf8c3255e3c5134a"
+    },
+    "pressure-seed-344-control504": {
+      "hands": 12000,
+      "decisions": 165569,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 683,
+      "sampled_first_different_action": {
+        "same_trace": 47,
+        "flop": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "136bfa0d168835ecd63edf7b3a8eba067454050a6a7424f48adaa2a6f4d477a8",
+      "raw_sha256": "7e72ddf297bda9bbf8008043b267b895bec1e0b8db8d8079a49a594708f6a30c"
+    },
+    "pressure-seed-344-diverse504": {
+      "hands": 12000,
+      "decisions": 165621,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 685,
+      "sampled_first_different_action": {
+        "same_trace": 47,
+        "flop": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "427fd7512db2337c0844ef0cfcd95912b4a813756f698b0f1fbb285ca8a56231",
+      "raw_sha256": "c85600ad6ddda180fbedc8acaff4a5fb67f35cb906adfc81dee336652606f22f"
+    },
+    "mixed-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 113602,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 424,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "31f0d395c859ed5ad9ce9f66a6cb5e12c0734a7fbb359aef8c69d0f51a64a9fe",
+      "raw_sha256": "73977bba3707200e4a0ce871b7d8011a4fa3ca935f1473cfcbbbee77ef993584"
+    },
+    "mixed-seed-342-control504": {
+      "hands": 12000,
+      "decisions": 113552,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 424,
+      "sampled_first_different_action": {
+        "same_trace": 47,
+        "flop": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "b86e03a68527e2b797e28351857725a8b54a5b87259d42b6f381dd0cd8a2b187",
+      "raw_sha256": "cbd1a5a234147fa1ac2c2ca155df8d04a62a13b6fe1363e00d3a50bbfb2d9212"
+    },
+    "mixed-seed-342-diverse504": {
+      "hands": 12000,
+      "decisions": 113684,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 425,
+      "sampled_first_different_action": {
+        "same_trace": 46,
+        "flop": 2
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "852bb35756587fd5c3bb349f6e6728e35a5f9d977950f334b7a8225aca1090c6",
+      "raw_sha256": "441d8fc438189c21589e9ab9f3d64189217752a408ec971acb7be9e68e968e8b"
+    },
+    "mixed-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 115979,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 436,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "af4baac90de80416460eac1077f3bdc3f09160979c5621307f94c691cb9374fb",
+      "raw_sha256": "79f0538473c4ee4a5111425bf2795a3eb339231c9560a835a700d154e04ebc32"
+    },
+    "mixed-seed-343-control504": {
+      "hands": 12000,
+      "decisions": 115712,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 435,
+      "sampled_first_different_action": {
+        "same_trace": 43,
+        "turn": 1,
+        "flop": 4
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "4955529c9d2f2e54503b6379268aeecad8872421d0f96f3244645b7276400f91",
+      "raw_sha256": "faa2cd44c50017d301b874249a953c74d233247a8fc5d89e27308a750f7adff7"
+    },
+    "mixed-seed-343-diverse504": {
+      "hands": 12000,
+      "decisions": 115632,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 438,
+      "sampled_first_different_action": {
+        "same_trace": 45,
+        "flop": 3
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "874498a50e806d04db3a94132d0cdf6afa5554ccc7644f4455eef98e581fb47b",
+      "raw_sha256": "bddadb1bd52aab6919754217cf867a216dcd095a94d1b12689216510e14c66da"
+    },
+    "mixed-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 114620,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 448,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "eb3ee360233495426bb097d1e0b08ab79337ad6fdb3c1e2e243f5f9c9200268a",
+      "raw_sha256": "b35ccd1b5d7b52b8c5784a37bca4d1b7a44ac7266be55d2123d3d075d55defaf"
+    },
+    "mixed-seed-344-control504": {
+      "hands": 12000,
+      "decisions": 113990,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 447,
+      "sampled_first_different_action": {
+        "same_trace": 40,
+        "flop": 6,
+        "turn": 1,
+        "river": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "d6dc5160f2df88c2aacaa53b142c7c6fa497701503b54e9926654eeb404dc086",
+      "raw_sha256": "7d979c2cff867f953c910372ad654c96e5b03deb4a751daa05173a31ee53505a"
+    },
+    "mixed-seed-344-diverse504": {
+      "hands": 12000,
+      "decisions": 114109,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 446,
+      "sampled_first_different_action": {
+        "same_trace": 42,
+        "flop": 5,
+        "river": 1
+      },
+      "snapshot_hand_counts": {
+        "486": 3020,
+        "492": 2961,
+        "498": 2977,
+        "504": 3042
+      },
+      "result_sha256": "6f6f3f28732bd36965955ec919c08422c05a82ba53d712be5194d17497d5814d",
+      "raw_sha256": "84aa7ebe9f92f9d8df4d2507ba63454b5f77c5c8300460ea7cb6b1ba7c141c69"
+    },
+    "varied-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 136975,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 571,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "b33e7b1d9b85dc377f4634260232733affc269925ad8816bea51642f17ce2f38",
+      "raw_sha256": "24e402f1b53388e11e679c8adf189290e6fdf5c47ef027a2584655f7a48af746"
+    },
+    "varied-seed-342-control504": {
+      "hands": 12000,
+      "decisions": 136761,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 567,
+      "sampled_first_different_action": {
+        "same_trace": 40,
+        "flop": 6,
+        "turn": 2
+      },
+      "snapshot_hand_counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "result_sha256": "9f481163bd31c827210c4fce0e4ac3a0764a7e9f4759132ab104ec406c1d1ba5",
+      "raw_sha256": "2b6eee373e1f6085fb903ea576c56d086c2214815d10532f6568779328bb97b9"
+    },
+    "varied-seed-342-diverse504": {
+      "hands": 12000,
+      "decisions": 136885,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 568,
+      "sampled_first_different_action": {
+        "same_trace": 41,
+        "flop": 5,
+        "turn": 2
+      },
+      "snapshot_hand_counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "result_sha256": "d063764dd613461a8d75fe18d490e741dd5e652042797c1caa7d44688608d89d",
+      "raw_sha256": "c38cda622da580da08fc5c3757d3bcbfaa5c8fd93152b50c60df20038734bb34"
+    },
+    "varied-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 144182,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 553,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "0f265b42548e639c5e4f87b957c4d9be8f03a95b442fe312ae289aab5ada7950",
+      "raw_sha256": "68b9f1133f44dbc18e10846e5061e0014e942120c68657e9013a27e6908cff70"
+    },
+    "varied-seed-343-control504": {
+      "hands": 12000,
+      "decisions": 143422,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 552,
+      "sampled_first_different_action": {
+        "flop": 8,
+        "same_trace": 40
+      },
+      "snapshot_hand_counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "result_sha256": "ecc670716fbd5ad46a4f545983f5c7c33a7fabe3acd3e6a123e72dba85cb1537",
+      "raw_sha256": "f272cc600b1bb93f5bd9ff5a0d8045f63464ba6a326eb6840daa4bbe42183ef9"
+    },
+    "varied-seed-343-diverse504": {
+      "hands": 12000,
+      "decisions": 143377,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 559,
+      "sampled_first_different_action": {
+        "same_trace": 42,
+        "river": 1,
+        "flop": 4,
+        "turn": 1
+      },
+      "snapshot_hand_counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "result_sha256": "8e7c8ce47efee7f54669299ad58a4a096a0e9176c3b607a1f735b087e63c54eb",
+      "raw_sha256": "e31dfb9271c32a125d02fdf89c1604fc8d737e5bc7f4e1d7698611df7353259c"
+    },
+    "varied-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 140207,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 562,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "98bde4b852d905379b79b7605bd0f6438bd7273760143b4433d51edd033a5a6d",
+      "raw_sha256": "863e835f174cc6c1fb6fa9b19f7a01504fb31e88f716c608e7b45b47c5fea301"
+    },
+    "varied-seed-344-control504": {
+      "hands": 12000,
+      "decisions": 139460,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 557,
+      "sampled_first_different_action": {
+        "same_trace": 47,
+        "flop": 1
+      },
+      "snapshot_hand_counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "result_sha256": "adbfb807f8984b61b51b3210667a1fa2adfe1b47d6025eeb4505d8b29e1e54e5",
+      "raw_sha256": "2f7c51b9bab43e5b6d26a8f7dd3652b0c56922a7ed8aa93a1eec55db9a3e215d"
+    },
+    "varied-seed-344-diverse504": {
+      "hands": 12000,
+      "decisions": 139477,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 553,
+      "sampled_first_different_action": {
+        "same_trace": 46,
+        "flop": 2
+      },
+      "snapshot_hand_counts": {
+        "498": 2938,
+        "486": 3002,
+        "504": 3064,
+        "492": 2996
+      },
+      "result_sha256": "1d00b09644a6148be8b6adba4027b00ff0b7fe090e6f1f716e80bd6f23cbc3f9",
+      "raw_sha256": "fe06931864b04db134a45c1484f44d453598c853f1300576cd8507997cba57ac"
+    },
+    "solverlike-seed-342-specialist480": {
+      "hands": 12000,
+      "decisions": 97199,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 445,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "eefbc21489ec2c99e4653c497c2cfcfac2ff9c6076ed0c3635e0e3049a0cef34",
+      "raw_sha256": "b777a3a02adefb3165faf27a7ab232e928797f0aac734b151b716bbc92e2fdc3"
+    },
+    "solverlike-seed-342-control504": {
+      "hands": 12000,
+      "decisions": 97258,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 456,
+      "sampled_first_different_action": {
+        "flop": 6,
+        "same_trace": 42
+      },
+      "snapshot_hand_counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "result_sha256": "3e98c133d0bb33e3c0e24f8d97dd9da24934850b579d36d966b7456112d81c18",
+      "raw_sha256": "4d04ca6fc2245dbd5dfef88ae001e0e465f197eb432bfcf56313d2272188fa07"
+    },
+    "solverlike-seed-342-diverse504": {
+      "hands": 12000,
+      "decisions": 97588,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 458,
+      "sampled_first_different_action": {
+        "flop": 5,
+        "same_trace": 42,
+        "turn": 1
+      },
+      "snapshot_hand_counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "result_sha256": "d2ef031cfde43aab4f49a121ba6e0ccd0948080b25d8bd5c3a26fa8f305febc6",
+      "raw_sha256": "cc10bec9ab8f14bd9a04c592ef14c672177ced731ff1e0dba4858ab7c5358ea6"
+    },
+    "solverlike-seed-343-specialist480": {
+      "hands": 12000,
+      "decisions": 105980,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 469,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "393017f6b7ab3c9d8f126020bd59d15f6b9b9e8d0289595ff974b920825b6321",
+      "raw_sha256": "3c81687f931ab3f78e27492fc2b037a346a5b4b514d261ac591689f14cf85824"
+    },
+    "solverlike-seed-343-control504": {
+      "hands": 12000,
+      "decisions": 104210,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 455,
+      "sampled_first_different_action": {
+        "same_trace": 40,
+        "flop": 7,
+        "turn": 1
+      },
+      "snapshot_hand_counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "result_sha256": "a11b8b6c3d36931a59f26711fd10966b28c1c0e90f58d1b12f26cf619413bbd7",
+      "raw_sha256": "6e101840bf6dd5ce4f39bc4080ed932153cfe4779eca7ba99dff78e62b4c1119"
+    },
+    "solverlike-seed-343-diverse504": {
+      "hands": 12000,
+      "decisions": 103949,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 440,
+      "sampled_first_different_action": {
+        "same_trace": 37,
+        "flop": 11
+      },
+      "snapshot_hand_counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "result_sha256": "88c3b9b25d99a15c120a9b3193edd810e812e46bb0eef586d352e2adcece490b",
+      "raw_sha256": "dbf92df74a3ca3deb4027bcb068d54b9a27f3bc444e5160a9e980027efddaf8e"
+    },
+    "solverlike-seed-344-specialist480": {
+      "hands": 12000,
+      "decisions": 100098,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 458,
+      "sampled_first_different_action": {},
+      "snapshot_hand_counts": {},
+      "result_sha256": "c20b1f8609632ac53340244c14b82aec37420aa4a66c71d131da5ad54eb14ac5",
+      "raw_sha256": "23415d109aa0cf4b53bd4b16c729790baa41ae7982e24dd011b87a526fd1bf3c"
+    },
+    "solverlike-seed-344-control504": {
+      "hands": 12000,
+      "decisions": 98918,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 463,
+      "sampled_first_different_action": {
+        "flop": 9,
+        "same_trace": 38,
+        "turn": 1
+      },
+      "snapshot_hand_counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "result_sha256": "eae18146f5d7141d0c3cf2775ef4ab2cc4a16bbdf01c2b8fdf99dac2d4136886",
+      "raw_sha256": "88bb30cd1e72751fe1b46ab09256bca0d2e05150b25ea9c926a92be44faf86b1"
+    },
+    "solverlike-seed-344-diverse504": {
+      "hands": 12000,
+      "decisions": 99146,
+      "replayed_model_hands": 48,
+      "replayed_model_actions": 472,
+      "sampled_first_different_action": {
+        "flop": 7,
+        "same_trace": 37,
+        "turn": 4
+      },
+      "snapshot_hand_counts": {
+        "492": 3013,
+        "498": 2978,
+        "504": 2980,
+        "486": 3029
+      },
+      "result_sha256": "cfc6a2a24ff234df8c58d5efae881ed2232d077c0ac3fab4ccf8f238dc705657",
+      "raw_sha256": "9adee73bb94bb85bacbd4ba22e5e5a377ba525d4ec3849a1e0fbf564e2ab1dcd"
+    }
+  }
+}

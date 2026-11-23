@@ -8,7 +8,9 @@
 
 ## 최신 실행 확인
 
-- 2026-11-23의 최신 작업은 첫 플롭 선택에 대한 진단이다. 원래 카드 3,072묶음에서 주 분석과 학습 시점 상대 대조를 끝냈다. 기준 모델은 480회다. [결과](poker-flop-action-diagnostic-20261123.md) · [검산 상태](../reports/preflop-followup/480-v1/flop-action-diagnostic-20261123/status.json)
+- 2026-11-23 17:10 KST에 상대 다양화 자기대전(480→504회), 아홉 테이블 81셀의 194만 4천 핸드 평가, 원시 손익 검산, 학습 복구본 검증을 모두 마쳤다. 다음 비교 기준은 480회다. 비공개 학습 복구본과 후속 평가 보고서는 별도다. [최종 상태](../reports/preflop-followup/480-v1/opponent-diversity-20261123/status.json) · [결과와 근거](poker-opponent-diversity-20261123.md)
+
+- 2026-11-23의 앞선 첫 플롭 선택 진단은 원래 카드 3,072묶음에서 주 분석과 학습 시점 상대 대조를 끝냈다. [결과](poker-flop-action-diagnostic-20261123.md) · [검산 상태](../reports/preflop-followup/480-v1/flop-action-diagnostic-20261123/status.json)
 
 - 2026-11-20 10:10 KST에 504회 학습, 여덟 상대 구성의 주 평가 75개 셀과 학습률 보조 비교 3개 셀, 복구본 검증을 완료했다. 최신 판정은 480회 비교 기준 유지다. [최종 상태](../reports/preflop-followup/480-v1/postflop-averaging-20261120/status.json) · [학습과 상대별 성능](poker-postflop-averaging-20261120.md)
 

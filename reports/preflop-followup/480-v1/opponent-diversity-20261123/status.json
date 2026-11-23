@@ -1,18 +1,28 @@
 {
-  "state": "evaluating",
-  "observed_utc": "2026-11-23T08:00:23.150483+00:00",
+  "state": "complete",
+  "observed_utc": "2026-11-23T08:10:37.582985+00:00",
   "last_saved_iteration_by_seed": {
     "342": 504,
     "343": 504,
     "344": 504
   },
   "planned_end": 504,
-  "evaluation_complete": false,
+  "evaluation_complete": true,
   "planned_evaluation_cells": 81,
   "planned_evaluation_hands": 1944000,
   "model_promoted": false,
   "training_complete": true,
   "new_regret_samples": 603196,
-  "completed_evaluation_cells": 31,
-  "public_evaluation_complete": true
+  "completed_evaluation_cells": 81,
+  "public_evaluation_complete": true,
+  "completed_evaluation_hands": 1944000,
+  "unique_original_card_blocks": 26000,
+  "final_audit_complete": true,
+  "evaluation_summary_sha256": "070c481106dd77ba6bbc9dcd20b6d9969cc0e6d7b1291c3e5d91ae074348e515",
+  "final_audit_sha256": "e792012f135f80a212ad1b1f876992307f878a6bfd98bcbd3e0537a16ad12e88",
+  "primary_diverse_vs_control": "inconclusive",
+  "diverse_vs_start": "lower",
+  "training_backup_bytes": 133718867,
+  "verified_owner_only_backup": true,
+  "backup_includes_evaluation": false
 }
