@@ -1,5 +1,5 @@
 {
-  "verified_utc": "2026-11-23T07:18:51.412978+00:00",
+  "verified_utc": "2026-11-23T07:24:30.380762+00:00",
   "seeds": {
     "342": {
       "seed": 342,
@@ -21,6 +21,13 @@
         "360": 711,
         "420": 184
       },
+      "postflop_players_observed": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "postflop_decisions_with_unequal_live_stacks": 2350,
       "verified_preflop_dispatches": 1544,
       "reference_assignment_sha256": "870ba98775f96e8cc5cc2dfcb1b2618cc7d274a70e9fe86512cf2f1ffde6ddf5",
       "inactive_pool_identical_sampled_regrets_features_and_rng": true,
@@ -46,6 +53,13 @@
         "360": 485,
         "420": 492
       },
+      "postflop_players_observed": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "postflop_decisions_with_unequal_live_stacks": 3013,
       "verified_preflop_dispatches": 1432,
       "reference_assignment_sha256": "64b68f84072bc882221dba7a196f51a2f73f7e5b0b11d2fad61bef7ba06ef2e5",
       "inactive_pool_identical_sampled_regrets_features_and_rng": true,
@@ -71,10 +85,113 @@
         "360": 891,
         "420": 564
       },
+      "postflop_players_observed": [
+        2,
+        3,
+        4
+      ],
+      "postflop_decisions_with_unequal_live_stacks": 3082,
       "verified_preflop_dispatches": 1657,
       "reference_assignment_sha256": "0044a884b202a0ec00fdd12ed688a991a9af1548e808a39d9da492cb5ccfe1f8",
       "inactive_pool_identical_sampled_regrets_features_and_rng": true,
       "exact_inactive_fixture_rows": 2168
+    }
+  },
+  "other_three_traversers": {
+    "342": {
+      "seed": 342,
+      "traverser": 3,
+      "fixture_trees": 48,
+      "observed_actions": 5335,
+      "dealer_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "verified_postflop_dispatches": {
+        "-1": 1288,
+        "0": 1287,
+        "300": 609,
+        "360": 219,
+        "420": 310
+      },
+      "postflop_players_observed": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "postflop_decisions_with_unequal_live_stacks": 2592,
+      "verified_preflop_dispatches": 1622,
+      "reference_assignment_sha256": "561d6f6fd7cde2d18944bfd37c0b4ba1cd6c9d2e60efe294157bd5a0b418a79f",
+      "inactive_pool_identical_sampled_regrets_features_and_rng": true,
+      "exact_inactive_fixture_rows": 1778
+    },
+    "343": {
+      "seed": 343,
+      "traverser": 4,
+      "fixture_trees": 48,
+      "observed_actions": 6069,
+      "dealer_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "verified_postflop_dispatches": {
+        "-1": 1311,
+        "0": 1347,
+        "300": 661,
+        "360": 495,
+        "420": 783
+      },
+      "postflop_players_observed": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "postflop_decisions_with_unequal_live_stacks": 3190,
+      "verified_preflop_dispatches": 1472,
+      "reference_assignment_sha256": "55171931d1de85d5dde4c318a15bfaa98f718cd929d8f5f1de9429656a53ac83",
+      "inactive_pool_identical_sampled_regrets_features_and_rng": true,
+      "exact_inactive_fixture_rows": 1734
+    },
+    "344": {
+      "seed": 344,
+      "traverser": 5,
+      "fixture_trees": 48,
+      "observed_actions": 5729,
+      "dealer_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "verified_postflop_dispatches": {
+        "-1": 1277,
+        "0": 1676,
+        "300": 116,
+        "360": 602,
+        "420": 446
+      },
+      "postflop_players_observed": [
+        2,
+        3,
+        4
+      ],
+      "postflop_decisions_with_unequal_live_stacks": 2709,
+      "verified_preflop_dispatches": 1612,
+      "reference_assignment_sha256": "186d76b8c33933c4aaa5016ed1b9d5dea36f779ff84a158f832692b273e38e55",
+      "inactive_pool_identical_sampled_regrets_features_and_rng": true,
+      "exact_inactive_fixture_rows": 1920
     }
   }
 }

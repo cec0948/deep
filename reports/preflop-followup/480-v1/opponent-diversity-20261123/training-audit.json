@@ -1,0 +1,160 @@
+{
+  "verified_utc": "2026-11-23T07:28:44.034448+00:00",
+  "training_complete": true,
+  "stage_sha256": "8a59fdc2480bde76d882f134e76501df7e2feb0b6eefad797c87a7754adc4cf9",
+  "training_plan_sha256": "bc3526a3bd5b96d9f5edccff8414c70fd480db22a962cb8aa09f2423b1e5427d",
+  "matched_control_stage_sha256": "288ec2d5f9068221b5922cfeac29301f226e030734e67b15a4399748224d071e",
+  "independent_proofs": {
+    "control-lineage-audit.json": "99c6a3de70605cec8b1ea489691f766ba40789ab4f387c059a30c52f99f65306",
+    "control-round-audit.json": "826a82901d62d6004abed79d02f1113df4a0e7aeca7c0c2218708ca1a592ed1a",
+    "dispatch-audit.json": "5284f2fdbe27b4cfb85c7c9fbe81ac0b2419d9c7931029e3cc914710e42f3ba5"
+  },
+  "seeds": {
+    "342": {
+      "seed": 342,
+      "rounds": 24,
+      "traversals": 6144,
+      "postflop_adam_updates": 18432,
+      "postflop_node_visits": {
+        "-1": 159160,
+        "0": 166909,
+        "300": 65146,
+        "360": 60783,
+        "420": 53562
+      },
+      "per_tree_seat_selections": {
+        "0": 15347,
+        "300": 5127,
+        "360": 5128,
+        "420": 5118
+      },
+      "new_regret_rows_by_seat": [
+        32650,
+        33808,
+        31800,
+        32067,
+        31596,
+        30046
+      ],
+      "new_regret_rows": 191967,
+      "replay_rows_per_seat": 100000,
+      "parent_480": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6",
+      "unchanged_preflop_sha256": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+      "preflop_probes_each_round": 265,
+      "snapshot_export_sha256": {
+        "486": "46b7d5ef5b9c2b4488921ee587a944712a2f56549d45c47fe0e667629c812980",
+        "492": "f740373c64ce3bbb2175f588c051c6b51db87bb8631c76a91cf902d6f9eabc98",
+        "498": "e0659bf02655b05d630864f9472b9e6e2f288d01ca5b9640ddb0d955f98b20bd",
+        "504": "188d61309477b1acfbe340089ee0b0427a85551534928af504449b56fab416e9"
+      },
+      "final_weights": {
+        "general": "77c36564d10065a0cb729c2f8bda568e5726d3ec339f5212d66b956bd118e223",
+        "preflop": "d3bfa1e0f1c4805a1839a3d15b911ff4f3a9a9c3ffccd42ee927c5bdfc1e8de7"
+      },
+      "actual_control_treatment_training_config_differences": [
+        "historical_policies",
+        "opponent_assignment",
+        "training_arm"
+      ]
+    },
+    "343": {
+      "seed": 343,
+      "rounds": 24,
+      "traversals": 6144,
+      "postflop_adam_updates": 18432,
+      "postflop_node_visits": {
+        "-1": 180589,
+        "0": 208712,
+        "300": 72855,
+        "360": 62437,
+        "420": 68975
+      },
+      "per_tree_seat_selections": {
+        "0": 15342,
+        "300": 5107,
+        "360": 5120,
+        "420": 5151
+      },
+      "new_regret_rows_by_seat": [
+        36253,
+        35464,
+        35128,
+        34814,
+        35161,
+        32179
+      ],
+      "new_regret_rows": 208999,
+      "replay_rows_per_seat": 100000,
+      "parent_480": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f",
+      "unchanged_preflop_sha256": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+      "preflop_probes_each_round": 265,
+      "snapshot_export_sha256": {
+        "486": "6b7a68766bd813e3ed0e8e26b334998ae1a4fd976ecd630ddc5c049128782777",
+        "492": "16b06472bc8e98cf0421cfc078bbbf08dd63261966ac393c7947d0d64fb40bfb",
+        "498": "1ce6b54f1af4ee242773026b5b7d0a77c29a6e5b6f286f8f8ad01690bd1fe267",
+        "504": "b42ac903c4ce486bfdf112f05ae53ee50164639a6661917fe76d4601a7b1335a"
+      },
+      "final_weights": {
+        "general": "511ed244df85ff412dfdbd1a66ddae0d893501295010d1d94e3e7c91dfbbd9d6",
+        "preflop": "6686db401eb8f11f6598cb657f36f4c08e2d239b4a4dc4993965347a3ed87e1d"
+      },
+      "actual_control_treatment_training_config_differences": [
+        "historical_policies",
+        "opponent_assignment",
+        "training_arm"
+      ]
+    },
+    "344": {
+      "seed": 344,
+      "rounds": 24,
+      "traversals": 6144,
+      "postflop_adam_updates": 18432,
+      "postflop_node_visits": {
+        "-1": 167669,
+        "0": 196256,
+        "300": 54033,
+        "360": 67453,
+        "420": 65090
+      },
+      "per_tree_seat_selections": {
+        "0": 15210,
+        "300": 5197,
+        "360": 5147,
+        "420": 5166
+      },
+      "new_regret_rows_by_seat": [
+        34617,
+        33781,
+        32822,
+        34058,
+        33541,
+        33411
+      ],
+      "new_regret_rows": 202230,
+      "replay_rows_per_seat": 100000,
+      "parent_480": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d",
+      "unchanged_preflop_sha256": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+      "preflop_probes_each_round": 265,
+      "snapshot_export_sha256": {
+        "486": "07c25acd94d66be4831649b13e7e156c5091c71dece942c9e6c6c5475b8ef7ba",
+        "492": "94c2412d54cc4ead549b08c0e640f4c5a869913ef1039f41ef1047145b843b5e",
+        "498": "052a6b05e5ef9f19cef8789fe5d381e5a2adfa6daab6bba494321dcefed995b3",
+        "504": "0ad600b939572f6d8d0be5415accfb1b7701788c7f1f44e62f9d4e8fbf38bb7c"
+      },
+      "final_weights": {
+        "general": "30a78a12c2c8d2eb1627c6e3b33883f335ec51ac1c4ddcde24996aac1ecdb38b",
+        "preflop": "9de6a9220e08176ed36b3b30e53412fc420134f8fb72d0b89da549c1ff0341da"
+      },
+      "actual_control_treatment_training_config_differences": [
+        "historical_policies",
+        "opponent_assignment",
+        "training_arm"
+      ]
+    }
+  },
+  "registered_new_rounds_per_seed": 24,
+  "total_online_traversals": 18432,
+  "total_new_regret_rows": 603196,
+  "total_postflop_adam_updates": 55296,
+  "total_opponent_seat_assignments": 92160
+}

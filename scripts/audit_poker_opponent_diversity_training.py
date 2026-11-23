@@ -146,18 +146,19 @@ class BatchLedger:
         self.regrets=regrets
 
 
-def audit_tree_dispatch(seed):
+def audit_tree_dispatch(seed, round_id=None):
     """Observe the unsimplified six-seat game state and each policy actually called by the routing code."""
     from poker_opponent_population import historical_inputs, load_historical, pool_traversals
     net,parent,_=connect(seed,read(CONTROL/'plan.json')['parent_policies'][str(seed)])
     from training import traverse_fast as game
-    from training.game import S_STREET, S_DEALER, S_TOACT
+    from training.game import S_STREET, S_DEALER, S_TOACT, S_FOLDED, S_STACKS
     from bot.features import load_preflop_equity
     inputs,_=historical_inputs(SEEDS)
     hist=load_historical(net, inputs[str(seed)])
     rng,old_rng,disabled_rng=[np.random.default_rng(39214126+seed) for _ in range(3)]
     count=48
-    round_id=481+seed-SEEDS[0]
+    if round_id is None:
+        round_id=481+seed-SEEDS[0]
     traverser=(round_id-1)%6
     equity=load_preflop_equity()
     options=dict(opponent_exploration=0.,strategy_buffer=None,randomize_stacks=False)
@@ -171,6 +172,8 @@ def audit_tree_dispatch(seed):
     references=reference_assignments(seed,round_id,count)
     calls=Counter()
     seen_dealers=set()
+    players_postflop=set()
+    unequal_stacks_postflop=0
     cursor=dict(tree=-1,actor=None)
     class RecordedPolicy:
         def __init__(self, identity, owner):
@@ -190,8 +193,14 @@ def audit_tree_dispatch(seed):
         seen_dealers.add(dealer)
         return native_new(n,dealer,generator,stacks)
     def observe(state, holes, deck, seat, mask):
+        nonlocal unequal_stacks_postflop
         check(seat==int(state[S_TOACT]) and int(state[S_DEALER]) in seen_dealers, 'Wrong acting seat')
         cursor['actor']=(seat,int(state[S_STREET]))
+        if state[S_STREET]>0:
+            live=np.asarray(state[S_FOLDED:S_FOLDED+6])==0
+            players_postflop.add(int(live.sum()))
+            if len(set(state[S_STACKS:S_STACKS+6][live]))>1:
+                unequal_stacks_postflop+=1
         return native_encode(state,holes,deck,seat,mask)
     tagged={key:RecordedPolicy(key,policy) for key,policy in hist.items()}
     proof={}
@@ -202,14 +211,158 @@ def audit_tree_dispatch(seed):
     visits={str(code):sum(v for (street,role),v in calls.items() if role==code and street!=0)
             for code in (-1,0,*HISTORY)}
     check(len(seen_dealers)==6 and cursor['tree']+1==count and min(visits.values())>0
-          and visits==proof['postflop_node_visits'] and np.isfinite(mixed.regrets).all(),
+          and visits==proof['postflop_node_visits'] and np.isfinite(mixed.regrets).all()
+          and 2 in players_postflop and max(players_postflop)>=4 and unequal_stacks_postflop>0,
           'The independent tree fixture did not exercise all historic and current roles')
     return dict(seed=seed,traverser=traverser,fixture_trees=count,observed_actions=sum(calls.values()),
                 dealer_positions=sorted(seen_dealers), verified_postflop_dispatches=visits,
+                postflop_players_observed=sorted(players_postflop),
+                postflop_decisions_with_unequal_live_stacks=unequal_stacks_postflop,
                 verified_preflop_dispatches=sum(v for (street,_),v in calls.items() if street==0),
                 reference_assignment_sha256=hashlib.sha256(references.tobytes()).hexdigest(),
                 inactive_pool_identical_sampled_regrets_features_and_rng=True,
                 exact_inactive_fixture_rows=len(original.features))
+
+
+def verify_seed(seed, plan, stage, mapping):
+    key=str(seed)
+    worker=STUDY/'pool504'/f'seed-{seed}'
+    control=CONTROL/'slow504'/f'seed-{seed}'
+    cap=STUDY/'snapshots'/f'seed-{seed}'
+    start,ready,pointer=(read(worker/name) for name in ('start-verification.json','ready.json','current.json'))
+    rows=[json.loads(line) for line in (worker/'diagnostics.jsonl').read_text().splitlines()]
+    control_rows=[json.loads(line) for line in (control/'diagnostics.jsonl').read_text().splitlines()]
+    check(len(rows)==24 and [r['iteration'] for r in rows]==list(range(481,505))
+          and start==read(control/'start-verification.json') and start['iteration']==480
+          and ready==stage['arms']['pool504'][key] and ready['files']==pointer['files'] and pointer['iteration']==504
+          and read(worker/'status.json')['status']=='complete', 'Incomplete or mismatched training bounds')
+    verify_files({worker/'start-verification.json':ready['start_sha256'],
+                  worker/'diagnostics.jsonl':ready['diagnostics_sha256'],
+                  **{Path(ready['checkpoint'])/name:sha for name,sha in ready['files'].items()}})
+    parent_folder=Path(plan['campaign'])/f'seed-{seed}'
+    parent,parent_ck=load_checkpoint(parent_folder)
+    final,end=load_checkpoint(worker)
+    old,end_control=load_checkpoint(control)
+    config=final['config']
+    diff={k for k in set(config)|set(old['config']) if config.get(k)!=old['config'].get(k)}
+    check(diff=={'training_arm','opponent_assignment','historical_policies'} and config['training_arm']=='pool504'
+          and config['opponent_assignment']=='independent-seat-per-traversal-v1'
+          and config['historical_policies']==plan['historical_policies'][key]
+          and parent['seed']==final['seed']==old['seed']==seed and parent['iteration']==480
+          and final['iteration']==old['iteration']==504 and final['source_manifest']==old['source_manifest']==parent['source_manifest']
+          and read(parent_folder/'current.json')['files']==start['checkpoint_files'],
+          'Treatment and matched control have different starting assets, data, or training configuration')
+    del old
+    refs=stage['policies']
+    parent_policy,endpoint,mix=(read(previous.checked_ref(refs[k][key])) for k in ('specialist480','pool504','poolMixture504'))
+    pre,post=(previous.checked_ref(parent_policy[k]) for k in ('preflop','postflop'))
+    pre_sha=digest(pre)
+    prior={'preflop':previous.net_fingerprint(pre,mapping),'general':previous.net_fingerprint(post,mapping)}
+    check(post==parent_ck/'current.npz' and prior==start['weights'] and start['replay_root_reference_and_rng_verified']
+          and refs['pool504'][key]==ready['policy'] and refs['poolMixture504'][key]==ready['mixture']
+          and Path(endpoint['postflop']['path'])==end/'current.npz'
+          and endpoint['preflop']['sha256']==mix['preflop']['sha256']==pre_sha
+          and ready['policy']==refs['pool504'][key] and digest(cap/mix['preflop']['file'])==pre_sha,
+          'Mismatched preflop, checkpoint or policy metadata')
+    verify_export(previous.checked_ref(endpoint['preflop']),final['specialist_net'],mapping)
+    verify_export(previous.checked_ref(endpoint['postflop']),final['net'],mapping)
+    verify_export(post,parent['net'],mapping)
+    captured={r['iteration']:r for r in mix['postflop']}
+    snapshot_plan=read(cap/'plan.json')
+    ctrlmix=read(previous.checked_ref(read(CONTROL/'stage-ready.json')['arms']['slow504'][key]['mixture']))
+    check(mix['format']==ctrlmix['format'] and mix['selection']==ctrlmix['selection']=='Equal probability, one private draw per hand'
+          and list(captured)==list(CAPTURES)==snapshot_plan['iterations'] and mix['seed']==seed and snapshot_plan['worker']==str(worker)
+          and mix['plan_sha256']==digest(cap/'plan.json') and snapshot_plan['parent_policy_sha256']==refs['specialist480'][key]['sha256'],
+          'Wrong four-capture deployment or snapshot stream')
+    visits,selections=Counter(),Counter()
+    by_seat=[0]*6
+    capture_hashes={}
+    budget_fields=('seed','iteration','traverser','traversals','root_rows','general_steps','preflop_steps','opening_steps',
+                   'learning_rate','fit_draws','frozen_preflop_probes','buffer_rows')
+    for row,reference in zip(rows,control_rows,strict=True):
+        t=row['iteration']
+        seat=(t-1)%6
+        weights_out=row['output_weights']
+        check(all(row[k]==reference[k] for k in budget_fields)
+              and row['input_weights']==prior and weights_out['preflop']==start['weights']['preflop']
+              and weights_out['general']!=prior['general'] and row['frozen_preflop_max_probability_error']==0
+              and row['new_regret_rows']>0 and np.isfinite(row['main_loss'])
+              and min(row['fit_rows_by_street'])>0 and min(row['fit_draws_by_street'])>0
+              and sum(row['fit_draws_by_street'])==row['fit_draws']==768*512
+              and row['reference_collection']['hands']==512 and row['reference_collection']['rows']==100000
+              and row['traverser']==seat and row['root_rows']==676 and row['traversals']==256,
+              f'Input, output, fit or sampling budget mismatch on {seed}/{t}')
+        a=reference_assignments(seed,t)
+        data=row['opponent_population']
+        counts={str(x):int((a==x).sum()) for x in (0,*HISTORY)}
+        check(data['assignment_sha256']==hashlib.sha256(a.tobytes()).hexdigest()
+              and counts==data['opponent_seat_assignments'] and sum(counts.values())==5*256
+              and set(data['postflop_node_visits'])=={'-1',*counts} and min(data['postflop_node_visits'].values())>0,
+              f'Traverser or immutable seat assignment mismatch on {seed}/{t}')
+        visits.update(data['postflop_node_visits'])
+        selections.update(counts)
+        by_seat[seat]+=row['new_regret_rows']
+        if t in captured:
+            item=captured[t]
+            path=cap/item['file']
+            receipt=read(path.parent/'receipt.json')
+            check(path==cap/f'iter-{t:05d}/current.npz' and digest(path)==receipt['export_sha256']==item['sha256']
+                  and path.stat().st_size==receipt['export_bytes'] and previous.net_fingerprint(path,mapping)==weights_out['general']
+                  and receipt['iteration']==t and receipt['start_sha256']==ready['start_sha256']
+                  and receipt['plan_sha256']==mix['plan_sha256'], 'Corrupt or unbound capture')
+            capture_hashes[t]=item['sha256']
+        prior=weights_out
+    check(len(set(capture_hashes.values()))==4 and capture_hashes[504]==digest(end/'current.npz')!=digest(end_control/'current.npz')
+          and rows[0]['reference_collection']==control_rows[0]['reference_collection']
+          and rows[0]['output_weights']['general']!=control_rows[0]['output_weights']['general'],
+          'Incorrect match, capture or failure to diverge on the new training data')
+    for seat,(begin,after) in enumerate(zip(parent['buffers'],final['buffers'],strict=True)):
+        check(after['count']==100000 and after['total_seen']-begin['total_seen']==by_seat[seat]
+              and np.array_equal(np.unique(after['iterations'][after['iterations']>480]),
+                                 [t for t in range(481,505) if (t-1)%6==seat]),
+              'Reservoir is missing or misattributing new game data')
+    check(final['strategy_replay']['size']==100000 and final['strategy_replay']['total_seen']==rows[-1]['reference_collection']['total_seen']
+          and np.sum(final['root_replay']['count'])-np.sum(parent['root_replay']['count'])==24*676,
+          'Replay bookkeeping differs from verified source and the 24 online updates')
+    return dict(seed=seed,rounds=24,traversals=24*256,postflop_adam_updates=24*768,
+                postflop_node_visits=dict(visits),per_tree_seat_selections=dict(selections),
+                new_regret_rows_by_seat=by_seat,new_regret_rows=sum(by_seat),replay_rows_per_seat=100000,
+                parent_480=refs['specialist480'][key]['sha256'],unchanged_preflop_sha256=pre_sha,
+                preflop_probes_each_round=start['frozen_preflop_probes'],snapshot_export_sha256=capture_hashes,
+                final_weights=prior,actual_control_treatment_training_config_differences=sorted(diff))
+
+
+def verify_training():
+    config_path=ROOT/'configs/poker-opponent-diversity-20261123.json'
+    reg,plan,stage=(read(STUDY/name) for name in ('registration.json','training-plan.json','stage-ready.json'))
+    cfg=read(config_path)
+    verify_files({config_path:reg['config_sha256'],STUDY/'training-plan.json':read(STUDY/'training-bound.json')['plan_sha256'],
+                  CONTROL/'stage-ready.json':CONTROL_STAGE,CONTROL/'plan.json':CONTROL_PLAN})
+    verify_files(plan['frozen_files'])
+    verify_files(reg['frozen_files'])
+    lineage=read(STUDY/'control-lineage-audit.json')
+    proof_files=[STUDY/n for n in ('control-lineage-audit.json','control-round-audit.json','dispatch-audit.json')]
+    check(stage['training_complete'] and stage['iteration']==504 and plan['parent_policies']==lineage['common_parent']
+          and stage['policies']['specialist480']==read(CONTROL/'stage-ready.json')['policies']['specialist480']==plan['parent_policies']
+          and reg['control_training_plan_sha256']==lineage['control_plan_sha256']==CONTROL_PLAN
+          and tuple(plan['seeds'])==SEEDS and tuple(plan['capture_iterations'])==CAPTURES
+          and (cfg['end'],cfg['start'],cfg['replay_capacity_per_seat'],cfg['batch_size'],cfg['learning_rate'])==(504,480,100000,512,.00025)
+          and cfg['treatment_opponents']['training_external_opponents']==[] and cfg['treatment_opponents']['current_probability']==.5,
+          'Registered starts, control, opponent history, or completion record differ')
+    for seed,refs in plan['historical_policies'].items():
+        check({t:r['sha256'] for t,r in refs.items()}==lineage['historical_postflop_sha256'][seed]
+              and set(refs)==set(map(str,HISTORY)), 'A foreign/future weight was introduced')
+    code=ast.parse((Path(plan['campaign'])/'tools/compact_regret.py').read_text())
+    mapping=next(ast.literal_eval(node.value) for node in code.body if isinstance(node,ast.Assign)
+                 and any(isinstance(t,ast.Name) and t.id=='ARRAY_MAP' for t in node.targets))
+    seeds={str(s):verify_seed(s,plan,stage,mapping) for s in SEEDS}
+    return dict(verified_utc=utc(),training_complete=True,stage_sha256=digest(STUDY/'stage-ready.json'),
+                training_plan_sha256=digest(STUDY/'training-plan.json'),matched_control_stage_sha256=CONTROL_STAGE,
+                independent_proofs={p.name:digest(p) for p in proof_files},seeds=seeds,
+                registered_new_rounds_per_seed=24,total_online_traversals=sum(v['traversals'] for v in seeds.values()),
+                total_new_regret_rows=sum(v['new_regret_rows'] for v in seeds.values()),
+                total_postflop_adam_updates=sum(v['postflop_adam_updates'] for v in seeds.values()),
+                total_opponent_seat_assignments=sum(sum(v['per_tree_seat_selections'].values()) for v in seeds.values()))
 
 
 def main():
@@ -224,7 +377,12 @@ def main():
                     retained_new_models=0,
                     scope='One in-memory frozen-control parity update for each seed. No weights enter either study arm.')
     elif args.phase=='dispatch':
-        result=dict(verified_utc=utc(),seeds={s:audit_tree_dispatch(s) for s in SEEDS})
+        result=dict(verified_utc=utc(),seeds={s:audit_tree_dispatch(s) for s in SEEDS},
+                    other_three_traversers={s:audit_tree_dispatch(s,484+s-SEEDS[0]) for s in SEEDS})
     else:
         result=verify_training()
     atomic_json(args.output,result)
+
+
+if __name__=='__main__':
+    main()

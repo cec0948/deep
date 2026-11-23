@@ -1,6 +1,6 @@
 # 2026-11-12 포커 모델 재학습
 
-**2026-11-23 16:22 KST, 상대를 다양화한 480→504회 자기대전 진행 중.** 세 시드가 첫 486회 복구 상태를 저장했다. 기존 방식과 동일한 출발점 및 학습량을 사용하고, 포스트플롭에서 상대 정책의 선택만 바꿨다. [설계와 진행](poker-opponent-diversity-20261123.md) · [상태](../reports/preflop-followup/480-v1/opponent-diversity-20261123/status.json)
+**2026-11-23 16:28 KST, 상대를 다양화한 세 시드 모두 504회 학습 완료.** 새 학습 표본 603,196개를 모았다. 학습 상태와 12개 정책 스냅숏을 검산했고, 9개 상대 구성의 전체 대전 평가는 진행 중이다. [학습과 비교 설계](poker-opponent-diversity-20261123.md) · [상태](../reports/preflop-followup/480-v1/opponent-diversity-20261123/status.json)
 
 **2026-11-23 15:53 KST, 첫 플롭 행동의 수익 검산 완료.** 480회에서 시작한 추가 학습 후보는 같은 플롭 3,072개에서 공개 Fullhouse 상대에게 첫 결정당 0.54 bb 낮았다. 훈련 당시 네 시점의 상대에게는 +0.15 bb로 개선이 불확실했다. 공개 상대와 학습 당시 상대의 차이는 −0.70 bb였다. 학습 가중치 갱신과 새 백업은 0건이다. [진단 결과](poker-flop-action-diagnostic-20261123.md) · [검산 상태](../reports/preflop-followup/480-v1/flop-action-diagnostic-20261123/status.json)
 
