@@ -1,6 +1,6 @@
 {
   "state": "evaluating",
-  "observed_utc": "2026-11-23T07:29:43.807123+00:00",
+  "observed_utc": "2026-11-23T08:00:23.150483+00:00",
   "last_saved_iteration_by_seed": {
     "342": 504,
     "343": 504,
@@ -12,5 +12,7 @@
   "planned_evaluation_hands": 1944000,
   "model_promoted": false,
   "training_complete": true,
-  "new_regret_samples": 603196
+  "new_regret_samples": 603196,
+  "completed_evaluation_cells": 31,
+  "public_evaluation_complete": true
 }
