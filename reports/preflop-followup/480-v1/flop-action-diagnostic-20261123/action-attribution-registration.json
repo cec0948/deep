@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-11-23T06:44:42.488183+00:00",
+  "parent_registration_sha256": "1def7d117f3bd5416b796d5f6703ce490779fcfcd6fcc332f7bc4554ef8d627c",
+  "added_descriptive_analysis": "Registered after the main protocol and before inspecting any new rollout payoff; no new games or tuning.",
+  "cards": "Use every included original deal with equal weights within each of the three fixed seeds, then give each seed equal weight.",
+  "policies": "The 480 distribution and the uniform arithmetic mean of the normalized 486/492/498/504 distributions at the first designated hero flop decision.",
+  "action_groups": [
+    "fold",
+    "check",
+    "call",
+    "raise"
+  ],
+  "mass": "For each action group, report mean baseline and mixture probability and mixture minus baseline in percentage points. Count zero at states lacking a given action.",
+  "value": "For each original deal and frozen opponent field, compute eight-runout mean Q_a in big blinds for each positive-support concrete action. Let V_480 be the sum of baseline probability times the same Q_a. Group contribution = sum over distinct concrete actions in the group of (p_mixture[a] - p_480[a]) * (Q_a - V_480).",
+  "outputs": "All four groups, all three continuation fields, per-field reconciliation to the preregistered primary effect. Point estimates are descriptive accounting, scoped to 480-reached flops with common downstream hero. No hypothesis tests, no subgroup or candidate selection. No dealing, policy update or promotion."
+}
