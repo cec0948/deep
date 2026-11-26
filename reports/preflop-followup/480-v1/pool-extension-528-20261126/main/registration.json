@@ -1,0 +1,58 @@
+{
+  "registered_utc": "2026-11-26T02:18:12.660242+00:00",
+  "reference_plan_sha256": "af1ae88bf1c9d6b25c9595896bbaa2e7a60e5f6caf02799da53d947282c764eb",
+  "fields": {
+    "public": [
+      2060100000,
+      4000
+    ],
+    "mixed": [
+      2060200000,
+      1000
+    ],
+    "noregrets": [
+      2060200000,
+      1000
+    ]
+  },
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "source_policies_sha256": {
+    "current480": {
+      "342": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6",
+      "343": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f",
+      "344": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d"
+    },
+    "current504": {
+      "342": "85a101e0342fdf6c5c10f22f9130a2d03593a0851eb7cb46fa4cc4d862e6f3bf",
+      "343": "6a4e7cd1786ea4f70b4e508915452f152212fe7709aeb6d1da38d27561fdd1fc",
+      "344": "5be5b7ccb40b83afe760642642702f0e43f5ae32034b1fc8672513c63f60fa78"
+    },
+    "mixture504": {
+      "342": "bb219f6fd9c7828a7e6406230f42c178503f64a967ef6d7a4b7fee94b3f6349a",
+      "343": "858f000e59a1a2e0508b89ae959e122cbc074ab24dcd960d6bcc274ee060671c",
+      "344": "9e65fdb3aad3aecfd984e8519121656b2c7774dec6410dfe27725659a4fe791e"
+    },
+    "average480": {
+      "342": "d0d939d11710f9de57b4fc06125dfcd124bf177069201e13a8b8ca2521c83abe",
+      "343": "eaf331e2707c1f1ffb783da466777c785dcab8cac331d65c41c87dd5754a5e69",
+      "344": "96b5ff43802b2d171ba15b062ca8340437e44d0f8510c4a4253fd3d6980eeb38"
+    },
+    "average504": {
+      "342": "18db9ba92a3a557bf3d1c62fbbf8f5b0ef0e342a2add92a47d5f3677082df1ee",
+      "343": "724ead5fd8e162865bfad7034cc2c404699c7b3f4f8ec13bf5e516a014c96951",
+      "344": "eac99ad56b13ec7b07d3d0985fefa1dcbd5fc5bfdee9d07345a0fad66f0c6324"
+    }
+  },
+  "future_528_checkpoint_required": true,
+  "planned_cells": 54,
+  "planned_hands": 756000,
+  "unique_original_card_blocks": 5000,
+  "prior_ranges_checked": 46,
+  "primary": "Public mixture528 minus mixture504 nominal two-sided paired 95% interval",
+  "secondary": "All available matched policies by field, including current, native all-street reference averages on public, and comparisons to the fixed specialist480.",
+  "missing_480_mix": "The parent campaign preserved 420/480 endpoints; there is no pre-480 four-slot capture under this specialist."
+}

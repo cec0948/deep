@@ -1,0 +1,57 @@
+{
+  "observed_utc": "2026-11-26T02:26:02.845954+00:00",
+  "fixed_baseline": {
+    "stage": 480,
+    "policy": "specialist480"
+  },
+  "learning_lineage": {
+    "parent": 504,
+    "from_round": 505,
+    "through_round": 528,
+    "source": "2026-11-23 opponent diversity"
+  },
+  "training": {
+    "342": {
+      "state": "training",
+      "last_finished_round": 526,
+      "last_saved_round": 522,
+      "new_regret_samples": 183242
+    },
+    "343": {
+      "state": "training",
+      "last_finished_round": 525,
+      "last_saved_round": 522,
+      "new_regret_samples": 184266
+    },
+    "344": {
+      "state": "training",
+      "last_finished_round": 525,
+      "last_saved_round": 522,
+      "new_regret_samples": 182916
+    }
+  },
+  "training_complete": false,
+  "evaluation": {
+    "main": {
+      "completed_cells": 4,
+      "planned_cells": 54,
+      "planned_hands": 756000
+    },
+    "crossplay": {
+      "completed_cells": 0,
+      "planned_cells": 27,
+      "planned_hands": 162000
+    },
+    "training-opponents": {
+      "completed_cells": 0,
+      "planned_cells": 27,
+      "planned_hands": 162000
+    }
+  },
+  "unique_original_cards": 6000,
+  "planned_evaluation_hands": 1080000,
+  "verified_receipts_sha256": {},
+  "complete": false,
+  "model_promoted": false,
+  "next_round_authorized": false
+}
