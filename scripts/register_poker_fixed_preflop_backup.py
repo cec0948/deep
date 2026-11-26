@@ -306,7 +306,6 @@ def register(action, owner, target=FIXED_WINDOW, verify_ready=load_ready, retent
             raise ValueError('The private index does not match the expected readback')
         active_size = sum(r['bytes']+r.get('manifest_bytes',0) for r in revised['backups'] if not r.get('deleted_remote'))
         proof = dict(verified_utc=utc(), kind=record['kind'], checkpoint_mode=target.mode,
-                     stage_iteration=max(record['iterations'].values()),
                      bytes=record['bytes'], sha256=record['sha256'], restored_all_three_seeds=True,
                      restored_both_street_networks=True, backup_files=len(files), format=layout['format'],
                      restoration_verified=True, external_backup=True, verified_remote_size=True, verified_owner_only=True,
@@ -315,6 +314,10 @@ def register(action, owner, target=FIXED_WINDOW, verify_ready=load_ready, retent
                      private_index_readback_verified=True, active_managed_bytes=active_size,
                      within_2gib_target=active_size <= DEFAULT_BUDGET, retained_bytes=plan['planned_retained_bytes'],
                      policy_candidate_remote_files=plan['candidate_remote_files'], remote_deletions_performed=0)
+        if record['kind'] == 'derived-policy-probe':
+            proof['parent_iteration'] = record['parent_iteration']
+        else:
+            proof['stage_iteration'] = max(record['iterations'].values())
         if 'scheduled_snapshot_iterations' in ready:
             proof.update(scheduled_snapshot_iterations=ready['scheduled_snapshot_iterations'],
                          mixture_restore_decisions={seed:row['mixture_decisions']

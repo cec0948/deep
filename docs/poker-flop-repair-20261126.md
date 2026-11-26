@@ -17,3 +17,7 @@
 ```sh
 python scripts/run_poker.py --backend flop-repair --policy artifacts/preflop-followup/480-v1/flop-repair-20261126/seed-342/policy.json
 ```
+
+### 복원과 비공개 백업
+
+새 가중치와 복원 명세는 69,818바이트다. 기존 전체 480회 복구본과 프리플롭 전문 정책을 연결해 세 모델을 복원하고 실제 판단이 재현되는지 확인했다. 비공개 Drive의 파일 크기와 소유자 전용 권한을 확인한 뒤 비공개 인덱스에 기록했다. 원격 체크섬은 제공되지 않았다. 기존 복구본을 포함한 보관량은 2,129,913,417바이트로 2 GiB 목표 이내다. [백업 검증 기록](../reports/preflop-followup/480-v1/flop-repair-20261126/backup-verification.json)
