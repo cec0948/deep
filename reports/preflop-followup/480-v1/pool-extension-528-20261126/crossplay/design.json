@@ -1,0 +1,29 @@
+{
+  "registered_utc": "2026-11-26T02:16:06.121570+00:00",
+  "card_start": 2060300000,
+  "card_end_exclusive": 2060301000,
+  "deals": 1000,
+  "previous_card_registry_sha256": "2a08221765644288d5c17a066c8b083af04808db485a91dc322fa3ec28dcd044",
+  "other_ranges_checked": 48,
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "stages": [
+    "specialist480",
+    "mixture504",
+    "mixture528"
+  ],
+  "prior_plan_sha256": "a851844aee89e4032992840e40b2bf41ac765cc132dd5be9f94fee09e9540b43",
+  "job": "Every ordered one focal policy vs five independently seated copies of a column stage; every seed and every hero seat.",
+  "private_hand_slots": "Use hand_seed(card,physical_seat); independent draw from four for each seat, fixed across betting streets, same stochastic tape across compared stages.",
+  "actions": "semantic_seed(card,acting_seat,state), independent of hero assignment. All six positions are seated on the common deck with button zero.",
+  "chips_per_big_blind": 100,
+  "expected_cells": 27,
+  "expected_hands": 162000,
+  "independent_card_blocks": 1000,
+  "estimator": "Average across 6 seats and 3 fixed training seeds within card. Report absolute directed hero bb/100 and by-seed means. Self controls must be identically zero per original card.",
+  "intervals": "Bonferroni 95% family across six off-diagonal directed means. Separately a three-comparison Bonferroni 95% family for 528 minus 504 vs each fixed population, and one across three reciprocal differences. Normal paired-card intervals. No extrapolation across training seeds.",
+  "cycle": "Directed dominance A over B requires positive simultaneous lower bound for U(A vs five B) and negative simultaneous upper bound for U(B vs five A). Check both three-cycles. No best response or six-player exploitability is computed."
+}

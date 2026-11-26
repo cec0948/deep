@@ -1,0 +1,39 @@
+{
+  "study": "pool-extension-528-20261126",
+  "source_stage_sha256": "8a59fdc2480bde76d882f134e76501df7e2feb0b6eefad797c87a7754adc4cf9",
+  "fixed_baseline": "specialist480",
+  "learning_start": "pool504 complete training state from November 23",
+  "seeds": [342, 343, 344],
+  "start": 504,
+  "end": 528,
+  "snapshots": [510, 516, 522, 528],
+  "training": {
+    "traversals_per_seed_iteration": 256,
+    "postflop_adam_steps_per_seed_iteration": 768,
+    "batch_size": 512,
+    "learning_rate": 0.00025,
+    "regret_capacity_per_seat": 100000,
+    "reference_hands_per_seed_iteration": 512,
+    "root_repetitions": 4,
+    "opponents": "Same-seed postflop, each non-traverser assigned once per traversal: current 1/2, each of 300/360/420 1/6. All seats retain the frozen specialist480 preflop.",
+    "replay": "Keep the parent reservoir, sampler weighting, root and strategy memories and all RNG streams. Same per-round optimizer initialization as the source.",
+    "decision": "Finish the one fixed window without intermediate-score rollback. Stop on execution, nonfinite, identity or training-integrity failure. Report auxiliary average fidelity separately as in the source."
+  },
+  "cards": {"public": [2060100000,4000], "matched_panel": [2060200000,1000], "crossplay": [2060300000,1000]},
+  "external": {
+    "fields": ["public","mixed","noregrets"],
+    "policies": ["specialist480","current504","mixture504","current528","mixture528"],
+    "public_only_auxiliaries": ["average361_480","average361_504","average361_528"],
+    "original_card_blocks": 5000, "cells": 54, "hands": 756000,
+    "primary": "Public mixture528 minus mixture504, paired two-sided 95% interval. Lower bound above zero supports improvement and upper below zero supports deterioration. Otherwise direction unresolved. Compare against fixed specialist480 separately.",
+    "secondary": "Matched scores by field, seed and policy form. Native auxiliary averages have their own preflop and are diagnostic; never call them full history. No synthetic four-snapshot policy at 480."
+  },
+  "crossplay": {
+    "stages": ["specialist480","mixture504","mixture528"],
+    "design": "All 3x3 directed 1-vs-5 lineups with same-seed policies. Pair all fields on original cards and assign independent hand-private snapshot slots per physical seat.",
+    "cells": 27, "hands": 162000, "original_card_blocks": 1000,
+    "decision": "Show reciprocal directed entries and matched conditional contrasts. Only claim a strict sampled cycle when simultaneous intervals support all its edges in both roles. No exact best response evaluation."
+  },
+  "units": "bb/100; average six rotated seats and three fixed seeds inside each original card before inference",
+  "automatic_retry": false, "automatic_extension": false, "promote": false
+}

@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-26T02:16:26.532969+00:00",
+  "config_sha256": "c96fa5f97aecb52071f8e61e68ec9fe34a00d16de6f46b71a9902c7e91f7ca01",
+  "source_stage_sha256": "8a59fdc2480bde76d882f134e76501df7e2feb0b6eefad797c87a7754adc4cf9",
+  "checked_prior_ranges": 46,
+  "evaluation_cards": {
+    "public": [
+      2060100000,
+      4000
+    ],
+    "matched_panel": [
+      2060200000,
+      1000
+    ],
+    "crossplay": [
+      2060300000,
+      1000
+    ]
+  },
+  "fixed_baseline": "specialist480",
+  "learning_source_iteration": 504,
+  "final_iteration": 528,
+  "training_updates_per_seed": 24
+}

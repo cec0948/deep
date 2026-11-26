@@ -1,0 +1,52 @@
+{
+  "registered_utc": "2026-11-26T02:17:35.833447+00:00",
+  "prior_primary_registration_sha256": "36d842b8b2ea4227cb7256e807859405f337ea629d5c8912cb45f4dac6cc2aef",
+  "benchmark": "Descriptive generalization to the older opponent models as actually routed in source training",
+  "hero": [
+    "specialist480",
+    "mixture504",
+    "mixture528"
+  ],
+  "opponents": [
+    300,
+    360,
+    420
+  ],
+  "opponent_preflop": "same-seed fixed specialist480 for all seats",
+  "opponent_postflop": "actual static archived model by iteration and seed",
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "cards": [
+    2060300000,
+    1000
+  ],
+  "same_original_cards_as": "directed three-stage crossplay; adds no distinct cards",
+  "cells": 27,
+  "hands": 162000,
+  "primary_contrasts": [
+    "mixture528 minus mixture504",
+    "mixture528 minus specialist480"
+  ],
+  "intervals": "Matched original cards after six seats and three fixed seeds; simultaneous 95% across the six declared descriptive contrasts, two-sided Bonferroni",
+  "decision": "Diagnostic by specific fixed historical opponent; no training, adaptive selection, cycle or exploitability claim based on this one-way panel.",
+  "archived_opponents_sha256": {
+    "342": {
+      "300": "bf5f6c05aa43bc692024be31a2b6b8fdb540a8db65dd78223949af4435ba70a1",
+      "360": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76",
+      "420": "f23e592981774d6b99da6910513dc83c91cd5474b9a22b34bec72e1463951607"
+    },
+    "343": {
+      "300": "c7565aef0df6313122c16f57012f3209a0a984a1c09136dd550e5b6f27e07e80",
+      "360": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517",
+      "420": "7fdcbe9ef679de27099bf76a184c8849979b76941072bdfa8f9d600722f4005c"
+    },
+    "344": {
+      "300": "c6963d30938a59c8073a86e84dab29dd633c3b7aecf69c4655225af2bc852c2e",
+      "360": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7",
+      "420": "0a6700790cc5bd19d6756c45c397c5cf7340f21a79c72b9d8d3855de94c84784"
+    }
+  }
+}
