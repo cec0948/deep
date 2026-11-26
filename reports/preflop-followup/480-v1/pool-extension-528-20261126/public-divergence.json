@@ -1,0 +1,742 @@
+{
+  "kind": "post-hoc-public-first-divergence",
+  "deal_seed": 2060100000,
+  "original_card_blocks": 4000,
+  "fixed_training_seeds": [
+    342,
+    343,
+    344
+  ],
+  "seat_rotations": 6,
+  "paired_hands_per_contrast": 72000,
+  "logged_hands_replayed": 216000,
+  "unit": "BB/100 across all matched hands",
+  "method": "Group by first changed logged action on identical history. Each contribution includes all later actions and terminal payoffs; descriptive, not a causal value of changing that action.",
+  "inference": "Pointwise normal 95% intervals across original cards after averaging all six seats and three fixed training seeds. Exploratory, unadjusted across post hoc groups.",
+  "original_card_ledger_and_each_contrast_reconciled": true,
+  "comparisons": {
+    "mixture528 minus current480": {
+      "difference_bb_per_100": {
+        "mean": -60.89526388888889,
+        "lower": -76.15231683449323,
+        "upper": -45.638210943284555
+      },
+      "groups": {
+        "preflop": {
+          "hands": 0,
+          "share": 0.0,
+          "sum_chip_delta": 0,
+          "contribution_bb_per_100": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "switches_reference_to_candidate": {}
+        },
+        "flop": {
+          "hands": 14034,
+          "share": 0.19491666666666665,
+          "sum_chip_delta": -3914875,
+          "contribution_bb_per_100": {
+            "mean": -54.37326388888889,
+            "lower": -68.52868093091413,
+            "upper": -40.21784684686366
+          },
+          "switches_reference_to_candidate": {
+            "call_to_fold": {
+              "hands": 637,
+              "sum_chip_delta": -139773,
+              "contribution_bb_per_100": -1.9412916666666666
+            },
+            "call_to_raise": {
+              "hands": 782,
+              "sum_chip_delta": -262994,
+              "contribution_bb_per_100": -3.6526944444444442
+            },
+            "check_to_raise": {
+              "hands": 4065,
+              "sum_chip_delta": -883279,
+              "contribution_bb_per_100": -12.267763888888888
+            },
+            "fold_to_call": {
+              "hands": 388,
+              "sum_chip_delta": -225235,
+              "contribution_bb_per_100": -3.1282638888888887
+            },
+            "fold_to_raise": {
+              "hands": 672,
+              "sum_chip_delta": -967692,
+              "contribution_bb_per_100": -13.440166666666666
+            },
+            "raise_to_call": {
+              "hands": 430,
+              "sum_chip_delta": 83630,
+              "contribution_bb_per_100": 1.1615277777777777
+            },
+            "raise_to_check": {
+              "hands": 2996,
+              "sum_chip_delta": -576108,
+              "contribution_bb_per_100": -8.0015
+            },
+            "raise_to_fold": {
+              "hands": 391,
+              "sum_chip_delta": 297731,
+              "contribution_bb_per_100": 4.135152777777778
+            },
+            "raise_to_higher_raise": {
+              "hands": 2437,
+              "sum_chip_delta": -829883,
+              "contribution_bb_per_100": -11.526152777777778
+            },
+            "raise_to_lower_raise": {
+              "hands": 1236,
+              "sum_chip_delta": -411272,
+              "contribution_bb_per_100": -5.712111111111111
+            }
+          }
+        },
+        "turn": {
+          "hands": 2950,
+          "share": 0.04097222222222222,
+          "sum_chip_delta": -450798,
+          "contribution_bb_per_100": {
+            "mean": -6.261083333333333,
+            "lower": -11.419793018473047,
+            "upper": -1.1023736481936188
+          },
+          "switches_reference_to_candidate": {
+            "call_to_fold": {
+              "hands": 111,
+              "sum_chip_delta": 37982,
+              "contribution_bb_per_100": 0.5275277777777778
+            },
+            "call_to_raise": {
+              "hands": 168,
+              "sum_chip_delta": -147558,
+              "contribution_bb_per_100": -2.0494166666666667
+            },
+            "check_to_raise": {
+              "hands": 1077,
+              "sum_chip_delta": -1085,
+              "contribution_bb_per_100": -0.015069444444444444
+            },
+            "fold_to_call": {
+              "hands": 113,
+              "sum_chip_delta": -44186,
+              "contribution_bb_per_100": -0.6136944444444444
+            },
+            "fold_to_raise": {
+              "hands": 182,
+              "sum_chip_delta": -194601,
+              "contribution_bb_per_100": -2.7027916666666667
+            },
+            "raise_to_call": {
+              "hands": 72,
+              "sum_chip_delta": 65906,
+              "contribution_bb_per_100": 0.9153611111111111
+            },
+            "raise_to_check": {
+              "hands": 550,
+              "sum_chip_delta": -153433,
+              "contribution_bb_per_100": -2.131013888888889
+            },
+            "raise_to_fold": {
+              "hands": 47,
+              "sum_chip_delta": -103814,
+              "contribution_bb_per_100": -1.441861111111111
+            },
+            "raise_to_higher_raise": {
+              "hands": 448,
+              "sum_chip_delta": -15192,
+              "contribution_bb_per_100": -0.211
+            },
+            "raise_to_lower_raise": {
+              "hands": 182,
+              "sum_chip_delta": 105183,
+              "contribution_bb_per_100": 1.460875
+            }
+          }
+        },
+        "river": {
+          "hands": 674,
+          "share": 0.009361111111111112,
+          "sum_chip_delta": -18786,
+          "contribution_bb_per_100": {
+            "mean": -0.26091666666666663,
+            "lower": -2.1482797866274423,
+            "upper": 1.6264464532941092
+          },
+          "switches_reference_to_candidate": {
+            "call_to_fold": {
+              "hands": 29,
+              "sum_chip_delta": 31384,
+              "contribution_bb_per_100": 0.4358888888888889
+            },
+            "call_to_raise": {
+              "hands": 48,
+              "sum_chip_delta": -18201,
+              "contribution_bb_per_100": -0.2527916666666667
+            },
+            "check_to_raise": {
+              "hands": 228,
+              "sum_chip_delta": 9692,
+              "contribution_bb_per_100": 0.1346111111111111
+            },
+            "fold_to_call": {
+              "hands": 20,
+              "sum_chip_delta": 4355,
+              "contribution_bb_per_100": 0.06048611111111111
+            },
+            "fold_to_raise": {
+              "hands": 31,
+              "sum_chip_delta": -23762,
+              "contribution_bb_per_100": -0.33002777777777775
+            },
+            "raise_to_call": {
+              "hands": 19,
+              "sum_chip_delta": -366,
+              "contribution_bb_per_100": -0.005083333333333333
+            },
+            "raise_to_check": {
+              "hands": 115,
+              "sum_chip_delta": -13932,
+              "contribution_bb_per_100": -0.1935
+            },
+            "raise_to_fold": {
+              "hands": 9,
+              "sum_chip_delta": -19067,
+              "contribution_bb_per_100": -0.26481944444444444
+            },
+            "raise_to_higher_raise": {
+              "hands": 131,
+              "sum_chip_delta": 6227,
+              "contribution_bb_per_100": 0.08648611111111111
+            },
+            "raise_to_lower_raise": {
+              "hands": 44,
+              "sum_chip_delta": 4884,
+              "contribution_bb_per_100": 0.06783333333333333
+            }
+          }
+        },
+        "opponent_first": {
+          "hands": 0,
+          "share": 0.0,
+          "sum_chip_delta": 0,
+          "contribution_bb_per_100": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        },
+        "identical": {
+          "hands": 54342,
+          "share": 0.75475,
+          "sum_chip_delta": 0,
+          "contribution_bb_per_100": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        }
+      }
+    },
+    "mixture504 minus current480": {
+      "difference_bb_per_100": {
+        "mean": -37.67390277777778,
+        "lower": -52.39255035420078,
+        "upper": -22.955255201354788
+      },
+      "groups": {
+        "preflop": {
+          "hands": 0,
+          "share": 0.0,
+          "sum_chip_delta": 0,
+          "contribution_bb_per_100": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "switches_reference_to_candidate": {}
+        },
+        "flop": {
+          "hands": 13213,
+          "share": 0.1835138888888889,
+          "sum_chip_delta": -2620675,
+          "contribution_bb_per_100": {
+            "mean": -36.39826388888889,
+            "lower": -49.89623442000335,
+            "upper": -22.90029335777443
+          },
+          "switches_reference_to_candidate": {
+            "call_to_fold": {
+              "hands": 753,
+              "sum_chip_delta": -66943,
+              "contribution_bb_per_100": -0.9297638888888888
+            },
+            "call_to_raise": {
+              "hands": 697,
+              "sum_chip_delta": -265182,
+              "contribution_bb_per_100": -3.6830833333333333
+            },
+            "check_to_raise": {
+              "hands": 3152,
+              "sum_chip_delta": -613688,
+              "contribution_bb_per_100": -8.523444444444445
+            },
+            "fold_to_call": {
+              "hands": 328,
+              "sum_chip_delta": -232830,
+              "contribution_bb_per_100": -3.23375
+            },
+            "fold_to_raise": {
+              "hands": 519,
+              "sum_chip_delta": -482986,
+              "contribution_bb_per_100": -6.708138888888889
+            },
+            "raise_to_call": {
+              "hands": 496,
+              "sum_chip_delta": -138985,
+              "contribution_bb_per_100": -1.9303472222222222
+            },
+            "raise_to_check": {
+              "hands": 3585,
+              "sum_chip_delta": -457880,
+              "contribution_bb_per_100": -6.359444444444445
+            },
+            "raise_to_fold": {
+              "hands": 453,
+              "sum_chip_delta": 341907,
+              "contribution_bb_per_100": 4.748708333333333
+            },
+            "raise_to_higher_raise": {
+              "hands": 2093,
+              "sum_chip_delta": -752264,
+              "contribution_bb_per_100": -10.44811111111111
+            },
+            "raise_to_lower_raise": {
+              "hands": 1137,
+              "sum_chip_delta": 48176,
+              "contribution_bb_per_100": 0.6691111111111111
+            }
+          }
+        },
+        "turn": {
+          "hands": 3141,
+          "share": 0.043625,
+          "sum_chip_delta": -217097,
+          "contribution_bb_per_100": {
+            "mean": -3.015236111111111,
+            "lower": -8.371060635389698,
+            "upper": 2.340588413167476
+          },
+          "switches_reference_to_candidate": {
+            "call_to_fold": {
+              "hands": 134,
+              "sum_chip_delta": -22669,
+              "contribution_bb_per_100": -0.3148472222222222
+            },
+            "call_to_raise": {
+              "hands": 168,
+              "sum_chip_delta": -63746,
+              "contribution_bb_per_100": -0.8853611111111112
+            },
+            "check_to_raise": {
+              "hands": 1120,
+              "sum_chip_delta": 21690,
+              "contribution_bb_per_100": 0.30125
+            },
+            "fold_to_call": {
+              "hands": 103,
+              "sum_chip_delta": -20711,
+              "contribution_bb_per_100": -0.28765277777777776
+            },
+            "fold_to_raise": {
+              "hands": 190,
+              "sum_chip_delta": -156880,
+              "contribution_bb_per_100": -2.178888888888889
+            },
+            "raise_to_call": {
+              "hands": 95,
+              "sum_chip_delta": 45898,
+              "contribution_bb_per_100": 0.6374722222222222
+            },
+            "raise_to_check": {
+              "hands": 641,
+              "sum_chip_delta": 20188,
+              "contribution_bb_per_100": 0.2803888888888889
+            },
+            "raise_to_fold": {
+              "hands": 56,
+              "sum_chip_delta": -6344,
+              "contribution_bb_per_100": -0.08811111111111111
+            },
+            "raise_to_higher_raise": {
+              "hands": 447,
+              "sum_chip_delta": -18203,
+              "contribution_bb_per_100": -0.25281944444444443
+            },
+            "raise_to_lower_raise": {
+              "hands": 187,
+              "sum_chip_delta": -16320,
+              "contribution_bb_per_100": -0.22666666666666666
+            }
+          }
+        },
+        "river": {
+          "hands": 819,
+          "share": 0.011375,
+          "sum_chip_delta": 125251,
+          "contribution_bb_per_100": {
+            "mean": 1.7395972222222222,
+            "lower": -0.2814093894331169,
+            "upper": 3.7606038338775614
+          },
+          "switches_reference_to_candidate": {
+            "call_to_fold": {
+              "hands": 41,
+              "sum_chip_delta": 40151,
+              "contribution_bb_per_100": 0.5576527777777778
+            },
+            "call_to_raise": {
+              "hands": 62,
+              "sum_chip_delta": 17625,
+              "contribution_bb_per_100": 0.24479166666666666
+            },
+            "check_to_raise": {
+              "hands": 260,
+              "sum_chip_delta": 27689,
+              "contribution_bb_per_100": 0.38456944444444446
+            },
+            "fold_to_call": {
+              "hands": 32,
+              "sum_chip_delta": 6730,
+              "contribution_bb_per_100": 0.09347222222222222
+            },
+            "fold_to_raise": {
+              "hands": 62,
+              "sum_chip_delta": -24871,
+              "contribution_bb_per_100": -0.3454305555555556
+            },
+            "raise_to_call": {
+              "hands": 22,
+              "sum_chip_delta": 51359,
+              "contribution_bb_per_100": 0.7133194444444444
+            },
+            "raise_to_check": {
+              "hands": 152,
+              "sum_chip_delta": 8685,
+              "contribution_bb_per_100": 0.120625
+            },
+            "raise_to_fold": {
+              "hands": 16,
+              "sum_chip_delta": 38415,
+              "contribution_bb_per_100": 0.5335416666666667
+            },
+            "raise_to_higher_raise": {
+              "hands": 134,
+              "sum_chip_delta": -22587,
+              "contribution_bb_per_100": -0.3137083333333333
+            },
+            "raise_to_lower_raise": {
+              "hands": 38,
+              "sum_chip_delta": -17945,
+              "contribution_bb_per_100": -0.2492361111111111
+            }
+          }
+        },
+        "opponent_first": {
+          "hands": 0,
+          "share": 0.0,
+          "sum_chip_delta": 0,
+          "contribution_bb_per_100": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        },
+        "identical": {
+          "hands": 54827,
+          "share": 0.7614861111111111,
+          "sum_chip_delta": 0,
+          "contribution_bb_per_100": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        }
+      }
+    },
+    "mixture528 minus mixture504": {
+      "difference_bb_per_100": {
+        "mean": -23.221361111111108,
+        "lower": -37.128493662959926,
+        "upper": -9.314228559262288
+      },
+      "groups": {
+        "preflop": {
+          "hands": 0,
+          "share": 0.0,
+          "sum_chip_delta": 0,
+          "contribution_bb_per_100": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "switches_reference_to_candidate": {}
+        },
+        "flop": {
+          "hands": 10950,
+          "share": 0.15208333333333332,
+          "sum_chip_delta": -1294552,
+          "contribution_bb_per_100": {
+            "mean": -17.979888888888887,
+            "lower": -30.54992761843467,
+            "upper": -5.4098501593431045
+          },
+          "switches_reference_to_candidate": {
+            "call_to_fold": {
+              "hands": 313,
+              "sum_chip_delta": -130455,
+              "contribution_bb_per_100": -1.811875
+            },
+            "call_to_raise": {
+              "hands": 523,
+              "sum_chip_delta": 81329,
+              "contribution_bb_per_100": 1.1295694444444444
+            },
+            "check_to_raise": {
+              "hands": 3463,
+              "sum_chip_delta": -285583,
+              "contribution_bb_per_100": -3.9664305555555557
+            },
+            "fold_to_call": {
+              "hands": 469,
+              "sum_chip_delta": -30713,
+              "contribution_bb_per_100": -0.42656944444444445
+            },
+            "fold_to_raise": {
+              "hands": 553,
+              "sum_chip_delta": -718009,
+              "contribution_bb_per_100": -9.972347222222222
+            },
+            "raise_to_call": {
+              "hands": 348,
+              "sum_chip_delta": 133331,
+              "contribution_bb_per_100": 1.8518194444444445
+            },
+            "raise_to_check": {
+              "hands": 1961,
+              "sum_chip_delta": -92883,
+              "contribution_bb_per_100": -1.2900416666666668
+            },
+            "raise_to_fold": {
+              "hands": 321,
+              "sum_chip_delta": 230272,
+              "contribution_bb_per_100": 3.1982222222222223
+            },
+            "raise_to_higher_raise": {
+              "hands": 1713,
+              "sum_chip_delta": -653606,
+              "contribution_bb_per_100": -9.077861111111112
+            },
+            "raise_to_lower_raise": {
+              "hands": 1286,
+              "sum_chip_delta": 171765,
+              "contribution_bb_per_100": 2.385625
+            }
+          }
+        },
+        "turn": {
+          "hands": 2989,
+          "share": 0.04151388888888889,
+          "sum_chip_delta": -336333,
+          "contribution_bb_per_100": {
+            "mean": -4.671291666666666,
+            "lower": -10.07064512418043,
+            "upper": 0.7280617908470992
+          },
+          "switches_reference_to_candidate": {
+            "call_to_fold": {
+              "hands": 84,
+              "sum_chip_delta": -34195,
+              "contribution_bb_per_100": -0.4749305555555556
+            },
+            "call_to_raise": {
+              "hands": 131,
+              "sum_chip_delta": -145246,
+              "contribution_bb_per_100": -2.0173055555555557
+            },
+            "check_to_raise": {
+              "hands": 900,
+              "sum_chip_delta": 88896,
+              "contribution_bb_per_100": 1.2346666666666666
+            },
+            "fold_to_call": {
+              "hands": 98,
+              "sum_chip_delta": -26531,
+              "contribution_bb_per_100": -0.3684861111111111
+            },
+            "fold_to_raise": {
+              "hands": 118,
+              "sum_chip_delta": -16061,
+              "contribution_bb_per_100": -0.22306944444444443
+            },
+            "raise_to_call": {
+              "hands": 125,
+              "sum_chip_delta": 67092,
+              "contribution_bb_per_100": 0.9318333333333333
+            },
+            "raise_to_check": {
+              "hands": 572,
+              "sum_chip_delta": -137223,
+              "contribution_bb_per_100": -1.905875
+            },
+            "raise_to_fold": {
+              "hands": 74,
+              "sum_chip_delta": -72625,
+              "contribution_bb_per_100": -1.0086805555555556
+            },
+            "raise_to_higher_raise": {
+              "hands": 451,
+              "sum_chip_delta": 28389,
+              "contribution_bb_per_100": 0.39429166666666665
+            },
+            "raise_to_lower_raise": {
+              "hands": 436,
+              "sum_chip_delta": -88829,
+              "contribution_bb_per_100": -1.2337361111111111
+            }
+          }
+        },
+        "river": {
+          "hands": 863,
+          "share": 0.01198611111111111,
+          "sum_chip_delta": -41053,
+          "contribution_bb_per_100": {
+            "mean": -0.5701805555555557,
+            "lower": -2.889749242805756,
+            "upper": 1.7493881316946445
+          },
+          "switches_reference_to_candidate": {
+            "call_to_fold": {
+              "hands": 25,
+              "sum_chip_delta": 19070,
+              "contribution_bb_per_100": 0.2648611111111111
+            },
+            "call_to_raise": {
+              "hands": 35,
+              "sum_chip_delta": -26900,
+              "contribution_bb_per_100": -0.3736111111111111
+            },
+            "check_to_raise": {
+              "hands": 245,
+              "sum_chip_delta": -58438,
+              "contribution_bb_per_100": -0.8116388888888889
+            },
+            "fold_to_call": {
+              "hands": 24,
+              "sum_chip_delta": -19390,
+              "contribution_bb_per_100": -0.2693055555555556
+            },
+            "fold_to_raise": {
+              "hands": 26,
+              "sum_chip_delta": -24125,
+              "contribution_bb_per_100": -0.3350694444444444
+            },
+            "raise_to_call": {
+              "hands": 34,
+              "sum_chip_delta": 1828,
+              "contribution_bb_per_100": 0.025388888888888888
+            },
+            "raise_to_check": {
+              "hands": 178,
+              "sum_chip_delta": 23374,
+              "contribution_bb_per_100": 0.32463888888888887
+            },
+            "raise_to_fold": {
+              "hands": 24,
+              "sum_chip_delta": 32683,
+              "contribution_bb_per_100": 0.45393055555555556
+            },
+            "raise_to_higher_raise": {
+              "hands": 151,
+              "sum_chip_delta": 4698,
+              "contribution_bb_per_100": 0.06525
+            },
+            "raise_to_lower_raise": {
+              "hands": 121,
+              "sum_chip_delta": 6147,
+              "contribution_bb_per_100": 0.085375
+            }
+          }
+        },
+        "opponent_first": {
+          "hands": 0,
+          "share": 0.0,
+          "sum_chip_delta": 0,
+          "contribution_bb_per_100": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        },
+        "identical": {
+          "hands": 57198,
+          "share": 0.7944166666666667,
+          "sum_chip_delta": 0,
+          "contribution_bb_per_100": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        }
+      }
+    }
+  },
+  "cell_commitments": {
+    "public-seed-342-current480": {
+      "result_sha256": "5189dcd29a83cf7429975dc4a20bbaebd8eb7b47b0c51ee3a3eb885cff75e215",
+      "raw_sha256": "a3653159f6de83e6a2382bb25e69cb4351806c7857bbad55d70640806f184281"
+    },
+    "public-seed-342-mixture504": {
+      "result_sha256": "ba1fa4bd785bff55cb6891609336e6ca284933e48972dfec970eaa07c238ca80",
+      "raw_sha256": "694e110a855b8f7b2010f122ee15793038a4507f7b543def7333878ddb41bd7b"
+    },
+    "public-seed-342-mixture528": {
+      "result_sha256": "8e9bffb5f2ff5deae9e11575d12d2d8c9d196a96424cbe106106e964ab51bd0f",
+      "raw_sha256": "e4ba8e2c3ba15fd7ffc4330f70cb5190c5a3221d96a52a4eb9697ac123e6cdc0"
+    },
+    "public-seed-343-current480": {
+      "result_sha256": "cadc59b7edf72cc0bc1616621a974df518dc951c81ec0db77d9ce692710938ac",
+      "raw_sha256": "32d32da0cf7a9cdd241185489775e50c1b6aded8030130534fdd3275add963a3"
+    },
+    "public-seed-343-mixture504": {
+      "result_sha256": "f65fcaf0a26a9bbf170a66e1c6c1e23cc649cb5b7e048bb91d8534b78888d373",
+      "raw_sha256": "1316105b887c9d5fac3f8563d41abd3256974b5a5734049b4e637a4656d6b4ba"
+    },
+    "public-seed-343-mixture528": {
+      "result_sha256": "1d847ebd77426065749133273d9033d294d8b06ea1b19df598427ceb11ebe27f",
+      "raw_sha256": "03a1f5c9529b33b6a24dacdfd9e1f0fd33dfb4cd39d5a28cee6cc4cdbfd3f2de"
+    },
+    "public-seed-344-current480": {
+      "result_sha256": "6b9ca4ef58150098340c17e0da6c21166f87fe354306784e52131ec95d18bf08",
+      "raw_sha256": "da25b7bd8d2c088e019d39366d82206e9f922f59f164ebe29c649b76f074c155"
+    },
+    "public-seed-344-mixture504": {
+      "result_sha256": "a3cd9825f1bb8d23f492f930b69cf48a5dd403f6f95ff9af3330f1a7610188c6",
+      "raw_sha256": "1564ee4097a79b8f8576392ef8f2bd998783cff5679f30406527e811311c77ad"
+    },
+    "public-seed-344-mixture528": {
+      "result_sha256": "dae7cffa1ecb7cb683d8b70dafd056c3c0858ea0210476c164d1049589335f0c",
+      "raw_sha256": "7115267e64fbbb6d6109f2b628a17f4a43596a76b0470fb1f2ae368c70e3cd12"
+    }
+  },
+  "rules_commit": "757f7692738069522195d2b486eec60a8b010c0c",
+  "source_sha256": {
+    "audit_pool528_public_divergence.py": "66b714f809bcc781fb68fc55e9049da87aa3916782270cc3367fde1f2e75a00b",
+    "pool528_public_divergence.rs": "3ebcc41edd0f720ac10323bf73ab5d5064ec4ae846477828c35095293c5647b3",
+    "public_divergence.rs": "65ac7e28a98fe354447e402920f98f4553bd6402c1e7de7dff0438accd36bcc4",
+    "terminal_audit.rs": "39eceeb0ffafeaecae250cf09b7e0bb11a9f0df0535615bceba877f8e4006f80"
+  }
+}

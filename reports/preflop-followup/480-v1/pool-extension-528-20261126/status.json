@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-26T02:39:59.925583+00:00",
+  "observed_utc": "2026-11-26T02:44:12.945640+00:00",
   "fixed_baseline": {
     "stage": 480,
     "policy": "specialist480"
@@ -33,7 +33,7 @@
   "training_complete": true,
   "evaluation": {
     "main": {
-      "completed_cells": 19,
+      "completed_cells": 28,
       "planned_cells": 54,
       "planned_hands": 756000
     },
