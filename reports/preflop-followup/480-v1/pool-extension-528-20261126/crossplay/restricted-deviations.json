@@ -1,0 +1,27 @@
+{
+  "matrix_sha256": "39f34e7d55159de70021f8b169354efe3f3513bfebecfd94acc871c9c7958dbb",
+  "units": "bb/100",
+  "restricted_one_seat_deviation_gain": {
+    "specialist480": {
+      "mean": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "highest_by_estimate": "specialist480"
+    },
+    "mixture504": {
+      "mean": 29.507999999999996,
+      "lower": 0.0,
+      "upper": 59.813995513287225,
+      "highest_by_estimate": "specialist480"
+    },
+    "mixture528": {
+      "mean": 50.89088888888889,
+      "lower": 17.817230933642,
+      "upper": 83.96454684413578,
+      "highest_by_estimate": "specialist480"
+    }
+  },
+  "scope": "Against five copies of a fixed checkpoint, one seat may choose any one of the three tested checkpoint policies. Average over seats and fixed training seeds before choosing the checkpoint. All-self gives zero. Bounds propagate the simultaneous 95% matrix intervals and cover only the finite set of deviations.",
+  "unrestricted_best_response_computed": false,
+  "six_player_exploitability": null
+}

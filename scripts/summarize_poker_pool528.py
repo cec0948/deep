@@ -10,7 +10,8 @@ PANELS = {'main': (54, 756000), 'crossplay': (27, 162000),
           'training-opponents': (27, 162000)}
 FINAL_FILES = ('stage-ready.json', 'training-audit.json', 'main/summary.json',
                'external-audit.json', 'crossplay/summary.json',
-               'crossplay/restricted-deviations.json', 'training-opponents/summary.json',
+               'crossplay/restricted-deviations.json', 'crossplay/independent-audit.json',
+               'training-opponents/summary.json', 'training-opponents/paired-audit.json', 'replay-fit.json',
                'backup-verification.json')
 
 
@@ -39,6 +40,9 @@ def check_final(receipts, progress, panels):
             and audit['stage_sha256'] == receipts['stage-ready.json'] == external['training_stage_sha256']
             and external['evaluation_summary_sha256'] == receipts['main/summary.json']
             and external['complete'] and primary['complete'] and matrix['complete'] and old['complete']
+            and read(STUDY/'crossplay/independent-audit.json')['summary_sha256'] == receipts['crossplay/summary.json']
+            and read(STUDY/'training-opponents/paired-audit.json')['summary_sha256'] == receipts['training-opponents/summary.json']
+            and read(STUDY/'replay-fit.json')['stage_sha256'] == receipts['stage-ready.json']
             and all(row['completed_cells'] == row['planned_cells'] for row in panels.values())
             and primary['completed_hands'] == external['hands'] == PANELS['main'][1]
             and matrix['terminal_replay_hands'] == old['terminal_replayed_hands'] == 162000

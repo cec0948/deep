@@ -1,0 +1,219 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-26T02:38:59.122704+00:00",
+  "design_sha256": "5fb97eaae9ecafef9a8a1a0d7b4b2053664f86aaaabca2f0334ee8ea36af4288",
+  "plan_sha256": "d0b2b1bcd51e17df27a7451ddb29855edc916825a1b31661e5a39b876d42fa4a",
+  "completed_cells": 27,
+  "terminal_replay_hands": 162000,
+  "terminal_replay_decisions": 1632930,
+  "policy_resampled_hands": 1134,
+  "units": "bb/100",
+  "fixed_seeds": [
+    342,
+    343,
+    344
+  ],
+  "original_card_blocks": 1000,
+  "matrix": {
+    "specialist480": {
+      "specialist480": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "by_seed": {
+          "342": 0.0,
+          "343": 0.0,
+          "344": 0.0
+        }
+      },
+      "mixture504": {
+        "mean": 29.507999999999996,
+        "lower": -0.7979955132872298,
+        "upper": 59.813995513287225,
+        "by_seed": {
+          "342": 1.3075,
+          "343": 74.94783333333334,
+          "344": 12.268666666666668
+        }
+      },
+      "mixture528": {
+        "mean": 50.89088888888889,
+        "lower": 17.817230933642,
+        "upper": 83.96454684413578,
+        "by_seed": {
+          "342": 13.359666666666666,
+          "343": 120.87783333333334,
+          "344": 18.435166666666664
+        }
+      }
+    },
+    "mixture504": {
+      "specialist480": {
+        "mean": -35.03316666666667,
+        "lower": -63.811569033677415,
+        "upper": -6.254764299655932,
+        "by_seed": {
+          "342": 8.504833333333336,
+          "343": -93.37866666666667,
+          "344": -20.225666666666665
+        }
+      },
+      "mixture504": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "by_seed": {
+          "342": 0.0,
+          "343": 0.0,
+          "344": 0.0
+        }
+      },
+      "mixture528": {
+        "mean": 8.348166666666668,
+        "lower": -21.960582818198763,
+        "upper": 38.6569161515321,
+        "by_seed": {
+          "342": -11.972166666666668,
+          "343": 42.096,
+          "344": -5.079333333333331
+        }
+      }
+    },
+    "mixture528": {
+      "specialist480": {
+        "mean": -60.421277777777775,
+        "lower": -92.4198883593121,
+        "upper": -28.422667196243445,
+        "by_seed": {
+          "342": -11.677500000000002,
+          "343": -140.982,
+          "344": -28.604333333333336
+        }
+      },
+      "mixture504": {
+        "mean": -4.885166666666666,
+        "lower": -35.414001630332045,
+        "upper": 25.643668296998715,
+        "by_seed": {
+          "342": 16.982833333333335,
+          "343": -47.32333333333333,
+          "344": 15.684999999999997
+        }
+      },
+      "mixture528": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "by_seed": {
+          "342": 0.0,
+          "343": 0.0,
+          "344": 0.0
+        }
+      }
+    }
+  },
+  "new528_minus_parent504_vs_fixed_opponent": {
+    "specialist480": {
+      "mean": -25.388111111111108,
+      "lower": -57.291553563831485,
+      "upper": 6.515331341609265,
+      "by_seed": {
+        "342": -20.18233333333333,
+        "343": -47.60333333333333,
+        "344": -8.378666666666666
+      }
+    },
+    "mixture504": {
+      "mean": -4.885166666666666,
+      "lower": -32.587322536664324,
+      "upper": 22.81698920333099,
+      "by_seed": {
+        "342": 16.982833333333335,
+        "343": -47.32333333333333,
+        "344": 15.684999999999997
+      }
+    },
+    "mixture528": {
+      "mean": -8.348166666666668,
+      "lower": -35.85061487517984,
+      "upper": 19.154281541846505,
+      "by_seed": {
+        "342": 11.972166666666668,
+        "343": -42.096,
+        "344": 5.079333333333331
+      }
+    }
+  },
+  "directed_payoff_minus_reverse": {
+    "specialist480_vs_mixture504": {
+      "mean": 64.54116666666665,
+      "lower": 13.76816548861725,
+      "upper": 115.31416784471605,
+      "by_seed": {
+        "342": -7.197333333333336,
+        "343": 168.3265,
+        "344": 32.49433333333334
+      }
+    },
+    "specialist480_vs_mixture528": {
+      "mean": 111.31216666666666,
+      "lower": 55.75868597309919,
+      "upper": 166.8656473602341,
+      "by_seed": {
+        "342": 25.037166666666668,
+        "343": 261.85983333333337,
+        "344": 47.0395
+      }
+    },
+    "mixture504_vs_mixture528": {
+      "mean": 13.233333333333336,
+      "lower": -38.573256731592586,
+      "upper": 65.03992339825926,
+      "by_seed": {
+        "342": -28.955,
+        "343": 89.41933333333333,
+        "344": -20.764333333333337
+      }
+    }
+  },
+  "supported_dominance_edges": [
+    [
+      "specialist480",
+      "mixture528"
+    ]
+  ],
+  "supported_cycles": [],
+  "intervals": "Matched original-card normal intervals. Bonferroni 95% within each registered family.",
+  "scope": "One seat against five identically specified but independently acting seats. The reverse lineup is a different six-player game, not an antisymmetric heads-up payoff. Self cells are identically zero from paired tapes. Missing significant edges cannot rule out cycling.",
+  "six_player_exploitability": null,
+  "best_response_computed": false,
+  "result_sha256": {
+    "specialist480-vs-specialist480-seed-342": "160f06e6d87eff9fa7cf04f33ae39eea4bc26fbacb4568cdd41d9aada04f4f99",
+    "specialist480-vs-specialist480-seed-343": "af8e9e77a65ae223dba47509bf8efb44744ad150648b0d468da9494e82fb8b3b",
+    "specialist480-vs-specialist480-seed-344": "cc26b7389b521d52128d8d386bc34170ecc397d2214f425e76bfaafa18d96e30",
+    "specialist480-vs-mixture504-seed-342": "891f90bce2a7db0693b3bf3c0de1848a530ef2723a9eccff7a0616aabf147c1c",
+    "specialist480-vs-mixture504-seed-343": "7e8236477559a31e064fa9885ae5c4ce2d1267e5fbbdeb1832e50f3cc99d081f",
+    "specialist480-vs-mixture504-seed-344": "a0d5c7a5aca02784f4c926bea13721dfaf2f3668da55ec7e0a7b08bca0baa3c9",
+    "specialist480-vs-mixture528-seed-342": "8b48f186049e03428da2dfc5ee4d73fe98128fea6be46ab0e52437d210f098aa",
+    "specialist480-vs-mixture528-seed-343": "4b7b37fb9bcc0bc4fcc3fa116ed59f6762eec22e196502610a4ca640e2a6d592",
+    "specialist480-vs-mixture528-seed-344": "1cbb1b5dd9ad228645aedf45ae237f4b0687098a8cd6b3aa9ac8948b6a48e66c",
+    "mixture504-vs-specialist480-seed-342": "b56accb0ce6efaadd418a48c2ceb67d7c6ecbb7247538b3c3014c96fb3721f47",
+    "mixture504-vs-specialist480-seed-343": "a904c43d5c4971ceb4fa471b0fc69da57efa13915532041d2521b4e488d95160",
+    "mixture504-vs-specialist480-seed-344": "2d68142c8384962c6a36f8345abc2f11e86ed30d94ea42ca65c793ee1691a487",
+    "mixture504-vs-mixture504-seed-342": "ad0dbc7fd6a753220f4a14af044e3e5ced5947cd195ec43ab3e954f646a8f3b1",
+    "mixture504-vs-mixture504-seed-343": "73ce3e195ba753ccee9d753bd7dfc6198e18e8c4e7120c9cfada985df8b4e72c",
+    "mixture504-vs-mixture504-seed-344": "ebcb840b764c3fbc54a7cc23cf5d24f811dac9072b03c2fd6e2842792af346f6",
+    "mixture504-vs-mixture528-seed-342": "c2057cadbc2152653f86e2de46974410d809ddf34c74255936f608b32869dc7a",
+    "mixture504-vs-mixture528-seed-343": "6c93d8ef153d60d90c323eee5ccfe503605084cdfe82d52bec873b86e7839b8c",
+    "mixture504-vs-mixture528-seed-344": "e9b369b5bfc2cb43c7f3f58c4e5fc39d1d5545171b55af325649d4d0bfb38925",
+    "mixture528-vs-specialist480-seed-342": "6f97739787ceda8cd115ff573878883568e3eef2da2d90182bb9b0b3e1c97d61",
+    "mixture528-vs-specialist480-seed-343": "011a1d347876a5dc3cd609352bfcca0b771716f4729371d52db628a5ff1bf883",
+    "mixture528-vs-specialist480-seed-344": "d1624d9c05f61ba252e69c0135743de14a88860d4bb8370e4c47cccaa2efdec3",
+    "mixture528-vs-mixture504-seed-342": "c4558659badac323946570b5e2af1dcf690faf773ae983946fef80bb1c010da6",
+    "mixture528-vs-mixture504-seed-343": "bc6b30cf960095cfc8bf824b3111d62461a4b3ab540bdbb99615594fa0bccfdf",
+    "mixture528-vs-mixture504-seed-344": "70fcd0868670618d2e63dd7d92d68c10bde137bc580546803725ca6e72cb9fc3",
+    "mixture528-vs-mixture528-seed-342": "1acb4bf7533c0799be8d92ef2f8f0c6ca691d71507dccdbae58a0692be27810a",
+    "mixture528-vs-mixture528-seed-343": "6534f425a7df0ce9b13fc11285599f388e0f503cf12b345fa46d2d759a787637",
+    "mixture528-vs-mixture528-seed-344": "440cb80f90e62fbc4c1dee7e475972ad421b96734c9e06a01e23161d64889e17"
+  }
+}

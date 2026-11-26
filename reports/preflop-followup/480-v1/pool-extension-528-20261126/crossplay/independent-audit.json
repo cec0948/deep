@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-26T02:39:23.146580+00:00",
+  "cells": 27,
+  "hands": 162000,
+  "unique_original_card_blocks": 1000,
+  "self_control_deal_means_all_zero": true,
+  "raw_six_seat_utilities_reaggregated": true,
+  "private_slot_identity_checked_for_every_seat": true,
+  "directed_estimates_checked": 9,
+  "reciprocal_contrasts_checked": 3,
+  "fixed_column_contrasts_checked": 3,
+  "supported_dominance_edges": [
+    [
+      "specialist480",
+      "mixture528"
+    ]
+  ],
+  "supported_cycles": [],
+  "summary_sha256": "39f34e7d55159de70021f8b169354efe3f3513bfebecfd94acc871c9c7958dbb"
+}

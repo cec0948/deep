@@ -1,0 +1,149 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-26T02:37:39.066792+00:00",
+  "source_training_plan_sha256": "bc3526a3bd5b96d9f5edccff8414c70fd480db22a962cb8aa09f2423b1e5427d",
+  "study_plan_sha256": "38e0a55c1c17e08610f376045e6a4d86ea67cd78de9a78ee03a80dc670f2ab49",
+  "summary_sha256": "d5267eece43de93d1f901a4358ec3dabe73ce2b78c4a70183f46f5d7b45e8f86",
+  "training_opponent_weights_by_seed_and_iteration": {
+    "342-300": {
+      "preflop": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+      "postflop": "bf5f6c05aa43bc692024be31a2b6b8fdb540a8db65dd78223949af4435ba70a1"
+    },
+    "342-360": {
+      "preflop": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+      "postflop": "fb4d13fe2b50b3664fe2164051d14a5631799c4c71211e760aaf7e61f1a7db76"
+    },
+    "342-420": {
+      "preflop": "d1147aa8cabfffecf9dffcb033cfae5e725423dbea7da21253a4ba0d11e63a12",
+      "postflop": "f23e592981774d6b99da6910513dc83c91cd5474b9a22b34bec72e1463951607"
+    },
+    "343-300": {
+      "preflop": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+      "postflop": "c7565aef0df6313122c16f57012f3209a0a984a1c09136dd550e5b6f27e07e80"
+    },
+    "343-360": {
+      "preflop": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+      "postflop": "1916ff840d4ecfa46fc666a38c7f319461259cb532d9d0b84a5616e6230e8517"
+    },
+    "343-420": {
+      "preflop": "e40d3a6023b65dd8beb72d85ba4c16be6a8d522ed4538eca9b51459ccc375caa",
+      "postflop": "7fdcbe9ef679de27099bf76a184c8849979b76941072bdfa8f9d600722f4005c"
+    },
+    "344-300": {
+      "preflop": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+      "postflop": "c6963d30938a59c8073a86e84dab29dd633c3b7aecf69c4655225af2bc852c2e"
+    },
+    "344-360": {
+      "preflop": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+      "postflop": "525092634f6e7a7a0aba5dc7931a9e860816ce714c32c74a55bc009b7a31f8a7"
+    },
+    "344-420": {
+      "preflop": "699fa14660ab541f315c9f7c765a4eb6ae4e6647961f374a93f88e4339cb32c4",
+      "postflop": "0a6700790cc5bd19d6756c45c397c5cf7340f21a79c72b9d8d3855de94c84784"
+    }
+  },
+  "raw_ledger_cells": 27,
+  "hands": 162000,
+  "actions": 1627774,
+  "distinct_deals_shared_with_crossplay": 1000,
+  "fixed_seeds": [
+    342,
+    343,
+    344
+  ],
+  "simultaneous_two_sided_95_family_sizes": {
+    "means": 9,
+    "paired_contrasts": 6
+  },
+  "means_bb100": {
+    "300": {
+      "specialist480": {
+        "mean": 45.73166666666667,
+        "lower": 14.789428449514425,
+        "upper": 76.67390488381892
+      },
+      "mixture504": {
+        "mean": -6.0705,
+        "lower": -39.22039303037471,
+        "upper": 27.079393030374707
+      },
+      "mixture528": {
+        "mean": -31.092222222222222,
+        "lower": -64.77475694013529,
+        "upper": 2.590312495690849
+      }
+    },
+    "360": {
+      "specialist480": {
+        "mean": 33.593111111111114,
+        "lower": 5.740244124775984,
+        "upper": 61.44597809744624
+      },
+      "mixture504": {
+        "mean": -6.744944444444444,
+        "lower": -36.04537936313829,
+        "upper": 22.555490474249396
+      },
+      "mixture528": {
+        "mean": -29.99972222222222,
+        "lower": -62.16807890626738,
+        "upper": 2.1686344618229434
+      }
+    },
+    "420": {
+      "specialist480": {
+        "mean": 49.52833333333333,
+        "lower": 19.792151785640556,
+        "upper": 79.2645148810261
+      },
+      "mixture504": {
+        "mean": -4.280666666666666,
+        "lower": -33.774473606084634,
+        "upper": 25.213140272751303
+      },
+      "mixture528": {
+        "mean": -8.871166666666667,
+        "lower": -41.06046117019846,
+        "upper": 23.318127836865123
+      }
+    }
+  },
+  "paired_528_minus_reference_bb100": {
+    "300": {
+      "mixture504": {
+        "mean": -25.02172222222222,
+        "lower": -61.88181312473468,
+        "upper": 11.838368680290234
+      },
+      "specialist480": {
+        "mean": -76.82388888888889,
+        "lower": -114.72192159440814,
+        "upper": -38.92585618336963
+      }
+    },
+    "360": {
+      "mixture504": {
+        "mean": -23.25477777777778,
+        "lower": -56.980109670259054,
+        "upper": 10.4705541147035
+      },
+      "specialist480": {
+        "mean": -63.59283333333333,
+        "lower": -100.96240866028106,
+        "upper": -26.223258006385613
+      }
+    },
+    "420": {
+      "mixture504": {
+        "mean": -4.5905,
+        "lower": -39.38693228504137,
+        "upper": 30.20593228504137
+      },
+      "specialist480": {
+        "mean": -58.3995,
+        "lower": -96.56433183636528,
+        "upper": -20.234668163634716
+      }
+    }
+  }
+}

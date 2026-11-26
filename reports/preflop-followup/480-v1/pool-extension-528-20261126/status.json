@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-26T02:31:57.202268+00:00",
+  "observed_utc": "2026-11-26T02:39:59.925583+00:00",
   "fixed_baseline": {
     "stage": 480,
     "policy": "specialist480"
@@ -33,17 +33,17 @@
   "training_complete": true,
   "evaluation": {
     "main": {
-      "completed_cells": 9,
+      "completed_cells": 19,
       "planned_cells": 54,
       "planned_hands": 756000
     },
     "crossplay": {
-      "completed_cells": 10,
+      "completed_cells": 27,
       "planned_cells": 27,
       "planned_hands": 162000
     },
     "training-opponents": {
-      "completed_cells": 11,
+      "completed_cells": 27,
       "planned_cells": 27,
       "planned_hands": 162000
     }
@@ -52,7 +52,14 @@
   "planned_evaluation_hands": 1080000,
   "verified_receipts_sha256": {
     "stage-ready.json": "7f61d0fc4645b8aeada24ebd551ba86b3a3c869b61e87c17715510fc5c384c0b",
-    "training-audit.json": "08dec85f9f3e26a95b18407b19abab48af5ec7948e633ed0d6ea05a89b84a968"
+    "training-audit.json": "08dec85f9f3e26a95b18407b19abab48af5ec7948e633ed0d6ea05a89b84a968",
+    "crossplay/summary.json": "39f34e7d55159de70021f8b169354efe3f3513bfebecfd94acc871c9c7958dbb",
+    "crossplay/restricted-deviations.json": "bad5d237d3334c0961d1803ae3a1d02e174350b7426abf9d05e4d19bfe6c1248",
+    "crossplay/independent-audit.json": "2e786e223a07a3e7da007cdce95320b3aa19b9ed4ac96a548083d5684c22f017",
+    "training-opponents/summary.json": "d5267eece43de93d1f901a4358ec3dabe73ce2b78c4a70183f46f5d7b45e8f86",
+    "training-opponents/paired-audit.json": "210f8551f0473f932f45e67c74b247eecf465082e291bc9a1027d679de38a124",
+    "replay-fit.json": "3182cc1a398a1d8a41fef47acaecbaf4645d841e1f45fc9121ec5b687481f556",
+    "backup-verification.json": "e7960fdeb2877086067268856cfbc1ec399e91ec318627675d12c982b2730a52"
   },
   "complete": false,
   "model_promoted": false,
