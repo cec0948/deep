@@ -1,0 +1,78 @@
+{
+  "study": "river-call-learning-20261126",
+  "registered_utc": "2026-11-26T08:21:19.908708+00:00",
+  "purpose": "Learn the conditional value of the more frequent heads-up river call using only information visible at play time. One submission, no tournament.",
+  "parent_play_sha256": "858d74197187b21c49e5042084ebdd59af403dc0142cd9cd75993d7c2844044f",
+  "flop_selection_sha256": "7faa8a8b2f8936c6a5cf1684936a0f6cd9e7f4f556227f61fddb792a2bed48e7",
+  "guard_sha256": "d7bef73bac270f657abffe9dbe9bf2621e08580b23f19c3082c0efc284150170",
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "collection": {
+    "train": {
+      "positions_per_seed": 768,
+      "by_seed": {
+        "342": {
+          "start": 2110000000,
+          "limit": 2110250000
+        },
+        "343": {
+          "start": 2110250000,
+          "limit": 2110500000
+        },
+        "344": {
+          "start": 2110500000,
+          "limit": 2110750000
+        }
+      }
+    },
+    "holdout": {
+      "positions_per_seed": 384,
+      "by_seed": {
+        "342": {
+          "start": 2110750000,
+          "limit": 2111000000
+        },
+        "343": {
+          "start": 2111000000,
+          "limit": 2111250000
+        },
+        "344": {
+          "start": 2111250000,
+          "limit": 2111500000
+        }
+      }
+    }
+  },
+  "reach": "Frozen selected v1 in the hero seat. Opponents assigned independently: 480 with probability 1/2, and 300,360,420 with probability 1/6 each. Use one original deal at most once. Fixed 100 BB, six seats.",
+  "eligibility": "At the river exactly two live seats. Exactly one river bet/raise by the live villain, hero at most previously checked this street, call fully covered, closes action, both cover all pot layers. Draw independent dealt hands up to range limit until quota. Include protected and zero passive mass roots in validation.",
+  "label": "The actor showdown share 1/.5/0 is a private training target. Score the tag-along decision with actual terminal chip differences (including side pots and odd chips). Parent is v1 with protected invulnerable-river floor.",
+  "features": [
+    "logit_clipped_exhaustive_990_uniform_showdown_share",
+    "owed_divided_by_pot_plus_owed",
+    "log1p_pot_bb",
+    "villain_all_in",
+    "hero_checked_on_river",
+    "prior_villain_raises",
+    "prior_hero_raises",
+    "prior_hero_calls",
+    "board_distinct_ranks",
+    "board_max_suit_count"
+  ],
+  "fit": {
+    "shared_model": true,
+    "offset": "logit uniform showdown share clipped to [.0005,.9995]",
+    "target": "sigmoid soft-label cross entropy; single unpenalized intercept",
+    "standardization": "pooled train population SD floored at .1",
+    "l2_weight": 0.02,
+    "penalty": "0.5 * l2_weight * sum of squared coefficients",
+    "optimizer": "L-BFGS",
+    "max_iterations": 200,
+    "preserve_raise_mass": true,
+    "call_rule": "Transfer 25% of existing fold probability to call when predicted share*(pot+owed)>owed, or 25% of call probability to fold when below. No intervention on equality or on protected hands."
+  },
+  "selection": "Frozen weights, single independent holdout across fixed seeds. Average each original hand value (new call probability minus protected parent call probability) times exact call-minus-fold chips / 100. Equal fixed-seed weight. Standard error sqrt(sum of seed mean variances)/3. Use learner only if mean-1.96*SE>0. Otherwise protected parent. No retuning, no new candidate, no additional cards.",
+  "scope": "Closed heads-up river decisions against the historical training pool; no whole-game or public-opponent strength claim."
+}
