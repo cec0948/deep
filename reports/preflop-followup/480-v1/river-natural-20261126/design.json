@@ -1,0 +1,22 @@
+{
+  "registered_utc": "2026-11-26T08:12:36.348918+00:00",
+  "protocol": "river-dominance-natural-frequency-v1",
+  "deals_per_seed": 3600,
+  "start": {
+    "342": 2093010000,
+    "343": 2093020000,
+    "344": 2093030000
+  },
+  "hero": "offset modulo six; button fixed at zero",
+  "hero_selection_sha256": "7faa8a8b2f8936c6a5cf1684936a0f6cd9e7f4f556227f61fddb792a2bed48e7",
+  "hero_policy": {
+    "342": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe",
+    "343": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931",
+    "344": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd"
+  },
+  "game": "Ordinary unmodified 6-seat full native-engine hands. All seats use incumbent 480 preflop, hero uses selected v1 postflop; opponents are historical policies independently assigned per seat with p(480)=1/2, p(300)=p(360)=p(420)=1/6. No retries, stratification or manufactured reach.",
+  "scan": "Every reached hero river action, even if it has no fold mass. closing_call_floor from frozen module, compare positive-fold rows and exact floor. Play ORIGINAL sampled action; do not intervene.",
+  "guard_sha256": "3ac3ad802874e65850f2c2b7718afb0101545e6a0af7b1b24ffbb97896e561b7",
+  "independence": "Original deals are the unit. Multiple actions in a single deal are not independent. Frequency and conditional chip exposure only on this fixed pool, no strength promotion.",
+  "chips_per_bb": 100
+}
