@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-26T02:27:57.940714+00:00",
+  "observed_utc": "2026-11-26T02:31:57.202268+00:00",
   "fixed_baseline": {
     "stage": 480,
     "policy": "specialist480"
@@ -33,17 +33,17 @@
   "training_complete": true,
   "evaluation": {
     "main": {
-      "completed_cells": 5,
+      "completed_cells": 9,
       "planned_cells": 54,
       "planned_hands": 756000
     },
     "crossplay": {
-      "completed_cells": 1,
+      "completed_cells": 10,
       "planned_cells": 27,
       "planned_hands": 162000
     },
     "training-opponents": {
-      "completed_cells": 1,
+      "completed_cells": 11,
       "planned_cells": 27,
       "planned_hands": 162000
     }
@@ -51,7 +51,8 @@
   "unique_original_cards": 6000,
   "planned_evaluation_hands": 1080000,
   "verified_receipts_sha256": {
-    "stage-ready.json": "7f61d0fc4645b8aeada24ebd551ba86b3a3c869b61e87c17715510fc5c384c0b"
+    "stage-ready.json": "7f61d0fc4645b8aeada24ebd551ba86b3a3c869b61e87c17715510fc5c384c0b",
+    "training-audit.json": "08dec85f9f3e26a95b18407b19abab48af5ec7948e633ed0d6ea05a89b84a968"
   },
   "complete": false,
   "model_promoted": false,

@@ -1,0 +1,330 @@
+{
+  "verified_utc": "2026-11-26T02:28:59.212688+00:00",
+  "training_complete": true,
+  "stage_sha256": "7f61d0fc4645b8aeada24ebd551ba86b3a3c869b61e87c17715510fc5c384c0b",
+  "training_plan_sha256": "6f1b6e10d217bc7cc7f9ad7bf8b8a58979061c9400b83e56f22ed8ead3ec69ff",
+  "immutable_source_files": 79,
+  "source_audit_sha256": "2ce82d16215ed5befe42c7d2fcf8cfa607a494a247640b16d0da86a589af50b2",
+  "observed_training_processes_sha256": "63d5ef9cc24aa18cd3dfb96b3d551d22c486bb67414d188000a4b660087ce03d",
+  "source_manifest_precedes_training": true,
+  "registered_rounds_by_seed": 24,
+  "actual_round_updates": 72,
+  "online_traversals": 18432,
+  "gradient_updates": 55296,
+  "fitting_row_draws": 28311552,
+  "new_regret_rows": 616793,
+  "seeds": {
+    "342": {
+      "seed": 342,
+      "parent_checkpoint_sha256": {
+        "arrays.npz": "d12295be257e266ac22ccb78753fd3a0a53e0cb53fd4df51a3f46c7a2f4c4f8e",
+        "current.npz": "188d61309477b1acfbe340089ee0b0427a85551534928af504449b56fab416e9",
+        "average.npz": "18db9ba92a3a557bf3d1c62fbbf8f5b0ef0e342a2add92a47d5f3677082df1ee",
+        "state.json": "a96e5d77566d1d85f279229e837d4626deaa7210165e8966a1f0679ddba1ba18"
+      },
+      "checkpoint_sha256": {
+        "arrays.npz": "fa1d19eb1ed036dd89af2d3a8f509ee56ed93b43735bb6690579c0f42344582e",
+        "current.npz": "3fa02020b033e1cdb2c7bf6daa48d4c43ec81c9ea5fe0865a3dd418a12dfdf94",
+        "average.npz": "2925e462eb2ac40c8cb74e8dd8281d2b0173b698c3e0c8f66d7ea8816ac2e27d",
+        "state.json": "52fc8b114272d9431b78acded0018ef8aa72dd280d24f62f73d12e93f793686e"
+      },
+      "diagnostics_sha256": "69e71369f74fe869633a0e16bfb2289ced0c25fb14687ed34231af1f691f7ab3",
+      "first_update_bit_reproduced": true,
+      "first_update_sha256": "6e139014ae86ff7f39eae737cb14daad489c5f19d12347b4f7fdd71199aa497b",
+      "confirmed_rounds": [
+        505,
+        528
+      ],
+      "rounds": 24,
+      "traversals": 6144,
+      "fit_updates": 18432,
+      "fit_draws": 9437184,
+      "new_regret_rows": 199858,
+      "preflop_unchanged": true,
+      "new_snapshots": {
+        "510": "c05afeaebddb3709565aba8dc06b7c92870f8ccdbb40265580e2be2fb8658d22",
+        "516": "cb9feefd4bab50e9256a50cb7b79166df9c862aec107c4fb80bf06ee659dbb5a",
+        "522": "bab3ace8b60fe0329016b860fe9ad2adecfed154133c29f4c71e90c2a4faeae8",
+        "528": "3fa02020b033e1cdb2c7bf6daa48d4c43ec81c9ea5fe0865a3dd418a12dfdf94"
+      },
+      "history_seat_assignments": {
+        "0": 15323,
+        "300": 5096,
+        "360": 5247,
+        "420": 5054
+      },
+      "parent_regret_rows_retained_byte_identical_by_seat": [
+        95466,
+        95560,
+        95367,
+        95477,
+        95771,
+        95665
+      ],
+      "strategy_rows_still_byte_identical_at_same_index": 85377,
+      "source_counts": {
+        "regret_rows_by_seat": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "regret_seen_by_seat": [
+          718842,
+          733990,
+          694015,
+          721449,
+          723556,
+          715574
+        ],
+        "root_seen": 342732,
+        "strategy_rows": 100000,
+        "strategy_seen": 546676
+      },
+      "final_counts": {
+        "regret_rows_by_seat": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "regret_seen_by_seat": [
+          753109,
+          767004,
+          727602,
+          755731,
+          755940,
+          747898
+        ],
+        "root_seen": 358956,
+        "strategy_rows": 100000,
+        "strategy_seen": 639550
+      },
+      "auxiliary_average": {
+        "weighted_replay_tv": 0.17817909935933113,
+        "weighted_replay_kl": 0.19717682282586727,
+        "original_reference_tv": 0.15,
+        "meets_original_tv_reference": false,
+        "window": [
+          361,
+          528
+        ],
+        "distinct_inputs": 46973,
+        "retained_rows": 100000,
+        "auxiliary_training_steps": 8192
+      }
+    },
+    "343": {
+      "seed": 343,
+      "parent_checkpoint_sha256": {
+        "arrays.npz": "28078ea299e2569f42f24a0b259181fc2457122b540233a8aecba2a48f325fad",
+        "current.npz": "b42ac903c4ce486bfdf112f05ae53ee50164639a6661917fe76d4601a7b1335a",
+        "average.npz": "724ead5fd8e162865bfad7034cc2c404699c7b3f4f8ec13bf5e516a014c96951",
+        "state.json": "84f65766c6648b333c3bb03c66adb9f6fa7c0b6a5208bb28afbc5070ea67aca1"
+      },
+      "checkpoint_sha256": {
+        "arrays.npz": "f8c64cf36e9998123807868e72133b15fb897aa81475fab06cc27ae37b19638a",
+        "current.npz": "31fb4e8501c3538d40a0aedbbca834ec37e9844e161cd3d98483bed533c6203e",
+        "average.npz": "5ea17c847ba5ff7ac1ba7f60781327ae987c66c0740f2794bdf7b1e0b8a561a6",
+        "state.json": "34c55a6e23c06ac4a3fd9d3ecce0a24988f888e254dc6723174a645ec782ea03"
+      },
+      "diagnostics_sha256": "de63d9de91f016ea651ae77ef3791d5eaac23bda4e3a84dca7a8ee0c610d45ef",
+      "first_update_bit_reproduced": true,
+      "first_update_sha256": "15629681dc203c2bea36855a3947e6686210c0b2c0b7421582bc110a606237a1",
+      "confirmed_rounds": [
+        505,
+        528
+      ],
+      "rounds": 24,
+      "traversals": 6144,
+      "fit_updates": 18432,
+      "fit_draws": 9437184,
+      "new_regret_rows": 207811,
+      "preflop_unchanged": true,
+      "new_snapshots": {
+        "510": "444d49b4d252888978ed32c79e462738e58b131e98a84988be80112cadbdc90a",
+        "516": "733bb1465f2bd7a9ac616670f02fb615ff15f90195bbc6e038ccdd263d8933f6",
+        "522": "093db6c6070caa05e01ae3f91b0771eb2b7892d5e364e18e54c8585be83a1d2f",
+        "528": "31fb4e8501c3538d40a0aedbbca834ec37e9844e161cd3d98483bed533c6203e"
+      },
+      "history_seat_assignments": {
+        "0": 15494,
+        "300": 5031,
+        "360": 5096,
+        "420": 5099
+      },
+      "parent_regret_rows_retained_byte_identical_by_seat": [
+        95670,
+        95186,
+        95577,
+        95514,
+        95627,
+        95351
+      ],
+      "strategy_rows_still_byte_identical_at_same_index": 85564,
+      "source_counts": {
+        "regret_rows_by_seat": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "regret_seen_by_seat": [
+          738723,
+          727204,
+          741014,
+          741840,
+          741857,
+          737160
+        ],
+        "root_seen": 342732,
+        "strategy_rows": 100000,
+        "strategy_seen": 535186
+      },
+      "final_counts": {
+        "regret_rows_by_seat": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "regret_seen_by_seat": [
+          772157,
+          763407,
+          774434,
+          776941,
+          775720,
+          772950
+        ],
+        "root_seen": 358956,
+        "strategy_rows": 100000,
+        "strategy_seen": 626634
+      },
+      "auxiliary_average": {
+        "weighted_replay_tv": 0.16571888520958516,
+        "weighted_replay_kl": 0.18731220743791466,
+        "original_reference_tv": 0.15,
+        "meets_original_tv_reference": false,
+        "window": [
+          361,
+          528
+        ],
+        "distinct_inputs": 45513,
+        "retained_rows": 100000,
+        "auxiliary_training_steps": 8192
+      }
+    },
+    "344": {
+      "seed": 344,
+      "parent_checkpoint_sha256": {
+        "arrays.npz": "67e864ed909b8cf61625d8c91a1b83c536045cf825492df9788c9be137c1a5c0",
+        "current.npz": "0ad600b939572f6d8d0be5415accfb1b7701788c7f1f44e62f9d4e8fbf38bb7c",
+        "average.npz": "eac99ad56b13ec7b07d3d0985fefa1dcbd5fc5bfdee9d07345a0fad66f0c6324",
+        "state.json": "afd1c6a264a05d85045fa2cfe172ee067792d76a8d56b77303748f40598f8cb4"
+      },
+      "checkpoint_sha256": {
+        "arrays.npz": "d628495088e51fdabc1945cf815a23ad84fed7720b43faf45a1a8f4ec7f000d6",
+        "current.npz": "ea7dffa5e103dc6b2c99189f926a655cd0134f15dfd1690238cdb6187b2ffbca",
+        "average.npz": "7c870b1b6ab6f224989635e738f04f95dc1499ee08267a797824ef59aac9bb0f",
+        "state.json": "ad5de94045db1a980db774ff3d01a622121c3c640f915d2e34b4601367c7e3a3"
+      },
+      "diagnostics_sha256": "16eb7029b4e97e65091460f5c51088872ff4f42ce2b5e9b9a916b02c34cf030b",
+      "first_update_bit_reproduced": true,
+      "first_update_sha256": "b7c6ff6e4ea8b794b385756c44d731ea9a1d6d50546fbd6daf1c2907fe10836c",
+      "confirmed_rounds": [
+        505,
+        528
+      ],
+      "rounds": 24,
+      "traversals": 6144,
+      "fit_updates": 18432,
+      "fit_draws": 9437184,
+      "new_regret_rows": 209124,
+      "preflop_unchanged": true,
+      "new_snapshots": {
+        "510": "6250a0be02ee4059228cc5442b7221e866949fefcedd1fa9d62572752ca46ff0",
+        "516": "95a4c32db31b3984e2d9567e545b29936633701008bc1b34fe9fd75a5827bc4d",
+        "522": "a18fafb9e4724ff52bbafa2fa1a9563becb4933c566564a8f860105ac03d93f3",
+        "528": "ea7dffa5e103dc6b2c99189f926a655cd0134f15dfd1690238cdb6187b2ffbca"
+      },
+      "history_seat_assignments": {
+        "0": 15393,
+        "300": 5126,
+        "360": 4953,
+        "420": 5248
+      },
+      "parent_regret_rows_retained_byte_identical_by_seat": [
+        95231,
+        95271,
+        95189,
+        95147,
+        95222,
+        95364
+      ],
+      "strategy_rows_still_byte_identical_at_same_index": 85865,
+      "source_counts": {
+        "regret_rows_by_seat": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "regret_seen_by_seat": [
+          729446,
+          681699,
+          685643,
+          683830,
+          700379,
+          721415
+        ],
+        "root_seen": 342732,
+        "strategy_rows": 100000,
+        "strategy_seen": 531120
+      },
+      "final_counts": {
+        "regret_rows_by_seat": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "regret_seen_by_seat": [
+          765129,
+          715597,
+          719853,
+          718699,
+          735646,
+          756612
+        ],
+        "root_seen": 358956,
+        "strategy_rows": 100000,
+        "strategy_seen": 619145
+      },
+      "auxiliary_average": {
+        "weighted_replay_tv": 0.15574458891772383,
+        "weighted_replay_kl": 0.18127219073152906,
+        "original_reference_tv": 0.15,
+        "meets_original_tv_reference": false,
+        "window": [
+          361,
+          528
+        ],
+        "distinct_inputs": 45057,
+        "retained_rows": 100000,
+        "auxiliary_training_steps": 8192
+      }
+    }
+  }
+}

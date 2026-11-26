@@ -1,0 +1,259 @@
+{
+  "scope": "Descriptive in-sample postflop regret prediction, with no new hands or model fitting. This diagnostic does not estimate deployment strength or evaluate the four-snapshot mixture.",
+  "source_stage_sha256": "8a59fdc2480bde76d882f134e76501df7e2feb0b6eefad797c87a7754adc4cf9",
+  "stage_sha256": "7f61d0fc4645b8aeada24ebd551ba86b3a3c869b61e87c17715510fc5c384c0b",
+  "script_sha256": "9c9b2a40ed6bc203133928d3071f0cc1e2f76a448af0773e469ba823151ed5ff",
+  "prediction_helper_sha256": "ad059b1a7397fa2817440cef1b86b4611c0fa008f1e917d16fc41cfd703809ba",
+  "sampling": "Same row IDs for both exports, drawn with replacement from the final 528 fitting CDF.",
+  "generator": "NumPy default_rng([rng_seed, training_seed])",
+  "rng_seed": 20261126,
+  "draws_per_seed": 32768,
+  "units": "Each export uses its own BB scales. Both squared errors use common 528 stratum scales for normalization; masked illegal outputs count as zero in the five-output mean.",
+  "realized_training_draws_by_generation_logged": false,
+  "seeds": [
+    {
+      "seed": 342,
+      "replay_sha256": "fa1d19eb1ed036dd89af2d3a8f509ee56ed93b43735bb6690579c0f42344582e",
+      "model_sha256": {
+        "current504": "188d61309477b1acfbe340089ee0b0427a85551534928af504449b56fab416e9",
+        "current528": "3fa02020b033e1cdb2c7bf6daa48d4c43ec81c9ea5fe0865a3dd418a12dfdf94"
+      },
+      "sample_index_sha256": "9cfe096a9b77de493f3f933ace55c6e54af95352a3b10e811dba9f06df7eb75b",
+      "postflop_rows": 510418,
+      "rows_from_505_to_528": 22307,
+      "exact_draw_probability_505_to_528": 0.07112496423852233,
+      "comparisons": {
+        "all": {
+          "draws": 32768,
+          "current504": {
+            "mse_bb2": 763.3727650248129,
+            "mse_final_normalization": 0.6200855060546744
+          },
+          "current528": {
+            "mse_bb2": 661.6754417482538,
+            "mse_final_normalization": 0.5382663380769481
+          }
+        },
+        "up_to_504": {
+          "draws": 30398,
+          "current504": {
+            "mse_bb2": 739.1190606204692,
+            "mse_final_normalization": 0.5980211060286719
+          },
+          "current528": {
+            "mse_bb2": 651.9315787613316,
+            "mse_final_normalization": 0.5297830736359425
+          }
+        },
+        "505_to_528": {
+          "draws": 2370,
+          "current504": {
+            "mse_bb2": 1074.4546664945358,
+            "mse_final_normalization": 0.903087038540085
+          },
+          "current528": {
+            "mse_bb2": 786.6517907256618,
+            "mse_final_normalization": 0.6470740479831455
+          }
+        },
+        "flop": {
+          "draws": 10830,
+          "current504": {
+            "mse_bb2": 1041.4711445935066,
+            "mse_final_normalization": 0.7078111774270595
+          },
+          "current528": {
+            "mse_bb2": 882.9253952888196,
+            "mse_final_normalization": 0.6102890385042369
+          }
+        },
+        "turn": {
+          "draws": 10951,
+          "current504": {
+            "mse_bb2": 720.4118000262052,
+            "mse_final_normalization": 0.6020617024842231
+          },
+          "current528": {
+            "mse_bb2": 628.4934618887829,
+            "mse_final_normalization": 0.5193768769453119
+          }
+        },
+        "river": {
+          "draws": 10987,
+          "current504": {
+            "mse_bb2": 532.0685033492692,
+            "mse_final_normalization": 0.5515781475343396
+          },
+          "current528": {
+            "mse_bb2": 476.6603206593974,
+            "mse_final_normalization": 0.486100382240506
+          }
+        }
+      }
+    },
+    {
+      "seed": 343,
+      "replay_sha256": "f8c64cf36e9998123807868e72133b15fb897aa81475fab06cc27ae37b19638a",
+      "model_sha256": {
+        "current504": "b42ac903c4ce486bfdf112f05ae53ee50164639a6661917fe76d4601a7b1335a",
+        "current528": "31fb4e8501c3538d40a0aedbbca834ec37e9844e161cd3d98483bed533c6203e"
+      },
+      "sample_index_sha256": "d6b2d3f7d07300c3d27d14aba665382e68960364e04532af8fa6deed052802b2",
+      "postflop_rows": 515950,
+      "rows_from_505_to_528": 23316,
+      "exact_draw_probability_505_to_528": 0.08202716355158066,
+      "comparisons": {
+        "all": {
+          "draws": 32768,
+          "current504": {
+            "mse_bb2": 762.9963203504175,
+            "mse_final_normalization": 0.6280571379605256
+          },
+          "current528": {
+            "mse_bb2": 644.963135586205,
+            "mse_final_normalization": 0.5348343219551339
+          }
+        },
+        "up_to_504": {
+          "draws": 30090,
+          "current504": {
+            "mse_bb2": 717.7386829481006,
+            "mse_final_normalization": 0.6022348303693842
+          },
+          "current528": {
+            "mse_bb2": 637.0976973463561,
+            "mse_final_normalization": 0.5314716786468423
+          }
+        },
+        "505_to_528": {
+          "draws": 2678,
+          "current504": {
+            "mse_bb2": 1271.5109990045312,
+            "mse_final_normalization": 0.9181965089155082
+          },
+          "current528": {
+            "mse_bb2": 733.3391761526923,
+            "mse_final_normalization": 0.5726169721218595
+          }
+        },
+        "flop": {
+          "draws": 10881,
+          "current504": {
+            "mse_bb2": 1006.3056001535786,
+            "mse_final_normalization": 0.7256299138398394
+          },
+          "current528": {
+            "mse_bb2": 828.6739310288632,
+            "mse_final_normalization": 0.6085862356118805
+          }
+        },
+        "turn": {
+          "draws": 10857,
+          "current504": {
+            "mse_bb2": 743.4413005229159,
+            "mse_final_normalization": 0.6329916923903702
+          },
+          "current528": {
+            "mse_bb2": 635.8786068795181,
+            "mse_final_normalization": 0.5310884405630657
+          }
+        },
+        "river": {
+          "draws": 11030,
+          "current504": {
+            "mse_bb2": 542.2221205978326,
+            "mse_final_normalization": 0.526945276511057
+          },
+          "current528": {
+            "mse_bb2": 472.67606060496615,
+            "mse_final_normalization": 0.465765823475952
+          }
+        }
+      }
+    },
+    {
+      "seed": 344,
+      "replay_sha256": "d628495088e51fdabc1945cf815a23ad84fed7720b43faf45a1a8f4ec7f000d6",
+      "model_sha256": {
+        "current504": "0ad600b939572f6d8d0be5415accfb1b7701788c7f1f44e62f9d4e8fbf38bb7c",
+        "current528": "ea7dffa5e103dc6b2c99189f926a655cd0134f15dfd1690238cdb6187b2ffbca"
+      },
+      "sample_index_sha256": "bc987bf12bc12f78128fac280e1ede5be511cb0dfdd2288c19d55906c666d417",
+      "postflop_rows": 516439,
+      "rows_from_505_to_528": 23812,
+      "exact_draw_probability_505_to_528": 0.07679277642583988,
+      "comparisons": {
+        "all": {
+          "draws": 32768,
+          "current504": {
+            "mse_bb2": 722.9345161097758,
+            "mse_final_normalization": 0.6382639310782385
+          },
+          "current528": {
+            "mse_bb2": 634.9179592849846,
+            "mse_final_normalization": 0.555399847873601
+          }
+        },
+        "up_to_504": {
+          "draws": 30186,
+          "current504": {
+            "mse_bb2": 688.6286113770637,
+            "mse_final_normalization": 0.6147122480887374
+          },
+          "current528": {
+            "mse_bb2": 624.7939136247554,
+            "mse_final_normalization": 0.5493390125498321
+          }
+        },
+        "505_to_528": {
+          "draws": 2582,
+          "current504": {
+            "mse_bb2": 1124.0026959167642,
+            "mse_final_normalization": 0.9136051792273799
+          },
+          "current528": {
+            "mse_bb2": 753.2775418952385,
+            "mse_final_normalization": 0.6262566933744868
+          }
+        },
+        "flop": {
+          "draws": 10947,
+          "current504": {
+            "mse_bb2": 949.1210085485793,
+            "mse_final_normalization": 0.7067399759543991
+          },
+          "current528": {
+            "mse_bb2": 819.731104625996,
+            "mse_final_normalization": 0.6087329433760131
+          }
+        },
+        "turn": {
+          "draws": 11067,
+          "current504": {
+            "mse_bb2": 706.6233020052166,
+            "mse_final_normalization": 0.6361823626273992
+          },
+          "current528": {
+            "mse_bb2": 620.667633655057,
+            "mse_final_normalization": 0.549314279910861
+          }
+        },
+        "river": {
+          "draws": 10754,
+          "current504": {
+            "mse_bb2": 509.47465687298705,
+            "mse_final_normalization": 0.5707011130371481
+          },
+          "current528": {
+            "mse_bb2": 461.45309520634936,
+            "mse_final_normalization": 0.5073722845649472
+          }
+        }
+      }
+    }
+  ],
+  "pooled_mse_final_normalization": {
+    "current504": 0.6288021916978128,
+    "current528": 0.5428335026352277
+  }
+}
