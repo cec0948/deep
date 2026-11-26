@@ -9,11 +9,11 @@ from fullhouse_runtime import Bridge, validate_request
 from poker_flop_repair import FlopRepairPolicy
 
 
-def main():
+def main(policy_factory=FlopRepairPolicy, backend='flop-repair'):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('policy', type=Path)
     args = parser.parse_args()
-    policy = FlopRepairPolicy(args.policy)
+    policy = policy_factory(args.policy)
     with closing(Bridge()) as engine:
         for line in sys.stdin:
             try:
@@ -23,7 +23,7 @@ def main():
                 validate_request(request)
                 state = engine.call(dict(request, op='replay'))
                 reply = policy.decide(state, request.get('seed', 0))
-                reply.update(backend='flop-repair', policy_manifest_sha256=policy.digest)
+                reply.update(backend=backend, policy_manifest_sha256=policy.digest)
             except (ValueError, TypeError, KeyError, FloatingPointError) as err:
                 reply = dict(ok=False, error=str(err))
             print(json.dumps(reply, allow_nan=False), flush=True)

@@ -9,17 +9,18 @@ ROOT=Path(__file__).resolve().parents[1]
 import argparse
 import sys
 parser=argparse.ArgumentParser()
-parser.add_argument('--backend',choices=['noregrets','fullhouse','flop-repair'],default='noregrets')
-parser.add_argument('--policy',type=Path,help='Private flop-repair policy manifest')
+parser.add_argument('--backend',choices=['noregrets','fullhouse','flop-repair','street-progress'],default='noregrets')
+parser.add_argument('--policy',type=Path,help='Private policy manifest for the selected trained policy')
 args=parser.parse_args()
-if (args.backend=='flop-repair') != (args.policy is not None):
-    parser.error('--policy is required with --backend flop-repair and only supported by that backend')
-if args.backend in ('fullhouse','flop-repair'):
+policy_servers = {'flop-repair':'serve_poker_flop_repair.py','street-progress':'poker_street_progress.py'}
+if (args.backend in policy_servers) != (args.policy is not None):
+    parser.error('--policy is required for flop-repair and street-progress and only supported by those backends')
+if args.backend == 'fullhouse' or args.backend in policy_servers:
     os.environ.setdefault('OPENBLAS_NUM_THREADS','1')
     os.environ.setdefault('OMP_NUM_THREADS','1')
     python=ROOT.parent/'.venvs/fullhouse/bin/python'
-    if args.backend=='flop-repair':
-        os.execv(str(python),[str(python),str(ROOT/'scripts/serve_poker_flop_repair.py'),str(args.policy)])
+    if args.backend in policy_servers:
+        os.execv(str(python),[str(python),str(ROOT/'scripts'/policy_servers[args.backend]),str(args.policy)])
     os.execv(str(python),[str(python),str(ROOT/'scripts/fullhouse_runtime.py')])
 registry=ROOT/'artifacts/selfplay/current.json'
 if not registry.exists():raise SystemExit('No current model registry; see docs/selfplay-training.md')
