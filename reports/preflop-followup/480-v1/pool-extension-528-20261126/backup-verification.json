@@ -1,0 +1,58 @@
+{
+  "verified_utc": "2026-11-26T02:32:07.343826+00:00",
+  "kind": "training-checkpoint",
+  "checkpoint_mode": "scheduled-postflop-window-recovery-v1",
+  "stage_iteration": 528,
+  "bytes": 134093451,
+  "sha256": "afd30ec9ff5267e46d6afc13bf48ffc399b770d760026c0c5e3d4651cf407887",
+  "restored_all_three_seeds": true,
+  "restored_both_street_networks": true,
+  "backup_files": 3,
+  "format": "split-checkpoint-v1",
+  "restoration_verified": true,
+  "external_backup": true,
+  "verified_remote_size": true,
+  "verified_owner_only": true,
+  "local_recombination_verified": true,
+  "remote_checksum_available": false,
+  "remote_sha256_verified": false,
+  "archive_includes_final_evaluation_summary": false,
+  "private_index_readback_verified": true,
+  "active_managed_bytes": 2129843599,
+  "within_2gib_target": true,
+  "retained_bytes": 2067525013,
+  "policy_candidate_remote_files": 2,
+  "remote_deletions_performed": 0,
+  "scheduled_snapshot_iterations": [
+    510,
+    516,
+    522,
+    528
+  ],
+  "mixture_restore_decisions": {
+    "342": {
+      "preflop": 24,
+      "flop": 24,
+      "turn": 24,
+      "river": 24
+    },
+    "343": {
+      "preflop": 24,
+      "flop": 24,
+      "turn": 24,
+      "river": 24
+    },
+    "344": {
+      "preflop": 24,
+      "flop": 24,
+      "turn": 24,
+      "river": 24
+    }
+  },
+  "auxiliary_average_window": [
+    361,
+    528
+  ],
+  "restored_training_opponents": 9,
+  "restored_scheduled_snapshots": 12
+}

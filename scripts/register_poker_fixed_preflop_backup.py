@@ -305,7 +305,8 @@ def register(action, owner, target=FIXED_WINDOW, verify_ready=load_ready, retent
         if read(INDEX) != revised:
             raise ValueError('The private index does not match the expected readback')
         active_size = sum(r['bytes']+r.get('manifest_bytes',0) for r in revised['backups'] if not r.get('deleted_remote'))
-        proof = dict(verified_utc=utc(), kind=record['kind'], checkpoint_mode=target.mode, stage_iteration=504,
+        proof = dict(verified_utc=utc(), kind=record['kind'], checkpoint_mode=target.mode,
+                     stage_iteration=max(record['iterations'].values()),
                      bytes=record['bytes'], sha256=record['sha256'], restored_all_three_seeds=True,
                      restored_both_street_networks=True, backup_files=len(files), format=layout['format'],
                      restoration_verified=True, external_backup=True, verified_remote_size=True, verified_owner_only=True,

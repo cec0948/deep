@@ -39,9 +39,10 @@ ARM = 'slow504'
 SLOTS = [486, 492, 498, 504]
 
 
-def collect_files(stage, plan, *, output=OUTPUT, arm=ARM, mixture_label='mixture504',
+def collect_files(stage, plan, *, output=OUTPUT, arm=ARM, mixture_label='mixture504', slots=SLOTS,
                   stage_files=('stage-ready.json', 'plan.json', 'registration.json')):
-    if (not stage['training_complete'] or stage['iteration'] != 504 or set(stage['arms']) != {arm}
+    final_iteration = slots[-1]
+    if (not stage['training_complete'] or stage['iteration'] != final_iteration or set(stage['arms']) != {arm}
             or set(stage['arms'][arm]) != set(map(str, SEEDS))):
         raise ValueError('Expected all three completed scheduled training workers')
     files = {name: output/name for name in stage_files}
@@ -59,8 +60,8 @@ def collect_files(stage, plan, *, output=OUTPUT, arm=ARM, mixture_label='mixture
         entry = stage['arms'][arm][str(seed)]
         worker = output/arm/f'seed-{seed}'
         pointer = read(worker/'current.json')
-        final = worker/'checkpoints'/'iter-00504'
-        if (Path(entry['checkpoint']) != final or pointer != dict(iteration=504, directory=final.name, files=entry['files'])
+        final = worker/'checkpoints'/f'iter-{final_iteration:05d}'
+        if (Path(entry['checkpoint']) != final or pointer != dict(iteration=final_iteration, directory=final.name, files=entry['files'])
                 or set(pointer['files']) != {'arrays.npz', 'current.npz', 'state.json', 'average.npz'}):
             raise ValueError('Final checkpoint pointer does not match the verified stage')
         verify_files({final/name: sha for name,sha in entry['files'].items()})
@@ -73,7 +74,7 @@ def collect_files(stage, plan, *, output=OUTPUT, arm=ARM, mixture_label='mixture
         mixture = read(capture/'mixture.json')
         if (Path(reference['path']) != capture/'mixture.json' or digest(capture/'mixture.json') != reference['sha256']
                 or mixture != capture_manifest(capture) or mixture['arm'] != arm or mixture['seed'] != seed
-                or [r['iteration'] for r in mixture['postflop']] != SLOTS
+                or [r['iteration'] for r in mixture['postflop']] != slots
                 or mixture['postflop'][-1]['sha256'] != pointer['files']['current.npz']
                 or mixture['preflop']['sha256'] != entry['preflop_export']['sha256']):
             raise ValueError('The four captured policies differ from the frozen schedule or the trained worker')
@@ -81,7 +82,7 @@ def collect_files(stage, plan, *, output=OUTPUT, arm=ARM, mixture_label='mixture
                                              'preflop.npz','policy.json')]
         members += [final/name for name in pointer['files']]
         members += [capture/name for name in ('mixture.json','plan.json','preflop.npz')]
-        for slot in SLOTS:
+        for slot in slots:
             members.extend(capture/f'iter-{slot:05d}'/name for name in ('current.npz','receipt.json'))
         for path in members:
             files[str(path.relative_to(output))] = path
@@ -113,14 +114,15 @@ def check_mixture(engine, restored, live):
                 raise ValueError('Relocated snapshot mixture has different action probabilities')
             counts[state['street']] += 1
             state = engine.call(dict(op='step',action=dict(kind='check' if state['can_check'] else 'call',seat=actor)))
-        if len(seen) == len(SLOTS):
+        if len(seen) == len(restored.postflop):
             break
-    if len(seen) != len(SLOTS) or min(counts.values()) < 4:
+    if len(seen) != len(restored.postflop) or min(counts.values()) < 4:
         raise ValueError('Mixture restore verification missed a checkpoint or street')
     return counts
 
 
-def restore_exercise(tree, stage, *, output=OUTPUT, arm=ARM, mixture_label='mixture504'):
+def restore_exercise(tree, stage, *, output=OUTPUT, arm=ARM, mixture_label='mixture504',
+                     slots=SLOTS, current_label=None):
     syntax = ast.parse((tree/'tools/compact_regret.py').read_text())
     mapping = next(ast.literal_eval(n.value) for n in syntax.body if isinstance(n, ast.Assign)
                    and any(isinstance(t, ast.Name) and t.id == 'ARRAY_MAP' for t in n.targets))
@@ -131,7 +133,7 @@ def restore_exercise(tree, stage, *, output=OUTPUT, arm=ARM, mixture_label='mixt
             moved = tree/arm/f'seed-{seed}'
             state, checkpoint = load_checkpoint(moved)
             original, _ = load_checkpoint(output/arm/f'seed-{seed}')
-            counts = validate_state(state, seed, 504)
+            counts = validate_state(state, seed, slots[-1])
             strategy = StrategyReplay.from_state(state['strategy_replay'])
             if (not equal_state(state, original) or counts != [100000]*6 or strategy.size != 100000
                     or strategy.capacity != 100000 or state['config']['training_arm'] != arm):
@@ -148,14 +150,15 @@ def restore_exercise(tree, stage, *, output=OUTPUT, arm=ARM, mixture_label='mixt
             p = write_policy(moved/'restored-policy.json', pre, checkpoint/'current.npz')
             policies = stage['policies']
             parent_ref = policies['specialist480'][key]
-            refs = [parent_ref, policies[arm][key], policies[mixture_label][key]]
+            current_ref = policies[current_label or arm][key]
+            refs = [parent_ref, current_ref, policies[mixture_label][key]]
             verify_files({r['path']:r['sha256'] for r in refs})
             current_counts = check_decisions(engine, StreetPolicy(p,tree/'source'),
-                                       StreetPolicy(policies[arm][key]['path'],SOURCE), StreetPolicy(parent_ref['path'],SOURCE))
+                                       StreetPolicy(current_ref['path'],SOURCE), StreetPolicy(parent_ref['path'],SOURCE))
             mixture_counts = check_mixture(engine,
                     ScheduledPostflopMixture(tree/'snapshots'/f'seed-{seed}'/'mixture.json',tree/'source'),
                     ScheduledPostflopMixture(policies[mixture_label][key]['path'],SOURCE))
-            proofs[key] = dict(regret_rows=counts,strategy_rows=strategy.size,slots=SLOTS,
+            proofs[key] = dict(regret_rows=counts,strategy_rows=strategy.size,slots=slots,
                                final_policy_decisions=current_counts,mixture_decisions=mixture_counts)
     return proofs
 
@@ -223,6 +226,9 @@ def pack():
 
 
 def validate_profile(row):
+    if row.get('arms') == ['pool528']:
+        from snapshot_poker_pool_extension import validate_profile as validate_extension
+        return validate_extension(row)
     if row.get('arms') == ['pool504']:
         from snapshot_poker_opponent_diversity import validate_profile as validate_pool
         return validate_pool(row)

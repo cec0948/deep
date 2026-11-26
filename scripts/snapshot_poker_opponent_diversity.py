@@ -4,6 +4,7 @@ from contextlib import closing
 import json
 import os
 import sys
+import tarfile
 from pathlib import Path
 
 import numpy as np
@@ -71,7 +72,7 @@ def archive_inputs():
     return stage, files, pool
 
 
-def restore_opponents(tree, pool, live):
+def restore_opponents(tree, pool, live, *, arm=ARM):
     """Load the relative-path pool using the training router and check its postflop distributions."""
     old_path = sys.path.copy()
     sys.path[:0] = [str(tree/'source'), str(tree/'tools')]
@@ -80,7 +81,7 @@ def restore_opponents(tree, pool, live):
         with closing(Bridge()) as engine:
             decisions = {}
             for seed, records in pool.items():
-                state, _ = load_checkpoint(tree/ARM/f'seed-{seed}')
+                state, _ = load_checkpoint(tree/arm/f'seed-{seed}')
                 general = CompactRegretNet().eval()
                 general.load_state_dict(state['net'])
                 del state
@@ -111,13 +112,22 @@ def restore_opponents(tree, pool, live):
 def pack():
     source_archives(read(INDEX))
     stage, files, pool = archive_inputs()
+    members = {name:file_meta(path) for name,path in sorted(files.items())}
+    if ARCHIVE.is_file() and (OUTPUT/'backup-ready.json').is_file():
+        # The source of the packer can evolve after a verified archive is sealed.
+        # Re-check model, recovery and opponent files against their live originals.
+        ready()
+        with tarfile.open(ARCHIVE, 'r:gz') as saved:
+            archived_members = json.load(saved.extractfile('recovery-manifest.json'))['files']
+        for name in ('scripts/snapshot_poker_opponent_diversity.py', 'scripts/snapshot_poker_scheduled_window.py'):
+            members[name] = archived_members[name]
     manifest = dict(kind='training-checkpoint', checkpoint_mode=MODE, arm=ARM, iteration=504,
                     seeds=SEEDS, slots=SLOTS, restore_dependencies=DEPENDENCIES,
                     training_opponents=pool, archive_includes_final_evaluation_summary=False,
                     restore_state='load_checkpoint(<archive>/pool504/seed-<seed>)',
                     restore_mixture='ScheduledPostflopMixture(<archive>/snapshots/seed-<seed>/mixture.json, <archive>/source)',
                     restore_opponents='Build load_historical() refs from training_opponents using the extracted file paths and SHA-256.',
-                    files={name:file_meta(path) for name,path in sorted(files.items())})
+                    files=members)
 
     def restore(tree):
         seeds = restore_exercise(tree,stage,output=OUTPUT,arm=ARM,mixture_label=MIXTURE)
