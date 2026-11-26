@@ -1,0 +1,81 @@
+{
+  "verified_utc": "2026-11-26T08:12:55.519948+00:00",
+  "kind": "derived-policy-probe",
+  "checkpoint_mode": "first-flop-and-turn-policy-bundle-v1",
+  "bytes": 129928,
+  "sha256": "e7da0cb7aff08aa5a1df2bbc561b0ed3a35cca245cf955d2d192e297c4ffb532",
+  "restored_all_three_seeds": true,
+  "restored_both_street_networks": true,
+  "backup_files": 1,
+  "format": "single-archive-v1",
+  "restoration_verified": true,
+  "external_backup": true,
+  "verified_remote_size": true,
+  "verified_owner_only": true,
+  "local_recombination_verified": false,
+  "remote_checksum_available": false,
+  "remote_sha256_verified": false,
+  "archive_includes_final_evaluation_summary": false,
+  "private_index_readback_verified": true,
+  "active_managed_bytes": 2130043345,
+  "within_2gib_target": true,
+  "retained_bytes": 2061142545,
+  "policy_candidate_remote_files": 3,
+  "remote_deletions_performed": 0,
+  "parent_iteration": 480,
+  "choices": {
+    "flop": "parent",
+    "turn": "parent"
+  },
+  "decision_restoration": {
+    "342": {
+      "flop": {
+        "checked_source_positions": 8,
+        "active_candidate_corrections": 5,
+        "selected_route_decisions_checked": 8
+      },
+      "turn": {
+        "checked_source_positions": 9,
+        "active_candidate_corrections": 4,
+        "selected_route_decisions_checked": 9
+      },
+      "frozen_streets": {
+        "preflop": 12,
+        "river": 2
+      }
+    },
+    "343": {
+      "flop": {
+        "checked_source_positions": 22,
+        "active_candidate_corrections": 4,
+        "selected_route_decisions_checked": 22
+      },
+      "turn": {
+        "checked_source_positions": 36,
+        "active_candidate_corrections": 4,
+        "selected_route_decisions_checked": 36
+      },
+      "frozen_streets": {
+        "preflop": 12,
+        "river": 2
+      }
+    },
+    "344": {
+      "flop": {
+        "checked_source_positions": 12,
+        "active_candidate_corrections": 4,
+        "selected_route_decisions_checked": 12
+      },
+      "turn": {
+        "checked_source_positions": 13,
+        "active_candidate_corrections": 4,
+        "selected_route_decisions_checked": 13
+      },
+      "frozen_streets": {
+        "preflop": 12,
+        "river": 2
+      }
+    }
+  },
+  "archive_includes_stage_selections": true
+}

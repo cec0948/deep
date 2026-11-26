@@ -1,0 +1,98 @@
+{
+  "complete": true,
+  "selected_stage": "v1",
+  "design_sha256": "5ce6f2b5ffc7f8a3ea82019845c5923ea3af874ba0de409d8e59a331bdbc5700",
+  "flop": {
+    "selected": "parent",
+    "selected_stage": "v1",
+    "dev_gain": {
+      "mean": 0.0017768817475403095,
+      "standard_error": 0.037126113163869996,
+      "lower": -0.07099030005364487,
+      "upper": 0.0745440635487255,
+      "by_seed": {
+        "342": {
+          "mean": -0.01354944199569086,
+          "deals": 1024,
+          "standard_error": 0.07897938836274541
+        },
+        "343": {
+          "mean": 0.003430836424826984,
+          "deals": 1024,
+          "standard_error": 0.026486119013771375
+        },
+        "344": {
+          "mean": 0.015449250813484805,
+          "deals": 1024,
+          "standard_error": 0.07393156444539303
+        }
+      }
+    },
+    "confirm_gain": {
+      "mean": 0.014127174073639536,
+      "standard_error": 0.03158210432224099,
+      "lower": -0.0477737503979528,
+      "upper": 0.07602809854523188,
+      "by_seed": {
+        "342": {
+          "mean": 0.059935299867630666,
+          "deals": 1536,
+          "standard_error": 0.06447842316173034
+        },
+        "343": {
+          "mean": 0.0063620516463235915,
+          "deals": 1536,
+          "standard_error": 0.02588025519811051
+        },
+        "344": {
+          "mean": -0.023915829293035647,
+          "deals": 1536,
+          "standard_error": 0.06441746004186852
+        }
+      }
+    },
+    "dev_root_deals": 3072,
+    "confirm_root_deals": 4608,
+    "selection_sha256": "7faa8a8b2f8936c6a5cf1684936a0f6cd9e7f4f556227f61fddb792a2bed48e7"
+  },
+  "turn": {
+    "selected": "parent",
+    "selected_stage": "v1",
+    "dev_gain": {
+      "mean": -0.005477625091577897,
+      "standard_error": 0.04016372463195705,
+      "lower": -0.0841985253702137,
+      "upper": 0.07324327518705791,
+      "by_seed": {
+        "342": {
+          "mean": 0.08584557601775425,
+          "deals": 1024,
+          "standard_error": 0.068904018149939
+        },
+        "343": {
+          "mean": -0.028715337604807014,
+          "deals": 1024,
+          "standard_error": 0.04832414846286259
+        },
+        "344": {
+          "mean": -0.07356311368768093,
+          "deals": 1024,
+          "standard_error": 0.08622723435746475
+        }
+      }
+    },
+    "confirm_gain": null,
+    "dev_root_deals": 3072,
+    "confirm_root_deals": 0,
+    "selection_sha256": "ae03e3174540b1deb96fddf41a1616cdccf81e811303d0f643db23703e766411"
+  },
+  "policy_sha256": {
+    "342": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe",
+    "343": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931",
+    "344": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd"
+  },
+  "entrypoint": "python scripts/run_poker.py --backend street-progress --policy artifacts/preflop-followup/480-v1/street-progress-20261126/play/seed-{seed}/policy.json",
+  "whole_game_strength_verified": false,
+  "performance_matches": 0,
+  "completed_utc": "2026-11-26T08:10:20.438316+00:00"
+}

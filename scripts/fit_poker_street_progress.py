@@ -204,6 +204,34 @@ def fit_seed(street, seed, design, choice):
     return file_ref(manifest), info
 
 
+def publish_frozen(street):
+    receipt = read(STUDY/street/'candidate.json')
+    if (receipt['training_complete'] is not True or receipt['street'] != street
+            or receipt['design_sha256'] != DESIGN):
+        raise ValueError('Candidate is not a completed fit for this design and street')
+    policies = receipt['policies']
+    if set(policies) != {'342', '343', '344'} or set(receipt['seeds']) != set(policies):
+        raise ValueError('Incomplete frozen seed set')
+    for seed, ref in policies.items():
+        manifest = Path(ref['path'])
+        stats = receipt['seeds'][seed]
+        if stats['policy_sha256'] != ref['sha256']:
+            raise ValueError('Frozen policy hashes disagree')
+        verify_files({manifest: ref['sha256']})
+        critic = read(manifest)['critic' if street == 'flop' else 'turn_critic']
+        if critic['sha256'] != stats['critic_sha256']:
+            raise ValueError('Frozen critic hashes disagree')
+        verify_files({manifest.parent/critic['path']: critic['sha256']})
+    public = {key: value for key, value in receipt.items() if key != 'policies'}
+    dest = REPORT/street/'candidate.json'
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if dest.exists():
+        if read(dest) != public:
+            raise ValueError('A different public candidate receipt already exists')
+    else:
+        atomic_json(dest, public)
+
+
 def fit(street):
     torch.set_num_threads(1)
     torch.use_deterministic_algorithms(True)
@@ -234,12 +262,17 @@ def fit(street):
                   code_sha256={p.name:digest(p) for p in configs}, fit_from_training_only=True,
                   selected_for_play=False, whole_hand_matches=0)
     atomic_json(STUDY/street/'candidate.json', dict(common, policies=policies))
-    atomic_json(REPORT/street/'candidate.json', common)
+    publish_frozen(street)
     print(street,common['frozen_utc'],common['fresh_train_positions'],common['optimizer_updates'])
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('street', choices=['flop','turn'])
+    parser.add_argument('--publish-only', action='store_true',
+                        help='Verify the frozen fit and publish its public receipt without fitting weights')
     args = parser.parse_args()
-    fit(args.street)
+    if args.publish_only:
+        publish_frozen(args.street)
+    else:
+        fit(args.street)

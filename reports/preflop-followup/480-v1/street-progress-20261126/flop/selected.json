@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "selected_utc": "2026-11-26T08:02:26.815283+00:00",
+  "street": "flop",
+  "design_sha256": "5ce6f2b5ffc7f8a3ea82019845c5923ea3af874ba0de409d8e59a331bdbc5700",
+  "selected": "parent",
+  "selected_stage": "v1",
+  "candidate_receipt_sha256": "c20622ae167f53b99781b0300dae21560616bb51fc180a4c7672fc228fc04177",
+  "dev_sha256": "06a748c82ebcf3135b0022b33852afdcb145aad28e513def9b716e4b8bae5dd5",
+  "confirm_sha256": "ee7130033d0f4bae70c6192e0c20aa6eb5925c0bef0684006c46b353908506c0",
+  "selection_scope": "Conditional on the registered reached self-play root distribution.",
+  "whole_game_strength_verified": false,
+  "global_model_promoted": false,
+  "policy_sha256": {
+    "342": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe",
+    "343": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931",
+    "344": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd"
+  }
+}

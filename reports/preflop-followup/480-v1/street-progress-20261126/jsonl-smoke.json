@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-26T08:10:23.005971+00:00",
+  "selected_stage": "v1",
+  "play_ready_sha256": "858d74197187b21c49e5042084ebdd59af403dc0142cd9cd75993d7c2844044f",
+  "smoke_script_sha256": "93f7d53be9125eb896baa8ed463e4e6e42bff2a7424d9bb208c9553295e48d24",
+  "seeds": {
+    "342": {
+      "valid_streets": [
+        "preflop",
+        "flop",
+        "turn",
+        "river"
+      ],
+      "malformed_request_rejected": true,
+      "policy_sha256": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe"
+    },
+    "343": {
+      "valid_streets": [
+        "preflop",
+        "flop",
+        "turn",
+        "river"
+      ],
+      "malformed_request_rejected": true,
+      "policy_sha256": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931"
+    },
+    "344": {
+      "valid_streets": [
+        "preflop",
+        "flop",
+        "turn",
+        "river"
+      ],
+      "malformed_request_rejected": true,
+      "policy_sha256": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd"
+    }
+  },
+  "valid_decisions": 12,
+  "malformed_requests": 3,
+  "match_games": 0
+}

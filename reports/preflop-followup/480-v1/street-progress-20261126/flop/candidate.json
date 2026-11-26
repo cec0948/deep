@@ -1,0 +1,122 @@
+{
+  "training_complete": true,
+  "frozen_utc": "2026-11-26T07:59:25.586181+00:00",
+  "street": "flop",
+  "seeds": {
+    "342": {
+      "positions": 4096,
+      "fresh_train_positions": 3072,
+      "train_ledger_sha256": "f8e77d67b7258e54a91624485f7e5a2f9e09721d64b2395fef35ec4b9e4e2b50",
+      "action_labels": 17105,
+      "matched_training_rollouts": 51436,
+      "fit_heads": [
+        {
+          "head": 0,
+          "initial_weights_sha256": "a912aa903520ff25bdf6e7685c8a96bee820170251c328c1200a80362d2a52f2",
+          "final_weights_sha256": "ad8f06320e35d70216f1a54a35f8f71f391f449d7e795c8d527ab60872c846d5",
+          "steps": 768,
+          "position_draws": 98304,
+          "bootstrapped_distinct_positions": 2607,
+          "mean_normalized_training_squared_error": 7.8777289390563965
+        },
+        {
+          "head": 1,
+          "initial_weights_sha256": "252bed06ab6ca8be4612d5df2b134d6a79c1d8707c004a4d18a92de4c8ceca4d",
+          "final_weights_sha256": "9bfd0d665caee558999c4b5bc54408be4fe62748310eaeac423c8e8c960e6814",
+          "steps": 768,
+          "position_draws": 98304,
+          "bootstrapped_distinct_positions": 2635,
+          "mean_normalized_training_squared_error": 7.888314247131348
+        }
+      ],
+      "initial_flop_sha256": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe",
+      "normalization_sha256": "0221edde3b12a8eef44f3fb83379cb774a4b0cff2e1d4c7739b4d54a13e3bd62",
+      "warm_source_v1_weights_sha256": "52e3d4b736c449a8cecd626cbead13844a90b63a282653a38cd7bc4eaf3ab77e",
+      "policy_sha256": "739549458ccaf5cbfc4c81844fa7de910f658b06ed3fa3374352bbb935962ce7",
+      "critic_sha256": "ba31c1de7c5b574c7324c82e8bbe7b05be64bc5fdeee21f1e8bad56cca9bac62",
+      "changed_training_distributions": 2207
+    },
+    "343": {
+      "positions": 4096,
+      "fresh_train_positions": 3072,
+      "train_ledger_sha256": "2006ca564520923de8f9907086c13178291ed7fc8a3c0af000d9334bb5eb20db",
+      "action_labels": 17353,
+      "matched_training_rollouts": 52068,
+      "fit_heads": [
+        {
+          "head": 0,
+          "initial_weights_sha256": "b86f67a1977383b045201da4122ccae843b123b40d8e97383f1de03eb0b4931f",
+          "final_weights_sha256": "92e0273b634bed8906ea0ff4c09637f50669480566f4485a7255a1463e9a73fa",
+          "steps": 768,
+          "position_draws": 98304,
+          "bootstrapped_distinct_positions": 2569,
+          "mean_normalized_training_squared_error": 5.750290870666504
+        },
+        {
+          "head": 1,
+          "initial_weights_sha256": "4f79643b34078b4dc05d20066c3b1bb54803f159fa4a82d3256bc8f0641fa4e9",
+          "final_weights_sha256": "ee31e2f9d1fecccb1d664ad4e6f27493eb8b29c616045ac7320da541a496d2fa",
+          "steps": 768,
+          "position_draws": 98304,
+          "bootstrapped_distinct_positions": 2612,
+          "mean_normalized_training_squared_error": 5.756044864654541
+        }
+      ],
+      "initial_flop_sha256": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931",
+      "normalization_sha256": "ffdceb806a3d9d9c4a5fe6f61ac71d864dd2ff3031a0163486646cb5b98ad290",
+      "warm_source_v1_weights_sha256": "e6b42beb28c847204e27cf9fb613892978c41f9b7ef334e5664d7a65dc65124e",
+      "policy_sha256": "165fde74c80d7b1bc5066da1ceb7337c26309a492348506a5a55370ffa737787",
+      "critic_sha256": "5065a57614480a7321772fe5543ba88d4bd143e6e6b19d148e9660a5b52fe536",
+      "changed_training_distributions": 1172
+    },
+    "344": {
+      "positions": 4096,
+      "fresh_train_positions": 3072,
+      "train_ledger_sha256": "c3ee2a4fd6884e8eb052b317a571d21234b94b632687d790e8673f382ec91b40",
+      "action_labels": 17149,
+      "matched_training_rollouts": 51544,
+      "fit_heads": [
+        {
+          "head": 0,
+          "initial_weights_sha256": "fea1a3eeedd7b9bc64a8ea1e94368238f14a6f145924fbc0c6c70352b9415266",
+          "final_weights_sha256": "b5fc824675423b5884cc95882dc49128084daa010ccc52c9ad9bd8fcad8ebb96",
+          "steps": 768,
+          "position_draws": 98304,
+          "bootstrapped_distinct_positions": 2577,
+          "mean_normalized_training_squared_error": 5.419222831726074
+        },
+        {
+          "head": 1,
+          "initial_weights_sha256": "0b6da63acdacdd6d34edbd83e1a90ee60966216ff6feda440ab50a6964f06f23",
+          "final_weights_sha256": "6a64e424c16499810f6d6b1cf3c17f493fd97227be08e8a869ca4939dea6274a",
+          "steps": 768,
+          "position_draws": 98304,
+          "bootstrapped_distinct_positions": 2604,
+          "mean_normalized_training_squared_error": 5.397192001342773
+        }
+      ],
+      "initial_flop_sha256": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd",
+      "normalization_sha256": "3802633f9cd193979414a808e4bf4d656e6bb6aa768fc5e3d7a396faa9067dc4",
+      "warm_source_v1_weights_sha256": "5e6c7c5d7729bc05b6365e8327ad38b7ec8017b1b742b3debab24b9f1c332233",
+      "policy_sha256": "0cfdf4e4e887df76167dc6e7ff4cb259f9663e0698be48596a05e06f4d9301e0",
+      "critic_sha256": "d258794ccb322d0fe8efd190315dec4d38c1eede55b102baed8b170567769aac",
+      "changed_training_distributions": 1622
+    }
+  },
+  "design_sha256": "5ce6f2b5ffc7f8a3ea82019845c5923ea3af874ba0de409d8e59a331bdbc5700",
+  "optimizer_updates": 4608,
+  "fit_position_draws": 589824,
+  "fresh_train_positions": 9216,
+  "fit_positions": 12288,
+  "fresh_matched_training_rollouts": 155048,
+  "source_flop_choice_sha256": null,
+  "code_sha256": {
+    "fit_poker_street_progress.py": "d0bcf0226ce24e84bea2deeee5c5186e9e0731cf6f0eb5c4371a3007f3a4266a",
+    "poker_street_progress.py": "5da4e4b3dfff76d020e6f4b8c5261d4f1f9eb5e5a1660a16141193b116ca654d",
+    "poker_flop_repair.py": "c946c25464ab47de52cccae5621118abda6ca7cf54188aa596d522dcdd728d38",
+    "serve_poker_flop_repair.py": "8effd9310c7fdb2220ed3b5c39ff063c8d824595635b6bdee1b8608a6785dda6"
+  },
+  "fit_from_training_only": true,
+  "selected_for_play": false,
+  "whole_hand_matches": 0
+}

@@ -1,0 +1,99 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-26T08:10:54.491169+00:00",
+  "design_sha256": "5ce6f2b5ffc7f8a3ea82019845c5923ea3af874ba0de409d8e59a331bdbc5700",
+  "auditor_sha256": "a189bc0d090abf7b403b6e74177b736440d2d57b098bca0366c3c09113a370b0",
+  "rust_rules_sha256": "e93c7056991605304234d48bc92b1fbcbb66320beb9b06a7fea8e9b48eb19901",
+  "rust_bridge_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+  "python_game_sha256": "df405d6d9efbeca3ecb778cfa70dd770fee5c34d04eb3f65ed1ab11261696381",
+  "registered_disjoint_ranges": 18,
+  "prior_ranges_checked": 52,
+  "conditional_unit": "bb per reached first decision; one unit per unique root deal, equal fixed seed weights.",
+  "whole_game_performance_measured": false,
+  "streets": {
+    "flop": {
+      "candidate_sha256": "c20622ae167f53b99781b0300dae21560616bb51fc180a4c7672fc228fc04177",
+      "selected": "v1",
+      "held_out_dev_qualified": true,
+      "confirmed_local_gain": false,
+      "verified_exported_networks": 6,
+      "splits": {
+        "train": {
+          "positions": 9216,
+          "terminal_branch_labels": 155048,
+          "roots_fully_reconstructed": 9,
+          "terminal_branches_reproduced_by_python_and_rust": 144,
+          "sampled_distinct_river_range": [
+            3,
+            4
+          ]
+        },
+        "dev": {
+          "positions": 3072,
+          "terminal_branch_labels": 103168,
+          "roots_fully_reconstructed": 9,
+          "terminal_branches_reproduced_by_python_and_rust": 288,
+          "sampled_distinct_river_range": [
+            5,
+            8
+          ],
+          "mean_bb": 0.0017768817475403256,
+          "card_se_bb": 0.037126113163869996,
+          "lower_bb": -0.07099030005364486,
+          "upper_bb": 0.07454406354872552,
+          "estimated_fraction_of_mean_variance_from_finite_runouts": 0.423187791419293
+        },
+        "confirm": {
+          "positions": 4608,
+          "terminal_branch_labels": 154840,
+          "roots_fully_reconstructed": 9,
+          "terminal_branches_reproduced_by_python_and_rust": 320,
+          "sampled_distinct_river_range": [
+            6,
+            8
+          ],
+          "mean_bb": 0.01412717407363957,
+          "card_se_bb": 0.03158210432224099,
+          "lower_bb": -0.04777375039795277,
+          "upper_bb": 0.0760280985452319
+        }
+      }
+    },
+    "turn": {
+      "candidate_sha256": "494940246ef77bd43070821197d80299eb12e92e2c5d429e88f8e1d9367e42e7",
+      "selected": "v1",
+      "held_out_dev_qualified": false,
+      "confirmed_local_gain": false,
+      "verified_exported_networks": 6,
+      "splits": {
+        "train": {
+          "positions": 9216,
+          "terminal_branch_labels": 144176,
+          "roots_fully_reconstructed": 104,
+          "terminal_branches_reproduced_by_python_and_rust": 128,
+          "sampled_distinct_river_range": [
+            3,
+            4
+          ],
+          "turn_reaches_with_flop_action_different_from_480": 3
+        },
+        "dev": {
+          "positions": 3072,
+          "terminal_branch_labels": 96184,
+          "roots_fully_reconstructed": 32,
+          "terminal_branches_reproduced_by_python_and_rust": 288,
+          "sampled_distinct_river_range": [
+            6,
+            8
+          ],
+          "turn_reaches_with_flop_action_different_from_480": 4,
+          "mean_bb": -0.005477625091577904,
+          "card_se_bb": 0.04016372463195705,
+          "lower_bb": -0.0841985253702137,
+          "upper_bb": 0.07324327518705791,
+          "estimated_fraction_of_mean_variance_from_finite_runouts": 0.199561065601609
+        }
+      }
+    }
+  }
+}

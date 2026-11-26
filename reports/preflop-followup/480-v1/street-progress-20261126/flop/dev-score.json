@@ -1,0 +1,102 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-26T08:00:12.810284+00:00",
+  "street": "flop",
+  "split": "dev",
+  "design_sha256": "5ce6f2b5ffc7f8a3ea82019845c5923ea3af874ba0de409d8e59a331bdbc5700",
+  "scorer_sha256": "8f9f656bd8a3843f528eb75bcd75d4f77dcb9370c62bed7b7e79a04c99c3a37e",
+  "candidate_receipt_sha256": "c20622ae167f53b99781b0300dae21560616bb51fc180a4c7672fc228fc04177",
+  "candidate_policy_sha256": {
+    "342": "739549458ccaf5cbfc4c81844fa7de910f658b06ed3fa3374352bbb935962ce7",
+    "343": "165fde74c80d7b1bc5066da1ceb7337c26309a492348506a5a55370ffa737787",
+    "344": "0cfdf4e4e887df76167dc6e7ff4cb259f9663e0698be48596a05e06f4d9301e0"
+  },
+  "prior_policy_sha256": {
+    "342": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe",
+    "343": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931",
+    "344": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd"
+  },
+  "reach_selection_sha256": null,
+  "paired_gain": {
+    "mean": 0.0017768817475403095,
+    "standard_error": 0.037126113163869996,
+    "lower": -0.07099030005364487,
+    "upper": 0.0745440635487255,
+    "by_seed": {
+      "342": {
+        "mean": -0.01354944199569086,
+        "deals": 1024,
+        "standard_error": 0.07897938836274541
+      },
+      "343": {
+        "mean": 0.003430836424826984,
+        "deals": 1024,
+        "standard_error": 0.026486119013771375
+      },
+      "344": {
+        "mean": 0.015449250813484805,
+        "deals": 1024,
+        "standard_error": 0.07393156444539303
+      }
+    }
+  },
+  "proofs": {
+    "342": {
+      "root_deals": 1024,
+      "action_labels": 4287,
+      "terminal_rollouts": 34296,
+      "changed_root_distributions": 597,
+      "mean_total_variation": 0.06152822818587391,
+      "ledger_sha256": "2c68aa6fa9b972ac6e0c424ad35e41c790f0d22a9a57c9e2e53983af1310d54f",
+      "collection_sha256": "e9a5839c8c778cf34c8f4dae0163fe98d5efd528b2fe0cfddec397726b73c46c"
+    },
+    "343": {
+      "root_deals": 1024,
+      "action_labels": 4318,
+      "terminal_rollouts": 34544,
+      "changed_root_distributions": 400,
+      "mean_total_variation": 0.024297514468978685,
+      "ledger_sha256": "ec96b2584c7c2d0142faa60f0558d1ecfc52ad01692f15766cd5622db191065c",
+      "collection_sha256": "701626b317dbf532c34f6b4a86677ed8af98190339641a8dd90a31c42f97b12b"
+    },
+    "344": {
+      "root_deals": 1024,
+      "action_labels": 4291,
+      "terminal_rollouts": 34328,
+      "changed_root_distributions": 520,
+      "mean_total_variation": 0.05459089415272802,
+      "ledger_sha256": "85d684d5b1c6743d03ff2859917bfcfe994f2d2a807afc3a3c6f7a30570a2d3b",
+      "collection_sha256": "4270550da01bbce1df3de3939b9ba1b1b6aaeb8b90cb0ceec5ec6f3a90e146d9"
+    }
+  },
+  "unique_original_root_deals": 3072,
+  "units": "bb per reached first decision in the specified self-play pool",
+  "error_unit": "One distinct reached deal, averaged over action rollouts; equal fixed-seed weights.",
+  "one_sided_confirmation_alpha": 0.025,
+  "global_model_promoted": false,
+  "match_games": 0,
+  "eligible_for_confirmation": true,
+  "diagnostic_incumbent_v1_minus_480": {
+    "mean": 0.025448092008615007,
+    "standard_error": 0.03717066437525738,
+    "lower": -0.04740641016688946,
+    "upper": 0.09830259418411946,
+    "by_seed": {
+      "342": {
+        "mean": 0.19115979028532165,
+        "deals": 1024,
+        "standard_error": 0.08176317065750036
+      },
+      "343": {
+        "mean": -0.04318711166072052,
+        "deals": 1024,
+        "standard_error": 0.03184144639189178
+      },
+      "344": {
+        "mean": -0.07162840259875611,
+        "deals": 1024,
+        "standard_error": 0.0688173729997521
+      }
+    }
+  }
+}
