@@ -1,0 +1,92 @@
+{
+  "complete": true,
+  "verified_utc": "2026-11-26T02:48:39.263179+00:00",
+  "cells": 54,
+  "hands": 756000,
+  "unique_original_card_blocks": 5000,
+  "cards_per_field": {
+    "public": 4000,
+    "mixed": 1000,
+    "noregrets": 1000
+  },
+  "all_native_terminal_replays": true,
+  "concrete_decisions_replayed": 7703590,
+  "all_mixture_snapshot_ids_independently_rebuilt": true,
+  "sampled_policy_hands": 2448,
+  "sampled_all_actor_actions": 23782,
+  "hero_action_sample_by_street": {
+    "current480": {
+      "preflop": 437,
+      "flop": 97,
+      "turn": 47,
+      "river": 34
+    },
+    "mixture504": {
+      "preflop": 437,
+      "flop": 103,
+      "turn": 38,
+      "river": 29
+    },
+    "mixture528": {
+      "preflop": 437,
+      "flop": 100,
+      "turn": 42,
+      "river": 27
+    },
+    "current504": {
+      "preflop": 437,
+      "flop": 100,
+      "turn": 39,
+      "river": 27
+    },
+    "current528": {
+      "preflop": 437,
+      "flop": 101,
+      "turn": 39,
+      "river": 26
+    },
+    "average480": {
+      "preflop": 254,
+      "flop": 82,
+      "turn": 30,
+      "river": 26
+    },
+    "average504": {
+      "preflop": 252,
+      "flop": 74,
+      "turn": 29,
+      "river": 24
+    },
+    "average528": {
+      "preflop": 248,
+      "flop": 75,
+      "turn": 29,
+      "river": 30
+    }
+  },
+  "absolute_estimates_verified": 18,
+  "paired_contrasts_verified": 48,
+  "primary_public_mixture528_minus_mixture504": {
+    "baseline": "mixture504",
+    "candidate": "mixture528",
+    "by_seed": {
+      "342": -13.0235,
+      "343": -47.378625,
+      "344": -9.261958333333332
+    },
+    "mean": -23.221361111111108,
+    "ci95": [
+      -37.128493662959926,
+      -9.314228559262288
+    ],
+    "simultaneous_ci95": [
+      -46.48802616659116,
+      0.04530394436894625
+    ]
+  },
+  "source_stage_sha256": "8a59fdc2480bde76d882f134e76501df7e2feb0b6eefad797c87a7754adc4cf9",
+  "training_stage_sha256": "7f61d0fc4645b8aeada24ebd551ba86b3a3c869b61e87c17715510fc5c384c0b",
+  "evaluation_summary_sha256": "8f0143ac1e0a495fb0d2369d889c5d6da0bcb5c7d796251d13c538d9fd96d7db",
+  "audit_script_sha256": "7ed82e143ca5d429db8efb7faf3dd17a72e3605d0fc5372b2d4600693f677fa5",
+  "rules_reader_sha256": "39eceeb0ffafeaecae250cf09b7e0bb11a9f0df0535615bceba877f8e4006f80"
+}

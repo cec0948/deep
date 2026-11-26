@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-26T02:44:12.945640+00:00",
+  "observed_utc": "2026-11-26T02:48:57.830355+00:00",
   "fixed_baseline": {
     "stage": 480,
     "policy": "specialist480"
@@ -33,7 +33,7 @@
   "training_complete": true,
   "evaluation": {
     "main": {
-      "completed_cells": 28,
+      "completed_cells": 54,
       "planned_cells": 54,
       "planned_hands": 756000
     },
@@ -53,6 +53,8 @@
   "verified_receipts_sha256": {
     "stage-ready.json": "7f61d0fc4645b8aeada24ebd551ba86b3a3c869b61e87c17715510fc5c384c0b",
     "training-audit.json": "08dec85f9f3e26a95b18407b19abab48af5ec7948e633ed0d6ea05a89b84a968",
+    "main/summary.json": "8f0143ac1e0a495fb0d2369d889c5d6da0bcb5c7d796251d13c538d9fd96d7db",
+    "external-audit.json": "f2282d100bfa25813f2cc3318e0ee3a44da9f90b1caceb35c14f5330e507c615",
     "crossplay/summary.json": "39f34e7d55159de70021f8b169354efe3f3513bfebecfd94acc871c9c7958dbb",
     "crossplay/restricted-deviations.json": "bad5d237d3334c0961d1803ae3a1d02e174350b7426abf9d05e4d19bfe6c1248",
     "crossplay/independent-audit.json": "2e786e223a07a3e7da007cdce95320b3aa19b9ed4ac96a548083d5684c22f017",
@@ -61,7 +63,7 @@
     "replay-fit.json": "3182cc1a398a1d8a41fef47acaecbaf4645d841e1f45fc9121ec5b687481f556",
     "backup-verification.json": "e7960fdeb2877086067268856cfbc1ec399e91ec318627675d12c982b2730a52"
   },
-  "complete": false,
+  "complete": true,
   "model_promoted": false,
   "next_round_authorized": false
 }
