@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-26T08:15:30.003489+00:00",
+  "design_sha256": "76c84bd2932d1be976395a2533f9274442cfcf4489c189715c6680e853f74c9d",
+  "guard_sha256": "d7bef73bac270f657abffe9dbe9bf2621e08580b23f19c3082c0efc284150170",
+  "original_collector_sha256": "b05d4d6d7b08f3de6bb2314b0ad11efd8118739f1116bb547ccb5c04e2b83eab",
+  "completed_seed342_ledger_sha256": "92f47c88e224c3708e9e300ae2bbceb3e2b3aec303fdd8af2bd9a1dcd1de8fd3",
+  "completed_seed342_log_sha256": "6bf27a07720f8f12fd4f390d036743946468c4dbabe3a203d42b47948fe03d95",
+  "recovery": "Store the complete original seed342 ledger; its late pin check happened only after finishing 3600 original deals. Reconstruct interrupted seed343/344 ordinary trajectories only on their same original deals with identical frozen V1 policy, original sampled actions and historical opponents. Apply final read-only guard to all states. Per-layer tied-pot flooring is the sole scoring correction. No data-dependent adjustment."
+}

@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "finished_utc": "2026-11-26T08:16:31.439739+00:00",
+  "design_sha256": "76c84bd2932d1be976395a2533f9274442cfcf4489c189715c6680e853f74c9d",
+  "score_plan_sha256": "afe5a34076a8ed94c3f07e66517fd8d70cb9ae6c942f87d55f050dbc631e02c1",
+  "scorer_sha256": "96d5f531e613050fd7aabbc00f1f306bf405e123c59f6620738ce2d6d61b85df",
+  "guard_sha256": "d7bef73bac270f657abffe9dbe9bf2621e08580b23f19c3082c0efc284150170",
+  "counts": {
+    "original_deals": 10800,
+    "deals_with_hero_river_decision": 451,
+    "river_decisions": 576,
+    "heads_up_facing_bet": 205,
+    "certified_call_over_fold": 2,
+    "positive_fold_mass_eligible": 0,
+    "sampled_fold_repaired": 0
+  },
+  "positive_fold_deals": 0,
+  "observed_action_weighted_minimum_bb": 0.0,
+  "eval_scope": "Fresh unselected original hands under the frozen v1 historical pool; descriptive frequencies only. No global win-rate estimate.",
+  "per_seed": [
+    {
+      "seed": 342,
+      "counts": {
+        "original_deals": 3600,
+        "deals_with_hero_river_decision": 52,
+        "river_decisions": 79,
+        "heads_up_facing_bet": 34,
+        "certified_call_over_fold": 0,
+        "positive_fold_mass_eligible": 0,
+        "sampled_fold_repaired": 0
+      },
+      "positive_fold_deals": 0,
+      "recorded_minimum_exposure_chips": 0.0,
+      "positive_events": [],
+      "ledger_sha256": "92f47c88e224c3708e9e300ae2bbceb3e2b3aec303fdd8af2bd9a1dcd1de8fd3"
+    },
+    {
+      "seed": 343,
+      "counts": {
+        "original_deals": 3600,
+        "deals_with_hero_river_decision": 270,
+        "river_decisions": 333,
+        "heads_up_facing_bet": 121,
+        "certified_call_over_fold": 1,
+        "positive_fold_mass_eligible": 0,
+        "sampled_fold_repaired": 0
+      },
+      "positive_fold_deals": 0,
+      "recorded_minimum_exposure_chips": 0.0,
+      "positive_events": [],
+      "ledger_sha256": "72c63962d7b37b264f78af34b219b5eaa6814bad4c8a929d192811b467231ad1"
+    },
+    {
+      "seed": 344,
+      "counts": {
+        "original_deals": 3600,
+        "deals_with_hero_river_decision": 129,
+        "river_decisions": 164,
+        "heads_up_facing_bet": 50,
+        "certified_call_over_fold": 1,
+        "positive_fold_mass_eligible": 0,
+        "sampled_fold_repaired": 0
+      },
+      "positive_fold_deals": 0,
+      "recorded_minimum_exposure_chips": 0.0,
+      "positive_events": [],
+      "ledger_sha256": "4d8afe5a99c2ccf9ad41bf3a1bf336b90cbf2d262346a4833f68e6d691f08c31"
+    }
+  ]
+}

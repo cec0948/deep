@@ -1,0 +1,311 @@
+{
+  "version": "heads-up-river-dominated-fold-v1",
+  "completed_utc": "2026-11-26T08:15:21.794332+00:00",
+  "constructed_cases": {
+    "quads": {
+      "public_request": {
+        "hero": 2,
+        "button": 0,
+        "hole": [
+          "As",
+          "Ah"
+        ],
+        "board": [
+          "Ac",
+          "Ad",
+          "Js",
+          "8d",
+          "3s"
+        ],
+        "actions": [
+          {
+            "seat": 3,
+            "kind": "fold"
+          },
+          {
+            "seat": 4,
+            "kind": "raise",
+            "to": 3500
+          },
+          {
+            "seat": 5,
+            "kind": "fold"
+          },
+          {
+            "seat": 0,
+            "kind": "fold"
+          },
+          {
+            "seat": 1,
+            "kind": "fold"
+          },
+          {
+            "seat": 2,
+            "kind": "call"
+          },
+          {
+            "seat": 2,
+            "kind": "raise",
+            "to": 1000
+          },
+          {
+            "seat": 4,
+            "kind": "call"
+          },
+          {
+            "seat": 2,
+            "kind": "check"
+          },
+          {
+            "seat": 4,
+            "kind": "check"
+          },
+          {
+            "seat": 2,
+            "kind": "check"
+          },
+          {
+            "seat": 4,
+            "kind": "raise",
+            "to": 5450
+          }
+        ]
+      },
+      "pot_chips": 14500,
+      "to_call_chips": 5450,
+      "exhaustive_opponent_hands": 990,
+      "call_over_fold_min_chips": 14500,
+      "native_showdown_samples": 12,
+      "native_chips_gain_range": [
+        14500,
+        14500
+      ],
+      "certificate_time_ms": 0.45441299880621955,
+      "by_policy_seed": {
+        "342": {
+          "original_fold_probability": 0.3333333333333333,
+          "corrected_fold_probability": 0.0,
+          "policy_sha256": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe",
+          "policy_minimum_gain_bb_per_occurrence": 48.33333333333333
+        },
+        "343": {
+          "original_fold_probability": 0.0,
+          "corrected_fold_probability": 0.0,
+          "policy_sha256": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931",
+          "policy_minimum_gain_bb_per_occurrence": 0.0
+        },
+        "344": {
+          "original_fold_probability": 0.0,
+          "corrected_fold_probability": 0.0,
+          "policy_sha256": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd",
+          "policy_minimum_gain_bb_per_occurrence": 0.0
+        }
+      }
+    },
+    "board_tie": {
+      "public_request": {
+        "hero": 2,
+        "button": 3,
+        "hole": [
+          "2s",
+          "4s"
+        ],
+        "board": [
+          "Ad",
+          "Kd",
+          "Qs",
+          "Jh",
+          "Tc"
+        ],
+        "actions": [
+          {
+            "seat": 0,
+            "kind": "fold"
+          },
+          {
+            "seat": 1,
+            "kind": "fold"
+          },
+          {
+            "seat": 2,
+            "kind": "raise",
+            "to": 500
+          },
+          {
+            "seat": 3,
+            "kind": "fold"
+          },
+          {
+            "seat": 4,
+            "kind": "fold"
+          },
+          {
+            "seat": 5,
+            "kind": "call"
+          },
+          {
+            "seat": 5,
+            "kind": "check"
+          },
+          {
+            "seat": 2,
+            "kind": "raise",
+            "to": 100
+          },
+          {
+            "seat": 5,
+            "kind": "call"
+          },
+          {
+            "seat": 5,
+            "kind": "check"
+          },
+          {
+            "seat": 2,
+            "kind": "raise",
+            "to": 1000
+          },
+          {
+            "seat": 5,
+            "kind": "call"
+          },
+          {
+            "seat": 5,
+            "kind": "raise",
+            "to": 8400
+          }
+        ]
+      },
+      "pot_chips": 11650,
+      "to_call_chips": 8400,
+      "exhaustive_opponent_hands": 990,
+      "call_over_fold_min_chips": 1625,
+      "native_showdown_samples": 12,
+      "native_chips_gain_range": [
+        1625,
+        1625
+      ],
+      "certificate_time_ms": 0.450427000032505,
+      "by_policy_seed": {
+        "342": {
+          "original_fold_probability": 0.5,
+          "corrected_fold_probability": 0.0,
+          "policy_sha256": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe",
+          "policy_minimum_gain_bb_per_occurrence": 8.125
+        },
+        "343": {
+          "original_fold_probability": 0.0,
+          "corrected_fold_probability": 0.0,
+          "policy_sha256": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931",
+          "policy_minimum_gain_bb_per_occurrence": 0.0
+        },
+        "344": {
+          "original_fold_probability": 0.0,
+          "corrected_fold_probability": 0.0,
+          "policy_sha256": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd",
+          "policy_minimum_gain_bb_per_occurrence": 0.0
+        }
+      }
+    },
+    "straight_flush": {
+      "public_request": {
+        "hero": 1,
+        "button": 4,
+        "hole": [
+          "Td",
+          "Jd"
+        ],
+        "board": [
+          "9d",
+          "8d",
+          "7d",
+          "6d",
+          "4c"
+        ],
+        "actions": [
+          {
+            "seat": 1,
+            "kind": "call"
+          },
+          {
+            "seat": 2,
+            "kind": "fold"
+          },
+          {
+            "seat": 3,
+            "kind": "fold"
+          },
+          {
+            "seat": 4,
+            "kind": "fold"
+          },
+          {
+            "seat": 5,
+            "kind": "fold"
+          },
+          {
+            "seat": 0,
+            "kind": "check"
+          },
+          {
+            "seat": 0,
+            "kind": "check"
+          },
+          {
+            "seat": 1,
+            "kind": "check"
+          },
+          {
+            "seat": 0,
+            "kind": "raise",
+            "to": 100
+          },
+          {
+            "seat": 1,
+            "kind": "call"
+          },
+          {
+            "seat": 0,
+            "kind": "raise",
+            "to": 100
+          }
+        ]
+      },
+      "pot_chips": 550,
+      "to_call_chips": 100,
+      "exhaustive_opponent_hands": 990,
+      "call_over_fold_min_chips": 550,
+      "native_showdown_samples": 12,
+      "native_chips_gain_range": [
+        550,
+        550
+      ],
+      "certificate_time_ms": 0.4406120024214033,
+      "by_policy_seed": {
+        "342": {
+          "original_fold_probability": 0.0,
+          "corrected_fold_probability": 0.0,
+          "policy_sha256": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe",
+          "policy_minimum_gain_bb_per_occurrence": 0.0
+        },
+        "343": {
+          "original_fold_probability": 0.25,
+          "corrected_fold_probability": 0.0,
+          "policy_sha256": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931",
+          "policy_minimum_gain_bb_per_occurrence": 1.375
+        },
+        "344": {
+          "original_fold_probability": 0.0,
+          "corrected_fold_probability": 0.0,
+          "policy_sha256": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd",
+          "policy_minimum_gain_bb_per_occurrence": 0.0
+        }
+      }
+    }
+  },
+  "runtime_source_sha256": "d7bef73bac270f657abffe9dbe9bf2621e08580b23f19c3082c0efc284150170",
+  "audit_source_sha256": "c8c218999d0f0057361bec7cdc1e10ba35c36c2b876c8f67cd59b84dc1995534",
+  "unit": "One specific heads-up closing river decision; 100 chips per BB",
+  "naturally_observed_frequency_measured_here": false,
+  "full_game_winrate_measured": false
+}

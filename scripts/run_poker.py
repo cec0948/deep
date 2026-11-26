@@ -9,12 +9,13 @@ ROOT=Path(__file__).resolve().parents[1]
 import argparse
 import sys
 parser=argparse.ArgumentParser()
-parser.add_argument('--backend',choices=['noregrets','fullhouse','flop-repair','street-progress'],default='noregrets')
+policy_servers = {'flop-repair':'serve_poker_flop_repair.py', 'street-progress':'poker_street_progress.py',
+                  'street-progress-river':'poker_river_dominance.py'}
+parser.add_argument('--backend',choices=['noregrets','fullhouse',*policy_servers],default='noregrets')
 parser.add_argument('--policy',type=Path,help='Private policy manifest for the selected trained policy')
 args=parser.parse_args()
-policy_servers = {'flop-repair':'serve_poker_flop_repair.py','street-progress':'poker_street_progress.py'}
 if (args.backend in policy_servers) != (args.policy is not None):
-    parser.error('--policy is required for flop-repair and street-progress and only supported by those backends')
+    parser.error('--policy is required for these backends only: ' + ', '.join(policy_servers))
 if args.backend == 'fullhouse' or args.backend in policy_servers:
     os.environ.setdefault('OPENBLAS_NUM_THREADS','1')
     os.environ.setdefault('OMP_NUM_THREADS','1')
