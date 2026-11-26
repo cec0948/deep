@@ -9,6 +9,7 @@
 - [추가 후보와 상용 모델 제공 경로](docs/engine-candidates.md)
 - [NoRegrets 로컬 학습·실행 검증](docs/noregrets-assessment.md)
 - [내 프로그램용 JSON API와 예제](docs/json-api.md)
+- [최신 플레이 모델, 리버 콜 개선과 실행 방법](docs/poker-street-progress-20261126.md)
 - [직접 학습한 1M 모델과 평가 결과](docs/selfplay-training.md)
 - [논문·코드에 근거한 학습 개선 우선순위](docs/training-improvement-review.md)
 - [6인 Deep CFR 공개 모델 검증과 프로젝트 연결 방법](docs/fullhouse-integration.md)

@@ -1,0 +1,114 @@
+{
+  "verified_utc": "2026-11-26T08:30:28.187384+00:00",
+  "design_sha256": "ea1db38fc35ae39a62ba234c8a1117d5ac12f6b836788c4002e9258b4eabbed8",
+  "split": "holdout",
+  "seeds": {
+    "342": {
+      "ties": 7,
+      "terminal_utilities_reconstructed": 768,
+      "truly_protected_roots": 4,
+      "positions": 384,
+      "protected_cases": 3,
+      "legal_reraise_fallback": 1,
+      "original_deals_scanned": 79481,
+      "ledger_sha256": "9dabc72f51115b1f849fe9c584f82237ff087e1d6541962fa5908904e4125b3e",
+      "sampled_original_hands_completely_replayed": 67,
+      "sampled_reached_deals": 3,
+      "mean_bb": 0.634057476275419,
+      "sample_variance": 17.50406346443169,
+      "fraction_eligible": 0.0048313433399177165,
+      "observed_contribution_bb_per_100_dealt": 0.3063349365128281
+    },
+    "343": {
+      "ties": 18,
+      "terminal_utilities_reconstructed": 768,
+      "truly_protected_roots": 3,
+      "positions": 384,
+      "protected_cases": 3,
+      "legal_reraise_fallback": 1,
+      "original_deals_scanned": 13683,
+      "ledger_sha256": "6101e2b84653d190c5eb8be799ac51c1de0b449441cc62f593ee4294fa0a79c9",
+      "sampled_original_hands_completely_replayed": 67,
+      "sampled_reached_deals": 5,
+      "mean_bb": 0.4257968338021677,
+      "sample_variance": 13.152462354573451,
+      "fraction_eligible": 0.028064021048015787,
+      "observed_contribution_bb_per_100_dealt": 1.1949571306002515
+    },
+    "344": {
+      "ties": 24,
+      "terminal_utilities_reconstructed": 768,
+      "truly_protected_roots": 0,
+      "positions": 384,
+      "protected_cases": 3,
+      "legal_reraise_fallback": 1,
+      "original_deals_scanned": 30211,
+      "ledger_sha256": "cacb83192f086454117c33fb1a80914b23a4d732748373c6d83a3ef3d5d23531",
+      "sampled_original_hands_completely_replayed": 67,
+      "sampled_reached_deals": 5,
+      "mean_bb": 0.40661897738712083,
+      "sample_variance": 23.254555340543234,
+      "fraction_eligible": 0.012710602098573368,
+      "observed_contribution_bb_per_100_dealt": 0.5168372027296494
+    }
+  },
+  "auditor_sha256": "ad20ab0ce017a2cfe62b8b6bb79d0be9e43e88cec30b62f1d079d5528e77d751",
+  "complete": true,
+  "selected": "candidate",
+  "selected_policy_sha256": {
+    "342": "b029f12e6e4fe152c1fea4e9419552e3c15d12fee25c8f019206830d82144d4c",
+    "343": "4d5feb5184f0bc75e721dcbb7469c034bc2a4373040e7d31fd0c4e553045f800",
+    "344": "fc77c97b00b47006fa44762054ea150f3dfb7ff97bd1c7b8e4b8621fe3d93cee"
+  },
+  "conditional_gain_bb": 0.4888244291549025,
+  "conditional_se": 0.12489704227423004,
+  "conditional_ci": [
+    0.2440262262974116,
+    0.7336226320123933
+  ],
+  "observed_dealt_contribution_bb_per_100_equal_seed": 0.672709756614243,
+  "interpretation": "Contribution from first eligible call/fold policy on sampled original deals, counting all other deals as zero. No entire-game win rate is estimated.",
+  "freeze_and_scoring": {
+    "model_frozen_utc": "2026-11-26T08:27:57.098690+00:00",
+    "evaluation_completed_utc": "2026-11-26T08:29:49.257981+00:00",
+    "holdout_labels_completed_before_freeze_seeds": [
+      343
+    ],
+    "model_reconstructed_from_training_only": true
+  },
+  "training_check": {
+    "342": {
+      "ties": 25,
+      "terminal_utilities_reconstructed": 1536,
+      "positions": 768,
+      "original_deals_scanned": 157401,
+      "ledger_sha256": "df1a9690ebc8be330973544df8403cf421a58de82d81acb8570a0e5b5c0b7b94",
+      "sampled_original_hands_completely_replayed": 67,
+      "sampled_reached_deals": 3
+    },
+    "343": {
+      "ties": 31,
+      "terminal_utilities_reconstructed": 1536,
+      "positions": 768,
+      "original_deals_scanned": 23400,
+      "ledger_sha256": "ab08a182afd44bf06a7450d6515689e31c629d311199f1738760dc805f3f79ea",
+      "sampled_original_hands_completely_replayed": 67,
+      "sampled_reached_deals": 7
+    },
+    "344": {
+      "ties": 30,
+      "terminal_utilities_reconstructed": 1536,
+      "positions": 768,
+      "original_deals_scanned": 59574,
+      "ledger_sha256": "0574e818baec543dfdb76b9b6bcdd83f6561685e683f3e64976630f18988b8b7",
+      "sampled_original_hands_completely_replayed": 67,
+      "sampled_reached_deals": 4
+    }
+  },
+  "fit_reconstruction": {
+    "training_rows": 2304,
+    "public_model_inputs": 10,
+    "regularized_loss": 0.5027739735668287,
+    "maximum_absolute_gradient": 7.277158715272673e-08
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-26T08:30:18.645076+00:00",
+  "backend": "river-call-learning",
+  "selected": "candidate",
+  "design_sha256": "ea1db38fc35ae39a62ba234c8a1117d5ac12f6b836788c4002e9258b4eabbed8",
+  "selection_sha256": "028e732ee4c2622dc66ecea97928dec005712dc0ed72d2b2e9c0bcc7a861d089",
+  "public_selection_sha256": "ac4a72ea25d787f8b2f3b88462ab2a880aef501acb503c40b226bf289bc3597e",
+  "policy_sha256": {
+    "342": "b029f12e6e4fe152c1fea4e9419552e3c15d12fee25c8f019206830d82144d4c",
+    "343": "4d5feb5184f0bc75e721dcbb7469c034bc2a4373040e7d31fd0c4e553045f800",
+    "344": "fc77c97b00b47006fa44762054ea150f3dfb7ff97bd1c7b8e4b8621fe3d93cee"
+  },
+  "normal_jsonl_decisions": 18,
+  "rejected_malformed_requests": 3,
+  "proofs": {
+    "342": {
+      "policy_sha256": "b029f12e6e4fe152c1fea4e9419552e3c15d12fee25c8f019206830d82144d4c",
+      "valid_requests": [
+        "preflop",
+        "flop",
+        "turn",
+        "river",
+        "protected_river",
+        "closing_river"
+      ],
+      "malformed_request_rejected": true
+    },
+    "343": {
+      "policy_sha256": "4d5feb5184f0bc75e721dcbb7469c034bc2a4373040e7d31fd0c4e553045f800",
+      "valid_requests": [
+        "preflop",
+        "flop",
+        "turn",
+        "river",
+        "protected_river",
+        "closing_river"
+      ],
+      "malformed_request_rejected": true
+    },
+    "344": {
+      "policy_sha256": "fc77c97b00b47006fa44762054ea150f3dfb7ff97bd1c7b8e4b8621fe3d93cee",
+      "valid_requests": [
+        "preflop",
+        "flop",
+        "turn",
+        "river",
+        "protected_river",
+        "closing_river"
+      ],
+      "malformed_request_rejected": true
+    }
+  },
+  "whole_game_strength_verified": false,
+  "entrypoint": "python scripts/run_poker.py --backend river-call-learning --policy artifacts/preflop-followup/480-v1/river-call-learning-20261126/play/seed-{seed}/policy.json"
+}

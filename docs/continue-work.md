@@ -1,6 +1,8 @@
 # 여기서 작업 이어가기
 
-최신 진행: 사용자 요청으로 [60→120회 제한 연장](compact-continuation.md)을 시작했다. 실행은 `artifacts/compact-v4/20261110T085438491435Z`다. **세 seed 모두 기존 전체 checkpoint에서 재개하고, 새 카드로 60회와 120회를 함께 평가한다. 총 예정 504,000핸드다.** `python scripts/compact_status.py`와 실행 폴더의 `campaign-status.json`을 먼저 확인한다. 살아 있는 supervisor·worker를 중복 실행하지 않는다. 완료되면 `progress-decision.json`의 사전 조건과 상대별 성적을 확인해 다음 제한 구간을 판단한다. 아래 60회 결과는 비교 기준으로 보존한다.
+2026-11-26의 선택 모델과 실행 명령은 [첫 플롭·턴 학습과 리버 콜 개선](poker-street-progress-20261126.md)에 있다. 과거 실행을 이어볼 때는 [날짜별 학습 기록](retraining-20261112.md)에서 해당 실행을 찾는다.
+
+2026-11-10 당시에는 [60→120회 제한 연장](compact-continuation.md)을 시작했다. 실행은 `artifacts/compact-v4/20261110T085438491435Z`다. **세 seed 모두 기존 전체 checkpoint에서 재개하고, 새 카드로 60회와 120회를 함께 평가한다. 총 예정 504,000핸드다.** `python scripts/compact_status.py`와 실행 폴더의 `campaign-status.json`을 먼저 확인한다. 살아 있는 supervisor·worker를 중복 실행하지 않는다. 완료되면 `progress-decision.json`의 사전 조건과 상대별 성적을 확인해 다음 제한 구간을 판단한다. 아래 60회 결과는 비교 기준으로 보존한다.
 
 2026-11-10 최신 방향: 사용자 요청으로 **작은 신경망 기반 Deep CFR를 계속 사용한다.** [새 학습·평가 결과](compact-training-results.md)의 세 seed×60회, 본 평가 432,000핸드와 추가 탐색 12,000핸드를 완료했다. UTG AA 폴드와 root fitting을 보강했고 공개 상대에서 30→60회 개선을 확인했다. 두 seed는 여전히 공개 상대에 지며 최고 seed도 기존 모델 대비 우월성이 미확인이다. 프로그램 실행은 가볍지만 프로급 강도를 검증한 것은 아니다. 실제 상태는 `python scripts/compact_status.py`와 `artifacts/compact-v4/current.json`을 확인한다. 다음은 후속 상황의 regret fitting·상대 일반화 검토이며 같은 설정의 장기 연장은 결과를 근거로 판단한다. 아래 11-09 기록은 이전 실험이다.
 

@@ -1,0 +1,94 @@
+{
+  "complete": true,
+  "design_sha256": "ea1db38fc35ae39a62ba234c8a1117d5ac12f6b836788c4002e9258b4eabbed8",
+  "unit": "first eligible reached hero decision per distinct original deal",
+  "common_native_settlement": "Every original deal is deterministic. Both forced actions were settled to terminal on the same deck and action prefix, with same six-seat root checked before folding.",
+  "splits": {
+    "train": {
+      "by_seed": [
+        {
+          "seed": 342,
+          "attempted_deals": 157401,
+          "distinct_original_roots": 768,
+          "forced_terminal_actions": 1536,
+          "first_card": 2110000000,
+          "last_card": 2110157400,
+          "position_ledger_sha256": "df1a9690ebc8be330973544df8403cf421a58de82d81acb8570a0e5b5c0b7b94",
+          "generator_sha256": "23a9d14bb3f9fd22dfe439db835dac8f458b9b5a35a720f0e6deb7c4ac275c0c",
+          "native_engine_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+          "receipt_sha256": "7e71b30ba26c55358582ff397f64c3558d7d809ee24ff74cac6da5e1df85fe39"
+        },
+        {
+          "seed": 343,
+          "attempted_deals": 23400,
+          "distinct_original_roots": 768,
+          "forced_terminal_actions": 1536,
+          "first_card": 2110250000,
+          "last_card": 2110273399,
+          "position_ledger_sha256": "ab08a182afd44bf06a7450d6515689e31c629d311199f1738760dc805f3f79ea",
+          "generator_sha256": "23a9d14bb3f9fd22dfe439db835dac8f458b9b5a35a720f0e6deb7c4ac275c0c",
+          "native_engine_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+          "receipt_sha256": "2391b3475ab67bf14d139dff1a35722d52b049faf1c40d0db7097b5ed62ec603"
+        },
+        {
+          "seed": 344,
+          "attempted_deals": 59574,
+          "distinct_original_roots": 768,
+          "forced_terminal_actions": 1536,
+          "first_card": 2110500000,
+          "last_card": 2110559573,
+          "position_ledger_sha256": "0574e818baec543dfdb76b9b6bcdd83f6561685e683f3e64976630f18988b8b7",
+          "generator_sha256": "23a9d14bb3f9fd22dfe439db835dac8f458b9b5a35a720f0e6deb7c4ac275c0c",
+          "native_engine_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+          "receipt_sha256": "9d5a2349917b4a76138182652a3e8ac209c5b7861d6fa18d08e37ae72d17ccd8"
+        }
+      ],
+      "attempted_deals": 240375,
+      "distinct_original_roots": 2304,
+      "forced_terminal_actions": 4608
+    },
+    "holdout": {
+      "by_seed": [
+        {
+          "seed": 342,
+          "attempted_deals": 79481,
+          "distinct_original_roots": 384,
+          "forced_terminal_actions": 768,
+          "first_card": 2110750000,
+          "last_card": 2110829480,
+          "position_ledger_sha256": "9dabc72f51115b1f849fe9c584f82237ff087e1d6541962fa5908904e4125b3e",
+          "generator_sha256": "23a9d14bb3f9fd22dfe439db835dac8f458b9b5a35a720f0e6deb7c4ac275c0c",
+          "native_engine_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+          "receipt_sha256": "36eb6a5e2d63cd6f4aefe9c4adbce51eeec658f18fbb78a33f4a62f920c513e2"
+        },
+        {
+          "seed": 343,
+          "attempted_deals": 13683,
+          "distinct_original_roots": 384,
+          "forced_terminal_actions": 768,
+          "first_card": 2111000000,
+          "last_card": 2111013682,
+          "position_ledger_sha256": "6101e2b84653d190c5eb8be799ac51c1de0b449441cc62f593ee4294fa0a79c9",
+          "generator_sha256": "23a9d14bb3f9fd22dfe439db835dac8f458b9b5a35a720f0e6deb7c4ac275c0c",
+          "native_engine_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+          "receipt_sha256": "6b49185fc5fe9fe66aa2af1c7093807fc5978fa693b3d3888b82efe75122de78"
+        },
+        {
+          "seed": 344,
+          "attempted_deals": 30211,
+          "distinct_original_roots": 384,
+          "forced_terminal_actions": 768,
+          "first_card": 2111250000,
+          "last_card": 2111280210,
+          "position_ledger_sha256": "cacb83192f086454117c33fb1a80914b23a4d732748373c6d83a3ef3d5d23531",
+          "generator_sha256": "23a9d14bb3f9fd22dfe439db835dac8f458b9b5a35a720f0e6deb7c4ac275c0c",
+          "native_engine_sha256": "d2cf5885b92545b4ceda28d4dded0ec6e38ee0fe2fd5613c444787fa4a86b547",
+          "receipt_sha256": "7336a518e94da9e076a7b2e623910390239e7ac3b3cca7b973b7a20345db4902"
+        }
+      ],
+      "attempted_deals": 123375,
+      "distinct_original_roots": 1152,
+      "forced_terminal_actions": 2304
+    }
+  }
+}

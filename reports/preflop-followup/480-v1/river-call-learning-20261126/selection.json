@@ -1,0 +1,76 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-26T08:29:49.257981+00:00",
+  "selected": "candidate",
+  "backend": "river-call-learning",
+  "paired_gain": {
+    "mean": 0.48882442915490243,
+    "standard_error": 0.12489704227423004,
+    "lower": 0.24402622629741155,
+    "upper": 0.7336226320123933,
+    "by_seed": {
+      "342": {
+        "mean": 0.634057476275419,
+        "deals": 384,
+        "standard_error": 0.21350292411414618
+      },
+      "343": {
+        "mean": 0.42579683380216765,
+        "deals": 384,
+        "standard_error": 0.18507080820153235
+      },
+      "344": {
+        "mean": 0.4066189773871208,
+        "deals": 384,
+        "standard_error": 0.24608685025006524
+      }
+    }
+  },
+  "proofs": {
+    "342": {
+      "original_deals": 384,
+      "terminal_utilities_reproduced": 768,
+      "increases": 101,
+      "decreases": 120,
+      "mean_absolute_call_shift": 0.05017345171369775,
+      "call_increase_contribution_bb": 0.21109665357741705,
+      "call_decrease_contribution_bb": 0.4229608226980019,
+      "ledger_sha256": "9dabc72f51115b1f849fe9c584f82237ff087e1d6541962fa5908904e4125b3e",
+      "receipt_sha256": "36eb6a5e2d63cd6f4aefe9c4adbce51eeec658f18fbb78a33f4a62f920c513e2"
+    },
+    "343": {
+      "original_deals": 384,
+      "terminal_utilities_reproduced": 768,
+      "increases": 42,
+      "decreases": 81,
+      "mean_absolute_call_shift": 0.04251557856378641,
+      "call_increase_contribution_bb": 0.15856278327420514,
+      "call_decrease_contribution_bb": 0.2672340505279626,
+      "ledger_sha256": "6101e2b84653d190c5eb8be799ac51c1de0b449441cc62f593ee4294fa0a79c9",
+      "receipt_sha256": "6b49185fc5fe9fe66aa2af1c7093807fc5978fa693b3d3888b82efe75122de78"
+    },
+    "344": {
+      "original_deals": 384,
+      "terminal_utilities_reproduced": 768,
+      "increases": 57,
+      "decreases": 85,
+      "mean_absolute_call_shift": 0.05273658726394321,
+      "call_increase_contribution_bb": 0.16744658541977772,
+      "call_decrease_contribution_bb": 0.23917239196734308,
+      "ledger_sha256": "cacb83192f086454117c33fb1a80914b23a4d732748373c6d83a3ef3d5d23531",
+      "receipt_sha256": "7336a518e94da9e076a7b2e623910390239e7ac3b3cca7b973b7a20345db4902"
+    }
+  },
+  "design_sha256": "ea1db38fc35ae39a62ba234c8a1117d5ac12f6b836788c4002e9258b4eabbed8",
+  "candidate_sha256": "7028c3fc80fe791022207fb316f7a0a2acd69500d7620f4cc09af14585578977",
+  "model_sha256": "64b79018289644c66c2f80e9162d1fa852b0b9c90920b3f87518c9fb232ee26a",
+  "scorer_sha256": "33dc588746df5cf49d16f1cd27d35a800feefb51f1ab7a2b0f04147b027344d3",
+  "policy_sha256": {
+    "342": "b029f12e6e4fe152c1fea4e9419552e3c15d12fee25c8f019206830d82144d4c",
+    "343": "4d5feb5184f0bc75e721dcbb7469c034bc2a4373040e7d31fd0c4e553045f800",
+    "344": "fc77c97b00b47006fa44762054ea150f3dfb7ff97bd1c7b8e4b8621fe3d93cee"
+  },
+  "unique_holdout_deals": 1152,
+  "units": "BB per reached eligible heads-up river bet decision",
+  "whole_game_strength_verified": false
+}

@@ -1,0 +1,46 @@
+{
+  "verified_utc": "2026-11-26T08:31:21.956350+00:00",
+  "kind": "derived-policy-probe",
+  "checkpoint_mode": "heads-up-river-call-calibration-bundle-v1",
+  "bytes": 21945,
+  "sha256": "dbf8ed7308e2ad7152daf3a8779babddaad2424d0c9f98b06ef2e5bf736efca3",
+  "restored_all_three_seeds": true,
+  "backup_files": 1,
+  "format": "single-archive-v1",
+  "restoration_verified": true,
+  "external_backup": true,
+  "verified_remote_size": true,
+  "verified_owner_only": true,
+  "local_recombination_verified": false,
+  "remote_checksum_available": false,
+  "remote_sha256_verified": false,
+  "archive_includes_final_evaluation_summary": true,
+  "private_index_readback_verified": true,
+  "active_managed_bytes": 2130065290,
+  "within_2gib_target": true,
+  "retained_bytes": 2061164490,
+  "policy_candidate_remote_files": 3,
+  "remote_deletions_performed": 0,
+  "parent_iteration": 480,
+  "restored_shared_river_model": true,
+  "archive_includes_raw_hands": false,
+  "selected": "candidate",
+  "selected_backend": "river-call-learning",
+  "decision_restoration": {
+    "342": {
+      "real_river_decisions": 12,
+      "active_learned_updates": 8,
+      "selected_route_decisions": 12
+    },
+    "343": {
+      "real_river_decisions": 18,
+      "active_learned_updates": 4,
+      "selected_route_decisions": 18
+    },
+    "344": {
+      "real_river_decisions": 12,
+      "active_learned_updates": 4,
+      "selected_route_decisions": 12
+    }
+  }
+}
