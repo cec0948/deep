@@ -1,0 +1,37 @@
+{
+  "verified_utc": "2026-11-26T07:18:24.625016+00:00",
+  "complete": true,
+  "scope": "action-label-audit",
+  "training_design_sha256": "09b625d5cf4e13f4af1373fc843f769913dde9dc65ff21a7dd7ac91145e9044b",
+  "existing_evaluation_ranges_checked": 49,
+  "seeds": {
+    "342": {
+      "independent_payoffs": 48,
+      "positions": 1024,
+      "distinct_action_labels": 4246,
+      "zero_mass_branches": 7692,
+      "clamp_duplicate_heads": 111,
+      "ledger_sha256": "13c6e68f4c33513a74ac1cf05a66511e772845e7bdb5146df90d5ddb2f6fe9dc",
+      "restored_source_sha256": "b9275551593c8b1aa0adc8db8fa5e758ad8613317d743d463414ef1f12b74db6"
+    },
+    "343": {
+      "independent_payoffs": 60,
+      "positions": 1024,
+      "distinct_action_labels": 4336,
+      "zero_mass_branches": 10436,
+      "clamp_duplicate_heads": 53,
+      "ledger_sha256": "59ba1fa380b24d97c1c9e81a7a72dc57d8582ca26fb33c82f62f1be5dfc14677",
+      "restored_source_sha256": "001a93356bc8e82ba9ac7263218a0fefe4c8254792981d82b24c460f7714958f"
+    },
+    "344": {
+      "independent_payoffs": 64,
+      "positions": 1024,
+      "distinct_action_labels": 4263,
+      "zero_mass_branches": 9496,
+      "clamp_duplicate_heads": 87,
+      "ledger_sha256": "db3ffe9ef15d759e655b53b4f3adf79b9ffcf63bfe48115c1b9df98c0ff17711",
+      "restored_source_sha256": "a5448f6b2f5a58a6011b7a3d1008484b68fa36638ccf84f9888dde0de5e7135d"
+    }
+  },
+  "competitive_hands": 0
+}

@@ -1,0 +1,28 @@
+{
+  "verified_utc": "2026-11-26T07:18:26.114650+00:00",
+  "complete": true,
+  "scope": "policy-integrity-audit",
+  "training_design_sha256": "09b625d5cf4e13f4af1373fc843f769913dde9dc65ff21a7dd7ac91145e9044b",
+  "existing_evaluation_ranges_checked": 49,
+  "seeds": {
+    "342": {
+      "root_distributions_checked": 1024,
+      "nonzero_adjustments": 568,
+      "maximum_repair_mass": 0.25,
+      "manifest_sha256": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe"
+    },
+    "343": {
+      "root_distributions_checked": 1024,
+      "nonzero_adjustments": 276,
+      "maximum_repair_mass": 0.25,
+      "manifest_sha256": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931"
+    },
+    "344": {
+      "root_distributions_checked": 1024,
+      "nonzero_adjustments": 279,
+      "maximum_repair_mass": 0.25,
+      "manifest_sha256": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd"
+    }
+  },
+  "competitive_hands": 0
+}

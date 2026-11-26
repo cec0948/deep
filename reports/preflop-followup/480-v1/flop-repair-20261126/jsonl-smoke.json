@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-11-26T07:18:26.080074+00:00",
+  "scope": "JSONL interface and action legality on fixed nonterminal requests",
+  "backend": "flop-repair",
+  "completed_hands": 0,
+  "match_evaluations": 0,
+  "streets": [
+    "preflop",
+    "flop",
+    "turn",
+    "river"
+  ],
+  "seeds": {
+    "342": {
+      "policy_manifest_sha256": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe",
+      "successful_decisions": 4,
+      "rejected_malformed_request_before_valid_ones": true
+    },
+    "343": {
+      "policy_manifest_sha256": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931",
+      "successful_decisions": 4,
+      "rejected_malformed_request_before_valid_ones": true
+    },
+    "344": {
+      "policy_manifest_sha256": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd",
+      "successful_decisions": 4,
+      "rejected_malformed_request_before_valid_ones": true
+    }
+  },
+  "command_code_sha256": {
+    "run_poker.py": "242116a336ada9595f46ced5524e932d38bb1b9ba7ad51f9abda612b8e2542e9",
+    "serve_poker_flop_repair.py": "4b000a75239dbb4f603cbbdf15273a28b6dc8859f677c98ed8e0267afee4fca7"
+  }
+}
