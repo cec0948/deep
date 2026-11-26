@@ -1,0 +1,57 @@
+{
+  "training_complete": true,
+  "frozen_utc": "2026-11-26T08:27:57.098690+00:00",
+  "design_sha256": "ea1db38fc35ae39a62ba234c8a1117d5ac12f6b836788c4002e9258b4eabbed8",
+  "model_sha256": "64b79018289644c66c2f80e9162d1fa852b0b9c90920b3f87518c9fb232ee26a",
+  "seeds": {
+    "342": {
+      "training_positions": 768,
+      "win_tie_loss": [
+        282,
+        25,
+        461
+      ],
+      "train_ledger_sha256": "df1a9690ebc8be330973544df8403cf421a58de82d81acb8570a0e5b5c0b7b94",
+      "parent_sha256": "2214c56175dbb5d42779c8e6f9e8ac2a486817ef2b2facf73307574a8a801afe",
+      "policy_sha256": "b029f12e6e4fe152c1fea4e9419552e3c15d12fee25c8f019206830d82144d4c"
+    },
+    "343": {
+      "training_positions": 768,
+      "win_tie_loss": [
+        266,
+        31,
+        471
+      ],
+      "train_ledger_sha256": "ab08a182afd44bf06a7450d6515689e31c629d311199f1738760dc805f3f79ea",
+      "parent_sha256": "17a76066556844c6359fa7e87ca802c66d35a952b03dc285704af9b40099f931",
+      "policy_sha256": "4d5feb5184f0bc75e721dcbb7469c034bc2a4373040e7d31fd0c4e553045f800"
+    },
+    "344": {
+      "training_positions": 768,
+      "win_tie_loss": [
+        227,
+        30,
+        511
+      ],
+      "train_ledger_sha256": "0574e818baec543dfdb76b9b6bcdd83f6561685e683f3e64976630f18988b8b7",
+      "parent_sha256": "00a8a602e2356cccbeaf8971cdf4578f26eb1ca281e15dadc15189ea231bd4dd",
+      "policy_sha256": "fc77c97b00b47006fa44762054ea150f3dfb7ff97bd1c7b8e4b8621fe3d93cee"
+    }
+  },
+  "training_positions": 2304,
+  "shared_models": 1,
+  "fit_metrics": {
+    "optimizer": "L-BFGS-B",
+    "steps": 15,
+    "training_regularized_objective": 0.5027739735668287,
+    "uniform_offset_training_objective": 0.593689164290655,
+    "final_gradient_max_abs": 7.27715871590151e-08
+  },
+  "frozen_before_holdout": true,
+  "selected_for_play": false,
+  "code_sha256": {
+    "fit_poker_river_call.py": "decac66cc91222280e85f1f7f4910d4c3e76784db664ea6f27d5b3ed72378d0b",
+    "poker_river_call_learning.py": "5dd137ac7564064df8af9c45fd858656c0099e21bb492a98785173337f676b59",
+    "poker_river_dominance.py": "d7bef73bac270f657abffe9dbe9bf2621e08580b23f19c3082c0efc284150170"
+  }
+}
