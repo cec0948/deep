@@ -1,0 +1,307 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-27T01:16:46.376245+00:00",
+  "design_sha256": "ea9b63fb58fb5b3aae41b567a5860813b3761626d5ce94a264cc79d9840792bf",
+  "candidate_sha256": "e0d6913dd55aee7f039e6fb89ab57a71fc934d73976d0d998876d31d9c248155",
+  "model_sha256": "61a1c8cd7e2220af0761c603109e5a63586697db74c3d27b7a44ec524d2a1f37",
+  "selected": "parent",
+  "backend": "river-call-continuation",
+  "paired_gain": {
+    "mean": -0.04815132381750321,
+    "standard_error": 0.018014727994426768,
+    "lower": -0.08346019068657967,
+    "upper": -0.012842456948426742,
+    "deals": 2304,
+    "strata": 6,
+    "observed_contribution_bb_per_100": -0.15456202207015907,
+    "by_opponent": {
+      "public-fullhouse": {
+        "mean": -0.03311050059033485,
+        "standard_error": 0.02117472818940486,
+        "lower": -0.07461296784156837,
+        "upper": 0.008391966660898677,
+        "deals": 1152,
+        "strata": 3,
+        "observed_contribution_bb_per_100": -0.13390690221623888
+      },
+      "solverlike": {
+        "mean": -0.06319214704467158,
+        "standard_error": 0.029150516032440264,
+        "lower": -0.1203271584682545,
+        "upper": -0.006057135621088658,
+        "deals": 1152,
+        "strata": 3,
+        "observed_contribution_bb_per_100": -0.17521714192407925
+      }
+    },
+    "by_seed": {
+      "342": {
+        "mean": -0.024514749393835692,
+        "standard_error": 0.013641739691882006,
+        "lower": -0.051252559189924426,
+        "upper": 0.002223060402253039,
+        "deals": 768,
+        "strata": 2,
+        "observed_contribution_bb_per_100": -0.03219600960161556
+      },
+      "343": {
+        "mean": -0.06072404127448244,
+        "standard_error": 0.016081740236069723,
+        "lower": -0.0922442521371791,
+        "upper": -0.029203830411785786,
+        "deals": 768,
+        "strata": 2,
+        "observed_contribution_bb_per_100": -0.2949663807487045
+      },
+      "344": {
+        "mean": -0.059215180784191496,
+        "standard_error": 0.04975996776101406,
+        "lower": -0.15674471759577907,
+        "upper": 0.038314356027396065,
+        "deals": 768,
+        "strata": 2,
+        "observed_contribution_bb_per_100": -0.13652367586015707
+      }
+    }
+  },
+  "unique_holdout_deals": 2304,
+  "attempted_deals": 105819,
+  "changed_decisions": 160,
+  "proofs": {
+    "public-fullhouse/342": {
+      "mean": -0.025853287800342243,
+      "standard_error": 0.01670414140670146,
+      "lower": -0.0585934049574771,
+      "upper": 0.006886829356792617,
+      "deals": 384,
+      "strata": 1,
+      "attempted_deals": 27378,
+      "observed_contribution_bb_per_100": -0.03626145998733078,
+      "increased_calls": 34,
+      "decreased_calls": 0,
+      "call_increase_contribution_bb": -0.025853287800342243,
+      "call_decrease_contribution_bb": 0.0,
+      "observed_river_bet_chips": {
+        "minimum": 100,
+        "median": 1000.0,
+        "maximum": 8850
+      },
+      "pot_odds_exposure": {
+        "up_to_0.20": {
+          "decisions": 7,
+          "increased_calls": 0,
+          "decreased_calls": 0
+        },
+        "over_0.20_through_0.35": {
+          "decisions": 370,
+          "increased_calls": 34,
+          "decreased_calls": 0
+        },
+        "over_0.35": {
+          "decisions": 7,
+          "increased_calls": 0,
+          "decreased_calls": 0
+        }
+      },
+      "both_terminal_settlements_verified": 768,
+      "changed_decisions": 34
+    },
+    "public-fullhouse/343": {
+      "mean": -0.05126955511649565,
+      "standard_error": 0.022872982869165177,
+      "lower": -0.0961006015400594,
+      "upper": -0.006438508692931902,
+      "deals": 384,
+      "strata": 1,
+      "attempted_deals": 6542,
+      "observed_contribution_bb_per_100": -0.3009402195771068,
+      "increased_calls": 36,
+      "decreased_calls": 0,
+      "call_increase_contribution_bb": -0.05126955511649565,
+      "call_decrease_contribution_bb": 0.0,
+      "observed_river_bet_chips": {
+        "minimum": 100,
+        "median": 800.0,
+        "maximum": 9000
+      },
+      "pot_odds_exposure": {
+        "up_to_0.20": {
+          "decisions": 1,
+          "increased_calls": 0,
+          "decreased_calls": 0
+        },
+        "over_0.20_through_0.35": {
+          "decisions": 370,
+          "increased_calls": 36,
+          "decreased_calls": 0
+        },
+        "over_0.35": {
+          "decisions": 13,
+          "increased_calls": 0,
+          "decreased_calls": 0
+        }
+      },
+      "both_terminal_settlements_verified": 768,
+      "changed_decisions": 36
+    },
+    "public-fullhouse/344": {
+      "mean": -0.022208658854166664,
+      "standard_error": 0.05686053411276041,
+      "lower": -0.13365530571517706,
+      "upper": 0.08923798800684374,
+      "deals": 384,
+      "strata": 1,
+      "attempted_deals": 13218,
+      "observed_contribution_bb_per_100": -0.06451902708427901,
+      "increased_calls": 22,
+      "decreased_calls": 2,
+      "call_increase_contribution_bb": -0.014945475260416665,
+      "call_decrease_contribution_bb": -0.00726318359375,
+      "observed_river_bet_chips": {
+        "minimum": 125,
+        "median": 1012.5,
+        "maximum": 9050
+      },
+      "pot_odds_exposure": {
+        "up_to_0.20": {
+          "decisions": 12,
+          "increased_calls": 0,
+          "decreased_calls": 0
+        },
+        "over_0.20_through_0.35": {
+          "decisions": 356,
+          "increased_calls": 22,
+          "decreased_calls": 2
+        },
+        "over_0.35": {
+          "decisions": 16,
+          "increased_calls": 0,
+          "decreased_calls": 0
+        }
+      },
+      "both_terminal_settlements_verified": 768,
+      "changed_decisions": 24
+    },
+    "solverlike/342": {
+      "mean": -0.02317621098732914,
+      "standard_error": 0.0215722021858965,
+      "lower": -0.06545772727168628,
+      "upper": 0.019105305297028,
+      "deals": 384,
+      "strata": 1,
+      "attempted_deals": 31637,
+      "observed_contribution_bb_per_100": -0.02813055921590034,
+      "increased_calls": 21,
+      "decreased_calls": 2,
+      "call_increase_contribution_bb": -0.04346185551857914,
+      "call_decrease_contribution_bb": 0.020285644531249997,
+      "observed_river_bet_chips": {
+        "minimum": 100,
+        "median": 1424.0,
+        "maximum": 6615
+      },
+      "pot_odds_exposure": {
+        "up_to_0.20": {
+          "decisions": 166,
+          "increased_calls": 6,
+          "decreased_calls": 1
+        },
+        "over_0.20_through_0.35": {
+          "decisions": 218,
+          "increased_calls": 15,
+          "decreased_calls": 1
+        },
+        "over_0.35": {
+          "decisions": 0,
+          "increased_calls": 0,
+          "decreased_calls": 0
+        }
+      },
+      "both_terminal_settlements_verified": 768,
+      "changed_decisions": 23
+    },
+    "solverlike/343": {
+      "mean": -0.07017852743246925,
+      "standard_error": 0.022612300430265193,
+      "lower": -0.11449863627578902,
+      "upper": -0.025858418589149466,
+      "deals": 384,
+      "strata": 1,
+      "attempted_deals": 9325,
+      "observed_contribution_bb_per_100": -0.28899254192030227,
+      "increased_calls": 23,
+      "decreased_calls": 0,
+      "call_increase_contribution_bb": -0.07017852743246925,
+      "call_decrease_contribution_bb": 0.0,
+      "observed_river_bet_chips": {
+        "minimum": 100,
+        "median": 1154.5,
+        "maximum": 6691
+      },
+      "pot_odds_exposure": {
+        "up_to_0.20": {
+          "decisions": 136,
+          "increased_calls": 7,
+          "decreased_calls": 0
+        },
+        "over_0.20_through_0.35": {
+          "decisions": 248,
+          "increased_calls": 16,
+          "decreased_calls": 0
+        },
+        "over_0.35": {
+          "decisions": 0,
+          "increased_calls": 0,
+          "decreased_calls": 0
+        }
+      },
+      "both_terminal_settlements_verified": 768,
+      "changed_decisions": 23
+    },
+    "solverlike/344": {
+      "mean": -0.09622170271421633,
+      "standard_error": 0.08167678511498995,
+      "lower": -0.2563082015395966,
+      "upper": 0.06386479611116395,
+      "deals": 384,
+      "strata": 1,
+      "attempted_deals": 17719,
+      "observed_contribution_bb_per_100": -0.20852832463603516,
+      "increased_calls": 17,
+      "decreased_calls": 3,
+      "call_increase_contribution_bb": -0.052859886307966335,
+      "call_decrease_contribution_bb": -0.04336181640625,
+      "observed_river_bet_chips": {
+        "minimum": 100,
+        "median": 1638.0,
+        "maximum": 6728
+      },
+      "pot_odds_exposure": {
+        "up_to_0.20": {
+          "decisions": 156,
+          "increased_calls": 8,
+          "decreased_calls": 0
+        },
+        "over_0.20_through_0.35": {
+          "decisions": 228,
+          "increased_calls": 9,
+          "decreased_calls": 3
+        },
+        "over_0.35": {
+          "decisions": 0,
+          "increased_calls": 0,
+          "decreased_calls": 0
+        }
+      },
+      "both_terminal_settlements_verified": 768,
+      "changed_decisions": 20
+    }
+  },
+  "policy_sha256": {
+    "342": "24dc21b4f5b23a5e192d0879a374e9f82bbae3dc5faabff32b91d3c0c5433be5",
+    "343": "0258d6a581cc147cb54954a3622ae0548242003836b90007c7b68208d1c6aa80",
+    "344": "41f3840f8b078a0e85e63ddc01f4bbf5f75f064de00da6052d12ca1448ab53cf"
+  },
+  "scorer_sha256": "a65076572cbfabbbae5968893f920644699b9e6cafe5b5abcd3dbf0d84d10e05",
+  "whole_game_win_rate_measured": false
+}

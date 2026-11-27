@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "frozen_utc": "2026-11-27T01:15:58.016729+00:00",
+  "design_sha256": "ea9b63fb58fb5b3aae41b567a5860813b3761626d5ce94a264cc79d9840792bf",
+  "model_sha256": "61a1c8cd7e2220af0761c603109e5a63586697db74c3d27b7a44ec524d2a1f37",
+  "parent_model_sha256": "d3d97fa79158dbc09d0a561505bc23970673db2204a68bdce1f3283a7ae1677d",
+  "parent_objective": 0.5181336301785673,
+  "fitted_objective": 0.5126112868027002,
+  "optimizer_steps": 14,
+  "residual_norm": 0.26100573723296683,
+  "gradient_inf_norm": 1.1346718282968446e-07,
+  "training_positions": 3840,
+  "fresh_positions": 1536,
+  "fresh_ledger_sha256": {
+    "mixed-price-pressure/342": "da4416fc55884da723d835c30dbecd11a7e7ea7691fc7d2c733d0514bba3fc01",
+    "mixed-price-pressure/343": "28c5ae618e8b2750d8e2f7b141423af42d8cb40256e66eb67bd729c6e45a80c6",
+    "mixed-price-pressure/344": "be019a80a6b978af648a9dc2eb3b19169e2d87e7319c36dbeaa793321b01ac24",
+    "snapshot-420/342": "597a838c14315dc68beb886cf591216b9171e1b474f10c0d70a028200f0a6ae7",
+    "snapshot-420/343": "cade77bc1974cddc8ecc015926e9a567bca10340bd252b26f01e5d362122d207",
+    "snapshot-420/344": "a339273420c57d470ed6627beb27c2d99719e6753f9660f946dbe26152da2c43"
+  },
+  "policy_sha256": {
+    "342": "87ef48022d9f9fe192fe4dc5a9618996bc279e9ad4979a7d8294448df6c673a3",
+    "343": "f37ad6557d49647bc932f1409cdc39f7790ba1291c0b83ccec81f0382ec5a9ec",
+    "344": "de3c5abf507011dc7261af903b7c3899b27e0a5e1b541cca3db499609993e20f"
+  },
+  "sources": {
+    "fit_poker_river_recalibration.py": "e275ab155fd5230a2d85f7844c985a1521291df260cae5dafe884d774e13edfb",
+    "poker_river_call_recalibrated.py": "dce813ae57fae68642571ef1bec8ea5bac9770e08decb04fbe441e5d00e1de11"
+  }
+}

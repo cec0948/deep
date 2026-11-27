@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-27T01:16:48.970865+00:00",
+  "selection_sha256": "a5be04dac1f74ac66d1854b343c6bc8b68d3a3820e8578334e19235121b96e9e",
+  "backend": "river-call-continuation",
+  "selected": "parent",
+  "policy_sha256": {
+    "342": "24dc21b4f5b23a5e192d0879a374e9f82bbae3dc5faabff32b91d3c0c5433be5",
+    "343": "0258d6a581cc147cb54954a3622ae0548242003836b90007c7b68208d1c6aa80",
+    "344": "41f3840f8b078a0e85e63ddc01f4bbf5f75f064de00da6052d12ca1448ab53cf"
+  },
+  "normal_jsonl_decisions": 18,
+  "protocol": {
+    "342": {
+      "policy_sha256": "24dc21b4f5b23a5e192d0879a374e9f82bbae3dc5faabff32b91d3c0c5433be5",
+      "valid_requests": [
+        "preflop",
+        "flop",
+        "turn",
+        "river",
+        "unbeatable_river",
+        "ordinary_closing_river"
+      ],
+      "malformed_request_rejected": true
+    },
+    "343": {
+      "policy_sha256": "0258d6a581cc147cb54954a3622ae0548242003836b90007c7b68208d1c6aa80",
+      "valid_requests": [
+        "preflop",
+        "flop",
+        "turn",
+        "river",
+        "unbeatable_river",
+        "ordinary_closing_river"
+      ],
+      "malformed_request_rejected": true
+    },
+    "344": {
+      "policy_sha256": "41f3840f8b078a0e85e63ddc01f4bbf5f75f064de00da6052d12ca1448ab53cf",
+      "valid_requests": [
+        "preflop",
+        "flop",
+        "turn",
+        "river",
+        "unbeatable_river",
+        "ordinary_closing_river"
+      ],
+      "malformed_request_rejected": true
+    }
+  }
+}

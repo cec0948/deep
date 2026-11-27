@@ -1,0 +1,32 @@
+{
+  "verified_utc": "2026-11-27T01:18:04.681659+00:00",
+  "kind": "derived-policy-probe",
+  "checkpoint_mode": "cost-weighted-river-call-recalibration-v1",
+  "bytes": 21074,
+  "sha256": "ea644d3d83c3510b1a2a76ccb1ee9e2c29f2803e09c6807c7cfa801cded0a3b7",
+  "restored_all_three_seeds": true,
+  "backup_files": 1,
+  "format": "single-archive-v1",
+  "restoration_verified": true,
+  "external_backup": true,
+  "verified_remote_size": true,
+  "verified_owner_only": true,
+  "local_recombination_verified": false,
+  "remote_checksum_available": false,
+  "remote_sha256_verified": false,
+  "archive_includes_final_evaluation_summary": true,
+  "private_index_readback_verified": true,
+  "active_managed_bytes": 2130113097,
+  "within_2gib_target": true,
+  "retained_bytes": 2061082369,
+  "policy_candidate_remote_files": 4,
+  "remote_deletions_performed": 0,
+  "parent_iteration": 480,
+  "selected": "parent",
+  "selected_backend": "river-call-continuation",
+  "decision_restoration": {
+    "342": 16,
+    "343": 16,
+    "344": 16
+  }
+}

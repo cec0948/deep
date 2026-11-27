@@ -12,7 +12,8 @@ parser=argparse.ArgumentParser()
 policy_servers = {'flop-repair':'serve_poker_flop_repair.py', 'street-progress':'poker_street_progress.py',
                   'street-progress-river':'poker_river_dominance.py',
                   'river-call-learning':'poker_river_call_learning.py',
-                  'river-call-continuation':'poker_river_call_diverse.py'}
+                  'river-call-continuation':'poker_river_call_diverse.py',
+                  'river-call-recalibration':'poker_river_call_recalibrated.py'}
 parser.add_argument('--backend',choices=['noregrets','fullhouse',*policy_servers],default='noregrets')
 parser.add_argument('--policy',type=Path,help='Private policy manifest for the selected trained policy')
 args=parser.parse_args()
