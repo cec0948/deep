@@ -1,0 +1,336 @@
+{
+  "verified_utc": "2026-11-27T01:02:13.933456+00:00",
+  "design_sha256": "f5a05053ba0f296de162a6b777cca753527210b49fc92b2c6c28c2f761c84969",
+  "split": "holdout",
+  "auditor_sha256": "d0601a27ef82e0d51862f467a021f52872de87b3fb8d3a85da13535820fc2f36",
+  "disjoint_prior_ranges": 79,
+  "disjoint_registered_ranges": 15,
+  "groups": {
+    "public-fullhouse": {
+      "342": {
+        "original_deals_scanned": 15705,
+        "positions": 256,
+        "raw_sha256": "e4f765f2363874ca547e215b7db27083cb129c29fdc1702bf7f37a61358557b7",
+        "independent_chip_outcomes": 512,
+        "ties": 4,
+        "mean_showdown_share": 0.19140625,
+        "required_call_equity_bands": [
+          6,
+          197,
+          53
+        ],
+        "sampled_full_policy_trajectories": 37,
+        "sampled_trajectories_with_root": 6,
+        "protected_roots": 1,
+        "mean": 0.16374214357378267,
+        "variance": 1.4774652310604217,
+        "extra_step_with_old_weights": 0.18187275989872928,
+        "learned_minus_old_extra_step": -0.018130616324946624,
+        "learned_minus_old_extra_step_variance": 0.01751499187076983,
+        "different_incremental_updates": 9,
+        "observed_contribution_bb_per_100_deals": 0.26690855622342163
+      },
+      "343": {
+        "original_deals_scanned": 4603,
+        "positions": 256,
+        "raw_sha256": "630ed30eb19907ac9b8d81c251266f8a6c673353a9a79a31ecc8defafb0022b9",
+        "independent_chip_outcomes": 512,
+        "ties": 11,
+        "mean_showdown_share": 0.259765625,
+        "required_call_equity_bands": [
+          0,
+          185,
+          71
+        ],
+        "sampled_full_policy_trajectories": 37,
+        "sampled_trajectories_with_root": 5,
+        "protected_roots": 1,
+        "mean": 0.04629216786542834,
+        "variance": 3.1735307854442656,
+        "extra_step_with_old_weights": 0.047714874400361984,
+        "learned_minus_old_extra_step": -0.0014227065349336388,
+        "learned_minus_old_extra_step_variance": 0.02139559575061196,
+        "different_incremental_updates": 8,
+        "observed_contribution_bb_per_100_deals": 0.25745807024874334
+      },
+      "344": {
+        "original_deals_scanned": 9781,
+        "positions": 256,
+        "raw_sha256": "0163ba895058fcbc01242c43e17ff7974d8f6e141e7b4c7b3289febba259d8be",
+        "independent_chip_outcomes": 512,
+        "ties": 7,
+        "mean_showdown_share": 0.232421875,
+        "required_call_equity_bands": [
+          9,
+          182,
+          65
+        ],
+        "sampled_full_policy_trajectories": 37,
+        "sampled_trajectories_with_root": 6,
+        "protected_roots": 0,
+        "mean": 0.2209448275646884,
+        "variance": 5.412061777477219,
+        "extra_step_with_old_weights": 0.26020504325217997,
+        "learned_minus_old_extra_step": -0.039260215687491606,
+        "learned_minus_old_extra_step_variance": 0.15191320621637752,
+        "different_incremental_updates": 8,
+        "observed_contribution_bb_per_100_deals": 0.5782831597644436
+      }
+    },
+    "solverlike": {
+      "342": {
+        "original_deals_scanned": 23029,
+        "positions": 256,
+        "raw_sha256": "0e9ef460051079d70fd8df258f9ba2c4f76e2eb9f05b8e1b9ec2c9330bacd5b5",
+        "independent_chip_outcomes": 512,
+        "ties": 13,
+        "mean_showdown_share": 0.310546875,
+        "required_call_equity_bands": [
+          88,
+          103,
+          65
+        ],
+        "sampled_full_policy_trajectories": 37,
+        "sampled_trajectories_with_root": 7,
+        "protected_roots": 5,
+        "mean": 0.4917710523986729,
+        "variance": 3.441440435517715,
+        "extra_step_with_old_weights": 0.48501147558183155,
+        "learned_minus_old_extra_step": 0.006759576816841388,
+        "learned_minus_old_extra_step_variance": 0.015543961500696696,
+        "different_incremental_updates": 4,
+        "observed_contribution_bb_per_100_deals": 0.546673278970256
+      },
+      "343": {
+        "original_deals_scanned": 6708,
+        "positions": 256,
+        "raw_sha256": "6b1c8ed5d6316ac49edeefb1a484baa66e317e4c394a8efbda7e98860c5e9b5f",
+        "independent_chip_outcomes": 512,
+        "ties": 5,
+        "mean_showdown_share": 0.294921875,
+        "required_call_equity_bands": [
+          69,
+          122,
+          65
+        ],
+        "sampled_full_policy_trajectories": 37,
+        "sampled_trajectories_with_root": 5,
+        "protected_roots": 3,
+        "mean": 0.18316659338778365,
+        "variance": 1.181515179184063,
+        "extra_step_with_old_weights": 0.18869680494911586,
+        "learned_minus_old_extra_step": -0.0055302115613322066,
+        "learned_minus_old_extra_step_variance": 0.02823224195724843,
+        "different_incremental_updates": 4,
+        "observed_contribution_bb_per_100_deals": 0.6990257589038851
+      },
+      "344": {
+        "original_deals_scanned": 11786,
+        "positions": 256,
+        "raw_sha256": "e9f556446130954e74ffe66924400609cab25ad5a0f47decf89c4029ab8b3c89",
+        "independent_chip_outcomes": 512,
+        "ties": 9,
+        "mean_showdown_share": 0.166015625,
+        "required_call_equity_bands": [
+          109,
+          93,
+          54
+        ],
+        "sampled_full_policy_trajectories": 37,
+        "sampled_trajectories_with_root": 6,
+        "protected_roots": 0,
+        "mean": 0.3759060281771811,
+        "variance": 2.812786605014119,
+        "extra_step_with_old_weights": 0.3410244363803061,
+        "learned_minus_old_extra_step": 0.03488159179687499,
+        "learned_minus_old_extra_step_variance": 0.4717838458433262,
+        "different_incremental_updates": 9,
+        "observed_contribution_bb_per_100_deals": 0.8164936637821004
+      }
+    }
+  },
+  "price_bins": "Required equity owed/(pot+owed), counted in <20%, 20% to <1/3, and >=1/3.",
+  "complete": true,
+  "training": {
+    "verified_utc": "2026-11-27T01:02:04.763125+00:00",
+    "design_sha256": "f5a05053ba0f296de162a6b777cca753527210b49fc92b2c6c28c2f761c84969",
+    "split": "train",
+    "auditor_sha256": "d0601a27ef82e0d51862f467a021f52872de87b3fb8d3a85da13535820fc2f36",
+    "disjoint_prior_ranges": 79,
+    "disjoint_registered_ranges": 15,
+    "groups": {
+      "pressure": {
+        "342": {
+          "original_deals_scanned": 66127,
+          "positions": 256,
+          "raw_sha256": "4a8bee9cdc666489d2aca9846f8c4d52e8b34fd2f53cdf5040e0765500e4a3f5",
+          "independent_chip_outcomes": 512,
+          "ties": 8,
+          "mean_showdown_share": 0.3671875,
+          "required_call_equity_bands": [
+            16,
+            19,
+            221
+          ],
+          "sampled_full_policy_trajectories": 37,
+          "sampled_trajectories_with_root": 5
+        },
+        "343": {
+          "original_deals_scanned": 8485,
+          "positions": 256,
+          "raw_sha256": "e7f998731dacdde3e84b202ef3cc43d123426cd3988838509ceadeb7360047fe",
+          "independent_chip_outcomes": 512,
+          "ties": 8,
+          "mean_showdown_share": 0.49609375,
+          "required_call_equity_bands": [
+            9,
+            21,
+            226
+          ],
+          "sampled_full_policy_trajectories": 36,
+          "sampled_trajectories_with_root": 7
+        },
+        "344": {
+          "original_deals_scanned": 21081,
+          "positions": 256,
+          "raw_sha256": "092d68fd97de3bf0b6be211e4d14aacc9b0ab2bfa8998b551137dc7484191089",
+          "independent_chip_outcomes": 512,
+          "ties": 11,
+          "mean_showdown_share": 0.408203125,
+          "required_call_equity_bands": [
+            37,
+            32,
+            187
+          ],
+          "sampled_full_policy_trajectories": 37,
+          "sampled_trajectories_with_root": 5
+        }
+      },
+      "tight-value": {
+        "342": {
+          "original_deals_scanned": 230981,
+          "positions": 256,
+          "raw_sha256": "4d888269fc878bae973c2cec1c6a0e9cb177b10e9a9b03b1e61bb8a10a73d8fc",
+          "independent_chip_outcomes": 512,
+          "ties": 15,
+          "mean_showdown_share": 0.166015625,
+          "required_call_equity_bands": [
+            22,
+            234,
+            0
+          ],
+          "sampled_full_policy_trajectories": 37,
+          "sampled_trajectories_with_root": 5
+        },
+        "343": {
+          "original_deals_scanned": 34259,
+          "positions": 256,
+          "raw_sha256": "c4561abd8f27b87fa6141a8d607b7270f25330c562fa36c785de70a3ee8d6d51",
+          "independent_chip_outcomes": 512,
+          "ties": 11,
+          "mean_showdown_share": 0.201171875,
+          "required_call_equity_bands": [
+            12,
+            244,
+            0
+          ],
+          "sampled_full_policy_trajectories": 37,
+          "sampled_trajectories_with_root": 5
+        },
+        "344": {
+          "original_deals_scanned": 64496,
+          "positions": 256,
+          "raw_sha256": "01a5513b05eae3c7884638afdf83d4227cbd38ee9721aecdbd253289a91ab625",
+          "independent_chip_outcomes": 512,
+          "ties": 10,
+          "mean_showdown_share": 0.16796875,
+          "required_call_equity_bands": [
+            36,
+            220,
+            0
+          ],
+          "sampled_full_policy_trajectories": 37,
+          "sampled_trajectories_with_root": 5
+        }
+      },
+      "snapshot-420": {
+        "342": {
+          "original_deals_scanned": 64905,
+          "positions": 256,
+          "raw_sha256": "6e882cc4ca2507cfe4d81794af1990b52e2a98ba2e31ffb7872be425d264f8b3",
+          "independent_chip_outcomes": 512,
+          "ties": 9,
+          "mean_showdown_share": 0.404296875,
+          "required_call_equity_bands": [
+            22,
+            120,
+            114
+          ],
+          "sampled_full_policy_trajectories": 37,
+          "sampled_trajectories_with_root": 5
+        },
+        "343": {
+          "original_deals_scanned": 6193,
+          "positions": 256,
+          "raw_sha256": "bad6a36a910d0f0ec6213ade733b60a64ab93bfe3d906b331548229b7be8f5bb",
+          "independent_chip_outcomes": 512,
+          "ties": 14,
+          "mean_showdown_share": 0.515625,
+          "required_call_equity_bands": [
+            5,
+            145,
+            106
+          ],
+          "sampled_full_policy_trajectories": 37,
+          "sampled_trajectories_with_root": 6
+        },
+        "344": {
+          "original_deals_scanned": 20701,
+          "positions": 256,
+          "raw_sha256": "95f1d96dd003c932121819835cad631387e6eed0c1052a38ae633fc749d0ecf6",
+          "independent_chip_outcomes": 512,
+          "ties": 10,
+          "mean_showdown_share": 0.42578125,
+          "required_call_equity_bands": [
+            26,
+            163,
+            67
+          ],
+          "sampled_full_policy_trajectories": 37,
+          "sampled_trajectories_with_root": 5
+        }
+      }
+    },
+    "price_bins": "Required equity owed/(pot+owed), counted in <20%, 20% to <1/3, and >=1/3."
+  },
+  "fit": {
+    "train_rows": 4608,
+    "source_model_sha256": "64b79018289644c66c2f80e9162d1fa852b0b9c90920b3f87518c9fb232ee26a",
+    "candidate_model_sha256": "d3d97fa79158dbc09d0a561505bc23970673db2204a68bdce1f3283a7ae1677d",
+    "new_source_weight": 0.5,
+    "original_source_weight": 0.5,
+    "public_features": 10,
+    "source_objective": 0.5098701222667555,
+    "final_objective": 0.5090092187564121,
+    "max_abs_gradient": 1.2583711234115912e-07
+  },
+  "holdout_gain": {
+    "mean": 0.24697046882792284,
+    "standard_error": 0.043574549004329936,
+    "lower": 0.16156435277943615,
+    "upper": 0.33237658487640953,
+    "observed_contribution_bb_per_100": 0.5274737479821416
+  },
+  "selected": "candidate",
+  "descriptive_incremental_contributions": {
+    "extra_step_with_old_weights": 0.2507542324104208,
+    "learned_minus_old_extra_step": -0.0037837635824979495,
+    "different_incremental_updates": 42,
+    "learned_minus_old_extra_step_95_interval": [
+      -0.020943286809901665,
+      0.013375759644905767
+    ]
+  },
+  "opponent_reach": "All five opponents use the same specified held-out policy on every street.",
+  "scope": "Descriptive per-dealt contribution under the registered tables. Conditional effects concern only first eligible closing river bets, across fixed opponent identities and fixed training seeds."
+}

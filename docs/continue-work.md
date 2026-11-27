@@ -1,6 +1,6 @@
 # 여기서 작업 이어가기
 
-2026-11-26의 선택 모델과 실행 명령은 [첫 플롭·턴 학습과 리버 콜 개선](poker-street-progress-20261126.md)에 있다. 과거 실행을 이어볼 때는 [날짜별 학습 기록](retraining-20261112.md)에서 해당 실행을 찾는다.
+2026-11-27의 선택 모델과 실행 명령은 [리버 콜 모델의 후속 학습](poker-river-call-continuation-20261127.md)에 있다. 과거 실행을 이어볼 때는 [날짜별 학습 기록](retraining-20261112.md)에서 해당 실행을 찾는다.
 
 2026-11-10 당시에는 [60→120회 제한 연장](compact-continuation.md)을 시작했다. 실행은 `artifacts/compact-v4/20261110T085438491435Z`다. **세 seed 모두 기존 전체 checkpoint에서 재개하고, 새 카드로 60회와 120회를 함께 평가한다. 총 예정 504,000핸드다.** `python scripts/compact_status.py`와 실행 폴더의 `campaign-status.json`을 먼저 확인한다. 살아 있는 supervisor·worker를 중복 실행하지 않는다. 완료되면 `progress-decision.json`의 사전 조건과 상대별 성적을 확인해 다음 제한 구간을 판단한다. 아래 60회 결과는 비교 기준으로 보존한다.
 

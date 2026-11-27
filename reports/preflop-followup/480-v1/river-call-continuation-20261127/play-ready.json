@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "completed_utc": "2026-11-27T01:01:06.758871+00:00",
+  "backend": "river-call-continuation",
+  "selected": "candidate",
+  "selection_sha256": "266788f0468a7b9f870ac3f35d809d74bd60104b0b37f435b207f7810dde842f",
+  "design_sha256": "f5a05053ba0f296de162a6b777cca753527210b49fc92b2c6c28c2f761c84969",
+  "public_selection_sha256": "7344ad963fbd85a22d53ad621a804616768491a56794fd201af2e8aa79d9a3f0",
+  "policy_sha256": {
+    "342": "24dc21b4f5b23a5e192d0879a374e9f82bbae3dc5faabff32b91d3c0c5433be5",
+    "343": "0258d6a581cc147cb54954a3622ae0548242003836b90007c7b68208d1c6aa80",
+    "344": "41f3840f8b078a0e85e63ddc01f4bbf5f75f064de00da6052d12ca1448ab53cf"
+  },
+  "normal_jsonl_decisions": 18,
+  "rejected_malformed_requests": 3,
+  "proofs": {
+    "342": {
+      "policy_sha256": "24dc21b4f5b23a5e192d0879a374e9f82bbae3dc5faabff32b91d3c0c5433be5",
+      "valid_requests": [
+        "preflop",
+        "flop",
+        "turn",
+        "river",
+        "unbeatable_river",
+        "ordinary_closing_river"
+      ],
+      "malformed_request_rejected": true
+    },
+    "343": {
+      "policy_sha256": "0258d6a581cc147cb54954a3622ae0548242003836b90007c7b68208d1c6aa80",
+      "valid_requests": [
+        "preflop",
+        "flop",
+        "turn",
+        "river",
+        "unbeatable_river",
+        "ordinary_closing_river"
+      ],
+      "malformed_request_rejected": true
+    },
+    "344": {
+      "policy_sha256": "41f3840f8b078a0e85e63ddc01f4bbf5f75f064de00da6052d12ca1448ab53cf",
+      "valid_requests": [
+        "preflop",
+        "flop",
+        "turn",
+        "river",
+        "unbeatable_river",
+        "ordinary_closing_river"
+      ],
+      "malformed_request_rejected": true
+    }
+  },
+  "whole_game_strength_verified": false,
+  "entrypoint": "python scripts/run_poker.py --backend river-call-continuation --policy artifacts/preflop-followup/480-v1/river-call-continuation-20261127/play/seed-{seed}/policy.json"
+}
