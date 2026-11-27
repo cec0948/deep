@@ -1,0 +1,145 @@
+{
+  "study": "river-call-continuation-20261127",
+  "registered_utc": "2026-11-27T00:52:30.854852+00:00",
+  "seeds": [
+    342,
+    343,
+    344
+  ],
+  "collection": {
+    "train": {
+      "positions_per_seed_group": 256,
+      "groups": [
+        "pressure",
+        "tight-value",
+        "snapshot-420"
+      ],
+      "by_group": {
+        "pressure": {
+          "342": {
+            "start": 2120000000,
+            "limit": 2120300000
+          },
+          "343": {
+            "start": 2120900000,
+            "limit": 2121200000
+          },
+          "344": {
+            "start": 2121800000,
+            "limit": 2122100000
+          }
+        },
+        "tight-value": {
+          "342": {
+            "start": 2120300000,
+            "limit": 2120600000
+          },
+          "343": {
+            "start": 2121200000,
+            "limit": 2121500000
+          },
+          "344": {
+            "start": 2122100000,
+            "limit": 2122400000
+          }
+        },
+        "snapshot-420": {
+          "342": {
+            "start": 2120600000,
+            "limit": 2120900000
+          },
+          "343": {
+            "start": 2121500000,
+            "limit": 2121800000
+          },
+          "344": {
+            "start": 2122400000,
+            "limit": 2122700000
+          }
+        }
+      }
+    },
+    "holdout": {
+      "positions_per_seed_group": 256,
+      "groups": [
+        "public-fullhouse",
+        "solverlike"
+      ],
+      "by_group": {
+        "public-fullhouse": {
+          "342": {
+            "start": 2122700000,
+            "limit": 2123000000
+          },
+          "343": {
+            "start": 2123300000,
+            "limit": 2123600000
+          },
+          "344": {
+            "start": 2123900000,
+            "limit": 2124200000
+          }
+        },
+        "solverlike": {
+          "342": {
+            "start": 2123000000,
+            "limit": 2123300000
+          },
+          "343": {
+            "start": 2123600000,
+            "limit": 2123900000
+          },
+          "344": {
+            "start": 2124200000,
+            "limit": 2124500000
+          }
+        }
+      }
+    }
+  },
+  "group_policy_sha256": {
+    "pressure": "b3a90569d56667366a93428f897b9d98df0585012794d442e027df010896350f",
+    "tight-value": "b3a90569d56667366a93428f897b9d98df0585012794d442e027df010896350f",
+    "public-fullhouse": "1102326b68da95564de147106612df71cb891b42f0726ba0212d3b9a5bcae295",
+    "solverlike": "76ef638a9a7e9762316ba34d54eca435bd37086afd9bb30433423346282a5240",
+    "snapshot-420": {
+      "342": "f23e592981774d6b99da6910513dc83c91cd5474b9a22b34bec72e1463951607",
+      "343": "7fdcbe9ef679de27099bf76a184c8849979b76941072bdfa8f9d600722f4005c",
+      "344": "0a6700790cc5bd19d6756c45c397c5cf7340f21a79c72b9d8d3855de94c84784"
+    }
+  },
+  "parent_model_sha256": "64b79018289644c66c2f80e9162d1fa852b0b9c90920b3f87518c9fb232ee26a",
+  "parent_policy_sha256": {
+    "342": "b029f12e6e4fe152c1fea4e9419552e3c15d12fee25c8f019206830d82144d4c",
+    "343": "4d5feb5184f0bc75e721dcbb7469c034bc2a4373040e7d31fd0c4e553045f800",
+    "344": "fc77c97b00b47006fa44762054ea150f3dfb7ff97bd1c7b8e4b8621fe3d93cee"
+  },
+  "parent_play_ready_sha256": "a4cdb603e36a7a353dcd820abd3f9014f6f762975671639ae9cb90c5870fcd37",
+  "parent_backup_sha256": "dbf8ed7308e2ad7152daf3a8779babddaad2424d0c9f98b06ef2e5bf736efca3",
+  "parent_train_ledger_sha256": {
+    "342": "df1a9690ebc8be330973544df8403cf421a58de82d81acb8570a0e5b5c0b7b94",
+    "343": "ab08a182afd44bf06a7450d6515689e31c629d311199f1738760dc805f3f79ea",
+    "344": "0574e818baec543dfdb76b9b6bcdd83f6561685e683f3e64976630f18988b8b7"
+  },
+  "parent_guard_sha256": "d7bef73bac270f657abffe9dbe9bf2621e08580b23f19c3082c0efc284150170",
+  "parent_runtime_sha256": "5dd137ac7564064df8af9c45fd858656c0099e21bb492a98785173337f676b59",
+  "eligibility": "Same closing single heads-up river bet as parent. One distinct reached hand. Include no-op and protected cases in score. Full chips from the normal six-player engine on both terminal actions. Never expose target, actual opponent hand or field identity to playing policy.",
+  "train_reach": "Hero plays the selected prior policy. Other seats use common 480 preflop and previous seat-assigned historic mixture on flop/turn; on river all nonhero seats play the named training strategy. No forcing bet sizes.",
+  "holdout_reach": "All five nonhero seats play the named unseen river-training opponent on all streets including preflop. Evaluate original full-table reach under the prior active hero. Groups are the independent public model Fullhouse and the upstream behavioral SolverLike; no claim either is a verified professional opponent.",
+  "fit": {
+    "start": "Exact serving coefficients, intercept, normalization and logit offset of the selected river parent. One residual model with 10 slopes + intercept, initialized at zero.",
+    "mixture": "50% total original 2304 train rows; 50% total new rows with equal new opponent x fixed seed weights. Prior holdout unavailable to fitting.",
+    "loss": "Mean weighted soft-label showdown cross entropy + .025*squared slope residual norm + .005*squared intercept residual.",
+    "optimizer": "L-BFGS, maximum 200 optimizer iterations. No mid-training performance stop, tuning, repeated candidate or new feature selection."
+  },
+  "policy": {
+    "parent": "Begin from exact served river-call-learning distribution, keeping protected hands and all raise actions/probabilities, including seeded raises.",
+    "eligible_change": "If updated showdown share exceeds or falls short of pot odds by >=0.05 absolute, transfer 25% of the remaining opposite passive action probability toward that choice. Preserve parent elsewhere."
+  },
+  "selection": {
+    "unit": "One fresh originally dealt hand contributes at most one decision; matched counterfactual chip settlement with both passive actions.",
+    "score": "delta at a reached decision = (candidate Pcall - previous learned parent Pcall)*(call chips-fold chips)/100. Equal 6 holdout cells, fixed-three-seed stratified SE.",
+    "adopt": "Single test after weight freeze. Equal-cell reached-decision mean minus 1.96 * stratified SE must exceed zero AND equal-cell observed all-deal contribution (100 * sum(decision gains)/attempted deals per cell) must be positive. No single-opponent veto. Otherwise retain incumbent, no automatic retry.",
+    "report": "Include opponent-specific and fixed-seed results, actual changes and betting-size exposure; distinguish incremental returns from absolute win rates. Scoring uses both complete holdout fields. If a range is exhausted report incompleteness without substituting cards."
+  }
+}
